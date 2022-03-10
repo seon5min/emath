@@ -189,24 +189,36 @@
 
 	/* 2022-03-08 .series_main .btn_content 누르면 pc에서만 팝업창*/
 	function downloadCheck() {
-		var filter = "win16|win32|win64|mac|macintel";
-		var vWebType = "";
+		// var filter = "win16|win32|win64|mac|macintel";
+		// var vWebType = "";
 
-		if (navigator.platform ) {
-			if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-				vWebType = "MOBILE";
-				alert('mobile 접속');
-				$(".series_main .btn_content").click(function(e){
-					$(".pop_rel_con").removeClass('open');
-				});
-			} else {
-				alert('pc 접속');
-				$(".series_main .btn_content").click(function(e){
-					$(".pop_rel_con").addClass('open');
-				});
-				vWebType = "PC";
-			}
-		}
+		// if (navigator.platform ) {
+		// 	if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+		// 		vWebType = "MOBILE";
+		// 		alert('mobile 접속');
+		// 		$(".series_main .btn_content").click(function(e){
+		// 			$(".pop_rel_con").removeClass('open');
+		// 		});
+		// 	} else {
+		// 		alert('pc 접속');
+		// 		$(".series_main .btn_content").click(function(e){
+		// 			$(".pop_rel_con").addClass('open');
+		// 		});
+		// 		vWebType = "PC";
+		// 	}
+		// }
+
+		if (('createTouch' in document) || ('ontouchstart' in document)){
+			alert("모바일접속");
+			$(".series_main .btn_content").click(function(e){
+				$(".pop_rel_con").removeClass('open');
+			});
+		} else {
+			alert("PC접속");
+			$(".series_main .btn_content").click(function(e){
+				$(".pop_rel_con").addClass('open');
+			});
+		}		
 	}
 	downloadCheck();
 
