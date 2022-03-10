@@ -1,0 +1,1064 @@
+@charset "utf-8";
+
+/*컨텐츠 목록*/
+.list_mycont {margin-top:3.2rem}
+.list_mycont .srch_item {display:flex; margin-top:1.5rem; position:relative }
+.list_mycont .srch_item .thumbnail {display:block; position:relative;}
+.list_mycont .srch_item .thumbnail .stk {position:absolute; right:5%; top:7%; width:38px; height:38px;}
+.list_mycont .srch_item .thumbnail span{width:302px; height:170px;}
+.list_mycont .srch_item .thumbnail img {display:block; width:auto; border:solid 1px #e1e1e1; height:170px; border-radius:10px; vertical-align:top; background-color:transparent}
+.list_mycont .srch_item .thumbnail input[type="checkbox"] {border-color:#333; position:absolute; left:1.3rem; top:1rem}
+.list_mycont .srch_item .thumbnail .runtime {
+	display:inline-block; position:absolute; bottom:10px; right:5%; 
+	width:65px; height:24px; padding:1px 0 0 8px; border-radius:12px; background:rgba(0,0,0,0.7) url('../images/common/icon_play.png') 7px 50% no-repeat;
+	font-size:1.4rem; line-height:2rem; text-align:center;color: #fff;
+}
+
+.list_mycont .srch_item .result_info  {width:76.4%; padding-left:2rem;}
+.list_mycont .srch_item .result_info a:hover {text-decoration:underline}
+.list_mycont .srch_item .sub_tit {font-size:1.6rem; display:-webkit-box; overflow:hidden; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; max-width:80%}
+.list_mycont .srch_item .sub_tit strong {font-weight:500; line-height:150%}
+.list_mycont .srch_item .sub_tit .date {font-size:1.4rem; color:#9a9a9a; vertical-align:middle;}
+.list_mycont .srch_item .sub_tit .date:before {display:inline-block; content:""; border-left:1px solid #e1e1e1; width:0px; height:12px; vertical-align:middle; margin:-3px 7px 0; }
+.list_mycont .srch_item .location { font-size:1.4rem; color:#9a9a9a; margin-top:1rem; vertical-align:top;}
+.list_mycont .srch_item .view_data {margin-top:1.5rem}
+.list_mycont .srch_item .view_data [class^="num_"] {display:inline-block;font-size:1.4rem; color:#9a9a9a; vertical-align:middle}
+.list_mycont .srch_item .view_data [class^="num_"]:before {display:inline-block; content:""; vertical-align:middle; margin-right:4px}
+.list_mycont .srch_item .view_data .num_view {margin-right:1.5rem}
+.list_mycont .srch_item .view_data .num_view:before {width:16px; height:14px; background:url('../images/contents/icon_view_s.png') 0 0 no-repeat; background-size:contain}
+.list_mycont .srch_item .view_data .num_fav:before {width:16px; height:14px; background:url('../images/contents/icon_fav_s.png') 0 0 no-repeat; background-size:contain}
+.list_mycont .srch_item .location li {display:inline-block}
+.list_mycont .srch_item .location .dep1 em {color:#000}
+.list_mycont .srch_item .location .dep1 em:after {display:inline-block; content:"|"; font-size:11px; margin:0 3px 0 7px; vertical-align:top; line-height:120%; color:#9a9a9a}
+.list_mycont .srch_item .location .dep2 {display:inline-block; vertical-align:top; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.list_mycont .srch_item .detail {font-size:1.6rem; line-height:150%; margin:1.5rem 0; display:-webkit-box; overflow:hidden; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
+.list_mycont .srch_item .result_info .btn_fncnt {position:absolute; right:0; top:0;  z-index:1000; width:24px; height:20px; background:url('../images/common/icon_more.svg') 10px 0 no-repeat; background-size:4px 15px; margin-top:1.2rem}
+.list_mycont .srch_item .popup_slayer_fncont {max-width:148px; top:-20px; right:25px;}
+.list_mycont .srch_item .popup_slayer_fncont.open {top:0}
+.list_mycont + .pagination {padding-top:3rem}
+
+/*테이블*/
+.mytbl_type1 {border-top:2px solid #4e42ca; border-bottom:2px solid #dfdfdf; font-size:1.4rem; width:100%; margin-top:1rem}
+.mytbl_type1 {width:100%; table-layout:fixed}
+.mytbl_type1 th,
+.mytbl_type1 td {text-align:center}
+.mytbl_type1 th {border-bottom:1px solid #4e42ca; padding:8px 0 10px; font-weight:500; text-align:center}
+.mytbl_type1 td {border-bottom:1px solid #dfdfdf; padding:12px 0}
+.mytbl_type1 td.subj, .mytbl_type1 td.loca {text-align:left; padding-right:1rem; font-weight:normal}
+.mytbl_type1 td.subj {font-size:1.6rem;}
+.mytbl_type1 td.subj span {display:inline-block; max-width:70%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; vertical-align:middle}
+.mytbl_type1 td.loca {font-size:1.4rem; color:#9a9a9a;}
+.mytbl_type1 td.loca p {white-space:nowrap;display:flex; align-items:center; line-height:120%}
+.mytbl_type1 td.loca .dep1:after {display:inline-block; content:"|"; font-size:11px; margin:0 7px; vertical-align:top; line-height:120%;}
+.mytbl_type1 td.loca .dep2 {white-space:normal; vertical-align:middle}
+.mytbl_type1 tr .chk {width:5%}
+.mytbl_type1 tr .subj {width:38%}
+.mytbl_type1 tr .loca {width:30%}
+.mytbl_type1 tr .qnum {width:7%}
+.mytbl_type1 tr .qz_btn {width:250px;}
+.mytbl_type1 dfn {display:none}
+.mytbl_type1 [class*="btn_tb_type"] {display:inline-block; width:68px; border-radius:4px; height:26px; line-height:23px; font-size:1.4rem; text-align:center; font-weight:bold}
+.mytbl_type1 .btn_tb_type1 {background:#fff; border:1px solid #4e42ca; color:#4e42ca;}
+.mytbl_type1 .btn_tb_type2 {background:#4e42ca; border:1px solid #4e42ca; color:#fff; font-weight:500}
+.mytbl_type1 .btn_tb_type3 {background:#fff; border:1px solid #333; color:#333}
+.mytbl_type1 input[type="checkbox"] {border-color:#333}
+.mytbl_type1 .aft_btn {display:flex; justify-content:flex-start;}
+.mytbl_type1 .aft_btn a {margin:0 5px 3px}
+.mytbl_type1 .aft_btn span:first-child {width:80px;}
+.mytbl_type1 .aft_btn span:last-child {width:170px; text-align:center}
+.mytbl_type1 .icon_new {display:inline-block; width:19px; height:20px; background-color:#4e42ca; border-radius:4px; color:#fff; font-size:1.2rem; font-weight:400; text-align:center; line-height:2rem; margin-left:3px}
+.mytbl_type1.wrong_ans tr .ord {width:5%}
+.mytbl_type1.wrong_ans tr .subj {width:auto}
+.mytbl_type1.wrong_ans tr .loca {width:40%}
+.mytbl_type1.wrong_ans tr .qnum {width:10%}
+.mytbl_type1.achv_test tr .ord {width:7%}
+.mytbl_type1.achv_test tr .subj {width:auto}
+.mytbl_type1.achv_test tr .score {width:10%}
+.mytbl_type1.achv_test tr .date {width:15%}
+.mytbl_type1.achv_test tr .qz_btn {width:15%; text-align:center}
+.mytbl_type1.achv_test .aft_btn span:first-child {width:90px}
+.mytbl_type1.achv_test .aft_btn span:last-child {width:90px; text-align:center}
+.mytbl_type1.evr10m tr .ord {width:7%}
+.mytbl_type1.evr10m tr .subj {width:auto}
+.mytbl_type1.evr10m tr .loca {width:35%; color:#333}
+.mytbl_type1.evr10m tr .score {width:10%}
+.mytbl_type1.evr10m tr .qz_btn {width:15%; text-align:center}
+.mytbl_type1.evr10m .aft_btn span:first-child {width:90px}
+.mytbl_type1.evr10m .aft_btn span:last-child {width:90px; text-align:center}
+.mytbl_type1.qna tr td {padding:0}
+.mytbl_type1.qna tr td a {display:block; padding:17px 0; width:100%;}
+.mytbl_type1.qna tr td a:hover {text-decoration:underline}
+.mytbl_type1.qna tr .ord {width:7%}
+.mytbl_type1.qna tr .eq_type {width:15%}
+.mytbl_type1.qna tr .subj {width:auto; }
+.mytbl_type1.qna tr .subj a {max-width:99%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.mytbl_type1.qna tr .date {width:12%}
+.mytbl_type1.qna tr .stt {width:9%}
+.mytbl_type1.qna tr .grd {width:10%}
+.mytbl_type1.qna tr .wrt {width:10%}
+.mytbl_type1.qna tr .hit {width:7%}
+.mytbl_type1.qna .wrt span {line-height:220%}
+.mytbl_type1 + .tbl_noti {font-size:1.4rem; margin-top:1.5rem}
+.mytbl_type1 + .tbl_noti li {margin-bottom:5px; text-indent:-15px; padding-left:15px; line-height:150%}
+.mytbl_type1 ~ .pagination { margin-top:4rem}
+.mytbl_type1 a.lock:before {display:inline-block; content:""; width:17px; height:20px; background:url('../images/contents/icon_lock.svg') 0 0 no-repeat; background-size:contain; text-indent:-9999px; margin:-3px 5px 0 0; vertical-align:top}
+.mytbl_type1 a.file:after {display:inline-block; content:""; width:17px; height:20px; background:url('../images/contents/icon_file.svg') 0 0 no-repeat; background-size:21.5px 24px; text-indent:-9999px; margin:-4px 0 0 5px; vertical-align:top}
+.mytbl_type2 {border-top:2px solid #4e42ca; border-bottom:2px solid #4e42ca}
+.mytbl_type2 th, .mytbl_type2 td {border-bottom:1px solid #dfdfdf; padding-top:13px; padding-bottom:13px; font-size:1.4rem}
+.mytbl_type2 th {background-color: rgba(78, 66, 202, 0.05); font-weight:normal}
+.mytbl_type2 td {padding-left:8rem}
+/*문제지타입 : 제목앞태그*/
+[class^="tag_quiz"] {display:inline-block; width:95px; border-radius:4px; height:22px; line-height:20px; font-size:1.2rem; text-align:center; background:#fff; margin-right:1rem; vertical-align:middle}
+.tag_quiz1 {border:1px solid #4e42ca; color:#4e42ca;}
+.tag_quiz2 {border:1px solid #f05d5b; color:#f05d5b}
+
+
+/*게시물검색*/
+.quiry_opt {max-width:840px; margin:4rem auto; display:flex; justify-content:center}
+.quiry_opt dt {width:245px; margin-right:1.5rem}
+.quiry_opt dd {width:calc(100% - 260px); display:flex; justify-content:space-between}
+.quiry_opt select {border:1px solid #333; width:100%}
+.quiry_opt input[type="text"] {border:1px solid #333; border-radius:3px; height:30px; width:calc(100% - 79px); padding-left:1rem}
+.quiry_head {display:flex; justify-content:space-between; margin-bottom:2rem}
+.quiry_head .cmt_result {color: #000; font-weight:400; font-size:1.4rem; margin-right:1.6rem; vertical-align:top; padding-top:1rem}
+.quiry_head button { vertical-align:top}
+.mypage_2021 .tab_quiry + fieldset .quiry_opt {margin:3rem auto 5rem}
+
+.mypage_2021 {padding-bottom:7rem; position:relative}
+.mypage_2021 .course_top {border-bottom:1px solid #e1e1e1;}
+.mypage_2021 .course_top .btn_open_list {background-color:#4e42ca;}
+.mypage_2021 .course_top .tit_course_m.open + ul {display:block; width:17rem; letter-spacing:-1px;text-align:left; z-index:1001}
+
+.mypage_2021 .mypage_head {position:relative;}
+.mypage_2021 [class*="latest_"], .mypage_2021 .mystatus_bottom {max-width:1280px; position:relative; margin:0 auto 2rem; }
+.mypage_2021 [class*="latest_"] h3 {font-size:2rem; font-weight:bold; padding-top:3rem;  padding-bottom:2.5rem}
+.mypage_2021 .latest_contents .btn_more {position:absolute; right:0; bottom:1rem; font-size:1.6rem; font-weight:500; color:#000; }
+.mypage_2021 .latest_contents .btn_more:after {display:inline-block; content:""; width:16px; height:16px; background:url('../images/common/icon_more.png') 0 50% no-repeat; background-size:contain; vertical-align:top; margin:0px 0 0 7px}
+.mypage_2021 .latest_contents .tab_sub {border-bottom:1px solid #e1e1e1;  display:flex; justify-content:center; margin-top:1.5rem;}
+.mypage_2021 .latest_contents .tab_sub li {position:relative; min-width:12rem; margin:0 3rem}
+.mypage_2021 .latest_contents .tab_sub li a {display:block; font-size:1.6rem; padding-bottom:1.4rem; line-height:2rem; position:relative; text-align:center}
+.mypage_2021 .latest_contents .tab_sub li a em {font-size:1.4rem; margin-left:5px}
+.mypage_2021 .latest_contents .tab_sub li.active a {font-weight:bold}
+.mypage_2021 .latest_contents .tab_sub li.active a em {color:#4e42ca;}
+.mypage_2021 .latest_contents .tab_sub li a br {display:none}
+.mypage_2021 .latest_contents .tab_sub li.active a:after {content:""; display:block; position:absolute; bottom:-1px; left:0; width:100%; height:2px; background:#4e42ca}
+.mypage_2021 .latest_contents .btn_more_mo {display:none; width:120px; height:36px; border-radius:18px; background-color:#4e42ca; margin:1rem auto 0; text-align:center; padding-top:10px}
+.mypage_2021 .latest_contents .btn_more_mo span {color:#fff; font-size:1.6rem; font-weight:500}
+.mypage_2021 .latest_contents .btn_more_mo span:after {display:inline-block; content:""; width:16px; height:16px; background:url('../images/common/icon_more_w.png') 0 0 no-repeat; background-size:contain; vertical-align:top; margin-left:5px }
+
+.mypage_2021 .list_result {padding:3.2rem 0 0 0}
+.mypage_2021 .list_result .list_con {margin:0 0 0 0}
+.mypage_2021 .list_result .list_con .cnt_item {transition:none; padding-bottom:1.5rem}
+.mypage_2021 .list_result .list_con .cnt_item .btm_info {padding:2.5rem 0 0; font-size:1.4rem; text-align:left}
+.mypage_2021 .list_result .list_con .cnt_item .btm_info .grd {display:block; color:#9a9a9a; height:1.8rem; margin-bottom:1.5rem; white-space:nowrap; overflow:hidden; max-width:99%;text-overflow:ellipsis; font-size:1.4rem}
+.mypage_2021 .list_result .list_con .cnt_item .btm_info .grd strong {color:#4e42ca;}
+.mypage_2021 .list_result .list_con .cnt_item .btm_info .grd strong:after {content:"|"; display:inline-block; color:#e1e1e1; font-weight:normal; font-size:1.3rem; padding:0 0.6rem 0 0.8rem; vertical-align:top}
+.mypage_2021 .list_result .list_con .cnt_item .btm_info .subj {display:-webkit-box; height:4.2rem; overflow:hidden; font-size:1.6rem; line-height:2rem; max-width:90%; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; font-weight:500}
+.mypage_2021 .list_result .list_con .cnt_item a:hover .btm_info subj {text-decoration:underline}
+.mypage_2021 .list_result .list_con .cnt_item:hover { transform:unset;  transition:unset; top:unset; left:unset; box-shadow:unset; z-index:1}
+.mypage_2021 .list_result .list_con .cnt_item:hover .box_snip .thumbnail img,
+.mypage_2021 .list_result .list_con .cnt_item:hover .box_snip .thumbnail video {border-bottom-left-radius:10px;border-bottom-right-radius:10px} 
+.mypage_2021 .box_snip mark.stk {width:40px; height:40px}
+.mypage_2021 .list_result.recom_list .list_con .cnt_item .bottom {position:relative; height:5rem; width:99%; font-size:1.6rem; font-weight:bold; word-wrap:break-word; text-overflow:ellipsis; white-space: nowrap; overflow:hidden; padding:1.5rem 0 0 0}
+
+.mypage_2021 .list_result .latest_list {display:none}
+.mypage_2021 .list_result .latest_list.on {display:block}/* 탭클릭시*/
+
+.mypage_2021 .noti_nocnt {text-align:center; padding:2.4vw 0 3vw}
+.mypage_2021 .noti_nocnt p:before {display:inline-block; content:""; width:54px; height:54px; background:url('../images/contents/img_warning.png') 0 0 no-repeat; background-size:contain; vertical-align:middle; margin-right:1rem}
+.mypage_2021 .noti_nocnt p strong {font-size:2rem; color:#4e42ca; font-weight:bold; vertical-align:middle}
+
+/*평가결과 & 그래프*/
+.mypage_2021 .resultArea .mark_avg {display:flex;justify-content:flex-start; padding-top:0rem}
+.mypage_2021 .resultArea .mark_avg mark { background:none; font-size:1.4rem; margin-right:2rem}
+.mypage_2021 .resultArea .mark_avg mark:before {display:inline-block; content:""; border-radius:50%; width:12px; height:12px; font-size:0; margin-right:4px}
+.mypage_2021 .resultArea .mark_avg .score1:before {background-color:#3c8dc8}
+.mypage_2021 .resultArea .mark_avg .score2:before {background-color:#124e94}
+.mypage_2021 .resultArea .mark_avg .score3:before {background-color:#4e42ca}
+.mypage_2021 .resultArea .mark_avg .score4:before {background-color:#69c7b6}
+
+.mypage_2021 .resultArea .graph {position:relative; margin-top:4rem}
+.mypage_2021 .resultArea .graph .chart_view {width:100%; height:170px; z-index:1; background:url('../images/mypage/bg_graph.gif') 0 0 repeat-x}
+.mypage_2021 .resultArea .graph ul {display:flex; width:calc(100% - 30px); justify-content:space-evenly; margin-left:30px; position:relative}
+.mypage_2021 .resultArea .graph li {height:100%; position:relative; text-align:center}
+.mypage_2021 .resultArea .graph li .top_bub {
+	position:absolute;left:0; top:20%; z-index:100; box-sizing: border-box; width:76px; height:74px;
+	background: url('../images/mypage/img_oval.png') 0 0 no-repeat; background-size:contain; padding-top:17px;
+    text-align:center; font-size:1.4rem; margin: 0 0 4px -92%; color:#fff; line-height:130%;
+}
+
+.mypage_2021 .resultArea .graph li > div {width:36px; height:140px; position:relative; margin:0 auto}
+.mypage_2021 .resultArea .graph li > div span[class^="bar_"] {display:inline-block; position:absolute; width:12px; height:65%; z-index:1;}
+.mypage_2021 .resultArea .graph li .bar_mine {background:#3c8dc8; bottom:0px; left:0;}
+.mypage_2021 .resultArea .graph li [class^="bar_avg"] { bottom:0px; left:24px;}
+.mypage_2021 .resultArea .graph li .bar_avg1 {background:#124e94}
+.mypage_2021 .resultArea .graph li .bar_avg2 {background:#8b6fc9}
+.mypage_2021 .resultArea .graph li .bar_avg3 {background:#569fab}
+.mypage_2021 .resultArea .graph li .btm_txt { margin-top:1.5rem;}
+.mypage_2021 .resultArea .graph li .btm_txt strong {font-size:1.4rem; font-weight:normal}
+.mypage_2021 .resultArea .graph .y_axis {width:30px; height:101%; background:#fff; color:#666; line-height:28px; font-size:1.4rem; position:absolute; left:0; top:-14px; z-index:100; text-align:right; padding-right:5px}
+.mypage_2021 .resultArea .graph:not(.type1)  .chart_view {height:190px}
+.mypage_2021 .resultArea .graph:not(.type1) li .btm_txt strong {font-size:1.6rem; font-weight:normal}
+.mypage_2021 .resultArea .graph:not(.type1) li .btm_txt span {display:block; color:#9a9a9a; margin-top:1.3rem}
+.mypage_2021 .resultArea .graph:not(.type1) li .btm_txt span em {font-weight:bold}
+.mypage_2021 .resultArea .graph.type2 li > div {width:90px}
+.mypage_2021 .resultArea .graph.type2 li > div span[class^="bar_"] {width:40px}
+.mypage_2021 .resultArea .graph.type2 li [class^="bar_avg"] { bottom:0px; left:50px;}
+
+.mypage_2021 .resultArea .graph.type3 li > div,
+.mypage_2021 .resultArea .graph.type4 li > div {width:110px}
+.mypage_2021 .resultArea .graph.type3 li > div span[class^="bar_"],
+.mypage_2021 .resultArea .graph.type4 li > div span[class^="bar_"] {width:20px}
+.mypage_2021 .resultArea .graph.type3 li .bar_avg1,
+.mypage_2021 .resultArea .graph.type4 li .bar_avg1 {left:30px;}
+.mypage_2021 .resultArea .graph.type3 li .bar_avg2,
+.mypage_2021 .resultArea .graph.type4 li .bar_avg2 {left:60px;}
+.mypage_2021 .resultArea .graph.type3 li .bar_avg3,
+.mypage_2021 .resultArea .graph.type4 li .bar_avg3 {left:90px;}
+.mypage_2021 .resultArea .graph.type3 li .btm_txt strong,
+.mypage_2021 .resultArea .graph.type4 li .btm_txt strong {font-size:1.6rem; font-weight:normal}
+
+/*서브메인*/
+.mypage_2021 .latest_achvmt .inner_wrap {border:1px solid #e1e1e1; border-radius:10px; padding:4rem 4.5rem;}
+.mypage_2021 .latest_achvmt .swiper-container {position:relative}
+.mypage_2021 .latest_achvmt h4 {font-size:1.6rem; padding-bottom:1.6rem}
+.mypage_2021 .latest_achvmt h4.tit_test  {font-size:1.6rem; padding-bottom:1.6rem}
+.mypage_2021 .latest_achvmt .slider_wrap {display:flex; justify-content:space-between;}
+.mypage_2021 .latest_achvmt .resultArea {max-width:560px; width:46%}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg {display:flex;justify-content:flex-start; padding-top:1rem}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg mark { background:none; font-size:1.4rem; margin-right:2rem}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg mark:before {display:inline-block; content:""; border-radius:50%; width:12px; height:12px; font-size:0; margin-right:4px}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg .score1:before {background-color:#3c8dc8}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg .score2:before {background-color:#124e94}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg .score3:before {background-color:#4e42ca}
+.mypage_2021 .latest_achvmt .resultArea .mark_avg .score4:before {background-color:#69c7b6}
+
+.mypage_2021 .latest_achvmt .status {max-width:560px; width:46.6%; padding-top:5rem}
+.mypage_2021 .latest_achvmt .status li:first-child {font-size:1.6rem; margin-bottom:2rem}
+.mypage_2021 .latest_achvmt .status li:first-child strong {color:#4e42ca; margin-left:1rem}
+.mypage_2021 .latest_achvmt .status .myscore {border:2px solid #4e42ca; border-radius:10px; display:flex; justify-content:space-around; padding:3rem 0 3rem 0; white-space:nowrap}
+.mypage_2021 .latest_achvmt .status .myscore p {display:flex; justify-content:space-between; max-width:220px; padding-top:0.5rem}
+.mypage_2021 .latest_achvmt .status .myscore .btm .btn_exec {padding-top:0}
+.mypage_2021 .latest_achvmt .status .myscore em {font-size:2rem;}
+.mypage_2021 .latest_achvmt .status .myscore em:before {display:inline-block; content:""; width:36px ; height:39px; background:url('../images/contents/icon_test.png') 0 0 no-repeat; background-size:contain; vertical-align:middle; margin-right:1.5rem}
+.mypage_2021 .latest_achvmt .status .myscore strong {font-size:3.2rem; font-weight:bold; color:#4e42ca; margin-left:1.5rem; line-height:100%}
+.mypage_2021 .latest_achvmt .status .myscore span {font-size:1.6rem; margin-left:0.5rem; line-height:250%}
+.mypage_2021 .latest_achvmt .status .btn {display:flex; justify-content:space-between; margin-top:2rem}
+.mypage_2021 .latest_achvmt .status [class*="btn_achv_"] {max-width:270px; width:calc(50% - 10px); height:40px; border-radius:10px; text-align:center; padding-top:10px; font-size:1.4rem; font-weight:bold; }
+.mypage_2021 .latest_achvmt .status .btn_achv_detail {border:2px solid #333;}
+.mypage_2021 .latest_achvmt .status .btn_achv_list {border:2px solid #333; background:#333; color:#fff}
+
+.mypage_2021 .latest_achvmt .swiper-pagination {display:none; position:relative; padding-bottom:10px; margin-top:2rem}
+.mypage_2021 .latest_achvmt .swiper-pagination-bullet {width:12px; height:12px; background:#9a9a9a;}
+.mypage_2021 .latest_achvmt .swiper-pagination-bullet-active {background:#4e42ca;}
+.mypage_2021 .latest_achvmt  [class*="swiper-button"] {display:none; width:9px; height:16px;}
+.mypage_2021 .latest_achvmt .swiper-button-prev {background:url('../images/contents/icon_sl_prev.gif'); left:10px; right:auto; background-size:contain}
+.mypage_2021 .latest_achvmt .swiper-button-next {background:url('../images/contents/icon_sl_next.gif'); right:10px; left:auto; background-size:contain}
+
+.mypage_2021 .latest_achvmt.nodata .resultArea {overflow:hidden}
+.mypage_2021 .latest_achvmt.nodata .resultArea > h4 {text-align:center}
+.mypage_2021 .latest_achvmt.nodata .resultArea:after {content:""; display:block; position:absolute; left:0; top:3rem; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000}
+.mypage_2021 .latest_achvmt.nodata .status {height:100%; border:2px solid #4e42ca; padding:5rem 0; border-radius:10px; margin-top:3rem}
+.mypage_2021 .latest_achvmt.nodata .status p {font-size:1.6rem; line-height:150%; text-align:center}
+.mypage_2021 .latest_achvmt.nodata .status .btm {display:block; margin:3rem auto 0; width:270px; text-align:center}
+.mypage_2021 .latest_achvmt.nodata .status .btm .btn_exec_black {display:inline-block; height:40px; width:100%; line-height:40px; background-color:#333; border-radius:10px; color:#fff;; font-size:1.4rem; text-align:center; margin:0 auto}
+
+.mypage_2021 .latest_achvmt .resultArea .counting { position:absolute; left:0; top:3rem; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000}
+.mypage_2021 .latest_achvmt .resultArea .counting p {color: #fff; text-align:center; font-size:1.4rem; line-height:150%}
+.mypage_2021 .latest_achvmt .resultArea .counting p span {display: inline-block; margin-top:70px; color: #fff; background: url('../images/mypage/icon_noti.png') 50% 0 no-repeat; padding-top:47px}
+
+/*매일10분수학*/
+.mypage_2021 .everyday_10m .inner_wrap {padding:4rem 4.5rem 2rem; display:flex; justify-content:space-between;}
+.mypage_2021 .everyday_10m .evr10_list {width:64%;}
+.mypage_2021 .everyday_10m .evr10_list .swiper-container {position:relative}
+.mypage_2021 .everyday_10m .evr10_list .chart_10m { display:flex; justify-content:space-between; }
+.mypage_2021 .everyday_10m .evr10_list .chart_10m > li {width:calc(91.6% / 2); }
+.mypage_2021 .everyday_10m .evr10_list .chart_10m .ticks {z-index:100; height:190px; width:25px; background:#fff; position:absolute; top:-8px; left:10px; text-align:right; font-size:1.4rem; line-height:29px; padding-right:5px; white-space:nowrap}
+.mypage_2021 .everyday_10m .evr10_list .chart_10m .chart_cnt {position:relative}
+.mypage_2021 .everyday_10m .evr10_list .chart_10m .chart_cnt .canvas {background:transparent;position:relative; z-index:10; left:0; top:0;}
+.mypage_2021 .everyday_10m h4 {margin-top:1.2rem; text-align:center; font-size:1.4rem;}
+.mypage_2021 .everyday_10m .evr10_list .chart_area1 + h4 {margin-top:0px}
+.mypage_2021 .everyday_10m .my_info {width:30%}
+.mypage_2021 .everyday_10m .chart_area2 ul {border:2px solid  #4e42ca; border-radius:10px; height:162px; padding:18px 0}
+.mypage_2021 .everyday_10m .chart_area2 li {width:80%; margin:0 auto; display:flex; margin-bottom:17px}
+.mypage_2021 .everyday_10m .chart_area2 ul li strong {width:22.8%; line-height:30px; font-size:1.4rem; font-weight:normal}
+.mypage_2021 .everyday_10m .chart_area2 ul li span {border:1px solid #4e42ca; border-radius:10px; width:77.2%; height:30px; font-size:1.2rem; font-weight:bold; text-align:center; color:#4e42ca; line-height:25px; overflow:hidden; position:relative}
+.mypage_2021 .everyday_10m .chart_area2 ul li span mark {display:block; position:absolute; left:0; top:0; height:30px; background-color:rgba(78, 66, 202, 0.2);  border-radius:10px;}
+.mypage_2021 .everyday_10m .chart_area3 {height:162px; border:2px solid #4e42ca; border-radius:10px; background-color: rgba(78, 66, 202, 0.15); padding:3rem 0; text-align:center}
+.mypage_2021 .everyday_10m .chart_area3 dl {display:flex; justify-content:center; margin-bottom:2rem}
+.mypage_2021 .everyday_10m .chart_area3 dt mark {display:inline-block; background:#fff; border-radius:16px; border:1px solid #333; width:80px; height:32px; text-align:center; line-height:170%; font-size:1.6rem; font-weight:bold;} 
+.mypage_2021 .everyday_10m .chart_area3 dd {text-align:left; font-size:1.4rem; margin-left:2rem}
+.mypage_2021 .everyday_10m .chart_area3 dd span,
+.mypage_2021 .everyday_10m .chart_area3 dd strong {display:block;}
+.mypage_2021 .everyday_10m .chart_area3 dd strong {margin-bottom:5px}
+.mypage_2021 .everyday_10m .chart_area3 .myscore {display:flex; justify-content:center; white-space:nowrap; width:}
+.mypage_2021 .everyday_10m .chart_area3 .myscore p {display:flex; justify-content:space-between; max-width:220px; padding-top:1rem}
+.mypage_2021 .everyday_10m .chart_area3 .myscore .btm .btn_exec {padding-top:0}
+.mypage_2021 .everyday_10m .chart_area3 .myscore em {font-size:1.6rem;}
+.mypage_2021 .everyday_10m .chart_area3 .myscore em:before {display:inline-block; content:""; width:18px; height:19px; background:url('../images/contents/icon_test_s.png') 0 0 no-repeat; background-size:contain; margin:0rem 0.5rem 0 0; vertical-align:middle}
+.mypage_2021 .everyday_10m .chart_area3 .myscore strong {font-size:2.2rem; font-weight:bold; color:#4e42ca; margin-left:1rem}
+.mypage_2021 .everyday_10m .chart_area3 .myscore span {font-size:1.6rem; margin-left:0.5rem}
+.mypage_2021 .everyday_10m .chart_area3 .myscore .btm {margin-left:2rem}
+.mypage_2021 .everyday_10m .chart_area3 .myscore .btm .btn_exec {width:92px; line-height:40px; padding:0; min-width:auto}
+
+.mypage_2021 .everyday_10m .swiper-pagination {display:none}
+.mypage_2021 .everyday_10m  [class*="swiper-button"] {display:none}
+.mypage_2021 .everyday_10m.nodata .inner_wrap {justify-content:center}
+.mypage_2021 .everyday_10m.nodata .noti {width:100%; text-align:center; padding-bottom:3rem}
+.mypage_2021 .everyday_10m.nodata .noti h4 {font-size:1.6rem; font-weight:bold}
+.mypage_2021 .everyday_10m.nodata .noti p {font-size:1.4rem; margin-top:2.4rem; margin-bottom:5rem; line-height:150%}
+.mypage_2021 .everyday_10m.nodata .noti .btm a {padding-left:2.8rem;padding-right:2.8rem;}
+
+.mypage_2021 .mystatus_bottom {display:flex; justify-content:space-evenly; padding-top:2rem}
+.mypage_2021 .mystatus_bottom span {width:50%; position:relative}
+.mypage_2021 .mystatus_bottom span a {display:block; width:100%; height:100%; text-align:center; font-size:20px; font-weight:bold}
+.mypage_2021 .mystatus_bottom span a:before {display:inline-block; content:""; background-position:0 0; background-repeat:no-repeat; vertical-align:middle; margin-right:4rem}
+.mypage_2021 .mystatus_bottom .link01:after {display:block; content:""; position:absolute; right:0; top:0; background-color:#979797; width:1px; height:60px; }
+.mypage_2021 .mystatus_bottom .link01 a:before {width:62px; height:63px; background-image:url('../images/contents/icon_sidelink_n01.png'); background-size:contain;}
+.mypage_2021 .mystatus_bottom .link02 a:before {width:60px; height:57px; background-image:url('../images/contents/icon_sidelink_n02.png'); background-size:contain;}
+
+.mypage_2021 .every10m_sub .head_wrap {background-color: rgba(24, 103, 254, 0.03); padding:3.2rem 0 3.2rem}
+.mypage_2021 .every10m_sub .head_wrap h3{max-width:1280px; margin:0 auto; font-size:2rem; font-weight:bold}
+.mypage_2021 .every10m_sub .content_wrap {max-width:1280px; margin:0 auto; padding:3rem 0 0 0}
+.mypage_2021 .every10m_sub .content_wrap h4 {font-size:2rem; font-weight:bold; text-align:left; margin-top:0}
+.mypage_2021 .every10m_sub .content_wrap h4.sub_tit {font-size:1.6rem; margin-bottom:1.5rem}
+.mypage_2021 .every10m_sub .content_wrap div.sub_tit {position:relative; margin-bottom:2rem}
+.mypage_2021 .every10m_sub .content_wrap .btn_set_subs {position:absolute; top:0; right:0; display:block; line-height:30px }
+.mypage_2021 .every10m_sub .chart_area1 {margin-bottom:-2rem}
+.mypage_2021 .every10m_sub h5 {margin-top:1.5rem; text-align:center; font-size:1.4rem;}
+
+.mypage_2021 .every10m_sub .subs_option {border:1px solid #e1e1e1; padding:3rem 3rem 2rem; margin-top:3rem; border-radius:10px}
+.mypage_2021 .every10m_sub .subs_option dl {margin-bottom:1rem; position:relative}
+.mypage_2021 .every10m_sub .subs_option dl:after{clear:both; content:""; display:block}
+.mypage_2021 .every10m_sub .subs_option dt {float:left; width:105px; font-size:1.4rem; font-weight:bold; margin-top:0.3rem}
+.mypage_2021 .every10m_sub .subs_option dd {float:left; width:calc(100% - 105px); }
+.mypage_2021 .every10m_sub .subs_option dd ul {display:flex; justify-content:flex-start; flex-wrap:wrap }
+.mypage_2021 .every10m_sub .subs_option dd li {width:190px; font-size:1.4rem; margin-bottom:2.5rem}
+.mypage_2021 .every10m_sub .subs_option dd li:last-child {width:auto}
+.mypage_2021 .every10m_sub .subs_option dd li input {vertical-align:middle}
+.mypage_2021 .every10m_sub .subs_option dd li input +label {margin-left:2px}
+.mypage_2021 .every10m_sub .subs_option dd li input:checked +label { font-weight:500}
+.mypage_2021 .every10m_sub .subs_option dl.opt2 dd {width:190px; position:relative}
+.mypage_2021 .every10m_sub .subs_option dl.opt2 dd:last-child {width:100px;}
+
+.mypage_2021 .every10m_sub .subs_option .btn_apply {height:26px; background:#4e42ca; border-radius:4px; padding:2px 8px 3px; color:#fff; font-size:1.4rem; font-weight:400}
+.mypage_2021 .every10m_sub .subs_option + ul {margin-top:1.5rem}
+.mypage_2021 .every10m_sub .subs_option + ul li {color:#000; margin-bottom:5px; font-size:1.4rem; line-height:150%; text-indent:-1.2rem; padding-left:1.4rem}
+.mypage_2021 .every10m_sub .btn_bottom {text-align:center; margin-top:3rem}
+.mypage_2021 .every10m_sub .btn_bottom .btn_cancel {border-radius:4px; border:1px solid #4e42ca; background-color: rgba(78, 66, 202, 0.15); height:32px; font-size:1.4rem; font-weight:500}
+.mypage_2021 .every10m_sub .btn_bottom .btn_save {border-radius:4px; background-color:#4e42ca; width:76px; height:32px;  color:#fff; font-size:1.4rem; font-weight:400; margin-left:1rem}
+.mypage_2021 .every10m_sub .subs_option .btn_note {display:inline-block; width:12px; height:12px; background:url(../images/contents/icon_noti.png) 0 0 no-repeat; background-size:contain; text-indent:-9999px; margin:2px 0 0 5px; vertical-align:top}
+.mypage_2021 .every10m_sub .subs_option .layer_note {display:none; position:absolute; left:9rem; top:0; width:300px; min-height:120px; padding:3.5rem 0 2rem; border-radius:4px; box-shadow: 0 8px 7px 0 rgba(154, 154, 154, 0.15); border: solid 1px #9a92e9; background-color: #f0effb; z-index:100;}
+.mypage_2021 .every10m_sub .subs_option .layer_note .inner {width:220px; margin:0 auto; font-size:1.4rem}
+.mypage_2021 .every10m_sub .subs_option .layer_note .inner p {line-height:150%; margin-bottom:1.5rem}
+.mypage_2021 .every10m_sub .subs_option .layer_note .btn_pop_close {display:block; position:absolute; top:16px; right:16px; width:12px; height:12px; background: url('../images/layout/icon_x.png') 0 0 no-repeat; background-size:contain; cursor:pointer;}
+.mypage_2021 .every10m_sub .subs_option .opt2 .layer_note {top:3rem; left:-10.5rem}
+
+.mypage_2021 .every10m_sub .info_quiz {display:flex; justify-content:space-between; margin-bottom:2rem}
+.mypage_2021 .every10m_sub .info_quiz .inform1 {display:flex;}
+.mypage_2021 .every10m_sub .info_quiz .inform1 p {padding-top:5px}
+.mypage_2021 .every10m_sub .info_quiz .inform1 .grade {display:inline-block; width:70px; height:30px; background-color:#69c7b6; border-radius:16px; line-height:30px; text-align:center; font-size:1.6rem; color:#fff; margin-right:1.5rem}
+.mypage_2021 .every10m_sub .info_quiz .inform1 .course {display:inline-block; font-size:1.4rem; }
+.mypage_2021 .every10m_sub .info_quiz .inform1 .course:after {content:"|"; display:inline-block; font-size:1.2rem; margin:0px 5px 0 7px; vertical-align:top; color:#979797}
+.mypage_2021 .every10m_sub .info_quiz .inform1 .subj {display:inline-block; font-size:1.6rem; font-weight:bold}
+.mypage_2021 .every10m_sub .info_quiz .inform2 { width:52px; white-space:nowrap;  font-size:1.6rem; padding-top:1.5rem}
+.mypage_2021 .every10m_sub .info_quiz .inform2 strong {color:#69c7b6}
+.mypage_2021 .every10m_sub .quiz_con {border-radius:10px;  border:1px solid #e1e1e1; padding:3rem}
+.mypage_2021 .every10m_sub .btn {text-align:center; margin-top:4rem}
+.mypage_2021 .every10m_sub .btn .btn_quiz {display:inline-block; border-radius:4px; border:1px solid #69c7b6; background-color:#69c7b6; padding:10px 0 10px; min-width:110px; text-align:center; font-size:1.6rem; color:#fff}
+.mypage_2021 .every10m_sub .btn .btn_list {display:inline-block; border-radius:4px;  border:1px solid #69c7b6; background-color:rgba(105, 199, 182, 0.15); padding:10px 0 10px; min-width:110px; text-align:center; font-size:1.6rem; font-weight:bold}
+.mypage_2021 .every10m_sub .btn a {margin-left:5px; margin-right:5px}
+.mypage_2021 .every10m_sub .quiz_con .pyeongga_con {padding-top:0; padding-bottom:0} /* 2022-01-10 10분수학 문제 여백제거 */
+
+.mypage_2021 .recom_list  h4 {margin-bottom:2.5rem}
+.mypage_2021 .recom_list .list_con .cnt_item {display:none; padding-bottom:2rem}
+.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+4) {display:block;}
+.mypage_2021 .recom_list .list_con + p {border-top:1px solid #e1e1e1} 
+.mypage_2021 .recom_list.open .list_con .cnt_item:not(:nth-child(-n+4)){display:block} /*더보기 클릭시 */
+.mypage_2021 .recom_list .btn_more_con {position:relative; bottom:20px; left:50%; transform:translateX(-50%); z-index:1001; text-align:center; font-size:1.2rem; }
+.mypage_2021 .recom_list .btn_more_con span {display:block; position:relative; width:40px; height:40px; box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.1); background-color:#fff; border:1px solid #4e42ca;  border-radius:50%;  text-indent:-9999px; margin:0 auto 1rem}
+.mypage_2021 .recom_list .btn_more_con span:before {content:""; display:block; position:absolute; left:calc(50% - 5px); top:calc(50% - 3px); transform:rotate(-135deg); width:8px; height:8px; border-top:2px solid #4e42ca; border-left:2px solid #4e42ca; margin:-5px 10px 0 0}
+.mypage_2021 .recom_list .btn_more_con.on span:before {transform:rotate(45deg); top:calc(50% + 2px); }
+.mypage_2021 .recom_list .btn_more_con em { width:10rem}
+.mypage_2021 .recom_list .btn_more_con .more {display:block}
+.mypage_2021 .recom_list .btn_more_con .fold {display:none}
+.mypage_2021 .recom_list .btn_more_con.on .more{display:none}
+.mypage_2021 .recom_list .btn_more_con.on .fold{display:block}
+
+.mypage_2021 .noti_noquiz {text-align:center; padding:2.4vw 0 3vw}
+.mypage_2021 .noti_noquiz p:first-child:before {display:inline-block; content:""; width:54px; height:54px; background:url(../images/contents/img_warning.png) 0 0 no-repeat; background-size:contain; vertical-align:middle; margin-right:1rem}
+.mypage_2021 .noti_noquiz p:first-child strong {font-size:2rem; color:#4e42ca; font-weight:bold; vertical-align:middle}
+.mypage_2021 .noti_noquiz p:last-child {font-size:1.4rem; margin-top:4rem; line-height:150%}
+
+.mypage_2021 .my_contents_head {background-color:rgba(24, 103, 254, 0.03); padding:3rem 0}
+.mypage_2021 .my_contents_head h3 {font-size:2rem; font-weight:bold}
+.mypage_2021 .my_contents_head h3 + p {font-size:1.6rem; line-height:150%; padding-top:2.5rem}
+.mypage_2021 .my_contents_head .btn_srch_dt {display:none}
+.mypage_2021 .my_contents_head .wrap,
+.mypage_2021 .my_contents_mid .wrap {max-width:1280px; margin:0 auto; ; position:relative}
+.mypage_2021 .my_contents_mid {padding-top:2rem}
+.mypage_2021 .my_contents_head .search_option {margin-top:2.4rem}
+.mypage_2021 .my_contents_head .search_option.open {display:block}
+.mypage_2021 .my_contents_head .search_option:after {clear:both; display:block; content:""}
+.mypage_2021 .my_contents_head .search_option dl {width:100%; display:flex}
+.mypage_2021 .my_contents_head .search_option dt {width:65px; font-size:1.6rem; font-weight:bold; padding-top:7px}
+.mypage_2021 .my_contents_head .search_option .opt1 {float:left; width:25%;}
+.mypage_2021 .my_contents_head .search_option .opt2 {float:left; width:calc(46% - 3rem); margin-left:3rem}
+.mypage_2021 .my_contents_head .search_option .opt3 {float:left; width:29%; justify-content:flex-end; flex-wrap:nowrap}
+.mypage_2021 .my_contents_head .search_option .opt1 dd {width:75%}
+.mypage_2021 .my_contents_head .search_option .opt2 dd {width:88.3%}
+.mypage_2021 .my_contents_head .search_option .opt3 dd {width:75%}
+.mypage_2021 .my_contents_head .search_option .opt1 select {width:100%}
+.mypage_2021 .my_contents_head .search_option .opt2 select {width:calc(50% - 10px); margin-right:5px}
+.mypage_2021 .my_contents_head .search_option input[type="text"] {border:1px solid #e1e1e1; border-radius:3px; width:calc(100% - 80px); height:30px; padding:0 10px; line-height:28px; margin-right:0.5rem}
+
+.mypage_2021 .my_contents_mid .tab_quiry {border-bottom:1px solid #e1e1e1;  display:flex; justify-content:center; margin-top:1.5rem;}
+.mypage_2021 .my_contents_mid .tab_quiry li {position:relative; margin:0 1.5rem}
+.mypage_2021 .my_contents_mid .tab_quiry li a {display:block; font-size:1.6rem; position:relative; text-align:center; padding:0 0.2rem 1.4rem;}
+.mypage_2021 .my_contents_mid .tab_quiry li.active a {font-weight:bold}
+.mypage_2021 .my_contents_mid .tab_quiry li.active a:after {content:""; display:block; position:absolute; bottom:-1px; left:0; width:100%; height:2px; background:#4e42ca}
+
+.mypage_2021 .sort_head { position:relative;}
+.mypage_2021 .sort_head .result_num {display:flex}
+.mypage_2021 .sort_head .result_num .select_wrap select {padding-top:3px; padding-bottom:3px; margin-right:0.5rem}
+.mypage_2021 .sort_head .cmt_result {color:#000; font-weight:400; font-size:1.4rem; vertical-align:top; line-height:2.8rem; margin-right:1.6rem}
+.mypage_2021 .sort_head .cmt_result strong {font-weight:500}
+.mypage_2021 .sort_head .exc_quiz {font-weight:500; margin:0 1.6rem 0 0; font-size:1.4rem; line-height:2.8rem; white-space:nowrap}
+.mypage_2021 .sort_head .exc_quiz label {vertical-align:top}
+.mypage_2021 .sort_head .exc_quiz .icheckbox {display:inline-block; width:45px; height:20px; background:url('../images/common/icon_togl_off.png') 50% 50% no-repeat; background-size:contain; text-indent:-9999px; cursor:pointer; margin:0.5rem 0 0 5px; vertical-align:top; border:0}
+.mypage_2021 .sort_head .exc_quiz .icheckbox:checked {background:url('../images/common/icon_togl_on.png') 50% 50% no-repeat;background-size:contain; }
+.mypage_2021 .sort_head .btn {float:right; margin-top:-2.5rem}
+.mypage_2021 .sort_head .btn button{margin-left:0.5rem}
+/*오답노트*/
+.mypage_2021 .my_note {background-color: rgba(78, 66, 202, 0.05); margin-top:4rem; margin-bottom:-7rem; padding-bottom:5rem; display:none}
+.mypage_2021 .my_note.open {display:block}
+.mypage_2021 .my_note .wrap {max-width:1280px; margin:0 auto; padding:4rem 0 2rem;}
+.mypage_2021 .my_note .note_func {display:flex; justify-content:space-between; margin-top:3rem}
+.mypage_2021 .my_note .note_func .selnum {display:inline-block;font-size:1.4rem;padding-top:1rem}
+.mypage_2021 .my_note .note_func .selnum strong {color:#4e42ca; }
+.mypage_2021 .my_note .note_func li {display:inline-block; margin-left:1rem}
+.mypage_2021 .my_note .note_func li[class^="btn_fnc"] button {width:22px; height:22px; background-position:0 0; background-size:contain; background-repeat:no-repeat}
+.mypage_2021 .my_note .note_func li.btn_fnc1 button {background-image:url('../images/contents/icon_myq_up_e.png')}
+.mypage_2021 .my_note .note_func li.btn_fnc2 button {background-image:url('../images/contents/icon_myq_up.png')}
+.mypage_2021 .my_note .note_func li.btn_fnc3 button {background-image:url('../images/contents/icon_myq_dn.png')}
+.mypage_2021 .my_note .note_func li.btn_fnc4 button {background-image:url('../images/contents/icon_myq_dn_e.png')}
+.mypage_2021 .my_note .note_main {width:100%; background:#fff; margin-top:2rem; height:368px; overflow:auto}
+.mypage_2021 .my_note .note_main table {table-layout:fixed;}
+.mypage_2021 .my_note .note_main tr {cursor:pointer}
+.mypage_2021 .my_note .note_main td {border-left:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-size:1.6rem; padding:1.7rem 0; text-align:center}
+.mypage_2021 .my_note .note_main td:first-child {border-left:0}
+.mypage_2021 .my_note .note_main td.subj {max-width:99%; text-overflow:ellipsis; white-space: nowrap; overflow:hidden; }
+.mypage_2021 .my_note .note_main td.subj,
+.mypage_2021 .my_note .note_main td.loca {padding-left:3rem; padding-right:3rem; text-align:left; line-height:130%}
+.mypage_2021 .my_note .note_main td.loca {font-size:1.4rem; color:#9a9a9a}
+.mypage_2021 .my_note .note_main td.loca p {white-space:nowrap;display:flex; align-items:center; line-height:120%}
+.mypage_2021 .my_note .note_main td.loca .dep1:after {display:inline-block; content:"|"; font-size:11px; margin:0 7px; vertical-align:top; line-height:120%;}
+.mypage_2021 .my_note .note_main td.loca .dep2 {white-space:normal; vertical-align:middle}
+.mypage_2021 .my_note .note_main tr.on td {background-color:rgba(223, 223, 223, 0.4)}
+.mypage_2021 .my_note .note_main .btn_del {width:22px; height:22px; background:url('../images/contents/icon_myq_del.png') 0 0 no-repeat; background-size:contain; text-indent:-9999px; font-size:0}
+.mypage_2021 .my_note .inp_title {margin-top:2rem}
+.mypage_2021 .my_note .inp_title dl {display:flex;justify-content:space-between }
+.mypage_2021 .my_note .inp_title dt {font-size:1.6rem; font-weight:bold; line-height:3rem}
+.mypage_2021 .my_note .inp_title dd {width:calc(100% - 110px)}
+.mypage_2021 .my_note .inp_title dd input {width:100%; height:32px; border:1px solid #e1e1e1; border-radius:3px; background:#fff; line-height:32px; text-indent:1rem}
+.mypage_2021 .my_note .btn_bottom {text-align:right; margin-top:3rem}
+.mypage_2021 .my_note .btn_bottom .btn_cancel {border-radius:4px; border:1px solid #4e42ca; background-color: rgba(78, 66, 202, 0.15); min-width:76px; height:32px; font-size:1.4rem; font-weight:500}
+.mypage_2021 .my_note .btn_bottom .btn_extr {border-radius:4px; background-color:#4e42ca; width:118px; height:32px;  color:#fff; font-size:1.4rem; font-weight:400; margin-left:1rem}
+
+/* 응시자 정보 */
+.mypage_2021 .test_info {margin:0 auto 20px; display:flex; justify-content:space-between}
+.mypage_2021 .test_info li { font-size:1.4rem}
+.mypage_2021 .test_info li dl {border:1px solid #4e42ca; height:28px; border-radius:4px; overflow:hidden}
+.mypage_2021 .test_info li.infom1 {width:25.5%}
+.mypage_2021 .test_info li.infom2 {width:43%}
+.mypage_2021 .test_info li.infom3 {width:21.4%}
+.mypage_2021 .test_info li dl > * {float:left; display:block; height:100%; line-height:150%;  position:relative}
+.mypage_2021 .test_info li dt {background:#4e42ca; text-align:center; width:50px; line-height:180%; color:#fff;}
+.mypage_2021 .test_info li dd > span {padding-left:10px; display:inline-block; overflow:hidden;max-width:96%;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap;}
+.mypage_2021 .test_info li dd {width:calc(100% - 50px)}
+.mypage_2021 .test_info li.infom2 dd input {border:0; height:calc(100% - 2px); line-height:200%; width:98%; padding-left:1rem}
+.mypage_2021 .test_info li.infom3 dd {width:74px; overflow:hidden}
+.mypage_2021 .test_info li.infom3 dd select {border:0; width:100%; min-width:100%; height:100%; font-weight:normal; padding-bottom:2px}
+.mypage_2021 .test_info + .noti_test {margin-top:20px; color:#8b8a8a; text-align:center;}
+.mypage_2021 .test_info input::-webkit-input-placeholder, .mypage_2021 .test_info textarea::-webkit-input-placeholder {font-weight:normal; color:#333}
+
+
+/*성취도테스트 결과*/
+.mypage_2021 .text_achvmnt .wrap {max-width:1280px; margin:0 auto; padding:6rem 0 0 0}
+.mypage_2021 .text_achvmnt  h4 {font-size:2rem; margin-bottom:4rem; text-align:center; font-weight:bold}
+.mypage_2021 .text_achvmnt .test_info {width:810px; margin:0 auto}
+.mypage_2021 .text_achvmnt .test_info li dl { height:35px; border-radius:4px;}
+.mypage_2021 .text_achvmnt .test_info li dl > * {line-height:180%}
+.mypage_2021 .text_achvmnt .test_info li dt {line-height:220%}
+.mypage_2021 .text_achvmnt .test_info li dd {font-size:1.6rem}
+.mypage_2021 .text_achvmnt .test_area {border: solid 1px #dfdfdf; width:100%; min-height:300px; /*max-height:700px; overflow:auto;*/ margin-top:6rem; padding:2rem}
+.mypage_2021 .text_achvmnt .test_area + .btn_bottom {margin-top:4rem; text-align:center}
+.mypage_2021 .text_achvmnt .test_area + .btn_bottom button {margin:0 5px}
+.mypage_2021 .test_result_wrap {margin-top:6rem; font-size:1.4rem}
+.mypage_2021 .test_result_wrap .my_info {display:flex; justify-content:space-between;}
+.mypage_2021 .test_result_wrap .grading_table {margin-bottom:6rem}
+.mypage_2021 .test_result_wrap .grading_table table {border-top:2px solid #4e42ca; border-bottom:2px solid #9a9a9a; margin-top:2rem; table-layout:fixed}
+.mypage_2021 .test_result_wrap .grading_table th {background-color: rgba(78, 66, 202, 0.05); border:solid 1px #dfdfdf; border-bottom:1px solid #4e42ca; padding:10px 0;}
+.mypage_2021 .test_result_wrap .grading_table td {border:solid 1px #dfdfdf; border-top:0; padding:12px 0; text-align:center}
+.mypage_2021 .test_result_wrap .grading_table td.qs_type {text-align:left; padding-left:1.5rem}
+.mypage_2021 .test_result_wrap h5 {font-size:1.4rem; color:#000; margin-bottom:2rem}
+.mypage_2021 .test_result_wrap .box_graph {border-radius:10px; border: solid 1px #e1e1e1; padding:4rem; margin-bottom:6rem}
+.mypage_2021 .test_result_wrap .resultArea .my_score {display:flex; justify-content:space-between}
+.mypage_2021 .test_result_wrap .box_graph .commentary {border-top:1px solid #e1e1e1; margin:5rem -4rem -4rem; background-color:rgba(78, 66, 202, 0.05); padding:2rem; font-size:1.6rem; line-height:150%; text-align:center; word-break: break-all}
+.mypage_2021 .test_result_wrap .box_graph .commentary p {padding-left:2rem; padding-right:2rem}
+.mypage_2021 .test_result_wrap .box_graph .commentary p + a,
+.mypage_2021 .test_result_wrap .box_graph .commentary p + button {margin-top:2rem}
+.mypage_2021 .test_result_wrap .box_graph .btn_exec {width:270px; line-height:40px; font-size:1.4rem; padding:0}
+.mypage_2021 .test_result_wrap .graph.type3 + .commentary {padding:3rem 0}
+.mypage_2021 .test_result_wrap + .btn_bottom {text-align:center; margin-top:3rem}
+.mypage_2021 .test_result_wrap + .btn_bottom button {margin:0 5px}
+
+.mypage_2021 h4.stit_mod {font-weight:normal; font-size:1.4rem; margin-top:1rem; margin-bottom:2.4rem; line-height:120%}
+.mypage_2021 h4.stit_mod strong {display:inline-block; margin-right:1.6rem; font-size:1.6rem; vertical-align:top}
+
+.mypage_2021 .modify_before {border-radius:10px; border:1px solid #e1e1e1; font-size:1.4rem}
+.mypage_2021 .modify_before dl {width:490px; display:flex; flex-wrap:wrap; margin:0 auto; padding:3rem 0}
+.mypage_2021 .modify_before dt {width:80px; line-height:4rem}
+.mypage_2021 .modify_before dd {width:calc(100% - 80px); margin-bottom:1rem; line-height:4rem}
+.mypage_2021 .modify_before dd input {border:1px solid #e1e1e1; border-radius:5px; height:4rem; width:100%; line-height:4rem; padding:0 1rem}
+.mypage_2021 .modify_before .bottom {background-color: rgba(78, 66, 202, 0.06); padding:4rem; text-align:center; line-height:150%}
+.mypage_2021 .modify_before p {margin-bottom:4rem}
+.mypage_2021 .modify_info {padding-bottom:5rem}
+.mypage_2021 .modify_info h4.stit_mod + button {float:right; margin-top:-4.5rem}
+.mypage_2021 .modify_info table + button {float:right; margin-top:2rem}
+
+/*내문제*/
+.mypage_2021 .myquiz_wrap {max-width:1280px; margin:0 auto; padding-top:1rem}
+.mypage_2021 .myquiz_wrap h4 {margin-bottom:2rem; font-size:1.6rem; font-weight:bold}
+.mypage_2021 .myquiz_wrap h4 mark[class*="tag_quiz"] {display:inline-block; margin-right:0.5rem; font-weight:normal}
+.mypage_2021 .myquiz_wrap .quiz_container {/*display:flex; justify-content:center*/ max-width:763px; margin:0 auto}
+/*오답노트상세*/
+.mypage_2021 .myquiz_wrap.wrongans {max-width:1280px; margin:0 auto; padding-top:1rem}
+.mypage_2021 .myquiz_wrap.wrongans h4 {margin-bottom:2rem; font-size:1.6rem; font-weight:bold}
+.mypage_2021 .myquiz_wrap.wrongans mark[class*="stk"] {display:inline-block; border:unset; width:32px; height:32px; border-radius:unset; background-color:unset; font-size:0;text-indent:-9999px; padding:unset; margin-right:0.5rem; vertical-align:middle; line-height:32px}
+.mypage_2021 .myquiz_wrap.wrongans .pagination {margin-top:4rem}
+
+/*popup : 성취도테스트 신청*/
+.mypage_2021 .pop_test {position:absolute; top:10px; left:50%; width:690px; height:320px; margin:0 -336px; z-index:9999;}
+.mypage_2021 .pop_test .dim {position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:2000}
+.mypage_2021 .pop_test .popcon .btn_pop_close {display: block; position: absolute; top:1.6rem; right:2.4rem; width: 12px;height:12px; background: url(../images/layout/icon_x.png) 0 0 no-repeat; background-size: contain; cursor: pointer;}
+.mypage_2021 .pop_test .popcon {position:relative; width:690px; min-height:330px; padding-bottom:30px; background:#fff; border:1px solid #d7d7d7; border-radius:5px; box-shadow:2px 3px 6px  rgba(0,0,0,0.2); z-index:2100}
+.mypage_2021 .pop_test .popcon.off {z-index:1900}
+.mypage_2021 .pop_test .popcon h3 {font-size:1.8rem; margin:4rem auto 3rem; text-align:center; font-weight:bold}
+.mypage_2021 .pop_test .popcon .container {width:592px; margin:0 auto}
+.mypage_2021 .pop_test .popcon .container .noti {margin:16px 0 32px; color:#000; font-size:1.4rem;  line-height:130%; text-indent:-1.6rem; padding-left:1.2rem}
+.mypage_2021 .pop_test .privacy {border:1px solid #979797;margin:2rem 0 0 0; padding:2rem}
+.mypage_2021 .pop_test .privacy h4 {color:#000; font-weight: normal; font-size:1.4rem;}
+.mypage_2021 .pop_test .privacy h4 span {display:inline-block; width:38px; height:24px; background-color: #4e42ca; border-radius:4px; color:#fff; text-align:center; font-size:1.2rem; line-height:24px; margin-right:10px}
+.mypage_2021 .pop_test .privacy ol {background-color:rgba(78, 66, 202, 0.05);; margin-top:1.5rem; padding:1.2rem 3rem; text-indent:-12px; font-size:1.2rem; color:#333; font-weight:normal}
+.mypage_2021 .pop_test .privacy li {margin-bottom:4px; line-height:150%}
+.mypage_2021 .pop_test .privacy li strong {font-size:1.4rem; font-weight:bold}
+.mypage_2021 .pop_test .privacy ol + p.radio {margin-top:11px; text-align:right; font-size:1.4rem}
+.mypage_2021 .pop_test .privacy ol + p.radio input {margin-left:3rem; margin-right:5px; vertical-align:middle}
+.mypage_2021 .pop_test .bottom {text-align:center}
+
+/*popup : 학교검색*/
+.mypage_2021 .pop_find_school {position:absolute; top:10px; left:50%; width:660px; height:280px; transform:translateX(-50%);  z-index:2100; background:#fff; border:1px solid #989898; border-radius:4px;overflow:hidden; box-shadow:0 8px 7px 0 rgba(0, 0, 0, 0.2);}
+.mypage_2021 .pop_find_school.off {z-index:1900}
+.mypage_2021 .pop_find_school .header {background:#333; padding:0 1rem; position:relative;}
+.mypage_2021 .pop_find_school .header h3 {background:url(../images/layout/logo_math_foot.png) 0 1.2rem no-repeat; color:#fff; font-weight:bold; padding:1.4rem 0 1rem 113px; font-size:1.4rem}
+.mypage_2021 .pop_find_school .header .btn_pop_close {display:block; position:absolute; top:1.6rem; right:2.4rem; width:12px; height:12px; background:url(../images/layout/icon_x_w.png) 0 0 no-repeat; background-size:contain; cursor:pointer;}
+.mypage_2021 .pop_find_school .pop_content {width:592px; margin:0 auto; padding:2rem 0;}
+.mypage_2021 .pop_find_school .pop_content dl {display:flex; justify-content:space-between; font-size:1.4rem;}
+.mypage_2021 .pop_find_school .pop_content dt {width:48px; font-weight:bold; line-height:28px}
+.mypage_2021 .pop_find_school .pop_content dd {width:calc(100% - 48px);display:flex;}
+.mypage_2021 .pop_find_school .pop_content dd input {display:inline-block;width:calc(100% - 64px); border:1px solid #e1e1e1; border-radius:3px; height:28px; margin-right:10px; padding-left:10px;}
+.mypage_2021 .pop_find_school .pop_content dd .btn_btm_exec {width:54px; height:28px; padding:0}
+.mypage_2021 .pop_find_school .result_school {border:1px solid #dfdfdf; height:120px; overflow:auto; border-radius:4px; padding:1rem; margin-top:1rem}
+.mypage_2021 .pop_find_school .result_school li {margin-bottom:1rem}
+.mypage_2021 .pop_find_school .result_school a { display:flex; justify-content:space-between; font-size:1.4rem; color:#9a9a9a; font-weight:normal}
+.mypage_2021 .pop_find_school .result_school a .school {width:30%}
+.mypage_2021 .pop_find_school .result_school a .address {width:70%; text-overflow:ellipsis; white-space: nowrap; overflow:hidden; font-size:1.2rem}
+.mypage_2021 .pop_find_school .result_school .noresult {width:100%; padding:50px 0; text-align:center; font-size:1.4rem}
+.mypage_2021 .pop_find_school .bottom {text-align:right; margin-top:1rem}
+.mypage_2021 .pop_find_school .bottom button,
+.mypage_2021 .pop_confirm .bottom button  {width:54px; height:28px; padding:0; margin-left:0.5rem}
+
+/*popup : 학교검색 확인*/
+.mypage_2021 .pop_confirm {position:absolute; top:10px; left:50%; width:300px; height:188px; transform:translateX(-50%); z-index:9999; border-radius:4px; background:#fff; border:1px solid #989898; overflow:hidden;  box-shadow:0 8px 7px 0 rgba(0, 0, 0, 0.2);}
+.mypage_2021 .pop_confirm .pop_content {font-size:1.4rem; color:#000; line-height:150%; text-align:center; padding:4rem 2rem}
+.mypage_2021 .pop_confirm .bottom {text-align:center; margin-top:2rem}
+
+@media all and (max-width:1300px) {
+	.mypage_2021 .latest_contents,
+	.mypage_2021 .latest_achvmt,
+	.mypage_2021 .mystatus_bottom,
+	.mypage_2021 .my_contents_head .wrap,
+	.mypage_2021 .my_contents_mid .wrap,
+	.mypage_2021 .text_achvmnt .wrap,
+	.mypage_2021 .my_note .wrap {padding-left:4%; padding-right:4%}
+	.mypage_2021 .latest_achvmt .resultArea {width:46%}
+	.mypage_2021 .latest_achvmt .status {width:calc(57% - 4rem)}
+
+	.mypage_2021 .every10m_sub .head_wrap h3, 
+	.mypage_2021 .every10m_sub .content_wrap {padding-left:4%; padding-right:4%}
+	.mypage_2021 .every10m_sub [class*="latest_"] {padding-left:0; padding-right:0}
+
+}
+@media all and (max-width:1280px) {
+	.mypage_2021 .myquiz_wrap {padding-left:4%; padding-right:4%}
+}
+@media all and (max-width:1180px) {
+	.my_contents_head .search_option dt {width:45px}
+	.my_contents_head .search_option .opt2 {margin-left:1rem}
+
+	.mytbl_type1 td.subj span {display:block; margin-top:7px;  max-width:97%;}
+	.mytbl_type1.wrong_ans  td.subj span {margin-top:0}
+
+	.mytbl_type1 .subj {width:25%}
+	.mytbl_type1 .loca {width:20%}
+}
+@media all and (max-width:995px) {
+	.mypage_2021 .course_top {border-bottom: 2px solid #4e42ca;}
+	.mypage_2021 .course_top .btn_open_list {display:none}
+	.mypage_2021 .course_top .wrap {text-align:center}
+	.mypage_2021 .course_top .wrap h2 strong {display:inline-block}
+	.mypage_2021 .course_top .wrap h2 strong:before {display:inline-block; content:""; width:2px; height:20px; background:#e1e1e1; font-size:0; margin:1.4rem 2rem 0 0.5rem; vertical-align:top}
+	.mypage_2021 .course_top .tit_course_m {padding-left:0; padding-right:2rem;}
+	.mypage_2021 .course_top .tit_course_m button:after {margin:0.5rem 0 0 1rem}
+	.mypage_2021 .course_top .tit_course_m.open button:after {margin:1rem 0 0 1rem}
+	.mypage_2021 .course_top .tit_course_m.open + ul {width:100%; margin-left:0; text-align:center}
+	.mypage_2021 .course_top .stit_course_m {display:inline-block}
+
+	.mypage_2021 .list_result .list_con .cnt_item {width:calc(96% / 3);}
+	.mypage_2021 .list_result .list_con .cnt_item:not(:nth-child(4n+1))  {margin-left:0}
+	.mypage_2021 .list_result .list_con .cnt_item:not(:nth-child(3n+1))  {margin-left:2%}
+	.mypage_2021 .list_result .list_con .cnt_item dl {padding:1.2rem 0;}
+
+	.mypage_2021 .latest_contents .btn_more {display:none}
+	.mypage_2021 .latest_contents .btn_more_mo {display:block;}
+	.mypage_2021 .latest_achvmt .inner_wrap {padding:4rem 4% }
+	.mypage_2021 .latest_achvmt .slider_wrap > div { width:48%}
+	.mypage_2021 .latest_achvmt .resultArea .mark_avg mark {margin-right:1rem; margin-bottom:5px; white-space:nowrap}
+
+	.mypage_2021 .latest_achvmt .status .myscore .btn_exec {height:46px; line-height:46px}
+	.mypage_2021 .latest_achvmt .status .myscore em:before {margin-right:0.5rem}
+	.mypage_2021 .latest_achvmt #slider2 {overflow:hidden; width:100%; background:#fff}
+	.mypage_2021 .latest_achvmt .chart_area1 {width:96%}
+	.mypage_2021 .latest_achvmt .chart_area2 {width:96%; margin:0 auto}
+	.mypage_2021 .latest_achvmt .chart_area2  ul {margin-left:2%; margin-right:2%}
+
+	.mypage_2021 .everyday_10m .inner_wrap {padding:4rem 4% 2rem }
+	.mypage_2021 .everyday_10m .evr10_list .chart_10m .chart_cnt {width:95%; margin:0 auto; padding-left:10px}
+	.mypage_2021 .everyday_10m .evr10_list .chart_10m .ticks {left:25px}
+	.mypage_2021 .everyday_10m .my_info {width:96%}
+	.mypage_2021 .everyday_10m .my_info .chart_area3 {margin-left:2rem}
+	.mypage_2021 .everyday_10m #slider2  [class*="swiper-button"] {display:block}
+	.mypage_2021 .everyday_10m .swiper-pagination {display:block}
+	.mypage_2021 .everyday_10m .swiper-button-prev {left:0px; margin-top:-50px}
+	.mypage_2021 .everyday_10m .swiper-button-next {right:0px; margin-top:-50px}
+
+	.mypage_2021 .latest_contents .tab_sub li {min-width:unset; width:auto}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item {padding-bottom:0;  width:calc(97% / 4);  max-width:23rem; }
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item:not(:nth-child(4n+1))  {margin-left:1%}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item:not(:nth-child(3n+1))  {margin-left:1%}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .btm_info,
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item:hover .btm_info {padding:1.2rem 0 1rem}
+
+	.mypage_2021 .every10m_sub .subs_option dd li {width:170px}
+	.mypage_2021 .every10m_sub .subs_option dl.opt2 dt {width:80px;}
+	.mypage_2021 .every10m_sub .subs_option dl.opt2 dd {width:100px;}
+	.mypage_2021 .every10m_sub .swiper-button-prev {margin-top:-50px}
+	.mypage_2021 .every10m_sub .swiper-button-next {margin-top:-50px}
+
+	.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+4) {display:none}
+	.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+3) {display:block;}
+	.mypage_2021 .recom_list.open .list_con .cnt_item:not(:nth-child(-n+3)){display:block}
+
+	.mypage_2021 .sort_head .result_num {display:block}
+	.mypage_2021 .sort_head .result_num .select_wrap {display:block; margin-top:1rem}
+	.mypage_2021 .sort_head .btn {margin-top:-3rem}
+
+	.mypage_2021 .my_contents_head .search_option {display:none}
+	.mypage_2021 .my_contents_head .search_option dl {margin-bottom:1.5rem}
+	.mypage_2021 .my_contents_head .search_option .opt1 {float:none; width:100%;}
+	.mypage_2021 .my_contents_head .search_option .opt2 {float:none; width:100%; margin-left:0;}
+	.mypage_2021 .my_contents_head .search_option .opt3 {float:none; width:100%; justify-content:flex-start; margin-bottom:0}
+	.mypage_2021 .my_contents_head .btn_srch_dt {display:block; width:110px; height:32px; position:absolute; right:4%; top:-0.5rem; border:1px solid #e1e1e1; padding:0 0 0 1.8rem; background:#fff url('../images/common/icon_tuning.svg') 1.5rem 50% no-repeat; vertical-align:top; font-size:1.4rem; font-weight:500}
+	.mypage_2021 .my_contents_head .btn_srch_dt.on {color:#4e42ca; border:1px solid #4e42ca; background:#fff url('../images/common/icon_tuning_on.svg') 1.5rem 50% no-repeat;}
+
+	.mypage_2021 .my_contents_head .search_option .opt1 dd,
+	.mypage_2021 .my_contents_head .search_option .opt2 dd,
+	.mypage_2021 .my_contents_head .search_option .opt3 dd {width:calc(100% - 65px); display:flex; justify-content:space-between }
+	.mypage_2021 .my_contents_head .search_option .opt2 dd select {width:49.5%; margin-right:0}
+	.mypage_2021 .my_contents_head .search_option input[type="text"] {width:calc(100% - 65px)}
+
+	.mytbl_type1 tr .qz_btn {width:235px;}
+	.mytbl_type1.achv_test tr .qz_btn {width:180px;}
+
+	.mytbl_type1 .aft_btn span:first-child {width:auto !important; margin:0 auto}
+	.mytbl_type1 .aft_btn span:last-child {width:auto; text-align:center}
+
+	.mytbl_type1.my_quiz_tbl .aft_btn span:first-child {width:80px;}
+	.mytbl_type1.my_quiz_tbl .aft_btn span:last-child {width:160px; text-align:center}
+
+	.mytbl_type1.evr10m tr .subj {width:30%}
+	.mytbl_type1.evr10m tr .loca {width:30%}
+	.mytbl_type1.evr10m tr .qz_btn {width:auto; text-align:center}
+
+	.mytbl_type1 td.subj span {max-width:90%;}
+	.mytbl_type1 [class^="tag_quiz"] {display:block; margin-bottom:3px}
+	.mytbl_type1.qna .wrt span:before  {display:none}
+
+	.mypage_2021 .text_achvmnt .wrap {padding-left:4%; padding-right:4%; padding-top:3rem}
+	.mypage_2021 .text_achvmnt  h4 {font-size:1.6rem; margin-bottom:2rem}
+	.mypage_2021 .text_achvmnt .test_info {width:unset; margin:0 auto}
+	.mypage_2021 .text_achvmnt  .test_area {margin-top:3rem}
+	.mypage_2021 .text_achvmnt  .test_area + .btn_bottom {margin-top:3rem}
+
+	.quiry_opt {margin:2rem auto;}
+	.mypage_2021 .tab_quiry + fieldset .quiry_opt {margin:3rem auto 3rem}
+}
+
+@media all and (max-width:900px) {
+	.mypage_2021 .resultArea .graph.type4 li > div {width:90px}
+	.mypage_2021 .resultArea .graph.type4 li > div span[class^="bar_"] {width:15px}
+	.mypage_2021 .resultArea .graph.type4 li .bar_avg1 {left:25px;}
+	.mypage_2021 .resultArea .graph.type4 li .bar_avg2 {left:50px;}
+	.mypage_2021 .resultArea .graph.type4 li .bar_avg3 {left:75px;}
+
+	.mypage_2021 .latest_achvmt .status .myscore {flex-wrap:wrap}
+	.mypage_2021 .latest_achvmt .status .myscore p {width:100%; justify-content:center}
+	.mypage_2021 .latest_achvmt .status .myscore .btm {display:block; width:100%; margin-top:2rem; text-align:center}
+
+}
+
+
+@media all and (max-width:830px) {
+	.list_mycont .srch_item > a {display:block; width:auto; height:160px;}
+	.list_mycont .srch_item .thumbnail img {height:160px}
+	.list_mycont .srch_item .sub_tit,
+	.list_mycont .srch_item .detail {font-size:1.4rem}
+	.list_mycont .srch_item .info span dfn, 
+	.list_mycont .srch_item .info span{font-size:1.2rem}
+
+}
+@media all and (max-width:760px) {
+	.list_mycont .srch_item {margin-bottom:1.5rem}
+	.list_mycont .srch_item > a {width:147px; height:auto;}
+	.list_mycont .srch_item .thumbnail {width:147px; height:auto; float:left; margin-right:1rem}
+	.list_mycont .srch_item .thumbnail span {width:unset; height:unset}
+	.list_mycont .srch_item .thumbnail img {width:147px; height:auto; border-radius:7px}
+	.list_mycont .srch_item .thumbnail .stk {top:10%; width:22px; height:22px}
+
+	.list_mycont .srch_item .result_info  {width:70%; padding-left:0 !important;}
+	.list_mycont .srch_item .result_info .sub_tit {width:90%; padding-top:1rem; font-size:1.3rem}
+	.list_mycont .srch_item .result_info .btn_fncnt {right:-0.7rem}
+	.list_mycont .srch_item .sub_tit .date {display:none}
+	.list_mycont .srch_item:not(.post) .result_info .detail,
+	.list_mycont .srch_item:not(.post) .result_info .view_data{display:none}
+	.list_mycont .srch_item .location {margin-top:0.5rem}
+	.list_mycont .srch_item .location .dep1 em {color:#4e42ca; font-weight:bold}
+	.list_mycont .srch_item .location .dep1,
+	.list_mycont .srch_item .location .dep2 {font-size:1.2rem}
+	.list_mycont .srch_item .location .dep1 em:after {font-size:9px; font-weight:normal}
+	.list_mycont .srch_item .location .dep2 {max-width:70%}
+	.list_mycont .srch_item .thumbnail .runtime {right:1rem; width:55px; height:20px; font-size:1.2rem; line-height:1.8rem;}
+
+	.mypage_2021 .box_graph .resultArea .my_score {display:block}
+	.mypage_2021 .box_graph .resultArea .my_score .mark_avg {display:block; width:100%;}
+	.mypage_2021 .box_graph .resultArea .my_score .mark_avg mark {display:inline-block; width:90px; font-size:1.2rem; margin-bottom:8px}
+	.mypage_2021 .box_graph .resultArea .my_score  .score {width:100%; text-align:right;}
+	.mypage_2021 .box_graph .resultArea .graph {position:relative; margin-top:2rem}
+	.mypage_2021 .latest_achvmt .resultArea .counting {left:10px; width:calc(100% - 20px)}
+
+	.mypage_2021 .resultArea .graph li .top_bub {display:none}
+	.mypage_2021 .resultArea .graph li .btm_txt {font-size:1.2rem}
+	.mypage_2021 .resultArea .graph.type2 .chart_view {height:200px}
+	.mypage_2021 .resultArea .graph.type3 .chart_view {height:190px}
+	.mypage_2021 .resultArea .graph.type4 .chart_view {width:100%; height:205px; overflow-x:auto;  -ms-overflow-style: none; scrollbar-width: none;}
+	.mypage_2021 .resultArea .graph.type4 .chart_view::-webkit-scrollbar {display: none; /* Chrome, Safari, Opera*/}
+	.mypage_2021 .resultArea .graph:not(.type1) li .btm_txt strong {display:inline-block; height:22px; font-size:1.2rem}
+	.mypage_2021 .resultArea .graph:not(.type1) li .btm_txt span {margin-top:0}
+	.mypage_2021 .resultArea .graph.type2 li > div {width:52px}
+	.mypage_2021 .resultArea .graph.type2 li > div span[class^="bar_"] {width:23px}
+	.mypage_2021 .resultArea .graph.type2 li [class^="bar_avg"] { bottom:0px; left:29px;}
+	.mypage_2021 .resultArea .graph .chart_view {width:calc(100% - 60px); margin:0 auto}
+	.mypage_2021 .resultArea .graph .y_axis {font-size:1.2rem; padding-right:10px}
+	.mypage_2021 .resultArea .graph.type3 li > div,
+	.mypage_2021 .resultArea .graph.type4 li > div	{width:59px}
+	.mypage_2021 .resultArea .graph.type3 li > div span[class^="bar_"],
+	.mypage_2021 .resultArea .graph.type4 li > div span[class^="bar_"] {width:11px}
+	.mypage_2021 .resultArea .graph.type3 li .bar_avg1,
+	.mypage_2021 .resultArea .graph.type4 li .bar_avg1 {left:16px;}
+	.mypage_2021 .resultArea .graph.type3 li .bar_avg2,
+	.mypage_2021 .resultArea .graph.type4 li .bar_avg2 {left:32px;}
+	.mypage_2021 .resultArea .graph.type3 li .bar_avg3,
+	.mypage_2021 .resultArea .graph.type4 li .bar_avg3 {left:48px;}
+	.mypage_2021 .resultArea .graph.type4 ul {display:block; white-space:nowrap; text-align:center}
+	.mypage_2021 .resultArea .graph.type4 li {display:inline-block; margin:0 1.5rem}
+
+	.mytbl_type1 {margin-top:1.5rem; border-top:1px solid #e1e1e1;  border-bottom:0}
+	.mytbl_type1, .mytbl_type1 tr, .mytbl_type1 th, .mytbl_type1 td {width:100%} 
+	.mytbl_type1 th, .mytbl_type1 thead, .mytbl_type1 tr .ord {display:none}
+	.mytbl_type1 tr {display:flex; flex-wrap:wrap; position:relative; width:100%; border-bottom:1px solid #e1e1e1; padding:1.2rem 0 2rem;}
+	.mytbl_type1 tr td.chk {width:8%;}
+	.mytbl_type1 tr td.subj  {width:92%}
+ 	.mytbl_type1 tr td.loca {width:92%;padding-left:8%;}
+ 	.mytbl_type1 tr td.qnum {width:40%; padding-left:8%; color:#9a9a9a; font-size:1.2rem; margin-top:1.3rem; text-align:left}
+	.mytbl_type1 tr td.qz_btn {width:60%; text-align:right}
+	.mytbl_type1 td {border:0; padding:0}
+	.mytbl_type1 tr td.chk input {position:absolute; top:calc(50% - 8px); left:1%}
+	.mytbl_type1 td.loca span {font-size:1.2rem; margin-top:1rem}
+	.mytbl_type1 dfn {display:inline-block; font-style:normal; margin-right:5px}
+	.mytbl_type1 .aft_btn {position:absolute; right:0; bottom:0.8rem}
+	.mytbl_type1 .aft_btn  span {width:auto}
+	.mytbl_type1 a.lock:before {margin:0px 5px 0 0}
+	.mytbl_type1 a.file:after {margin:0px 0 0 5px}
+
+	.mytbl_type1.wrong_ans tr .qnum {width:92%}
+	.mytbl_type1.wrong_ans tr td.qnum {margin-top:2rem;}
+	.mytbl_type1.wrong_ans tr .ord {width:8%}
+	.mytbl_type1.wrong_ans tr .subj {width:92%}
+	.mytbl_type1.wrong_ans tr .loca {width:92%}
+	.mytbl_type1.evr10m tr .ord {display:none}
+	.mytbl_type1.evr10m tr .subj {width:100%}
+	.mytbl_type1.evr10m tr .loca {width:100%; padding-left:0}
+	.mytbl_type1.evr10m tr .score {width:30%; text-align:left; padding-top:3rem}
+	.mytbl_type1.qna tr {padding: 1.2rem 0}
+	.mytbl_type1.qna tr td {padding:0}
+	.mytbl_type1.qna tr .ord {display:none}
+	.mytbl_type1.qna tr .grd {text-align:left}
+	.mytbl_type1.qna tr .eq_type {width:100%; font-size:1.2rem; text-align:left}
+	.mytbl_type1.qna tr .subj {width:100%; margin:1rem 0}
+	/* 두줄이상.mytbl_type1.qna tr .subj a {padding:0; height:4rem; display:-webkit-box; overflow:hidden; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis; max-width:99%; white-space:normal; line-height:130%}*/
+	.mytbl_type1.qna tr .subj a {padding:0; display:block; overflow:hidden; text-overflow:ellipsis; max-width:99%; white-space:nowrap; line-height:130%}
+	.mytbl_type1.qna tr .date {width:auto; font-size:1.2rem; color:#9a9a9a; text-align:left}
+	.mytbl_type1.qna tr .date:after {display:inline-block; content:""; width:1px; height:1rem; background-color:#979797; margin:0 1rem }
+	.mytbl_type1.qna tr .stt {width:20%; font-size:1.2rem; text-align:left}
+	.mytbl_type1.qna tr .wrt {width:auto}
+	.mytbl_type1.qna tr .wrt span {line-height:100%; font-size:1.2rem}
+	.mytbl_type1.qna tr .wrt:after {display:inline-block; content:""; width:1px; height:1rem; background-color:#979797; margin:0 1rem }
+	.mytbl_type1.qna tr .hit {width:auto; color:#9a9a9a; font-size:1.2rem }
+	.mytbl_type1.qna tr .hit span:before { display:inline-block; content:""; width:16px; height:11px; background:#fff url('../images/contents/icon_view_s.png') 0 0 no-repeat; background-size:contain; margin-right:3px; vertical-align:middle}
+	.mytbl_type1.achv_test tr {padding-bottom:5rem}
+	.mytbl_type1.achv_test tr td.subj {width:100%; margin-bottom:1.5rem}
+	.mytbl_type1.achv_test tr td.score {width:18%; min-width:65px; text-align:left; font-size:1.4rem; color:#9a9a9a; white-space:nowrap}
+	.mytbl_type1.achv_test tr td.date {width:32%; text-align:left; font-size:1.4rem; color:#9a9a9a}
+	.mytbl_type1.achv_test tr td.date:before {content:""; display:inline-block; width:1px; height:12px; background-color:#9a9a9a; margin-right:1rem; vertical-align:middle}
+	.mytbl_type1.achv_test tr td.qz_btn {width:auto}
+	.mytbl_type1.achv_test .aft_btn {width:auto; bottom:1.2rem}
+	.mytbl_type1.achv_test .aft_btn span:last-child {width:auto; text-align:right}
+	.mytbl_type1.my_quiz_tbl .aft_btn span:last-child {width:auto; text-align:center}
+
+	.mytbl_type2 td {padding-left:2rem}
+	.quiry_opt dt {width:80px; min-width:auto; margin-right:0.6rem}
+	.quiry_opt select {min-width:auto;}
+	.quiry_opt dd {width:calc(100% - 86px)}
+	.quiry_opt input[type="text"] {width:calc(100% - 70px);}
+
+
+	.mypage_2021 .latest_contents .list_result {padding:2rem 0 0 0}
+	.mypage_2021 .latest_contents .list_result .list_con { width:100%; display: flex; flex-wrap: wrap; justify-content: flex-start}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item { width:100%; max-width:100%; margin-bottom:0; margin-left:0 !important}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .box_snip {margin-bottom:1rem;}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .box_snip mark.stk {width:30px; height:30px; left:115px}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .box_snip .thumbnail {width:147px; height:auto; float:left; margin-right:1rem}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .box_snip .thumbnail .runtime {right:1rem; bottom:1rem; width:55px; height:20px; font-size:1.2rem; line-height:1.8rem; transform:unset}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .box_snip .btm_info .grd {font-size:1.2rem; margin-bottom:0.5rem; }
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .box_snip .btm_info .subj {font-size:1.3rem}
+	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .btm_info .grd strong:after {font-size:1.1rem}
+	.mypage_2021 .latest_contents .tab_sub li {margin:0 1.5rem}
+	.mypage_2021 .latest_contents .tab_sub li a {font-size:1.4rem; line-height:120%}
+	.mypage_2021 .latest_contents .tab_sub li a em {display:block}
+	.mypage_2021 .latest_achvmt .inner_wrap { padding:3rem 4% 0}
+	.mypage_2021 .latest_achvmt h4.tit_test {color:#4e42ca; text-align:center}
+	.mypage_2021 .latest_achvmt .resultArea .mark_avg {flex-wrap:wrap; justify-content:center} 
+	.mypage_2021 .latest_achvmt .resultArea .mark_avg mark {width:90px; margin-bottom:0.8rem}
+	.mypage_2021 .latest_achvmt .resultArea .mark_avg mark:nth-child(even) {width:110px}
+	.mypage_2021 .latest_achvmt .slider_wrap .resultArea {width:100%;}
+	.mypage_2021 .latest_achvmt .status {width:100%;}
+	.mypage_2021 .latest_achvmt .status li:first-child {text-align:center}
+	.mypage_2021 .latest_achvmt .status [class*="btn_achv_"] {height:65px; font-size:1.6rem}
+	.mypage_2021 .latest_achvmt .status .btn_achv_detail {padding-top:22px; font-size:1.6rem}
+	.mypage_2021 .latest_achvmt .status .btn_achv_list {line-height:120%}
+
+	.mypage_2021 .latest_achvmt #slider1 {overflow:hidden; width:100%; background:#fff}
+	.mypage_2021 .latest_achvmt .resultArea {max-width:100%}
+	.mypage_2021 .latest_achvmt .resultArea .graph ul {width:100%;}
+	.mypage_2021 .latest_achvmt .status {max-width:100%}
+	.mypage_2021 .latest_achvmt #slider1  [class*="swiper-button"] {display:block}
+	.mypage_2021 .latest_achvmt .status {padding-top:0; padding-bottom:4rem; padding-left:4%; padding-right:4%}
+	.mypage_2021 .latest_achvmt .swiper-button-prev {left:0px}
+	.mypage_2021 .latest_achvmt .swiper-button-next {right:0px}
+	.mypage_2021 .latest_achvmt .swiper-pagination {display:block}
+
+	.mypage_2021 .everyday_10m .inner_wrap {flex-wrap:wrap; flex-direction: column-reverse; padding:3rem 4% 0}
+	.mypage_2021 .everyday_10m .evr10_list {width:100% }
+	.mypage_2021 .everyday_10m .evr10_list .chart_10m > li {width:100%;}
+	.mypage_2021 .everyday_10m .evr10_list .chart_10m .ticks {font-size:1.2rem}
+	.mypage_2021 .everyday_10m .my_info {width:100%; margin:1rem 0 2rem}
+	.mypage_2021 .everyday_10m .my_info .chart_area3 {margin-left:0;position:relative;}
+	.mypage_2021 .everyday_10m .my_info .chart_area3 dt {position:absolute; top:-18px; left:50%; margin-left:-40px}
+	.mypage_2021 .everyday_10m .chart_area3 dd {margin-left:0; text-align:center}
+
+	.mypage_2021 .noti_nocnt p:before {display:block; margin:0 auto 1rem}
+	.mypage_2021 .noti_nocnt p strong {font-size:1.6rem}
+	.mypage_2021 .latest_achvmt.nodata .inner_wrap  { padding:3rem 4% 2rem}
+	.mypage_2021 .latest_achvmt.nodata .resultArea {margin-left:3%; margin-right:3%; max-width:94%}
+	.mypage_2021 .latest_achvmt.nodata .status {margin-left:3%; margin-right:3%; max-width:94%; padding-top:3rem;}
+	.mypage_2021 .latest_achvmt.nodata .status .btm {width:190px}
+
+	.mypage_2021 .everyday_10m.nodata .inner_wrap {	padding:3rem 4% 0}
+	.mypage_2021 .everyday_10m.nodata .noti {width:100%; text-align:center; padding-bottom:3rem}
+	.mypage_2021 .everyday_10m.nodata .noti p {font-size:1.4rem; margin-top:1.8rem; margin-bottom:3rem; line-height:150%}
+	.mypage_2021 .everyday_10m.nodata .noti .btm a {padding-left:2.8rem;padding-right:2.8rem;}
+
+	.mypage_2021 .mystatus_bottom {display:block}
+	.mypage_2021 .mystatus_bottom span {display:block; width:100%; border:1px solid #e1e1e1; border-radius:10px; margin-bottom:12px}
+	.mypage_2021 .mystatus_bottom span a { padding:12px 0 10px; font-size:1.6rem}
+	.mypage_2021 .mystatus_bottom span a:before {margin-right:2rem}
+	.mypage_2021 .mystatus_bottom .link01:after {display:none}
+	.mypage_2021 .mystatus_bottom .link01 a:before {width:31px; height:31px; background-image:url('../images/contents/icon_sidelink_n01.png'); background-size:contain;}
+	.mypage_2021 .mystatus_bottom .link02 a:before {width:31px; height:29px; background-image:url('../images/contents/icon_sidelink_n02.png'); background-size:contain;}
+
+	.mypage_2021 .every10m_sub .subs_option {padding:2.5rem 3.5% 0.5rem}
+	.mypage_2021 .every10m_sub .subs_option select {width:100%;}
+	.mypage_2021 .every10m_sub .subs_option .chk_list {display:none}
+	.mypage_2021 .every10m_sub .subs_option .chk_list_cos {margin:2rem 0 0 -105px}
+	.mypage_2021 .every10m_sub .subs_option dl.opt2 {margin-top:2rem}
+	.mypage_2021 .every10m_sub .subs_option dl.opt2 dd {width:calc(100% - 105px); margin-bottom:1.5rem}
+	.mypage_2021 .every10m_sub .subs_option .opt2 .layer_note {left:0rem; top:0}
+
+	.mypage_2021 .every10m_sub .head_wrap {padding:2rem 0 2rem}
+	.mypage_2021 .every10m_sub .head_wrap h3 {font-size:1.8rem}
+	.mypage_2021 .every10m_sub .info_quiz .inform1 p {padding-top:0}
+	.mypage_2021 .every10m_sub .info_quiz .inform1 .grade {flex-shrink:0; width:46px; height:24px; line-height:24px; font-size:1.4rem; margin-right:0.5rem}
+	.mypage_2021 .every10m_sub .info_quiz .inform1 .course {vertical-align:top; margin-top:3px;}
+	.mypage_2021 .every10m_sub .info_quiz .inform1 .course:after {display:none}
+	.mypage_2021 .every10m_sub .info_quiz .inform1 .subj {display:block; font-size:1.4rem; line-height:120%; margin-top:3px}
+	.mypage_2021 .every10m_sub .info_quiz .inform2 {flex-shrink:0; font-size:1.4rem; padding-top:0.5rem; text-align:right}
+
+	.mypage_2021 .every10m_sub .inner_wrap {border:0; padding-top:0; padding-left:0; padding-right:0}
+	.mypage_2021 .every10m_sub .content_wrap h4 {width:65%; text-align:left; font-size:1.8rem; line-height:160%}
+	.mypage_2021 .every10m_sub .content_wrap div.sub_tit {margin-bottom:2.5rem}
+	.mypage_2021 .every10m_sub .evr10_list {border:1px solid #e1e1e1; border-radius:10px; padding:3rem 4% 0}
+	.mypage_2021 .every10m_sub .myscore em:before {display:none}
+
+	.mypage_2021 .recom_list h4 {font-size:1.6rem !important}
+	.mypage_2021 .recom_list .list_con {margin:0 0 0 0;}
+	.mypage_2021 .recom_list .list_con .cnt_item { width:calc(98% / 2);}
+	.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+3) {display:none}
+	.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+2) {display:block;}
+	.mypage_2021 .recom_list .list_con .cnt_item:not(:nth-child(4n+1)),
+	.mypage_2021 .recom_list .list_con .cnt_item:not(:nth-child(3n+1))  {margin-left:0}
+	.mypage_2021 .recom_list .list_con .cnt_item:not(:nth-child(2n+1))  {margin-left:2%}
+	.mypage_2021 .recom_list .list_con .cnt_item .box_snip .bottom {height:auto; font-size:1.4rem}
+	.mypage_2021 .recom_list.open .list_con .cnt_item:not(:nth-child(-n+2)){display:block}
+	.mypage_2021 .recom_list .list_con .cnt_item .bottom,
+	.mypage_2021 .recom_list .list_con .cnt_item:hover bottom {padding:1.2rem 0 0.5rem !important}
+	.mypage_2021 .recom_list .list_con .bottom .grd {margin-bottom:0.5rem}
+	.mypage_2021 .recom_list .list_con .bottom .grd,
+	.mypage_2021 .recom_list .list_con .cnt_item .bottom .subj {font-size:1.3rem; line-height:150%}
+
+	.mypage_2021 .noti_noquiz p:first-child:before {display:block; margin:0 auto 1.5rem}
+	.mypage_2021 .noti_noquiz p:first-child strong {font-size:1.6rem}
+	.mypage_2021 .noti_noquiz p:last-child {font-size:1.4rem; margin-top:2rem; line-height:150%}
+	
+	.mypage_2021 .my_contents_head .search_option dt {font-size:1.4rem}
+	.mypage_2021 .my_contents_head .search_option .opt2 dd {flex-wrap:wrap;}
+	.mypage_2021 .my_contents_head .search_option .opt2 dd select {display:block; width:100%; margin-right:0;}
+	.mypage_2021 .my_contents_head .search_option .opt2 dd select:first-child {margin-bottom:1rem}
+
+	.mypage_2021 .my_contents_head .search_option .opt3 dd {display:block}
+	.mypage_2021 .my_contents_head .search_option input[type="text"] {width:100%}
+	.mypage_2021 .my_contents_head .search_option .btn_find {display:block; margin:1.5rem auto 0; transform:translateX(calc(-50% + 15px))}
+
+	.mypage_2021 .my_contents_mid {padding-top:1.5rem}
+	.mypage_2021 .my_contents_head h3 {font-size:1.6rem;}
+	.mypage_2021 .my_contents_head h3 + p {font-size:1.2rem; padding-top:1.5rem}
+	.mypage_2021 .sort_head .btn {margin-top:-3.5rem}
+	.mypage_2021 .sort_head .btn button {width:40px; height:40px; background-position:50% 50%; text-indent:-9999px; font-size:0; border-radius:50%; padding:0}
+
+	.mypage_2021 .my_note {margin-top:4rem}
+	.mypage_2021 .my_note .btn_del_opt {width:40px; height:40px}
+	.mypage_2021 .my_note .note_main colgroup {display:none}
+	.mypage_2021 .my_note .note_main tr {display:block; width:100%; border-bottom:1px solid #dfdfdf; position:relative; padding:2rem 0;}
+	.mypage_2021 .my_note .note_main td {display:block; border-left:0; border-bottom:0; padding:0}
+	.mypage_2021 .my_note .note_main td:first-child {display:none}
+	.mypage_2021 .my_note .note_main td.subj,
+	.mypage_2021 .my_note .note_main td.loca {padding:0 0 0 1rem; width:90%; text-align:left; line-height:130%}
+	.mypage_2021 .my_note .note_main td.subj {padding-bottom:0.7rem}
+	.mypage_2021 .my_note .note_main td.loca {font-size:1.2rem}
+	.mypage_2021 .my_note .note_main td.sel {position:absolute; right:3%; top:calc(50% - 10px)}
+	.mypage_2021 .my_note .inp_title dd {width:calc(100% - 86px)}
+	.mypage_2021 .my_note .btn_bottom {text-align:center}
+	.mypage_2021 .my_note .note_main tr.on {background-color:rgba(223, 223, 223, 0.4)}
+	.mypage_2021 .my_note .note_main tr.on td {background-color:transparent}
+
+	.mypage_2021 .myquiz_wrap.wrongans mark {line-height:100%; margin-bottom:0} 
+
+	.mypage_2021 .pop_test, .mypage_2021 .pop_find_school {top:100px; left:3%; width:94%; height:auto; margin:0}
+	.mypage_2021 .pop_find_school {transform:translateX(0);}
+	.mypage_2021 .pop_test .popcon {width:100%}
+	.mypage_2021 .pop_test .popcon .container {padding:0 7%; width:unset;}
+	.mypage_2021 .pop_test .popcon .container .noti {margin:16px 0 32px; color:#000; font-size:1.4rem;}
+
+	.mypage_2021 .pop_find_school .pop_content {width:94%; margin:0 auto; padding:2rem 3%}
+	.mypage_2021 .pop_find_school .result_school a {flex-wrap:wrap}
+	.mypage_2021 .pop_find_school .result_school a .school,
+	.mypage_2021 .pop_find_school .result_school a .address {width:100%}
+	.mypage_2021 .pop_find_school .result_school a .school {margin-bottom:0.5rem}
+	.mypage_2021 .test_info {margin:0 auto 20px; display:block}
+	.mypage_2021 .test_info li {margin-bottom:1rem}
+	.mypage_2021 .test_info li.infom1 {width:100%}
+	.mypage_2021 .test_info li.infom2 {width:100%}
+	.mypage_2021 .test_info li.infom3 {width:100%}
+	.mypage_2021 .test_info li.infom3 dd {width:calc(100% - 50px); overflow:hidden}
+
+	.mypage_2021 .test_result_wrap {margin-top:3rem; font-size:1.2rem}
+	.mypage_2021 .test_result_wrap .grading_table td.qs_type span,
+	.mypage_2021 .test_result_wrap .grading_table td.subj span{ display:inline-block; max-width:90%; text-overflow:ellipsis; white-space: nowrap; overflow:hidden;}
+	.mypage_2021 .test_result_wrap .grading_table td.qs_type,
+	.mypage_2021 .test_result_wrap .grading_table td.subj {text-align:left; padding-left:0.5rem}
+	.mypage_2021 .test_result_wrap .box_graph {border-radius:0; border:0; padding:0; margin-bottom:4rem}
+	.mypage_2021 .test_result_wrap .box_graph .commentary {font-size:1.4rem; border:1px solid #e1e1e1; margin:2.6rem 0; border-bottom-left-radius:10px; border-bottom-right-radius:10px; padding-left:0;padding-right:0;}
+	.mypage_2021 .test_result_wrap .box_graph .commentary p {padding-left:1.5rem; padding-right:1.5rem}
+	.mypage_2021 .test_result_wrap + .btn_bottom button {padding-left:20px; padding-right:20px}
+
+	.mypage_2021 .modify_before dl {width:100%; padding:1.5rem 7% 1rem}
+	.mypage_2021 .modify_before .bottom { padding-left:8%; padding-right:8%}
+	.mypage_2021 .modify_before dt,
+	.mypage_2021 .modify_before dd {line-height:3rem}
+	.mypage_2021 .modify_before dt:last-of-type {padding-top:0.5rem}
+	.mypage_2021 .modify_before .bottom {padding:2rem 6%}
+	.mypage_2021 .modify_before .bottom p {margin-bottom:2rem; text-align:left}
+
+	.mypage_2021 h4.stit_mod strong {display:block; margin-bottom:1rem}
+	.mypage_2021 .modify_info h4.stit_mod + button {float:right; margin-top:-2rem; margin-bottom:2rem}
+	.mypage_2021 .modify_info table + button {float:right; margin-top:2rem}
+
+	.mypage_2021 .myquiz_wrap h4 mark {display:block; margin-right:0; margin-bottom:1rem}
+
+}
+
+
+@media all and (max-width:499px) {
+	.list_mycont .srch_item .result_info  {width:76.4%; padding-left:2rem;}
+	.mypage_2021 .every10m_sub .subs_option .chk_list_cos li {width:150px}
+	.mypage_2021 .every10m_sub .subs_option dd .layer_note {top:3rem; left:0}
+	.mypage_2021 .every10m_sub .subs_option .opt2 .layer_note {left:-8rem}
+
+	.mypage_2021 .recom_list .list_con .cnt_item { width:calc(98% / 2);}
+	.mypage_2021 .recom_list .list_con .cnt_item:not(:nth-child(4n+1)),
+	.mypage_2021 .recom_list .list_con .cnt_item:not(:nth-child(3n+1))  {margin-left:0}
+	.mypage_2021 .recom_list .list_con .cnt_item:not(:nth-child(2n+1))  {margin-left:2% !important}
+	.mypage_2021 .recom_list .list_con .cnt_item .box_snip .thumbnail {width:100%; height:auto; float:none; margin-right:0}
+
+	.mypage_2021 .myquiz_wrap h4 {margin-bottom:1.5rem;font-size:1.4rem}
+	.mypage_2021 .myquiz_wrap.wrongans h4 {margin-bottom:1.5rem; font-size:1.4rem}
+	.mypage_2021 .myquiz_wrap h4 mark[class*="tag_quiz"] {margin-bottom:0}
+	.mypage_2021 .myquiz_wrap.wrongans mark[class*="stk"] {width:25px; height:25px; line-height:25px}
+}
+
+
+@media all and (max-width:360px) {
+	.list_mycont .srch_item .location .dep2 {max-width:50%}
+	.mypage_2021 .text_achvmnt  .test_area + .btn_bottom button {margin:0 3px}
+
+}

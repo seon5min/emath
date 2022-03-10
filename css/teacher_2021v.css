@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+.teacher .list_result {padding-top:0}
+.teacher .list_result .tab_common1 {max-width:360px}
+.teacher .list_result .tab_common1 a {width:50%; max-width:180px}
+
+/* LNB */
+.teacher .course_top {border-bottom:1px solid #e1e1e1;}
+.teacher .course_top .btn_open_list {background-color:#4e42ca;}
+.teacher .course_top .tit_course_m.open + ul {width:18rem}
+.teacher .course_top .tit_course_m button:after {margin:0 1rem 0 5rem}
+.teacher .course_top .tit_course_m.open button:after {margin-top:1rem}
+.teacher .course_top .tit_course_m.open + ul > li.dep2 span.dep3 {margin-bottom:1rem}
+.teacher .course_top .tit_course_m.open + ul > li.dep2 span:last-of-type {margin-bottom:2.5rem}
+
+.teacher .content_top {background-color:rgba(24, 103, 254, 0.03)}
+.teacher .content_top h2 em {display:inline-block; color:#4e42ca; font-size:1.6rem; vertical-align:top}
+.teacher .content_top h2 em:before {display:inline-block; content:""; width:1px; height:1.8rem; background:#333; margin:0.3rem 1.5rem 0; vertical-align:top}
+
+/*콘텐츠 리스트*/
+.teacher .tit_result_num {font-size:2rem; font-weight:bold; vertical-align:top}
+.teacher .tit_result_num em {font-size:1.4rem; color:#4e42ca}
+.teacher .list_result .sort_head + .list_con,
+.teacher .tit_result_num + .list_con {margin:2rem 0 0 0}
+.teacher .list_result .sort_head .btn {margin-top:-3rem}
+.teacher .tit_result_tot {font-size:1.4rem}
+.teacher .tit_result_tot + .tit_result_num {margin:2rem 0 0 0}
+
+.teacher .box_snip .bottom {height:8rem }
+.teacher .ref .box_snip .bottom {height:11rem }
+.teacher .list_result .list_con .cnt_item:hover .box_snip .bottom  {height:8rem}
+.teacher .list_result .list_con.ref .cnt_item:hover .box_snip .bottom  {height:11rem}
+.teacher .list_result .list_con .cnt_item:hover .box_snip  dl {padding:0.5rem 2.5rem 2.5rem 2.5rem;}
+.teacher .other_con .list_result .list_con .cnt_item .box_snip .bottom {height:7rem;}
+
+/*선생님자료실*/
+.teacher .find_reference {margin:3rem 0 4rem; background:#fcfcfc}
+.teacher .find_reference .tab_grade {display:flex; justify-content: center; position:relative; margin:0 auto; height:44px}
+.teacher .find_reference .tab_grade:before {display:block; content:""; position:absolute; top:0; left:0; width:100%; height:43px; background-color:#fff; z-index:10; border-bottom:1px solid #333}
+.teacher .find_reference .tab_grade li {width:25%; max-width:180px; height:100%; z-index:10; border:1px solid #d6d6d6; border-bottom:1px solid #333; border-left:transparent; text-align:center}
+.teacher .find_reference .tab_grade li:first-child {border-left:1px solid #d6d6d6;}
+.teacher .find_reference .tab_grade li a {display:flex; align-items:center; justify-content:center; background-color:#fff; height:100%; width:100%; font-size:1.6rem; font-weight:500}
+.teacher .find_reference .tab_grade li.on {border:1px solid #333; border-bottom:1px solid #fcfcfc; margin-left:-1px}
+.teacher .find_reference .tab_grade li.on a { background-color:#fcfcfc}
+.teacher .find_reference .wrap {max-width:1280px; margin:0 auto}
+.teacher .find_reference .serching {max-width:840px; margin:3rem auto}
+.teacher .find_reference  input[type="text"] {border:1px solid #333; border-radius:3px; height:30px; width:calc(100% - 79px); padding-left:1rem; margin-right:1.2rem; font-size:1.4rem}
+.teacher .find_reference .tab_sub_grade {display:flex; justify-content:center; margin-top:4rem}
+.teacher .find_reference .tab_sub_grade li {margin-left:8rem; padding-bottom:1rem; border-bottom:2px solid transparent}
+.teacher .find_reference .tab_sub_grade li.on {border-bottom:2px solid #4e42ca}
+.teacher .find_reference .tab_sub_grade li:first-child {margin-left:0}
+.teacher .find_reference .tab_sub_grade li button {font-size:1.6rem}
+.teacher .find_reference .tab_sub_grade li.on button {font-weight:bold}
+.teacher .find_reference .sel_sub_grade {display:none; width:100%; margin-bottom:2rem; border-color:#333}
+.teacher .find_reference .sub_opt {max-width:1280px; border:1px solid #dfdfdf; padding:1.5rem 0 1.5rem 4rem;  background-color:#fff; margin-top:-1px; margin-bottom:3rem; display:flex; justify-content:center}
+.teacher .find_reference .sub_opt ul {font-size:1.4rem; display:flex; justify-content:flex-start; flex-wrap:wrap}
+.teacher .find_reference .sub_opt ul li {margin:1rem 3rem}
+.teacher .find_reference .sub_opt ul li input,
+.teacher .find_reference .sub_opt ul li label {vertical-align:top}
+
+.teacher .pop_download_tc .pop_content {height:300px}
+.teacher .pop_download_tc .std_list_wrap ul.pop_scroll {border-top:1px solid #d6d6d6; padding:2rem}
+
+.teacher .writing_talk {padding-top:2rem; padding-bottom:5rem}
+.teacher .writing_talk h4 {font-weight:bold; font-size:1.6rem; margin-bottom:2rem; line-height:120%}
+.teacher .writing_talk h4 + span {float:right; margin-top:-3.5rem; font-size:1.4rem}
+.teacher .writing_talk table + p {float:right; margin-top:2rem}
+.teacher .writing_talk table + p button {margin-left:1rem}
+
+.teacher .cert_wrap {max-width:1280px; margin:0 auto; padding-bottom:6rem}
+.teacher .cert_wrap h3 {font-weight:bold; font-size:2rem; margin-bottom:2.4rem}
+.teacher .cert_wrap h3:before {display:inline-block; content:""; width:15px; height:16px; background: url('../images/contents/icon_tc_plus.svg') 0 0 no-repeat; background-size:contain; margin-right:1rem}
+.teacher .btn_cert_tc {display:inline-block; width:157px; padding:6px 0; background:#4e42ca; color:#fff; border-radius:4px; font-size:1.4rem; vertical-align:top; line-height:150%; text-align:center; margin-top:-3rem}
+.teacher .btn_cert_tc:before {display:inline-block; content:""; width:20px; height:20px; background:url('../images/teacher/2022/icon_tc_girl.png') 0 0 no-repeat; background-size:contain; vertical-align:top; margin-right:5px}
+
+.teacher .wrap .btn_cert_tc {display:block; float:right}
+
+.teacher .cert_wrap .tc_guide01 {margin-top:6rem}
+.teacher .cert_wrap .tc_guide01 ul {display:grid; grid-template-columns: repeat(3, 1fr); column-gap:4rem; font-size:1.4rem; line-height:150%}
+.teacher .cert_wrap .tc_guide01 li {border-radius:10px; display:flex; align-items:center;}
+.teacher .cert_wrap .tc_guide01 li a {position:relative; width:100%; height:100%; padding:4rem 0;}
+.teacher .cert_wrap .tc_guide01 li div {width:290px; margin:0 auto}
+.teacher .cert_wrap .tc_guide01 li:nth-child(1) {border:1px solid rgba(237, 103, 99, 0.5); background-color:rgba(240, 93, 91, 0.1)}
+.teacher .cert_wrap .tc_guide01 li:nth-child(2) {border:1px solid rgba(244, 202, 69, 0.5); background-color:rgba(241, 183, 0, 0.1)}
+.teacher .cert_wrap .tc_guide01 li:nth-child(3) {border:1px solid rgba(0, 108, 249, 0.5);  background-color:rgba(60, 141, 200, 0.1)}
+.teacher .cert_wrap .tc_guide01 li strong {display:block; margin-bottom:1.3rem; font-size:1.6rem}
+.teacher .cert_wrap .tc_guide01 li:nth-child(1) strong {color:#f05d5b}
+.teacher .cert_wrap .tc_guide01 li:nth-child(2) strong {color:#f1b700}
+.teacher .cert_wrap .tc_guide01 li:nth-child(3) strong {color:#4e42ca}
+.teacher .cert_wrap .tc_guide01 li a div:before {display:block; content:""; position:absolute;}
+.teacher .cert_wrap .tc_guide01 li:nth-child(1) a div:before {right:3.7rem; top:3rem; width:58px; height:60px; background: url('../images/teacher/2022/icon_tc_con1.png') 0 0 no-repeat; background-size:contain;}
+.teacher .cert_wrap .tc_guide01 li:nth-child(2) a div:before {right:2rem; top:3rem; width:59px; height:59px; background: url('../images/teacher/2022/icon_tc_con2.png') 0 0 no-repeat; background-size:contain;}
+.teacher .cert_wrap .tc_guide01 li:nth-child(3) a div:before {right:2rem; top:2rem; width:69px; height:69px; background: url('../images/teacher/2022/icon_tc_con3.png') 0 0 no-repeat; background-size:contain;}
+.teacher .cert_wrap .tc_guide02 {margin-top:6rem}
+.teacher .cert_wrap .tc_guide02 .tab {display:flex; justify-content:flex-start; max-width:1013px; margin-top:3.4rem}
+.teacher .cert_wrap .tc_guide02 .tab li {max-width:254px; width:calc(100% / 4); border:1px solid #4e42ca; margin-left:-1px; text-align:center; border-top-left-radius:4px; border-top-right-radius:4px}
+.teacher .cert_wrap .tc_guide02 .tab li:first-child {margin-left:0}
+.teacher .cert_wrap .tc_guide02 .tab li button {padding:1rem 0; line-height:170%; width:100%; height:100%}
+.teacher .cert_wrap .tc_guide02 .tab li.on {background:#4e42ca; margin-top:-10px;  box-shadow: 1px -8px 8px 0 rgba(78, 66, 202, 0.2);}
+.teacher .cert_wrap .tc_guide02 .tab li.on button {color:#fff; font-size:1.6rem;}
+.teacher .cert_wrap .box_cert_guide {border:2px solid #4e42ca; background-color: rgba(78, 66, 202, 0.03); padding:4rem 4rem 0; font-size:1.4rem; margin-top:-1px; font-weight:500; line-height:150%}
+.teacher .cert_wrap .box_cert_guide img {max-width:100%; height:auto}
+.teacher .cert_wrap .box_cert_guide .cert_step {padding-bottom:0.6rem}
+.teacher .cert_wrap .box_cert_guide .cert_step li {margin-bottom:3.4rem;}
+.teacher .cert_wrap .box_cert_guide .btn_cert_tc {margin:-5px 0 0 6rem}
+.teacher .cert_wrap .box_cert_guide .guide_img {margin-top:2rem}
+.teacher .cert_wrap .box_cert_guide .epik_link {margin-top:3rem; margin-bottom:5rem}
+.teacher .cert_wrap .box_cert_guide .epik_link a {margin-right:1.6rem}
+.teacher [class*="btn_epik"] {background:rgba(78, 66, 202, 0.15); border:1px solid #4e42ca;  border-radius:4px; padding:5px 25px 6px 23px; font-weight:500; vertical-align:top; line-height:120%}
+.teacher [class*="btn_epik"]:before {display:inline-block; content:""; background-repeat:no-repeat; background-position:0 0; background-size:contain; vertical-align:top; margin-right:5px}
+.teacher .btn_epik01:before {width:16px; height:18px; background-image:url('../images/teacher/2022/icon_doc.png');}
+.teacher .btn_epik02:before {width:16px; height:18px; background-image:url('../images/teacher/2022/icon_fileadd.png');}
+.teacher .btn_epik03:before {width:20px; height:18px; background-image:url('../images/teacher/2022/icon_enter.png');}
+.teacher .btn_epik04:before {width:20px; height:18px; background-image:url('../images/teacher/2022/icon_redo.png');}
+.teacher .cert_wrap .box_cert_guide .tc_service {display:flex; justify-content:center; margin:3rem 0 4rem}
+.teacher .cert_wrap .box_cert_guide .tc_service li {max-width:322px; width:calc(100% / 3); height:95px; font-size:1.6rem; font-weight:bold; border-radius:4px; box-shadow:0 8px 8px 0 rgba(51, 51, 51, 0.1); background-color:#fff; margin:0 1.5rem; padding:0 1rem}
+.teacher .cert_wrap .box_cert_guide .tc_service li a {width:100%; height:100%; color:inherit; display:flex; justify-content:center; align-items:center}
+.teacher .cert_wrap .box_cert_guide .tc_service li a:before,
+.teacher .cert_wrap .box_cert_guide .tc_service li a span:after {display:inline-block; content:""; background-repeat:no-repeat; background-position:0 0; background-size:contain;}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(1) {border:1px solid rgba(237, 103, 99, 0.5); color:#f05d5b}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(2) {border:1px solid rgba(244, 202, 69, 0.5); color:#f1b700}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(3) {border:1px solid rgba(0, 108, 249, 0.5); color:#4e42ca}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(1) a:before {width:58px; height:60px; background-image:url('../images/teacher/2022/icon_tc_con1.png');}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(2) a:before {width:59px; height:59px; background-image:url('../images/teacher/2022/icon_tc_con2.png');}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(3) a:before {width:59px; height:59px; background-image:url('../images/teacher/2022/icon_tc_con3.png');}
+.teacher .cert_wrap .box_cert_guide .tc_service li a span {vertical-align:top; margin-left:4%}
+.teacher .cert_wrap .box_cert_guide .tc_service li a span:after {width:22px; height:22px; vertical-align:top; margin-top:-2px; margin-left:2rem}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(1) a span:after {background-image:url('../images/teacher/2022/icon_arrow_c.png');}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(2) a span:after {background-image:url('../images/teacher/2022/icon_arrow_y.png');}
+.teacher .cert_wrap .box_cert_guide .tc_service li:nth-child(3) a span:after {background-image:url('../images/teacher/2022/icon_arrow_b.png');}
+
+@media all and (max-width:1300px) {
+	.teacher .contents_top .wrap,
+	.teacher .contents_mid .wrap,
+	.teacher .find_reference .wrap,
+	.teacher .cert_wrap {padding-left:4%; padding-right:4%}
+	.teacher .find_reference .sub_opt {padding:1.5rem 3rem 1.5rem}
+
+	.teacher .cert_wrap .tc_guide01 ul {column-gap:2rem}
+	.teacher .cert_wrap .box_cert_guide .tc_service li {margin:0 1rem}
+	.teacher .cert_wrap .box_cert_guide .tc_service li a span:after {margin-left:1rem}
+
+}
+@media all and (max-width:995px) {
+	.teacher .course_top {border-bottom: 2px solid #4e42ca !important}
+	.teacher .course_top .tit_course_m.open + ul {width:100%}
+	.teacher .course_top .tit_course_m.open + ul > li.dep2 span.dep3 {display: block;  text-align:left; width:130px; margin:0 auto 1rem}
+	.teacher .course_top .tit_course_m.open + ul > li.dep2 span.dep3:first-of-type {margin-top:1.5rem}
+
+	.teacher .course_top .tit_course_m button:after {margin: 0.4rem 0 0 0.6rem;} /* 2022-03-02 */
+	.teacher .list_result .list_con .cnt_item:hover .box_snip  dl {padding:1.2rem 0 0 0}
+	.teacher .find_reference .tab_grade {padding-left:4%; padding-right:4%;}
+
+	.teacher .cert_wrap .tc_guide01 li a {padding:2rem 0; text-align:center}
+	.teacher .cert_wrap .tc_guide01 li a div {width:auto}
+	.teacher .cert_wrap .tc_guide01 li a div:before {position:static; margin:0 auto}
+	.teacher .cert_wrap .tc_guide02 .tab li.on button {font-size:1.4rem}
+	.teacher .cert_wrap .box_cert_guide .tc_service {margin:3rem 3rem 4rem}
+	.teacher .cert_wrap .box_cert_guide .tc_service li {padding:2.2rem 1rem; margin:0 2vw; height:auto; flex-shrink:0}
+	.teacher .cert_wrap .box_cert_guide .tc_service li a {display:unset; text-align:center}
+	.teacher .cert_wrap .box_cert_guide .tc_service li a:before {display:block; margin:0 auto; padding-bottom:1.6rem}
+	.teacher .cert_wrap .box_cert_guide .tc_service li a span {display:block; margin:0 auto;}
+	.teacher .cert_wrap .box_cert_guide .tc_service li a span:after{display:inline-block; }
+
+}
+
+@media all and (max-width:760px) {
+	.teacher .list_result .list_con .cnt_item:hover .box_snip .bottom {height:auto}
+	.teacher .list_result .list_con .cnt_item:hover .box_snip  dl {padding:1.2rem 0 0 0}
+
+	.teacher .find_reference {margin:0 0 2rem; padding-top:3rem}
+	.teacher .find_reference  input[type="text"] {margin-right:0.5rem}
+
+	.teacher .find_reference .tab_grade {display:flex; justify-content:flex-start; flex-wrap:wrap; padding:0 4%; margin:0; height:auto;}
+	.teacher .find_reference .tab_grade:before {display:none}
+	.teacher .find_reference .tab_grade li a { font-size:1.4rem; padding:6px 0 8px}
+	.teacher .find_reference .tab_grade li {width:calc(100% / 3); max-width:233px; border-right:1px solid #d6d6d6; border-top:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6}
+
+	.teacher .find_reference .tab_grade li:nth-child(3n+1) {border-left:1px solid #d6d6d6; margin-left:0}
+	.teacher .find_reference .tab_grade li:nth-child(n+4) {border-bottom:1px solid #d6d6d6; border-top:0}
+	.teacher .find_reference .tab_grade li.on {border:1px solid #4e42ca; border-left:0; position:relative}
+	.teacher .find_reference .tab_grade li.on:before {display:block; content:""; width:1px; height:calc(100% + 1px); background:#4e42ca; position:absolute; top:-1px; left:0px; z-index:10}
+	.teacher .find_reference .tab_grade li:nth-child(n+4).on {margin-top:-1px}
+	.teacher .find_reference .tab_grade li.on a {background-color:#fff}
+
+	.teacher .find_reference .tab_sub_grade {display:none}
+	.teacher .find_reference .sel_sub_grade {display:block}
+	.teacher .find_reference .sub_opt {background-color:#fcfcfc; display:block}
+	.teacher .find_reference .sub_opt ul li {min-width:50%; text-indent:-20px; padding-left:20px; margin:1rem 0}
+	.teacher .find_reference .sub_opt ul li label {margin-right:2rem;}
+	.teacher .find_reference .serching {margin:2rem auto}
+
+	.teacher .tit_result_num {font-size:1.8rem;}
+	.teacher .list_result .noresult {font-size:1.6rem}
+
+	.teacher .writing_talk {padding-top:1rem; padding-bottom:2rem}
+	.teacher .writing_talk table + p {float:none; margin-top:0; text-align:center}
+	.teacher .writing_talk table + p button {margin-left:1rem}
+
+	.teacher .wrap .btn_cert_tc {display:block; float:none; margin:1rem auto 0}
+	.teacher .cert_wrap .tc_guide01 ul {display:block}
+	.teacher .cert_wrap h3 {font-weight:bold; font-size:2rem; margin-bottom:2.4rem}
+	.teacher .cert_wrap .tc_guide01 li {margin-bottom:1rem}
+	.teacher .cert_wrap h3 {font-weight:bold; font-size:1.6rem}
+	.teacher .cert_wrap h3:before {vertical-align:top}
+	.teacher .cert_wrap .tc_guide01 {margin-top:2.8rem}
+	.teacher .cert_wrap .tc_guide01 li:before {margin-bottom:1.6rem}
+	.teacher .cert_wrap .tc_guide02 {margin-top:4rem}
+	.teacher .cert_wrap .tc_guide02 .tab {flex-wrap:wrap; width:100%; max-width:unset; margin-top:2.4rem}
+	.teacher .cert_wrap .tc_guide02 .tab li {width:calc(100% / 2); max-width:unset; height:60px; border-top-left-radius:0; border-top-right-radius:0; margin-left:0; display:flex; align-items:center}
+	.teacher .cert_wrap .tc_guide02 .tab li.on {margin-top:0;  box-shadow: 1px -8px 8px 0 rgba(78, 66, 202, 0.2);}
+	.teacher .cert_wrap .tc_guide02 .tab li button { font-size:1.2rem; line-height:120%; padding:0}
+	.teacher .cert_wrap .tc_guide02 .tab li.on button {font-size:1.3rem;}
+
+	.teacher .cert_wrap .tc_guide02 .tab li:nth-child(2) {border-left:0}
+	.teacher .cert_wrap .tc_guide02 .tab li:nth-child(3) {border-top:0}
+	.teacher .cert_wrap .tc_guide02 .tab li:nth-child(4) {border-top:0; border-left:0}
+	.teacher .cert_wrap .box_cert_guide {border:1px solid #4e42ca}
+
+	.teacher .cert_wrap .box_cert_guide {padding:2rem 2rem 0; font-weight:normal;}
+	.teacher .cert_wrap .box_cert_guide .btn_cert_tc {display:block; margin-top:1rem; margin-left:0}
+	.teacher .cert_wrap .box_cert_guide .epik_link {margin-top:1rem; margin-bottom:2.4rem}
+	.teacher .cert_wrap .box_cert_guide .epik_link span {display:block}
+	.teacher .cert_wrap .box_cert_guide .epik_link a {display:inline-block; margin-bottom:0.5rem}
+
+	.teacher .cert_wrap .box_cert_guide .tc_service {display:unset; }
+	.teacher .cert_wrap .box_cert_guide .tc_service li {width:204px; margin:0 auto 1rem;}
+
+}
+
+
+@media all and (max-width:499px) {
+	.teacher .list_result .tab_common1 {max-width:290px}
+	.teacher .list_result .list_con .cnt_item .box_snip .bottom,
+	.teacher .list_result .list_con .cnt_item:hover .box_snip .bottom,
+	.teacher .list_result .list_con.ref .cnt_item:hover .box_snip .bottom {height:8.6rem }
+
+	.teacher .course_top .tit_course_m {text-indent:0.5rem;  padding-right:0rem;}
+	.teacher .course_top .wrap h2 strong:before {margin:1.5rem 1rem 0 0.5rem;}
+	.teacher .content_top h2 em:before {margin:0.3rem 1rem 0 0.7rem; vertical-align:top}
+
+}

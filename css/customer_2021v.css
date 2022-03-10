@@ -1,0 +1,207 @@
+@charset "utf-8";
+.customer .course_top {border-bottom:1px solid #e1e1e1;}
+.customer .course_top .btn_open_list {background-color: #4e42ca;}
+.customer .content_top {background-color:rgba(24, 103, 254, 0.03)}
+.customer .board_type1.mathqry tr .stt em {font-weight:bold}
+.customer .board_type1.mathqry .stt_ing {color:#333}
+.customer .board_type1.mathqry .stt_ok {color:#4e42ca}
+.customer .quiry_head select {width:auto}
+.customer .quiry_head .btn_btm_exec {padding-left:1.6rem; padding-right:1.6rem;}
+
+/*글쓰기 헤더*/
+.customer .writing_head {padding-top:2rem; padding-bottom:5rem}
+.customer .writing_head h4 {font-weight:bold; font-size:1.6rem; margin-bottom:1rem; line-height:120%}
+.customer .writing_head h4 + span {float:right; margin-top:-2.5rem; font-size:1.4rem}
+.customer .writing_head .noti {margin-bottom:2rem; font-size:1.4rem;text-indent:-1.4rem; padding-left:1.2rem}
+.customer .writing_head table + p {float:right; margin-top:2rem}
+.customer .writing_head table + p button {margin-left:1rem}
+/*게시물검색*/
+.customer .tab_quiry {border-bottom:1px solid #e1e1e1;  display:flex; justify-content:center; margin-top:1.5rem;}
+.customer .tab_quiry li {position:relative; margin:0 1.5rem}
+.customer .tab_quiry li a {display:block; font-size:1.6rem; position:relative; text-align:center; padding:0 0.2rem 1.4rem;}
+.customer .tab_quiry li a .m_br {display:none}
+.customer .tab_quiry li.active a {font-weight:bold}
+.customer .tab_quiry li.active a:after {content:""; display:block; position:absolute; bottom:-1px; left:0; width:100%; height:2px; background:#4e42ca}
+.customer .tab_quiry + .faq_sorting {margin:4rem auto 2rem; display:flex; justify-content:flex-end}
+.customer .tab_quiry + .faq_sorting  button {font-size:1.4rem}
+.customer .tab_quiry + .faq_sorting  button.active {font-weight:bold}
+.customer .tab_quiry + .faq_sorting .btn_opt1:after {content:""; display:inline-block; height:13px; width:1px; background:#333; margin:2px 7px 0 8px; vertical-align:top}
+/*자주묻는질문*/
+.customer .faq {border-top:2px solid #4e42ca; border-bottom:1px solid #dfdfdf; font-size:1.4rem; width:100%; table-layout:fixed; margin-top:1rem}
+.customer .faq th,
+.customer .faq td {text-align:center}
+.customer .faq th {border-bottom:1px solid #4e42ca; padding:10px 0 11px; font-weight:500; text-align:center}
+.customer .faq td {border-bottom:1px solid #dfdfdf; padding:14px 0}
+.customer .faq tr.faq_q {cursor:pointer}
+.customer .faq .ord {width:7%}
+.customer .faq .type {width:12%}
+.customer .faq .subj {text-align:left; width:auto; padding-left:1rem; padding-right:1rem}
+.customer .faq th.subj {text-align:center}
+.customer .faq .subj a {font-size:1.6rem; pointer-events:none}
+.customer .faq .faq_q a span { display:inline-block; max-width:90%; word-wrap:break-all; line-height:120% }
+.customer .faq .faq_a {display:none; background-color:rgba(223, 223, 223, 0.3);}
+.customer .faq .faq_a .con {text-align:left; width:auto; word-break:break-all; padding-left:1rem; padding-right:1rem; line-height:130%}
+.customer .faq .faq_q .subj {position:relative}
+.customer .faq .faq_q .subj a:after {display:inline-block; content:""; position:absolute; top:1.5rem; right:4rem; width:12px; height:12px; background-image: url('../images/common/icon_arrow_d.svg'); background-position:0 0; background-size:12px auto; background-repeat:no-repeat}
+.customer .faq .faq_q.open .subj a:after {background-image: url('../images/common/icon_arrow_u.svg'); }
+.customer .faq .faq_q.open + tr.faq_a {display:table-row}
+.customer .faq .faq_q.open .subj a {font-weight:bold;}
+.customer .faq + .pagination {margin-top:4rem}
+.customer .faq .noresult {width:100%; font-size:1.6rem; padding:2rem 0}
+
+/*고객센터 메인*/
+.customer .wrap_main {max-width:1280px; margin:0 auto; padding-top:3.2rem; padding-bottom:7rem}
+.customer .wrap_main .top_area {display:grid; grid-template-columns:repeat(2, 1fr); column-gap:2rem;}
+.customer .wrap_main .top_area > h3 {grid-column:1 / 3; font-size:2rem; font-weight:bold; margin-bottom:3rem}
+.customer .wrap_main .top_area .faq_find {display:flex; flex-direction:column; justify-content:end;}
+.customer .wrap_main .top_area .faq_find p {font-size:1.6rem; margin-bottom:2.3rem}
+.customer .wrap_main .top_area .faq_find input[type="text"] {width:calc(100% - 80px); height:32px; border:1px solid #333; border-radius:3px; padding:0 1rem; line-height:100%}
+.customer .wrap_main .top_area .faq_find input[type="text"] + .btn_find {height:32px}
+.customer .wrap_main .top_area .faq_find .btn_find {margin-left:1rem}
+.customer .wrap_main .top_area .guide {display:grid; grid-template-columns:repeat(2, 1fr); grid-template-rows:repeat(2, 32px); column-gap:1rem; row-gap:1rem}
+.customer .wrap_main .top_area .guide a {display:flex; align-items:center; justify-content:center; flex-wrap:wrap; border:1px solid #4e42ca; background:rgba(78, 66, 202, 0.1); border-radius:3px; font-size:1.6rem; font-weight:bold; color:#4e42ca}
+.customer .wrap_main .top_area .guide a .m_break {display:inline-block}
+.customer .wrap_main .top_area .guide a:before {width:21px; height:21px; display:block; content:""; background-position:0 0; background-repeat:no-repeat; background-size:contain; vertical-align:top; margin:0 5px 0 0}
+.customer .wrap_main .top_area .guide a:nth-child(1):before {background-image:url('../images/contents/icon_question.svg')}
+.customer .wrap_main .top_area .guide a:nth-child(2):before {background-image:url('../images/contents/icon_user.svg')}
+.customer .wrap_main .top_area .guide a:nth-child(3):before {background-image:url('../images/contents/icon_info.svg')}
+.customer .wrap_main .top_area .guide a:nth-child(4):before {background-image:url('../images/contents/icon_teacher.svg')}
+.customer .wrap_main .main_service {margin-top:6rem}
+.customer .wrap_main .main_service h3 {font-size:2rem; font-weight:bold; margin-bottom:3rem}
+.customer .wrap_main .main_service ul {display:grid; grid-template-columns: repeat(3, 1fr);  align-content:space-around; justify-content:space-between; font-size:1.4rem; line-height:150%}
+.customer .wrap_main .main_service li {border-radius:10px; display:flex; align-items:center; margin-left:4rem}
+.customer .wrap_main .main_service li:first-child {margin-left:0}
+.customer .wrap_main .main_service li a {position:relative; width:100%; height:100%; padding:4rem 0;}
+.customer .wrap_main .main_service li div {width:290px; margin:0 auto}
+.customer .wrap_main .main_service li:nth-child(1) {border:1px solid rgba(237, 103, 99, 0.5); background-color:rgba(240, 93, 91, 0.1)}
+.customer .wrap_main .main_service li:nth-child(2) {border:1px solid rgba(244, 202, 69, 0.5); background-color:rgba(241, 183, 0, 0.1)}
+.customer .wrap_main .main_service li:nth-child(3) {border:1px solid rgba(0, 108, 249, 0.5);  background-color:rgba(60, 141, 200, 0.1)}
+.customer .wrap_main .main_service li strong {display:block; margin-bottom:1.3rem; font-size:1.6rem}
+.customer .wrap_main .main_service li:nth-child(1) strong {color:#f05d5b}
+.customer .wrap_main .main_service li:nth-child(2) strong {color:#f1b700}
+.customer .wrap_main .main_service li:nth-child(3) strong {color:#4e42ca}
+.customer .wrap_main .main_service li a div:before {display:block; content:""; position:absolute;}
+.customer .wrap_main .main_service li:nth-child(1) a div:before {right:3.7rem; top:3rem; width:83px; height:76px; background: url('../images/customer/img_main_h01.png') 0 0 no-repeat; background-size:contain;}
+.customer .wrap_main .main_service li:nth-child(2) a div:before {right:4rem; top:4rem; width:65px; height:57px; background: url('../images/customer/img_main_h02.png') 0 0 no-repeat; background-size:contain;}
+.customer .wrap_main .main_service li:nth-child(3) a div:before {right:4rem; top:4rem; width:61px; height:63px; background: url('../images/customer/img_main_h03.png') 0 0 no-repeat; background-size:contain;}
+.customer .wrap_main .notice {margin-top:6rem; display:grid; grid-template-columns:2fr 1fr}
+.customer .wrap_main .notice h3 {line-height:100%; font-size:2rem; font-weight:bold; margin-bottom:2.7rem}
+.customer .wrap_main .notice .list {position:relative}
+.customer .wrap_main .notice .btn_more {position:absolute; right:0; top:0.5rem; font-size:1.6rem; font-weight:500; color:#000; }
+.customer .wrap_main .notice .btn_more:after {display:inline-block; content:""; width:16px; height:16px; background:url('../images/common/icon_more.png') 0 50% no-repeat; background-size:contain; vertical-align:top; margin:0px 0 0 7px}
+.customer .wrap_main .notice .list ul {border-top:2px solid #4e42ca; border-bottom:1px solid #dfdfdf}
+.customer .wrap_main .notice .list li {border-bottom:1px solid #dfdfdf; padding:1rem 2rem; font-size:1.4rem; display:flex; justify-content:space-between; }
+.customer .wrap_main .notice .list li a {max-width:99%; text-overflow:ellipsis; white-space: nowrap; overflow:hidden;}
+.customer .wrap_main .notice aside {margin-left:4rem}
+.customer .wrap_main .util h3 {line-height:100%; font-size:2rem; font-weight:bold; margin-bottom:2.7rem;}
+.customer .wrap_main .util h3:after {display:inline-block; content:""; width:18px; height:20px; background:url('../images/customer/icon_down.png') 0 0 no-repeat; background-size:contain; vertical-align:top; margin:-2px 0 0 1.5rem}
+.customer .wrap_main .util a {display:block;border-radius:10px; width:100%; height:calc(100% - 45px);  border:1px solid #4e42ca; display:flex; justify-content:center; align-items:center; font-weight:bold; font-size:2rem}
+.customer .wrap_main .util a:before {display:inline-block; content:""; width:60px; height:60px; background:url('../images/customer/icon_acrobat.png') 0 0 no-repeat; background-size:contain; vertical-align:top; margin:0 22px 0 0;}
+.customer .wrap_main .cscenter {margin-top:6rem}
+.customer .wrap_main .cscenter h3 {font-size:2rem; font-weight:bold; margin-bottom:3rem}
+.customer .wrap_main .cscenter ul {display:grid; grid-template-columns:repeat(2, 1fr); column-gap:2rem; }
+.customer .wrap_main .cscenter li {border:1px solid #4e42ca; border-radius:10px; display:flex; align-items:center; justify-content:center; padding:25px 0; font-size:1.4rem}
+.customer .wrap_main .cscenter li:before {display:inline-block; content:""; width:60px; height:60px; background-position:0 0; background-repeat:no-repeat; background-size:contain; vertical-align:top; margin:0 4rem 0 0; }
+.customer .wrap_main .cscenter li.cs_call:before {background-image:url('../images/customer/icon_call.png')}
+.customer .wrap_main .cscenter li.cs_kakao:before {background-image:url('../images/customer/icon_kakao.png')}
+.customer .wrap_main .cscenter li > div {display:flex; align-items:center;}
+.customer .wrap_main .cscenter li span > strong,
+.customer .wrap_main .cscenter li span > a {font-size:2.6rem; font-weight:bold; margin-top:1.5rem; display:block}
+.customer .wrap_main .cscenter li p {color:#9a9a9a; line-height:150%; margin-left:3rem}
+
+
+
+@media all and (max-width:1300px) {
+	.customer .contents_top .wrap,
+	.customer .contents_mid .wrap,
+	.customer .find_reference .wrap,
+	.customer .find_reference .sub_opt,
+	.customer .wrap_main {padding-left:4%; padding-right:4%}
+
+	.customer .wrap_main .main_service li {margin-left:2rem}
+	.customer .wrap_main .main_service li div {width:220px}
+}
+@media all and (max-width:1150px) {
+	.customer .wrap_main .cscenter li:before {margin:0 2rem 0 0; }
+	.customer .wrap_main .cscenter li p {margin-left:1.5rem}
+}
+@media all and (max-width:995px) {
+	.customer .course_top {border-bottom: 2px solid #4e42ca !important}
+	.customer .faq .faq_q .subj a:after {right:2rem}
+
+	.customer .wrap_main .top_area {display:block}
+	.customer .wrap_main .top_area .faq_find div {max-width:630px; width:100%; margin:0 auto 2rem}
+	.customer .wrap_main .top_area .guide {grid-template-rows:repeat(2, 48px);column-gap:1.5rem; row-gap:1.5rem}
+	.customer .wrap_main .top_area .guide a:before {width:28px; height:28px; margin:0 5px 0 0}
+	.customer .wrap_main .main_service li a {padding:2rem 0; text-align:center}
+	.customer .wrap_main .main_service li a div {width:auto}
+	.customer .wrap_main .main_service li a div:before {position:static; margin:0 auto}
+	.customer .wrap_main .main_service li:nth-child(1) a div:before {height:76px}
+	.customer .wrap_main .main_service li:nth-child(2) a div:before {height:76px}
+	.customer .wrap_main .main_service li:nth-child(3) a div:before {height:76px}
+	.customer .wrap_main .notice aside {margin-left:3rem}
+	.customer .wrap_main .util a {font-size:1.8rem}
+	.customer .wrap_main .util a:before {width:50px; height:50px; margin:0 10px 0 0;}
+	.customer .wrap_main .cscenter li > div {display:block}
+	.customer .wrap_main .cscenter li {flex-wrap:wrap}
+	.customer .wrap_main .cscenter li:before {margin:0 1rem 0 0; }
+	.customer .wrap_main .cscenter li p {margin-left:0; letter-spacing:-1px; padding-top:1.7rem}
+
+}
+
+@media all and (max-width:760px) {
+	.board_type1.mathqry tr .stt {line-height:200%}
+	.board_type1.mathqry .hit {display:none}
+	.customer .writing_head .noti {margin-bottom:2rem; font-size:1.2rem;}
+	.customer .writing_head h4 + span {margin-top:-2.5rem}
+	.customer .writing_head table + p {float:none; margin-top:0; text-align:center;}
+
+	.customer .tab_quiry li {position:relative; margin:0 1.5rem}
+	.customer .tab_quiry li a {font-size:1.4rem; padding:0 0.2rem 0.7rem;}
+	.customer .tab_quiry + .faq_sorting {margin:3rem auto 2rem}
+	.customer .faq {margin-top:1.5rem; border-top:1px solid #e1e1e1; border-bottom:0}
+	.customer .faq, .customer .faq tr, .customer .faq th, .customer .faq td {width:100%}
+	.customer .faq th,
+	.customer .faq thead,
+	.customer .faq tr .ord,
+	.customer .faq tr.faq_a .ord,
+	.customer .faq tr.faq_a .type {display:none}
+	.customer .faq tr {display:flex; flex-wrap:wrap;  position:relative; width:100%}
+	.customer .faq td {border:0; padding:0}
+	.customer .faq .type {width:100%; text-align:left; margin-bottom:0.5rem; padding-left:0}
+	.customer .faq .subj {width:100%; text-align:left; margin-bottom:0; padding-left:0}
+	.customer .faq .subj a {font-weight:normal}
+	.customer .faq .faq_q {border-bottom:1px solid #e1e1e1}
+	.customer .faq .faq_q .type {padding:1.2rem 0 0 0}
+	.customer .faq .faq_q .subj {padding:1rem 0 1.5rem}
+	.customer .faq .faq_q.open + tr.faq_a {display:block;}
+	.customer .faq .faq_q .subj a:after {right:1rem}
+	.customer .faq .faq_a {display:none; width:100%}
+	.customer .faq .faq_a .con {padding:1rem; border-bottom:1px solid #e1e1e1;}
+	.customer .faq  .noresult {padding:4rem 0}
+
+	.customer .wrap_main .main_service,
+	.customer .wrap_main .notice,
+	.customer .wrap_main .cscenter {margin-top:4rem}
+	.customer .wrap_main .top_area .guide {grid-template-rows:repeat(2, 68px);column-gap:1rem; row-gap:1rem}
+	.customer .wrap_main .top_area .guide a {font-size:1.4rem; line-height:120%}
+	.customer .wrap_main .top_area .guide a .m_break {display:block}
+	.customer .wrap_main .top_area .faq_find p {font-size:1.4rem; margin-bottom:1rem; line-height:130%}
+	.customer .wrap_main .main_service  ul {display:block}
+	.customer .wrap_main .main_service li {margin-bottom:1rem;  margin-left:0}
+	.customer .wrap_main .main_service li:before {margin-bottom:1.6rem}
+	.customer .wrap_main .notice {display:block}
+	.customer .wrap_main .notice aside {margin-left:0; margin-top:4rem}
+	.customer .wrap_main .notice .list li {padding:1rem 0; display:flex; flex-wrap:wrap; justify-content:flex-start}
+	.customer .wrap_main .notice .list li a {width:100%}
+	.customer .wrap_main .notice .list li .date {width:100%; text-align:right; margin-top:1rem}
+	.customer .wrap_main .util a {padding:1rem 0; font-size:1.6rem}
+	.customer .wrap_main .util a:before {width:42px; height:42px; margin:0 10px 0 0;}
+	.customer .wrap_main .cscenter ul {display:block;}
+	.customer .wrap_main .cscenter li {margin-bottom:1rem; align-items: start; }
+	.customer .wrap_main .cscenter li:before {width:40px; height:40px; margin:0 1rem 0 0; }
+	.customer .wrap_main .cscenter li p {margin-left:0;}
+}
+@media all and (max-width:499px) {
+.customer .tab_quiry li a .m_br {display:block}
+}

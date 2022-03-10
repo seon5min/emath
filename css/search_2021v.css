@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+.key_hr {color:#4e42ca; background:none}
+.pg_search #header_2021 nav .searching {display:none}
+.search_top .wrap,
+.search_nrw .wrap,
+.search_result .wrap {max-width:1280px; margin:0 auto; position:relative}
+
+.search_top .main_search {border:2px solid #ca2422; max-width:829px; height:45px; margin:3.5rem auto 0; text-align:center}
+.search_top .main_search input[type="text"] {width:calc(100% - 6rem); height:39px;}
+.search_top .main_search button[type="submit"] {width:2.5rem; height:100%;background:url('../images/layout/icon_search.png') 0 50% no-repeat; text-indent:-9999px}
+.search_top h2 {text-align:center; margin:4rem 0 0 0; font-size:2.8rem; font-weight:bold}
+
+.search_top .tab_sorting {max-width:1280px; margin:0 auto; display:flex; margin-top:3.5rem; border-top:1px solid #d6d6d6;}
+.search_top .tab_sorting .ctg {width:calc(100% / 9); max-width:143px; height:46px; line-height:40px; border-right:1px solid #d6d6d6;  border-bottom:1px solid #d6d6d6; position:relative; z-index:1000}
+.search_top .tab_sorting .ctg br {display:none}
+.search_top .tab_sorting .ctg:first-child {border-left:1px solid #d6d6d6}
+.search_top .tab_sorting .ctg > button {width:100%; height:100%; font-size:1.6rem; font-weight:500; text-align:center; vertical-align:top;}
+.search_top .tab_sorting .ctg.on > button {font-weight:bold; color:#4e42ca}
+.search_top .tab_sorting .ctg.on:after {content:""; display:block; width:100%; height:100%; position:absolute; top:-1px; left:-1px; border:1px solid #4e42ca; z-index:1001}
+.search_top .tab_sorting .more_rel {position:absolute; width:calc(100% + 2px); top:45px; right:-1px; border:1px solid #d6d6d6; border-top:0; background:#fff; display:none}
+.search_top .tab_sorting .more_rel.open {display:block}
+.search_top .tab_sorting .more_rel li { border-top:1px solid #d6d6d6; text-align:center; height:46px; background-position:50% 50%; background-repeat:no-repeat; background-size:70% auto;}
+.search_top .tab_sorting .more_rel li:first-child {}
+.search_top .tab_sorting .more_rel li.logo_elm {background-image:url('../images/contents/logo_elm.png')}
+.search_top .tab_sorting .more_rel li.logo_mid {background-image:url('../images/contents/logo_mid.png')}
+.search_top .tab_sorting .more_rel li.logo_ebsi {background-image:url('../images/contents/logo_ebsi.png')}
+.search_top .tab_sorting .more_rel li.logo_eng {background-image:url('../images/contents/logo_eng.png')}
+.search_top .tab_sorting .more_rel li button {display:block; text-indent:-9999px; width:100%; height:100%;}
+.search_top .rel_word {display:flex; margin-top:2.5rem;}
+.search_top .rel_word dt {padding:0.4rem 2.2rem 0 1.6rem; font-size:1.5rem; font-weight:bold}
+.search_top .rel_word dd {font-size:1.5rem;line-height:150%}
+.search_top .rel_word dd a {float:left; padding:0 9px; background:url('../images/search/bg_bar_04.png') no-repeat 0 9px; color:#152d6b; font-size:12px; line-height:18px}
+.search_top .rel_word dd a:hover {text-decoration:underline}
+.search_top .rel_word dd a:first-child {padding-left:0; background:0}
+.search_nrw {background:rgba(24, 103, 254, 0.03); margin-top:2.5rem;}
+.search_nrw .wrap {padding:4.5rem 0 1.5rem 0; position:relative}
+.search_nrw fieldset dl {display:flex; justify-content:flex-start}
+.search_nrw fieldset dt {width:124px;  font-size:1.4rem; font-weight:bold; padding-left:1.6rem}
+.search_nrw fieldset dd {width:calc(100% - 124px)}
+.search_nrw fieldset dd li {display:inline-block; width:190px; font-size:1.4rem; margin-bottom:2.5rem}
+.search_nrw fieldset dd li input {vertical-align:middle}
+.search_nrw fieldset dd li input +label {margin-left:2px}
+.search_nrw fieldset dd li input:checked +label { font-weight:500}
+.search_nrw fieldset dl.opt2 {margin-top:1rem; max-width:950px}
+.search_nrw fieldset dl.opt2 li.sp_date {width:190px;}
+.search_nrw fieldset dl.opt2 li.sel_date {width:380px;}
+.search_nrw fieldset .btn_query {position:absolute; right:0; bottom:4rem}
+.search_nrw fieldset dl.opt2 li.sel_date input[type="text"] {border:1px solid #dfdfdf; border-radius:3px; padding:3px 10px; height:32px; width:10rem; font-size:1.4rem; text-align:center}
+
+.search_nrw .btn_more_opt {display:none}
+
+.search_result {padding-bottom:7rem}
+.search_result .wrap {margin-top:4rem}
+.search_result .result_head {display:flex; justify-content:space-between; border-bottom:1px solid #e1e1e1; padding-bottom:2rem}
+.search_result .result_head h3 {font-size:2rem; font-weight:bold}
+.search_result .result_head h3 .num {font-size:1.4rem; margin-left:1rem; font-weight:normal}
+.search_result .result_head h3 .num strong {color:#4e42ca}
+.search_result .result_head .sorting button {font-size:1.4rem}
+.search_result .result_head .sorting button.active {font-weight:bold}
+.search_result .result_head .sorting .btn_opt1:after {content:""; display:inline-block; height:13px; width:1px; background:#333; margin:2px 7px 0 8px; vertical-align:top}
+.search_result .result_head .btn_more_result {font-size:1.4rem; font-weight:500}
+.search_result .result_head .btn_more_result:after {display:inline-block;  content:""; width:7px; height:7px;transform:rotate(135deg); border-top:2px solid #333; border-left:2px solid #333; vertical-align:top; margin:3px 0 0 3px}
+.search_result .each_result {margin-bottom:3rem}
+.search_result .noresult {text-align:center; background:url('../images/common/icon_noresult.png') 50% 0 no-repeat; font-size:2rem; padding:16rem 0 5rem; margin-top:10rem; line-height:150%}
+.search_result .noresult h3 {color:#4e42ca; font-size:2rem; font-weight:bold; margin-bottom:20px;}
+.search_result .noresult br {display:none}
+.search_result .pagination {margin-top:4rem}
+
+.list_searching .srch_item {display:flex; margin-top:2rem; position:relative }
+.list_searching .srch_item .thumbnail {display:block; position:relative;}
+.list_searching .srch_item .thumbnail .stk {position:absolute; right:5%; top:7%; width:38px; height:38px;}
+.list_searching .srch_item .thumbnail span{width:302px; height:170px;}
+.list_searching .srch_item .thumbnail img {display:block; width:auto; border:solid 1px #e1e1e1; height:170px; border-radius:10px; vertical-align:top; background-color:transparent}
+.list_searching .srch_item .result_info  {width:76.4%; padding-left:2rem;}
+.list_searching .srch_item .result_info a:hover {text-decoration:underline}
+.list_searching .srch_item .sub_tit {font-size:1.6rem}
+.list_searching .srch_item .sub_tit strong {font-weight:500; line-height:150%}
+.list_searching .srch_item .sub_tit .date {font-size:1.4rem; color:#9a9a9a; vertical-align:middle;}
+.list_searching .srch_item .sub_tit .date:before {display:inline-block; content:""; border-left:1px solid #e1e1e1; width:0px; height:12px; vertical-align:middle; margin:-4px 7px 0}
+.list_searching .srch_item .location { font-size:1.4rem; color:#9a9a9a; margin-top:1rem; vertical-align:top; }
+.list_searching .srch_item .location li {display:inline-block}
+.list_searching .srch_item .location .dep1 em:first-child:after {display:inline-block; content:"|"; font-size:11px; margin:0 3px 0 7px; vertical-align:top; line-height:120%;}
+.list_searching .srch_item .detail {font-size:1.6rem; line-height:150%; margin:1rem 0; display:-webkit-box; overflow:hidden; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
+.list_searching .srch_item .info  {margin-top:1rem}
+.list_searching .srch_item .info span {display:block;margin-bottom:8px; font-size:1.4rem}
+.list_searching .srch_item .info span dfn {display:inline-block; background:#9a9a9a; border-radius:3px; color:#fff; font-size:1.4rem; font-style:normal; width:7rem; text-align:center; padding:2px 0; margin-right:0.5rem}
+.list_searching .srch_item .result_info .btn_fncnt {position:absolute; right:0; top:0;  z-index:1000; width:24px; height:20px; background:url('../images/common/icon_more.svg') 10px 0 no-repeat; background-size:4px 15px; margin-top:1.2rem}
+.list_searching .srch_item .popup_slayer_fncont {max-width:148px;bottom:unset; top:2rem; right:25px}
+.list_searching .srch_item .popup_slayer_fncont.open {bottom:unset; top:1rem}
+/*
+.list_searching .srch_item.tagD .info,
+.list_searching .srch_item.tagH .info {position:absolute; bottom:0}*/
+.list_searching .srch_item.post .result_info { width:90%; padding-left:0}
+.list_searching .srch_item.post .location .dep1 {display:none}
+.list_searching .srch_item.tagI .detail  {margin:1rem 0 0 0; }
+
+.search_special {max-width:1280px; margin:3.8rem auto 0}
+.search_special .specialSearchbox {border:2px solid #4e42ca; padding:3rem}
+.search_special .specialSearchbox .type1 {display:flex}
+.search_special .specialSearchbox .type1 span img {vertical-align:top; width:290px; height:auto}
+.search_special .specialSearchbox .type1 .text {width:72%;margin-left:2rem; position:relative}
+.search_special .specialSearchbox .type1 .text h2 {font-size:2.4rem; font-weight:500; padding-bottom:2rem; line-height:150%}
+.search_special .specialSearchbox .type1 .text .subscript {font-size:1.4rem; line-height:150%; display:-webkit-box; overflow:hidden; -webkit-line-clamp:4; -webkit-box-orient:vertical; text-overflow:ellipsis;}
+.search_special .specialSearchbox .type1 .text .btn_area {position:absolute; bottom:0; left:0;}
+.search_special .specialSearchbox .type1 .text .btn_more {display:inline-block; background:#4e42ca; border-radius:3px; color:#fff; font-size:1.4rem; min-width:140px; height:32px; line-height:30px; padding:0 1rem; text-align:center; margin-right:5px}
+.search_special .relContentsbox { margin-top:3rem; padding-top:3rem; border-top:1px solid #e1e1e1; line-height:150%; }
+
+.search_special .relContentsbox .list_con {width:100%; display:flex; flex-wrap:wrap; justify-content:flex-start; margin-bottom:-2rem}
+.search_special .relContentsbox .list_con .cnt_item { position:relative; width:calc(94% / 4); max-width:312.5px; background:rgba(255,255,255,1); border-radius:10px; padding-bottom:2.5rem}
+.search_special .relContentsbox .list_con .cnt_item:not(:nth-child(4n+1))  {margin-left:2%}
+.search_special .relContentsbox .list_con .cnt_item .bottom {height:unset; padding:2rem 0 0 0; white-space:nowrap; overflow:hidden; max-width:99%;text-overflow:ellipsis; font-size:1.6rem  }
+
+@media all and (max-width:1300px) {
+	.search_top .wrap,
+	.search_nrw .wrap,
+	.search_result .wrap,
+	.search_special {padding-left:4%; padding-right:4%}
+
+	.search_top .tab_sorting {flex-wrap:wrap; }
+	.search_top .tab_sorting .ctg {width:calc(100% / 7);  max-width:unset}
+	.search_top .tab_sorting .ctg:nth-child(7n+1) {border-left:1px solid #d6d6d6}
+	.search_top .tab_sorting .ctg:nth-child(9) {border-left:0}
+
+	.search_nrw fieldset .btn_query {margin-right:4%}
+
+}
+
+@media all and (max-width:995px) {
+	.search_top .tab_sorting .ctg {width:calc(100% / 5)}
+	.search_top .tab_sorting .ctg:nth-child(5n+1) {border-left:1px solid #d6d6d6}
+	.search_top .tab_sorting .ctg:nth-child(n+7) {border-left:0}
+
+	.search_nrw {background:#fff; padding-left:4%; padding-right:4%; margin-top:2.5rem;position:relative}
+	.search_nrw .wrap {background:rgba(24, 103, 254, 0.03); padding:2.8rem 4.5% 2.5rem; position:relative}
+	.search_nrw fieldset dt {padding-left:0rem}
+	.search_nrw fieldset dl.sub_opt {display:none}
+	.search_nrw fieldset dl.sub_opt.open {display:flex}
+	.search_nrw fieldset dd li {width:170px; margin-bottom:1.5rem}
+	.search_nrw fieldset dl.opt2 li:nth-child(4) {width:170px;}
+	.search_nrw fieldset dl.opt2 li.sp_date {width:170px;}
+	.search_nrw fieldset dl.opt2 li.sel_date {width:auto;}
+	.search_nrw fieldset .btn_query {position:static; float:right;  margin-top:-1rem; margin-right:0}
+	.search_nrw .btn_more_opt {display:block; background:rgba(24, 103, 254, 0.03); width:90px; height:27px; position:absolute; left:50%; bottom:-27px; transform:translate(-50%); text-indent:-9999px}
+	.search_nrw .btn_more_opt span:before {content:""; display:block; position:absolute; left:calc(50% - 5px); top:calc(50% - 3px); transform:rotate(-135deg); width:8px; height:8px; border-top:2px solid #4e42ca; border-left:2px solid #4e42ca; margin:-5px 10px 0 0}
+	.search_nrw .btn_more_opt.on span:before {transform:rotate(45deg); top:calc(50% + 2px); }
+
+	.list_searching .srch_item .result_info .sub_tit .date,
+	.list_searching .srch_item .result_info .info {display:none}
+	.search_special {display:none}
+}
+
+@media all and (max-width:830px) {
+	.list_searching .srch_item > a {display:block; width:auto; height:160px;}
+	.list_searching .srch_item .thumbnail img {height:160px}
+	.list_searching .srch_item .sub_tit,
+	.list_searching .srch_item .detail {font-size:1.4rem}
+	.list_searching .srch_item .sub_tit .date,
+	.list_searching .srch_item .location,
+	.list_searching .srch_item .info span dfn,
+	.list_searching .srch_item .info span{font-size:1.2rem}
+	.list_searching .srch_item .sub_tit .date {vertical-align:top}
+}
+@media all and (max-width:760px) {
+	.search_top h2 {font-size:1.7rem; margin-top:2.5rem}
+	.search_top .tab_sorting {margin-top:2.5rem}
+	.search_top .tab_sorting .ctg {width:calc(100% / 3); height:34px;}
+	.search_top .tab_sorting .ctg button {font-size:1.4rem}
+	.search_top .tab_sorting .ctg:nth-child(5n+1) {border-left:0}
+	.search_top .tab_sorting .ctg:nth-child:not(3n+1) {border-left:0}
+	.search_top .tab_sorting .ctg:nth-child(3n+1) {border-left:1px solid #d6d6d6}
+	.search_top .rel_word {margin-top:2rem}
+	.search_top .rel_word dt {padding-left:0; padding-right:1.2rem; font-size:1.4rem}
+	.search_top .rel_word dd {font-size:1.4rem}
+	.search_top .tab_sorting .more_rel {top:33px}
+	.search_top .tab_sorting .more_rel li {height:34px; background-size:60% auto}
+
+	.search_nrw {margin:2rem 0 0}
+	.search_nrw .wrap {padding:1.6rem 1.6rem 2.6rem 2rem}
+	.search_nrw fieldset {margin:0 auto}
+	.search_nrw fieldset dl {display:block; width:100%; margin-top:1rem}
+	.search_nrw fieldset dt {margin-bottom:1.5rem}
+	.search_nrw fieldset dd {width:unset}
+
+	.search_nrw fieldset dl.sub_opt.open {display:block}
+	.search_nrw fieldset dl dd li,
+	.search_nrw fieldset dl.opt2 li:nth-child(4),
+	.search_nrw fieldset dl.opt2 li.sp_date	{width:100px}
+	.search_nrw fieldset dl.opt1.post dd li {width:150px}
+	.search_nrw fieldset dl.opt1 dd li {margin-bottom:1rem;letter-spacing:-0.5px}
+	.search_nrw fieldset dl.opt2 li {margin-bottom:1.5rem}
+	.search_nrw fieldset .btn_query {position:static; float:right; margin-top:-1rem}
+	.search_nrw fieldset dl.opt2 + .btn_query {margin-top:0}
+
+	.list_searching .srch_item {margin-top:1.5rem}
+	.list_searching .srch_item > a {width:123px;  height:71px;}
+	.list_searching .srch_item .result_info  {width:70%; padding-left:1rem;}
+	.list_searching .srch_item .thumbnail img {height:71px; border-radius:7px}
+	.list_searching .srch_item .thumbnail .stk {top:10%; width:22px; height:22px}
+	.list_searching .srch_item .result_info .sub_tit {width:90%}
+	.list_searching .srch_item:not(.post) .result_info .detail,
+	.list_searching .srch_item:not(.post) .result_info .location .dep2 {display:none}
+
+	.search_result .result_head {padding-bottom:1.5rem; padding-top:2rem}
+	.search_result .result_head h3 {font-size:1.8rem}
+	.search_result .result_head h3 .num {margin-left:0.3rem; vertical-align: top;}
+	.search_result .each_result {margin-bottom:0.5rem}
+
+	.search_result .noresult {font-size:1.5rem}
+	.search_result .noresult h3 {font-size:1.5rem}
+	.search_result .noresult br {display:block}
+}
+
+@media all and (max-width:481px) {
+	.search_nrw fieldset dl dd li,
+	.search_nrw fieldset dl.opt2 li.sel_date  select {font-size:1.3rem}
+	.search_nrw fieldset dl dd li,
+	.search_nrw fieldset dl.opt2 li:nth-child(4),
+	.search_nrw fieldset dl.opt2 li.sp_date {width:84px;}
+	.search_nrw fieldset dl.opt1 li.long_txt {width:100px}
+}
