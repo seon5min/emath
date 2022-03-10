@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/search_2021v.css" />
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/modernizr-custom.js"></script>
+    <script src="../js/common_ui.js"></script>
+    <script src="../js/icheck.min.js"></script>
+	<style>
+		#wrap {padding:50px 0}
+		* {line-height:150%}
+		table {border-collapse:collapse}
+		th, td {border:1px solid #eee; padding:10px 0; text-align:center; font-size:1.4rem; font-weight:normal}
+		th {background-color:#f1f1f9; border-bottom:1px solid #ddd;}
+		td {text-align:left; padding-left:20px}
+		img {width:30px; height:auto}
+		.content {max-width:1280px; margin:0 auto 50px}
+		.content h2 {text-decoration:underline; color:#4e42ca; margin-bottom:10px; font-size:1.4rem}
+		.content h3 {margin-bottom:10px; font-size:1.3rem}
+		.guide_folder {font-size:1.4rem}
+		.guide_folder dd {margin:1rem 0 2rem 2rem; }	
+		.guide_folder dfn {font-style:normal; color:#ca2422}
+		.guide_font {display:flex; font-size:1.4rem}
+		.guide_font dd {margin-left:5px; margin-right:20px}
+
+		.guide_form li {margin-bottom:10px; font-size:1.4rem}
+		.guide_form li span {display:inline-block; width:100px;}
+		.guide_form li input { vertical-align:middle}
+
+	</style>
+</head>
+
+<body>
+<div id="wrap">
+	<section id="content1" class="content">
+		<h2>기본환경</h2>
+
+		<h3>+프로젝트 환경</h3>
+		<table>
+			<caption>환경정의</caption>
+			<colgroup>
+				<col style="width:20%">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th scope="row"">문서 및 버전</th>
+					<td>HTML5, CSS3</td>
+				</tr>
+				<tr>
+					<th scope="row">인코딩</th>
+					<td>UTF-8</td>
+				</tr>
+				<tr>
+					<th scope="row">웹 유형</th>
+					<td>반응형 웹</td>
+				</tr>
+				<tr>
+					<th scope="row">PC 웹 호환성</th>
+					<td>크롬, 엣지, 웨일, 파이어폭스</td>
+				</tr>
+				<tr>
+					<th scope="row">Mobile 웹 호환성</th>
+					<td>
+						안드로이드 6.x 이상, IOS 12.x 이상, 사파리, 크롬
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">웹 접근성</th>
+					<td>기본준수(A레벨)</td>
+				</tr>
+				<tr>
+					<th scope="row">해상도 정책</th>
+					<td>
+						PC UI : 996 ~<br>
+						태블릿 + MO UI : 761 ~ 995 <br>
+						MO UI : 320 ~ 760 <br>
+						각 디바이스별 구간에서 반응형 처리											
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 style="margin-top:3rem">파일/폴더 규칙</h2>
+		<dl class="guide_folder">
+			<dt>/css</dt>
+			<dd>
+				<ul>
+					<li>
+						<dfn>base_2021v.css</dfn> : 폰트, 폼요소, 버튼, IR
+					</li>
+					<li>
+						<dfn>layout_2021v.css</dfn> : 헤더, GNB, 푸터등 공통 레이아웃 요소
+					</li>
+					<li>
+						<dfn>main_2021v.css</dfn> : 메인화면
+					</li>
+					<li>
+						<dfn>default_2021v.css</dfn> : 메인을 제외한 콘텐츠 스타일
+					</li>
+					<li>
+						<dfn>swiper_2021v.css</dfn> : swiper Component
+					</li>
+					<li>
+						<dfn>customer_2021v.css</dfn> : 고객센터
+					</li>
+					<li>
+						<dfn>activity.css</dfn> : 수학특별활동
+					</li>
+					<li>
+						<dfn>mypage_2021v_new.css</dfn> : 마이페이지
+					</li>
+					<li>
+						<dfn>teacher_2021v.css</dfn> : 선생님공간
+					</li>
+					<li>
+						<dfn>search_2021v.css</dfn> : 검색
+					</li>
+				</ul>
+
+			</dd>
+			<dt>/js</dt>
+			<dd>
+				<ul>
+					<li>
+						<dfn>jquery-3.6.0.min.js</dfn> : jquery 라이브러리
+					</li>
+					<li>
+						<dfn>swiper-bundle.js</dfn> : swiper 라이브러리(슬라이더)
+					</li>
+					<li>
+						<dfn>modernizr-custom.js</dfn> : 브라우징환경 버전체크
+					</li>
+					<li>
+						<dfn>contents.js</dfn> : 메인제외한 학습콘텐츠
+					</li>
+					<li>
+						<dfn>common_ui.js</dfn> : 레이아웃 요소 (GNB)
+					</li>
+					<li>
+						<dfn>chart.min3.6.2.js</dfn> :차트 라이브러리(마이페이지)
+					</li>
+					<li>
+						<dfn>chart_10math_2021.js</dfn> :차트 관련(마이페이지)
+					</li>
+					<li>
+						<dfn>iscroll-lite.js</dfn> : 메뉴스와이프 라이브러리(전체교과메뉴)
+					</li>
+					
+				</ul>
+
+			</dd>
+			<dt>/images</dt>
+			<dd>
+				<ul>
+					<li>
+						<dfn>common</dfn> : 아이콘, 버튼등 공통적인 요소
+					</li>
+					<li>
+						<dfn>content</dfn> : 학습콘텐츠 관련 이미지
+					</li>
+					<li>
+						<dfn>content/activity</dfn> : 수학특별활동
+					</li>
+					<li>
+						<dfn>content/mathcenter</dfn> : 찾아가는 EBSMath 체험관
+					</li>
+					<li>
+						<dfn>layout</dfn> : 레이아웃 관련
+					</li>
+					<li>
+						<dfn>main</dfn> : 메인 관련
+					</li>
+					<li>
+						<dfn>mypage</dfn> : 마이페이지
+					</li>
+					<li>
+						<dfn>customer</dfn> : 고객센터
+					</li>
+					<li>
+						<dfn>teacher/2022</dfn> : 선생님공간
+					</li>
+					<li>
+						<dfn>event/2022</dfn> : 이벤트 배너
+					</li>
+					<li>
+						<dfn>serviceInfo</dfn> : EBSMath 소개
+					</li>
+				</ul>
+
+			</dd>
+		</dl>
+
+
+		<h2 style="margin-top:3rem">FONT</h2>
+		
+		<h3>Noto Sans KR</h3>
+		<dl class="guide_font">
+			<dt>normal :</dt>
+			<dd>쉽게 쓰는 통계</dd>
+			<dt>400 :</dt>
+			<dd><span style="font-weight:400">쉽게 쓰는 통계</span></dd>
+			<dt>500 :</dt>
+			<dd><span style="font-weight:500">쉽게 쓰는 통계</span></dd>
+			<dt>bold :</dt>
+			<dd><span style="font-weight:bold">쉽게 쓰는 통계</span></dd>
+		</dl>
+
+	</section>
+	<section id="content2" class="content">
+		<h2>FORM</h2>
+
+		<ul class="guide_form">
+			<li><span>기본 check</span>
+				<input type="checkbox" name="df_chk1" id="df_chk1_1" checked> <label for="df_chk1_1">전체</label></li>
+			<li><span>icheckbox  </span>
+				<input type="checkbox" class="icheckbox" name="df_chk1" id="df_chk1_2" checked> <label for="df_chk1_2">초3</label></li>
+			<li><span>radio  </span>
+				<input type="radio" name="df_chk2" id="df_chk2_1"checked> <label for="df_chk2_1" >전체기간</label></li>
+			<li><span>select </span>
+				<select name="sel_opt">
+					<option>콘텐츠 유형</option>
+					<option>영상</option>
+					<option>게임</option>
+					<option>웹툰</option>
+					<option>문제</option>
+					<option>지식카드</option>
+				</select>
+			</li>
+		</ul>
+	</section>
+</div>
+
+</body>
+</html>

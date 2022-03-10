@@ -10,7 +10,7 @@
 	function headerFix() {
 		var checkpf = checkplatform();
 		if (checkpf == "mo") return;
-
+	
 		var scrollObj = (window.innerWidth > 760) ? window : "#wrap";
 
 		/* 스크롤 다운시 헤더 고정 */
@@ -100,7 +100,7 @@
 		//모바일GNB 1depth 클릭시
 		$('#gnb_mo.ver2 .main_menu > ul > li').on("click", function(e) {
 			$(this).siblings().removeClass("open");
-
+			
 			$(this).find('.dep1').addClass("on");
 			$(this).addClass("open");
 		});
@@ -186,42 +186,3 @@
 		var popid = "#" + popid;
 		$(popid).removeClass("open").hide();
 	}
-
-	/* 2022-03-08 .series_main .btn_content 누르면 pc에서만 팝업창*/
-	function downloadCheck() {
-		// var filter = "win16|win32|win64|mac|macintel";
-		// var vWebType = "";
-
-		// if (navigator.platform ) {
-		// 	if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-		// 		vWebType = "MOBILE";
-		// 		alert('mobile 접속');
-		// 		$(".series_main .btn_content").click(function(e){
-		// 			$(".pop_rel_con").removeClass('open');
-		// 		});
-		// 	} else {
-		// 		alert('pc 접속');
-		// 		$(".series_main .btn_content").click(function(e){
-		// 			$(".pop_rel_con").addClass('open');
-		// 		});
-		// 		vWebType = "PC";
-		// 	}
-		// }
-
-		if (('createTouch' in document) || ('ontouchstart' in document)){
-			alert("모바일접속");
-			$(".series_main .btn_content").click(function(e){
-				$(".pop_rel_con").removeClass('open');
-			});
-		} else {
-			alert("PC접속");
-			$(".series_main .btn_content").click(function(e){
-				$(".pop_rel_con").addClass('open');
-			});
-		}		
-	}
-	downloadCheck();
-
-
-
-

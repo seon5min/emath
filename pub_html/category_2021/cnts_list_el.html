@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div class="event_banner banner_2108" style="display:none">
+	<a href="#"><i class="blind">수학 에너지 FULL 충전! 선풍기 ON! 이벤트 바로가기</i></a>
+	<span class="today_close">
+		<span class="mo_hide"><input type="checkbox" name="today_event"> 1일 동안 보지 않기</span> <button type="button" class="btn_bnr_hide"><i class="blind">이벤트 배너 닫기</i></button>
+	</div>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<section class="course_top el">
+			<div class="wrap">
+				<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+				<h2 class="tit_course_m" onclick="openCrsList()">초등수학 <strong class="stit_course_m">초등학교 6학년</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+				<ul class="crs_list">
+					<li><a href="#">초등학교 3학년</a></li>
+					<li><a href="#">초등학교 4학년</a></li>
+					<li><a href="#">초등학교 5학년</a></li>
+					<li><a href="#">초등학교 6학년</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="course_sub">
+			<div class="wrap">
+				<h3 class="tit_course_s">초등학교 6학년</h3>
+				<button class="btn_srch_dt on">상세검색</button>
+				<ul class="search_option">
+					<li>
+						<div class="terms"><strong>학기</strong></div>
+						<div class="items">
+							<button type="button" class="btn_crs_item on">1학기</button>
+							<button type="button" class="btn_crs_item">2학기</button>
+						</div>
+						<div class="items m_only">
+							<select>
+								<option>1학기</option>
+								<option>2학기</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="terms"><strong>단원</strong></div>
+						<div class="items">
+							<button type="button" class="btn_crs_item">전체</button>
+							<button type="button" class="btn_crs_item">분수의 나눗셈</button>
+							<button type="button" class="btn_crs_item">각기둥과 각뿔</button>
+							<button type="button" class="btn_crs_item">소수의 나눗셈</button>
+							<button type="button" class="btn_crs_item">여러가지 그래프</button>
+							<button type="button" class="btn_crs_item">직육면체의 부피와 겉넓이</button>
+							<button type="button" class="btn_crs_item on">비와 비율</button>
+						</div>
+						<div class="items m_only">
+							<select>
+								<option>전체</option>
+								<option>분수의 나눗셈</option>
+								<option>각기둥과 각뿔</option>
+								<option>소수의 나눗셈</option>
+								<option>여러가지 그래프</option>
+								<option>직육면체의 부피와 겉넓이</option>
+								<option>비와 비율</option>
+							</select>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="list_result">
+			<div class="wrap">
+				<div class="sort_head">
+					<fieldset>
+						<legend>콘텐츠 검색 결과 정렬</legend>
+						<div class="result_num">
+							<em class="cmt_result">총 <strong class="txthr_pp">400</strong>건의 콘텐츠가 있습니다.</em>
+							<!-- 2021-11-02 checked 추가 --> <span class="exc_quiz"><label for="quiz_chk">문제 제외</label> <input type="checkbox" class="icheckbox" checked  name="quiz_chk" id="quiz_chk"></span> 
+							<div class="select_wrap">
+								<span class="select_con">
+									<select>
+										<option>교과과정순</option>
+										<option>최신순</option>
+										<option>조회순</option>
+									</select>
+								</span>
+								<span class="select_con">
+									<select>
+										<option>콘텐츠 유형</option>
+										<option>영상</option>
+										<option>게임</option>
+										<option>웹툰</option>
+										<option>문제</option>
+										<option>지식카드</option>
+									</select>
+								</span>
+							</div>
+						</div>
+						<span class="btn">
+							<button type="button" class="btn_content btn_del_rcd">학습기록삭제</button>
+							<button type="button" class="btn_content btn_download">다운로드</button>
+						</span>
+
+					</fieldset>
+				</div>
+
+				
+				<ul class="list_con">
+					<li class="cnt_item hoverMovie"><!-- 영상이 들어갈 곳에 .hoverMovie 클래스 2021-10-15 추가 --> 
+						<div class="box_snip tagA"> 
+							<a href="#34">
+								<!-- hover 시 영상 추가 2021-10-15 추가 -->
+								<span class="thumbnail">
+									 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지" class="swiper-lazy" video-src="https://wstrssl.ebsmath.co.kr/ebsvod/ebsm/preview/M201700009/preview_M201700009_M00396.mp4"><span class="runtime">07:27</span>
+								</span>
+								<!-- //hover 시 영상 추가 2021-10-15 추가 -->
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont0"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중1</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수</dd>
+									</dl>
+									<!-- <span class="list_chk"><input type="checkbox" name="chk_cnt" title="콘텐츠 선택"></span> 2021-10-27  삭제 -->
+								</div>
+								<span class="list_chk"><input type="checkbox" name="chk_cnt" title="콘텐츠 선택"></span><!-- 2021-10-27 위치 수정 -->
+							</a>
+
+							
+							<ul id="pop_fncont0" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item hoverMovie">
+						<div class="box_snip tagB chk">
+							<a href="#1">
+								<span class="thumbnail">
+									 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지" class="swiper-lazy" video-src="https://wstrssl.ebsmath.co.kr/ebsvod/ebsm/preview/M201300001/preview_M201300001_M00007.mp4"><span class="runtime">07:27</span></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont1"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중2</strong> 자료의 정리와 해석</dt>
+										<dd>그래프</dd>
+									</dl>
+									<!-- <span class="list_chk"><input type="checkbox" name="chk_cnt" title="콘텐츠 선택"></span> -->
+								</div>
+							</a>
+							<ul id="pop_fncont1" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagC"> 
+							<a href="#2">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont2"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중3</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont2" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagD">
+							<a href="#131">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont3"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>고교</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont3" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagE">
+							<a href="#11">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont4"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>초등</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont4" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagA"> 
+							<a href="#none">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"><span class="runtime">07:27</span></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont5"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중1</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont5" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagB chk">
+							<a href="#1">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont6"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중2</strong> 자료의 정리와 해석</dt>
+										<dd>그래프</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont6" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagC"> 
+							<a href="#2">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont7"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중3</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont7" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagB chk">
+							<a href="#1">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont8"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중2</strong> 자료의 정리와 해석</dt>
+										<dd>그래프</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont8" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="cnt_item">
+						<div class="box_snip tagC"> 
+							<a href="#2">
+								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+								<button class="btn_fncnt" type="button" aria-controls="pop_fncont9"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+								<mark class="stk"><i class="blind">영상</i></mark>
+								<div class="bottom">
+									<ul class="snip_info">
+										<li class="view">
+											<i class="blind">조회수</i>1,000
+										</li>
+										<li class="fav">
+											<i class="blind">좋아요수</i>24
+										</li>
+										<li class="zzim">
+											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
+										</li>
+									</ul>
+
+									<dl class="default">
+										<dt><strong>중3</strong> 자료의 정리와 해석</dt>
+										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+									</dl>
+								</div>
+							</a>
+							<ul id="pop_fncont9" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+								<li class="close"><button type="button">닫기</button></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+
+				<div class="pagination">
+					<a class="first arrow" href="#"><i class="blind">처음</i></a>
+					<a class="prev arrow" href="#"><i class="blind">이전</i></a>
+					<a class="on" href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a class="next arrow" href="#"><i class="blind">다음</i></a>
+					<a class="last arrow" href="#"><i class="blind">마지막</i></a>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- 팝업 : 공유하기 -->
+		<div id="pop_share_sns" class="pop_share_sns">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3>공유하기</h3>
+					<ul>
+						<li class="f"><a href="#"><i class="blind">페이스북</i></a></li>
+						<li class="t"><a href="#"><i class="blind">트위터</i></a></li>
+						<li class="k"><a href="#"><i class="blind">카카오톡</i></a></li>
+					</ul>
+
+					<span class="urlcopy">
+						<input type="text" size="20" name="" value="https://ebsmath.co.kr/resource/rscView?cate=10091&cate2=10272&cate3=10505&rscTpDscd=RTP14&grdCd=EGRD06&sortType=&mngtPrdnYn=&menuType=t&itemSize=&level=&type=S&sno=29615&historyYn=study">
+						<button type="button">복사</button>
+					</span>
+					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 : 공유하기-->
+
+		<!-- 팝업 : 학습기록삭제 -->
+		<div id="pop_del_stdlog" class="pop_del_stdlog  pop_rel_con">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3>학습기록삭제</h3>
+					<div class="std_list_wrap">
+						<h4>초등 &gt 1학기</h4>
+						<ul class="pop_scroll">
+							<li>
+								<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname" id="stdname1">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname2"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname2">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname3"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname4"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname" id="stdname5">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname6"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname6">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname7"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname8"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+						</ul>
+					</div>
+					<dl class="bottom">
+						<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label for="sel_all">전체선택</label></dt>
+						<dd><button type="button" class="btn_content btn_del_rcd">학습기록삭제</button></dd>
+					</dl>
+					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 : 학습기록삭제 -->
+
+		<!-- 팝업 : 다운로드 -->
+		<div id="pop_download" class="pop_download pop_rel_con">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3>다운로드</h3>
+					<div class="std_list_wrap">
+						<h4>초등 &gt 1학기</h4>
+						<ul class="pop_scroll">
+							<li>
+								<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname" id="stdname1">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname2"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname2">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname3"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname4"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname" id="stdname5">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname6"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname6">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname7"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname8"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+						</ul>
+					</div>
+					<dl class="bottom">
+						<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label for="sel_all">전체선택</label></dt>
+						<dd>
+							<select>
+								<option>화질선택</option>
+								<option>고화질</option>
+								<option>일반화질</option>
+							</select>
+							<button type="button" class="btn_content btn_download">다운로드</button>
+						</dd>
+					</dl>
+					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 :다운로드 -->
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+$('#sel_all').on("click", function() {
+	console.log("adadf")
+	$('.pop_scroll input[name="stdname"]').each(function() {
+		this.checked = true;
+	});
+})
+</script>
+</body>
+</html>

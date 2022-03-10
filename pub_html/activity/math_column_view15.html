@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/activity.css" /><!-- 수학활동 -->
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<div class="activity">
+			<section class="course_top">
+				<div class="wrap">
+					<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+					<h2 class="tit_course_m" onclick="openCrsList()">수학 특별활동 <strong class="stit_course_m">희망수학 칼럼</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+					<ul class="crs_list">
+						<li class="dep2"><a href="#">수학행사</a>
+							<span class="dep3"><a href="#">찾아가는 EBSMath 체험관</a></span>
+							<span class="dep3"><a href="#">3.14 파이데이</a></span>
+							<span class="dep3"><a href="#">2014 서울세계수학자대회</a></span>
+							<span class="dep3"><a href="#">2014 수학교사 한마당</a></span>
+						</li>
+						<li class="dep2"><a href="#">이벤트</a></li>
+						<li class="dep2 on"><a href="#">희망수학 칼럼</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="content_top">
+				<div class="wrap">
+					<h2 class="tit_top">희망수학 칼럼</h2>
+
+					<p>
+						다양한 주제의 수학 칼럼을 통해 수학을 보는 새로운 시각을 만나보세요!
+					</p>
+				</div>
+			</section>
+
+
+			<section class="contents_mid">
+				<!-- s : 게시물 보기 -->
+				<article class="board_view">
+					<header>
+						<h3>
+							인공지능과 수학은 무슨 상관이 있을까?
+						</h3>
+						<ul class="side_info">
+							<li>
+								<dfn>작성자 :</dfn> 운영자
+							</li>
+							<li>
+								<span class="date">작성일 : 2021.11.26</span>
+								<span class="hit"><dfn>조회수 :</dfn> 1,000</span>
+							</li>
+						</ul>
+					</header>
+					<section class="main_article">
+						<div class="main_con">
+							<!-- s: 게시물 영역 -->
+
+							<div class="board_dt_wrap detail">
+								<div class="detail_top">
+									<div class="inner">
+										<h5>영화관에서 스크린이 가장 잘 보이는 자리는 어디일까?</h5>
+									</div>
+									<div class="c-black"> 안녕하세요. 서울 인창고등학교에서 ‘미적분 심화 연구반’이라는 R&amp;E동아리 활동을 하고 있는 최준우, 박정찬, 홍상혁, 홍현승 입니다. 지난번 글에서는 저희 동아리에서 만들고 있는 수학 심화교재를 통해 어떻게 수학 공부를 하고 있는지 소개해봤는데요. 이번에는 이번 여름 방학 때 했던 ‘과제연구’ 활동에 대해 이야기해볼까 합니다.<br> </div>
+									<div class="c-black"> 과제 연구는 재밌는 주제 하나를 정해서 교과과정 내에서 배운 수학 지식을 활용해 집중 연구를 해보는 활동입니다. 저희는 이 주제를 정하기 위해서 동아리를 만들고 나서부터 꾸준히 상의를 했는데요. 도서관이나 논문 검색 사이트에서 책과 연구자료를 찾아보면서 &lt;급수의 수렴판정법과 적분판정법에 대한 연구&gt;, &lt;삼각함수와 미분을 이용한 시야가 가장 넓은 영화관 좌석 찾기&gt;, &lt;러시아와 인도 등에서 쓰이는 곱셈 알고리즘 연구&gt; 같은 아이디어들을 얻었습니다. 이 가운데 가장 높은 지지를 받은 것은 두 번째 주제인 &lt;삼각함수와 미분을 이용한 시야가 가장 넓은 영화관 좌석 찾기&gt;. 평소 영화 티켓을 예매할 때마다 어느 좌석을 고를지 고민하게 되는데요. ‘스크린이 가장 잘 보이는 자리는 어디일까?’하는 질문을 수학적으로 탐구해 볼 수 있다는 점에서 다들 흥미로워했고 최종적으로 이 주제를 선정했습니다. <br> </div>
+									<div class="c-black">
+										다음으로는 실험 모델을 정했습니다.<br>
+										<br>
+										<div class="c-img"> <img style="width: 60%; display: inline-block;" alt="사진1" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_90.jpg"> <img style="width: 36%; display: inline-block;" alt="사진2" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_83.jpg"> </div>
+										왼쪽 그림이 저희가 따르기로 한 실험 모델인데요. 상영관의 한 지점에서 바라보는 시선을 기준으로 스크린의 가장 아랫부분과 윗부분을 이은 두 선분이 이루는 각, 즉 ‘시야각이 최대가 되는 곳’이 최적의 장소라고 가정했습니다. 저희는 이 그림에 있는 미지수에 실제 상영관에서 측정해온 수치를 대입해보기로 했는데요. 그 결과를 지오지브라 프로그램을 이용해 그래프로 나타낸 것이 오른쪽 그림입니다. 
+									</div>
+									<div class="c-black"> 저희는 단순히 수치를 가정하기보다 직접 근처 영화관에 가서 실제 계산에 적용할 수 있는 정확한 값을 측정해 보기로 했는데요. 여기에, IMAX 상영관과 일반 상영관에서는 어떤 차이가 있는지를 비교하기 위해서 IMAX 상영관에서도 필요한 수치들을 측정하기로 계획을 세웠습니다. 그렇게 해서 찾아간 곳은 메가박스 은평점이었는데요. 영화관에 저희의 사정과 과제연구 내용을 설명하고, 영화 상영 시간 사이에 있는 직원 청소 시간을 이용해 측정하는 것을 허락받았습니다. 측정은 ‘줄자’와 ‘각도기’를 이용했는데요. 바닥과 계단 사이에 생기는 경사면의 기울기, 바닥과 스크린 사이의 거리, 스크린으로부터 첫 번째 좌석까지의 거리, 계단의 높이와 가로 길이, 그리고 사람이 영화관 의자에 앉았을 때의 실제 앉은키를 직접 쟀습니다. 아래는 측정한 값들을 정리한 노트입니다. <br> </div>
+									<div class="c-img"> <img style="width: 90%;" alt="사진3" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_98.jpg"> </div>
+									<div class="c-black"> 그런데 진짜 문제는 그 다음부터였습니다. 측정해온 수치를 실험모델에 있는 각 미지수에 대입하더라도 그 답을 구하는 계산식이 너무 복잡해서 쉽지 않았기 때문입니다. 동아리 지도 선생님께 조언을 구해 저희는 네 가지 방법으로 계산을 해볼 수 있었습니다. <br> </div>
+									<div class="c-black"> 첫 번째로, 상영관 좌석 첫 줄이 위치한 지점부터 시야각이 최대가 되는 지점까지의 거리를 x라 하고, 피타고라스 정리와 삼각비를 이용해 정리하면 위 사진의 a, b를 x에 대한 식으로 나타낼 수 있습니다. 여기에 sin을 이용한 삼각형의 넓이 공식( <img title="" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_101.gif">), a와 b는 각을 끼고 있는 두 변의 길이)을 적용하면 시야각 <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif"> 에 대한 식이 유도됩니다. 이 식이 최대가 될 때의 x를 구하면 그 지점에서의 시야각이 가장 크다는 뜻이 되겠죠. ( <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif">는 90도를 넘을 수 없고 함수 <img title="y=sin\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_103.gif">의 그래프는 <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif">가 0도~90도 사이의 범위에서 증가하므로 <img title="sin\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_102.gif"> 값이 가장 클 때 <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif">도 가장 클 겁니다. 그런데 계산식이 너무 복잡해서 계산까지는 하지 못했습니다.) <br>
+										<br>
+										두 번째로, 위 사진의 <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif">가 들어가 있는 삼각형에서 제2코사인법칙을 이용하여 정리하면 x와 <img title="cos\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_100.gif">에 대한 식이 유도됩니다. 사인함수와는 다르게 코사인함수는 0도~90도 사이의 범위에서 감소하므로 <img title="cos\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_100.gif"> 값이 가장 작을 때 <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif">가 가장 크겠죠. 기본적인 계산 방법은 첫 번째와 비슷한데, 사인법칙을 이용한 경우는 최댓값, 코사인법칙을 이용한 경우는 최솟값을 구해야 한다는 점이 다릅니다. <br>
+										<br>
+										세 번째로, 위 오른쪽 그림의 삼각형 APQ에서 탄젠트함수의 덧셈정리를 사용하면 x에 대한 분수식을 유도할 수 있습니다. 탄젠트함수는 범위 내에서 증가하고, 우변의 분수식에서 분모가 최소일 때 <img title="\Theta" style="vertical-align: middle;" alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_99.gif">가 최대이므로, 산술기하평균을 이용하여 x를 구할 수 있습니다.<br>
+										<br>
+										네 번째로, 스크린의 가장 윗부분과 아랫부분에 각각 점을 찍고, 그 두 점을 지나는 원을 그립니다. 원의 접선과 할선의 관계를 이용하면 x에 대한 이차방정식을 유도할 수 있고, x값을 가장 간단하게 구할 수 있습니다. <br> 
+									</div>
+									<div class="c-black"> 이렇게 4가지의 방법을 이용해 계산해 보니 저희가 측정했던 상영관의 경우, 좌석 시작지점부터 648.652cm~657.102cm 사이의 값이 나왔습니다. 가운데 통로에서 뒤쪽으로 1~2줄 떨어진 지점, 즉 해당 상영관에서는 F열에서 스크린이 가장 잘 보인다는 결과를 얻은 것입니다. <br> </div>
+									<div class="c-black"> 이 결과 하나를 얻기까지의 과정은 생각보다 정말 복잡하고 어려웠습니다. 하지만 주제 자체가 굉장히 흥미로운 데다가 주변 영화관에 연구 결과를 적용해 볼 수도 있어서, 다들 재밌어 했고 적극적으로 참여했습니다. 계산 과정에서도 높은 집중력을 유지할 수 있었고요. 평소 본인이 관심 있었던 분야나 흥미로운 주제를 정해 탐구하면서 ‘수학 문제를 풀고 있는데 수학 문제 같지 않은’ 재미도 느끼고 자연스럽게 수학 실력도 쌓을 수 있었다는 것, 과제연구 활동은 그런 점에서 가치가 있었다는 생각이 듭니다. <br> </div>
+									<div class="c-black"> 이제 저희 이야기는 이쯤에서 마치려고 하는데요. 마지막으로, 꼭 동아리 활동이 아니더라도 다른 여러 방법을 통해 수학에 흥미도 느끼고, 실력도 높일 수 있으면 좋겠습니다. 부족한 글 읽어주셔서 감사합니다. <br> </div>
+									<div class="writer-info">
+										<div class="w-pic">
+											<div class="w-nm">최준우</div>
+										</div>
+										<ul class="w-detail">
+											<li>서울 인창고등학교 ‘미적분 심화 연구반’ </li>
+										</ul>
+									</div>
+
+									<div class="other_con" style="margin-top:3rem">
+										<h6><img src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/column/tit_relcnt.png" alt="함께 보면 좋은 콘텐츠"></h6>
+
+										<div class="list_result no_trans">
+											<ul class="list_con">
+												<li class="cnt_item">
+													<div class="box_snip tagC"> 
+														<a href="http://www.ebsmath.co.kr/resource/rscView?cate=10098&amp;cate2=10175&amp;cate3=10186&amp;rscTpDscd=RTP14&amp;grdCd=MGRD01&amp;sno=18638&amp;type=S&amp;historyYn=study">
+															<span class="thumbnail">
+																 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/18638/C.jpg" alt="콘텐츠이미지">
+															</span>
+															<mark class="stk"><i class="blind">뤱툰</i></mark>
+															<div class="bottom">지하철역은 공평하다!</div>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+							<!--//e: 게시물 영역 -->
+						</div>
+					</section>
+
+					<section class="board_bottom">
+						<p class="react_like"><button type="button" id="btn_ac_like"><i class="blind">좋아요</i> <em id="">8</em></button></p>
+						<ul>
+							<li><a href="#" class="btn_board btn_type1" id="btn_list">목록보기</a></li>
+						</ul>
+					</section>
+				</article>
+				<!--//e : 게시물 보기 -->
+
+
+			</section>
+
+		</div>
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+$(document).ready(function(){
+	$('#btn_ac_like').on("click", function() {
+		$(this).toggleClass("on");
+	});
+	$('#btn_att_file').on("click", function() {
+		$(".att_file_box").toggleClass("open");
+	});
+});
+
+</script>
+</body>
+</html>

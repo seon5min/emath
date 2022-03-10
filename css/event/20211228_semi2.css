@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+.event_semi2 .clearfix {overflow:hidden;}
+.event_semi2 .clearfix:before, .clearfix:after {content:""; display:block;}
+.event_semi2 .clearfix:after {clear:both;}
+.event_semi2 button {background-color:transparent;}
+.event_semi2 .pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.event_semi2 {position:relative; width:763px; overflow:hidden}
+.event_semi2 .snswrap {position:absolute; top:25px; right:27px; background:url('../../images/event/20210729/icon_sns.png') right 0 no-repeat; width:140px; height:28px;}
+.event_semi2 .snswrap a {float:left;  width:28px; height:28px; font-size:0; line-height:0; margin-left:7px}
+.event_semi2 .top,
+.event_semi2 .top.before,
+.event_semi2 .top.end {position:relative}
+.event_semi2 .top.before .btn_apply,
+.event_semi2 .top .btn_apply {display:block; position:absolute; top:762px; right:44px;}
+
+.event_semi2 .top [class^="btn_winner"] {display:block; position:absolute; top:762px; right:44px;}
+.event_semi2 .top::before {content:""; display:block; position:absolute; top:30px; left:30px; width:106px; height:16px; background:url('../../images/event/20210729/logo.png') 0 0 no-repeat;}
+
+/* notice */
+.event_semi2 .notice {padding:35px 0 30px 50px; background-color:#0a4d16;}
+.event_semi2 .notice ul {padding-top:10px;}
+.event_semi2 .notice li {margin-top:5px; padding-left:12px; color:#ffffff; font-weight:200; line-height:1.8; font-size:13px; background:url('../../images/event/20210607/bul.png') no-repeat 0 10px; letter-spacing:-0.5px;}
+.event_semi2 .notice li .point {color:#e9c31a;}
+.event_semi2 .notice li .point2 {font-weight:1000;}
+
+.event_semi2 .eventArea {position:relative}
+.event_semi2 .eventArea .dim_main_layer {content:""; display:block; width:100%; height:100%; position:absolute; left:0; top:0; z-index:999}
+.event_semi2 .eventArea .dim_main_layer .dim { position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); width:100%; height:100%;}
+.event_semi2 .eventArea .dim_main_layer span {display:block;width:100%; position:absolute; top:30%; transform:translateY(-50%); z-index:1000; text-align:center}
+
+.event_semi2 .eventArea .main_event {background:#b6d162;}
+.event_semi2 .eventArea .main_event h2 {padding:60px 0 52px 0; text-align:center}
+.event_semi2 .eventArea .main_event .event_inner {height:1083px; background:url('../../images/event/20211228/bg_event_main.png') 0 0 no-repeat;}
+.event_semi2 .eventArea .main_event .event_inner .go_contents {width:741px; height:276px; margin:0 auto; text-align:center; background:url('../../images/event/20211228/go_series.png') 0 0 no-repeat; position:relative}
+.event_semi2 .eventArea .main_event .event_inner .go_contents a {position:absolute; display:block; width:239px; height:141px}
+.event_semi2 .eventArea .main_event .event_inner .go_contents a:nth-child(1) {top:39px; left:0}
+.event_semi2 .eventArea .main_event .event_inner .go_contents a:nth-child(2) {top:18px; left:254px;}
+.event_semi2 .eventArea .main_event .event_inner .go_contents a:nth-child(3) {top:39px; left:504px}
+
+.event_semi2 .eventArea .main_event .event_inner .semimap {position:relative; height:852px;}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board01 {position:absolute; left:330px; top:40px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board02 {position:absolute; left:330px; top:220px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board03 {position:absolute; left:201px; top:157px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board04 {position:absolute; left:80px; top:237px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board05 {position:absolute; left:80px; top:357px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board06 {position:absolute; left:84px; top:414px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board07 {position:absolute; left:206px; top:480px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board08 {position:absolute; left:330px; top:480px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board09 {position:absolute; left:451px; top:414px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board10 {position:absolute; left:570px; top:480px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board11 {position:absolute; left:583px; top:533px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board12 {position:absolute; left:583px; top:723px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board13 {position:absolute; left:435px; top:669px}
+.event_semi2 .eventArea .main_event .event_inner .semimap .sign_board14 {position:absolute; left:135px; top:667px}
+.event_semi2 .eventArea .main_event .event_inner .semimap [class*="sign_board"] mark.checkin {display:none; position:absolute; top:0; left:0; width:103px; height:75px; background:url('../../images/event/20211228/sign_complete.png') 0 0 no-repeat; text-indent:-9999px}
+.event_semi2 .eventArea .main_event .event_inner .semimap [class*="sign_board"] mark.arrive {display:none; position:absolute; top:0; left:0; width:100px; height:75px; background:url('../../images/event/20211228/sign_arrive.png') 0 0 no-repeat; text-indent:-9999px}
+.event_semi2 .eventArea .main_event .event_inner .semimap [class*="sign_board"] mark.piece1 {display:none; position:absolute; top:-90px; left:20px; width:63px; height:90px; background:url('../../images/event/20211228/img_piece.png') 0 0 no-repeat; text-indent:-9999px}
+.event_semi2 .eventArea .main_event .event_inner .semimap [class*="sign_board"] mark.piece2 {display:none; position:absolute; top:-90px; left:20px; width:62px; height:90px; background:url('../../images/event/20211228/img_piece_r.png') 0 0 no-repeat; text-indent:-9999px}
+.event_semi2 .eventArea .main_event .event_inner .semimap [class*="sign_board"] mark.piece3 {display:none; position:absolute; top:-30px; left:120px; width:71px; height:89px; background:url('../../images/event/20211228/img_piece_f.png') 0 0 no-repeat; text-indent:-9999px}
+
+.event_semi2 .eventArea .main_event .event_inner .semimap > span.on mark.checkin,
+.event_semi2 .eventArea .main_event .event_inner .semimap > span.on mark.arrive,
+.event_semi2 .eventArea .main_event .event_inner .semimap > span.on mark.piece1,
+.event_semi2 .eventArea .main_event .event_inner .semimap > span.on mark.piece2,
+.event_semi2 .eventArea .main_event .event_inner .semimap > span.on mark.piece3 {display:inline-block; }
+
+
+.event_semi2 .eventArea .bonus_event {background:#3a7244; position:relative;}
+.event_semi2 .eventArea .bonus_event.end {padding-bottom:60px}
+.event_semi2 .eventArea .bonus_event h3 {padding:56px 0 20px; text-align:center}
+.event_semi2 .eventArea .bonus_event h3 + p {text-align:center}
+.event_semi2 .eventArea .bonus_event .btn_like_series {text-align:center; margin-top:30px}
+.event_semi2 .eventArea .bonus_event .btn_like_series a,
+.event_semi2 .eventArea .bonus_event .btn_like_series span {display:inline-block; border-radius:4px; box-shadow:0 10px 10px rgba(0,0,0,0.2); width:327px; height:42px; margin:0 10px}
+.event_semi2 .eventArea .bonus_event .btn_like_series a.link01 {background:#e3f4ad url('../../images/event/20211228/btn_bonus1.png') 50% 50% no-repeat;}
+.event_semi2 .eventArea .bonus_event .btn_like_series a.link02 {background:#ffee7d url('../../images/event/20211228/btn_bonus2.png') 50% 50% no-repeat;}
+.event_semi2 .eventArea .bonus_event .btn_like_series span.link01 {background:#e0e6ce url('../../images/event/20211228/btn_bonus1_off.png') 50% 50% no-repeat}
+.event_semi2 .eventArea .bonus_event .btn_like_series span.link02 {background:#e8e4c7 url('../../images/event/20211228/btn_bonus2_off.png') 50% 50% no-repeat}
+.event_semi2 .eventArea .bonus_event .btn_like_series span.link03 {background:#e0e6ce url('../../images/event/20211228/btn_bonus1_off.png') 50% 50% no-repeat}
+.event_semi2 .eventArea .bonus_event .btn_like_series span.link04 {background:#e8e4c7 url('../../images/event/20211228/btn_bonus2_off.png') 50% 50% no-repeat}
+
+.event_semi2 .eventArea .bonus_event .btn_like_series + p {margin-top:10px}
+
+.event_semi2 .eventArea .bonus_event.end h3 + p {padding-top:40px}
+.event_semi2 .eventArea.end {background-color:#b6d162}
+.event_semi2 .eventArea.end .main_event .event_inner {height:1083px; background:url('../../images/event/20211228/bg_event_main_end.png') 0 20px no-repeat;}
+.event_semi2 .eventArea.end .main_event .event_inner .head {width:763px; height:276px; margin:0 auto; text-align:center; background:url('../../images/event/20211228/tit_event_status.png') 50% 100% no-repeat; position:relative}

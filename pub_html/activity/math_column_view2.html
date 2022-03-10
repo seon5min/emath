@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/activity.css" /><!-- 수학활동 -->
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<div class="activity">
+			<section class="course_top">
+				<div class="wrap">
+					<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+					<h2 class="tit_course_m" onclick="openCrsList()">수학 특별활동 <strong class="stit_course_m">희망수학 칼럼</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+					<ul class="crs_list">
+						<li class="dep2"><a href="#">수학행사</a>
+							<span class="dep3"><a href="#">찾아가는 EBSMath 체험관</a></span>
+							<span class="dep3"><a href="#">3.14 파이데이</a></span>
+							<span class="dep3"><a href="#">2014 서울세계수학자대회</a></span>
+							<span class="dep3"><a href="#">2014 수학교사 한마당</a></span>
+						</li>
+						<li class="dep2"><a href="#">이벤트</a></li>
+						<li class="dep2 on"><a href="#">희망수학 칼럼</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="content_top">
+				<div class="wrap">
+					<h2 class="tit_top">희망수학 칼럼</h2>
+
+					<p>
+						다양한 주제의 수학 칼럼을 통해 수학을 보는 새로운 시각을 만나보세요!
+					</p>
+				</div>
+			</section>
+
+
+			<section class="contents_mid">
+				<!-- s : 게시물 보기 -->
+				<article class="board_view">
+					<header>
+						<h3>
+							인공지능과 수학은 무슨 상관이 있을까?
+						</h3>
+						<ul class="side_info">
+							<li>
+								<dfn>작성자 :</dfn> 운영자
+							</li>
+							<li>
+								<span class="date">작성일 : 2021.11.26</span>
+								<span class="hit"><dfn>조회수 :</dfn> 1,000</span>
+							</li>
+						</ul>
+					</header>
+					<section class="main_article">
+						<div class="main_con">
+							<!-- s: 게시물 영역 -->
+
+<div class="board_dt_wrap detail"> 
+<div class="detail_top"> 
+<div class="inner"> 
+<h5>잘 틀려야, 잘 풀어낼 수 있다!</h5>  </div> 
+<div class="c-black"> 수학의 모든 활동은 문제를 놓고 벌어집니다. 문제를 만들어내고, 문제를 풀어내며 수학은 전개됩니다. 최고의 수학자들은 문제를 기막힌 방법으로 잘 풀어냈습니다. 아르키메데스도, 뉴턴도, 가우스는 난공불낙의 문제를 독특한 방법으로 풀어냈습니다.<br>
+ 어떻게 해야 문제를 잘 풀어낼 수 있을까요? 수학을 공부하는 사람들은 보다 간결하고, 보다 아름다운 해법을 찾아내고자 궁리합니다. 그 경지에 다다르기 위해 정답으로 인정받는 고수들의 해법과 공식, 아이디어를 배우고 익힙니다. 그러나 정답만 안다고 해서 문제를 잘 풀어내는 건 아닙니다. <br>
+ 많이 틀려봐야, 잘 틀려봐야 합니다. 무슨 뚱딴지같은 소리냐고요? 무슨 말인지 사이클로이드 문제를 통해서 살펴보겠습니다.<br> </div> 
+
+<div class="img_n_text">
+	<div class="c-black"> <span style="color: rgb(51, 51, 51); font-size: 17px; font-weight: bold; display: block;">사이클로이드의 넓이, 갈릴레이 틀리다!</span> 사이클로이드는 미끄러지지 않고 굴러가는 원 위의 한 점이 그리는 자취를 말합니다. 이 곡선은 원과 관련되어	있지만 원이 아닙니다. 고대의 기하학에서는 원과 직선을 주로 다뤘습니다. 고로 사이클로이드에 관한 성질을 쉽게 밝히지 못했습니다. 특히 이 곡선으로 둘러싸인 부분의 넓이를 구하는 게 쉽지 않았습니다. </div> 
+	<div class="c-img"> <img alt="사이클로이드 곡선" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_17.jpg"></div>
+</div>
+
+<div class="c-black" style="padding-top: 0px;"> 갈릴레오 갈릴레이(1564-1642)는 사이클로이드의 넓이를 구하려고 도전장을 내밀었습니다. 그는 이 곡선을 사이클로이드라고 부른 당사자이기도 합니다. 관심이 무척이나 많았던 탓에 갈릴레이는 이 곡선을 수십 년간 연구했습니다. 그 결과 그는 사이클로이드와 간접적으로 관련이 있는 아리스토텔레스의 역설을 해결하기도 했습니다. <br>
+ 그런 갈릴레이였기에 사이클로이드의 넓이문제를 그냥 간과할 리가 없었습니다. 그는 이 문제를 이론적으로 완벽하게 풀어내고자 했습니다. 그런데 그의 기대와는 달리 잘 풀리지 않았습니다. 그는 연구에 연구를 거듭해 기어이 답을 내놓았습니다. 그는, 사이클로드의 넓이가 사이클로이드를 만들어낸 원 넓이의 3배가 조금 안 된다고 했습니다. <br>
+ 답이 조금 이상합니다. 정확하게 얼마라고 하지 않고 거의 3배라고 했습니다. 이론적으로 풀어낸 답이라면 그렇게 나올 리가 없습니다. 어찌 된 일일까요? 갈릴레이는 이 문제를 이론적으로 풀어내지 못했습니다. 대신 그는 경험적인 방법을 사용했습니다. 사이클로이드를 직접 그린 다음 오려내어 원과 그 무게를 비교해봤습니다. 그랬더니 원 넓이의 세 배와 거의 같았습니다. 얼마나 정교하게 했던지 그 비가 무리수일 거라고 했답니다. <br> </div> 
+
+<div class="c-img"> <img alt="사진2" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_19.jpg"><br> </div> 
+<div class="c-black"> 실제 답과 맞고 안 맞고를 떠나서 갈릴레이의 방법은 정답일 수 없습니다. 경험적인 방법에는 오류와 오차가 개입될 수밖에 없으므로, 반드시 이론적인 계산이어야만 합니다. 갈릴레이 역시 그것을 알고 있었습니다. 근삿값이라도 구해보고 싶었던 거죠. 갈릴레
+이는 틀렸습니다. 그래도 상당히 그럴싸한 방법입니다. 대략의 추정치를 얻어낼 수 있습니다. 갈릴레이는 끝까지 이 문제를 풀지 못했습니다. 갈릴레이 당대의 수학을 넘어서는 문제였기에 어쩔 도리가 없었습니다. <br> </div> 
+
+<div class="c-black"> <span style="color: rgb(51, 51, 51); font-size: 17px; font-weight: bold; display: block;">메르센도 틀렸다!</span></div>
+<div class="c-black" style="padding-top: 0px;"v>갈릴레이의 뒤를 이어 이 문제에 도전한 사람은 메르센(1588~1647)이었습니다. ‘메르센의 소수’라고 할 때의 그 메르센입니다. 메르센은 우선 이 곡선을 정확하게 정의했습니다. ‘직선을 따라 굴러가는 반지름의 길이가 a인 원의 중심으로부터 h만큼 떨어진 점의 궤적’이라고 하면서 룰렛이라고 불렀습니다. 사이클로이드 한 구간의 거리가 원의 둘레와 같다는 것도 밝혔습니다.<br> </div> 
+<div class="img_n_text">
+	<div class="c-img"><img alt="사이클로이드와 타원의 절반 비교" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_18.jpg"><br> </div> 
+	<div class="c-black" style="padding-top: 0px;"> 메르센은 사이클로이드의 넓이가 타원의 절반 넓이와 같을 것이라고 했습니다. 사이클로이드의 모양이 타원의 절반 모양일지 모른다고 본 것입니다. 그러나 명확하게 증명하지는 못했습니다. 갈릴레이처럼 틀렸습니다. 사이클로이드와 타원은 거의 유사한 궤적을 그립니다. 그러나 둘의 궤적은 다릅니다. 그의 추측 역시 매우 그럴싸했습니다. 타원은 고대 그리스에서도 다뤄졌기에, 타원과의 관계를 통해 사이클로이드 문제를 풀어보는 것도 괜찮은 아이디어입니다. <br> </div> 
+</div>
+<div class="c-black" style="padding-top: 0px;"> 갈릴레이도, 메르센도 이 문제를 풀지 못했습니다. 틀리기만 했을 뿐입니다. 그런데 이 문제는 그들을 잇는 다른 수학자에 의해 곧 풀리게 됩니다. 그 주인공은 바로 로베르발(1602–1675)이었습니다. <br> </div> 
+
+<div class="c-black"> <span style="color: rgb(51, 51, 51); font-size: 17px; font-weight: bold; display: block;">드디어 문제가 풀리다!</span></div>
+<div class="img_n_text">
+	<div class="c-black" style="padding-top:0">로베르발은 사이클로이드의 넓이가 원 넓이의 3배임을 증명했습니다. 그는 적분법의 선구자 격인 카발리에리(1598~1647)가 제시한 원리를 활용합니다. 그 원리는 ‘대응하는 두 변의 길이의 비가 항상 m:n이면 두 도형의 넓이의 비도 m:n이다’입니다. 부피에 대해서도 같은 원리가 적용됩니다. 대응하는 두 면의 넓이의 비가 m:n으로 일정하면 두 입체도형의 부피의 비도 m:n이 됩니다. <br>
+	 카발리에리의 원리를 이용하여 로베르발이 사이클로드의 넓이를 어떻게 구했는지 살펴보겠습니다. 그는 사이클로드이의 절반에 해당하는 부분의 넓이만을 우선 생각했습니다. <br> </div> 
+	<div class="c-img"><img alt="사진4" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_20.jpg"><br> </div> 
+</div>
+
+<div class="c-black" style="padding-top: 0px;"> 카발리에리의 원리를 이용하여 로베르발이 사이클로드의 넓이를 어떻게 구했는지 살펴보겠습니다. 그는 사이클로드이의 절반에 해당하는 부분의 넓이만을 우선 생각했습니다. <br> </div> 
+<div class="c-img"> <img alt="사진5" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_21.jpg"> </div> 
+
+<div class="img_n_text">
+	<div class="c-black"> 그림에서 사이클로이드의 절반은 Ⅰ과 Ⅱ로 나뉩니다. 로베르발은 Ⅱ와 원의 절반을 평행하게 자른 선의 길이를 비교합니다. 둘의 길이가 항상 같기에 Ⅱ의 넓이는 원 넓이의 절반이 됩니다. 카발리에리의 원리를 적용했습니다. </div>
+	<div class="c-img"> <img alt="사진6" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_25.jpg"></div> 
+</div>
+<span style="text-align: center; color: rgb(51, 51, 51); font-size: 17px; font-weight: bold; display: block;"> Ⅱ의 넓이 = πr²÷2=πr²/2</span>
+
+<div class="img_n_text">
+	<div class="c-black"> Ⅰ의 넓이가 문제입니다. Ⅰ의 넓이를 구하기 위해 Ⅰ모양 두 개를 그림과 같이 거꾸로 합치면 직사각형이 됩니다. 가로의 길이는 πr, 세로의 길이는 2r입니다. 고로 Ⅰ부분의 넓이는 직사각형 넓이의 절반입니다.</div>
+	<div class="c-img"> <img alt="사진7" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_26.jpg"> </div> 
+</div>
+<span style="text-align: center; color: rgb(51, 51, 51); font-size: 17px; font-weight: bold; display: block;"> Ⅰ의 넓이 = 직사각형 넓이÷2<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = πr×2r÷2=πr²</span> 
+
+<div class="img_n_text">
+	<div class="c-black"> 사이클로이드 절반의 넓이는 Ⅰ과 Ⅱ를 더하면 됩니다. 그 값을 두 배하면 사이클로이드의 넓이가 나옵니다. 그리 하면 답은 3πr², 원 넓이의 3배입니다. 이렇게 해서 사이클로이드 넓이문제는 해결됐습니다. </div> 
+	<div class="c-img"> <img alt="사진8" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_27.jpg"> </div> 
+</div>
+<div class="img_n_text">
+	<div class="c-black"> 카발리에리의 원리는 보다 엄밀해져 적분법으로 열매를 맺게 됩니다. 사이클로이드 넓이도 적분으로 구할 수 있습니다. 곡선 위의 임의의 점의 x좌표는 x=r(t-sin t), y좌표는 y=r(1-cos t)입니다. 이 좌표를 가지고 적분하면 동일한 답 3πr²이 나옵니다. </div>
+	<div class="c-img"> <img alt="사진9" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_28.jpg"></div> 
+ </div> 
+
+<div class="c-black"> <span style="color: rgb(51, 51, 51); font-size: 17px; font-weight: bold; display: block; margin-bottom:2rem">오답을 수정해 가다보면 정답이 보인다.</span> 사이클로이드의 문제는 곧바로 풀린 게 아닙니다. 갈릴레이 같은 최고 수학자도 해결하지 못하고 틀렸습니다. 그러나 갈릴레이나 메르센의 오답은 문제를 푸는데 큰 역할을 했습니다. 갈릴레이는 답이 어느 정도 되겠다는 추측을 가능하게 했습니다. 메르센의 시도는 사이클로이드의 규칙을 포착하여 풀려는 아이디어로 이어집니다. 더군다나 두 사람의 시도는 다른 수학자들이 사이클로이드에 관심을 갖도록 부채질했습니다. 메르센은 갈릴레이를 통해, 로베르발은 메르센을 통해 사이클로이드 문제를 접했습니다. <br>
+ 수학 문제는 대부분 단번에 풀리지 않습니다. 오랜 시간, 많은 사람의 ‘틀린’ 아이디어를 거치며 풀렸습니다. 우리가 단번에 배우니까 그렇게 착각하는 겁니다.<br>
+ 정답 이전에 많은 오답이 있었습니다. 많이 틀리고 나서야 문제가 풀렸습니다. 정답은 오답을 수정해가면서 얻어낸 결과물입니다. <br>
+ 많이 틀려봐야, 제대로 문제를 풀어낼 수 있습니다. 중요한 것은 정답이든 오답이든 하나의 답을 내놓는 것입니다. 그리고 그 답이 맞았는지 틀렸는지 확인해봐야 합니다. 오답이란 걸 알아차려야 합니다. 그래야 다른 방법을 시도하며, 결국 문제를 풀어냅니다. 자신의 답이 틀린 거 아닐까 하고 두려워 마세요. 틀렸으면 다른 방법으로 풀어내면 됩니다. 수학은 그렇게 하는 겁니다. <br> </div> 
+<div class="writer-info"> 
+<div class="w-pic"> <img alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_75.jpg"> 
+<div class="w-nm">김용관</div> </div> 
+<ul class="w-detail"> 
+<li>"세상을 바꾼 위대한 오답" "수냐의 수학카페" 등 저자</li> 
+</ul></div> </div> </div>				
+
+
+							<!--//e: 게시물 영역 -->
+						</div>
+					</section>
+
+					<section class="board_bottom">
+						<p class="react_like"><button type="button" id="btn_ac_like"><i class="blind">좋아요</i> 8</button></p>
+						<ul>
+							<li><a href="#" class="btn_board btn_type1" id="btn_list">목록보기</a></li>
+						</ul>
+					</section>
+				</article>
+				<!--//e : 게시물 보기 -->
+
+
+			</section>
+
+		</div>
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+$(document).ready(function(){
+	$('#btn_ac_like').on("click", function() {
+		$(this).toggleClass("on");
+	});
+	$('#btn_att_file').on("click", function() {
+		$(".att_file_box").toggleClass("open");
+	});
+});
+
+</script>
+</body>
+</html>

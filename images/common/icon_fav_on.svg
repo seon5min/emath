@@ -1,0 +1,9 @@
+<svg width="41" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M15.968 5.814a.647.647 0 0 0-.52-.442l-4.746-.696L8.58.362a.646.646 0 0 0-1.16 0L5.298 4.676l-4.745.696a.647.647 0 0 0-.358 1.106L3.63 9.834l-.81 4.741a.65.65 0 0 0 .257.635.645.645 0 0 0 .68.049L8 13.019l4.244 2.24a.644.644 0 0 0 .68-.05.65.65 0 0 0 .258-.634l-.81-4.74 3.433-3.357a.65.65 0 0 0 .163-.664z" id="a"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <ellipse stroke="#4E42CA" stroke-width="1.4" fill="#FFF" cx="20.019" cy="20" rx="19.319" ry="19.3"/>
+        <use fill="#4E42CA" fill-rule="nonzero" xlink:href="#a" transform="translate(12 12.333)"/>
+    </g>
+</svg>

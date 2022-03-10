@@ -1,0 +1,9 @@
+<svg width="45" height="20" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <rect fill="#4E42CA" width="45" height="20" rx="10"/>
+        <text font-family="Lato-Bold, Lato" font-size="10" font-weight="bold" fill="#FFF">
+                            <tspan x="22" y="13">ON</tspan>
+                        </text>
+        <circle fill="#FFF" cx="10" cy="10" r="9"/>
+    </g>
+</svg>
