@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../../css/teacher.css" />
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	// My M노트 리스트
+	$('.btnViewList').click(function(){
+		$('.viewList').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+	var ulNum = $('.listViewer ul li').length;
+	$('.listViewer ul').width((ulNum * 210) - 20);
+	if(ulNum <= 6){
+		$('.listBtn').hide();
+	}
+	$('.viewHeader, .viewCont').click(function(){
+		$('.viewList').removeClass('active');
+		$('.btnViewList').removeClass('active');
+	});
+
+	setTimeout(function(){
+		$('.viewList').removeClass('active');
+		$('.btnViewList').removeClass('active');
+	}, 3000);
+});
+</script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap" class="mnote view">
+
+	<!-- viewHeader -->
+	<div class="viewHeader clearfix">
+		<h2><span class="name">김홍길동</span> 선생님의 M노트</h2>
+
+		<div class="fav_con on">
+			<a class="emt" href="javascript:"></a>
+			<span class="hit">391</span>
+		</div>
+
+		<div class="snswrap">
+			<a href="#none" class="fb">페이스북</a>
+			<a href="#none" class="tw">트위터</a>
+			<a href="#none" class="kko">카카오스토리</a>
+		</div>
+	</div>
+	<!--// viewHeader -->
+
+	<!-- viewCont -->
+	<div class="viewCont">
+		<h3>입체도형의 성질 - 다면체 자료모음 입체도형의 성질 - 다면체 자료모음</h3>
+
+		<!-- contArea -->
+		<div class="contArea">
+
+			<!-- contHeader -->
+			<div class="contHeader">
+				<img src="../../images/common/tag_icon5.png" alt="게임" />
+				피자의 현과 접선
+			</div>
+			<!--// contHeader -->
+
+			<!-- contView -->
+			<div class="contView">
+
+				<!-- 내용 -->
+				<div class="view">
+					<img src="../../images/main/game_guide.png">
+				</div>
+				<!--// 내용 -->
+
+			</div>
+			<!-- contView -->
+
+			<!-- contBtn -->
+			<div class="contBtn">
+				<a href="javascript:void(0);" class="btnPrev"></a>
+				<a href="javascript:void(0);" class="btnNext on"></a>
+			</div>
+			<!--// contBtn -->
+		</div>
+		<!--// contArea -->
+	</div>
+	<!--// viewCont -->
+
+	<!-- viewList -->
+	<div class="viewList active">
+		
+		<a href="javascript:void(0);" class="btnViewList active"></a>
+
+		<!-- listHeader -->
+		<div class="listHeader">
+			<h4><span>My</span> M노트 목록</h4>
+
+			<!-- btnArea -->
+			<div class="btnArea">
+				<a href="javascript:void(0);" class="btnDel"><img src="../../images/teacher/btn_del.png" alt="삭제" /></a>
+				<a href="javascript:void(0);" class="btnEdit"><img src="../../images/teacher/btn_edit.png" alt="수정" /></a>
+			</div>
+			<!--// btnArea -->
+
+			<!-- contCount -->
+			<ul class="contCount">
+				<li class="movie"><span class="ico"></span><span class="count">8</span></li>
+				<li class="quest"><span class="ico"></span><span class="count">88</span></li>
+				<li class="game"><span class="ico"></span><span class="count">888</span></li>
+				<li class="webtoon"><span class="ico"></span><span class="count">88</span></li>
+				<li class="image"><span class="ico"></span><span class="count">88</span></li>
+				<li class="knowledge"><span class="ico"></span><span class="count">88</span></li>
+			</ul>
+			<!--// contCount -->
+		</div>		
+		<!--// listHeader -->
+
+		<!-- listArea -->
+		<div class="listArea">
+			<div class="listWrap">
+				<span class="cardNum">&lt;14/18&gt;</span>
+
+				<!-- listViewer -->
+				<div class="listViewer">
+					<ul class="clearfix">
+						<li class="memo check">
+							<div class="cont" onclick="">
+								<span class="memoTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="memo select">
+							<div class="cont" onclick="">
+								<span class="memoTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="select">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag13.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="">
+							<img src="../../images/teacher/img_finish.png" alt="">
+						</li>
+					</ul>
+				</div>
+				<!--// listViewer -->
+
+				<!-- ListBtn -->
+				<div class="listBtn">
+					<a href="javascript:void(0);" class="btnPrev on"></a>
+					<a href="javascript:void(0);" class="btnNext on"></a>
+				</div>
+				<!--// ListBtn -->
+			</div>
+		</div>
+		<!--// listArea -->
+
+	</div>
+	<!--// viewList -->
+</div>
+<!-- //wrap -->
+
+
+</body>
+</html>
+<script>
+// 확인용
+$(function(){
+});
+// 확인용 끝
+</script>

@@ -1,0 +1,80 @@
+bonus_event@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.selftest {position:relative; width:763px; overflow:hidden} 
+.selftest  h1 {position:absolute; top:36px; left:30px;}
+.selftest .snswrap {position:absolute; top:33px; right:22px;}
+.selftest .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20200609/img_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.selftest .snswrap a.fb {background-position:0 0;}
+.selftest .snswrap a.tw {background-position:-41px 0;}
+.selftest .snswrap a.kko {background-position:-82px 0;}
+.selftest .top,
+.selftest .top_end {position:relative}
+.selftest .top .btn-pre-apply {position:absolute; top:492px; left:214px; display:block; width:329px; height:71px; background:url('../../images/event/20200916/btn_event_before.png') 0 0 no-repeat;}
+.selftest .top .btn-pre-apply.off {background-position:0 -72px;}
+.selftest .top .btn-apply {position:absolute; top:496px; left:255px; display:block; width:253px; height:60px; background:url('../../images/event/20200916/btn_apply.png') 0 0  no-repeat;}
+.selftest .top .btn-apply.off {background-position:0 -62px;}
+
+.selftest .top .btnArea {position:absolute; top:489px; width:100%; text-align:center; }
+.selftest .top [class^="btn-winner"] {display:inline-block; height:60px; background-image:url('../../images/event/20200916/btn_event_fin.png'); background-repeat:no-repeat }
+.selftest .top .btn-winner1 {width:274px; background-position:0 0}
+.selftest .top .btn-winner2 {width:351px; background-position:0 -62px}
+.selftest .top .btn-winner3 {width:351px; background-position:0 -124px}
+
+.selftest .new_contents {background:#524335; padding:47px 0 52px}
+.selftest .new_contents h3 {text-align:center; margin-bottom:28px}
+.selftest .new_contents .tab_stcard {width:678px; margin:0 auto; overflow:hidden}
+.selftest .new_contents .tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20200916/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.selftest .new_contents .tab_stcard li a {display:block; width:100%; height:100%}
+.selftest .new_contents .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.selftest .new_contents .tab_stcard li.tab02 {background-position:-173px 0;}
+.selftest .new_contents .tab_stcard li.tab03 {background-position:-346px 0;}
+.selftest .new_contents .tab_stcard li.tab04 {background-position:-519px 0;}
+.selftest .new_contents .tab_stcard li.tab01:hover {background-position:0 -82px}
+.selftest .new_contents .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.selftest .new_contents .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.selftest .new_contents .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.selftest .eventArea {background:#fbfaf6 url('../../images/event/20200916/cont_score.png') 0 0 no-repeat; width:100%; height:940px; position:relative;}
+.selftest .eventArea.nodata {background:#fbfaf6 url('../../images/event/20200916/cont_test.png') 0 0 no-repeat; }
+.selftest .eventArea.end {background:#fbfaf6 url('../../images/event/20200916/cont_score_end.png') 0 0 no-repeat; width:100%; height:965px; position:relative;}
+.selftest .eventArea.end_nodata {background:#fbfaf6 url('../../images/event/20200916/cont_score_end_nodata.png') 0 0 no-repeat; width:100%; height:793px; position:relative;}
+
+.selftest .eventArea section.score {text-align:center; padding-top:800px}
+.selftest .eventArea.end  section.score {padding-top:825px}
+.selftest .eventArea section.score h4 {padding-bottom:18px}
+.selftest .eventArea section.score .txt_num {margin-bottom:13px;}
+.selftest .eventArea section.score .txt_num strong {display:inline-block; color:#86ae6c;font-size:48px; font-weight:800;vertical-align:top}
+.selftest .eventArea section.score .txt_num span {display:inline-block; width:27px; height:48px; background:url('../../images/event/20200916/txt_score.png') 0 8px no-repeat; vertical-align:bottom; text-indent:-9999px}
+
+.selftest .eventArea section.score .test_button {position:absolute; right:20px; top:800px; }
+.selftest .eventArea section.score .test_button a {display:block; width:180px; height:48px; background-image:url('../../images/event/20200916/btn_test_result.png'); background-repeat:no-repeat; text-indent:-9999px}
+.selftest .eventArea section.score .test_button a.btn_test1 {background-position:0 0}
+.selftest .eventArea section.score .test_button a.btn_test2 {background-position:0 -60px; margin-top:12px}
+.selftest .eventArea.nodata a.btn_gototest {display:block; position:absolute; top:745px; left:183px;width:406px; height:94px;}
+.selftest .eventArea section.score .btn_grading {position:absolute; right:20px; top:840px; width:200px; height:82px; background:url('../../images/event/20200916/btn_grading.png') 0 0 no-repeat; text-indent:-9999px}
+
+.selftest .bonus_event {background:url('../../images/event/20200916/bg_bonus.png') 0 0 no-repeat; height:378px; position:relative}
+.selftest .bonus_event h3 {padding:48px 0 0 60px;}
+.selftest .bonus_event .inp_url {margin:12px 0 0 72px; width:622px; height:48px; background:url('../../images/event/20200916/bonus_url_input.png') 0 0 no-repeat; }
+.selftest .bonus_event .inp_url input[type="text"] {width:530px; height:42px; padding:0 0 0 5px; border:0; margin:1px 0 0 5px}
+.selftest .bonus_event .inp_url button {width:74px; height:48px}
+.selftest .bonus_event .inp_url button.btn_modi {background:url('../../images/event/20200916/bonus_url_input.png') -546px -50px no-repeat;}
+.selftest .bonus_event .inp_url .inp_notice {margin-top:12px}
+
+.selftest .bonus_event.end h3 {padding:40px 0 0 60px}
+.selftest .bonus_event.end .inp_url { background:#fff;  border-radius:3px; }
+.selftest .bonus_event.end .inp_url .mypost {width:600px;  height:44px; line-height:44px;  font-size:14px; margin:2px 0 0 15px; overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap; }
+.selftest .bonus_event.end .inp_url .inp_notice {display:none}
+
+/* notice */
+.selftest .notice {padding:35px 30px 30px 35px; background-color:#261d14;}
+.selftest .notice ul {padding-top:10px;}
+.selftest .notice li {margin-top:5px; padding-left:12px; color:#afa69e; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20200916/icon_bul.png') no-repeat 0 10px;}
+.selftest .notice li .point {color:#ffffff;}
+

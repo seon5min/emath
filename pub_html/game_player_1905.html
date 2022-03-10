@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>초등 수학 게임방</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../css/setGame.css" />
+<link rel="stylesheet" type="text/css" href="../css/game.css" />
+
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="../css/game_ie7.css" />
+<![endif]-->
+
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+
+</head>
+<body style="background:#e7ebed; overflow:hidden"><!-- 2019-06-27 style 수정 -->
+<!--  1024  * 740 -->
+<div class="gamePlayerWrap">
+	<div class="cntL">
+		<div class="title_con eventtit may2021"><!-- 2021년 5월이벤트 may2021  /이벤트 뱃지 붙을시 eventtit class 추가 -->
+			<h1><span>수학술사 세미(게임) -  1회 약수익스플로러 외 브라우저에서 미션 완료 불가</span></h1>
+
+			<div class="counting">
+				<!-- 카운팅 -->
+				<span class="start" style="display:none">
+					<strong>60</strong>초 후에 미션 완료!
+				</span>
+				<!-- //카운팅 -->
+
+				<span class="finish" style="display:block">
+					오늘 학습 완료
+				</span>
+
+				<!-- 크롬일 때 -->
+				<span class="error" style="display:none">
+					<p class="blind">익스플로러 외 브라우저에서 미션 완료 불가 </p>
+				</span>
+				<!--// 크롬일 때 -->
+			</div>
+		</div>
+	
+		<button type="button" class="btn_large"><i class="blind">확장</i></button>
+		<section class="game_player">
+			<img src="../images/layout/game2019/dummy_player.jpg" alt="">
+		</section>
+		<section class="game_info">
+			<h2><a href="#">중학1</a> &gt; <a href="#">문자와 식</a> &gt; <a href="#">일차방정식</a> &gt; <a href="#">방정식과 그 해</a></h2>
+			<span class="right_button">
+				<!-- <button type="button" class="ml5 dark_button"><img src="../images/common/zzim_icon.png"> 찜하기</button>
+				<button type="button" class="ml5 dark_button"><img src="../images/common/share_icon.png"> 공유하기</button> -->
+				
+				<!-- 2019-09-04 좋아요 아이콘 추가 및 수정 -->
+				<button type="button" class="btn_int_like"><i class="blind">좋아요</i><span>1,345</span></button>
+				<button type="button" class="btn_int_fav"><i class="blind">찜하기</i></button>
+				<button type="button" class="btn_int_shr" onclick="$('.sharewrap').show();return false;"><i class="blind">공유하기</i></button>
+			</span>
+
+			<!--2019-10-18 좋아요 이유 작성하기 / 이벤트 이후 삭제 -->
+			<style>
+				.pop_like.pop_common {position:fixed; top:100px; left:0; width:100%; height:100%; z-index:9999; display:none}
+				.pop_like.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:#000; opacity:0.8; z-index:9999}
+				.pop_like.pop_common .popcon {position:relative; top:50%; z-index:10000; margin:-300px auto; width:650px; background:#fff; border-radius:15px; border:2px solid #000}
+				.pop_like.pop_common .popcon .container {padding:25px 20px 20px;}
+				.pop_like .mypost {width:100%; margin-top:17px}
+				.pop_like .mypost  table {border-top:2px solid #434bac;border-bottom:2px solid #434bac; }
+				.pop_like .mypost th {background:#ecedfb; border-top:1px solid #d1d5d8; width:95px; color:#4c4c4c; font-size:14px; font-weight:normal}
+				.pop_like .mypost td {border-top:1px solid #d1d5d8; padding:10px}
+				.pop_like .mypost textarea {border:1px solid #cecece; width:490px; height:108px}
+				.pop_like .mypost .notice {margin-top:12px; font-size:13px; color:#4c4c4c; font-weight:600}
+				.pop_like.pop_common .btn_layerclose {position:absolute; top:15px; right:20px; display:inline-block; width:40px; height:40px; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=1); opacity:1; background:transparent}
+				.pop_like.pop_common .btn_layerclose img {width:23px; height:auto }
+			</style>
+			<div class="pop_like pop_common">
+				<div class="dim"></div>
+				<div class="popcon">
+					<div class="container">
+						<h4><img src="../images/event/20191018/tit_pop_like.png" alt="좋아요 이유 작성하기"></h4>
+
+						<div class="mypost">
+							<table>
+								<tr>
+									<th>‘좋아요’<br>이유</th>
+									<td>
+										<textarea name="text_like1" cols="50" rows="3"></textarea>
+										<p class="ar">(500자 내 입력 가능)</p>
+									</td>
+								</tr>
+								<tr>
+									<th>바라는 점</th>
+									<td>
+										<textarea name="text_like2" cols="50" rows="3"></textarea>
+										<p class="ar">(500자 내 입력 가능)</p>
+									</td>
+								</tr>
+							</table>
+							<p class="notice">※ 정성이 담긴 내용으로 작성해주시면 당첨확률이 올라갑니다!</p>
+							
+							<p class="ac mt20">
+								<a href="#none"><img src="../images/event/20160218/popup/btn_cancel.png" alt="취소" /></a>
+								<a href="#none" class="ml4"><img src="../images/event/20191018/btn_input_f.png" alt="입력완료" /></a>
+							</p>
+
+						</div>
+						<button onclick="$('.pop_like').hide();return false;" class="btn_layerclose"><img src="../images/event/20190814/btn_layerclose.png" alt="팝업닫기"></button>
+					</div>
+				</div>
+			</div>
+			<!-- //2019-10-18 좋아요 이유 작성하기 -->
+
+			<!-- 2019-06-11 공유하기 추가 -->
+			<div class="sharewrap">
+				<div>
+					<p class="tit">공유하기</p>
+					<div class="sharebox">
+						<a class="sns_btn facebook emt ml10" href="#"></a> <a class="sns_btn twitter emt ml10" href="#"></a> <a class="sns_btn kakao emt ml10" href="#"></a>
+					</div>
+					<div class="share_url">
+						<input type="text" value="http://www.ebsmath.co.kr/url/go/14131" readonly="readonly">
+						<button type="button" class="copy_btn light_button" onclick="fnCopyUrl()" style="width: 45px;">복사</button>
+					</div>
+					<button type="button" class="shareclose_btn emt" onclick="$('.sharewrap').hide();return false;"></button>
+				</div>
+			</div>
+
+			<span class="count">16,888</span>
+			<div class="comment"><!-- 2019-06-10 수정 -->
+				<div class="cmt_boxt">
+					수학술사 세미의 마법수학학교 수행 시절은 어땠을까요?<br>
+					수학술사가 되기 위한 세미와 친구들의 마법수학학교 졸업 수행기!<br>
+					세미와 친구들에게 어떤 일이 벌어질 지 함꼐 공부하며 헤쳐가 보아요 <br>
+					수학술사 세미의 마법수학학교 수행 시절은 어땠을까요?<br>
+					수학술사가 되기 위한 세미와 친구들의 마법수학학교 졸업 수행기!<br>
+					세미와 친구들에게 어떤 일이 벌어질 지 함꼐 공부하며 헤쳐가 보아요 
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="cntR">
+		<!--2019-06-11  <h3>시리즈 목록</h3> 탭 1개일 때 -->
+
+		<!--2019-06-11  탭 2개 일 때 width 추가-->
+		<ul class="tab_gamebx"> 
+			<li class="on" style="width:129px">시리즈 목록</li>
+			<li style="width:129px">추천 학습카드</li>
+		</ul>
+
+		<!--2019-06-11  탭 3개 일 때 <ul class="tab_gamebx">
+			<li class="on">시리즈 목록</li>
+			<li>추천 학습카드</li>
+			<li>찜 한 게임</li>
+		</ul> -->
+
+		<div class="gamebox">
+			<ul><!-- 시리즈목록 -->
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi1.png"></span><em>1회 약수</em></a></li>
+				<li class="on"><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi2.png"></span><em>2회 배수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi3.png"></span><em>3회 최대공약수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi4.png"></span><em>4회 최소공배수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi5.png"></span><em>5회 기약분수,통분</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi6.png"></span><em>6회 분수의 크기</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi7.png"></span><em>7회 분수의 덧셈</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi8.png"></span><em>8회 분수의 뺄셈</em></a></li>
+			</ul>
+			<ul style="display:none"><!-- 추천 학습카드 -->
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi10.png"></span><em>1회 명탐정 이차방정식! </em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi11.png"></span><em>2회 에라토스테네스의 체</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi12.png"></span><em>3회 최대공약수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi13.png"></span><em>4회 최소공배수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi14.png"></span><em>5회 기약분수,통분</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi15.png"></span><em>6회 분수의 크기</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi16.png"></span><em>7회 분수의 덧셈</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi17.png"></span><em>8회 분수의 뺄셈</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi18.png"></span><em>9회 사각형으로 나누기</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi8.png"></span><em>10회 분수의 뺄셈</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi9.png"></span><em>11회 사각형으로 나누기</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi9.png"></span><em>12회  네모네모 최소공배수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi9.png"></span><em>13회  네모네모 최대공약수</em></a></li>
+			</ul>
+			<ul style="display:none"><!-- 찜 한 게임 -->
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi19.png"></span><em>1회 사각형으로 나누기</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi1.png"></span><em>2회 배수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi2.png"></span><em>3회 최대공약수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi3.png"></span><em>4회 최소공배수</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi4.png"></span><em>5회 기약분수,통분</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi5.png"></span><em>6회 분수의 크기</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi6.png"></span><em>7회 분수의 덧셈</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi7.png"></span><em>8회 분수의 뺄셈</em></a></li>
+				<li><a href="#"><span class="thumb"><img src="../images/layout/game2019/thumb_semi8.png"></span><em>9회 사각형으로 나누기</em></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.tab_gamebx li').click(function(e){
+		e.preventDefault;
+		var tabIdx = $(this).index();
+		$(this).siblings().removeClass('on');
+
+		$(this).addClass('on');
+		$('.gamebox ul').hide();
+		$('.gamebox ul').eq(tabIdx).show();
+		$('.gamebox li').removeClass('on');
+
+	});
+
+	$('.gamebox li').click(function(e){
+		var tabIdx = $(this).index();
+		$(this).siblings().removeClass('on');
+
+		$(this).addClass('on');
+	});
+
+	$('.btn_large').click(function(e){
+		var islarge = $(this).hasClass("recv");
+		if(islarge) {
+			$(".gamePlayerWrap").removeClass('large');
+			$(this).removeClass('recv');
+		}else  {
+			$(".gamePlayerWrap").addClass('large');
+			$(this).addClass('recv');
+		}
+	});
+	 /*2019-09-04 좋아요, 찜하기 */
+	$(".btn_int_like").bind("click", function ()	{
+		if($(this).hasClass("on")) {$(this).removeClass("on");}
+		else {$(this).addClass("on");}
+		$('.pop_like').show(); /*2019-10-18 추가*/
+	});
+
+	$(".btn_int_fav").bind("click", function ()	{
+		if($(this).hasClass("on")) {$(this).removeClass("on");}
+		else {$(this).addClass("on");}
+	});
+});
+</script>
+</body>
+</html>

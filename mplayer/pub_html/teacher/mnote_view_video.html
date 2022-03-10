@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../../css/teacher.css" />
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 비디오 플레이 버튼
+	var vodH = $('.video-area').height();
+	$('.playerDim').css({'height':vodH});
+	$('.playerDim').next('img').css({'top':(vodH/2)-44});
+
+	// My M노트 리스트
+	$('.btnViewList').click(function(){
+		$('.viewList').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+	var ulNum = $('.listViewer ul li').length;
+	$('.listViewer ul').width((ulNum * 210) - 20);
+	if(ulNum <= 6){
+		$('.listBtn').hide();
+	}
+	$('.viewHeader, .viewCont').click(function(){
+		$('.viewList').removeClass('active');
+		$('.btnViewList').removeClass('active');
+	});
+});
+</script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap" class="mnote view">
+
+	<!-- viewHeader -->
+	<div class="viewHeader clearfix">
+		<h2><span class="name">김홍길동</span> 선생님의 M노트</h2>
+
+		<div class="fav_con on">
+			<a class="emt" href="javascript:"></a>
+			<span class="hit">391</span>
+		</div>
+
+		<div class="snswrap">
+			<a href="#none" class="fb">페이스북</a>
+			<a href="#none" class="tw">트위터</a>
+			<a href="#none" class="kko">카카오스토리</a>
+		</div>
+	</div>
+	<!--// viewHeader -->
+
+	<!-- viewCont -->
+	<div class="viewCont">
+		<h3>입체도형의 성질 - 다면체 자료모음 입체도형의 성질 - 다면체 자료모음</h3>
+
+		<!-- contArea -->
+		<div class="contArea">
+
+			<!-- contHeader -->
+			<div class="contHeader">
+				<img src="../../images/common/tag_icon2.png" alt="영상" />
+				피자의 현과 접선 
+			</div>
+			<!--// contHeader -->
+
+			<!-- contView -->
+			<div class="contView">
+
+				<!-- 내용 -->
+				<div class="view">
+
+					<link rel="stylesheet" type="text/css" href="../../../pub_html/hakseup/css/player.math2016.css" />
+					<div id="studyAjaxArea">
+						<div id="studywin" class="pcwin">
+							<div class="container">
+								<div class="contents">
+									<!-- @@ -->
+									<div class="player jp-video-360p" id="jp_container_1">
+										<div class="video-area" id="jquery_jplayer_1" style="width: 764px; height: 431px;"><img id="jp_poster_0" style="width: 764px; height: 431px; display: none;"><video id="jp_video_0" preload="auto" src="http://wstr.ebsmath.co.kr/ebsvod/ebsm/M42M1401/M201400001/M201400001_2000K_M00002.mp4" style="width: 764px; height: 431px;"></video></div>
+										<div class="playerDim" style="height: 542px;"></div><img src="../../images/common/btn_play.png" alt="재생" style="top: 227px;">
+										<div class="control-area" style="overflow:visible">
+											<ul>
+												<li>
+													<div class="time"><strong class="jp-current-time" role="timer" aria-label="time">00:07</strong>/<span>05:34</span></div>
+													<div class="option">
+														<div>
+															<a href="#none" class="screen on" title="전체화면 설정(Enter)">전체화면</a>
+														</div>
+													</div>
+													<div class="quality">
+														<a href="javascript:goQualPlay(0)" class="on">고화질</a>
+														<a href="javascript:goQualPlay(1)">일반화질</a>
+														<a href="javascript:goQualPlay(2)">저화질</a>
+													</div>
+												</li>
+												<li class="progress">
+													<div class="bar" style="width: 100%;">
+														<span class="current" style="width:80%;"><a href="#none">재생시간 00:01</a></span>
+													</div>
+													<div id="divCapIcon">
+														<span class="check-point emt" id="savedStartCapIcon1" style="left: 44.201px;"></span>
+														<span class="check-point emt" id="savedEndCapIcon1" style="left: 611.183px;"></span>
+													</div>
+												</li>
+												<li>
+													<!-- 제어버튼 -->
+													<div class="control">
+														<a href="#none" class="forward" title="뒤로 이동(Left)">뒤로 이동</a>
+														<span class="line"></span>
+														<a href="#none" class="play" title="재생(Space)">재생</a>
+														<!-- <a href="#none" class="pause" title="일시정지(Space)">일시정지</a> -->
+														<span class="line"></span>
+														<a href="#none" class="stop" title="정지(Ctrl+Space)">정지</a>
+														<span class="line"></span>
+														<a href="#none" class="backward" title="앞으로 이동(Right)">앞으로 이동</a>
+													</div>
+													<!-- //제어버튼 -->
+
+													<!-- 볼륨 -->
+													<div class="vol-wrap">
+														<a href="#none" class="vol" title="음소거 해제(M)">음소거</a>
+														<!-- <a href="#none" class="vol mute" title="음소거 설정(M)">음소거</a> --><!-- 음소거시 mute class 추가 -->
+														<div class="vol-ctr">
+															<span style="width:30%" class="vol-ctr-value"><a href="#none" title="볼륨 조정(Up, Down)">볼륨 n%</a></span>
+														</div><!-- span width:80%; 로 조절 -->
+													</div>
+													<!-- //볼륨 -->
+
+													<!-- 이동시간 설정 -->
+													<div class="movingtime">
+														<label for="time">이동시간 설정</label>
+														<span class="comm_sel jqtransformdone" style="width: 25px;">
+															<div class="jq_sel" style="z-index: 0;">
+																<div><span>10</span><a href="#" class="jqTransformSelectOpen"></a></div>
+																<ul style="display:block; width: 50px; visibility: visible;">
+																	<li><a href="#" index="0">03</a></li><li><a href="#" index="1">04</a></li><li><a href="#" index="2">05</a></li><li><a href="#" index="3">06</a></li><li><a href="#" index="4">07</a></li><li><a href="#" index="5">08</a></li><li><a href="#" index="6">09</a></li><li><a href="#" index="7" class="selected">10</a></li><li><a href="#" index="8">11</a></li><li><a href="#" index="9">12</a></li><li><a href="#" index="10">13</a></li><li><a href="#" index="11">14</a></li><li><a href="#" index="12">15</a></li><li><a href="#" index="13">16</a></li><li><a href="#" index="14">17</a></li><li><a href="#" index="15">18</a></li><li><a href="#" index="16">19</a></li><li><a href="#" index="17">20</a></li><li><a href="#" index="18">20</a></li><li><a href="#" index="19">21</a></li><li><a href="#" index="20">22</a></li><li><a href="#" index="21">23</a></li><li><a href="#" index="22">24</a></li><li><a href="#" index="23">25</a></li><li><a href="#" index="24">26</a></li><li><a href="#" index="25">27</a></li><li><a href="#" index="26">28</a></li><li><a href="#" index="27">29</a></li><li><a href="#" index="28">30</a></li>
+																</ul>
+																<select name="jumpSec" id="jumpSec" class="jq_sel_hide" style="display: none;">
+																	<option value="3">03</option>
+																	<option value="4">04</option>
+																	<option value="5">05</option>
+																</select>
+															<span class="customSelectBoxContainer" style="z-index:0;display:inline-block;width:14px;margin:0px 0px 0px 0px;position:relative;top:auto;bottom:auto;left:auto;right:auto"><a class="customSelectBox_btn" href="javascript:;" style="overflow:hidden;display:inline-block;width:100%;height:100%"><p class="customSelectBox_title" style="overflow: hidden; display: inline-block; float: left; padding-top: 4px;">03</p><span class="customSelectBox_arrow" style="position:absolute;display:inline-block"></span></a></span></div>
+														</span>
+														<span>초</span>
+													</div>
+													<!-- //이동시간 설정 -->
+
+													<!-- 구간 설정 -->
+													<div class="option">
+														<div class="ctrl_webmark">
+															<span class="tit_webmark">구간 설정</span>
+															<a href="#none" class="add-mark" onmouseover="addMarkOver()" onmouseout="addMarkOut(this)">시작<em class="icon"></em></a>
+															<a href="#none" class="end-mark"><em class="icon"></em>끝</a>
+															<a href="#none" class="cancel-mark">취소<em class="icon"></em></a>
+														</div>
+													</div>
+													<!-- //구간 설정 -->
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="player_info" style="height: 431px">
+										<a class="player_title_btn on" href="javascript:"><img src="../../images/main/player_title2.png" alt="구간 설정"></a>
+
+										<div class="player_info_con" style="height: 431px; display: block;">
+											<div class="title">구간 설정</div>
+											<div class="list_con">
+												<div class="list_title">
+													<table>
+														<thead>
+															<tr>
+																<th width="60%">제목</th>
+																<th width="40%">재생구간</th>
+															</tr>
+														</thead>
+													</table>
+												</div>
+												<div class="list_set" style="height:359px;">
+													<table>
+														<tbody>
+															<tr>
+																<td width="60%" id="webCapName1">
+																	<a href="javascript:goCapPlay(1, 206, 45)">
+																	<p class="txt">
+																		1
+																	</p>
+																	</a>
+																</td>
+																<td width="40%">
+																	<p class="time">03:26~00:45</p>
+																	<div class="mt5">
+																		<button class="modify_btn light_button ml2" onclick="editCapName(1, 32422)" type="button" id="modiSave1">수정</button>
+																		<button class="del_btn light_button" onclick="delCap(1, 32422)" type="button">삭제</button>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td width="60%" id="webCapName2">
+																	<a href="javascript:goCapPlay(2, 73, 96)">
+																	<p class="txt">
+																		2
+																	</p>
+																	</a>
+																</td>
+																<td width="40%">
+																	<p class="time">01:13~01:36</p>
+																	<div class="mt5">
+																		<button class="modify_btn light_button ml2" onclick="editCapName(2, 32423)" type="button" id="modiSave2">수정</button>
+																		<button class="del_btn light_button" onclick="delCap(2, 32423)" type="button">삭제</button>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="relative-con" style="display:none;">
+										<p><img src="http://www.ebsmath.co.kr/common/innovativepot/pub_html/hakseup/images/tit_relative.gif" alt="연관콘텐츠"></p>
+										<div id="relative-con-div" style="width:651px">
+											<ul>
+												<!--
+												<li><a href="#none"><img src="http://www.ebsmath.co.kr/common/innovativepot/pub_html/hakseup/images/@thumb.gif" alt="썸네일" /></a></li>
+												 -->
+											</ul>
+										</div>
+										<a href="javascript:relativeConHide();" class="closebtn"><img src="http://www.ebsmath.co.kr/common/innovativepot/pub_html/hakseup/images/btn_close.gif" alt="닫기"></a>
+									</div>
+									<input type="hidden" name="hiddenStartCap" id="hiddenStartCap">
+									<!-- //@@ -->
+								</div>
+								<div class="cont_relation" style="display:none;">
+									<div class="cont">
+										<div class="btn_close">
+											<a href="javascirpt:void(0)"><img src="http://www.ebsmath.co.kr/common/innovativelrms/images/study/relation/btn/btn_relation_close.png" alt="연관콘텐츠 닫기"></a>
+										</div>
+										<div class="sec_relation">
+											<div class="btn_control">
+												<a href="javascirpt:void(0)" class="up" style="display: none;"><img src="http://www.ebsmath.co.kr/common/innovativelrms/images/study/relation/btn/btn_up.png" alt="연관콘텐츠 위로"></a>
+												<a href="javascirpt:void(0)" class="dn" style="display: none;"><img src="http://www.ebsmath.co.kr/common/innovativelrms/images/study/relation/btn/btn_dn.png" alt="연관콘텐츠 아래로"></a>
+											</div>
+											<div class="relation_list"></div>
+										</div>
+									</div>
+									<div class="bg_relation"></div>
+								</div>
+							</div>
+						</div>
+						<div id="memberLayerPopup" class="memberLayerPopup" style="z-index:1;display:none">
+							<iframe src="/login?isStudy=Y" id="iframeLoign" width="366px;" height="268px" scrolling="no" frameborder="0"></iframe>
+						</div>
+					</div>
+
+				</div>
+				<!--// 내용 -->
+
+			</div>
+			<!-- contView -->
+
+			<!-- contBtn -->
+			<div class="contBtn">
+				<a href="javascript:void(0);" class="btnPrev"></a>
+				<a href="javascript:void(0);" class="btnNext on"></a>
+			</div>
+			<!--// contBtn -->
+		</div>
+		<!--// contArea -->
+	</div>
+	<!--// viewCont -->
+
+	<!-- viewList -->
+	<div class="viewList active">
+		
+		<a href="javascript:void(0);" class="btnViewList active"></a>
+
+		<!-- listHeader -->
+		<div class="listHeader">
+			<h4><span>My</span> M노트 목록</h4>
+
+			<!-- btnArea -->
+			<div class="btnArea">
+				<a href="javascript:void(0);" class="btnDel"><img src="../../images/teacher/btn_del.png" alt="삭제" /></a>
+				<a href="javascript:void(0);" class="btnEdit"><img src="../../images/teacher/btn_edit.png" alt="수정" /></a>
+			</div>
+			<!--// btnArea -->
+
+			<!-- contCount -->
+			<ul class="contCount">
+				<li class="movie"><span class="ico"></span><span class="count">8</span></li>
+				<li class="quest"><span class="ico"></span><span class="count">88</span></li>
+				<li class="game"><span class="ico"></span><span class="count">888</span></li>
+				<li class="webtoon"><span class="ico"></span><span class="count">88</span></li>
+				<li class="image"><span class="ico"></span><span class="count">88</span></li>
+				<li class="knowledge"><span class="ico"></span><span class="count">88</span></li>
+			</ul>
+			<!--// contCount -->
+		</div>		
+		<!--// listHeader -->
+
+		<!-- listArea -->
+		<div class="listArea">
+			<div class="listWrap">
+				<span class="cardNum">&lt;14/18&gt;</span>
+
+				<!-- listViewer -->
+				<div class="listViewer">
+					<ul class="clearfix">
+						<li class="memo check">
+							<div class="cont" onclick="">
+								<span class="memoTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="memo select">
+							<div class="cont" onclick="">
+								<span class="memoTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>						
+						<li class="">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag5.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="select">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag13.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag14.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+							<span class="arrow"></span>
+						</li>
+						<li class="">
+							<img src="../../images/teacher/img_finish.png" alt="">
+							<span class="arrow"></span>
+						</li>
+						<li class="">
+							<img src="../../images/teacher/img_finish.png" alt="">
+						</li>
+						<li class="">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag2.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+						</li>
+						<li class="check">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag3.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+						</li>
+						<li class="">
+							<div class="cont" onclick="">
+								<div class="img_con">
+									<img class="thumb" src="../../images/main/list_img_guide.png" />
+									<div class="tag_icon"><img src="../../images/common/list_tag4.png" /></div>
+								</div>
+								<span class="contTit">7회 삼각형과 사각형의 내각의 크기의 합</span>
+							</div>
+							<span class="check_con"></span>
+						</li>
+					</ul>
+				</div>
+				<!--// listViewer -->
+
+				<!-- ListBtn -->
+				<div class="listBtn">
+					<a href="javascript:void(0);" class="btnPrev on"></a>
+					<a href="javascript:void(0);" class="btnNext on"></a>
+				</div>
+				<!--// ListBtn -->
+			</div>
+		</div>
+		<!--// listArea -->
+
+	</div>
+	<!--// viewList -->
+</div>
+<!-- //wrap -->
+
+
+</body>
+</html>
+<script>
+// 확인용
+$(function(){
+});
+// 확인용 끝
+</script>

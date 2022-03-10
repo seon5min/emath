@@ -1,0 +1,99 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+
+.gamezone {background:none; }
+.gamezone .top {position:relative;}
+.gamezone .top .btn-apply {position:absolute; top:565px; left:235px; display:block; width:297px; height:73px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.gamezone .top .btn-winner1 {position:absolute; top:559px; left:220px; display:block; width:325px; height:68px; background:url('../../images/event/20190618/btn_event_fin.png') 0 0 no-repeat;}
+.gamezone .top .btn-winner2 {position:absolute; top:559px; left:145px; display:block; width:475px; height:68px; background:url('../../images/event/20190618/btn_event_fin.png') 0-98px no-repeat;}
+.gamezone .top .btn-winner3 {position:absolute; top:559px; left:145px; display:block; width:474px; height:68px; background:url('../../images/event/20190618/btn_event_fin.png') 0-196px no-repeat;}
+
+.gamezone .top .cmt {position:absolute; top:775px; text-align:center; width:100%;}
+.gamezone .snswrap {position:absolute; top:23px; left:20px;}
+.gamezone .snswrap a{display:inline-block; width:35px; height:35px; margin-left:6px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.gamezone .snswrap a.fb {background-position:0 0;}
+.gamezone .snswrap a.tw {background-position:-41px 0;}
+.gamezone .snswrap a.kko {background-position:-82px 0;}
+
+.gamezone .eventArea {background:#f6f7fb;  padding-top:40px; position:relative}
+.gamezone .eventArea_end {background:#f6f7fb; padding-bottom:70px}
+.eventArea > h3 {text-align:center; margin-bottom:20px}
+
+.gamezone .checkpop{text-align:center}
+.gamezone .mycoin {margin-top:38px; width:330px; height:370px; padding-left:54px; }
+.gamezone .mycoin .btn_use_pcoin {display:inline-block; width:113px; height:112px; background:url('../../images/event/20190618/btn_use_preapp.png') 0 0 no-repeat;}
+.gamezone .mycoin .btn_use_pcoin.used {background-position:0 -150px }
+.gamezone .mycoin dl {width:320px; margin-left:10px;}
+.gamezone .mycoin dl::after {content:""; clear:both; display:block; height:0}
+.gamezone .mycoin dl dt, .gamezone .mycoin dl dd {float:left; box-sizing:border-box; border-bottom:1px dashed #bcbcc4}
+.gamezone .mycoin dt {width:38%;}
+.gamezone .mycoin dd{ font-size:50px;  letter-spacing:-1px; text-align:right; padding-right:30px}
+.gamezone .mycoin .coin1{height:60px;}
+.gamezone .mycoin .coin2{height:77px;}
+.gamezone .mycoin dt.coin1 {background:url('../../images/event/20190618/txt_mycoin.png') 0 30px no-repeat}
+.gamezone .mycoin dt.coin2 {background:url('../../images/event/20190618/txt_usedcoin.png') 0 47px no-repeat}
+.gamezone .mycoin dd.coin1 {padding-top:0; color:#f7116a;width:56%;}
+.gamezone .mycoin dd.coin2 {padding-top:20px; color:#9b98a8;width:60%}
+.gamezone .mycoin dd.coin2 span {display:inline-block; padding-right:13px}
+
+
+.marble_area {position:absolute; top:150px; right:50px; }
+.marble_area .jar {position:relative;width:347px; height:352px; background:url('../../images/event/20190618/bg_cnt_marble.png') 0 0 no-repeat; z-index:100;}
+.marble_area .pick_mrb {position:absolute; top:277px; left:-145px; width:476px; height:237px; background:url('../../images/event/20190618/bg_cnt_marble2.png') 0 0 no-repeat;}
+.marble_area .pick_mrb .btn_pick {position:absolute; top:84px; left:283px; width:76px; height:76px;  background:url('../../images/event/20190618/btn_pick.png') 0 -80px no-repeat;}
+.marble_area .pick_mrb .btn_pick.off {background-position:0 0px}
+.marble_area .pick_mrb .btn_pick.on {background-position:0 -160px}
+.marble_area .pick_mrb [class^="pick_num"] {position:absolute; left:298px; top:179px; display:none}
+
+.marble_area [class^="dim_mrb"] {position:absolute; z-index:90; width:119px; height:118px; }
+.marble_area .dim_mrb5 {top:125px; left:15px; background:url('../../images/event/20190618/coin1.png') 0 0 no-repeat}
+.marble_area .dim_mrb4 {top:133px; left:125px; background:url('../../images/event/20190618/coin2.png') 0 0 no-repeat}
+.marble_area .dim_mrb3 {top:125px; left:235px; background:url('../../images/event/20190618/coin3.png') 0 0 no-repeat}
+.marble_area .dim_mrb2 {top:223px; left:65px; background:url('../../images/event/20190618/coin4.png') 0 0 no-repeat}
+.marble_area .dim_mrb1 {top:225px; left:175px; background:url('../../images/event/20190618/coin5.png') 0 0 no-repeat}
+.marble_area .dim_mrb1.off, .marble_area .dim_mrb2.off,  .marble_area .dim_mrb3.off,  .marble_area .dim_mrb4.off,  .marble_area .dim_mrb5.off {background-position:0 -300px}
+
+.marble_area [class^="mrb_itm"] {position:absolute; z-index:102; width:119px; height:118px; }
+.marble_area .mrb_itm1, .marble_area .mrb_itm2, .marble_area .mrb_itm3, .marble_area .mrb_itm4, .marble_area .mrb_itm5 { opacity:0; background-position:0 0; background-repeat:no-repeat} 
+.marble_area .mrb_itm5 {top:125px; left:15px; background-image:url('../../images/event/20190618/coin1.png')}
+.marble_area .mrb_itm4 {top:133px; left:125px; background-image:url('../../images/event/20190618/coin2.png')}
+.marble_area .mrb_itm3 {top:125px; left:235px; background-image:url('../../images/event/20190618/coin3.png')}
+.marble_area .mrb_itm2 {top:223px; left:65px; background-image:url('../../images/event/20190618/coin4.png')}
+.marble_area .mrb_itm1 {top:225px; left:175px; background-image:url('../../images/event/20190618/coin5.png')}
+
+.marble_area [class^="mrb_itm"].on {background-position:0 -150px;  opacity:1; }
+.marble_area [class^="mrb_itm"].off {display:none}
+
+.myapply {width:694px; background:#e8e9fb; border-radius:20px; overflow:hidden; margin:0 auto; padding-bottom:10px}
+.myapply h4 {padding:22px 0 0 27px; margin-bottom:20px; }
+.myapply table {width:674px; margin:0 auto; background:#fff; border-radius:20px; overflow:hidden;}
+.myapply th, .myapply td { border-left:1px solid #e8e8eb; text-align:center; }
+.myapply th {border-bottom:1px solid #e8e8eb; padding:15px 0 10px}
+.myapply td {padding:12px 0}
+.myapply th:first-child, .myapply td:first-child {border-left:0}
+.myapply em[class^="mb"] {display:inline-block; width:60px; height:40px; background-image:url('../../images/event/20190618/marble_num.png'); background-repeat:no-repeat; text-indent:-9999px; vertical-align:middle}
+.myapply em.mb1 {background-position:0 0}
+.myapply em.mb2 {background-position:-126px 0}
+.myapply em.mb3 {background-position:-272px 0}
+.myapply em.mb4 {background-position:-412px 0}
+.myapply em.mb5 {background-position:-540px 0}
+.myapply em + strong {display:inline-block; font-size:20px; vertical-align:middle; margin-top:-5px; letter-spacing:-1px}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000; width:696px; height:425px; margin:-250px auto; /*padding-left:200px*/}
+
+/* notice */
+.gamezone .notice {padding:35px 30px 30px 35px; background-color:#1c2f66;}
+.gamezone .notice ul {padding-top:10px;}
+.gamezone .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.gamezone .notice li .point {color:#baccff;}
+

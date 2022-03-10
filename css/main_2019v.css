@@ -1,0 +1,213 @@
+﻿@charset "utf-8";
+
+/*  layout */
+body {overflow-y:scroll; background:#fff;}
+.main201802 {overflow:hidden;}
+.inner {position:relative; width:1000px; margin:0 auto}
+
+/*  skip navigation */
+.skipToNavigation {position:absolute; top:-1000em; left:-1000em;}
+.skipToNavigation a {display:block; overflow:hidden; height:1px; width:1px; margin:0 -1px -1px 0; font-size:0; line-height:0;}
+.skipToNavigation a:focus {outline:2px solid #4475cb;}
+
+/*메인비주얼*/
+.mainTopcnt {width:100%; height:365px; min-width:1000px;  position:relative; overflow:hidden}
+.mainTopcnt .bx-wrapper {width:100%; height:365px}
+.mainTopcnt span {display:block; width:100%; height:365px; }
+.mainTopcnt .mcnt01 {background:#1baca2; text-align:center}
+.mainTopcnt span img {margin-left:35px}
+.mainTopcnt .mcnt02 {background:#e2647c; text-align:center}
+.mainTopcnt .mcnt03 {background:#4589d9; text-align:center}
+.mainTopcnt .mcnt04 {background:#6e66c0; text-align:center}
+.mainTopcnt .topBanner {width:100%;  height:365px; position:relative;}
+.mainTopcnt .wrapper {width:1000px; height:365px; margin:0 auto; position:relative}
+.mainTopcnt .wrapper ul {position:absolute; left:0; top:-365px; z-index:999}
+.mainTopcnt .wrapper li {text-align:center; width:128px; height:72px; background:url('../images/main/renewal2019/bg_main_tab.png') repeat-y; padding-top:19px; position:relative}
+.mainTopcnt .wrapper li button{display:block; width:120px; height:100%; background:url('../images/main/renewal2019/main_tab.png')  no-repeat;  line-height:94px; border-bottom:1px solid rgba(0,0,0,0.1); font-size:13px; color:#808080; letter-spacing:-1px; font-weight:600}
+html>body .mainTopcnt .wrapper li button {border-bottom:1px solid #dddddd}
+
+.mainTopcnt .wrapper li.on {background:url('../images/main/renewal2019/bg_main_tab_on.png') repeat-y; }
+.mainTopcnt .wrapper li:hover button, .mainTopcnt .wrapper li.on button {color:#000000; font-size:14px;}
+.mainTopcnt .wrapper li.on button:after {position:absolute; top:35px; right:-10px; content:""; width:23px; height:26px; background:url('../images/main/renewal2019/main_tab_arrow.png') 0 50% no-repeat; }
+.mainTopcnt .wrapper li.tbm1 {height:73px;}
+.mainTopcnt .wrapper li.tbm1 button {background-position:50% 0;}
+.mainTopcnt .wrapper li.tbm2 button {background-position:50% -92px}
+.mainTopcnt .wrapper li.tbm3 button {background-position:50% -183px}
+.mainTopcnt .wrapper li.tbm4 button {background-position:50% -274px;}
+.mainTopcnt .topBanner .thumb {position:absolute; top:60px; left:595px; display:block; width:340px; height:194px}
+.mainTopcnt  .bx-pager, .mainTopcnt .bx-controls-direction, .bx-controls-auto {display:none }
+.mainTopcnt #top_controls_auto {position:absolute; bottom:25px; left:50%; margin-left:-340px; display:block; width:40px; height:40px; background:url('../images/main/renewal2019/btn_ctrl.png') 0 -40px no-repeat; text-indent:-9999px;}
+.mainTopcnt #top_controls_auto.start {background-position:0 0 }
+
+/* top contents */
+.topCont {margin:30px 0 50px; width:100%; min-width:1000px; }
+.topCont .tabWrap {height:80px; width:100%; background:url('../images/main/renewal2019/bg_midtab.gif') 0 100% repeat-x;}
+.topCont .tabWrap ul {width:1000px; height:365px; margin:0 auto; overflow:hidden; position:relative}
+.topCont .tabWrap ul li {float:left;  border-bottom:0; width:333px; text-align:center; position:relative; }
+.topCont .tabWrap li.on {height:80px; background:#fff; }
+.topCont .tabWrap li:first-child {width:334px;}
+.topCont .tabWrap li + li {margin-left:-1px }
+.topCont .tabWrap li button {width:100%; height:64px; vertical-align:middle; background:#f1f1f1; border-top:1px solid #dcdcdc; border-left:1px solid #dcdcdc; border-right:1px solid #dcdcdc; color:#333; margin-right:-1px; border-bottom:0; margin-top:15px}
+.topCont .tabWrap li.on button {position:absolute; top:0; left:0; z-index:100; height:80px; margin-top:0; border-top:2px solid #e74a3b;  background:#fff; border-left:1px solid #000; border-right:1px solid #000}
+.topCont .tabWrap li button span {display:inline-block; background-image:url('../images/main/renewal2019/stdcard_txt.png'); background-repeat:no-repeat; width:167px; height:22px; text-indent:-9999px}
+.topCont .tabWrap li.on button span{width:190px; height:24px}
+.topCont .tabWrap li button span.tab_txt1 {background-position:0 0}
+.topCont .tabWrap li button span.tab_txt2 {background-position:-333px 0}
+.topCont .tabWrap li button span.tab_txt3 {background-position:-666px 0}
+.topCont .tabWrap li.on button span.tab_txt1 {background-position:0 -24px}
+.topCont .tabWrap li.on button span.tab_txt2 {background-position:-333px -24px}
+.topCont .tabWrap li.on button span.tab_txt3 {background-position:-666px -24px}
+.tabCont {display:none}
+.tabCont.on {display:block}
+
+.stcard_grade_tab {min-width:305px; margin:45px auto 18px; overflow:hidden; text-align:center}
+.stcard_grade_tab li {display:inline-block;}
+.stcard_grade_tab li button {width:98px; height:38px; border:1px solid #d4d4d4; background:#fff; }
+.stcard_grade_tab li.on {border-bottom:2px solid #d9d9d9; border-right:1px solid #d9d9d9}
+.stcard_grade_tab li.on button{border:1px solid #e74a3b; background:#e74a3b; color:#ffffff; font-weight:600}
+[class^="grade_box"] { height:20px }
+[class^="grade_box"] h3 {color:#4c4c4c; font-size:16px; font-weight:600 }
+[class^="grade_box"] .btnMore {display:inline-block; vertical-align:middle;  }
+[class^="grade_box"] .btnMore:before {content:""; display:inline-block; color:#cdcdcd; vertical-align:top; width:1px;  height:14px;  margin:1px 13px 0 10px;  font-weight:normal; background-color:#cdcdcd}
+
+.box_list_con2019 {width:auto; margin-top: 15px;}
+.box_list_con2019  > ul { width:1000px}
+
+.midCont {background:url(../images/main/renewal2019/bg_midcnt.gif) 0 0 repeat-x; height:354px; margin-bottom:55px; min-width:1000px; }
+
+/* 이벤트 */
+.midCont .event {float:left; width:480px; overflow:hidden; padding-top:50px}
+.midCont .event h4 {margin-bottom:15px}
+.midCont .event .eventBanWrap{position:relative; width:480px; height:217px; transform:translate3d(0px, 0px, 0px);}
+.midCont .event .eventBanWrap .banner_set{height:217px; border-radius:10px; overflow:hidden;}
+.midCont .event .eventBanWrap .banner_ctrl{position:absolute; top:-30px; right:0; display:inline-block; height:10px;}
+.midCont .event .eventBanWrap .banner_ctrl *{vertical-align:top;}
+.midCont .event .eventBanWrap .banner_ctrl > span{display:inline-block; height:10px;}
+.midCont .event .eventBanWrap .banner_ctrl .page_menu a{display:inline-block; width:10px; height:10px; background:url('../images/main/renewal2018/btn_slider.png') no-repeat -28px 0; margin-left:2px; font-size:0;}
+.midCont .event .eventBanWrap .banner_ctrl .page_menu a:first-child{margin-left:0;}
+.midCont .event .eventBanWrap .banner_ctrl .page_menu a.on{width:24px; background-position:0 0;}
+*:first-child+html .midCont .event .eventBanWrap .banner_ctrl .play_btn{top:0; margin-left:0; width:25px; background-position:5px 0;}
+*:first-child+html .midCont .event .eventBanWrap .banner_ctrl .play_btn.on{background-position:5px -21px;}
+
+/* bottom contents */
+.bottomCont {float:left; width:480px; padding:84px 0 0 40px;}
+.bottomCont > div {width:100%; margin-bottom:15px}
+.bottomCont > div > h4 {margin:25px 0 15px;}
+.bottomCont .midTool, .bottomCont .appLink {}
+
+/* shortcut menu */
+.bottomCont .shortcut {position:relative; background:url('../images/main/renewal2019/bg_shortcut.png') no-repeat; height:101px;}
+.bottomCont .shortcut h4 {float:left; width:155px; margin:29px 0 0 33px; text-align:left}
+.bottomCont .shortcut.midTool h4 img {}
+.bottomCont .shortcut a {display:block;}
+.bottomCont .shortcut a:hover {text-decoration:underline;}
+.bottomCont .shortcut ul {float:left; width:220px; height:79px; padding:11px 30px 11px 37px; overflow:hidden;}
+.bottomCont .shortcut ul li {float:left; width:77px; text-align:center;}
+.bottomCont .shortcut ul li + li {margin-left:66px;}
+.bottomCont .shortcut ul li span.icoShort {display:block; width:60px; height:60px; margin:0 0 5px 8px; background:url('../images/main/renewal2019/ico_shortcut.png') no-repeat;}
+.bottomCont .shortcut ul li.game_01 span.icoShort {background-position:0 0;}
+.bottomCont .shortcut ul li.game_02 span.icoShort {background-position:0 -60px;}
+.bottomCont .shortcut ul li.tool_01 span.icoShort {background-position:0 -120px;}
+.bottomCont .shortcut ul li.tool_02 span.icoShort {background-position:0 -180px;}
+.bottomCont .shortcut ul li.game_01:hover span.icoShort {background-position:-62px 0;}
+.bottomCont .shortcut ul li.game_02:hover span.icoShort {background-position:-62px -60px;}
+.bottomCont .shortcut ul li.tool_01:hover span.icoShort {background-position:-62px -120px;}
+.bottomCont .shortcut ul li.tool_02:hover span.icoShort {background-position:-62px -180px;}
+.bottomCont .shortcut ul li span.titShort {font-size:13px; font-weight:400; color:#555555; letter-spacing:-1px;}
+.bottomCont .shortcut ul li:hover span.titShort {font-size:13px; font-weight:500; color:#222222;}
+.bottomCont .shortcut .btnMore {position:absolute; top:61px; left:36px;}
+.bottomCont .shortcut.eleGame {position:relative; background:url('../images/main/renewal2019/bg_gamezone.png') no-repeat; height:101px;}
+.bottomCont .shortcut.eleGame h4 {float:left; width:155px; margin:29px 0 0 33px; text-align:left;}
+.bottomCont .shortcut.eleGame span.titShort {font-size:13px; font-weight:400; color:#555555; letter-spacing:-1px; display:inline-block; margin:35px 0 0 155px; line-height:19px}
+.bottomCont .shortcut.eleGame a:hover span{text-decoration:underline;  font-weight:500; color:#222222;}
+
+.bestCardList {border-bottom:1px solid #cccccc; padding-bottom:55px; min-width:1000px;  }
+.bestCardList .inner {position:relative}
+.bestCardList h3 {text-align:center}
+.bestCardList .bestCardCnt {height:522px}
+.bestCardList .cardWap {height:0px; overflow:hidden; padding-top:0}
+.bestCardList .cardWap.on {padding-top:43px;  height:auto; overflow:auto}
+.bestCardList .cardWap > div { float:left; width:294px; margin-left:59px; position:relative}
+.bestCardList .cardWap .card_rank1, .bestCardList .cardWap .card_rank4 {margin-left:0}
+.bestCardList .cardWap .card_title {font-size:24px; color:#333333; font-weight:bold; padding-bottom:15px; border-bottom:3px solid #333333}
+.bestCardList .cardWap [class^="card_slider"] {height:420px; overflow:hidden}
+.bestCardList .cardWap > [class^="card_rank"] li {padding:10px 0; border-bottom:1px solid #ebebeb;  font-size:13px; white-space:nowrap}
+.bestCardList .cardWap > [class^="card_rank"] li:after {content:""; display:block; height:0; clear:both }
+.bestCardList .cardWap > [class^="card_rank"] strong, .bestCardList .cardWap [class^="card_rank"] span {display:inline-block; vertical-align:middle}
+.bestCardList .cardWap > [class^="card_rank"] .ord {width:20px; height:21px; border:1px solid #d4d4d4; background:#f2f4f8; text-align:center; line-height:20px; color:#808080;}
+.bestCardList .cardWap > [class^="card_rank"] .ord.mark {border:1px solid #e74a3b; background:#e74a3b; color:#fff}
+.bestCardList .cardWap > [class^="card_rank"] .thumb {width:78px; margin-left:7px; }
+.bestCardList .cardWap > [class^="card_rank"] .thumb img {width:76px; height:60px;border:1px solid #d7d7d7}
+.bestCardList .cardWap > [class^="card_rank"] .subj {margin-left:7px; width:123px; color:#4c4c4c; font-weight:600; word-break:break-word; white-space:normal;}
+.bestCardList .cardWap > [class^="card_rank"] .subj.h {width:118px}
+.bestCardList .cardWap > [class^="card_rank"] .grade {width:45px; text-align:center !important; color:#e74a3b; font-size:14px; font-weight:600; white-space:normal;}
+.bestCardList .cardWap .bx-controls-direction {position:absolute; top:0; right:0; overflow:hidden}
+.bestCardList .cardWap .bx-controls-direction a {display:block; float:left; background-image:url('../images/main/renewal2019/ico_nav.gif'); height:25px; cursor:pointer; text-indent:-9999px}
+.bestCardList .cardWap .bx-controls-direction a.bx-prev {background-position:0 0; width:24px;}
+.bestCardList .cardWap .bx-controls-direction a.bx-next {background-position:-24px 0; width:25px;}
+.bestCardList .cardWap .bx-controls-direction a.bx-prev.d {opacity:0.5}
+.bestCardList .cardWap .bx-controls-direction a.bx-next.d {opacity:0.5}
+.bestCardList .cardWap .bx-pager {display:none}
+.bestCardList .inner .bestCardTab { position:absolute; top:0; right:0; border:1px solid #dcdcdc; border-radius:5px; overflow:hidden;}
+.bestCardList .inner .bestCardTab li { float:left; width:72px; padding:9px 0; font-size:14px; background:#eff1f3; color:#333; text-align:center;}
+.bestCardList .inner .bestCardTab li button {background:transparent; color:#808080}
+.bestCardList .inner .bestCardTab li:first-child {width:62px; border-right:1px solid #dcdcdc;}
+.bestCardList .inner .bestCardTab li.on {background:#fff;}
+.bestCardList .inner .bestCardTab li.on button {font-weight:600; color:#333}
+
+/* 공지사항 */
+.csCont {padding:50px 0 55px; overflow:hidden; min-width:1000px; }
+.csCont .sideLnk {padding-bottom:50px; overflow:hidden }
+.csCont .sideLnk li {float:left; width:200px; font-size:14px;  line-height:150%; letter-spacing:-1px; margin:0 25px;text-align:center;}
+.csCont .sideLnk li a {display:block; width:100%; padding-top:110px; background-image:url('../images/main/renewal2019/ico_guide.png'); background-repeat:no-repeat;color:#555555; }
+.csCont .sideLnk li.lnk01 a {background-position:-25px  0}
+.csCont .sideLnk li.lnk02 a {background-position:-275px 0}
+.csCont .sideLnk li.lnk03 a {background-position:-525px 0}
+.csCont .sideLnk li.lnk04 a {background-position:-775px 0}
+.csCont .sideLnk li strong {display:block; margin-bottom:15px; font-size:19px; color:#333333; font-weight:bold; width:100%;}
+
+.csCont .notice {position:relative; width:498px; float:left}
+.csCont .notice h4 {color:#333333; font-size:20px; font-weight:bold; margin-bottom:15px; }
+.csCont .notice .btnMore {position:absolute; top:10px; right:3px;}
+.csCont .notice ul {width:100%; height:126px; padding:20px 30px 15px 30px; border-radius:7px; border:1px solid #dedede; box-sizing:border-box; overflow:hidden}
+.csCont .notice ul:after {display:block; clear:both; height:0; content:"";}
+.csCont .notice ul li {font-size:14px; background:url('../images/main/renewal2019/blt_notice.png') 0 7px no-repeat; padding-left:13px; margin-bottom:14px}
+.csCont .notice ul li .icoNew {display:inline-block; width:17px; height:17px; background:url('../images/common/ico_newcs01.png') no-repeat; margin:0 0 0 4px; text-indent:-9999px; vertical-align:top}
+.csCont .notice ul li a span {display:inline-block; width:auto; max-width:315px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#555555}
+.csCont .notice ul li a:hover {text-decoration:underline;color:#333333; font-weight:600}
+.csCont .notice ul li .noticeDate {float:right; font-size:12px;}
+.csCont .side {overflow:hidden; width:460px; float:right; padding-top:38px}
+.csCont .side ul {width:480px;}
+.csCont .side li {float:left; width:138px; height:124px; border:1px solid #dedede; background:#f8f8f8; border-radius:7px; padding-top:24px; box-sizing:border-box; margin-right:20px; text-align:center}
+.csCont .side li a {display:block; width:100%; padding-top:69px; background-image:url('../images/main/renewal2019/ico_cs.png'); background-repeat:no-repeat; font-size:14px; color:#555555; font-weight:bold; letter-spacing:-1px}
+.csCont .side li.m01 a {background-position:0 0}
+.csCont .side li.m02 a {background-position:-160px 0}
+.csCont .side li.m03 a {background-position:-320px 0}
+
+/* 동영상 레이어 */
+.dim {position:fixed; top:0; bottom:0; left:0; right:0; display:none; width:100%; height:100%; background:#404040; opacity:0.5; filter:alpha(opacity=50); z-index:9999;}
+.playerWrap {position:fixed; top:50%; left:50%; display:none; width:804px; height:430px; margin-top:-215px; margin-left:-422px; z-index:9999;}
+.playerWrap .player {position:relative; width:764px; height:430px; background:#000; z-index:999;}
+.playerWrap .btnClose {position:absolute; top:0; right:0; width:40px; height:40px; background:url('../images/btn/btn_close7.png') no-repeat center center #e74a3b; z-index:9999;}
+
+.cboth::before, .cboth:after { content:""; display:block; height:0; }
+.cboth:after { clear:both; }
+
+/*팝업공통*/
+.pop_common {position:fixed; top:100px;  left:50%; width:448px; height:310px; margin:-200px -236px; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; width:448px; height:310px; }
+.pop_common .popcon .foot{width:438px; overflow:hidden;  padding:5px 5px 7px 5px; background:#393e42}
+.pop_common .popcon .foot label{color:#fff; line-height:22px; vertical-align:middle;}
+.pop_common .popcon .foot .icheckbox{margin-right:2px; vertical-align:top;}
+.pop_common .popcon .foot .btn_close {display:inline-block; float:right; padding:5px 13px 0 0; vertical-align:top; color:#fff}
+.pop_common .popcon .foot .btn_close span {display:inline-block; background:url('../images/btn/btn_close8.png') 0 0 no-repeat; width:10px; height:12px; margin:1px 2px 0 0; vertical-align:top; text-indent:-9999px}
+
+/*2020 임시 코로나 팝업 */
+.pop_common { position:absolute; top:144px; left:0; width:100%; height:892px; margin:0 }
+.pop_common .popcon {position:relative; width:1280px; height:100%; margin:0 auto}
+.pop_common .popcon .foot{width:1270px; overflow:hidden;  padding:5px 5px 7px 5px; background:#393e42}
+.pop_common .bt { position:absolute; right:0px; top:0px; display: inline-block; overflow: hidden; width:80px; height: 80px; line-height: 40px;  background: none; text-indent:-9999px}
+.pop_common .bt.ico.x:before { position: absolute; top:20px; margin-top: -10px; left: 50%; content: ""; display: block; overflow: hidden; width: 5px; height: 40px; background-color: #000; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+.pop_common .bt.ico.x:after { position: absolute; top:20px; margin-top: -10px; left: 50%; content: ""; display: block; overflow: hidden; width:5px; height: 40px; background-color: #000; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }

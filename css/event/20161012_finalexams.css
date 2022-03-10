@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* ÀÌº¥Æ® */
+.pdt27{padding-top:27px;}
+.mgb21{margin-bottom:21px;}
+
+.finalexams{position:relative;}
+.finalexams .top{background:#64aad8;}
+.finalexams .snswrap{position:absolute; top:30px; right:30px;}
+.finalexams .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.finalexams .snswrap .fb a{background-position:0 0;}
+.finalexams .snswrap .tw a{background-position:-41px 0;}
+.finalexams .snswrap .kko a{background-position:-82px 0;}
+
+.finalexams .conwrap{padding-bottom:15px; background:#222e2c url(../../images/event/20161012/bg_con.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon_wrap{padding:0 15px;}
+
+.finalexams .conwrap .evtcon01{position:relative;}
+.finalexams .conwrap .evtcon01 > div{position:relative; padding:0 20px; overflow:hidden;}
+.finalexams .conwrap .evtcon01 .myinfo{float:left; position:relative; width:224px; height:107px; margin-bottom:19px; background:url(../../images/event/20161012/bg_myscore.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .level{}
+.finalexams .conwrap .evtcon01 .myinfo [class^='badge']{position:absolute; top:32px; left:19px; display:inline-block; width:52px; height:66px;}
+.finalexams .conwrap .evtcon01 .myinfo .badge1{background:url(../../images/event/20161012/img_badge1.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .badge2{background:url(../../images/event/20161012/img_badge2.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .badge3{background:url(../../images/event/20161012/img_badge3.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .badge4{background:url(../../images/event/20161012/img_badge4.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .badge5{background:url(../../images/event/20161012/img_badge5.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .badge6{background:url(../../images/event/20161012/img_badge6.jpg) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .score{position:absolute; top:8px; right:65px; display:inline-block; width:50px; text-align:right;}
+.finalexams .conwrap .evtcon01 .myinfo .score strong{color:#ffe87e; font-weight:800; font-size:23px; font-style:normal;}
+.finalexams .conwrap .evtcon01 .myinfo [class^='grade']{position:absolute; top:52px; left:88px; display:table; width:80px; height:39px; padding-left:44px;}
+.finalexams .conwrap .evtcon01 .myinfo .grade1{background:url(../../images/event/20161012/grade1.png) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .grade2{background:url(../../images/event/20161012/grade2.png) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo .grade3{background:url(../../images/event/20161012/grade3.png) no-repeat 0 0;}
+.finalexams .conwrap .evtcon01 .myinfo [class^='grade'] em{display:table-cell; color:#fff; font-weight:600; font-size:15px; font-style:normal; vertical-align:middle;}
+.finalexams .conwrap .evtcon01 .levelwrap{float:right; margin-bottom:19px;}
+
+.finalexams .conwrap .evtcon01 .grade_wrap{clear:both; margin-bottom:45px; background:#fff;}
+.finalexams .conwrap .evtcon01 .grade_wrap .gradetit{padding:19px 0 15px; text-align:center;}
+.finalexams .conwrap .evtcon01 .grade_wrap ul{width:655px; margin:0 auto; *zoom:1;}
+.finalexams .conwrap .evtcon01 .grade_wrap ul:first-child{margin-top:0;}
+.finalexams .conwrap .evtcon01 .grade_wrap ul:after{clear:both; content:''; display:block;}
+.finalexams .conwrap .evtcon01 .grade_wrap li{float:left; margin-left:17px;}
+.finalexams .conwrap .evtcon01 .grade_wrap li:first-child{margin-left:0;}
+
+.finalexams .conwrap .evtcon02{position:relative;}
+.finalexams .conwrap .evtcon02 .btn_teacher{position:absolute; top:75px; right:20px; display:inline-block; width:293px; height:78px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+.finalexams .conwrap .boardtb{padding:38px 20px 35px; border-radius:0 0 4px 4px; background:#fafafa;}
+.finalexams .conwrap .boardtb .line_list_con td{background:#fafafa;}

@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+.fc_brown{color:#9e702c;}
+
+.cl_both{*zoom:1}
+.cl_both:after{clear:both; display:block; content:'';}
+
+.pdt13{padding-top:13px !important;}
+.pdt85{padding-top:85px !important;}
+.pdl100{padding-left:100px !important;}
+
+.mgl18{margin-left:18px !important;}
+
+.summer{padding-bottom:10px; background:#f9dfaf;}
+.summer .top{position:relative; width:763px;}
+.summer .snswrap{position:absolute; top:30px; right:20px;}
+.summer .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.summer .snswrap .fb a{background-position:0 0;}
+.summer .snswrap .tw a{background-position:-41px 0;}
+.summer .snswrap .kko a{background-position:-82px 0;}
+
+.summer .conwrap{background:#f9dfaf url(../../images/event/20160609/bg_cont.jpg) no-repeat 0 -40px;}
+.summer.end .conwrap{background:#f9dfaf url(../../images/event/20160609/bg_cont_end.jpg) no-repeat 0 -40px;}
+
+.summer .questwrap{position:relative;}
+.summer .questwrap .evtcon_top{margin-bottom:91px; padding-top:42px; text-align:center;}
+.summer .questwrap .evtcon_top2{margin-bottom:74px; padding-top:31px; text-align:center;}
+.summer .questwrap .evtcon_top3{position:relative; margin-bottom:22px; padding-top:31px;}
+.summer .questwrap .evtcon_top3 .userroom{margin-bottom:10px; text-align:left;}
+.summer .questwrap .evtcon_top3 .userroom strong{padding-right:175px; font-size:26px; color:#3b5998; font-weight:bold; background:url(../../images/event/20160609/txt_userroom.png) no-repeat right 50%;}
+.summer .questwrap .evtcon_top3 .stampcnt{color:#596c8a; font-size:16px; font-weight:600; vertical-align:top;}
+.summer .questwrap .evtcon_top3 .stampcnt em{font-style:normal;}
+.summer .questwrap .evtcon_top3 .ppcnt{position:relative; float:right; width:240px; height:58px; margin-right:95px; line-height:54px; text-align:center; background:url(../../images/event/20160609/img_ppcnt.png) no-repeat 0 0;}
+*:first-child + html .summer .questwrap .evtcon_top3 .ppcnt{height:45px; padding-top:13px;}
+.summer .questwrap .evtcon_top3 .ppcnt *{vertical-align:middle;}
+.summer .questwrap .evtcon_top3 .ppcnt strong{margin-right:3px; color:#fff; font-weight:bold; font-size:21px; line-height:1.5;}
+
+.summer .questwrap .questcont{}
+.summer .questwrap .questcont .tab-menu{width:702px; margin:0 auto; *zoom:1;}
+.summer .questwrap .questcont .tab-menu:after{clear:both; display:block; content:'';}
+.summer .questwrap .questcont .tab-menu li{float:left;}
+.summer .questwrap .questcont .tab-menu li a{display:inline-block; width:140px; height:54px; font-size:0; line-height:0; vertical-align:top;}
+.summer .questwrap .questcont .tab-menu [data-index="1"] a{background:url(../../images/event/20160609/btn_tab.png) no-repeat 0 0;}
+.summer .questwrap .questcont .tab-menu [data-index="2"] a{background:url(../../images/event/20160609/btn_tab2.png) no-repeat 0 0;}
+.summer .questwrap .questcont .tab-menu [data-index="3"] a{background:url(../../images/event/20160609/btn_tab3.png) no-repeat 0 0;}
+.summer .questwrap .questcont .tab-menu [data-index="4"] a{background:url(../../images/event/20160609/btn_tab4.png) no-repeat 0 0;}
+.summer .questwrap .questcont .tab-menu [data-index="5"] a{background:url(../../images/event/20160609/btn_tab5.png) no-repeat 0 0;}
+.summer .questwrap .questcont .tab-menu li.last a{width:142px;}
+.summer .questwrap .questcont .tab-menu li a:hover,
+.summer .questwrap .questcont .tab-menu li a.on{background-position:0 -64px;}
+
+.summer .questwrap{margin-bottom:30px;}
+.summer .questwrap .q_flow{width:754px; margin:0 auto; padding-top:35px; background:url(../../images/event/20160609/bg_map.png) no-repeat 0 -27px;}
+.summer .questwrap .q_flow [class^="flowbox_"]{position:relative; width:652px; margin:0 auto; *zoom:1;}
+.summer .questwrap .q_flow [class^="flowbox_"]:after{content:''; display:block; clear:both;}
+.summer .questwrap .q_flow .fbwrap{height:131px;}
+.summer .questwrap .q_flow .flowbox_l .fbwrap{float:left; width:76px; margin-left:20px;}
+.summer .questwrap .q_flow .flowbox_r .fbwrap{float:right; width:76px; margin-right:20px;}
+.summer .questwrap .q_flow .flowbox_l .fbwrap:first-child{margin-left:0;}
+.summer .questwrap .q_flow .flowbox_r .fbwrap:first-child{margin-right:0;}
+
+.summer .questwrap .q_flow .con_q{position:relative; min-width:76px; min-height:76px;}
+.summer .questwrap .q_flow .con_q a{display:block; width:100%; height:100%; cursor:default;}
+.summer .questwrap .q_flow .con_q .date{display:inline-block; width:100%; margin-bottom:5px; padding-top:17px; text-align:center; color:#ac9169; font-size:18px; font-weight:bold;}
+.summer .questwrap .q_flow [data-index="7"] .date,
+.summer .questwrap .q_flow [data-index="14"] .date,
+.summer .questwrap .q_flow [data-index="21"] .date,
+.summer .questwrap .q_flow [data-index="28"] .date,
+.summer .questwrap .q_flow [data-index="35"] .date{color:#fff;}
+
+.summer .questwrap .q_flow .con_q .type{display:inline-block; width:100%; height:33px; font-size:0; line-height:0; vertical-align:top; background-position:50% -106px; background-repeat:no-repeat;}
+.summer .questwrap .q_flow .con_q .type.webtoon{background-image:url(../../images/event/20160609/icon_toon.png);}
+.summer .questwrap .q_flow .con_q .type.video{background-image:url(../../images/event/20160609/icon_video.png);}
+.summer .questwrap .q_flow .con_q .type.game{background-image:url(../../images/event/20160609/icon_game.png);}
+.summer .questwrap .q_flow .con_q .type.qz{background-image:url(../../images/event/20160609/icon_qz.png);}
+
+.summer .questwrap .q_flow .con_q .complete{position:absolute; top:0; left:0;}
+
+/* 툴팁 */
+.summer .questwrap .q_flow .con_q .tooltip{display:none;}
+.summer .questwrap .q_flow .con_q:hover .tooltip{display:table; position:absolute; top:30px; width:164px; height:43px; min-width:164px; min-height:43px; border:1px solid #a58d68; background:#fff; border-radius:5px; box-shadow:3px 3px 10px #c5bbaa; z-index:1000;}
+*:first-child + html .summer .questwrap .q_flow .con_q:hover .tooltip{display:block; height:auto;}
+.summer .questwrap .q_flow .flowbox_l .fbwrap .con_q .tooltip{left:76px;}
+.summer .questwrap .q_flow .flowbox_l .fbwrap + .fbwrap + .fbwrap + .fbwrap + .fbwrap .con_q .tooltip{left:auto; right:76px;}
+.summer .questwrap .q_flow .flowbox_r .fbwrap .con_q .tooltip{right:76px;}
+.summer .questwrap .q_flow .flowbox_r .fbwrap + .fbwrap + .fbwrap + .fbwrap + .fbwrap .con_q .tooltip{left:76px;}
+.summer .questwrap .q_flow .con_q .tooltip > p{position:relative; display:table-cell; padding:8px; color:#838383; font-weight:600; font-size:12px; vertical-align:middle; word-wrap: break-word; word-break: break-all;}
+.summer .questwrap .q_flow .con_q .tooltip em{position:absolute; top:18px; display:inline-block; width:11px; height:9px;}
+.summer .questwrap .q_flow .flowbox_l .fbwrap .con_q .tooltip em{left:-11px; background:url(../../images/event/20160609/bg_arr_l.png) no-repeat 0 0;}
+.summer .questwrap .q_flow .flowbox_l .fbwrap + .fbwrap + .fbwrap + .fbwrap + .fbwrap .con_q .tooltip em{left:auto; right:-11px; background:url(../../images/event/20160609/bg_arr_r.png) no-repeat 0 0;}
+.summer .questwrap .q_flow .flowbox_r .fbwrap .con_q .tooltip em{right:-11px; background:url(../../images/event/20160609/bg_arr_r.png) no-repeat 0 0;}
+.summer .questwrap .q_flow .flowbox_r .fbwrap + .fbwrap + .fbwrap + .fbwrap + .fbwrap .con_q .tooltip em{left:-11px; background:url(../../images/event/20160609/bg_arr_l.png) no-repeat 0 0;}
+
+.summer .questwrap .q_flow .tittxt{width:100%; max-height:27px; padding-top:4px; font-weight:600; color:#6b6b6b; font-size:11px; text-align:center; word-wrap: break-word; word-break: break-all; overflow:hidden;}
+
+
+/* 오늘 */
+.summer .questwrap .q_flow .con_q.today{background:url(../../images/event/20160609/stamp_today.png) no-repeat 0 0;}
+.summer .questwrap .q_flow .con_q.today a{cursor:pointer;}
+.summer .questwrap .q_flow .con_q.today .date{color:#689be0;}
+.summer .questwrap .q_flow .con_q.today .type{background-position:50% 0;}
+.summer .questwrap .q_flow [data-index="7"] .today,
+.summer .questwrap .q_flow [data-index="14"] .today,
+.summer .questwrap .q_flow [data-index="21"] .today,
+.summer .questwrap .q_flow [data-index="28"] .today,
+.summer .questwrap .q_flow [data-index="35"] .today{background-image:url(../../images/event/20160609/stamp_today2.png);}
+
+
+/* notice */
+.summer .notice{margin:0 10px; padding:25px 30px 25px 40px; background:#fff;}
+.summer .notice ul{padding-top:15px;}
+.summer .notice li{margin-top:5px; padding-left:15px; color:#767472; font-weight:600; line-height:1.5; font-size:13px; background:url(../../images/event/20160609/bul_brown.gif) no-repeat 0 8px;}
+.summer .notice li:first-child{margin-top:0;}
+.summer .notice li .point{color:#c47626;}
+
+/* 이벤트 종료 */
+.summer.end .conwrap{background-position:0 0;}
+.summer.end .questwrap .evtcon_top4{position:relative; padding:44px 0 27px 42px;}
+.summer.end .questwrap .evtcon_top4 .winbtn{position:absolute; top:31px; right:44px; vertical-align:top;}
+.summer.end .questwrap .evtcon_top4 .receivebtn{position:absolute; top:89px; right:44px; vertical-align:top;}

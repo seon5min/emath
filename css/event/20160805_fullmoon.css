@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* 이벤트 */
+.fullmoon{position:relative;}
+.fullmoon .top{padding-top:10px; background:#212d60;}
+.fullmoon .snswrap{position:absolute; top:15px; right:12px;}
+.fullmoon .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.fullmoon .snswrap .fb a{background-position:0 0;}
+.fullmoon .snswrap .tw a{background-position:-41px 0;}
+.fullmoon .snswrap .kko a{background-position:-82px 0;}
+
+.fullmoon .evtcon{position:relative; background:#cabca2;}
+.fullmoon .evtcon .mymoonbtn{position:absolute; top:179px; right:75px;}
+
+/* 이벤트 종료 */
+.fullmoon.end .winbtn{position:absolute; top:133px; right:61px;}
+.fullmoon.end .modifybtn{position:absolute; top:198px; right:61px;}
+
+/* notice */
+.fullmoon .notice{padding:30px 25px 25px 35px; background:#e3dbcb;}
+.fullmoon .notice ul{padding-top:15px;}
+.fullmoon .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#656565; letter-spacing:-1px; background:url(../../images/event/20160805/bul_notice.png) no-repeat 0 9px;}
+.fullmoon .notice li:first-child{margin-top:0;}
+.fullmoon .notice li a.point{color:#a17c53;}

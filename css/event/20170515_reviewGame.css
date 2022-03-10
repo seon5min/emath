@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* 이벤트 */
+.reviewGame-event{position:relative;}
+.reviewGame-event .top{position:relative;}
+.reviewGame-event .snswrap{position:absolute; top:30px; right:30px;}
+.reviewGame-event .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.reviewGame-event .snswrap .fb a{background-position:0 0;}
+.reviewGame-event .snswrap .tw a{background-position:-41px 0;}
+.reviewGame-event .snswrap .kko a{background-position:-82px 0;}
+
+
+.reviewGame-event .event-info{position:relative;}
+.reviewGame-event .event-info .evt-participant{position:absolute; top:47px; right:477px; font-size: 18px; font-weight: bold; color:#ffeb44;}
+.reviewGame-event .event-info .btn-event{position:absolute; top:22px; right:63px; cursor: pointer; width:244px; height:62px; background:url('../../images/event/20170515/btn_evt_join.png') no-repeat;}
+.reviewGame-event .event-info .btn-gamePlay{position:absolute; bottom:81px; left:78px; cursor: pointer; width:356px; height:57px; background:url('../../images/event/20170515/btn_reviewGame_start.png') no-repeat;}
+.reviewGame-event .event-info .btn-win{position:absolute; top:28px; right:85px; width: 287px; height:62px; background:url('../../images/event/20170515/btn_evt_win.png') no-repeat;}
+.reviewGame-event .event-info .btn-info-insert{position:absolute; bottom:90px; right:58px; width: 306px; height:57px; background:url('../../images/event/20170515/btn_evt_insert.png') no-repeat;}
+
+/* notice */
+.reviewGame-event .notice{position:relative; padding:28px 25px 25px 34px; background:#434bac;}
+.reviewGame-event .notice ul{padding-top:15px;}
+.reviewGame-event .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#9ab8e5; letter-spacing:-1px; background:url(../../images/event/20170515/bul_notice.png) no-repeat 0 9px;}
+.reviewGame-event .notice li:first-child{margin-top:0;}
+.reviewGame-event .notice li a.point{color:#cbe0ff;}

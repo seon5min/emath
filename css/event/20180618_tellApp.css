@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+
+.tellApp {background:none;}
+.tellApp .top {position:relative; width:763px;}
+.tellApp .top .btn-apply {position:absolute; top:556px; left:406px; display:block; width:301px; height:74px; font-size:0; border-radius:37px; background:#40287e; opacity:0; filter:alpha(opacity='0');}
+.tellApp .top .btn-apply + img {position:absolute; top:639px; left:438px; z-index:1;}
+.tellApp .snswrap {position:absolute; top:29px; right:20px;}
+.tellApp .snswrap a {display:inline-block; width:37px; height:37px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;}
+.tellApp .snswrap a.fb {background-position:0 0;}
+.tellApp .snswrap a.tw {background-position:-41px 0;}
+.tellApp .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.tellApp .eventArea > div {position:relative;}
+.tellApp .eventArea .howto_app a {position:absolute; left:210px; display:block; width:166px; height:40px; font-size:0; border-radius:20px; background:#fff; opacity:0; filter:alpha(opacity='0');}
+.tellApp .eventArea .howto_app .btnAndroid {top:309px;}
+.tellApp .eventArea .howto_app .btnIos {top:362px;}
+
+.tellApp .eventArea .cont_id .btnPop {position:absolute; top:211px; left:305px; display:block; width:154px; height:33px; font-size:0; border-radius:17px; background:#40287e; opacity:0; filter:alpha(opacity='0');}
+.tellApp .eventArea .cont_id form {position:absolute; top:278px; left:66px; width:632px; overflow:hidden;}
+.tellApp .eventArea .cont_id form select {display:block !important; float:left; width:214px; height:61px; padding:20px; border-radius:10px; font-size:15px; color:#636363; outline:none; border:none; background:url('../../images/event/20180618/bg_selectbox_01.png') no-repeat 180px 25px; opacity:1;}
+.tellApp .eventArea .cont_id form select.on {background-image:url('../../images/event/20180618/bg_selectbox_02.png');}
+.tellApp .eventArea .cont_id form input {float:left; width:292px; margin:18px 13px 17px 10px; line-height:26px; border:none; font-size:15px; outline:none; background:#fff;}
+.tellApp .eventArea .cont_id form button {float:left; display:none; width:82px; height:61px; font-size:0; border-radius:20px; background:url('../../images/event/20180618/btn_submit_01.png') no-repeat; }
+.tellApp .eventArea .cont_id form button.on {display:block; }
+.customSelectBoxContainer {display:none !important;}
+
+.tellApp .eventArea .cont_URL .btnArea {position:absolute; top:238px; left:55px; width:654px; height:60px;}
+.tellApp .eventArea .cont_URL a {float:left;display:block;width:156px;height:60px;font-size:0;border-radius:30px;background:#40287e;opacity:0; filter:alpha(opacity='0');}
+.tellApp .eventArea .cont_URL a + a {margin-left:10px;}
+.tellApp .eventArea .cont_URL form {position:absolute; top:323px; left:66px; width:632px; overflow:hidden;}
+.tellApp .eventArea .cont_URL form input {float:left; width:489px; line-height:26px; margin:17.5px 20px; border:none; font-size:15px; outline:none; background:#fff;}
+.tellApp .eventArea .cont_URL form button {float:left; display:none; width:82px; height:61px; font-size:0; border-radius:20px; background:url('../../images/event/20180618/btn_submit_02.png') no-repeat; }
+.tellApp .eventArea .cont_URL form button.on {display:block; }
+
+/* 레이어 팝업 */
+.layer-review {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999;}
+.layer-review .layer {position:absolute; left:50%; top:50%; margin-left:-355px; margin-top:-245px; z-index:10;}
+.layer-review .modal-dimmed {position:absolute; left:0; top:0; right:0; bottom:0; background:url('../../images/event/20170207/modal_bg.png'); z-index:5;}
+.layer-review .popwrap {width:710px; height:485px; overflow:hidden; background:url('../../images/event/20180618/popup/bg_popup.png') no-repeat;}
+.layer-review .popwrap .header {position:relative;}
+.layer-review .popwrap .header p {padding:25px;}
+.layer-review .popwrap .btn-close {position:absolute; top:25px; right:25px; display:block; background-color:#fff;}
+.layer-review .popwrap .pop_cont {position:relative; height:486px; margin:0 25px; }
+
+/* notice */
+.tellApp .notice {padding:35px 39px 30px 35px; background-color:#9b86de;}
+.tellApp .notice ul {padding-top:10px;}
+.tellApp .notice li {margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20170911/bul.png') no-repeat 0 10px;}
+.tellApp .notice li .point {color:#fff8af;}
+
+/* 이벤트 종료 */
+.tellApp.end .top .btn_win {position:absolute; top:519px; left:414px; display:block; width:285px; height:70px; font-size:0; border-radius:35px; background:#40287e; opacity:0; filter:alpha(opacity='0');}
+.tellApp.end .top .btn_info_insert {position:absolute; top:600px; left:414px; display:block; width:285px; height:70px; font-size:0; border-radius:35px; background:#40287e; opacity:0; filter:alpha(opacity='0');}

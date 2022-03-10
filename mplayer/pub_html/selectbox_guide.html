@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/customSelectBox.css" />
+<script type="text/javascript" src="/common/innovativepot/math2016/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/icheck.min.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/customSelectBox.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/slider.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/common.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/ui.js"></script>
+<script type="text/javascript" src="/common/innovativepot/math2016/js/gnb.js"></script>
+<script type="text/javascript">
+
+
+$(function ()
+{
+	$(".append_btn").bind("click", function ( e )
+	{
+		$("#selectBox").empty();
+		$("#selectBox").append($("#textField").val());
+	});
+
+	$(".enabled_btn").bind("click", function ( e )
+	{
+		$("#selectBox").trigger("enable");
+	});
+
+	$(".disabled_btn").bind("click", function ( e )
+	{
+		$("#selectBox").trigger("disable");
+	});
+
+	$(".focus_btn").bind("click", function ( e )
+	{
+		$("#selectBox").trigger("focus");
+	});
+	$("#selectBox").bind("change", function ( e )
+	{
+		//alert("!!!");
+	});
+
+	$(".attach_btn").bind("click", function ( e )
+	{
+		var selectHtml = '<select id="selectBox" style="width:200px""><option value="" selected>option1</option><option value="">option2</option><option value="">option3</option></select>';
+		var selectObj = $(selectHtml);
+		$(".attach_con").append(selectObj);
+		addSelectBox(selectObj);
+	});
+
+});
+
+function radioClick()
+{
+	alert("radioClick!!!!");
+}
+
+function selectBoxChange( val )
+{
+	alert("!!!!"+val);
+}
+
+</script>
+</head>
+<body>
+
+
+
+
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- container -->
+	<article id="container">
+	
+		<!-- category -->
+		<section class="content_wrap" style="height:600px;text-align:center">
+
+			<div class="mt30">
+				<select id="selectBox" style="width:200px" onSelect="selectBoxChange('selectChange');">
+					<option value="" selected>option1</option>
+					<option value="">option2</option>
+					<option value="">option3</option>
+				</select>
+			</div>
+
+			<div class="attach_con">
+
+
+			</div>
+
+			<div class="mt30">
+				<textarea id="textField" style="width:300px;height:100px"><option value="">option4</option><option value="">option5</option><option value="">option6</option></textarea>
+			</div>
+
+			<div class="mt10">
+				<button class="mt10 dark_button attach_btn" style="width:100px">생성</button>
+			</div>
+
+			<div class="mt10">
+				<button class="mt10 dark_button append_btn" style="width:100px">추가</button>
+			</div>
+
+			<div class="mt10">
+				<button class="mt10 dark_button enabled_btn" style="width:100px">활성</button>
+				<button class="mt10 dark_button disabled_btn" style="width:100px">비활성</button>
+				<button class="mt10 dark_button focus_btn" style="width:100px">포커스</button>
+			</div>
+
+			<div class="mt10">
+				<input type="radio" name="rdio" onClick="radioClick();"">
+				<input type="radio" name="rdio" onClick="radioClick();">
+			</div>
+				
+		</section>
+		<!-- //category -->
+
+	</article>
+	<!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+</body>
+</html>

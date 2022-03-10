@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/activity.css" /><!-- 수학활동 -->
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<div class="activity">
+			<section class="course_top">
+				<div class="wrap">
+					<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+					<h2 class="tit_course_m" onclick="openCrsList()">수학 특별활동 <strong class="stit_course_m">찾아가는 EBSMath 체험관</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+					<ul class="crs_list">
+						<li class="dep2 on"><a href="#">수학행사</a>
+							<span class="dep3 on"><a href="#">찾아가는 EBSMath 체험관</a></span>
+							<span class="dep3"><a href="#">3.14 파이데이</a></span>
+							<span class="dep3"><a href="#">2014 서울세계수학자대회</a></span>
+							<span class="dep3"><a href="#">2014 수학교사 한마당</a></span>
+						</li>
+						<li class="dep2"><a href="#">이벤트</a></li>
+						<li class="dep2"><a href="#">희망수학 칼럼</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="content_top">
+				<div class="wrap">
+					<h2 class="tit_top">수학 행사<em>찾아가는 EBSMath 체험관</em></h2> <!-- 2022-03-02 -->
+				</div>
+			</section>
+
+			<article class="mathcenter">
+				<div class="tab_common1 r2x2">
+					<a href="#">3.14 파이데이</a>
+					<a href="#" class="on">찾아가는 EBSMath 체험관</a>
+					<a href="#">2014 서울세계수학자대회</a>
+					<a href="#">2014 수학교사 한마당</a>
+				</div>
+
+				<header>
+					<p>창의적 수학 체험 학습 지원을 위해<br class="m_only"> EBSMath가 여러분 곁으로 직접 찾아갑니다.</p>
+					<h3>찾아가는 EBSMath 체험관</h3>
+				</header>
+
+				<section class="movingcenter_top">
+					<dl class="list">
+						<dt>연도</dt>
+						<dd>
+							<select name="event_year" class="event_year">
+								<option value="math_center_2019.html" selected>2019</option>
+								<option value="math_center_2018.html">2018</option>
+								<option value="math_center_2017.html">2017</option>
+							</select>
+						</dd>
+						<dt>회차</dt>
+						<dd>
+							<ul class="event_history">
+								<li class="on"><button type="button">[49차] 제 11회 대구 수학 페스티벌 (2019.11.2~11.3)</button></li>
+								<li><button type="button">[48차] 제 5회 인천수학축전 (2019.11.1~11.2)</button></li>
+								<li><button type="button">[47차] 2019 울산 수학체험한마당 (2019.10.26~10.27)</button></li>
+								<li><button type="button">[46차] 2019 부산수학축제 (2019.10.26~10.27) </button></li>
+								<li><button type="button">[45차] 2019 행복보령 교육 한마당 (2019.10.22)</button></li>
+								<li><button type="button">[44차] 2019 대전수학축전 (2019.10.19~10.20) </button></li>
+								<li><button type="button">[43차] 제 1회 세종창의융합교육축제 (2019.10.18~10.19)</button></li>
+								<li><button type="button">[42차] 2019 광양창의융합축전 (2019.10.18~10.19)</button></li>
+								<li><button type="button">[41차] 2019 강원 수학나눔축제 (2019.10.19) </button></li>
+								<li><button type="button">[40차] 제 9회 충남 수학 탐구 나눔 한마당  (2019.9.21)</button></li>
+								<li><button type="button">[39차] 2019 20th 제주수학축전 (2019.9.21)</button></li>
+								<li><button type="button">[38차] 2019 제9회 충북수학축제 (2019.8.23~8.24)</button></li>
+								<li><button type="button">[37차] 제7회 수학·정보교사 한마당 (2019.8.6~8.9)</button></li>
+								<li><button type="button">[36차] 2019 구미 수학 체험전 (2019.6.1)</button></li>
+								<li><button type="button">[35차] 제 16회 대한민국 교육박람회 (2019.1.16 ~ 1.18)</button></li>
+							</ul>
+						</dd>
+					</dl>
+				</section>
+				<section class="movingcenter_con">
+					<div class="wrap">
+						<div class="box">
+							<h4> 1차</h4>
+							<ul class="movcen_list">
+								<li class="e_loca">
+									<dfn>장소</dfn>
+									<span></span>
+								</li>
+								<li class="e_date">
+									<dfn>일시</dfn>
+									<span></span>
+								</li>
+								<li class="e_pp">
+									<dfn>참석자</dfn>
+									<span></span>
+								</li>
+								<li class="e_con">
+									<dfn>행사내용</dfn>
+									<span></span>
+								</li>
+							</ul>
+						</div>
+						<p class="movcen_img"><img src="../../images/contents/mathcenter/mathcenter_cont_2017_01.jpg"></p>
+					</div>
+				</section>
+			</article>
+
+		</div>
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+
+<script>
+var math_history = new Array();
+var math_history = [
+	{e_tit : '[35차] 제 16회 대한민국 교육박람회',  e_loca : '코엑스', e_date : '2019년 1월 16일 ~ 2019년 1월 18일', e_pp : '3,000여 명', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내, 현장 이벤트', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_35.jpg'},
+	{e_tit : '[36차] 2019 구미 수학 체험전', e_loca : '금오공업고등학교 체육관', e_date : '2019년 6월 1일 (토)', e_pp : 'EBSMath부스 2,500여 명', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_36.jpg'},
+	{e_tit : '[37차]  제7회 수학·정보교사 한마당', e_loca : '대전KT인재개발원', e_date : '2019년 8월 6일 ~ 9일', e_pp : '연수 참여자 800여 명', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내, 사이트 이용 설문조사 진행', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_37.jpg'},
+	{e_tit : '[38차]  2019 제9회 충북수학축제', e_loca : '충북대학교 개신문화관 및 사범대 일원', e_date : '2019년 8월 23일 ~ 24일', e_pp : '학생, 교사, 학부모 약 10,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_38.jpg'},
+	{e_tit : '[39차] 2019 20th 제주수학축전', e_loca : '제주국제컨벤션센터', e_date : '2019년 9월 21일 (토)', e_pp : '학생, 교사, 학부모 약 8,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_39.jpg'},
+	{e_tit : '[40차] 제 9회 충남 수학 탐구 나눔 한마당', e_loca : '건양대학교 건양짐나지움', e_date : '2019년 9월 21일 (토)', e_pp : '학생, 교사, 학부모 약 1,500여 명(추산) ', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_40.jpg'},
+	{e_tit : '[41차] 2019 강원 수학나눔축제', e_loca : '원주여자중학교', e_date : '2019년 10월 19일 (토)', e_pp : '학생, 교사, 학부모 약 5,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_41.jpg'},
+	{e_tit : '[42차]  2019 광양창의융합축전', e_loca : '광양실내체육관', e_date : '2019년 10월 18일 (금) ~ 19일 (토)', e_pp : '학생, 교사, 학부모 약 1,500여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_42.jpg'},
+	{e_tit : '[43차] 제 1회 세종창의융합교육축제', e_loca : '정부세종컨벤션센터', e_date : '2019년 10월 18일 (금) ~ 19일 (토)', e_pp : '학생, 교사, 학부모 약 5,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_43.jpg'},
+	{e_tit : '[44차] 2019 대전수학축전', e_loca : '대전컨벤션센터', e_date : '2019년 10월 19일 (토) ~ 20일 (일)', e_pp : '학생, 교사, 학부모 약 20,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_44.jpg'},
+	{e_tit : '[45차] 2019 행복보령 교육 한마당', e_loca : '보령종합체육관', e_date : '2019년 10월 22일 (화)', e_pp : '학생, 교사, 학부모 약 3,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_45.jpg'},
+	{e_tit : '[46차] 2019 부산수학축제', e_loca : 'BPEX 부산항국제전시컨벤션센터', e_date : '2019년 10월 26일 (토) ~ 27일 (일)', e_pp : ' 학생, 교사, 학부모 약 5,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_46.jpg'},
+	{e_tit : '[47차] 2019 울산 수학체험한마당', e_loca : '울산과학관', e_date : '2019년 10월 26일 (토) ~ 27일 (일)', e_pp : '학생, 교사, 학부모 약 5,000여 명(추산)', e_con : ' EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_47.jpg'},
+	{e_tit : '[48차] 제 5회 인천수학축전', e_loca : '송도컨벤션센터', e_date : '2019년 11월 1일 (금) ~ 2일 (토)', e_pp : '학생, 교사, 학부모 약 20,000여 명(추산)', e_con : ' EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_48.jpg'},
+	{e_tit : '[49차] 제 11회 대구 수학 페스티벌', e_loca : '대구과학고등학교', e_date : '2019년 11월 2일 (토) ~ 3일 (일)', e_pp : '학생, 교사, 학부모 약 15,000여 명(추산)', e_con : 'EBSMath 사이트 소개 및 콘텐츠 활용 안내', e_img:'../../images/contents/mathcenter/mathcenter_cont_2019_49.jpg'}
+]
+var cur_order = math_history.length - 1;
+var dw_text = new Array();
+var dw_text = ['.movingcenter_con h4','.e_loca span','.e_date span', '.e_pp span','.e_con span','.movcen_img img']
+
+function sel_movcenter() {
+	var idx = 0;
+	for (var key in math_history[cur_order]) {
+		var strID = dw_text[idx];
+		if (key == "e_img")  $(strID).attr("src",math_history[cur_order]["e_img"])
+		else $(strID).text(math_history[cur_order][key]);
+
+		var dt_idx =  idx - 1;
+		if (math_history[cur_order][key] == "") {
+			$('.movcen_list li').eq(dt_idx).hide()
+		}
+		else $('.movcen_list li').eq(dt_idx).show()
+		idx++;
+	}
+}
+
+$(document).ready(function(){
+	$('.event_history li').on("click", function(e){
+		$(this).siblings().removeClass("on")
+		$(this).addClass("on")
+
+		var lst_len = math_history.length -1;
+		cur_order  = ($(this).index() - lst_len) * -1;
+		sel_movcenter()
+	})
+	$('.event_year').on("change", function(e) {
+		var sel_url = $(this).val();
+		document.location.href= sel_url;
+	});
+	sel_movcenter();
+});
+</script>
+
+</body>
+</html>

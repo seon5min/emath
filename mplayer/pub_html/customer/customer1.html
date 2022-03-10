@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript">
+$(function () {
+	// GNB
+	var gnbmenu = $('#header.renewal2019 .gnb > li');
+	var moreLnk = $('#header.renewal2019 .moreLink > li');
+	$(gnbmenu).bind("mouseenter", function(e) {
+			var curid = $(this).index() ;
+			$('#header.renewal2019 .subWrap').hide();
+			console.log(curid);
+			switch(curid) {
+				case 0:
+					$('#header.renewal2019 .ele').show();
+					break;
+				case 1:
+					$('#header.renewal2019 .mid').show();
+					break;
+				case 2:
+					$('#header.renewal2019 .hg').show();
+					break;
+			}
+	});
+	$(moreLnk).bind("mouseenter", function(e) {
+		var curid = $(this).index() + 1;
+		var moreSub = "moL" + curid;
+		$('#header.renewal2019 .subWrap').hide();
+		$("."+moreSub).show();
+	});
+
+	/* $('#header.renewal2019 .subWrap').bind("mouseleave", function(e) {
+			console.log("a");
+			$(this).hide();
+	})*/;
+	$(gnbmenu).bind("mouseleave", function(e) {
+			console.log("b");
+			$('#header.renewal2019 .subWrap').hide();
+	});
+	$(moreLnk).bind("mouseleave", function(e) {
+			$('#header.renewal2019 .subWrap').hide();
+	});
+
+// 로그인 후 마이 메뉴
+	$('.userId').hover(
+		function(){
+			$(this).addClass('on');
+		}, function(){
+			$(this).removeClass('on');
+		}
+	);
+
+	$('.userId').focusin(function(){
+		$(this).addClass('on');
+	});
+
+	$('.logout').focusout(function(){
+		$('.userId').removeClass('on');
+	});
+
+// 검색
+	$(".searchArea input[type='text']").bind("mouseup", function(e){
+		$(".autoComplete").css({display:"block"});
+	});
+
+	$(".autoComplete .btnClose a").bind("click", function(e){
+		$(".autoComplete").css({display:"none"});
+	});
+});
+
+</script>
+</head>
+<body>
+
+<!-- header -->
+<div id="header" class="renewal2019">
+	<!-- top navigation -->
+	<div class="topWrap">
+		<div class="topArea">
+			<h1><a href="#none" title="EBS Math"><img src="../../images/layout/logo4.png" alt="EBS Math" /></a></h1>
+			
+			<!-- 우측 통합메뉴 -->
+			<div class="rightMenu cboth">
+				<ul class="menu cboth">
+					<!-- 로그인 전
+					<li><a href="#none" title="로그인으로 이동"><em>로그인</em></a></li>
+					<li><a href="#none" title="회원가입으로 이동"><em>회원가입</em></a></li>
+					//로그인 전 -->
+
+					<!-- 로그인 후 -->
+					<li class="userId">
+						<a href="#none" title="">
+							<img src="../../images/common/icon_kko.png" alt="카카오" class="vm"/>
+							<!-- <img src="../../images/common/icon_fb.png" alt="페이스북" class="vm" /> -->
+							<!-- <img src="../../images/common/icon_nvr.png" alt="네이버" class="vm"/> -->
+							<em>홍길동 님</em><span class="icoArrow"></span>
+						</a>
+						<div class="myMenu">
+							<ul>
+								<li><a href="#none">내가 본 학습카드</a></li>
+								<li><a href="#none">찜 한 학습카드</a></li>
+								<li><a href="#none">내 문제</a></li>
+								<li><a href="#none">회원정보변경</a></li>
+							</ul>
+							<div class="logout"><a href="#none"><img src="../../images/layout/logout_icon.png" alt="로그아웃" />로그아웃</a></div>
+						</div>
+					</li>
+					<li><a href="#none" title="마이페이지로 이동">마이페이지</a></li>
+					<!-- //로그인 후 -->
+
+					<li><a href="http://www.ebsmath.co.kr/cosCenter/eventProList">이벤트</a></li>
+					<li><a href="http://www.ebsmath.co.kr/cosCenter/main">고객센터</a></li>
+				</ul>
+				<div class="searchArea">
+					<form action="">
+						<fieldset>
+							<legend>검색 폼</legend>
+							<input type="text" placeholder="여자친구가 EBSMATH에?" />
+							<button type="submit" class="btnSearch"><img src="../../images/common/btn_search.png" alt="검색" /></button>
+						</fieldset>
+					</form>
+					<div class="autoComplete">
+						<div id="searchList" class="searchList">
+							<div class="searchGuide">
+								<p>검색어 <strong>자동 추천 기능</strong>을사용하고 있습니다.
+								<br>입력시 자동으로 관련어를 추천합니다.</p>
+							</div>
+							<div class="searchEmpty">
+								<p>
+									해당 단어로 시작하는 검색어가 없습니다.
+								</p>
+							</div>
+
+							<div class="searchCont">
+								<ul>
+									<li><a href="#"><em>거북이</em>의 계략</a></li>
+									<li><a href="#"><em>거북이</em>계략</a></li>
+									<li><a href="#"><em>거북이</em></a></li>
+									<li><a href="#">아킬레우스를 무시한<em>거북이</em></a></li>
+									<li><a href="#">킬레우스<em>거북이</em>의 계략</a></li>
+								</ul>
+							</div>
+						</div>
+					
+						<div id="mySearch" class="mySearch">
+							<h5 class="title">내가 찾은 검색어</h5>
+							<ul>
+								<li>
+									<a class="myKeyword" href="#none" title="">수학운동회</a>
+									<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+								</li>
+								<li>
+									<a class="myKeyword" href="#none" title="">트리플 악셀의 비밀</a>
+									<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+								</li>
+							</ul>
+						</div>
+						<div class="btnClose">
+							<a href="#none"><img src="../../images/common/close_icon.png" alt="닫기" /><span class="ml5">자동완성 닫기</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //우측 통합메뉴 -->
+		</div>
+	</div>
+	<!-- //top navigation -->
+
+	<!-- gnb -->
+	<div class="gnbWrap">
+		<div id="gnb">
+			<ul class="gnb cboth">
+				<li>
+					<a href="#none" class="menu gm1"  title="초등수학"><span class="blind">초등수학</span></a>
+					<!-- 초등수학 서브메뉴 -->
+					<div class="ele subWrap" style="display:none">
+						<ul class="cboth">
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 3학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">덧셈과 뺄셈</a></li>
+										<li><a href="#none">평면도형</a></li>
+										<li><a href="#none">나눗셈</a></li>
+										<li><a href="#none">곱셈</a></li>
+										<li><a href="#none">길이와시간</a></li>
+										<li><a href="#none">분수와 소수</a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none">곱셈</a></li>
+										<li><a href="#none">나눗셈</a></li>
+										<li><a href="#none">원</a></li>
+										<li><a href="#none">분수</a></li>
+										<li><a href="#none">들이와 무게</a></li>
+										<li><a href="#none">자료의 정리</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 4학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">큰 수</a></li>
+										<li><a href="#none">각도</a></li>
+										<li><a href="#none">곱셈과 나눗셈</a></li>
+										<li><a href="#none">평면도형의 이동</a></li>
+										<li><a href="#none">막대그래프</a></li>
+										<li><a href="#none">규칙 찾기</a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none">분수의 덧셈과 뺄셈</a></li>
+										<li><a href="#none">삼각형</a></li>
+										<li><a href="#none">소수의 덧셈과 뺄셈</a></li>
+										<li><a href="#none">사각형</a></li>
+										<li><a href="#none">꺾은선 그래프</a></li>
+										<li><a href="#none">다각형</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 5학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">자연수의 혼합 계산</a></li>
+										<li><a href="#none">약수와 배수</a></li>
+										<li><a href="#none">규칙과 대응</a></li>
+										<li><a href="#none">약분과 통분</a></li>
+										<li><a href="#none">분수의 덧셈과 뺄셈</a></li>
+										<li><a href="#none">다각형의 둘레와 넓이 </a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none">수의 범위와 어림하기</a></li>
+										<li><a href="#none">분수의 곱셈</a></li>
+										<li><a href="#none">합동과 대칭</a></li>
+										<li><a href="#none">소수의 곱셈</a></li>
+										<li><a href="#none">직육면체</a></li>
+										<li><a href="#none">평균과 가능성</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 6학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">분수의 나눗셈</a></li>
+										<li><a href="#none">각기둥과 각뿔</a></li>
+										<li><a href="#none">소수의 나눗셈</a></li>
+										<li><a href="#none">비와 비율</a></li>
+										<li><a href="#none">여러 가지 그래프 </a></li>
+										<li><a href="#none">직육면체의 부피와 겉넓이 </a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none" title="쌓기나무로 이동">분수의 나눗셈</a></li>
+										<li><a href="#none" title="비례식과 비례배분으로 이동">소수의 나눗셈</a></li>
+										<li><a href="#none" title="원기둥, 원뿔, 구로 이동">공간과 입체</a></li>
+										<li><a href="#none" title="비율 그래프로 이동">비례식과 비례배분</a></li>
+										<li><a href="#none" title="정비례와 반비례로 이동">원의 넓이</a></li>
+										<li><a href="#none" title="여러가지 문제로 이동">원기둥, 원뿔, 구</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>	
+						<span class="aside"><a href="http://www.ebsmath.co.kr/siteMap?currentGrdCd=EGRD" class="btn_all" title="전체 교과 보기로 이동">전체교과보기</a></span>
+					</div>
+					<!--// 초등수학 서브메뉴 -->
+				</li>
+				<li>
+					<a href="#none" class="menu gm2"><span class="blind">중학수학</span></a>
+					<!-- 중학수학 서브메뉴 -->
+					<div class="mid subWrap" style="display:none">
+						<ul class="cboth">
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">중학 1학년</a></div>
+								<div class="sub">
+									<h3>수와 연산</h3>
+									<ul>
+										<li><a href="#none">소인수분해</a></li>
+										<li><a href="#none">정수와 유리수</a></li>
+									</ul>
+
+									<h3>문자와 식</h3>
+									<ul>
+										<li><a href="#none">문자의 사용과 식의 계산</a></li>
+										<li><a href="#none">일차방정식</a></li>
+									</ul>
+
+									<h3>좌표평면과 그래프</h3>
+									<ul>
+										<li><a href="#none">좌표평면과 그래프</a></li>
+										<li><a href="#none">정비례와 반비례</a></li>
+									</ul>
+
+									<h3>기하</h3>
+									<ul>
+										<li><a href="#none">기본 도형</a></li>
+										<li><a href="#none">작도와 합동</a></li>
+										<li><a href="#none">평면도형의 성질</a></li>
+										<li><a href="#none">입체도형의 성질</a></li>
+									</ul>
+
+									<h3>자료의 정리와 해석</h3>
+									<ul>
+										<li><a href="#none">자료의 정리와 해석</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">중학 2학년</a></div>
+								<div class="sub">
+									<h3>수와 연산</h3>
+									<ul>
+										<li><a href="#none">유리수와 순환소수</a></li>
+									</ul>
+
+									<h3>문자와 식</h3>
+									<ul>
+										<li><a href="#none">식의 계산</a></li>
+										<li><a href="#none">연립부등식</a></li>
+										<li><a href="#none">연립일차방정식</a></li>
+									</ul>
+
+									<h3>함수</h3>
+									<ul>
+										<li><a href="#none">일차함수와 그래프</a></li>
+										<li><a href="#none">일차함수와 일차방정식의 관계</a></li>
+									</ul>
+
+									<h3>기하</h3>
+									<ul>
+										<li><a href="#none">삼각형과 사각형의<br/>성질</a></li>
+										<li><a href="#none">도형의 닮음</a></li>
+										<li><a href="#none">피타고라스 정리</a></li>
+									</ul>
+
+									<h3>확률과 통계</h3>
+									<ul>
+										<li><a href="#none">확률과 그 기본 성질</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">중학 3학년</a></div>
+								<div class="sub">
+									<h3>수와 연산</h3>
+									<ul>
+										<li><a href="#none">제곱근과 실수</a></li>
+										<li><a href="#none">근호를 포함한 식의 계산</a></li>
+									</ul>
+
+									<h3>문자와 식</h3>
+									<ul>
+										<li><a href="#none">다항식의 인수분해</a></li>
+										<li><a href="#none">이차방정식</a></li>
+									</ul>
+
+									<h3>함수</h3>
+									<ul>
+										<li><a href="#none">이차함수와 그래프</a></li>
+									</ul>
+
+									<h3>확률과 통계</h3>
+									<ul>
+										<li><a href="#none">대푯값과 산포도</a></li>
+									</ul>
+
+									<h3>기하</h3>
+									<ul>
+										<li><a href="#none">피타고라스의 정리</a></li>
+										<li><a href="#none">삼각비</a></li>
+										<li><a href="#none">원의 성질</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<span class="aside"><a href="http://www.ebsmath.co.kr/siteMap?currentGrdCd=MGRD" class="btn_all" >전체교과보기</a></span>
+					</div>
+					<!--// 중학수학 서브메뉴 -->
+				</li>
+				<li>
+					<a href="#none" class="menu gm3" ><span class="blind">고교수학</span></a>
+					<!-- 고교수학 서브메뉴 -->
+					<div class="hg subWrap"  style="display:none">
+						<ul class="cboth">
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none" title="수학">수학</a></div>
+								<div class="sub">
+									<h3>방정식과 부등식</h3>
+									<ul>
+										<li><a href="#none">복소수와 이차방정식 </a></li>
+										<li><a href="#none">이차방정식과 이차함수</a></li>
+										<li><a href="#none">여러가지 방정식과 부등식</a></li>
+									</ul>
+
+									<h3>도형의 방정식</h3>
+									<ul>
+										<li><a href="#none">평면좌표</a></li>
+										<li><a href="#none">직선의 방정식</a></li>
+										<li><a href="#none">원의 방정식</a></li>
+										<li><a href="#none">도형의 이동</a></li>
+									</ul>
+
+									<h3>집합과 명제</h3>
+									<ul >
+										<li><a href="#none">집합 </a></li>
+										<li><a href="#none">명제 </a></li>
+									</ul>
+
+									<h3>함수</h3>
+									<ul>
+										<li><a href="#none">함수 </a></li>
+									</ul>
+
+									<h3>경우의 수</h3>
+									<ul>
+										<li><a href="#none">순열과 조합</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">수학 I</a></div>
+								<div class="sub">
+									<h3>지수함수와 로그함수</h3>
+									<ul>
+										<li><a href="#none">지수 </a></li>
+										<li><a href="#none">로그</a></li>
+										<li><a href="#none">지수함수와 로그함수</a></li>
+									</ul>
+
+									<h3>삼각함수</h3>
+									<ul>
+										<li><a href="#none">삼각함수</a></li>
+										<li><a href="#none">삼각함수의 활용</a></li>
+									</ul>
+
+									<h3>수열</h3>
+									<ul >
+										<li><a href="#none">등차수열과 등비수열 </a></li>
+										<li><a href="#none">수열의 합</a></li>
+										<li><a href="#none">수학적 귀납법</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">수학 II</a></div>
+								<div class="sub">
+									<h3>함수의 극한과 연속 </h3>
+									<ul>
+										<li><a href="#none">함수의 극한 </a></li>
+										<li><a href="#none">함수의 연속</a></li>
+									</ul>
+
+									<h3>미분</h3>
+									<ul>
+										<li><a href="#none">미분계수와 도함수</a></li>
+										<li><a href="#none">도함수의 활용</a></li>
+									</ul>
+
+									<h3>적분</h3>
+									<ul >
+										<li><a href="#none">부정적분과 정적분</a></li>
+										<li><a href="#none">정적분의 활용</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">확률과 통계</a></div>
+								<div class="sub">
+									<h3>순열과 조합</h3>
+									<ul>
+										<li><a href="#none">조합</a></li>
+									</ul>
+
+									<h3>확률</h3>
+									<ul>
+										<li><a href="#none">조건부확률</a></li>
+									</ul>
+
+									<h3>통계</h3>
+									<ul>
+										<li><a href="#none">확률분포</a></li>
+										<li><a href="#none">통계적 추정</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">미적분</a></div>
+								<div class="sub">
+									<h3>수열의 극한 </h3>
+									<ul>
+										<li><a href="#none">급수</a></li>
+									</ul>
+
+									<h3>미분</h3>
+									<ul>
+										<li><a href="#none">여러 가지 함수의 미분</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<span class="aside"><a href="#none" class="btn_all">전체교과보기</a></span>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="moreLink cboth">
+				<li class="mlnk01"><a href="#none">테마별 수학시리즈</a>
+					<div class="moL1 subWrap" style="display:none">
+						<ul class="moreLinkList">
+							<li><a href="#">전체</a></li>
+							<li><a href="#">영상</a></li>
+							<li><a href="#">게임</a></li>
+							<li><a href="#">웹툰</a></li>
+							<li><a href="#">수학지식카드</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mlnk02"><a href="#none">초등 수학 게임방</a>	
+					<div class="moL2 subWrap" style="display:none">
+						<ul class="moreLinkList">
+							<li><a href="#">4학년 문제 세트 게임</a></li>
+							<li><a href="#">5학년 문제 세트 게임</a></li>
+							<li><a href="#">수학술사 세미 게임</a></li>
+							<li><a href="#">6학년 문제 세트 게임</a></li>
+							<li><a href="#">단원 복습 게임</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mlnk03"><a href="#none">중학 수학 카페</a>
+					<div class="moL3 subWrap" style="display:none">
+						<ul class="moreLinkList">
+							<li><a href="#">통계 포스터 제작 가이드</a></li>
+							<li><a href="#">통계 관련 자료</a></li>
+							<li><a href="#">이지통계</a> </li>
+							<li><a href="#">이지그래프</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //gnb -->
+</div>
+<!-- //header -->
+
+
+
+<!-- top_visual -->
+<div id="top_visual">
+
+</div>
+<!-- //top_visual -->
+
+
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- container -->
+	<article id="container">
+
+		<!-- customer -->
+		<section class="content_wrap customer">
+
+			<!-- lnb -->
+			<div class="bg_lnb"></div>
+			<aside class="lnb my customer">
+
+				<h2 class="top_title emt">고객센터</h2>
+
+				<div class="lnb_menu">
+
+					<!-- menu1  -->
+					<div class="menu_con menu1 first">
+						<ul class="first">
+							<li class="tit"><a href="#">자주 묻는 질문</a></li>
+							<li class="menu"><a href="#">회원정보/가입</a></li>
+							<li class="menu"><a href="#">사이트 이용안내</a></li>
+							<li class="menu"><a href="#">학습 커뮤니티 이용안내</a></li>
+							<li class="menu"><a href="#">교사 이용안내</a></li>
+						</ul>
+					</div>
+					<!-- //menu1  -->
+
+					<!-- menu2  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">이용문의</a></li>
+						</ul>
+					</div>
+					<!-- //menu2  -->
+
+					<!-- menu3  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">수학 학습 해결소</a></li>
+						</ul>
+					</div>
+					<!-- //menu3  -->
+
+					<!-- menu4  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">이벤트</a></li>
+							<li class="menu"><a href="#">당첨자조회</a></li>
+						</ul>
+					</div>
+					<!-- //menu4  -->
+
+					<!-- menu5  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">수학행사</a></li>
+							<li class="menu"><a href="#">찾아가는 EBSMath 체험관</a></li>
+							<li class="menu"><a href="#">3.14 파이데이</a></li>
+							<li class="menu"><a href="#">2014 서울세계수학자대회</a></li>
+							<li class="menu"><a href="#">제1회 수학교사 한마당</a></li>
+						</ul>
+					</div>
+					<!-- //menu5  -->
+
+					<!-- menu6  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">공지사항</a></li>
+							<li class="menu"><a href="#">미리 보는 EBSMath</a></li>
+						</ul>
+					</div>
+					<!-- //menu6  -->
+
+					<!-- menu7  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">100개의 아이디어(new)</a></li>
+						</ul>
+					</div>
+					<!-- //menu7  -->
+
+				</div>
+
+			</aside>
+			<!-- //lnb -->
+
+			<!-- content_right -->
+			<div class="content_right white2">
+
+				<!-- content_set -->
+				<div class="content_set">
+					<!-- location_menu -->
+					<div class="ar">
+						<div class="location_menu" style="position:absolute;top:20px;right:20px">
+							<a href="#"><img src="../../images/common/home_icon.png" /> 홈</a>
+							<span class="arrow emt"> > </span>
+							<a href="#"><strong>고객센터</strong></a>
+						</div>
+					</div>
+					<!-- //location_menu -->
+
+					<!-- mypage_top -->
+					<div class="mypage_top">
+						<h4 class="title">고객센터</h4>
+					</div>
+					<!-- //mypage_top -->
+
+					<!-- faq_main -->
+					<div class="faq_main2019">
+
+						<!-- faq_con -->
+						<div class="faq_con">
+							<!-- fag_top -->
+							<div class="fag_top">
+								<h2 class="blind">자주 묻는 질문</h2>
+								<h3 class="blind">자주 묻는 질문 검색을 통해 궁금증을 해결하세요!</h3>
+								<div class="search_con">
+									<form action="" method="">
+										<fieldset>
+											<legend>검색 폼</legend>
+											<div class="input_con">
+												<input type="text" placeholder="검색어를 입력해주세요.">
+												<button type="submit"><img src="../../images/main/faq_search.png" /></button>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+								<div class="mt10">
+									<a class="guide_btn" href="#">자주 묻는 질문 전체보기</a>
+								</div>
+							</div>
+							<!-- //fag_top -->
+
+							<!-- fag_menu -->
+							<div class="fag_menu">
+								<ul>
+									<li class="menu1"><a href="#">회원정보<br>/가입안내</a></li>
+									<li class="menu2"><a href="#">사이트<br>이용안내</a></li>
+									<li class="menu3"><a  href="#">학습 커뮤니티<br>이용안내</a></li>
+									<li class="menu4"><a  href="http://www.ebsmath.co.kr/cosCenter/faqList?pstClsfnCd=005">교사<br> 이용안내</a></li>
+								</ul>
+							</div>
+							<!-- //fag_menu -->
+						</div>
+						<!-- //faq_con -->
+
+						<!-- faq_content -->
+						<div class="faq_content">
+							<ul class="cust_menu">
+								<li class="cme1">
+									<a href="http://www.ebsmath.co.kr/introduce/mathIntroduce">
+										<strong>EBSMath 소개</strong>
+										<span>EBSMath에 대해<br>자세히 알려드립니다.</span>
+									</a>
+								</li>
+								<li class="cme2">
+									<a href="http://www.ebsmath.co.kr/introduceApp/list?utm_source=math&utm_medium=banner&utm_campaign=m_introduceapp_main">
+										<strong>모바일 서비스 안내</strong>
+										<span>EBSMath의 모바일 앱/웹<br>이용 방법을 확인하세요.</span>
+									</a>
+								</li>
+								<li class="cme3">
+									<a href="http://www.ebsmath.co.kr/cosCenter/useInqList">
+										<strong>이용 문의</strong>
+										<span>사이트 관련 궁금한 점을<br>언제든 문의해 주세요.</span>
+									</a>
+								</li>
+								<li class="cme4">
+									<a href="http://www.ebsmath.co.kr/cosCenter/useInqQnaList?qnaClsCd=002">
+										<strong>수학 학습 해결소</strong>
+										<span>수학에 관한 질문이나<br>궁금증을 해결해 드립니다.</span>
+									</a>
+								</li>
+								<li class="cme5">
+									<a href="http://www.ebsmath.co.kr/promotion/goEbsMathExpCenterList">
+										<strong>찾아가는<br>EBSMath 체험관</strong>
+										<span>수학 체험학습 지원을 위해<br>여러분 곁으로 찾아갑니다.</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="faq_content" >
+							<div class="notice_con">
+								<div class="title">
+									<h4>공지사항</h4>
+									<a href="#"><img src="../../images/main/renewal2018/btn_more.png" alt="더보기" /></a><!-- 2019-07-01 버튼 수정 -->
+								</div>
+								<div class="list_con">
+									<ul><!-- 2019-07-02 텍스트에 span 추가/icoNew 추가-->
+										<li><a href="#"><span>[공지] EBS개인정보처리방침공지사항입니다.공지사항입니다. EBS개인정보처리방침공지사항입니다.공지사항입니다.</span><em class="icoNew">New</em></a><span class="date">2015. 01. 20</span></li>
+										<li><a href="#"><span>[공지] EBS개인정보처리방침공지사항입니다.공지사항입니다.</span><em class="icoNew">New</em></a><span class="date">2015. 01. 20</span></li>
+										<li><a href="#"><span>[공지] EBS개인정보처리방침공지사항입니다.공지사항입니다.</span></a><span class="date">2015. 01. 20</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="event">
+								<h4>이벤트</h4>
+								<ul class="slider_event">
+									<li><a href="#"><img src="../../images/main/renewal2019/cs_event_dummy.jpg" alt="이벤트배너"></a></li>
+									<li><a href="#"><img src="../../images/main/renewal2019/cs_event_dummy.jpg" alt="이벤트배너"></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- //faq_content -->
+
+						<!-- faq_content -->
+						<div class="faq_content">
+							<!-- 설치 프로그램 다운로드 -->
+							<div class="prgm_down">
+								<div class="title">
+									<h4>설치 프로그램 다운로드</h4>
+								</div>
+								<div class="down_list">
+									<ul>
+										<li class="menu2"><a class="emt" href="#">Adobe Flash Player</a></li>
+										<li class="menu11"><a class="emt" href="#">Chrome v49</a></li>
+										<li class="menu7"><a class="emt" href="#">Acrobat Reader X</a></li>
+										<li class="menu8"><a class="emt" href="#">Cabri 3D Plug-in</a></li>
+										<li class="menu9"><a class="emt" href="#">Autograph Player</a></li>
+										<li class="menu10"><a class="emt" href="#">Unity Web Player</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- //설치 프로그램 다운로드 -->
+
+							<!-- 스마트 고객센터 -->
+							<div class="info_con">
+								<h4>스마트 고객센터</h4>
+								<ul>
+									<li class="cs_call">전화 상담 (발신자 부담)<br><strong>1588-1580</strong></li>
+									<li class="cs_katk">카카오톡 상담<br><a href="https://pf.kakao.com/_vJixbV" target="_blank"><strong>헬로우_EBS</strong></a></li>
+								</ul>
+							</div>
+							<!-- /스마트 고객센터 -->
+						</div>
+						<!-- //faq_down -->
+
+					</div>
+					<!-- //faq_main -->
+				</div>
+				<!-- //content_set -->
+
+			</div>
+			<!-- content_right -->
+
+		</section>
+		<!-- //customer -->
+
+	</article>
+	<!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+
+
+
+<!-- footer -->
+<footer id="footer">
+	<!-- footer_con -->
+	<div class="footer_con">
+
+		<!-- family_con -->
+		<div class="family_con">
+			<ul>
+				<li class="btn1"><a class="emt" href="http://www.ebs.co.kr/" target="_blank" title="EBS 메인">EBS 메인</a></li>
+				<li class="btn2"><a class="emt" href="http://www.ebsi.co.kr/" target="_blank" title="EBSi">EBSi</a></li>
+				<li class="btn3"><a class="emt" href="http://www.ebse.co.kr/" target="_blank" title="EBS english">EBS english</a></li>
+				<li class="btn4"><a class="emt" href="http://primary.ebs.co.kr/" target="_blank" title="EBS 초등">EBS 초등</a></li>
+				<li class="btn5"><a class="emt" href="http://mid.ebs.co.kr/" target="_blank" title="EBS 중학">EBS 중학</a></li>
+				<li class="btn6"><a class="emt" href="http://www.ebslang.co.kr/ebs/index.laf" target="_blank" title="EBS lang">EBS lang</a></li>
+				<li class="btn7"><a class="emt" href="http://clipbank.ebs.co.kr/main/?src=text&kw=00006C" target="_blank" title="EBS 클립뱅크">EBS 클립뱅크</a></li>
+				<li class="btn8"><a class="emt" href="http://book.ebs.co.kr/" target="_blank" title="Book Mall">Book Mall</a></li>
+			</ul>
+		</div>
+		<!-- //family_con -->
+
+		<!-- footer_menu -->
+		<div class="footer_menu">
+			<div class="logo_con">
+				<h2 class="blind">EBS Math</h2>
+			</div>
+			<div class="menu_con">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><span style="color:#fff" >개인정보처리방침</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //footer_menu -->
+
+		<!-- copyright_con -->
+		<div class="copyright_con">
+			<address>
+				06762 서울특별시 서초구 바우뫼로1길 35 한국교육방송공사  |  사업자등록번호 : 229-82-01343 (한국교육방송공사사장 우종범)<br />
+				EBS 고객센터 1588-1580 (발신자 부담)  |  인터넷 문의 <a href="mailTo://helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>  |  FAX : 02-526-3855<br />
+				부가통신사업신고 : 10077  |  통신판매업신고 : 서초-8152호
+			</address>
+			<p class="mt15">
+				<strong>Copyright © EBS All Rights Reserved.</strong>
+			</p>
+			<div class="banner">
+				<img src="../../images/layout/footer_banner.png" />
+			</div>
+		</div>
+		<!-- //copyright_con -->
+
+	</div>
+	<!-- //footer_con -->
+</footer>
+<!-- //footer -->
+
+
+
+
+<!-- blind_con -->
+<div class="blind_con"></div>
+<!-- //blind_con -->
+
+<!-- modalBg -->
+<div class="modalBg"></div>
+<div class="modalPopupContainer">
+	<div class="popupCon"></div>
+</div>
+<!-- //modalBg -->
+
+
+<!-- datepicker -->
+<div class="datepicker"></div>
+<!-- //datepicker -->
+
+<script type="text/javascript" src="../../js/jquery.bxslider.min.js"></script>
+<script  type="text/javascript">
+var eventSlider = $('.slider_event').bxSlider({auto: true, autoHover:false, autoControls: false, stopAutoOnClick: false, infiniteLoop:true, pager: true, slideWidth:273});
+</script>
+</body>
+</html>

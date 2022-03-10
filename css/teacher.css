@@ -1,0 +1,457 @@
+@charset "utf-8";
+
+/* ----------------------------------------------------------------------- layout */
+body {overflow-y:auto;}
+.content_wrap .content_right {background-color:#fff;}
+
+.teacherHeader {margin:10px 0 25px 15px;}
+.teacherHeader p.txt {height:17px;margin-top:15px;font-size:15px;color:#6b6b6b;}
+
+/* ----------------------------------------------------------------------- 공통 */
+/* tab style */
+.tabBtn {margin-bottom:30px;overflow:hidden;}
+.tabBtn li {float:left;line-height:42px;border-top:2px solid #d0d5d8;border-right:1px solid #d0d5d8;border-bottom:1px solid #d0d5d8;background-color:#f4f7f9;}
+.tabBtn li a {display:block;font-size:14px;color:#808080;text-align:center;font-weight:600;}
+.tabBtn li:first-child {border-left:1px solid #d0d5d8;}
+.tabBtn li.on {border-top:2px solid #3fbbdd;border-bottom:none;background-color:#fff;}
+.tabBtn li.on a {color:#3fbbdd;}
+.tabBtn.col3 li {width:33.1%;}
+.tabBtn.col5 li {width:19.8%;}
+
+/* 리스트 버튼 */
+.allCount {position:absolute;top:14px;left:0;font-weight:600;}
+.allCount strong {color:#4890e4;}
+.btnArea {overflow:hidden;position:absolute;top:0;right:0;z-index:1;}
+.btnArea button {font-size:0;text-indent:-9999px;vertical-align:middle;}
+
+.comment .blue_button {
+    background: #3ab3d4;
+    background: -webkit-linear-gradient(#3fbbdd, #3ab3d4);
+    background: -o-linear-gradient(#3fbbdd, #3ab3d4);
+    background: -moz-linear-gradient(#3fbbdd, #3ab3d4);
+	border:solid 1px #1894b6;
+	width:62px;
+	height:26px;
+	line-height:22px;
+	font-size:12px;
+	color:#fff;
+	border-radius:4px;
+	font-weight:600
+;}
+.comment .blue_button:hover {background:#2aa8cb;}
+
+/* 검색 */
+.searchBox {position:relative;margin-bottom:35px;padding:15px 20px;background-color:#f4f7f9;border:solid 1px #d0d5d8;overflow:hidden;border-radius:8px;text-align:left;}
+.searchBox select {width:158px;}
+.searchBox input[type="text"] {width:318px;height:32px;line-height:32px;}
+.searchBox button {width:71px;height:34px;background:url('../images/teacher/btn_search.png') no-repeat 0 0;font-size:0;text-indent:-9999px;}
+.searchBox .txtArea {padding-bottom:20px;}
+.searchBox .sorting {padding:20px 0 0;overflow:hidden;border-top:1px solid #d0d5d8;}
+.searchBox .sorting + .sorting {padding:0;border-top:none;}
+
+/* 검색결과 */
+.searchResult {position:relative;padding:0 15px 10px;margin-bottom:30px;font-weight:600;border-bottom:1px solid #d0d5d8;}
+.searchResult span {color:#4890e4;}
+.searchResult + .btnArea {top:55px;}
+.noData {font-size:16px;text-align:center;font-weight:600;color:#4c4c4c;}
+.noData strong {display:block;margin-top:100px;}
+
+/* input 타입 */
+.icheckbox, .iradio {background-image:url('../images/checkbox/skin_teacher.png');*margin-top:8px;zoom:1;}
+.black .icheckbox, .black .iradio {background-image:url('../images/checkbox/skin_black.png');}
+.checkbox {float:left;padding:0 10px;line-height:30px;}
+.checkbox:first-child {padding-left:0;}
+.checkbox label {color:#6b6b6b;font-weight:600;}
+.radio {padding:0 10px;line-height:30px;}
+.radio:first-child {padding-left:0;}
+.radio label {color:#6b6b6b;font-weight:600;}
+
+.radioTyTxt {position:relative;float:left;display:block;padding:0 10px;line-height:30px;}
+.radioTyTxt:first-child {padding-left:0;}
+.radioTyTxt + .radioTyTxt {background:url('../images/layout/bar_gray4.gif') no-repeat 0 center;}
+.radioTyTxt .iradio {position:absolute;top:0;left:0;visibility:hidden;z-index:0;}
+.radioTyTxt .iradio + label {top:0;padding-left:0;font-size:14px;font-weight:400;text-align:center;cursor:pointer;z-index:1;}
+.radioTyTxt .iradio.checked + label {font-weight:600;color:#3fbbdd;}
+
+/* 팝업 */
+.dim {position:fixed;top:0;bottom:0;left:0;right:0;display:none;background:url('../images/event/20170119/modal_bg.png');z-index:999;}
+
+/* ----------------------------------------------------------------------- 메인 페이지 */
+.teacherMain button.btnTeacher {position:absolute;width:125px;height:34px;font-size:0;text-indent:-9999px;background:url('../images/teacher/btn_01.png') no-repeat 0 0;}
+
+.teacherMain .top {position:relative;margin:10px 0 25px;}
+.teacherMain .top button.btnTeacher {top:29px;right:26px;}
+.teacherMain .top .linkArea {position:absolute;top:378px;left:30px;}
+.teacherMain .top .linkArea a {float:left;display:block;width:226px;height:236px;margin:0 4px;background-color:#000;opacity:0;filter:alpha(opacity='0');}
+
+.teacherMain .bottom {position:relative;margin:50px 35px;}
+.teacherMain .bottom ul.tabBtn {width:694px;height:113px;margin:25px 0 5px;padding:4px 0;background:url('../images/teacher/btn_tab.png') no-repeat 0 0;}
+.teacherMain .bottom ul.tabBtn li {width:173px;height:113px;border:none;background:none;}
+.teacherMain .bottom ul.tabBtn li a {height:113px;font-size:0;text-indent:-9999px;}
+.teacherMain .bottom ul.view_01 {background-position:0 0;}
+.teacherMain .bottom ul.view_02 {background-position:0 -130px;}
+.teacherMain .bottom ul.view_03 {background-position:0 -260px;}
+.teacherMain .bottom ul.view_04 {background-position:0 -390px;}
+.teacherMain .bottom .tabCont {padding:40px 38px;background-color:#f2f2f2;border-radius:8px;}
+
+.teacherMain .bottom .tabCont {font-size:16px;font-weight:600;}
+.teacherMain .bottom .tabCont strong {color:#27a8cb;}
+.teacherMain .bottom .tabCont ol li {position:relative;}
+.teacherMain .bottom .tabCont ol li + li {margin-top:30px;}
+.teacherMain .bottom .tabCont ol li button {position:static;margin-left:10px;vertical-align:middle;}
+.teacherMain .bottom .tabCont ol li img {margin:15px 0 0 30px;}
+
+.teacherMain .bottom .tabCont p {display:block;line-height:25px;}
+.teacherMain .bottom .tabCont span {display:block;margin:30px 0 15px;font-size:13px;color:#6b6b6b;}
+.teacherMain .bottom .tabCont .linkArea {overflow:hidden;}
+.teacherMain .bottom .tabCont p + .linkArea {margin-top:30px;}
+.teacherMain .bottom .tabCont a {display:inline-block;}
+.teacherMain .bottom .tabCont a + a {margin-left:4px;}
+.teacherMain .bottom .tabCont ul {overflow:hidden;}
+.teacherMain .bottom .tabCont ul li {float:left;width:205px;text-align:center;}
+.teacherMain .bottom .tabCont ul li .ico {display:block;height:85px;}
+.teacherMain .bottom .tabCont ul li .ico.link_01 {background:url('../images/teacher/ico_link_01.png') no-repeat center 10px;}
+.teacherMain .bottom .tabCont ul li .ico.link_02 {background:url('../images/teacher/ico_link_02.png') no-repeat center 10px;}
+.teacherMain .bottom .tabCont ul li .ico.link_03 {background:url('../images/teacher/ico_link_03.png') no-repeat center 10px;}
+.teacherMain .bottom .tabCont ul li .ico.link_04 {background:url('../images/teacher/ico_link_04.png') no-repeat center 10px;}
+.teacherMain .bottom .tabCont ul li + li {background:url('../images/layout/bar_gnb.png') no-repeat 0 center;}
+.teacherMain .bottom .tabCont ul li p {font-size:14px;}
+.teacherMain .bottom .tabCont ul li a {float:none; margin:10px 0 5px;}
+.teacherMain .bottom .tabCont > div {display:none;}
+.teacherMain .bottom .tabCont > div.view {display:block;}
+
+/* ----------------------------------------------------------------------- 서브페이지 */
+/* M노트 가이드 */
+.guideWrap {position:absolute;top:143px;left:0;right:0;z-index:99;background:url('../images/teacher/bg_guide.jpg') repeat center center;}
+.guideWrap.active .guideWrap {width:100%;height:360px;}
+.guideWrap .btnGuide {position:absolute;bottom:-31px;left:50%;margin-left:-79px;width:158px;height:31px;background:url('../images/teacher/btn_guide.png') no-repeat 0 0;font-size:0;text-indent:-9999px;}
+.guideWrap .guideArea {position:relative;display:block;width:100%;height:0;overflow:hidden;}
+.guideWrap .sliderViewer {position:relative;width:1000px;margin:0 auto;}
+.guideWrap.active .btnGuide {background-position:0 -50px;}
+.guideWrap.active .guideArea {height:360px;}
+
+/* M노트 가이드 slider */
+.bx-wrapper .bx-prev {left:568px;background:url('../images/teacher/btn_arrow.png') no-repeat 0 0;}
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {background-position:0 0;}
+.bx-wrapper .bx-controls {;}
+.bx-wrapper .bx-pager {position:absolute;top:296px;left:591px;}
+.bx-wrapper .bx-pager .bx-pager-item {float:left;margin-left:15px;}
+.bx-wrapper .bx-pager .bx-pager-item a {display:block;width:16px;height:16px;font-size:0;text-indent:-9999px;background:url('../images/teacher/btn_pager.png') no-repeat 0 0;}
+.bx-wrapper .bx-pager .bx-pager-item a.active {background-position:-20px 0;}
+.bx-wrapper .bx-controls-direction a {position:absolute;top:50%;margin-top:-24px;display:block;width:28px;height:53px;background:url('../images/teacher/btn_arrow.png') no-repeat 0 0;font-size:0;text-indent:-9999px;}
+.bx-wrapper .bx-controls-direction a.bx-prev {left:0;}
+.bx-wrapper .bx-controls-direction a.bx-next {right:0;background-position:-30px 0;}
+
+/* M노트 */
+.mnote.guideActive {padding-top:360px;}
+.mnote .tableWrap {position:relative;padding-top:45px;}
+.mnote .btnArea button {width:125px;height:34px;}
+.mnote .btnArea button.btnTeacher {background:url('../images/teacher/btn_01.png') no-repeat 0 0;}
+.mnote .btnArea button.btnMake {background:url('../images/teacher/btn_02.png') no-repeat 0 0;}
+.mnote .btnArea button.btnQuiz {background:url('../images/teacher/btn_03.png') no-repeat 0 0;}
+.mnote .btnArea button.btnSave {background:url('../images/teacher/btn_04.png') no-repeat 0 0;}
+
+.mnote .line_list_con {border-top:solid 2px #393939;border-bottom:solid 2px #393939;}
+.mnote .line_list_con .btn2 {line-height:20px;}
+.mnote .line_list_con .btn2 img {margin-right:5px;vertical-align:middle;}
+.mnote .line_list_con .clearfix img {float:left;vertical-align:middle !important;}
+.mnote .line_list_con span.hit {float:left;margin-left:7px;line-height:21px;color:#f58e31;font-weight:600;}
+.mnote .line_list_con tbody td .attach {max-width:90%;}
+
+.mnote .tableWrap .fav_con {float:left;}
+.mnote .tableWrap .fav_con a {display:inline-block;width:21px;height:21px;vertical-align:top;background:url('../images/common/fav_icon_list.png') no-repeat;}
+.mnote .tableWrap .fav_con a:hover {background-position:0 -30px;}
+.mnote .tableWrap .fav_con.on a {background-position:0 -30px;}
+
+/* M노트 만들기 팝업 */
+.mnote.pop {min-width:1331px;}
+.mnote.pop .listWrap {position:relative;}
+.mnote.pop .mNoteList li .cont {position:relative;display:block;width:188px;height:204px;margin:0 auto;border:1px solid #dbe5e9;background-color:#fff;cursor:pointer;}
+.mnote.pop .mNoteList li .cont .img_con {position:relative;width:170px;margin:9px;text-align:center;}
+.mnote.pop .mNoteList li .cont .img_con .thumb {width:170px;height:138px;}
+.mnote.pop .mNoteList li .cont .tag_icon {position:absolute;right:9px;bottom:9px;}
+.mnote.pop .mNoteList li .cont .marker {position:absolute;top:-1px;left:9px;}
+.mnote.pop .mNoteList li .cont span {display:block;padding:0 20px;line-height:18px;font-size:14px;font-weight:600;text-align:center;color:#4c4c4c;}
+.mnote.pop .mNoteList li .cont span.contTit {color:#4c4c4c;word-break:break-all;}
+.mnote.pop .mNoteList li .cont span.contTxt {display:none;}
+.mnote.pop .mNoteList li.memo .cont span.memoTit {margin-top:140px;color:#fff;word-break:break-all;}
+.mnote.pop .mNoteList li.memo .cont {background:url('../images/teacher/thumb_memo.png') no-repeat 0 0;}
+.mnote.pop .mNoteList li.default .cont {background:url('../images/teacher/thumb_default.png') no-repeat 0 0;}
+
+.mnote.pop .noteList {position:absolute;top:0;left:0;width:300px;background:url('../images/teacher/bg_guide.jpg') repeat center center;}
+.mnote.pop .noteList h2 {padding:20px 0;text-align:center;background-color:#fff;border-bottom:2px solid #334c5a;}
+.mnote.pop .noteList .btnArea {position:static;padding:18px 0 17px;text-align:center;background:url('../images/teacher/bg_pop.jpg') repeat center center;border-bottom:1px solid #a4b2c2;overflow:hidden;}
+.mnote.pop .noteList .btnArea button {float:left;display:block;}
+.mnote.pop .noteList .btnArea button.btnSave {margin-left:21px;}
+.mnote.pop .noteList .listWrap {padding:20px 0;text-align:center;overflow-y:scroll;}
+.mnote.pop .noteList .listWrap .toolTip {position:fixed;top:170px;left:15px;}
+.mnote.pop .noteList .listWrap .toolTipLayer {position:fixed;top:167px;left:45px;display:none;padding:7px 10px;background-color:#fff;border:1px solid #808080;border-radius:5px;font-size:11px;line-height:16px;color:#808080;text-align:left;z-index:1;}
+.mnote.pop .noteList .listWrap .toolTipLayer .arrow {position:absolute;top:6px;left:-6px;display:block;width:6px;height:12px;background:url('../images/common/tooltip_arrow2.png') no-repeat 0 0;}
+.mnote.pop .noteList .mNoteList li + li {margin-top:6px;}
+.mnote.pop .noteList .mNoteList li button.btnMore {width:34px;height:34px;margin-top:5px;background:url('../images/teacher/btn_more.png') no-repeat 0 0;}
+.mnote.pop .noteList .mNoteList li button.btnMore:hover {background-position:0 -40px;}
+.mnote.pop .noteList .mNoteList li button.btnDel {position:absolute;top:-1px;right:-1px;width:25px;height:25px;font-size:0;text-indent:-9999px;background:url('../images/btn/btn_close.png') no-repeat center center #626366;}
+.mnote.pop .noteList .mNoteList li button.btnMarker {position:absolute;top:-10px;left:0;width:43px;height:45px;font-size:0;text-indent:-9999px;background:url('../images/teacher/btn_marker.png') no-repeat center center;}
+.mnote.pop .noteList .mNoteList li.memo {cursor:pointer;}
+.mnote.pop .noteList .mNoteList li.memo:hover .memoTit {text-decoration:underline;}
+
+.mnote.pop .contList {padding-left:300px;min-width:1031px;}
+.mnote.pop .contList .listWrap {padding:10px;background-color:#f4f7f9;overflow-y:scroll;}
+.mnote.pop .contList .mNoteList {overflow:hidden;}
+.mnote.pop .contList .mNoteList li {position:relative;float:left;width:190px;margin:10px;cursor:pointer;}
+.mnote.pop .contList .mNoteList li:hover .contTit {text-decoration:underline;}
+.mnote.pop .contList .mNoteList li .cont {border:1px solid #e3e8eb;}
+.mnote.pop .contList .mNoteList li a.btnGo {position:absolute;right:0;bottom:0;display:block;width:25px;height:25px;font-size:0;text-indent:-9999px;background:url('../images/common/search_icon.png') no-repeat center center #d0d5d8;}
+.mnote.pop .contList .mNoteList li.select .cont {width:180px;height:196px;border:5px solid #3fbbdd;}
+.mnote.pop .contList .mNoteList li.select .cont .img_con {margin:5px 5px 9px;}
+.mnote.pop .contList .mNoteList li.select a.btnGo {background:url('../images/common/search_icon.png') no-repeat center center #3fbbdd;}
+
+.mnote.pop .contList .sort_page {position:absolute;top:13px;right:20px;z-index:1;}
+.mnote.pop .contList .sort_page a.box_btn {background-image:url('../images/common/box_btn_teacher.png');}
+.mnote.pop .contList .sort_page a.list_btn {background-image:url('../images/common/list_btn_teacher.png');}
+.mnote.pop .searchArea {position:relative;padding:12px 20px;background-color:#e9ebed;border-bottom:1px solid #d4d7db;overflow:hidden;}
+.mnote.pop .searchArea select {width:158px;}
+.mnote.pop .searchArea input[type="text"] {width:368px;height:32px;line-height:32px;}
+.mnote.pop .searchArea button {width:71px;height:34px;background:url('../images/teacher/btn_search.png') no-repeat 0 0;font-size:0;text-indent:-9999px;}
+.mnote.pop .searchArea label.searchTit {font-size:14px;line-height:30px;color:#4c4c4c;font-weight:600;}
+.mnote.pop .searchArea .txtArea {padding-bottom:13px;}
+.mnote.pop .searchArea .radio {padding:0 7px;}
+.mnote.pop .searchArea .radio label {font-size:13px;}
+.mnote.pop .searchArea .checkbox:first-child {margin-left:5px;}
+.mnote.pop .searchArea .checkbox label {font-size:13px;}
+.mnote.pop .searchArea .checkbox label span {margin-left:3px;color:#3fbbdd;}
+.mnote.pop .searchArea .sorting + .sorting {padding-top:12px;}
+
+.mnote.pop .contList.lineTyCard .mNoteList li {width:360px;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont {width:358px;height:114px;border:1px solid #dbe5e9;background-color:#fff;overflow:hidden;}
+.mnote.pop .contList.lineTyCard .mNoteList li.memo .cont {background:url('../images/teacher/thumb_memo_02.png') no-repeat 0 0;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont .img_con {float:left;width:120px;height:98px;margin:8px 0 0 8px;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont .img_con .thumb {width:120px;height:98px;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont .tag_icon {right:5px;bottom:5px;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont .tag_icon img {width:28px;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont span {float:left;width:180px;margin-top:20px;text-align:left;}
+.mnote.pop .contList.lineTyCard .mNoteList li .cont span.contTxt {display:block;margin-top:5px;font-size:12px;font-weight:400;color:#6b6b6b;}
+.mnote.pop .contList.lineTyCard .mNoteList li.memo .cont span.memoTit {margin:45px 0 0 129px;color:#fff;}
+.mnote.pop .contList.lineTyCard .mNoteList li.select .cont {width:350px;height:106px;border:5px solid #3fbbdd;}
+.mnote.pop .contList.lineTyCard .mNoteList li.select .cont .img_con {margin:4px 0 0 4px;}
+.mnote.pop .contList.lineTyCard .mNoteList li.select .cont span.contTit {margin-top:15px;}
+
+.mnote.pop .loading {position:fixed;top:0;bottom:0;left:0;right:0;background:url('../images/event/20170119/modal_bg.png');z-index:999;}
+.mnote.pop .loading img {position:absolute;top:50%;left:50%;margin-left:-200px;margin-top:-90px;z-index:9999;}
+
+/* M노트 만들기 팝업 - 레이어 */
+.teacher.layer {position:absolute;top:200px;left:50%;width:650px;margin-left:-325px;background-color:#fff;z-index:9999;} /*2021-05-07 수정*/
+.teacher.layer.video {width:764px;margin-left:-382px;/*margin-top:-296px;*/}
+.teacher.layer.memo {/*margin-top:-230px;*/}
+.teacher.layer.title {/*margin-top:-163px;*/}
+.teacher.layer.quiz {/*margin-top:-100px;*/}
+.teacher.layer .btnClose {position:absolute;top:20px;right:25px;display:inline-block;width:14px;height:14px !important;background:url('../images/btn/btn_close.png') no-repeat 0 0;}
+.teacher.layer .header {height:50px;line-height:50px;background-color:#3fbbdd;}
+.teacher.layer .header h1 {float:left;padding-top:18px;padding-left:25px;color:#fff;font-size:16px;line-height:1;}
+.teacher.layer .header h1 * {vertical-align:top;}
+.teacher.layer .header h1 span {display:inline-block;margin-left:13px;color:#fff;font-size:16px;line-height:1;background:url('../../images/popup/bg_bar_white.gif') no-repeat 0 50%;}
+.teacher.layer .popCont {padding:0 6px 6px;background-color:#3fbbdd;}
+.teacher.layer .contWrap {padding:15px 30px 20px;color:#2d2d2d;font-size:11px;word-break:break-all;word-wrap:break-word;background-color:#fff;}
+.teacher.layer.memo .contWrap {padding:15px 8px 20px;}
+.teacher.layer .contWrap .inputArea {margin-top:15px;margin-bottom:15px;}
+.teacher.layer .contWrap label {font-size:14px;color:#4c4c4c;font-weight:600;}
+.teacher.layer .contWrap label.searchTit,
+.teacher.layer .contWrap label.memoTit {line-height:26px;}
+.teacher.layer.title .contWrap label.searchTit {width:54px;text-align:right;}
+.teacher.layer .contWrap input[type="text"] {width:508px;padding:3px 10px;}
+.teacher.layer.memo .contWrap input[type="text"] {width:550px;}
+.teacher.layer.title .contWrap input[type="text"] {width:480px;}
+.teacher.layer .contWrap span.dec {display:block;padding:10px 72px 0;}
+.teacher.layer .contWrap span.dec span {display:block;font-size:12px;line-height:20px;color:#808080;}
+.teacher.layer .contWrap span.dec span.point {color:#f58e31;}
+.teacher.layer .contWrap select {width:156px;}
+.teacher.layer.title .contWrap select {width:500px;}
+.teacher.layer .contWrap .customSelectBox_title {padding-top:9px !important;}
+.teacher.layer .contWrap .editor {width:618px;height:260px;margin:18px 0;}
+.teacher.layer .contWrap .player {width:764px;height:542px;margin:0;}
+.teacher.layer .contWrap button {background:none;}
+.teacher.layer .bottomCont {text-align:center;}
+.teacher.layer.video .popCont,
+.teacher.layer.video .contWrap {padding:0;}
+.teacher.layer.video .contents {position:relative;overflow:hidden;}
+.teacher.layer.video .movingtime label {font-size:12px;}
+.teacher.layer.video .customSelectBoxContainer {display:none !important;}
+
+/* M노트 상세 */
+.mnote.view {width:100%;min-width:1400px;background:url('../images/teacher/bg_mnote.jpg') no-repeat center 0;}
+.mnote.view .viewHeader {position:relative;width:803px;padding-left:39px;margin:0 auto;overflow:hidden;}
+.mnote.view .viewHeader h2 {float:left;margin-left:5px;padding:22px 0 29px;color:#fff;font-size:18px;font-weight:600;}
+.mnote.view .viewHeader h2 span {color:#ffe899;}
+.mnote.view .viewHeader .fav_con {position:absolute;top:0;right:120px;width:92px;margin:16px 20px 18px;padding:4px;background:url('../images/teacher/bg_fav.png') no-repeat 0 0;overflow:hidden;}
+.mnote.view .viewHeader .fav_con a {float:left;display:block;width:30px;height:30px;background:url('../images/common/fav_icon.png') no-repeat;}
+.mnote.view .viewHeader .fav_con a:hover {background-position:0 -30px;}
+.mnote.view .viewHeader .fav_con.on a {background-position:0 -30px;}
+.mnote.view .viewHeader .fav_con span {float:left;display:block;width:62px;color:#2e2e2e;font-size:15px;line-height:30px;font-weight:600;text-align:center;}
+.mnote.view .viewHeader .snswrap {position:absolute;top:19px;right:0;}
+.mnote.view .viewHeader .snswrap a{display:inline-block;width:31px;height:31px;margin-left:10px;vertical-align:top;font-size:0;line-height:0;background:url('../images/common/img_sns.png') no-repeat; *display:inline; zoom:1;}
+.mnote.view .viewHeader .snswrap a.fb {background-position:0 0;}
+.mnote.view .viewHeader .snswrap a.tw {background-position:-41px 0;}
+.mnote.view .viewHeader .snswrap a.kko {background-position:-82px 0;}
+
+.mnote.view .viewCont {height:869px;z-index:10;}
+.mnote.view .viewCont h3 {color:#fff;font-size:45px;line-height:127px;font-weight:600;text-align:center;white-space:nowrap;}
+.mnote.view .viewCont .contArea {position:relative;margin:16px auto 0;width:764px;}
+.mnote.view .viewCont .contArea .contHeader {height:26px;padding:7px 0 6px;color:#4c4c4c;font-size:18px;font-weight:600;background-color:#f8f9fa;border-bottom:1px solid #7b90a0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.mnote.view .viewCont .contArea .contHeader img {margin:0 9px;}
+.mnote.view .viewCont .contArea .contHeader .dec {margin-left:10px;padding-left:15px;font-size:15px;color:#6b6b6b;background:url('../images/layout/bar_gray4.gif') no-repeat 0 50%;}
+.mnote.view .viewCont .contArea .contView {position:relative;width:764px;height:542px;overflow:hidden;}
+.mnote.view .viewCont .contArea .contView .view {position:relative;overflow:hidden;}
+.mnote.view .viewCont .contArea .contView .questTit {position:absolute;top:50%;left:50%;width:480px;margin-left:-240px;color:#11448e;font-size:30px;line-height:45px;font-weight:600;text-align:center;opacity:0;filter:alpha(opacity='0');-ms-word-break:keep-all;word-break:keep-all;}
+.mnote.view .viewCont .contArea .contView .btnMore {position:absolute;bottom:0;display:block;width:764px;padding:17px 0;color:#fff;font-size:15px;font-weight:600;text-align:center;background:url('../images/layout/dim_grey.png') repeat 0 0;z-index:10;}
+
+.mnote.view .viewCont .contArea .contBtn a {position:absolute;top:191px;display:block;width:88px;height:129px;background:url('../images/teacher/btn_arrow_viewer_off.png') no-repeat 0 0;cursor:default;}
+.mnote.view .viewCont .contArea .contBtn a.btnPrev {left:-128px;}
+.mnote.view .viewCont .contArea .contBtn a.btnNext {right:-129px;background-position:-100px 0;}
+.mnote.view .viewCont .contArea .contBtn a.on {display:block;}
+.mnote.view .viewCont .contArea .contBtn a.on {background-image:url('../images/teacher/btn_arrow_viewer_on.png');cursor:pointer;}
+
+.mnote.view .viewList {position:absolute;bottom:0;width:100%;min-width:1356px;background-color:#11448e;z-index:11;}
+.mnote.view .viewList.active {bottom:0;}
+.mnote.view .viewList.active .listArea {display:block;}
+.mnote.view .viewList .btnViewList {position:absolute;top:-26px;left:50%;margin-left:-27px;display:block;width:55px;height:26px;background:url('../images/teacher/btn_view_list.png') no-repeat 0 0;}
+.mnote.view .viewList .btnViewList.active {background-position:0 -30px;}
+.mnote.view .viewList .listHeader {position:relative;width:1240px;height:65px;padding:0 58px;margin:0 auto;overflow:hidden;}
+.mnote.view .viewList .listHeader h4 {float:left;padding:22px 0;color:#fff;font-size:18px;font-weight:600;}
+.mnote.view .viewList .listHeader h4 span {color:#ffe899;}
+.mnote.view .viewList .listHeader .btnArea {position:static;float:left;width:154px;padding:17px 15px;}
+.mnote.view .viewList .listHeader .btnArea a {float:left;display:block;margin-left:5px;}
+.mnote.view .viewList .listHeader .contCount {position:absolute;top:15px;right:58px;height:34px;padding:0 10px;background:#fff;border-radius:17px;overflow:hidden;}
+.mnote.view .viewList .listHeader .contCount li {float:left;margin:0 5px;padding:6px 0;}
+.mnote.view .viewList .listHeader .contCount li .ico {float:left;display:block;width:22px;height:22px;}
+.mnote.view .viewList .listHeader .contCount li .count {float:left;display:block;width:auto;height:20px;padding-left:5px;line-height:22px;}
+.mnote.view .viewList .listHeader .contCount li.movie .ico {background:url('../images/common/movie_icon.png') no-repeat center center;}
+.mnote.view .viewList .listHeader .contCount li.quest .ico {background:url('../images/common/quest_icon.png') no-repeat center center;}
+.mnote.view .viewList .listHeader .contCount li.game .ico {background:url('../images/common/game_icon.png') no-repeat center center;}
+.mnote.view .viewList .listHeader .contCount li.webtoon .ico {background:url('../images/common/webtoon_icon.png') no-repeat center center;}
+.mnote.view .viewList .listHeader .contCount li.image .ico {background:url('../images/common/image_icon.png') no-repeat center center;}
+.mnote.view .viewList .listHeader .contCount li.knowledge .ico {background:url('../images/common/knowledge_icon.png') no-repeat center center;}
+
+.mnote.view .viewList .listArea {position:relative;display:none;background-color:#f4f7f9;border-bottom:1px solid #d4d7db;}
+.mnote.view .viewList .listArea .listWrap {position:relative;width:1240px;height:265px;padding:0 58px;margin:0 auto;}
+.mnote.view .viewList .listArea .listWrap .cardNum {position:absolute;top:13px;left:58px;color:#11448e;font-size:12px;font-weight:600;}
+.mnote.view .viewList .listArea .listWrap ul {width:auto;padding:35px 0 25px;margin:0 auto;overflow:hidden;}
+.mnote.view .viewList .listArea .listWrap ul li {float:left;position:relative;width:190px;}
+.mnote.view .viewList .listArea .listWrap ul li + li {margin-left:20px;}
+.mnote.view .viewList .listArea .listWrap ul li .cont {position:relative;display:block;width:188px;height:204px;margin:0 auto;border:1px solid #dbe5e9;background-color:#fff;cursor:pointer;}
+.mnote.view .viewList .listArea .listWrap ul li .cont .img_con {position:relative;width:170px;margin:9px;text-align:center;}
+.mnote.view .viewList .listArea .listWrap ul li .cont .img_con .thumb {width:170px;height:138px;}
+.mnote.view .viewList .listArea .listWrap ul li .cont .tag_icon {position:absolute;right:9px;bottom:9px;}
+.mnote.view .viewList .listArea .listWrap ul li .cont span {display:block;padding:0 20px;line-height:18px;font-size:14px;font-weight:600;text-align:center;color:#4c4c4c;word-break:break-all;}
+.mnote.view .viewList .listArea .listWrap ul li .check_con {position:absolute;top:0;left:0;display:none;width:190px;height:206px;background:url('../images/main/list_check5.png') no-repeat 0 0;}
+.mnote.view .viewList .listArea .listWrap ul li .arrow {position:absolute;top:86px;left:-25px;display:block;width:33px;height:33px;background:url('../images/teacher/ico_arrow.png') no-repeat 0 0;}
+.mnote.view .viewList .listArea .listWrap ul li:first-child .arrow {display:none;}
+.mnote.view .viewList .listArea .listWrap ul li.select .cont {width:180px;height:196px;border:5px solid #3fbbdd;}
+.mnote.view .viewList .listArea .listWrap ul li.select .cont .img_con {margin:5px 5px 9px;}
+.mnote.view .viewList .listArea .listWrap ul li.memo .cont span.memoTit {margin-top:140px;color:#fff;word-break:break-all;}
+.mnote.view .viewList .listArea .listWrap ul li.memo .cont {background:url('../images/teacher/thumb_memo.png') no-repeat center center;}
+.mnote.view .viewList .listArea .listWrap ul li.check .check_con {display:block;cursor:pointer;}
+.mnote.view .viewList .listArea .listWrap .listViewer {position:relative;overflow:hidden;width:1240px;}
+.mnote.view .viewList .listArea .listWrap .listBtn a {position:absolute;top:111px;display:block;width:28px;height:53px;background:url('../images/teacher/btn_arrow_list_off.png') no-repeat 0 0;cursor:default;}
+.mnote.view .viewList .listArea .listWrap .listBtn a.btnPrev {left:0px;}
+.mnote.view .viewList .listArea .listWrap .listBtn a.btnNext {right:0px;background-position:-30px 0;}
+.mnote.view .viewList .listArea .listWrap .listBtn a.on {background-image:url('../images/teacher/btn_arrow_list_on.png');cursor:pointer;}
+
+/* M노트 상세 - 메모 */
+.mnote.view .viewCont .contArea.memo .contHeader {height:19px;padding:15px 0 16px;color:#fff;font-size:16px;background-color:#3fbbdd;border-bottom:none;}
+.mnote.view .viewCont .contArea.memo .contHeader img {margin:0 10px 0 25px;}
+.mnote.view .viewCont .contArea.memo .contView {position:relative;width:764px;height:526px;background-color:#3fbbdd;overflow:hidden;}
+.mnote.view .viewCont .contArea.memo .contView .view {height:522px;margin:0 4px 4px;background-color:#fff;}
+.mnote.view .viewCont .contArea.memo .contView .view h5 {padding:25px 25px 25px 50px;font-size:20px;font-weight:600;background:url('../images/teacher/bul_memo.png')  no-repeat 25px center #f4f7f9;border-bottom:1px solid #d4d7db;}
+.mnote.view .viewCont .contArea.memo .contView .view .txt {margin:20px 28px 20px 50px;}
+.mnote.view .viewCont .contArea.memo .contView .view img {width:auto;}
+
+/* M노트 상세 팝업 */
+.teacher.layer.view {width:814px;height:828px;margin-left:-407px;margin-top:20px;}
+.teacher.layer.view .header {height:26px;padding:12px 10px;color:#4c4c4c;font-size:18px;font-weight:600;line-height:1;background-color:#f8f9fa;border-bottom:1px solid #7b90a0;overflow:hidden;}
+.teacher.layer.view .header img {float:left;margin-right:5px;}
+.teacher.layer.view .header span.tit {float:left;max-width:670px;line-height:26px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.teacher.layer.view .header span.dec {float:left;margin-left:10px;padding-left:15px;font-size:15px;line-height:26px;color:#6b6b6b;background:url('../images/layout/bar_gray4.gif') no-repeat 0 50%;}
+.teacher.layer.view .popCont {height:739px;padding:15px 7px 24px;background-color:#fff;}
+.teacher.layer.view .popCont .contWrap {max-height:704px;overflow-y:auto;}
+.teacher.layer.view .popCont .contWrap img {width:100%; *width:97%;}
+.teacher.layer.view .popCont .contWrap .explain img {width:auto !important;}
+.teacher.layer.view .btnClose {right:15px;background:url('../images/btn/btn_close6.png') no-repeat 0 0;}
+.teacher.layer.view.only1Cont {height:auto;margin-top:-270px;}
+.teacher.layer.view.only1Cont .popCont {height:auto;}
+
+/* M노트 상세 팝업 - 메모 */
+.teacher.layer.view.memo {height:640px;margin-top:-320px;background-color:#3fbbdd;}
+.teacher.layer.view.memo .header {height:19px;padding:15px 0 16px;color:#fff;font-size:16px;background-color:#3fbbdd;border-bottom:none;}
+.teacher.layer.view.memo .header img {margin:0 10px 0 25px;}
+.teacher.layer.view.memo .popCont {height:586px;margin:0 4px 4px;padding:0;}
+.teacher.layer.view.memo .popCont .contWrap {height:586px;padding:0;overflow:hidden;}
+.teacher.layer.view.memo .btnClose {right:15px;background:url('../images/btn/btn_close.png') no-repeat 0 0;}
+.teacher.layer.view.memo .popCont .contWrap h5 {padding:25px 25px 25px 50px;font-size:20px;font-weight:600;background:url('../images/teacher/bul_memo.png')  no-repeat 25px center #f4f7f9;border-bottom:1px solid #d4d7db;}
+.teacher.layer.view.memo .popCont .contWrap .txt {height:472px;margin:20px 10px 20px 50px;font-size:12px;overflow-y:auto;}
+.teacher.layer.view.memo .popCont .contWrap .txt p {padding-right:15px;}
+.teacher.layer.view.memo .popCont .contWrap img {width:auto;}
+
+/* 교실 속 EBSMath */
+.inClass .chasi_list_con .title_con h4 {background:url('../images/common/chasi_icon_teacher.png') no-repeat;}
+.inClass .chasi_list_con:first-child {padding-top:0;}
+.inClass .chasi_list_con .box_list_con li .list_set .info_con .bottom_con {margin-top:14px;}
+.inClass .chasi_list_con .box_list_con li .list_set .info_con {height:90px;}
+
+/* 선생님 자료실 */
+.data .searchBox {padding:20px;}
+.data .searchBox .txtArea {text-align:center;}
+.data .searchBox .txtArea label.searchTit {font-size:17px;line-height:30px;color:#4c4c4c;font-weight:600;}
+.data .searchBox input[type="text"] {width:400px;}
+.data .searchBox .sorting .radioTyTxt span {margin-left:5px;font-size:12px;}
+.data .searchBox .sorting.radioTyTxt .iradio.checked + label span {font-weight:600;}
+.data .searchBox .checkbox label {font-weight:400;}
+.data .listWrap {position:relative;padding-top:0;}
+.data .btnArea {position:absolute;top:0;right:15px;}
+.data .btnArea button {width:137px;height:26px;font-size:12px;text-indent:0;}
+.data .btnArea button img {position:relative;top:4px;}
+.data .chasi_list_con:nth-child(2) {padding-top:0;}
+.data .chasi_list_con .title_con h4 {background:url('../images/common/chasi_icon_teacher.png') no-repeat;}
+.data .package_top {border-top:solid 2px #393939;}
+.data .bottom_2_line {background:url('../images/common/line3.png') repeat-x;}
+.data .img_viewer {background:none;}
+.data .img_viewer > img {margin-top:10px;}
+
+/* 선생님 자료실- 이미지 */
+.data.image .chasi_list_con:first-child {padding-top:0;}
+.data.image .chasi_list_con {padding:30px 0;}
+.data.image .box_list_con li .list_set .info_con .info {font-size:11px;}
+
+/* 선생님 자료실 교사활용팁 다운로드 팝업 */
+.teacher.downloadwrap {position:fixed;top:50%;height:436px;margin-top:-218px;margin-left:-200px;}
+.teacher.downloadwrap .header {background-color:#3fbbdd;}
+.teacher.downloadwrap .header h1 span {margin-left:0;padding-left:0;}
+.teacher.downloadwrap .header h1 span + span {margin-left:13px;padding-left:13px;background:url('../images/popup/bg_bar_white.png') no-repeat 0 50%;}
+.teacher.downloadwrap .popCont {height:380px;padding:0 6px 6px;background-color:#3fbbdd;}
+.teacher.downloadwrap .contWrap {height:339px;}
+.teacher.downloadwrap .contWrap .listBottom {position:relative;height:46px;line-height:46px;}
+.teacher.downloadwrap .contWrap .listBottom .allSelectBtn {position:absolute;top:5px;left:0;}
+.teacher.downloadwrap .contWrap .listBottom .allSelectBtn span {*margin-top:14px;}
+.teacher.downloadwrap .contWrap .listBottom .allSelectBtn label {top:0;*display:inline;}
+.teacher.downloadwrap .contWrap .listBottom button.btnDownTip {position:absolute;top:15px;right:0;width:137px;height:26px;font-size:12px;text-indent:0;}
+.teacher.downloadwrap .contWrap .listBottom button.btnDownTip img {position:relative;top:4px;}
+
+/* 선생님 의견 */
+.comment .tableWrap {position:relative;padding-top:45px;}
+.comment .tableWrap .btnArea {line-height:34px;overflow:visible;}
+.comment .tableWrap .btnArea label {top:0;}
+.comment .tableWrap .btnArea .select {width:120px;}
+
+.comment .line_list_con {border-top:solid 2px #393939;border-bottom:solid 2px #393939;}
+.comment .line_list_con .notice td {background-color:#f9f9f9;border-bottom:1px solid #a6a6a6;}
+.comment .line_list_con .notice .txt {padding-left: 20px;}
+.comment .line_list_con .notice .txt a {color:#4890e4;padding-right:4px;}
+.comment .line_list_con .btn2 img {margin-right:5px;vertical-align:middle;}
+
+.comment .iradio {*margin-top:0;}
+.comment .line_detail_con .top_title {border-top:solid 2px #393939;}
+.comment .line_detail_con .comment_con2 .list_con li .txt textarea {width:600px;height:20px;}
+.comment .line_detail_con .detail_con {border-bottom:solid 2px #393939;}
+.comment .bottom_2_line {background:url('../images/common/line3.png') repeat-x;}
+.comment .like_con {padding:15px 0;text-align:center;border-top:1px dashed #d0d5d8;background-color:#f8f9fa;}
+.comment .like_con .btnLike {display:block;width:40px;height:34px;margin:0 auto;padding-left:30px;text-align:center;font-size:13px;font-weight:600;color:#ef6461;line-height:34px;background:url('../images/teacher/img_like_off.png') no-repeat 0 0;cursor:pointer;}
+.comment .like_con .btnLike.on {color:#fff;background:url('../images/teacher/img_like_on.png') no-repeat 0 0;}

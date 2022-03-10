@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix::after { content:""; display:block; }
+.clearfix::after { clear:both; }
+
+.sportsDay{background:none;}
+.sportsDay .top{position:relative; width:763px;}
+.sportsDay .top .btn-apply{position:absolute; top:809px; left:471px; display:block; width:247px; height:57px; font-size:0; border-radius:29px; background:#e94f17; opacity:0; filter:alpha(opacity='0');}
+.sportsDay .snswrap{position:absolute; top:23px; left:310px;}
+.sportsDay .snswrap a{display:inline-block; width:35px; height:35px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20171114/img_sns.png'); *display: inline; zoom: 1;}
+.sportsDay .snswrap .fb a{background-position:0 0;}
+.sportsDay .snswrap .tw a{background-position:-41px 0;}
+.sportsDay .snswrap .kko a{background-position:-82px 0;}
+.sportsDay .bannerPromo { position:absolute; top:470px; left:460px; }
+.sportsDay .bannerPromo .btnCloseBan { position:absolute; top:22px; right:30px; display:block; width:33px; height:33px; font-size:0; border-radius:16px; background:#134284; opacity:0; filter:alpha(opacity='0'); }
+
+/* 이벤트 본문 */
+.sportsDay .getStamp { position:relative; }
+.sportsDay .getStamp .myStamp {position:absolute; top:212px; left:406px; display:block; width:72px; text-align:center; font-weight:900; color:#fff04f; font-size:20px; letter-spacing:-1px; }
+.sportsDay .getStamp .index { position:absolute; left:106px; top:410px; }
+.sportsDay .getStamp .index li { width:267px; height:75px; background:none; text-indent:-9999px;}
+.sportsDay .getStamp .index li.on { background:url('../../images/event/20171114/img_index.png') no-repeat; }
+.sportsDay .getStamp .index li.week1 { background-position:0 0;}
+.sportsDay .getStamp .index li.week2 { margin-top:45px; background-position:0 -75px;}
+.sportsDay .getStamp .index li.week3 { margin-top:44px; background-position:0 -150px;}
+.sportsDay .getStamp .index li.week4 { margin-top:47px; background-position:0 -225px;}
+.sportsDay .getStamp .index li.week5 { margin-top:45px; background-position:0 -300px;}
+
+.sportsDay .getStamp .btnStamp.mission { position:absolute; top:402px; left:409px; width:278px; }
+.sportsDay .getStamp .btnStamp.mission li { float:left; width:83px; height:89px; margin:0 28px; text-indent:-9999px; text-align:center; font-size:0;}
+.sportsDay .getStamp .btnStamp.mission li a { display:block; width:83px; height:83px; margin:3px 0; cursor:default;}
+.sportsDay .getStamp .btnStamp.mission li.on a { cursor:pointer;}
+.sportsDay .getStamp .btnStamp.mission li.btnWeek2 { margin-top:31px; }
+.sportsDay .getStamp .btnStamp.mission li.btnWeek3 { margin-top:30px; }
+.sportsDay .getStamp .btnStamp.mission li.btnWeek4 { margin-top:33px; }
+.sportsDay .getStamp .btnStamp.mission li.btnWeek5 { margin-top:31px; }
+.sportsDay .getStamp .btnStamp.mission li span.btnMission { display:block; width:83px; height:83px; text-indent:-9999px; background:none;}
+.sportsDay .getStamp .btnStamp.mission li.on.btnVideo span.btnMission { background:url('../../images/event/20171114/btn_video.png') no-repeat; }
+.sportsDay .getStamp .btnStamp.mission li.on.btnToon span.btnMission { background:url('../../images/event/20171114/btn_toon.png') no-repeat; }
+
+.sportsDay .getStamp .btnStamp.stamp li {position:absolute; display:none; width:139px; height:89px; font-size:0; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek1_1 { top:402px; left:407px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek1_2 { top:402px; left:546px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek2_1 { top:522px; left:407px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek2_2 { top:522px; left:546px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek3_1 { top:641px; left:407px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek3_2 { top:641px; left:546px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek4_1 { top:763px; left:407px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek4_2 { top:763px; left:546px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek5_1 { top:883px; left:407px; }
+.sportsDay .getStamp .btnStamp.stamp li.stampWeek5_2 { top:883px; left:546px; }
+.sportsDay .getStamp .btnStamp.stamp li.get { display:block; } 
+.sportsDay .getStamp .btnStamp.stamp li span.stamp { display:block; width:139px; height:89px; margin:0; }
+.sportsDay .getStamp .btnStamp.stamp li.one span.stamp { display:block; background:url('../../images/event/20171114/stamp_one.png') no-repeat center center; cursor:default;}
+.sportsDay .getStamp .btnStamp.stamp li.two span.stamp { display:block; background:url('../../images/event/20171114/stamp_two.png') no-repeat center center; cursor:default;}
+
+/* notice */
+.sportsDay .notice {padding:35px 58px 31px 34px; background:url('../../images/event/20171114/bg_notice.jpg') no-repeat 0 0 #1e455e;}
+.sportsDay .notice ul{padding-top:15px;}
+.sportsDay .notice li{margin-top:5px; padding-left:15px; color:#97a3ab; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20171114/bul.png') no-repeat 0 8px;}
+.sportsDay .notice li:first-child{margin-top:0;}
+.sportsDay .notice li .point{color:#fdc005;}
+
+/* 이벤트 종료 */
+.sportsDay.end .top .btn_win{position:absolute; top:908px; left:69px; display:block; width:307px; height:58px; font-size:0; border-radius:29px; background:#e9441e; opacity:0; filter:alpha(opacity='0');}
+.sportsDay.end .top .btn_info_insert{position:absolute; top:908px; left:385px; display:block; width:308px; height:58px; font-size:0; border-radius:29px; background:#1a7c5b; opacity:0; filter:alpha(opacity='0');}
+.sportsDay.end .top .total{position:absolute; top:838px; left:331.5px; display:block; width:100px; text-align:center; font-weight:900; color:#fff04f; font-size:20px; letter-spacing:-1px; }
+

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+.clearfix:before, .clearfix:after {content:"";display:block;}
+.clearfix:after {clear:both;}
+
+.puzzle{background:none;}
+.puzzle .top{position:relative;width:763px;}
+.puzzle .top .btn-apply{position:absolute;top:544px;left:425px;display:block;width:283px;height:70px;font-size:0;border-radius:35px;background:#043673;opacity:0;filter:alpha(opacity='0');}
+.puzzle .snswrap{position:absolute;top:29px;right:20px;}
+.puzzle .snswrap a{display:inline-block;width:37px;height:37px;vertical-align:top;font-size:0;line-height:0;background:url('../../images/event/20180213/img_sns.png');*display: inline;zoom: 1;}
+.puzzle .snswrap a.fb {background-position:0 0;}
+.puzzle .snswrap a.tw {background-position:-41px 0;}
+.puzzle .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.puzzle .pure-button{margin:5px 0;text-decoration:none !important;}
+.puzzle .button-lg{margin:5px 0;padding:.65em 1.6em;}
+.puzzle .snappuzzle-wrap{position:relative;display:block;}
+.puzzle .snappuzzle-pile{position:relative;}
+.puzzle .snappuzzle-piece{cursor:pointer;}
+.puzzle .snappuzzle-slot{position:absolute;background:#fff;opacity:0.8;}
+.puzzle .snappuzzle-slot-hover{background:#eee;}
+.puzzle .ui-draggable-dragging{border:2px solid red;}
+
+.puzzle .cont_01 {position:relative;}
+.puzzle .cont_01 .calendar {position:absolute;top:143px;left:62px;width:630px;}
+.puzzle .cont_01 .calendar li {float:left;width:54px;height:54px;margin:0 0 9px 9px;border-radius:50%;}
+.puzzle .cont_01 .calendar li a {display:block;width:54px;height:54px;font-size:0;text-indent:-9999px;background:url('../../images/event/20180213/ico_daycheck.png') no-repeat 0 0;}
+.puzzle .cont_01 .calendar li.complete a {background-position:0 -60px;}
+.puzzle .cont_01 .calendar li.missed a {background-position:0 -120px;}
+.puzzle .cont_01 .calendar li.today a {background-position:0 -180px;}
+
+.puzzle .cont_02 {position:relative;height:937px;background:url('../../images/event/20180213/bg_cont_02.jpg') no-repeat 0 0 #102b56;}
+.puzzle .cont_02 .puzzleHeader {position:relative;height:141px;}
+.puzzle .cont_02 .puzzleTit {position:absolute;top:67px;width:100%;text-align:center;color:#fff;font-weight:700;font-size:20px;}
+.puzzle .cont_02 .puzzleIndex {position:absolute;top:114px;left:82px;color:#fff;font-size:16px;font-weight:700;}
+.puzzle .cont_02 .puzzleIndex strong{margin-right:9px;padding-right:15px;font-weight:700;background:url('../../images/event/20180213/ico_index.png') no-repeat right 50%;}
+.puzzle .cont_02 .myPuzzle {position:absolute;top:113px;left:645px;width:70px;color:#fff;font-size:19px;font-weight:700;}
+
+.puzzle #puzzleContainer {position:relative;width:651px;margin:0 auto;}
+.puzzle #puzzleContainer .pure-u-1 {position:relative;padding:15px 0;}
+.puzzle #puzzleContainer .snappuzzle-slot {position:absolute;background:#fff;opacity:0.8;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";filter:alpha(opacity=80);}
+.puzzle #puzzleContainer .pzpan {padding-top:0;margin-bottom:10px;}
+.puzzle #puzzleContainer .pzpiece {height:327px;}
+.puzzle #puzzleContainer .lowie{text-align:center;padding-top:70px;}
+.puzzle #puzzleContainer #puzzleSolved {position:absolute;top:0;left:0;width:651px;height:296px;padding-top:70px;z-index:1000;text-align:center;background:url('../../images/event/20180213/cont_solved.png') repeat 0 0;}
+.puzzle #puzzleContainer #puzzleSolved a {display:block;}
+
+.puzzle .cont_03 {position:relative;margin-top:-48px;background:#102b56;}
+.puzzle .cont_03 a {position:absolute;top:127px;display:block;width:255px;height:40px;font-size:0;border-radius:20px;background:#fff32b;opacity:0;filter:alpha(opacity='0');}
+.puzzle .cont_03 a.btnDown_01 {left:158px;width:252px;}
+.puzzle .cont_03 a.btnDown_02 {left:420px;width:193px;}
+
+/* notice */
+.puzzle .notice {padding:35px 39px 30px 35px;background-color:#323c83;}
+.puzzle .notice ul{padding-top:15px;}
+.puzzle .notice li{margin-top:5px;padding-left:15px;color:#fff;font-weight:600;line-height:1.8;font-size:13px;background:url('../../images/event/20170911/bul.png') no-repeat 0 8px;}
+.puzzle .notice li:first-child{margin-top:0;}
+.puzzle .notice li .point{color:#ffd95b;}
+
+/* 이벤트 종료 */
+.puzzle.end .top .btn_win{position:absolute;top:643px;left:57px;display:block;width:325px;height:70px;font-size:0;border-radius:35px;background:#043674;opacity:0;filter:alpha(opacity='0');}
+.puzzle.end .top .btn_info_insert{position:absolute;top:643px;left:394px;display:block;width:313px;height:70px;font-size:0;border-radius:35px;background:#f1592a;opacity:0;filter:alpha(opacity='0');}
+.puzzle.end .top .total{position:absolute;top:545px;left:590px;display:block;width:100px;font-weight:900;color:#f1592a;font-size:20px;letter-spacing:-1px;}
+.puzzle.end .top .myScore{position:absolute;top:585px;left:560px;display:block;width:100px;font-weight:900;color:#f1592a;font-size:20px;letter-spacing:-1px;}
+
+/* 배너 */
+.bottomBan {margin-top:20px;}
+.bottomBan a {display:block;float:left;}
+.bottomBan a + a {float:right;}
+.bottomBan + div {clear:both;}

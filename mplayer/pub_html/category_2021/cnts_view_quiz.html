@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div class="event_banner banner_2108" style="display:none">
+	<a href="#"><i class="blind">수학 에너지 FULL 충전! 선풍기 ON! 이벤트 바로가기</i></a>
+	<span class="today_close">
+		<span class="mo_hide"><input type="checkbox" name="today_event"> 1일 동안 보지 않기</span> <button type="button" class="btn_bnr_hide"><i class="blind">이벤트 배너 닫기</i></button>
+	</div>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<section class="course_top el">
+			<div class="wrap">
+				<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+				<h2 class="tit_course_m" onclick="openCrsList()">초등수학 <strong class="stit_course_m">초등학교 6학년</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+				<ul class="crs_list">
+					<li><a href="#">초등학교 3학년</a></li>
+					<li><a href="#">초등학교 4학년</a></li>
+					<li><a href="#">초등학교 5학년</a></li>
+					<li><a href="#">초등학교 6학년</a></li>
+				</ul>
+			</div>
+		</section>
+		<article class="course_view">
+			<div class="wrap">
+				<!-- 콘텐츠 타입 <h3 class="tagA"><mark class="stk">영상</mark>
+				<h3 class="tagB"><mark class="stk">문제강의</mark>
+				<h3 class="tagC"><mark class="stk">웹툰</mark>
+				<h3 class="tagD"><mark class="stk">게임</mark>
+				<h3 class="tagE"><mark class="stk">이미지</mark>
+				<h3 class="tagF"><mark class="stk">지식카드</mark>
+				<h3 class="tagG"><mark class="stk">문제세트 게임</mark>
+				<h3 class="tagH"><mark class="stk">문제,문제지</mark>
+				<h3 class="tagI"><mark class="stk">시리즈</mark>
+				<h3 class="tagJ"><mark class="stk">중학콘텐츠</mark> -->
+
+				<h3 class="tagH"><mark class="stk">문제</mark><em>순환마디의 숫자의 개수가 적은 볼을 뽑아라</em></h3>
+				<section class="view_info">
+					<ul>
+						<li class="num_view">1,000</li>
+						<li class="num_fav"><button type="button">좋아요</button> 1,000</li><!-- 2021-11-09 수정 -->
+						<li><button type="button" class="btn_zzim" onclick="bookmarkCnt()"><span>찜하기</span></button></li><!-- 2021-11-09 수정 -->
+						<li><button type="button" class="btn_sns"><span>sns공유</span></button></li><!-- 2021-11-09 수정 -->
+					</ul>
+					
+					<span class="con_opt">
+						<button class="btn_content btn_grading">채점</button>
+					</span>
+				</section>
+
+				<section class="content_view">
+					<!--s: 2021-11-09 문제 영역 -->
+					<div class="test_area">
+
+
+						<!-- S : 문제은행영역-->
+						<link rel="stylesheet" type="text/css" href="https://ebsmath.co.kr/common/innovativepot/math2016/css/sub.css">
+						<div>
+							<div>
+
+								<!-- 오답노트 미리보기 제목 -->
+								<div id="title" style="display:none;"></div>
+								<!-- //오답노트 미리보기 제목 -->
+
+								<!-- package_top -->
+								<div class="mgb20">
+
+									<span class="bottom_2_line" id="preview_bottom_2_line" style="display:none;"></span>
+
+									<div class="tools">
+										<span class="fl" style="display:none;">
+											<button type="button" class="prev" onclick="ItemPoolControl.PreviousItem();">이전</button>
+											<button type="button" class="next" onclick="ItemPoolControl.NextItem();">다음</button>
+										</span>
+										<span class="fr">
+											<!-- <button type="button" class="percent">100%</button>
+											<button type="button" class="expand">확대</button>
+											<button type="button" class="reduce">축소</button> -->
+											<button type="button" class="score" onclick="" style="cursor: default;">채점</button>
+											<button type="button" class="tmpsave" onclick="ItemPoolControl.ScoreMethod(true);" style="display: none;">임시저장</button>
+											<button type="button" class="print" onclick="goPrintForm();" style="display: none;">인쇄</button>
+										</span>
+									</div>
+								</div>
+								<!-- //package_top -->
+
+								<!-- 평가서비스 -->
+								<div class="pyeongga_wrap" id="pyeongga_wrap_content">
+								<!-- 답안 카드 영역 -->
+								<div class="anscard" style="display: none;">
+									<p class="ans_top">답안지<span class="cnt" id="ans_cnt" style="">정답 <strong>0</strong>/1</span></p>
+									<div class="ans_con">
+										<div class="ans_list">
+											<ul class="tb_th">
+												<li>번호</li>
+												<li>선택지</li>
+											</ul>
+											<div style="height: 120px;">
+												<table summary="">
+													<caption></caption>
+													<colgroup>
+														<col width="50px">
+														<col width="140px">
+													</colgroup>
+													<!-- //OMR -->
+													<tbody id="omr_body">
+													<tr><td><div>1<em name="qz_num_1" class="x"></em></div></td><td><ul class="answer horiz"><li name="omr_1" iscorrectanswer="False"><div class="as_num odd" id="omr_num_1_1"><em>①</em></div></li><li name="omr_1" iscorrectanswer="False"><div class="as_num checking" id="omr_num_1_2"><em>②</em><strong class="mine">내가 선택한 답</strong></div></li><li name="omr_1" iscorrectanswer="True"><div class="as_num" id="omr_num_1_3"><em>③</em><strong class="correct">정답</strong></div></li><li name="omr_1" iscorrectanswer="False"><div class="as_num" id="omr_num_1_4"><em>④</em></div></li><li name="omr_1" iscorrectanswer="False"><div class="as_num" id="omr_num_1_5"><em>⑤</em></div></li></ul></td></tr></tbody>
+													<!-- //OMR -->
+
+													<!-- //오답노트 미리보기용 OMR -->
+													<!-- <tbody id="preview_omr_body" style="display:none;">
+													</tbody> -->
+													<!-- //오답노트 미리보기용 OMR -->
+
+												</table>
+											</div>
+										</div>
+										<div class="ans_ref">
+											<span class="mine">내 답</span>
+											<span class="corr">정답</span>
+										</div>
+									</div>
+								</div>
+								<!-- //답안 카드 영역 -->
+
+								<fieldset>
+								<legend>문제</legend>
+
+								<!-- //응시화면 -->
+								<div id="divItemPool"><div class="pyeongga_con detail" onclick=""><div class="qz_wrap" onclick=""><div style="line-height:130%;" name="divLML" itemid="1095" groupid="NaN" point="5" hassound="false" soundurl="" paperdetailid="1095" itemnumber="1" onclick=""><div class="div_qzwrap" onclick=""><div style="line-height:130%;" name="divQuestion" onclick=""><div style="line-height:130%;" name="divParagraph" onclick=""><span class="qz_num x" name="qz_num_1">1. </span><span style="white-space:pre-wrap;font-size:16px;line-height:130%;">다음 중 옳은 것은?</span></div><div class="answer" onclick=""><ol iscorrectall="True"><li class="dontsplit odd" name="paper_answer_1" iscorrectanswer="False" onclick=""><div class="as_num" id="as_num_1_1" onclick=""><em>①</em></div><p class="as_txt"><div style="line-height:130%;" name="divParagraph" onclick=""><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 113%; text-align: center; position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mo>6</mo></math>" role="presentation"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-4" class="mjx-mrow"><span id="MJXc-Node-5" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">3</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.59em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-6" class="mjx-mrow" style=""><span id="MJXc-Node-7" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span></span><span id="MJXc-Node-8" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.062em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-9" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">6</span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mo>6</mo></math></span></span></span><script type="math/mml" id="MathJax-Element-1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <msup>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+									  </msup>
+									  <mo>=</mo>
+									  <mo>6</mo>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:18px;line-height:130%;">&nbsp;</span></div></p></li><li class="dontsplit" name="paper_answer_1" iscorrectanswer="False" onclick=""><div class="as_num checking" id="as_num_1_2" onclick=""><em>②</em><strong class="mine">내가 선택한 답</strong></div><p class="as_txt"><div style="line-height:130%;" name="divParagraph" onclick=""><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-2-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 113%; text-align: center; position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mn>5</mn><mo>&amp;#xD7;</mo><mn>5</mn><mo>&amp;#xD7;</mo><mn>5</mn><msup><mrow><mo>=</mo><mo>3</mo></mrow><mrow><mn>5</mn></mrow></msup></math>" role="presentation"><span id="MJXc-Node-10" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-11" class="mjx-mrow"><span id="MJXc-Node-12" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span><span id="MJXc-Node-13" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-14" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span><span id="MJXc-Node-15" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-16" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span><span id="MJXc-Node-17" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-18" class="mjx-mrow"><span id="MJXc-Node-19" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.062em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-20" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">3</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.59em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-21" class="mjx-mrow" style=""><span id="MJXc-Node-22" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>5</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>5</mn><msup><mrow><mo>=</mo><mo>3</mo></mrow><mrow><mn>5</mn></mrow></msup></math></span></span></span><script type="math/mml" id="MathJax-Element-2"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mn>5</mn>
+									  <mo>×</mo>
+									  <mn>5</mn>
+									  <mo>×</mo>
+									  <mn>5</mn>
+									  <msup>
+										<mrow>
+										  <mo>=</mo>
+										  <mo>3</mo>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </msup>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:18px;line-height:130%;">&nbsp;</span></div></p></li><li class="dontsplit odd" name="paper_answer_1" iscorrectanswer="True" onclick=""><div class="as_num" id="as_num_1_3" onclick=""><em>③</em><strong class="correct">정답</strong></div><p class="as_txt"><div style="line-height:130%;" name="divParagraph" onclick=""><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-3-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 113%; text-align: center; position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>a</mi><mo>&amp;#xD7;</mo><mi>a</mi><mo>&amp;#xD7;</mo><mi>a</mi><mo>&amp;#xD7;</mo><mi>b</mi><mo>&amp;#xD7;</mo><mi>b</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>&amp;#xD7;</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup></math>" role="presentation"><span id="MJXc-Node-23" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-24" class="mjx-mrow"><span id="MJXc-Node-25" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">a</span></span><span id="MJXc-Node-26" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-27" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">a</span></span><span id="MJXc-Node-28" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-29" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">a</span></span><span id="MJXc-Node-30" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-31" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.475em; padding-bottom: 0.298em;">b</span></span><span id="MJXc-Node-32" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-33" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.475em; padding-bottom: 0.298em;">b</span></span><span id="MJXc-Node-34" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.062em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-35" class="mjx-msup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-36" class="mjx-mrow"><span id="MJXc-Node-37" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">a</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-38" class="mjx-mrow" style=""><span id="MJXc-Node-39" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">3</span></span></span></span></span><span id="MJXc-Node-40" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-41" class="mjx-msup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-42" class="mjx-mrow"><span id="MJXc-Node-43" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.475em; padding-bottom: 0.298em;">b</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-44" class="mjx-mrow" style=""><span id="MJXc-Node-45" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>a</mi><mo>×</mo><mi>a</mi><mo>×</mo><mi>a</mi><mo>×</mo><mi>b</mi><mo>×</mo><mi>b</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>×</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup></math></span></span></span><script type="math/mml" id="MathJax-Element-3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mi>a</mi>
+									  <mo>×</mo>
+									  <mi>a</mi>
+									  <mo>×</mo>
+									  <mi>a</mi>
+									  <mo>×</mo>
+									  <mi>b</mi>
+									  <mo>×</mo>
+									  <mi>b</mi>
+									  <mo>=</mo>
+									  <msup>
+										<mrow>
+										  <mi>a</mi>
+										</mrow>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+									  </msup>
+									  <mo>×</mo>
+									  <msup>
+										<mrow>
+										  <mi>b</mi>
+										</mrow>
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+									  </msup>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:18px;line-height:130%;">&nbsp;</span></div></p></li><li class="dontsplit" name="paper_answer_1" iscorrectanswer="False" onclick=""><div class="as_num" id="as_num_1_4" onclick=""><em>④</em></div><p class="as_txt"><div style="line-height:130%;" name="divParagraph" onclick=""><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-4-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 113%; text-align: center; position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>x</mi><mo>+</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></math>" role="presentation"><span id="MJXc-Node-46" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-47" class="mjx-mrow"><span id="MJXc-Node-48" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-49" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.416em;">+</span></span><span id="MJXc-Node-50" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-51" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.416em;">+</span></span><span id="MJXc-Node-52" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-53" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.062em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-54" class="mjx-msup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-55" class="mjx-mrow"><span id="MJXc-Node-56" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.239em; padding-bottom: 0.298em;">x</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-57" class="mjx-mrow" style=""><span id="MJXc-Node-58" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">3</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>x</mi><mo>+</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></math></span></span></span><script type="math/mml" id="MathJax-Element-4"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mi>x</mi>
+									  <mo>+</mo>
+									  <mi>x</mi>
+									  <mo>+</mo>
+									  <mi>x</mi>
+									  <mo>=</mo>
+									  <msup>
+										<mrow>
+										  <mi>x</mi>
+										</mrow>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+									  </msup>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:18px;line-height:130%;">&nbsp;</span></div></p></li><li class="dontsplit odd" name="paper_answer_1" iscorrectanswer="False" onclick=""><div class="as_num" id="as_num_1_5" onclick=""><em>⑤</em></div><p class="as_txt"><div style="line-height:130%;" name="divParagraph" onclick=""><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-5-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" style="font-size: 113%; text-align: center; position: relative;" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mfrac linethickness=&quot;1&quot;><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>&amp;#xD7;</mo><mfrac linethickness=&quot;1&quot;><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>&amp;#xD7;</mo><mfrac linethickness=&quot;1&quot;><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac linethickness=&quot;1&quot;><mrow><mn>8</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mspace width=&quot;0.2em&quot; /></math>" role="presentation"><span id="MJXc-Node-59" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-60" class="mjx-mrow"><span id="MJXc-Node-61" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.7em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.7em; top: -1.368em;"><span id="MJXc-Node-62" class="mjx-mrow"><span id="MJXc-Node-63" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span><span class="mjx-denominator" style="width: 0.7em; bottom: -0.733em;"><span id="MJXc-Node-64" class="mjx-mrow"><span id="MJXc-Node-65" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.287em; width: 0.7em;"></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-66" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-67" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 0.7em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.7em; top: -1.368em;"><span id="MJXc-Node-68" class="mjx-mrow"><span id="MJXc-Node-69" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span><span class="mjx-denominator" style="width: 0.7em; bottom: -0.733em;"><span id="MJXc-Node-70" class="mjx-mrow"><span id="MJXc-Node-71" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.287em; width: 0.7em;"></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-72" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.18em; padding-bottom: 0.357em;">×</span></span><span id="MJXc-Node-73" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 0.7em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.7em; top: -1.368em;"><span id="MJXc-Node-74" class="mjx-mrow"><span id="MJXc-Node-75" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">2</span></span></span></span><span class="mjx-denominator" style="width: 0.7em; bottom: -0.733em;"><span id="MJXc-Node-76" class="mjx-mrow"><span id="MJXc-Node-77" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.287em; width: 0.7em;"></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-78" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.062em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-79" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 0.7em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.7em; top: -1.368em;"><span id="MJXc-Node-80" class="mjx-mrow"><span id="MJXc-Node-81" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">8</span></span></span></span><span class="mjx-denominator" style="width: 0.7em; bottom: -0.733em;"><span id="MJXc-Node-82" class="mjx-mrow"><span id="MJXc-Node-83" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.357em; padding-bottom: 0.357em;">5</span></span></span></span><span class="mjx-line" style="border-bottom: 1.3px solid; top: -0.287em; width: 0.7em;"></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-84" class="mjx-mspace" style="width: 0.2em; height: 0px;"></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mfrac linethickness="1"><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>×</mo><mfrac linethickness="1"><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>×</mo><mfrac linethickness="1"><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac linethickness="1"><mrow><mn>8</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mspace width="0.2em"></mspace></math></span></span></span><script type="math/mml" id="MathJax-Element-5"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mfrac linethickness="1">
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>×</mo>
+									  <mfrac linethickness="1">
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>×</mo>
+									  <mfrac linethickness="1">
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>=</mo>
+									  <mfrac linethickness="1">
+										<mrow>
+										  <mn>8</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mspace width="0.2em"></mspace>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:18px;line-height:130%;">&nbsp;</span></div></p></li></ol></div><div class="mark" name="divExplanation" style="" onclick=""><div class="right_as" onclick=""><strong>정답<img src="/common/innovativepot/math2016/images/common/icon_gt2.png" alt=""></strong><ul><li id="input_answer_1_3" onclick=""><span style="font-size: 19px;">③</span> <span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-6-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>a</mi><mo>&amp;#xD7;</mo><mi>a</mi><mo>&amp;#xD7;</mo><mi>a</mi><mo>&amp;#xD7;</mo><mi>b</mi><mo>&amp;#xD7;</mo><mi>b</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>&amp;#xD7;</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup></math>" role="presentation" style="font-size: 98%; text-align: center; position: relative;"><span id="MJXc-Node-85" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-86" class="mjx-mrow"><span id="MJXc-Node-87" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.207em; padding-bottom: 0.276em;">a</span></span><span id="MJXc-Node-88" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.207em; padding-bottom: 0.344em;">×</span></span><span id="MJXc-Node-89" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.207em; padding-bottom: 0.276em;">a</span></span><span id="MJXc-Node-90" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.207em; padding-bottom: 0.344em;">×</span></span><span id="MJXc-Node-91" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.207em; padding-bottom: 0.276em;">a</span></span><span id="MJXc-Node-92" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.207em; padding-bottom: 0.344em;">×</span></span><span id="MJXc-Node-93" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.48em; padding-bottom: 0.276em;">b</span></span><span id="MJXc-Node-94" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.207em; padding-bottom: 0.344em;">×</span></span><span id="MJXc-Node-95" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.48em; padding-bottom: 0.276em;">b</span></span><span id="MJXc-Node-96" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.071em; padding-bottom: 0.344em;">=</span></span><span id="MJXc-Node-97" class="mjx-msup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-98" class="mjx-mrow"><span id="MJXc-Node-99" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.207em; padding-bottom: 0.276em;">a</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-100" class="mjx-mrow" style=""><span id="MJXc-Node-101" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.412em; padding-bottom: 0.344em;">3</span></span></span></span></span><span id="MJXc-Node-102" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.207em; padding-bottom: 0.344em;">×</span></span><span id="MJXc-Node-103" class="mjx-msup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-104" class="mjx-mrow"><span id="MJXc-Node-105" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.48em; padding-bottom: 0.276em;">b</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-106" class="mjx-mrow" style=""><span id="MJXc-Node-107" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.412em; padding-bottom: 0.344em;">2</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>a</mi><mo>×</mo><mi>a</mi><mo>×</mo><mi>a</mi><mo>×</mo><mi>b</mi><mo>×</mo><mi>b</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msup><mo>×</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup></math></span></span></span><script type="math/mml" id="MathJax-Element-6"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mi>a</mi>
+									  <mo>×</mo>
+									  <mi>a</mi>
+									  <mo>×</mo>
+									  <mi>a</mi>
+									  <mo>×</mo>
+									  <mi>b</mi>
+									  <mo>×</mo>
+									  <mi>b</mi>
+									  <mo>=</mo>
+									  <msup>
+										<mrow>
+										  <mi>a</mi>
+										</mrow>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+									  </msup>
+									  <mo>×</mo>
+									  <msup>
+										<mrow>
+										  <mi>b</mi>
+										</mrow>
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+									  </msup>
+									</math></script></span>&nbsp;</li></ul></div><div class="detail_aswrap" onclick=""><span class="explain"><img src="/common/innovativepot/math2016/images/common/explain_title.png" alt="해설"></span><ul class="detail_as"><li onclick="">정답률 : 82.6</li><li onclick="">배점 : 5</li><li id="myScore_1" onclick="">점수 : 0</li><li name="liExplanation" id="liExplanation_1" class="more" onclick=""><div style="line-height:130%;" name="divParagraph" onclick=""><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">① </span><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-7-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>=9</mo><mspace /></math>" role="presentation" style="font-size: 122%; text-align: center; position: relative;"><span id="MJXc-Node-108" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-109" class="mjx-mrow"><span id="MJXc-Node-110" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-111" class="mjx-mrow"><span id="MJXc-Node-112" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">3</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.59em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-113" class="mjx-mrow" style=""><span id="MJXc-Node-114" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span></span></span></span><span id="MJXc-Node-115" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">=9</span></span><span id="MJXc-Node-116" class="mjx-mspace" style="width: 0px; height: 0px;"></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup><mo>=9</mo><mspace></mspace></math></span></span></span><script type="math/mml" id="MathJax-Element-7"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <msup>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+									  </msup>
+									  <mo>=9</mo>
+									  <mspace></mspace>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:13px;line-height:130%;"> </span></div><div style="line-height:130%;" name="divParagraph" onclick=""><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">② </span><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-8-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mn>5</mn><mo>&amp;#xD7;</mo><mn>5</mn><mo>&amp;#xD7;</mo><mn>5</mn><msup><mrow><mo>=5</mo></mrow><mrow><mn>3</mn></mrow></msup></math>" role="presentation" style="font-size: 122%; text-align: center; position: relative;"><span id="MJXc-Node-117" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-118" class="mjx-mrow"><span id="MJXc-Node-119" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span><span id="MJXc-Node-120" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-121" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span><span id="MJXc-Node-122" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-123" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span><span id="MJXc-Node-124" class="mjx-msup MJXc-space3"><span class="mjx-base"><span id="MJXc-Node-125" class="mjx-mrow"><span id="MJXc-Node-126" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">=5</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-127" class="mjx-mrow" style=""><span id="MJXc-Node-128" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">3</span></span></span></span></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>5</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>5</mn><msup><mrow><mo>=5</mo></mrow><mrow><mn>3</mn></mrow></msup></math></span></span></span><script type="math/mml" id="MathJax-Element-8"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mn>5</mn>
+									  <mo>×</mo>
+									  <mn>5</mn>
+									  <mo>×</mo>
+									  <mn>5</mn>
+									  <msup>
+										<mrow>
+										  <mo>=5</mo>
+										</mrow>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+									  </msup>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">&nbsp;</span></div><div style="line-height:130%;" name="divParagraph" onclick=""><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">④ </span><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-9-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>x</mi><mo>+</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><mn>3</mn><mi>x</mi><mspace /></math>" role="presentation" style="font-size: 122%; text-align: center; position: relative;"><span id="MJXc-Node-129" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-130" class="mjx-mrow"><span id="MJXc-Node-131" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.208em; padding-bottom: 0.277em;">x</span></span><span id="MJXc-Node-132" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.277em; padding-bottom: 0.413em;">+</span></span><span id="MJXc-Node-133" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.208em; padding-bottom: 0.277em;">x</span></span><span id="MJXc-Node-134" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.277em; padding-bottom: 0.413em;">+</span></span><span id="MJXc-Node-135" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.208em; padding-bottom: 0.277em;">x</span></span><span id="MJXc-Node-136" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.072em; padding-bottom: 0.345em;">=</span></span><span id="MJXc-Node-137" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">3</span></span><span id="MJXc-Node-138" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.208em; padding-bottom: 0.277em;">x</span></span><span id="MJXc-Node-139" class="mjx-mspace" style="width: 0px; height: 0px;"></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>x</mi><mo>+</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>=</mo><mn>3</mn><mi>x</mi><mspace></mspace></math></span></span></span><script type="math/mml" id="MathJax-Element-9"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mi>x</mi>
+									  <mo>+</mo>
+									  <mi>x</mi>
+									  <mo>+</mo>
+									  <mi>x</mi><mo>=</mo><mn>3</mn><mi>x</mi>
+									  <mspace></mspace>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">&nbsp;</span></div><div style="line-height:130%;" name="divParagraph" onclick=""><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">⑤ </span><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-10-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mfrac linethickness=&quot;&quot;><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>&amp;#xD7;</mo><mfrac linethickness=&quot;&quot;><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>&amp;#xD7;</mo><mfrac linethickness=&quot;&quot;><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac linethickness=&quot;&quot;><mrow><mn>2</mn><mo>&amp;#xD7;</mo><mn>2</mn><mo>&amp;#xD7;</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>&amp;#xD7;</mo><mn>5</mn><mo>&amp;#xD7;</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac linethickness=&quot;&quot;><mrow><msup><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow><mrow><msup><mrow><mn>5</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfrac linethickness=&quot;&quot;><mrow><mn>8</mn></mrow><mrow><mn>125</mn></mrow></mfrac><mspace /></math>" role="presentation" style="font-size: 122%; text-align: center; position: relative;"><span id="MJXc-Node-140" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-141" class="mjx-mrow"><span id="MJXc-Node-142" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 0.5em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.5em; top: -1.368em;"><span id="MJXc-Node-143" class="mjx-mrow"><span id="MJXc-Node-144" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span></span></span><span class="mjx-denominator" style="width: 0.5em; bottom: -0.733em;"><span id="MJXc-Node-145" class="mjx-mrow"><span id="MJXc-Node-146" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span></span></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-147" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-148" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 0.5em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.5em; top: -1.368em;"><span id="MJXc-Node-149" class="mjx-mrow"><span id="MJXc-Node-150" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span></span></span><span class="mjx-denominator" style="width: 0.5em; bottom: -0.733em;"><span id="MJXc-Node-151" class="mjx-mrow"><span id="MJXc-Node-152" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span></span></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-153" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-154" class="mjx-mfrac MJXc-space2"><span class="mjx-box MJXc-stacked" style="width: 0.5em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.5em; top: -1.368em;"><span id="MJXc-Node-155" class="mjx-mrow"><span id="MJXc-Node-156" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span></span></span><span class="mjx-denominator" style="width: 0.5em; bottom: -0.733em;"><span id="MJXc-Node-157" class="mjx-mrow"><span id="MJXc-Node-158" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span></span></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-159" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.072em; padding-bottom: 0.345em;">=</span></span><span id="MJXc-Node-160" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 3.945em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 3.945em; top: -1.368em;"><span id="MJXc-Node-161" class="mjx-mrow"><span id="MJXc-Node-162" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span><span id="MJXc-Node-163" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-164" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span><span id="MJXc-Node-165" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-166" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span></span></span><span class="mjx-denominator" style="width: 3.945em; bottom: -0.733em;"><span id="MJXc-Node-167" class="mjx-mrow"><span id="MJXc-Node-168" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span><span id="MJXc-Node-169" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-170" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span><span id="MJXc-Node-171" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.208em; padding-bottom: 0.345em;">×</span></span><span id="MJXc-Node-172" class="mjx-mn MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span></span></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-173" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.072em; padding-bottom: 0.345em;">=</span></span><span id="MJXc-Node-174" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 0.889em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 0.889em; top: -1.582em;"><span id="MJXc-Node-175" class="mjx-mrow"><span id="MJXc-Node-176" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-177" class="mjx-mrow"><span id="MJXc-Node-178" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">2</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-179" class="mjx-mrow" style=""><span id="MJXc-Node-180" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">3</span></span></span></span></span></span></span><span class="mjx-denominator" style="width: 0.889em; bottom: -0.733em;"><span id="MJXc-Node-181" class="mjx-mrow"><span id="MJXc-Node-182" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-183" class="mjx-mrow"><span id="MJXc-Node-184" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">5</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.591em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-185" class="mjx-mrow" style=""><span id="MJXc-Node-186" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">3</span></span></span></span></span></span></span></span><span class="mjx-vsize" style="height: 2.315em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-187" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.072em; padding-bottom: 0.345em;">=</span></span><span id="MJXc-Node-188" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 1.5em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 1.5em; top: -1.368em;"><span id="MJXc-Node-189" class="mjx-mrow"><span id="MJXc-Node-190" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">8</span></span></span></span><span class="mjx-denominator" style="width: 1.5em; bottom: -0.733em;"><span id="MJXc-Node-191" class="mjx-mrow"><span id="MJXc-Node-192" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">125</span></span></span></span></span><span class="mjx-vsize" style="height: 2.1em; vertical-align: -0.733em;"></span></span><span id="MJXc-Node-193" class="mjx-mspace" style="width: 0px; height: 0px;"></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mfrac linethickness=""><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>×</mo><mfrac linethickness=""><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>×</mo><mfrac linethickness=""><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac linethickness=""><mrow><mn>2</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>2</mn></mrow><mrow><mn>5</mn><mo>×</mo><mn>5</mn><mo>×</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac linethickness=""><mrow><msup><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow><mrow><msup><mrow><mn>5</mn></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac><mo>=</mo><mfrac linethickness=""><mrow><mn>8</mn></mrow><mrow><mn>125</mn></mrow></mfrac><mspace></mspace></math></span></span></span><script type="math/mml" id="MathJax-Element-10"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mfrac linethickness="">
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>×</mo>
+									  <mfrac linethickness="">
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>×</mo>
+									  <mfrac linethickness="">
+										<mrow>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>=</mo>
+									  <mfrac linethickness="">
+										<mrow>
+										  <mn>2</mn>
+										  <mo>×</mo>
+										  <mn>2</mn>
+										  <mo>×</mo>
+										  <mn>2</mn>
+										</mrow>
+										<mrow>
+										  <mn>5</mn>
+										  <mo>×</mo>
+										  <mn>5</mn>
+										  <mo>×</mo>
+										  <mn>5</mn>
+										</mrow>
+									  </mfrac>
+									  <mo>=</mo>
+									  <mfrac linethickness="">
+										<mrow>
+										  <msup>
+											<mrow>
+											  <mn>2</mn>
+											</mrow>
+											<mrow>
+											  <mn>3</mn>
+											</mrow>
+										  </msup>
+										</mrow>
+										<mrow>
+										  <msup>
+											<mrow>
+											  <mn>5</mn>
+											</mrow>
+											<mrow>
+											  <mn>3</mn>
+											</mrow>
+										  </msup>
+										</mrow>
+									  </mfrac>
+									  <mo>=</mo>
+									  <mfrac linethickness="">
+										<mrow>
+										  <mn>8</mn>
+										</mrow>
+										<mrow>
+										  <mn>125</mn>
+										</mrow>
+									  </mfrac>
+									  <mspace></mspace>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:13px;line-height:130%;">&nbsp;</span></div></li></ul></div></div><div name="divHint" onclick=""><fieldset name="Hint" id="Hint_1" style="display:none;"><legend>힌트</legend><div style="line-height:130%;" name="divParagraph" onclick=""><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-11-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><msup><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msup><mspace /></math>" role="presentation" style="font-size: 122%; text-align: center; position: relative;"><span id="MJXc-Node-194" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-195" class="mjx-mrow"><span id="MJXc-Node-196" class="mjx-msup"><span class="mjx-base"><span id="MJXc-Node-197" class="mjx-mrow"><span id="MJXc-Node-198" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.208em; padding-bottom: 0.277em;">a</span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.584em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-199" class="mjx-mrow" style=""><span id="MJXc-Node-200" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.413em; padding-bottom: 0.345em;">3</span></span></span></span></span><span id="MJXc-Node-201" class="mjx-mspace" style="width: 0px; height: 0px;"></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msup><mrow><mi>a</mi></mrow><mrow><mn>3</mn></mrow></msup><mspace></mspace></math></span></span></span><script type="math/mml" id="MathJax-Element-11"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <msup>
+										<mrow>
+										  <mi>a</mi>
+										</mrow>
+										<mrow>
+										  <mn>3</mn>
+										</mrow>
+									  </msup>
+									  <mspace></mspace>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:16px;line-height:130%;">은 </span><span style="width:100%;padding-right:0px"><span style="display: inline-block;"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-12-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="<math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;><mi>a</mi><mspace /></math>" role="presentation" style="font-size: 122%; text-align: center; position: relative;"><span id="MJXc-Node-202" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-203" class="mjx-mrow"><span id="MJXc-Node-204" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.208em; padding-bottom: 0.277em;">a</span></span><span id="MJXc-Node-205" class="mjx-mspace" style="width: 0px; height: 0px;"></span></span></span><span class="MJX_Assistive_MathML MJX_Assistive_MathML_Block" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>a</mi><mspace></mspace></math></span></span></span><script type="math/mml" id="MathJax-Element-12"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+									  <mi>a</mi>
+									  <mspace></mspace>
+									</math></script></span></span><span style="white-space:pre-wrap;font-size:16px;line-height:130%;">를 세 번 곱한 것이다.</span></div></fieldset></div></div></div></div><div class="btn_func" onclick=""><button type="button" class="btn-hint" onclick="layer_open(&quot;hint_layer&quot;,1);return false;">힌트보기</button><button type="button" class="btn-error" onclick="errorReport(&quot;1095&quot;,&quot;1&quot;);">수학 학습 해결소</button></div></div></div></div>
+									<!-- //응시화면 -->
+
+									<!-- //프린트용 -->
+									<div id="divItemPoolPrint" style="display:none;">
+									</div>
+									<!-- //프린트용 -->
+
+									</fieldset>
+								</div>
+								<!-- //평가서비스 -->
+
+								<!-- 하단바 추가 -->
+								<div class="tools" id="bottomTools" style="display:none">
+									<span class="fr">
+										<button type="button" class="score" onclick="" style="cursor: default;">채점</button>
+										<button type="button" class="tmpsave" onclick="ItemPoolControl.ScoreMethod(true);" style="display: none;">임시저장</button>
+										<button type="button" class="print" onclick="goPrintForm();" style="display: none;">인쇄</button>
+									</span>
+								</div>
+								<!-- //하단바 추가 -->
+
+								<!-- pagination -->
+								<div class="pagination" id="paging">
+								</div>
+								<!-- //pagination -->
+							</div>
+							<!-- //content_set -->
+						</div>
+						<!-- E : 문제은행영역-->
+
+						<div class="pagination">
+							<a class="first arrow" href="#"><i class="blind">처음</i></a>
+							<a class="prev arrow" href="#"><i class="blind">이전</i></a>
+							<a class="on" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a class="next arrow" href="#"><i class="blind">다음</i></a>
+							<a class="last arrow" href="#"><i class="blind">마지막</i></a>
+						</div>
+
+						<p><button class="btn_content btn_grading">채점</button></p>
+
+
+						<div class="commentary" style="">
+							<h4>해설강의</h4>
+						</div>
+					</div>
+					<!--e: 2021-11-09 문제 영역 -->
+
+				</section>
+				
+
+			</div>
+		</article>
+
+		<!--s : 2021-11-09 추천 및 다른 콘텐츠 탭-->
+		<section class="other_con">
+			<div class="tab_wrap">
+				<ul class="tab">
+					<li class="active"><a id="tab_othcon1" href="#otherCon01" role="tab" aria-controls="otherCon01" aria-selected="true">선생님<br>해설</a></li>
+					<li><a id="tab_othcon2" href="#otherCnt02" role="tab" aria-controls="otherCon02" aria-selected="false">추천<br>콘텐츠</a></li>
+					<li><a id="tab_othcon3" href="#otherCon03" role="tab" aria-controls="otherCon03" aria-selected="false">이 교과분류의<br> 다른 콘텐츠</a></li>
+					<li><a id="tab_othcon4" href="#otherCon04" role="tab" aria-controls="otherCon04" aria-selected="false">EBS 중학<br> 콘텐츠</a></li>
+				</ul>
+			</div>
+			<div class="list_result">
+				<div class="wrap">
+					<div id="otherCon01" class="recom_list on" tabindex="0" role="tabpanel" aria-labelledby="tab_othcon1">
+						<ul class="list_con">
+							<!-- s: 2021-11-09  콘텐츠 박스 전체적으로 수정 -->
+							<li class="cnt_item">
+								<div class="box_snip tagA"> 
+									<a href="#34">
+										<span class="thumbnail">
+											 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지"><span class="runtime">07:27</span>
+										</span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수</div>
+									</a>
+								</div>
+							</li>
+							<!--// s: 2021-11-09 수정 -->
+							<li class="cnt_item">
+								<div class="box_snip tagB chk">
+									<a href="#1">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지" class="swiper-lazy"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">그래프</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagD">
+									<a href="#131">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagB chk">
+									<a href="#1">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">그래프</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+									<ul id="pop_fncont2" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+										<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+										<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
+										<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+										<li class="close"><button type="button">닫기</button></li>
+									</ul>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagD">
+									<a href="#131">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagD">
+									<a href="#131">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+
+						<p><button class="btn_more_con" type="button"><span>arrow</span><em class="more">추천 콘텐츠 더보기</em><em class="fold">추천 콘텐츠 접기</em></button></p><!-- 2021-11-09 수정 -->
+					</div>
+					<div id="otherCnt02" class="recom_list" tabindex="0" role="tabpanel" aria-labelledby="tab_othcon2">
+						<ul class="list_con">
+							<li class="cnt_item">
+								<div class="box_snip tagA"> 
+									<a href="#34">
+										<span class="thumbnail">
+											 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지"><span class="runtime">07:27</span>
+										</span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										
+										<div class="bottom">이차함수</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagB chk">
+									<a href="#1">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지" class="swiper-lazy"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">그래프</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+
+						<p><button class="btn_more_con" type="button"><span>arrow</span><em class="more">추천 콘텐츠 더보기</em><em class="fold">추천 콘텐츠 접기</em></button></p>
+					</div>
+					<div id="otherCon03" class="recom_list" tabindex="0" role="tabpanel" aria-labelledby="tab_othcon3">
+						<ul class="list_con">
+							<li class="cnt_item">
+								<div class="box_snip tagA"> 
+									<a href="#34">
+										<span class="thumbnail">
+											 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지"><span class="runtime">07:27</span>
+										</span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										
+										<div class="bottom">이차함수</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagB chk">
+									<a href="#1">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지" class="swiper-lazy"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">그래프</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+
+						<p><button class="btn_more_con" type="button"><span>arrow</span><em class="more">추천 콘텐츠 더보기</em><em class="fold">추천 콘텐츠 접기</em></button></p>
+					</div>
+					<div id="otherCon04" class="recom_list" tabindex="0" role="tabpanel" aria-labelledby="tab_othcon4">
+						<ul class="list_con">
+							<li class="cnt_item">
+								<div class="box_snip tagA"> 
+									<a href="#34">
+										<span class="thumbnail">
+											 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지"><span class="runtime">07:27</span>
+										</span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										
+										<div class="bottom">이차함수</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagB chk">
+									<a href="#1">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지" class="swiper-lazy"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">그래프</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+							<li class="cnt_item">
+								<div class="box_snip tagC"> 
+									<a href="#2">
+										<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
+										<mark class="stk"><i class="blind">영상</i></mark>
+										<div class="bottom">이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+
+						<p><button class="btn_more_con" type="button"><span>arrow</span><em class="more">추천 콘텐츠 더보기</em><em class="fold">추천 콘텐츠 접기</em></button></p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!--//e : 2021-11-09  추천 및 다른 콘텐츠 탭-->
+
+		<!--s: 2021-11-09 콘텐츠 설명 -->
+		<section class="explanation">
+			<div class="wrap">
+				<div class="intro">
+					이상한 나라의 앨리스(1865)라는 동화책을 읽어본 적이 있나요?<br>
+					이 동화에는 곳곳에 수학적 내용이 숨어 있습니다.<br>
+					동화를 더욱 흥미진진하게 만들어 준 수학적인 내용에 어떤 것들이 있었는지 동영상을 통해 알아봅시다.
+				</div>
+
+				<details open> 
+					<summary><span>arrow</span><em class="more">내용 더보기</em><em class="fold">내용 접기</em></summary><!-- 2021-11-09 수정 -->
+					<div class="detail_con">
+						<div>
+							삼각형을 그리는 기본 작도에는 선분의 이동, 각의 이동 등이 있다.<br>
+							이 중 각의 이동이 성립하는 이유는 바로 세 쌍의 대응변의 길이가 각각 같으면<br>
+							두 삼각형이 합동이 되기 때문이다. <br>
+							또 다음 그림과 같이 각의 이등분선의 작도 역시 세 쌍의 대응변의 길이가 각각 같으면<br>
+							두 삼각형이 합동이 되기 때문에 가능하다.<br>
+
+							<p><img src="https://ebsmath.co.kr/innovativelrms/web_lrms/upload/editor/1428385561850.png" alt=""></p>
+
+							그렇다면 75° 크기의 각도 작도할 수 있을까? <br>
+							가능하다. 평각인 180°를 이등분하여 90°, 다시 45° 크기의 각을 작도할 수 있다.<br>
+							또 정삼각형을 작도하면 한 내각의 크기가 60°이므로 이 각을 이등분하여<br>
+							30° 크기의 각을 작도할 수 있고 각의 이동을 통해 75° 크기의 각을 작도할 수 있다. 
+						</div>
+						<dl>
+							<dt>만든 사람들</dt>
+							<dd>
+							◇ 기획 : EBS<br>
+							◇ 연구<br>
+							내용연구 : 신지영(숭곡중), 노창균(서울사대부중), 주우진(서울사대부고)<br>
+							감수 : 강소영, 정혜윤<br><br>
+							◇ 제작<br>
+							제작 : EBS<br>
+							그래픽 : 양스마일픽쳐스<br>
+							PD : 채수영<br>
+							원고/구성 : 진세연</dd>
+							<dt>부가 정보</dt>
+							<dd>
+							- 재미있는 수학여행 1 (김용운)<br>
+							- 수학상점 (신수현)<br>
+							- 피타고라스 음률 (정경훈, 네이버캐스트)</dd>
+						</dl>
+					</div>
+				</details>
+
+				<p class="hashtag">
+					<a href="#none">달의 무게</a>, <a href="#none">마라톤</a>, <a href="#none">비빔밥의 열량</a>, <a href="#none">시간과 거리 그래프</a>, <a href="#none">우주복</a>, <a href="#none">중력</a>, <a href="#none">표</a>,
+					<a href="#none">함수의 그래프</a>, <a href="#none">함수의 식 구하기</a>, <a href="#none">함숫값 구하기</a>
+				</p>
+			</div>
+		</section>
+		<!--//e: 콘텐츠 설명 -->
+
+
+		<!-- 팝업 : 공유하기 -->
+		<div id="pop_share_sns" class="pop_share_sns">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3>공유하기</h3>
+					<ul>
+						<li class="f"><a href="#"><i class="blind">페이스북</i></a></li>
+						<li class="t"><a href="#"><i class="blind">트위터</i></a></li>
+						<li class="k"><a href="#"><i class="blind">카카오톡</i></a></li>
+					</ul>
+
+					<span class="urlcopy">
+						<input type="text" size="20" name="" value="https://ebsmath.co.kr/resource/rscView?cate=10091&cate2=10272&cate3=10505&rscTpDscd=RTP14&grdCd=EGRD06&sortType=&mngtPrdnYn=&menuType=t&itemSize=&level=&type=S&sno=29615&historyYn=study">
+						<button type="button">복사</button>
+					</span>
+					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 : 공유하기-->
+
+		<!-- 팝업 : 학습기록삭제 -->
+		<div id="pop_del_stdlog" class="pop_del_stdlog  pop_rel_con">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3>학습기록삭제</h3>
+					<div class="std_list_wrap">
+						<h4>초등 &gt 1학기</h4>
+						<ul class="pop_scroll">
+							<li>
+								<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname" id="stdname1">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname2"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname2">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname3"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname4"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname" id="stdname5">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname6"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname6">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname7"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname8"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+						</ul>
+					</div>
+					<dl class="bottom">
+						<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label for="sel_all">전체선택</label></dt>
+						<dd><button type="button" class="btn_content btn_del_rcd">학습기록삭제</button></dd>
+					</dl>
+					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 : 학습기록삭제 -->
+
+		<!-- 팝업 : 다운로드 -->
+		<div id="pop_download" class="pop_download pop_rel_con">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3>다운로드</h3>
+					<div class="std_list_wrap">
+						<h4>초등 &gt 1학기</h4>
+						<ul class="pop_scroll">
+							<li>
+								<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname" id="stdname1">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname2"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname2">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname3"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname4"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname" id="stdname5">소수의 성질 - 소수 완전정복</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname6"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname6">ONLY,ONE, 소수</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li>
+								<label for="stdname7"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
+								<span class="date">2021.09.14</span>
+							</li>
+							<li><label for="stdname8"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+								<span class="date">2021.09.14</span>
+							</li>
+						</ul>
+					</div>
+					<dl class="bottom">
+						<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label for="sel_all">전체선택</label></dt>
+						<dd>
+							<select>
+								<option>화질선택</option>
+								<option>고화질</option>
+								<option>일반화질</option>
+							</select>
+							<button type="button" class="btn_content btn_download">다운로드</button>
+						</dd>
+					</dl>
+					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 :다운로드 -->
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+
+$(document).ready(function(){
+	$('.other_con .tab li').on('click', 'a', function(e) {
+		e.preventDefault(); 
+
+		var tabIdx = $(this).parent().index();
+		var contbox = $(this).attr("href");
+		$(contbox).siblings(".recom_list").removeClass("on")
+		$(contbox).addClass("on");
+
+		$(this).parent().siblings().removeClass('active')
+		$(this).parent().addClass('active')
+	});
+	/* 2021-11-09 추천 */
+	$(".btn_more_con").on("click", function(e) {
+		$(this).closest(".recom_list").toggleClass("open");
+		$(this).toggleClass("on")
+	});
+
+	/* 2021-11-09 좋아요 */
+	$(".num_fav button").on("click", function(e) {
+		$(this).toggleClass("on");
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* 이벤트 */
+.sns-sharing-evt{position:relative;}
+.sns-sharing-evt .top{position:relative;}
+.sns-sharing-evt .snswrap{position:absolute; top:30px; right:45px;}
+.sns-sharing-evt .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.sns-sharing-evt .snswrap .fb a{background-position:0 0;}
+.sns-sharing-evt .snswrap .tw a{background-position:-41px 0;}
+.sns-sharing-evt .snswrap .kko a{background-position:-82px 0;}
+
+.sns-sharing-evt .evtcon_wrap{position:relative;}
+.sns-sharing-evt .evtcon_wrap .eventbtn{position:absolute; top:23px; left:448px; display:inline-block; width:244px; height:57px; border-radius:30px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.sns-sharing-evt .evt-end-info{position: relative;}
+.sns-sharing-evt .evt-end-info img{display: block;}
+.sns-sharing-evt .evt-end-info .count{position: absolute; top:40px; right:70px; font-weight:bold; font-size:18px; color:#fff38c;}
+.sns-sharing-evt .evt-end-info .btn-inquiry{position: absolute; top:121px; left:48px; display: inline-block; width:211px; height:58px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.sns-sharing-evt .evt-end-info .btn-enter{position: absolute; top:121px; left:270px; display: inline-block; width:278px; height:58px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+.sns-sharing-evt .gift-info{position:relative;}
+.sns-sharing-evt .gift-info .btn-lens{position:absolute; top:170px; right:90px; display: inline-block;}
+.sns-sharing-evt .gift-info .acc{position: absolute; bottom:-128px; left:34px; display: inline-block;}
+.sns-sharing-evt .gift-info.end{position:relative;}
+.sns-sharing-evt .gift-info.end .acc{position: absolute; top:-84px; left:564px; display: inline-block;}
+
+.sns-sharing-evt .semi-facebook{position: relative;}
+.sns-sharing-evt .semi-facebook a.btn-facebook{position: absolute; bottom: 85px; left:70px; display:block; width: 262px; height:53px;
+background-color: #fff;
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); opacity: 0;
+}
+
+.sns-sharing-evt .evtcon{position:relative; width:763px; background:url('../../images/event/20170119/img_bg.jpg') repeat-y;}
+.sns-sharing-evt .pagination{margin-top:0px; padding-bottom: 30px;}
+.sns-sharing-evt .evtcon .check-write{position:absolute; top:23px; right:50px;}
+/*.sns-sharing-evt .evtcon .check-write:before{content:''; display: inline-block; width:5px; height:26px; margin-bottom:-4px; border-left:1px solid #d0d5d8; vertical-align: middle;}*/
+
+.sns-sharing-evt .reply-count-box{position:absolute; top:-44px; right:154px; width: 95px; height: 26px; background: url('../../images/event/20170119/box_count.png') no-repeat;}
+.sns-sharing-evt .reply-count-box.log-in{right:154px;}
+.sns-sharing-evt .reply-count-box.log-out{right:40px;}
+
+.sns-sharing-evt .evtcon .reply-count{position:absolute; top:4px; right:27px; font-size:14px; font-weight: bold; color:#ffffff;}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked{position: absolute; left:-9999px;}
+[type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label{position:relative; padding-left:25px; cusor:pointer;}
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before{content:''; position:absolute; left:0; top:-1px; width:17px; height:17px; border:1px solid #bbb; background: #fff; border-radius: 3px;}
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after{content:''; position:absolute; top:1px left:4px; width:11px; height: 9px; background-image: url('../../images/event/20170119/input_check.png');}
+
+/* 학습카드 선택 */
+.sns-sharing-evt .evt-select{position:relative;}
+.sns-sharing-evt .evt-select .grade_btn{position:absolute; top:86px; left:61px; *zoom:1;}
+.sns-sharing-evt .evt-select .grade_btn:after{content:''; clear:both; display:block;}
+.sns-sharing-evt .evt-select .grade_btn li{float:left; margin-left:20px;}
+.sns-sharing-evt .evt-select .grade_btn li:first-child{margin-left:0;}
+.sns-sharing-evt .evt-select .grade_btn a{display:inline-block; height:45px; font-size:0; line-height:0;  vertical-align:top; background:url(../../images/event/20170119/btn_grade.png) no-repeat 0 0;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="1"] a{width:130px; background-position:0 0;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="1"] a.on,
+.sns-sharing-evt .evt-select .grade_btn [data-index="1"] a:hover{background-position:0 -155px;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="2"] a{width:100px; background-position:-150px 0;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="2"] a.on,
+.sns-sharing-evt .evt-select .grade_btn [data-index="2"] a:hover{background-position:-150px -155px;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="3"] a{width:100px; background-position:-270px 0;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="3"] a.on,
+.sns-sharing-evt .evt-select .grade_btn [data-index="3"] a:hover{background-position:-270px -155px;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="4"] a{width:100px; background-position:-390px 0;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="4"] a.on,
+.sns-sharing-evt .evt-select .grade_btn [data-index="4"] a:hover{background-position:-390px -155px;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="5"] a{width:130px; background-position:-510px 0;}
+.sns-sharing-evt .evt-select .grade_btn [data-index="5"] a.on,
+.sns-sharing-evt .evt-select .grade_btn [data-index="5"] a:hover{background-position:-510px -155px;}
+
+/* 이벤트 댓글 */
+.sns-sharing-evt .replay-wrap{padding:0px 35px;}
+.sns-sharing-evt .list-reply{border-bottom: 1px solid #d0d5d8;}
+.sns-sharing-evt .list-reply>li{border-top: 1px solid #d0d5d8; padding:16px 30px;}
+.sns-sharing-evt .list-reply>li{position:relative;}
+.sns-sharing-evt .list-reply>li.item-modify{background-color: #f4f7f9;}
+.sns-sharing-evt .list-reply>li.item-modify .name{color:#446ba1;}
+.sns-sharing-evt .list-reply>li .modify-setting{position:absolute; top:55%; right:30px;}
+.sns-sharing-evt .list-reply>li.item-modify .modify-setting{position:absolute; top:65px; right:30px;}
+.sns-sharing-evt .list-reply>li .modify-setting a{font-weight: bold; font-size: 13px; color:#5677a8; vertical-align: middle;}
+.sns-sharing-evt .list-reply>li .modify-setting .delete{content:''; display: inline-block; width:5px; height:12px; margin-top:2px; border-left:1px solid #d9dee2; margin-left:5px; vertical-align:middle;}
+.sns-sharing-evt .list-reply>li.none{text-align: center; font-weight: 600; color:#446ba1;}
+
+
+.sns-sharing-evt .list-reply .reply-info{overflow: hidden; clear:both; font-size: 15px; font-weight: 600;color:#6b6b6b;}
+.sns-sharing-evt .list-reply .reply-info .name{float:left;}
+.sns-sharing-evt .list-reply .reply-info .date{float:right;}
+.sns-sharing-evt .list-reply .normal{width: 545px; margin-top:10px; word-break: break-all;}
+
+/* notice */
+.sns-sharing-evt .notice{position:relative; padding:28px 25px 25px 34px; background:#1e4d8e;}
+.sns-sharing-evt .notice ul{padding-top:15px;}
+.sns-sharing-evt .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#87a6d5; letter-spacing:-1px; background:url(../../images/event/20170119/bul_notice.png) no-repeat 0 9px;}
+.sns-sharing-evt .notice li:first-child{margin-top:0;}
+.sns-sharing-evt .notice li a.point{color:#704f20;}
+
+
+
+/* modal */
+#modal {position: fixed;left: 0; top: 0;right: 0;bottom: 0;z-index: 100000;}
+#modal.on {display: block;}
+#modal.off {display: none;}
+.layer {position:absolute;left:50%;top:55%; margin-left:-355px; margin-top:-355px; z-index: 10;}
+.modal-dimmed {position: absolute;left: 0;top: 0;right: 0;bottom: 0;background: url(../../images/event/20170119/modal_bg.png);z-index: 5;}
+
+.popwrap{width: 710px; height:719px; background:url(../../images/event/20170119/popup/img_popup_bg.png) no-repeat;}
+.popwrap p{padding:25px;}
+.popwrap .header{position: relative;}
+.popwrap .btn-close{position:absolute; top:25px; right:25px; background-color: #fff;}

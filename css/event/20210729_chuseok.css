@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.chuseok {position:relative; width:763px; overflow:hidden}
+.chuseok .snswrap {position:absolute; top:25px; right:27px; background:url('../../images/event/20210729/icon_sns.png') right 0 no-repeat; width:140px; height:28px;}
+.chuseok .snswrap a {float:left;  width:28px; height:28px; font-size:0; line-height:0; margin-left:7px}
+.chuseok .top,
+.chuseok .top.before,
+.chuseok .top.end {position:relative}
+.chuseok .top.before .btn_apply,
+.chuseok .top .btn_apply {display:block; position:absolute; top:747px; right:54px;}
+
+.chuseok .top [class^="btn_winner"] {display:block; position:absolute; top:747px; right:54px;}
+.chuseok .top [class^="btn_winner"]::after {content:""; display:block; position:absolute; z-index:1000; }
+.chuseok .top .btn_winner2::after {width:150px; height:53px; right:5px; top:-60px; background:url('../../images/event/20210729/bub_winner2.png') 0 0 no-repeat;}
+.chuseok .top .btn_winner3::after {width:210px; height:53px; right:-25px; top:-60px; background:url('../../images/event/20210729/bub_winner3.png') 0 0 no-repeat;}
+.chuseok .top::before {content:""; display:block; position:absolute; top:30px; left:30px; width:106px; height:16px; background:url('../../images/event/20210729/logo.png') 0 0 no-repeat;}
+
+.chuseok .gift, .chuseok .howto {position:relative}
+
+.chuseok .eventArea .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.7; width:100%; height:100%; z-index: 1000;}
+.chuseok .eventArea .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-450px 0; z-index: 1001}
+.chuseok .eventArea.end .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-160px 0}
+
+
+.chuseok .eventArea {position:relative; background:url('../../images/event/20210729/bg_content.jpg') 0 0 no-repeat;}
+.chuseok .eventArea .math_contents {padding:90px 0; text-align:center}
+.chuseok .eventArea .tab_cnt {overflow:hidden; width:566px; height:41px; margin:43px auto}
+.chuseok .eventArea .tab_cnt li {float:left; width:134px; height:100%; margin-left:10px; background-image:url('../../images/event/20210729/tab_cont.png'); background-repeat:no-repeat}
+
+.chuseok .eventArea .tab_cnt li a {display:block; width:100%;height:100%; text-indent: -9999px;}
+.chuseok .eventArea .tab_cnt li:first-child {margin-left:0; background-position:0 0;}
+.chuseok .eventArea .tab_cnt li:nth-child(2) {background-position:-144px 0;}
+.chuseok .eventArea .tab_cnt li:nth-child(3) {background-position:-288px 0;}
+.chuseok .eventArea .tab_cnt li:nth-child(4) {background-position:-432px 0;}
+.chuseok .eventArea .tab_cnt li:first-child:hover {background-position:0 -43px;}
+.chuseok .eventArea .tab_cnt li:nth-child(2):hover {background-position:-144px -43px;}
+.chuseok .eventArea .tab_cnt li:nth-child(3):hover {background-position:-288px -43px;}
+.chuseok .eventArea .tab_cnt li:nth-child(4):hover {background-position:-432px -43px;}
+
+.chuseok .eventArea .main_event {background:url('../../images/event/20210729/bg_mainevent.jpg') repeat-y; }
+.chuseok .eventArea .main_event .pound {height:615px; background:url('../../images/event/20210729/bg_moon.png') 0 0 no-repeat; position:relative; z-index:1}
+.chuseok .eventArea .main_event .pound::after {content:""; display:block; width:144px; height:144px; position:absolute; bottom:-2px; left:240px; background-repeat:no-repeat; background-position:0 0; z-index:1}
+.chuseok .eventArea .main_event .pound.step1::after {background-image:url('../../images/event/20210729/img_jar1.png');}
+.chuseok .eventArea .main_event .pound.step2::after {background-image:url('../../images/event/20210729/img_jar2.png');}
+.chuseok .eventArea .main_event .pound.step3::after {background-image:url('../../images/event/20210729/img_jar3.png');}
+.chuseok .eventArea .main_event .pound.step4::after {background-image:url('../../images/event/20210729/img_jar4.png');}
+
+.chuseok .eventArea .main_event .pound .rabbit {display:block; width:285px; height:327px; position:absolute; top:250px; left:380px; background-repeat:no-repeat; background-position:0 0; z-index:100; transform:rotate(0deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on:first-child {left:268px}
+
+.chuseok .eventArea .main_event .pound.step1 .rabbit {background-image:url('../../images/event/20210729/img_rabbit_a_1.png');}
+.chuseok .eventArea .main_event .pound.step2 .rabbit {background-image:url('../../images/event/20210729/img_rabbit_a_2.png');}
+.chuseok .eventArea .main_event .pound.step3 .rabbit {background-image:url('../../images/event/20210729/img_rabbit_a_3.png');}
+.chuseok .eventArea .main_event .pound.step4 .rabbit {background-image:url('../../images/event/20210729/img_rabbit_a_4.png');}
+
+.chuseok .eventArea .main_event .pound .get_sp {display:block; position:absolute;background-position:0 0; background-repeat:no-repeat;}
+.chuseok .eventArea .main_event .pound.step1 .get_sp {width:128px; height:131px; top:220px; left:250px; background-image:url('../../images/event/20210729/img_get1.png');}
+.chuseok .eventArea .main_event .pound.step2 .get_sp {width:189px; height:131px; top:220px; left:200px; background-image:url('../../images/event/20210729/img_get2.png');}
+.chuseok .eventArea .main_event .pound.step3 .get_sp {width:249px; height:188px; top:220px; left:200px; background-image:url('../../images/event/20210729/img_get3.png');}
+.chuseok .eventArea .main_event .pound.step4 .get_sp {width:363px; height:267px; top:170px; left:90px; background-image:url('../../images/event/20210729/img_get4.png');}
+
+.chuseok .eventArea .main_event .pound .rabbit.on {right:auto; left:280px; width:354px; top:255px; height:315px;}
+.chuseok .eventArea .main_event .pound.step1 .rabbit.on {background-image:url('../../images/event/20210729/img_rabbit_b_1.png');}
+.chuseok .eventArea .main_event .pound.step2 .rabbit.on {background-image:url('../../images/event/20210729/img_rabbit_b_2.png');}
+.chuseok .eventArea .main_event .pound.step3 .rabbit.on {background-image:url('../../images/event/20210729/img_rabbit_b_3.png');}
+.chuseok .eventArea .main_event .pound.step4 .rabbit.on {background-image:url('../../images/event/20210729/img_rabbit_b_4.png'); }
+.chuseok .eventArea .main_event .pound [class*="clone"] {opacity:0.5;}
+
+.chuseok .eventArea .main_event .pound .rabbit:first-child {transform:scale(1) rotate(0); transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone1 {left:295px; transform:scale(0.704) rotate(0); z-index:99; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone2 {left:322px; transform:scale(0.61952) rotate(0); z-index:98; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone3 {left:349px; transform:scale(0.545178) rotate(0); z-index:97; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone4 {left:376px; transform:scale(0.479756) rotate(0); z-index:96; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone5 {left:403px; transform:scale(0.422186) rotate(0); z-index:95; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone6 {left:430px; transform:scale(0.371523) rotate(0); z-index:94; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone7 {left:457px; transform:scale(0.32694) rotate(0); z-index:93; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone8 {left:484px; transform:scale(0.287708) rotate(0);z-index:92; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone9 {left:511px; transform:scale(0.253183) rotate(0); z-index:91; transition:transform 0.5s 1s;}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone10 {left:538px; transform:scale(0.222801) rotate(0); z-index:90; transition:transform 0.5s 1s;}
+
+.chuseok .eventArea .main_event .pound.step2 .rabbit.on.clone1 {left:325px;top:240px}
+.chuseok .eventArea .main_event .pound.step3 .rabbit.on.clone1 {left:325px;top:230px}
+.chuseok .eventArea .main_event .pound.step3 .rabbit.on.clone2 {left:352px;top:225px}
+.chuseok .eventArea .main_event .pound.step3 .rabbit.on.clone3 {left:379px;top:220px}
+.chuseok .eventArea .main_event .pound.step3 .rabbit.on.clone4 {left:406px;top:215px}
+
+.chuseok .eventArea .main_event .pound .rabbit.transn:first-child {transition:transform 0.5s 1s; transform:scale(1) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone1.transn {transition:transform 0.5s 1s; transform:scale(0.704) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone2.transn {transition:transform 0.5s 1s; transform:scale(0.61952) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone3.transn {transition:transform 0.5s 1s; transform:scale(0.545178) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone4.transn {transition:transform 0.5s 1s; transform:scale(0.479756) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone5.transn {transition:transform 0.5s 1s; transform:scale(0.422186) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone6.transn {transition:transform 0.5s 1s; transform:scale(0.371523) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone7.transn {transition:transform 0.5s 1s; transform:scale(0.32694) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone8.transn {transition:transform 0.5s 1s; transform:scale(0.287708) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone9.transn  {transition:transform 0.5s 1s; transform:scale(0.253183) rotate(-20deg);}
+.chuseok .eventArea .main_event .pound .rabbit.on.clone10.transn {transition:transform 0.5s 1s; transform:scale(0.222801) rotate(-20deg);}
+
+.chuseok .eventArea .main_event .pound .bubble {display:block; width:185px; height:96px; position:absolute; top:204px; left:262px; background:url('../../images/event/20210729/tooltip_pound.png') 0 0 no-repeat; z-index:101}
+.chuseok .eventArea .main_event h3 {text-align:center; padding:60px 0 30px}
+.chuseok .eventArea .main_event .my_status {width:705px; height:139px; box-sizing:border-box; background:url('../../images/event/20210729/bg_status2.png') 0 0 no-repeat; margin:0 auto; position:relative }
+.chuseok .eventArea .main_event .my_status2 {width:705px; height:109px; box-sizing:border-box; background:url('../../images/event/20210729/bg_mystatus.png') 0 0 no-repeat; margin:0 auto; padding:30px 0 0 200px}
+.chuseok .eventArea .main_event .my_status2 * {display:inline-block;}
+.chuseok .eventArea .main_event .my_status2 dt {width:197px; height:50px; background:url('../../images/event/20210729/txt_get_sp2.png') 0 0 no-repeat;}
+.chuseok .eventArea .main_event .my_status2 dd {font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#eb4747; font-weight:bold; vertical-align:top; line-height:52px; margin-left:4px}
+.chuseok .eventArea .main_event .my_status2 dd::after {content:""; display:inline-block; width:23px; height:24px; background:url('../../images/event/20210729/txt_get_sp.png') -244px -11px no-repeat; position: relative; top:2px; margin-left:3px}
+
+.chuseok .eventArea .main_event .my_status > li {position:absolute;}
+.chuseok .eventArea .main_event .my_status > li em,
+.chuseok .eventArea .main_event .my_status > li strong {display:inline-block}
+.chuseok .eventArea .main_event .my_status > li.txt1 {left:133px; top:40px}
+.chuseok .eventArea .main_event .my_status > li.txt1 em {width:75px; height:22px; background:url('../../images/event/20210729/txt_total_studynum.png') 0 0 no-repeat; margin-right:10px}
+.chuseok .eventArea .main_event .my_status > li.txt1 strong {font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#eb4747; font-weight:bold; }
+.chuseok .eventArea .main_event .my_status > li.txt1 strong:after {content:""; display:inline-block; width:22px; height:22px; background:url('../../images/event/20210729/txt_total_studynum.png') -148px 0 no-repeat}
+.chuseok .eventArea .main_event .my_status > li.txt2 {left:133px; top:73px}
+.chuseok .eventArea .main_event .my_status > li.txt2 em {width:97px; height:19px; background:url('../../images/event/20210729/txt_pound_num.png') 0 0 no-repeat; margin-right:10px}
+.chuseok .eventArea .main_event .my_status > li.txt2 strong {font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#eb4747; font-weight:bold; }
+.chuseok .eventArea .main_event .my_status > li.txt3 {left:493px; top:55px}
+.chuseok .eventArea .main_event .my_status > li.txt3 em {width:76px; height:24px; background:url('../../images/event/20210729/txt_get_sp.png') 0 0 no-repeat; margin-right:10px}
+.chuseok .eventArea .main_event .my_status > li.txt3 strong {font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#eb4747; font-weight:bold; }
+.chuseok .eventArea .main_event .my_status > li.txt3 strong:after {content:""; display:inline-block; width:23px; height:26px; background:url('../../images/event/20210729/txt_get_sp.png') -130px 0 no-repeat; margin-top:2px; vertical-align:top }/*e : 2021-08-30 수정*/
+
+
+
+.chuseok .eventArea .main_event h4 {text-align: center; padding:30px 0}
+.chuseok .eventArea .main_event .calendar {width:704px; height:446px; background:url('../../images/event/20210729/img_calendar.png') 0 0 no-repeat; margin:0 auto; padding-top:72px}
+.chuseok .eventArea .main_event .calendar table {width:579px; margin:0 auto}
+
+.chuseok .eventArea .main_event .calendar table,
+.chuseok .eventArea .main_event .calendar th,
+.chuseok .eventArea .main_event .calendar td {border-collapse:separate; }
+
+.chuseok .eventArea .main_event .calendar th {width:81px; height:29px; empty-cells:show;}
+.chuseok .eventArea .main_event .calendar td {width:81px; height:76px; empty-cells:show; padding:30px 0 0 10px; box-sizing: border-box; white-space:nowrap; vertical-align:top}
+.chuseok .eventArea .main_event .calendar td .get_sp {display:block; width:24px; height:17px; background:url('../../images/event/20210729/img_sp.png') 0 0 no-repeat; padding-left:30px;  color:#9a5a6a; font-weight:bold; font-family: Verdana,Tahoma, sans-serif; letter-spacing:-1px;}
+.chuseok .eventArea .main_event .calendar td .app_gift {display:block; font-size:10px; font-weight:800; color:#eb4747; margin-top:7px}
+
+.chuseok .eventArea.end .main_event{padding-bottom:88px}
+.chuseok .eventArea.end .main_event .bonus_result {width:705px; height:109px; box-sizing:border-box; background:url('../../images/event/20210729/bg_mystatus.png') 0 0 no-repeat; margin:0 auto; padding:30px 0 0 0; text-align:center; margin-top:20px}
+.chuseok .eventArea.end .main_event .bonus_result * {display:inline-block;}
+.chuseok .eventArea.end .main_event .bonus_result dt {width:153px; height:26px; background:url('../../images/event/20210729/txt_bonus_result.png') 0 0 no-repeat}
+.chuseok .eventArea.end .main_event .bonus_result dd {font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#eb4747; font-weight:bold; line-height:52px; margin-left:4px}
+.chuseok .eventArea.end .main_event .bonus_result dd strong {letter-spacing:-1px}
+.chuseok .eventArea.end .main_event .bonus_result dd span {background-image:url('../../images/event/20210729/txt_bonus_result.png'); background-repeat:no-repeat; text-indent:-9999px; font-size:0; vertical-align:top; margin-top:10px}
+.chuseok .eventArea.end .main_event .bonus_result dd span.txt_date1 {width:25px; height:26px; background-position:-203px 0}
+.chuseok .eventArea.end .main_event .bonus_result dd span {background-image:url('../../images/event/20210729/txt_bonus_result.png'); background-repeat:no-repeat}
+.chuseok .eventArea.end .main_event .bonus_result dd span.txt_date2 {width:80px; height:26px; background-position:-263px 0}
+
+
+.chuseok  .bonus_event {background:url('../../images/event/20210729/bonus_event.png') 0 0 no-repeat; height:563px; position:relative;}
+.chuseok  .bonus_event [class^="bonus_winner"] {position:absolute; display:block; left:0; top:223px; width:763px; height:195px;}
+.chuseok  .bonus_event .bonus_winner1 {background:url('../../images/event/20210729/btn_bonus1.png') 0 0 no-repeat;}
+.chuseok  .bonus_event .bonus_winner2 {background:url('../../images/event/20210729/btn_bonus2.png') 0 0 no-repeat;}
+.chuseok  .bonus_event .bonus_winner3 {background:url('../../images/event/20210729/btn_bonus3.png') 0 0 no-repeat;}
+.chuseok  .bonus_event .bonus_winner4 {background:url('../../images/event/20210729/btn_bonus4.png') 0 0 no-repeat;}
+.chuseok  .bonus_event .bonus_winner1 button {display:block; width:384px; height:133px; margin:11px 0 0 191px; text-indent:-9999px; font-size:0 }
+
+
+
+/* notice */
+.chuseok .notice {padding:35px 0 30px 50px; background-color:#2f3031;}
+.chuseok .notice ul {padding-top:10px;}
+.chuseok .notice li {margin-top:5px; padding-left:12px; color:#ffffff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20210607/bul.png') no-repeat 0 10px; letter-spacing:-0.5px;}
+.chuseok .notice li .point {color:#ffc13b;}
+
+.chuseok .event_wrapper {position:relative}
+.chuseok .event_wrapper .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%; z-index: 1000;}
+.chuseok .event_wrapper .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-450px 0; z-index: 1001}
+.chuseok .event_wrapper.end .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-160px 0}

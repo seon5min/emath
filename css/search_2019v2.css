@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+* {margin:0; padding:0}
+
+body {overflow-x:hidden; font-size:12px}
+*:first-child+html body{height:auto;}
+fieldset {border:0; background:0}
+fieldset legend {position:absolute; width:0; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden}
+ul, li, ol {list-style:none}
+a {text-decoration:none}
+a:hover {text-decoration:underline}
+.accessibilityWrap {position:absolute; width:0; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden}
+em {font-style:normal}
+img {border:0}
+.hiddenItem {overflow: hidden; visibility: hidden; height: 0px; font-size: 0; line-height: 0;}
+.txt_c{text-align:center;}
+.bd_b{border-bottom:1px dashed #c4ced9;}
+.pdb20{padding-bottom:20px;}
+.pdb30{padding-bottom:30px;}
+
+#reNSeachWrap2015 select{opacity:100; appearance:menulist; -webkit-appearance:menulist;}
+
+#reNSeachWrap2015 {background:#f4f4f4}
+#reNSeachWrap2015 .wrap_footer {width:100%; height:200px; margin-top:50px; background:#fff; border-top:1px solid #9ca4b0}
+#reNSeachWrap2015 .wrap_footer .footer {width:1000px; margin:0 auto; padding-bottom:15px}
+#reNSeachWrap2015 .hide {overflow:hidden; position:absolute; left:-1000% !important; top:0; width:1px; height:1px; font-size:0.1%; line-height:0.1%}
+#reNSeachWrap2015 .keyword {color:#e62f2f !important; font-weight:bold !important; margin-right:2px;}
+#reNSeachWrap2015 .keyword em{display:inline-block; max-width:90px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; vertical-align:bottom;}
+#reNSeachWrap2015 .roundbox {float:left; min-width:60px; height:16px; margin:0 5px 0 0; padding:0 3px; text-align:center; background:#9ca4b0; border-radius:2px; color:#fff; font-size:11px; font-family:Dotum; line-height:17px; letter-spacing:-1px; font-weight:normal}
+#reNSeachWrap2015 .btn_moreview {clear:both; margin:20px 0 0 0; text-align:right}
+#reNSeachWrap2015 .btn_moreview a {padding:0 8px 0 0; background:url('../images/search/icon_arr_02.png') no-repeat 100% 50%; color:#4085cb; font-size:13px; text-decoration:underline}
+#reNSeachContainer .ichkbox {float:left; width:18px; height:18px; margin-right:6px; cursor:pointer; background:url('../images/search/icon_ichkbox_off.png') no-repeat 0 0}
+#reNSeachContainer .ichkbox input.checkbox {opacity:0; filter:alpha(opacity="0"); width:18px; height:18px;}
+#reNSeachContainer .ichkbox.on {background:url('../images/search/icon_ichkbox_on.png') no-repeat 0 0}
+#reNSeachContainer .iradiobox {float:left; width:24px; height:18px; background:url('../images/search/icon_iradiobox_off.jpg') no-repeat 0 0}
+#reNSeachContainer .iradiobox input.radio {opacity:0; filter:alpha(opacity="0")}
+#reNSeachContainer .iradiobox.on {background:url('../images/search/icon_iradiobox_on.jpg') no-repeat 0 0}
+#reNSeachContainer .paging {clear:both; overflow:hidden; margin:40px auto 5px; text-align:center; font-size:0}
+#reNSeachContainer .paging a {display:inline-block; min-width:20px; height:24px; margin:0 2px 0 0; padding:0 3px; text-align:center; border:1px solid #fff; color:#676767; font-size:13px; line-height:24px; font-weight:bold}
+#reNSeachContainer .paging a.on {border:1px solid #da3321; color:#da3321}
+#reNSeachContainer .paging a:hover {border:1px solid #da3321; color:#da3321; text-decoration:none}
+#reNSeachContainer .paging button {display:inline-block; width:28px; height:26px; margin-left:4px; text-indent:-99999px}
+#reNSeachContainer .paging button.btn_pag_next {background:url('http://image.ebsi.co.kr/ebsi/search/images/btn_pag_next.jpg') no-repeat 0 0}
+#reNSeachContainer .paging button.btn_pag_end {background:url('http://image.ebsi.co.kr/ebsi/search/images/btn_pag_end.jpg') no-repeat 0 0}
+#reNSeachContainer .paging button.btn_pag_prev {margin:0 4px; background:url('http://image.ebsi.co.kr/ebsi/search/images/btn_pag_prev.jpg') no-repeat 0 0}
+#reNSeachContainer .paging button.btn_pag_first {background:url('http://image.ebsi.co.kr/ebsi/search/images/btn_pag_first.jpg') no-repeat 0 0}
+#reNSeachHeader {position:relative; z-index:50; width:100%; padding:0; margin:0 auto; background:#fff url('../images/search/bg_searchbody_01.jpg') repeat-x 0 101px}
+#reNSeachHeader:after {display:block; clear:both; content:''}
+#reNSeachHeader ul.gnb {position:absolute; left:0; top:0; height:32px}
+#reNSeachHeader ul.gnb li {float:left; padding:0 10px; line-height:32px}
+#reNSeachHeader ul.gnb li a {color:#9ba3af; font-size:12px}
+#reNSeachHeader ul.gnb li.eclass {width:125px; height:32px; margin:0 5px 0 0}
+#reNSeachHeader ul.gnb li.eclass a {display:block; width:100%; height:32px; text-align:center; background:#9ca4b0; color:#fff}
+#reNSeachHeader ul.gnb li.logo_ebs {margin-left:200px; padding:4px 0 0 0; font-size:0}
+#reNSeachHeader ul.gnb li.logo_ebsi {margin-left:17px; padding:4px 0 0 0; font-size:0}
+#reNSeachHeader ul.gnb li.logo_math {margin-left:17px; padding:4px 0 0 0; font-size:0}
+#reNSeachHeader ul.gnb li.logo_lang {margin-left:17px; padding:4px 0 0 0; font-size:0}
+#reNSeachHeader ul.gnb li.logo_clip {margin-left:17px; padding:4px 0 0 0; font-size:0}
+#reNSeachHeader .searchFormbox {position:relative; clear:both; width:580px; height:82px; margin:0 auto; padding-top:20px;}
+#reNSeachHeader .searchFormbox h1 {float:left; margin:0 30px 0 0; padding:7px 0 0 0}
+#reNSeachHeader .searchFormbox fieldset {float:left; position:relative; width:370px}
+#reNSeachHeader .searchFormbox.on fieldset .inpbox {width:291px; padding-right:60px; background:#faf3f3}
+#reNSeachHeader .searchFormbox.on fieldset .inpbox .arr {position:absolute; right:45px; top:5px; display:block; width:10px; height:25px; background:url('../images/search/icon_searchinput_on.png') no-repeat 50% 50%; cursor:pointer}
+#reNSeachHeader .searchFormbox fieldset .inpbox {width:306px; height:25px; padding:5px 45px 3px 15px; overflow:hidden; border:2px solid #ca2422}
+#reNSeachHeader .searchFormbox fieldset .inpbox button {position:absolute; right:10px; top:6px; width:25px; height:25px; background:url('../images/search/icon_search_01.png') no-repeat 50% 50%; text-indent:-99999px}
+#reNSeachHeader .searchFormbox fieldset .inpbox input.txt {width:100%; height:100%; padding:0; background:0; border:0; outline:0; color:#333; font-size:14px}
+#reNSeachHeader .searchFormbox ul.txt_popular {overflow: hidden; padding:10px 0 0; text-align: center;}
+#reNSeachHeader .searchFormbox ul.txt_popular li {display: inline-block; padding: 0 7px 0 8px; background: url('../images/search/bg_bar_01.png') no-repeat 0 50%; color: #788d98; font-size: 12px; float:left;}
+#reNSeachHeader .searchFormbox ul.txt_popular li:first-child {background:0}
+#reNSeachHeader .searchFormbox ul.txt_popular li a {color:#91887b; font-size:11px}
+#reNSeachHeader .autoCompleteBox {display:none; position:absolute; left:0; top:35px; width:366px; overflow:hidden; background:#fff; border:2px solid #ca2422}
+#reNSeachHeader .autoCompleteBox ul.txtRecommend {margin:10px 10px 0 10px; padding-bottom:2px; border-bottom:1px solid #d6d6d6}
+#reNSeachHeader .autoCompleteBox ul.txtRecommend li {position:relative; height:24px; padding:0 25px 0 0}
+#reNSeachHeader .autoCompleteBox ul.txtRecommend li a {display:block; height:24px; padding:0 0 0 2px; line-height:24px; color:#767676}
+#reNSeachHeader .autoCompleteBox ul.txtRecommend li a:hover {background:#f3f6f8; text-decoration:none}
+#reNSeachHeader .autoCompleteBox ul.txtRecommend li button.btn_page_go {position:absolute; right:0; top:0; width:25px; height:24px; background:url('../images/search/icon_arr_go.png') no-repeat 50% 50%; text-indent:-99999px}
+#reNSeachHeader .autoCompleteBox ul.txtRecommend li a strong {color:#e62f2f; font-weight:bold}
+#reNSeachHeader .autoCompleteBox h2 {margin:15px 0 10px 10px; color:#000; font-size:12px; font-weight:bold}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword {margin:10px 10px 0 10px; padding-bottom:4px}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword li {position:relative; height:24px; padding:0 25px 0 0}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword li a {display:block; height:24px; padding:0 0 0 2px; line-height:24px; color:#767676}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword li a:hover {background:#f3f6f8; text-decoration:none}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword li a strong {color:#e62f2f; font-weight:bold}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword li button.btn_txt_delete {position:absolute; right:0; top:1px; width:20px; height:20px; background:url('../images/search/icon_searchtxt_delete.png') no-repeat 50% 50%; text-indent:-99999px}
+#reNSeachHeader .autoCompleteBox ul.txtMyKeyword li button.btn_page_go {position:absolute; right:25px; top:0; width:25px; height:24px; background:url('../images/search/icon_arr_go.png') no-repeat 50% 50%; text-indent:-99999px}
+#reNSeachHeader .autoCompleteBox .txt_close {height:19px; padding:8px 10px 0 0; text-align:right; background:#f3f6f8; border-top:1px solid #d6d6d6}
+#reNSeachHeader .autoCompleteBox .txt_close a {color:#767676; font-size:11px}
+#reNSeachHeader .autoCompleteBox .txt_close a:hover {text-decoration:underline}
+#reNSeachHeader .topmenu {clear:both; overflow:hidden; width:994px; margin:0 auto}
+#reNSeachHeader .topmenu ul li {float:left; width:95px; height:54px}
+#reNSeachHeader .topmenu ul li:first-child {width:122px}
+#reNSeachHeader .topmenu ul li a {display:block; width:100%; height:46px; padding:12px 0 0 0; text-align:center; color:#333; font-size:14px}
+#reNSeachHeader .topmenu ul li a:hover {height:37px; border-bottom:4px solid #ca2422; text-decoration:none}
+#reNSeachHeader .topmenu ul li a strong {display:block; color:#333; font-size:14px}
+#reNSeachHeader .topmenu ul li a em {display:block; margin-top:2px; font-family:verdana; font-size:11px}
+#reNSeachHeader .topmenu ul li.on a {height:37px; border-bottom:4px solid #ca2422}
+#reNSeachHeader .topmenu ul li.on a strong {display:block; color:#ca2422}
+
+#reNSeachContainer {width:994px; margin:30px auto 0; color:#888; line-height:1.5;}
+#reNSeachContainer:after {display:block; clear:both; content:''}
+#reNSeachContainer .flbox {float:left; width:784px; margin:0 32px 0 0}
+#reNSeachContainer .frbox {float:right; width:178px}
+#reNSeachContainer dl.relativeTxtbox {overflow:hidden; padding:0 0 20px 0}
+#reNSeachContainer dl.relativeTxtbox dt {float:left; width:86px; padding:0 0 0 24px; color:#2b2f32; font-weight:bold; font-size:13px}
+#reNSeachContainer dl.relativeTxtbox dd {float:none; overflow:hidden}
+#reNSeachContainer dl.relativeTxtbox dd a {float:left; padding:0 9px; background:url('../images/search/bg_bar_04.png') no-repeat 0 9px; color:#152d6b; font-size:12px; line-height:18px}
+#reNSeachContainer dl.relativeTxtbox dd a:hover {text-decoration:underline}
+#reNSeachContainer dl.relativeTxtbox dd a:first-child {padding-left:0; background:0}
+
+#reNSeachContainer .checkingCtgbox {position:relative;margin:0 0 16px 0;  background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .checkingCtgbox dl {padding:13px 0 10px 110px; margin:0; border-bottom:1px solid #d6d6d6;}
+#reNSeachContainer .checkingCtgbox dl:after {display:block; content:""; height:0}
+#reNSeachContainer .checkingCtgbox dl dt {position:absolute; left:24px; top:17px; width:85px; font-weight:bold; color:#2b2f32; font-size:13px}
+#reNSeachContainer .checkingCtgbox dl dt strong {font-weight:bold; color:#2b2f32; font-size:13px}
+#reNSeachContainer .checkingCtgbox dl dd {width:660px; padding:0 0 0 0; overflow:hidden }
+#reNSeachContainer .checkingCtgbox dl dd *{vertical-align:middle;}
+#reNSeachContainer .checkingCtgbox dl dd > label {float:left; margin:3px 15px 0 0; color:#333; font-size:13px}
+#reNSeachContainer .checkingCtgbox dl dd > ul {min-height:27px}
+#reNSeachContainer .checkingCtgbox dl dd > ul li {float:left; min-width:auto; width:150px; padding:0 0 5px 0;}
+#reNSeachContainer .checkingCtgbox dl dd > ul li.all {font-weight:bold}
+#reNSeachContainer .checkingCtgbox dl dd > ul li.lo {margin-left:69px}
+#reNSeachContainer .checkingCtgbox dl dd > ul li .ichkbox {margin-top:2px}
+#reNSeachContainer .checkingCtgbox dl dd > ul li label {top:0; float:left; padding:2px 0 0 0; color:#333; font-size:13px; letter-spacing:-1px}
+#reNSeachContainer .checkingCtgbox dl dd > ul li label i {font-style:normal; color:#91887b; font-size:12px; font-weight:normal; margin-left:2px; vertical-align:top}
+#reNSeachContainer .checkingCtgbox dl dd > ul li label span {margin-left:2px; color:#999}
+#reNSeachContainer .checkingCtgbox dl dd select{min-width:100px; height:27px; margin-right:5px;  border:1px solid #d7d7d7;}
+#reNSeachContainer .checkingCtgbox button.btn_search_reply {position:absolute; right:10px; bottom:53px; width:65px; height:27px; background:#20356e; border-radius:2px; color:#fff}
+#reNSeachContainer .checkingCtgbox .logowrap {position:relative; padding:12px  0  12px  20px; }
+#reNSeachContainer .checkingCtgbox .logowrap .txt_search_more {display:inline-block; min-height:17px; padding:0 0 0 23px; background:url('../images/search/icon_search_02.png') no-repeat 0 0}
+#reNSeachContainer .checkingCtgbox .logowrap .txt_search_more a {font-size:13px; color:#666}
+#reNSeachContainer .checkingCtgbox .logobox {position:absolute; right:0; top:12px}
+#reNSeachContainer .checkingCtgbox .logobox:after {display:block; content:""; height:0}
+#reNSeachContainer .checkingCtgbox .logobox span {float:left; height:19px; padding:0 10px; background:url('../images/search/bg_bar_02.png') no-repeat 0 50%}
+
+#reNSeachContainer .specialSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; background:#fff; border:3px solid #ca2422}
+#reNSeachContainer .specialSearchbox .titimg {position:relative; width:720px; margin:20px auto 0; border-bottom:1px solid #c4cdde}
+#reNSeachContainer .specialSearchbox .titimg span {display:block; font-size:0}
+#reNSeachContainer .specialSearchbox .titimg button {position:absolute; left:0; bottom:20px; width:128px; height:32px; background:#3e4162; border-radius:3px; color:#fff; font-size:13px}
+#reNSeachContainer .specialSearchbox .tittxt {position:relative; width:720px; overflow:hidden; margin:20px auto 0; border-bottom:1px solid #c4cdde}
+#reNSeachContainer .specialSearchbox .tittxt strong {display:block; margin:0 0 5px 0; font-size:30px; color:#222}
+#reNSeachContainer .specialSearchbox .tittxt span.txt {display:block; color:#717171; line-height:20px; font-size:13px}
+#reNSeachContainer .specialSearchbox .tittxt span.txt em {color:#4788c2}
+#reNSeachContainer .specialSearchbox .tittxt span.org {float:right; margin:20px 0; padding:1px 5px; background:#eee; font-size:12px; color:#666}
+#reNSeachContainer .specialSearchbox .hotContentsbox {width:720px; overflow:hidden; margin:30px auto 25px}
+#reNSeachContainer .specialSearchbox .hotContentsbox h3 {height:25px; background:url('../images/search/bg_specialhot.jpg') no-repeat 0 6px}
+#reNSeachContainer .specialSearchbox .hotContentsbox h3 strong {padding:0 6px 0 0; background:#fff; color:#000; font-family:Arial, ng; font-size:16px}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap {clear:both; overflow:hidden}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl {float:left; width:162px; margin:0 0 0 24px}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl:first-child {margin:0}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dt {float:left; position:relative; width:164px; margin:0 20px 5px 0}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dt .pic {display:block; width:162px; border:1px solid #ececec; font-size:0}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dt .pic img {display:block; width:100%}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dt em.badge {position:absolute; right:1px; top:1px; display:block; min-width:36px; height:16px; text-align:center; background:#767676; color:#fff; font-size:11px; font-family:Dotum; letter-spacing:-1px; line-height:17px}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd strong {display:block; margin:0 0 8px 0; font-weight:normal}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd strong a {display:inline-block; width:162px; color:#518ed1; font-size:13px; letter-spacing:-1px; font-weight:normal; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd em {float:left; width:20px; height:20px; text-align:center; border-radius:50%; color:#fff; font-size:10px; letter-spacing:-1px; line-height:20px}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd em.mid1 {background:#9c88cd}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd em.mid2 {background:#7dadd3}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd em.mid3 {background:#74c6d1}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd span {float:right; margin-top:2px; color:#898989}
+#reNSeachContainer .specialSearchbox .hotContentsbox .listwrap dl dd span b {display:block; height:20px; padding:0 0 0 12px; background:url('../images/search/icon_readcnt.jpg') no-repeat 0 2px; color:#898989; font-size:11px; font-weight:normal}
+
+#reNSeachContainer .specialSearchbox .type1{clear:both; overflow:hidden;}
+#reNSeachContainer .specialSearchbox .type1 div[class^="con_"]{position:relative; height:220px; margin:30px 30px 0; border-bottom:1px solid #c4cdde; background-repeat:no-repeat; background-position:right top;}
+#reNSeachContainer .specialSearchbox .type1 .con_enjoyable{background-image:url(../images/search/img_enjoyable.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_yy{background-image:url(../images/search/img_yy.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_mate{background-image:url(../images/search/img_mate.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_metia{background-image:url(../images/search/img_metia.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_missm{background-image:url(../images/search/img_missm.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_doctor{background-image:url(../images/search/img_doctor.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_beaum{background-image:url(../images/search/img_beaum.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_semi{background-image:url(../images/search/img_semi.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_semi2{background-image:url(../images/search/img_semi2.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_semi3{background-image:url(../images/search/img_semi3.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_semi4{background-image:url(../images/search/img_semi4.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_agentk{background-image:url(../images/search/img_agentk.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_reason{background-image:url(../images/search/img_reason.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_hayoung{background-image:url(../images/search/img_hayoung.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_mtrain{background-image:url(../images/search/img_mtrain.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_story{background-image:url(../images/search/img_story.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_mhistory{background-image:url(../images/search/img_mhistory.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_mathmnw{background-image:url(../images/search/img_mathmnw.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_teacher{background-image:url(../images/search/img_teacher.jpg);}
+#reNSeachContainer .specialSearchbox .type1 .con_ilkuck{background-image: url('../images/search/img_ilkuck.jpg')}
+#reNSeachContainer .specialSearchbox .type1 .con_easytong{background-image: url('../images/search/img_tong.jpg')}
+#reNSeachContainer .specialSearchbox .type1 .con_teacher2{background-image: url('../images/search/img_teacher2.jpg')}
+#reNSeachContainer .specialSearchbox .type1 .con_rian{background-image: url('../images/search/img_rian.jpg')}
+#reNSeachContainer .specialSearchbox .type1 .con_bus{background-image: url('../images/search/img_bus.jpg')}
+#reNSeachContainer .specialSearchbox .type1 .con_sports{background: url('../images/search/img_sports.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_stone{background: url('../images/search/img_stone.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_ohMath{background: url('../images/search/img_ohMath.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_knowledge{background: url('../images/search/img_knowledge.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_ebsGo{background: url('../images/search/img_ebsGo.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_inClass{background: url('../images/search/img_inClass.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_gFriends{background: url('../images/search/img_gFriends.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_csatUpdate{background: url('../images/search/img_csatUpdate.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_revolution{background: url('../images/search/img_revolution.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_sutalk{background: url('../images/search/img_sutalk.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_minigame{background: url('../images/search/img_minigame.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_detective{background: url('../images/search/img_detective.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_knowledge2{background: url('../images/search/img_knowledge2.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_stroll{background: url('../images/search/img_stroll.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_bmc{background: url('../images/search/img_bmc.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_ze {background: url('../images/search/img_ze.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_aicoding {background: url('../images/search/img_aicoding.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_sutalk2 {background: url('../images/search/img_sutalk2.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_4thmath {background: url('../images/search/img_4thmath.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_mathgirl {background: url('../images/search/img_mathgirl.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_mathboy {background: url('../images/search/img_mathboy.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_sutalk_s1 {background: url('../images/search/img_sutalk1_w.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_mhgame {background: url('../images/search/img_mhgame.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_statistics2 {background: url('../images/search/img_statistics2.jpg'); margin:0 30px 0 !important; padding-top:30px}
+#reNSeachContainer .specialSearchbox .type1 .con_magicschool {background: url('../images/search/img_magicschool.jpg') }
+#reNSeachContainer .specialSearchbox .type1 .con_magicschool_w {background: url('../images/search/img_magicschool_w.jpg'); margin:15px 30px 0 !important; height:238px !important}
+#reNSeachContainer .specialSearchbox .type1 .con_magicschool_w h2 {padding-top:15px}
+#reNSeachContainer .specialSearchbox .type1 .con_semi2_mov {background: url('../images/search/img_semi2_mov.jpg');  margin:30px 0 0 30px !important;; }
+#reNSeachContainer .specialSearchbox .type1 .con_semi2_toon {background: url('../images/search/img_semi2_toon.jpg'); margin:30px 0 0 30px !important; }
+
+
+#reNSeachContainer .specialSearchbox .type1 h2{margin-bottom:12px;}
+#reNSeachContainer .specialSearchbox .type1 .subscript{color:#666; font-size:14px; letter-spacing:-1px;}
+#reNSeachContainer .specialSearchbox .type1 .subscript strong{font-weight:normal; color:#4085cb; font-size:14px;}
+#reNSeachContainer .specialSearchbox .type1 button {position:absolute; left:0; bottom:20px; width:128px; height:32px; background:#3e4162; border-radius:3px; color:#fff; font-size:13px}
+#reNSeachContainer .specialSearchbox .type1 .btnmore{position:absolute; left:0; bottom:20px; display:inline-block; padding:0px 13px; height:32px; line-height:32px; background:#3e4162; border-radius:3px; color:#fff; font-size:13px}
+#reNSeachContainer .specialSearchbox .type1 .btnmore:hover{text-decoration: none;}
+
+#reNSeachContainer .specialSearchbox .type3 {position:relative; clear:both; overflow:hidden; background:#fff url(../images/search/bg_special_type3.png) no-repeat right top;}
+#reNSeachContainer .specialSearchbox .type3 h2{padding:30px 0 0 30px; margin-bottom:12px;}
+#reNSeachContainer .specialSearchbox .type3 .subscript{margin:0 30px 20px; padding-bottom:20px; color:#666; font-size:14px; letter-spacing:-1px;}
+#reNSeachContainer .specialSearchbox .type3 .subscript strong{font-weight:normal; color:#4085cb; font-size:14px;}
+#reNSeachContainer .specialSearchbox .type3 .subscript strong.empha{font-weight:bold; color:#ca2422; font-size:16px;}
+#reNSeachContainer .specialSearchbox .type3 button {width:128px; height:32px; background:#3e4162; border-radius:3px; color:#fff; font-size:13px}
+#reNSeachContainer .specialSearchbox .type3 .btnmore{display:inline-block; height:32px; line-height:32px; padding:0px 13px; background:#3e4162; border-radius:3px; color:#fff; font-size:13px}
+#reNSeachContainer .specialSearchbox .type3 .btnmore:hover{text-decoration: none;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox{overflow:hidden; width:720px; margin:0 auto; padding:0 0 30px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.mnote{padding-top:20px; border-top:1px dashed #c4ced9;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox div{float:left;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.series li{float:left; margin-left:14px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.series li:first-child{margin-left:0;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox ol{float:left; width:382px; margin-left:15px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.mnote ol{padding-top:29px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.video ol{width:418px; padding-top:11px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.question ol{padding-top:39px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.toon ol{padding-top:34px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox.inter ol{padding-top:26px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox ol li{padding:6px 0 4px 10px; border-bottom:1px dashed #c4ced9; color:#666; font-size:14px; letter-spacing:-1px;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox ol li span{display:inline-block; margin-right:10px; vertical-align:bottom;}
+#reNSeachContainer .specialSearchbox .type3 .hotContentsbox .subbox ol li strong{color:#4085cb; font-weight:normal; font-size:14px;}
+#reNSeachContainer .specialSearchbox .type3 .etc{overflow:hidden; margin:0 30px 30px; border:1px solid #c4ced9;}
+#reNSeachContainer .specialSearchbox .type3 .etc li{float:left; width:237px; height:138px; background:url(../images/search/bg_bar.png) repeat-y 0 0}
+#reNSeachContainer .specialSearchbox .type3 .etc li:first-child{width:219px; background:none;}
+#reNSeachContainer .specialSearchbox .type3 .etc li + li + li{width:260px}
+#reNSeachContainer .specialSearchbox .type3 .etc p{padding:15px 0 0 39px; font-weight:bold; font-size:16px; color:#4085cb; letter-spacing:-1px;}
+#reNSeachContainer .specialSearchbox .type3 .etc li:first-child p{padding-left:20px !important; background:none;}
+#reNSeachContainer .specialSearchbox .type3 .etc p + p{padding-top:1px !important; font-weight:normal; font-size:13px; color:#666; letter-spacing:-1px;}
+
+
+/* 스페셜 검색 이벤트 추가 2016-03-04 */
+#reNSeachContainer .specialSearchbox .special_event{padding:20px 0; margin:0 20px; border-bottom:1px solid #ddd;}
+#reNSeachContainer .specialSearchbox .special_event:first-child{border-top:none;}
+#reNSeachContainer .specialSearchbox .special_event .sbox{overflow:hidden;}
+#reNSeachContainer .specialSearchbox .special_event .ev_img{float:left; width:248px; height:118px; margin:0 20px 0 0; background:#f5f5f5;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts{float:left; width:470px; min-height:118px;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts .tit{margin:6px 0 10px ;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts .tit a{color:#333; font-size:14px; font-weight:bold;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts .ev_list > p{color:#777;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts .ev_list li{color:#222; line-height:16px; font-size:12px; vertical-align:middle;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts .ev_list li *{vertical-align:middle;}
+#reNSeachContainer .specialSearchbox .special_event .ev_conts .ev_list .pbox{float:left; min-width:55px; height:16px; padding:0 5px; margin:0 5px 0 0; text-align:center; background:#9ca4b0; border-radius:3px; color:#fff; font-size:11px; line-height:16px; letter-spacing:-1px;}
+
+/*스페셜 검색 관련콘텐츠 추가 2021-08-25*/
+#reNSeachContainer .specialSearchbox .rel_cnt {width:720px; height:118px; overflow:hidden; margin:28px auto 0}
+#reNSeachContainer .specialSearchbox .rel_cnt .rel_bann {display:block; float:left; margin-right:30px;}
+#reNSeachContainer .specialSearchbox .rel_cnt dl {float:left;}
+#reNSeachContainer .specialSearchbox .rel_cnt dl dt {margin-bottom:13px; min-height:25px; background:url('../images/search/mark_rel.png') 0 50% no-repeat; padding:5px 0 0 102px;}
+#reNSeachContainer .specialSearchbox .rel_cnt dl dd {color:#777; font-size:13px; line-height:150%}
+
+#reNSeachContainer .boardSearchbox dl {clear:both; overflow:hidden; margin:22px 0 0 0}
+#reNSeachContainer .boardSearchbox dl:first-child {margin:0}
+#reNSeachContainer .boardSearchbox dl dt {float:left; position:relative; width:164px; margin-right:20px; font-size:0}
+#reNSeachContainer .boardSearchbox dt .pic {display:block; width:162px; border:1px solid #ececec; font-size:0}
+#reNSeachContainer .boardSearchbox dt .pic img {display:block; width:100%}
+#reNSeachContainer .boardSearchbox dt em.badge {position:absolute; right:1px; top:1px; display:block; min-width:36px; height:16px; text-align:center; background:#767676; color:#fff; font-size:11px; font-family:Dotum; letter-spacing:-1px; line-height:17px}
+#reNSeachContainer .boardSearchbox dl dd {float:none; overflow:hidden}
+#reNSeachContainer .boardSearchbox dl dd > strong {display:block; overflow:hidden; margin-bottom:5px;}
+#reNSeachContainer .boardSearchbox dl dd > strong span {float:left; margin:0 7px 0 0; color:#4085cb; font-size:14px; font-weight:normal}
+#reNSeachContainer .boardSearchbox dl dd > strong span a {color:#4085cb; font-size:14px}
+#reNSeachContainer .boardSearchbox dl dd > strong em {float:left; padding:0 0 0 10px; margin-left:10px; font-weight:normal; background:url('../images/search/bg_bar_01.png') no-repeat 0 3px}
+#reNSeachContainer .boardSearchbox dl dd .ctg {clear:both; overflow:hidden; margin-bottom:5px; color:#333; font-size:13px}
+#reNSeachContainer .boardSearchbox dl dd .txt {clear:both; overflow:hidden; margin:0 0 8px 0; font-size:12px;}
+#reNSeachContainer .boardSearchbox dl dd .txt a {color:#666; font-size:12px; line-height:17px}
+#reNSeachContainer .boardSearchbox dl dd .attachment {clear:both; overflow:hidden; height:19px; padding:0 0 0 30px; background:url('../images/search/icon_linked.png') no-repeat 0 0}
+#reNSeachContainer .boardSearchbox dl dd .attachment a {color:#4085cb; font-size:14px}
+#reNSeachContainer .mnoteSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+/* #reNSeachContainer .mnoteSearchbox dl.schbox dt {width:230px; margin:0} 20150811수정 */
+/* #reNSeachContainer .mnoteSearchbox dl.schbox dt {width: 164px; margin: 0 20px 0 0;} */
+/* #reNSeachContainer .mnoteSearchbox dl.schbox dt .pic {width:200px; border:0} */
+#reNSeachContainer .mnoteSearchbox dl.schbox dt em.mbadge {position:absolute; left:3px; top:3px; display:block; min-width:36px; height:16px; text-align:center; color:#888; font-size:11px; font-family:Dotum; letter-spacing:-1px; line-height:17px; background: none; right: auto}
+#reNSeachContainer .vodSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .qnaSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .webtoonSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .interactiveSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .seriesSearchbox {clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .clipSearchbox {position:relative; clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .clipSearchbox span.decTxt {position:absolute; top:25px; right:20px; color:#000;}
+/* #reNSeachContainer .seriesSearchbox dl.schbox dt {width:120px} */
+/* #reNSeachContainer .seriesSearchbox dl.schbox dt .pic {width:120px} */
+#reNSeachContainer .boardSearchbox {clear:both; overflow:hidden; margin:0 0 65px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .cardSearchbox{clear:both; overflow:hidden; margin:0 0 16px 0; padding:22px 20px 16px 20px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer h3.commonTitle {height:35px; font-size:14px; font-weight:normal}
+#reNSeachContainer h3.commonTitle em {color:#000; font-weight:bold}
+#reNSeachContainer h3.commonTitle strong {color:#c8272d}
+#reNSeachContainer dl.schbox {clear:both; overflow:hidden; margin:30px 0 0 0}
+#reNSeachContainer dl.schbox:first-child {margin:0}
+#reNSeachContainer dl.schbox dt {float:left; position:relative; width:164px; margin-right:20px}
+#reNSeachContainer dl.schbox dt .pic {display:block; width:162px; border:1px solid #ececec; font-size:0; text-align:center; }
+#reNSeachContainer dl.schbox dt .pic img {display:block;/* width:100%*/}
+#reNSeachContainer dl.schbox dt em.badge {position:absolute; right:1px; top:1px; display:block; min-width:36px; height:16px; padding:0 3px; text-align:center; background:#767676; color:#fff; font-size:11px; font-family:Dotum; letter-spacing:-1px; line-height:17px}
+#reNSeachContainer dl.schbox dd {float:none; overflow:hidden}
+#reNSeachContainer dl.schbox dd .subject {margin-bottom:5px;}
+#reNSeachContainer dl.schbox dd .subject span {color:#4085cb; font-size:14px}
+#reNSeachContainer dl.schbox dd .subject span a {color:#4085cb; font-size:14px}
+#reNSeachContainer dl.schbox dd .subject em {padding:0 0 0 10px; margin-left:10px; background:url('../images/search/bg_bar_01.png') no-repeat 0 1px; font-size:12px; color:#666}
+#reNSeachContainer dl.schbox dd .ctg {clear:both; overflow:hidden; margin-bottom:5px; color:#333; font-size:13px}
+#reNSeachContainer dl.schbox dd .ctg b {float:left; padding:0 9px 0 0; margin-right:9px; background:url('../images/search/bg_bar_01.png') no-repeat 100% 4px; font-weight:normal}
+#reNSeachContainer dl.schbox dd .ctg strong {float:left; margin-right:6px; font-weight:bold;}
+#reNSeachContainer dl.schbox dd .ctg em {float:left; padding:0 0 0 10px; margin-left:10px; background:url('../images/search/bg_bar_01.png') no-repeat 0 3px}
+#reNSeachContainer dl.schbox dd .ctg span {float:left}
+#reNSeachContainer dl.schbox dd .txt {clear:both; overflow:hidden; margin:0 0 10px 0; color:#767676; font-size:13px;}
+#reNSeachContainer dl.schbox dd .txt a {color:#767676; font-size:13px}
+#reNSeachContainer dl.schbox dd .txt a:hover {text-decoration:underline}
+#reNSeachContainer dl.schbox dd .note {clear:both; overflow:hidden; margin-bottom:8px}
+/* #reNSeachContainer dl.schbox dd .note .roundbox {margin-top:2px} */
+#reNSeachContainer dl.schbox dd .note b{float:left; color:#000; font-size:12px; font-weight:normal; line-height:16px; }
+#reNSeachContainer dl.schbox dd .note.searchTag {float:left; width:66px;}
+#reNSeachContainer dl.schbox dd .note.searchTag + .tagBox { float:left; overflow:hidden; width:486px; margin-left:6px; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap;}
+#reNSeachContainer dl.schbox dd .note.searchTag + .tagBox a { color:#000; }
+#reNSeachContainer dl.schbox dd .note.searchTag + .tagBox a b{ float:none; display:inline; color:#000; font-size:12px; font-weight:normal; line-height:16px; }
+#reNSeachContainer dl.schbox dd .note.searchTag + .tagBox a b.red{ color:#f00; }
+#reNSeachContainer dl.schbox dd .btnset {clear:both; overflow:hidden; padding-top:2px}
+#reNSeachContainer dl.schbox dd .btnset button {width:74px; height:27px; border-radius:2px}
+#reNSeachContainer dl.schbox dd .btnset button.btn_study {width:90px; background:#3d4162; color:#fff}
+#reNSeachContainer dl.schbox dd .btnset button.btn_scrap {margin:0 0 0 5px; background:#e3e3e3; color:#666}
+
+#reNSeachContainer .bestRanklist {width:178px; overflow:hidden; padding:0 0 20px 0}
+#reNSeachContainer .bestRanklist .tabbox {width:178px; height:32px; background:url('../images/search/bg_tabbox.png') no-repeat 0 0}
+#reNSeachContainer .bestRanklist .tabbox span {float:left; width:89px; height:32px}
+#reNSeachContainer .bestRanklist .tabbox span a {display:block; width:89px; height:32px; text-align:center; line-height:30px; color:#889399; font-size:12px}
+#reNSeachContainer .bestRanklist .tabbox span.on {background:#ca2422; border-radius:0; color:#fff}
+#reNSeachContainer .bestRanklist .tabbox span.on a {border-radius:0; color:#fff}
+#reNSeachContainer .bestRanklist ul {display:none; overflow:hidden; margin-top:15px}
+#reNSeachContainer .bestRanklist ul.on {display:block}
+#reNSeachContainer .bestRanklist ul li {position:relative; z-index:20; height:20px; background:#f3f6f8; margin:0 0 5px 0; overflow:hidden}
+#reNSeachContainer .bestRanklist ul li.slide {z-index:19}
+#reNSeachContainer .bestRanklist ul li.rankhide {display:none}
+#reNSeachContainer .bestRanklist ul li span {float:left; width:18px; height:18px; margin:0 7px 0 0; text-align:center; border-radius:0; background:#fff; border:1px solid #ca2422; font-family:verdana; font-size:10px; font-weight:bold; color:#ca2422; line-height:19px}
+#reNSeachContainer .bestRanklist ul li a {line-height:18px; color:#666; font-size:12px}
+#reNSeachContainer .bestRanklist ul li a:hover {text-decoration:underline}
+#reNSeachContainer .bestRanklist ul li em {display:inline-block; height:15px; padding:0 2px; margin:0 0 0 7px; background:#98c760; border-radius:2px; color:#fff; font-size:11px; line-height:17px; font-family:Dotum}
+#reNSeachContainer .bestRanklist ul li b {position:absolute; right:0; top:7px; display:block; width:9px; height:5px; text-indent:-99999px}
+#reNSeachContainer .bestRanklist ul li b.rank_top {background:url('../images/search/icon_arr_03.png') no-repeat 100% 50%}
+#reNSeachContainer .bestRanklist ul li b.rank_down {background:url('../images/search/icon_arr_04.png') no-repeat 100% 50%}
+#reNSeachContainer .bestRanklist .info {clear:both; position:relative; height:22px; padding-top:10px; border-bottom:1px solid #c4ced9}
+#reNSeachContainer .bestRanklist .info a.moreview {position:absolute; right:0; bottom:7px; padding:0 6px 0 0; background:url('../images/search/icon_arr_01.png') no-repeat 100% 4px; color:#666}
+#reNSeachContainer .bestRanklist .info a.moreview.expand {padding-right:8px; background:url('../images/search/icon_arr_05.png') no-repeat 100% 5px}
+#reNSeachContainer .bestRanklist .info a.moreview:hover {text-decoration:underline}
+#reNSeachContainer .bestRanklist .info span {font-size:11px; color:#666}
+#reNSeachContainer .essentialList {width:178px}
+#reNSeachContainer .essentialList h3 {margin:0 0 7px 0; font-weight:bold; color:#333; font-size:13px}
+#reNSeachContainer .essentialList li {position:relative; margin:0 0 15px 0}
+#reNSeachContainer .essentialList li.click {margin:0 0 10px 0}
+#reNSeachContainer .essentialList li img {display:block; width:178px}
+#reNSeachContainer .essentialList li button {position:absolute; left:50%; top:50%; width:58px; height:58px; margin:-29px 0 0 -29px; background:url('../images/search/btn_vod_play.png') no-repeat 0 0; text-indent:-99999px}
+#reNSeachContainer .essentialList li p {position:absolute; left:0; top:0; z-index:60; width:158px; height:93px; padding:10px; background:url('../images/search/bg_transparent_navy.png') repeat 0 0; color:#fff; font-size:13px}
+#reNSeachContainer .essentialList li p span {display:block; color:#fff; font-size:13px}
+#reNSeachContainer .essentialList li p a {position:absolute; bottom:15px; right:8px; display:block; width:45px; padding:0 6px 0 0; background:url('../images/search/icon_arr_01.png') no-repeat 100% 50%; font-size:11px; color:#eee; font-family:Dotum}
+
+#reNSeachContainer .nodataSearchbox {padding:35px; background:#fff; border:1px solid #d6d6d6}
+#reNSeachContainer .nodataSearchbox dl {overflow:hidden; padding:0 0 20px 0; border-bottom:1px solid #d6d6d6}
+#reNSeachContainer .nodataSearchbox dl dt {margin:0 0 15px 0; font-size:17px; font-weight:bold}
+#reNSeachContainer .nodataSearchbox dl dt strong {text-decoration:underline; color:#e62f2f}
+#reNSeachContainer .nodataSearchbox dl dd p {margin:5px 0 0 0; padding:0 0 0 8px; background:url('../images/search/bg_bar_04.png') no-repeat 0 4px; color:#666; font-size:13px}
+#reNSeachContainer .nodataSearchbox dl dd p:first-child {margin:0}
+#reNSeachContainer .nodataSearchbox .btnset {padding:10px 0 0 10px}
+#reNSeachContainer .nodataSearchbox button {height:27px; background:#fff; border-radius:2px}
+#reNSeachContainer .nodataSearchbox button.btn_go_back {width:90px; border:2px solid #ca2422; color:#ca2422; font-size:12px}
+#reNSeachContainer .nodataSearchbox button.btn_go_home {width:74px; margin:0 0 0 5px; background:#ca2422; color:#fff; font-size:12px}
+
+#reNSeachContainer .reSearchbox {clear:both; /*overflow:hidden;*/ margin:0 0 15px 0; padding:15px 10px 5px 20px; background:#fff; border:1px solid #c4ced9}
+#reNSeachContainer .reSearchbox table {width:100%}
+#reNSeachContainer .reSearchbox table th {padding-top:5px; text-align:left; vertical-align:top; font-size:13px; color:#333}
+#reNSeachContainer .reSearchbox table td {padding:0 0 10px 0; font-size:13px}
+#reNSeachContainer .reSearchbox table td > ul {clear:both}
+#reNSeachContainer .reSearchbox table td > ul li {float:left; width:150px;  margin:0 0 5px 0; border:1}
+#reNSeachContainer .reSearchbox table td > ul li.all {font-weight:bold}
+#reNSeachContainer .reSearchbox table td > ul li label {float:left; min-width:auto; padding:2px 0 0 0; color:#333; font-size:13px; letter-spacing:-1px;}
+#reNSeachContainer .reSearchbox table td > ul li label i {font-style:normal; color:#91887b; font-size:12px; font-weight:normal; margin-left:1px; vertical-align:top}
+#reNSeachContainer .reSearchbox table td > ul li .ichkbox {margin-top:5px}
+#reNSeachContainer .reSearchbox table td > ul li .iradiobox {margin-top:5px}
+#reNSeachContainer .reSearchbox table td > ul li label em {margin-left:2px; color:#999}
+#reNSeachContainer .reSearchbox table td > ul li.insert {width:auto; clear:both; float:none; padding:5px 0 0 0}
+#reNSeachContainer .reSearchbox table td > ul li.insert p.date {float:none; overflow:hidden}
+#reNSeachContainer .reSearchbox table td > ul li.insert label {margin-right:25px}
+#reNSeachContainer .reSearchbox table td > ul li.insert button.btn_research {margin-top:-25px}
+#reNSeachContainer .reSearchbox table .date {float:left}
+#reNSeachContainer .reSearchbox .duration li {width:93px}
+#reNSeachContainer .reSearchbox table .date em {float:left; width:30px; height:26px; background:url('../images/search/icon_hypun.jpg') no-repeat 50% 48%; text-indent:-99999px}
+#reNSeachContainer .reSearchbox table button.btn_research {float:right; width:65px; height:26px; margin-top:0; background:#3d4262; border-radius:2px; color:#fff; font-size:12px; margin-top:-30px}
+#reNSeachContainer .reSearchbox table .datebox {float:left; width:170px; position:relative}
+#reNSeachContainer .reSearchbox table .datebox input.txt_date {width:140px; height:24px; padding:0; text-align:center; border:1px solid #c4ced8; border-radius:2px; font-family:ng; font-size:13px; color:#333;}
+#reNSeachContainer .reSearchbox table .datebox img {position:absolute; right:0; top:1px; cursor:pointer;}
+#reNSeachContainer .reSearchbox table .inpbox {float:left; height:20px; margin:0 5px 0 0; padding:2px; border:1px solid #c4ced8; border-radius:2px}
+#reNSeachContainer .reSearchbox table .inpbox input.txt {width:100%; height:100%; border:0; background:0; font-family:ng; font-size:13px; color:#333}
+#reNSeachContainer .reSearchbox select{min-width:100px; margin-right:5px; border:1px solid #d7d7d7;}
+
+#reNSeachContainer .searchSubwrap {clear:both; overflow:hidden}
+#reNSeachContainer .sortingbox {float:right; height:22px; margin:0 4px 0 0}
+#reNSeachContainer .sortingbox a {float:left; margin:0 0 0 8px; padding:0 0 0 8px; background:url('../images/search/bg_bar_01.png') no-repeat 0 2px; font-size:12px; color:#666}
+#reNSeachContainer .sortingbox a:first-child {padding-left:0; background:0}
+#reNSeachContainer .sortingbox a.on {color:#c9252e}
+#reNSeachContainer .sortingbox a:hover {color:#c9252e}
+
+
+/* Datepicker */
+.ui-datepicker {display:none; width:174px; height:165px; margin-top:-1px; padding:12px 8px; background:#fff; border:3px solid #d1d1d1}
+.ui-datepicker .ui-datepicker-header {position:relative; padding:.2em 0}
+.ui-icon {display:block; width:16px; height:16px; text-indent:-99999px; overflow:hidden}
+.ui-icon-circle-triangle-w {background:url('../images/search/arr_cal_prev.png') 0 0 no-repeat !important;}
+.ui-icon-circle-triangle-e {background:url('../images/search/arr_cal_next.png') 0 0 no-repeat !important;}
+.ui-datepicker .ui-datepicker-prev {position:absolute; top:9px; left:28px; width:5px; height:9px; cursor:pointer;}
+.ui-datepicker .ui-datepicker-next {position:absolute; top:9px; right:20px; width:5px; height:9px; cursor:pointer;}
+
+.ui-widget-header [class^='ui-datepicker'].ui-state-hover,
+.ui-widget-header [class^='ui-datepicker'].ui-datepicker-prev-hover,
+.ui-widget-header [class^='ui-datepicker'].ui-datepicker-next-hover{border:none; background:none;}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {display:block; position:absolute; left:50%; margin-left:-8px; top:5px; margin-top:-8px}
+.ui-datepicker .ui-datepicker-title {margin:0; line-height:1.8em; text-align:center; font-size:13px; color:#383838; font-family:Arial, Dotum !important}
+.ui-datepicker .ui-datepicker-title span {color:#fff; font-family:Arial, Dotum}
+.ui-datepicker .ui-datepicker-title select {font-size:1em; margin:1px 0}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {width:49%}
+.ui-datepicker table {width:98%; border-collapse:collapse; margin:7px auto 0}
+.ui-datepicker table th {padding:2px 0 6px 0; text-align:center; font-weight:bold; border:0; font-size:11px; font-family:Arial, Dotum !important; color:#383838}
+.ui-datepicker table th span {font-size:11px; font-family:Arial, Dotum !important; color:#383838}
+.ui-datepicker table td {padding:2px 1px; font-size:11px; font-family:Arial, Dotum !important}
+.ui-datepicker table td a {font-size:11px; font-family:Arial, Dotum !important;}
+.ui-datepicker table td a.ui-state-default {padding:0; border:none !important; background:none;}
+.ui-datepicker table td a.ui-state-active {padding:0; border:none !important; background:#da3321;}
+.ui-datepicker table td a:hover{background:url('../images/search/bg_datepicker_active.gif') no-repeat; text-decoration:none; color:#fff}
+.ui-datepicker td a {display:block; width:20px; height:16px; text-align:center; color:#666; line-height:16px}
+.ui-datepicker td a:hover {background:url('../images/search/bg_datepicker_active.gif') no-repeat; text-decoration:none; color:#fff}
+.ui-datepicker td.ui-datepicker-today a {background:url('../images/search/bg_datepicker.gif') no-repeat; color:#fff}
+.ui-datepicker td a.ui-state-active {background:url('../images/search/bg_datepicker_active.gif') no-repeat; color:#fff}
+.ui-datepicker-row-break {clear:both; width:100%; font-size:0}
+.ui-widget {font-family:verdana; font-size:1.1em}
+.ui-widget .ui-widget {font-size:1em}
+.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button {font-family:Arial,sans-serif; font-size:1em}
+.ui-widget-content a {color:#222}
+.ui-widget-header {height:23px; margin:0 0 5px 0; background:url('../images/search/bg_calendarheader.png') no-repeat 50% 0; border:none; border-bottom:1px solid #dedede !important; color:#fff; font-size:11px}
+.ui-widget-header .ui-datepicker-title {margin-top:-2px; font-size:12px; font-weight:normal; color:#fff; word-spacing:-1px}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {content:""; display:table; border-collapse:collapse}
+.ui-helper-clearfix:after {clear:both}
+.ui-helper-clearfix {min-height:0} /* support:IE7 */
+.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl {border-top-left-radius:4px}
+.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr {border-top-right-radius:4px}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl {border-bottom-left-radius:4px}
+.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br {border-bottom-right-radius:4px}
+
+/* Selectbox */
+.sbHolder {position:relative; float:left; width:161px; height:24px; margin:0 8px 0 0; background-color:#fff; border:solid 1px #c8c8c8; border-radius:2px; font-size:13px; font-family:ng; font-weight:normal; color:#333}
+.sbSelector {display:block; position:absolute; top:0; left:0; width:85%; height:24px; overflow:hidden; line-height:26px; font-family:Dotum; outline:none; text-indent:6px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover {color:#333; outline:none; text-decoration:none}
+.sbToggle {background:url('../images/search/arr_select_down.png') 100% 50% no-repeat; display:block; position:absolute; right:0; top:0; width:100%; height:24px; outline:none}
+.sbToggleOpen {background:url('../images/search/arr_select_up.png') 100% 50% no-repeat}
+.sbHolderDisabled {background-color:#fff; border:solid 1px #c8c8c8}
+.sbOptions {position:absolute; top:24px; left:-1px; width:100%; max-height:140px; z-index:1; border-radius:0 0 2px 2px; overflow-y:auto; list-style:none; margin:0; padding:0; background-color:#fff; border:solid 1px #c8c8c8}
+.sbOptions a {display:block; padding:6px 0 5px 6px; outline:none}
+.sbOptions a:link, .sbOptions a:visited {color:#333; text-decoration:none}
+.sbOptions a:hover, .sbOptions a:focus, .sbOptions a.sbFocus {background:#efefef; color:#333}
+.sbOptions {padding:0 !important; margin:0 !important}
+.sbOptions li {padding:0 !important; margin:0 !important; line-height:17px}
+.sbOptions li.last a {border-bottom:none}
+.sbOptions .sbDisabled {display:block; padding:6px 0 5px 6px; color:#333}
+.sbOptions .sbGroup {display:block; padding:6px 0 5px 6px; color:#333; font-weight:bold}
+.sbOptions .sbSub {padding-left:17px}
+
+/* ----------------------------------------------------------------------- renewal2018 :: Seach */
+#reNSeachWrap2015.renew201802 #reNSeachHeader {background-position:0 81px;}
+#reNSeachWrap2015.renew201802 #reNSeachHeader .searchFormbox {width:994px;height:62px;}
+#reNSeachWrap2015.renew201802 #reNSeachHeader .searchFormbox fieldset {float:none;position:relative;margin:0 auto;width:370px;}
+#reNSeachWrap2015.renew201802 #reNSeachHeader .searchFormbox ul.txt_popular {position:absolute;top:0;left:380px;width:302px;text-align:left;}

@@ -1,0 +1,124 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.pieday {position:relative; width:763px; overflow:hidden} 
+.pieday  h1 {position:absolute; top:39px; left:33px;}
+.pieday .snswrap {position:absolute; top:34px; right:24px;}
+.pieday .snswrap a{display:inline-block; width:31px; height:31px; margin-left:6px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20191212/img_sns.png'); *display: inline; zoom: 1;}
+.pieday .snswrap a.fb {background-position:0 0;}
+.pieday .snswrap a.tw {background-position:-41px 0;}
+.pieday .snswrap a.kko {background-position:-82px 0;}
+.pieday .top,
+.pieday .top_end {position:relative}
+.pieday .top .btn-pre-apply {position:absolute; top:742px; left:415px; display:block; width:308px; height:74px; background:url('../../images/event/20200218/btn_event_before.png') 0 0 no-repeat;}
+.pieday .top .btn-pre-apply.off {background-position:0 -76px;}
+.pieday .top .btn-apply {position:absolute; top:742px; left:415px; display:block; width:287px; height:74px; background:url('../../images/event/20200218/btn_apply.png') 0 0  no-repeat;}
+.pieday .top .btn-apply.off {background-position:0 -76px;}
+.pieday .top .btn_pieday,
+.pieday .top_end .btn_pieday {position:absolute; left:285px; top:380px}
+.pieday .top_end {}
+.pieday .top_end [class^="btn-winner"] {position:absolute;  top:796px; margin:30px auto 13px; display:inline-block; height:74px; background-image:url('../../images/event/20200218/btn_event_fin.png'); background-repeat:no-repeat }
+.pieday .top_end .btn-winner1 {left:228px; width:314px; background-position:0 0}
+.pieday .top_end .btn-winner2 {left:178px; width:409px; background-position:0 -76px}
+.pieday .top_end .btn-winner3 {left:141px; width:482px; background-position:0 -152px}
+.pieday .top_end .cmt_end {position:absolute; left:0; top:920px; width:100%; text-align:center}
+
+.pieday .goto_stcard {background:#99672e; padding-bottom:65px; position:relative}
+.pieday .goto_stcard h3 {text-align:center;padding:35px 0 26px}
+.pieday .goto_stcard:before {display:block; content:""; position:absolute; top:-75px; right:0px; width:89px; height:145px; background:url('../../images/event/20200218/img_ribbon2.png') 0 0 no-repeat}
+
+.pieday .gift {background:#895922}
+.pieday .tab_stcard {width:678px; margin:0 auto; overflow:hidden}
+.pieday .tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20200218/tab_stcard.png?20200330'); background-repeat:no-repeat; margin-left:14px}
+.pieday .tab_stcard li a {display:block; width:100%; height:100%}
+.pieday .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.pieday .tab_stcard li.tab02 {background-position:-173px 0;}
+.pieday .tab_stcard li.tab03 {background-position:-346px 0;}
+.pieday .tab_stcard li.tab04 {background-position:-519px 0;}
+.pieday .tab_stcard li.tab01:hover {background-position:0 -82px}
+.pieday .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.pieday .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.pieday .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.pieday .eventArea {background:#f7e5cd url('../../images/event/20200218/bg_event.png') 0 0 no-repeat; padding:74px 0 40px}
+.pieday .eventArea h2, .pieday .eventArea.end h2 {text-align:center}
+
+.pieday .eventArea .mystatus {width:695px; margin:0 auto}
+.pieday .eventArea .mystatus dl {width:695px; height:46px; background:url('../../images/event/20200218/bg_myst_box.png') 0 0 no-repeat; margin:28px 0 17px 0; padding-top:13px; overflow:hidden}
+.pieday .eventArea .mystatus dl * {float:left;}
+.pieday .eventArea .mystatus dt {background-image:url('../../images/event/20200218/txt_mys.png'); background-repeat:no-repeat;}
+.pieday .eventArea .mystatus dd {font-size:22px; font-weight:bold}
+.pieday .eventArea .mystatus dt.tit1 {background-position:0 0; width:142px; height:29px; margin-left:40px}
+.pieday .eventArea .mystatus dd.get {width:64px; color:#ed9204; }
+.pieday .eventArea .mystatus dt.tit2 {background-position:-208px 0; width:123px; height:29px;}
+.pieday .eventArea .mystatus dd.use {width:62px; color:#baa288;}
+.pieday .eventArea .mystatus dd.use:after {display:block; float:right; content:""; width:2px; height:29px; background:url('../../images/event/20200218/txt_mys.png') -395px 50% no-repeat;}
+.pieday .eventArea .mystatus dt.tit3 {background-position:-431px 0; width:157px; height:29px; margin-left:40px}
+.pieday .eventArea .mystatus dd.tot {width:50px; color:#f4431b; padding-left:10px}
+
+.pieday .eventArea .pack_pie {background:url('../../images/event/20200218/bg_pack.png') 0 0 no-repeat; width:714px; height:622px; margin:40px 0 10px 35px; position:relative}
+.pieday .eventArea .pack_pie h3 {padding:73px 0 0 34px; height:98px;}
+.pieday .eventArea .pack_pie h3 * {display:inline-block;}
+.pieday .eventArea .pack_pie h3 em {background-image:url('../../images/event/20200218/txt_today_st.png'); background-repeat:no-repeat; text-indent:-9999px}
+.pieday .eventArea .pack_pie h3 em.txt_today_pie1 {width:60px; height:27px; background-position:0 -5px}
+.pieday .eventArea .pack_pie h3 em.txt_today_pie2 {width:167px; height:27px; background-position:-113px -5px}
+.pieday .eventArea .pack_pie h3 strong {font-size:28px; font-weight:bold; color:#fff; vertical-align:bottom}
+.pieday .eventArea .pack_pie .btn_pack_gift{display:inline-block; width:193px; height:44px; background:url('../../images/event/20200218/btn_pack.png') 0 0 no-repeat; position:absolute; top:70px; right:40px; text-indent:-9999px}
+
+.pieday .eventArea.end .pack_pie {background:url('../../images/event/20200218/bg_pack_end.png') 0 0 no-repeat; width:714px; height:302px; padding-top:115px; margin:40px 0 10px 35px; position:relative}
+
+.pieday .eventArea .get_pie {width:540px; margin:0 auto; }
+.pieday .eventArea .get_pie li {display:inline-block; position:relative; margin:0 7px 20px 7px}
+.pieday .eventArea .get_pie li span.icon_pie {width:90px; height:41px; display:inline-block; background:url('../../images/event/20200218/icon_pie.png') 0 -61px no-repeat; text-indent:-9999px}
+.pieday .eventArea .get_pie li span.icon_pie.active {background:url('../../images/event/20200218/icon_pie.png') 0 0 no-repeat;}
+.pieday .eventArea .get_pie li em {display:inline-block; width:34px; height:34px; position:absolute; right:-10px; top:10px;  background:url('../../images/event/20200218/icon_double.png') 0 0 no-repeat; text-indent:-9999px}
+
+.pieday .eventArea .tab_week {width:626px; height:44px; margin:30px 0 0 35px; overflow:hidden}
+.pieday .eventArea .tab_week li {float:left}
+.pieday .eventArea .tab_week li button {display:inline-block; width:100%; height:44px; background-image:url('../../images/event/20200218/tab_week.png'); background-repeat:no-repeat;}
+.pieday .eventArea .tab_week li:nth-child(1) {width:155px;}
+.pieday .eventArea .tab_week li:nth-child(2) {width:159px;}
+.pieday .eventArea .tab_week li:nth-child(3) {width:158px;}
+.pieday .eventArea .tab_week li:nth-child(4) {width:154px;}
+.pieday .eventArea .tab_week li:nth-child(1) button {background-position:0 0}
+.pieday .eventArea .tab_week li:nth-child(2) button {background-position:-155px 0}
+.pieday .eventArea .tab_week li:nth-child(3) button {background-position:-314px 0}
+.pieday .eventArea .tab_week li:nth-child(4) button {background-position:-472px 0}
+.pieday .eventArea .tab_week li:nth-child(1) button.active {background-position:0 -46px}
+.pieday .eventArea .tab_week li:nth-child(2) button.active {background-position:-155px -46px}
+.pieday .eventArea .tab_week li:nth-child(3) button.active {background-position:-314px -46px}
+.pieday .eventArea .tab_week li:nth-child(4) button.active {background-position:-472px -46px}
+.pieday .eventArea .tab_week li button[disabled]:active, button[disabled] {pointer-events: none; cursor:default}
+
+.pieday .eventArea .giftbox {width:626px; height:109px; background:#fff2d9; margin:0 0 0 35px; text-align:center; padding-top:30px}
+.pieday .eventArea .giftbox span.icon_gift {width:56px; height:51px; display:inline-block; background:url('../../images/event/20200218/icon_gift.png') -75px 0 no-repeat; text-indent:-9999px; margin:0 8px }
+.pieday .eventArea .giftbox span.icon_gift.active {background-position:0 0}
+.pieday .eventArea .giftbox p {margin-top:19px}
+.pieday .eventArea .notice_pc {text-align:center; margin-top:30px}
+
+.pieday .eventArea.end .giftbox {height:84px; padding-top:35px }
+
+.pieday .bonus_event {background:url('../../images/event/20200218/bg_bonuseven.png') 0 0 no-repeat; padding-bottom:55px; position:relative}
+.pieday .bonus_event h3 {padding:70px 0 0 0; text-align:center}
+.pieday .bonus_event .inp_url {margin:30px 0 0 69px; width:638px; height:60px; background:url('../../images/event/20200218/bonus_url_input.png') 0 0 no-repeat; }
+.pieday .bonus_event .inp_url input[type="text"] {width:530px; height:44px; padding:0 0 0 5px; border:0; margin:2px 0 0 17px}
+.pieday .bonus_event .inp_url button {width:74px; height:49px}
+.pieday .bonus_event .inp_url button.btn_modi {background:url('../../images/event/20200218/bonus_url_input.png') -555px -60px no-repeat;}
+
+.pieday .bonus_event:before {display:block; content:""; position:absolute; top:-55px; left:0px; width:75px; height:126px; background:url('../../images/event/20200218/img_ribbon.png') 0 0 no-repeat}
+
+.pieday .bonus_event.end .inp_url{position:absolute; top:160px; left:-5px; width:429px; background:url('../../images/event/20200218/bonus_end_input.png') 0 0 no-repeat; }
+.pieday .bonus_event.end .inp_url .mypost {max-width:380px; height:44px; line-height:44px; padding:0 0 0 5px;  font-size:14px; margin:2px 0 0 20px; overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap; }
+
+
+/* notice */
+.pieday .notice {padding:35px 30px 30px 35px; background-color:#0d1c49;}
+.pieday .notice ul {padding-top:10px;}
+.pieday .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.pieday .notice li .point {color:#bbccff;}
+

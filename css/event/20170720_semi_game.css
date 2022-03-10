@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+em{font-style:normal;}
+.fc_brown{color:#9e702c;}
+
+
+.semiGame{background:#f8e8d3;}
+.semiGame .top{position:relative; width:763px;}
+.semiGame .top .btn-apply{position:absolute; top:529px; left:418px; width:281px; height:57px; font:0/0 a; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+.semiGame .snswrap{position:absolute; top:23px; right:19px;}
+.semiGame .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20170720/img_sns.png)}
+.semiGame .snswrap .fb a{background-position:0 0;}
+.semiGame .snswrap .tw a{background-position:-41px 0;}
+.semiGame .snswrap .kko a{background-position:-82px 0;}
+
+/* gamePlay */
+.semiGame .gamePlay {position:relative;}
+.semiGame .gamePlay ul li {display:inline-block; *display: inline; zoom: 1;}
+.semiGame .gamePlay ul.btn_area li:first-child {margin-right: 17px;}
+
+.semiGame .gamePlay .login_before ul {position:absolute; left:61px; top:40px;}
+.semiGame .gamePlay .login_before ul li a {display:block; width:311px; height:57px; background:#ffe444; border-radius:30px; font:0/0 a; opacity:0; filter:alpha(opacity='0');}
+
+.semiGame .gamePlay .login-after ul.playNum {position:absolute; left:273px; top:23px; font-weight:900; letter-spacing:-2px; font-family:"나눔고딕", "NanumGothic", "Nanum Gothic", sans-serif;}
+.semiGame .gamePlay .login-after ul.playNum li.myPlay {width:78px; margin-right: 238px; text-align:center;}
+.semiGame .gamePlay .login-after ul.playNum li.bestPlay {width:65px; text-align:center;}
+.semiGame .gamePlay .login-after ul.playNum li.myPlay span {color:#003e93; font-size:27px;}
+.semiGame .gamePlay .login-after ul.playNum li.bestPlay span {color:#e94f17; font-size:23px}
+.semiGame .gamePlay .login-after ul.btn_area {position:absolute; left:61px; top:63px;}
+.semiGame .gamePlay .login-after ul.btn_area li a {display:block; width:311px; height:57px; background:#ffe444; border-radius:30px;  font:0/0 a; opacity:0; filter:alpha(opacity='0');}
+
+/* notice */
+.semiGame .notice {padding:35px 58px 35px 34px; background-color:#003e93;}
+.semiGame .notice ul{padding-top:15px;}
+.semiGame .notice li{margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url(../../images/event/20170720/bul.png) no-repeat 0 8px;}
+.semiGame .notice li:first-child{margin-top:0;}
+.semiGame .notice li .point{color:#78d242;}
+
+/* 이벤트 종료 */
+.semiGame.end .top .btn-win{position:absolute; top:574px; left:105px; width:240px; height:58px; font:0/0 a; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+.semiGame.end .top .btn-info-insert{position:absolute; top:574px; left:360px; width:305px; height:58px; font:0/0 a; border-radius:30px; background:#54c127; opacity:0; filter:alpha(opacity='0');}
+.semiGame.end .top .num-parti{position:absolute; top:528px; left:428px; width:63px; text-align:center; font-weight:900; color:#fff04f; font-size:20px; letter-spacing:-1px; background:url(../../images/event/20170720/txt_people3.png) no-repeat 0 50%;}
+
+.semiGame.end .evtcon-top .btn-evtlogin {position:absolute; top:134px; left:448px; width:190px; height:46px; font:0/0 a; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+
+.semiGame.end .evtcon-top .user {position: absolute; top:144px; left:0; width:100%; padding:0; text-align:center; font-weight:900; color:#333; font-size:21px; letter-spacing:-2px; background:none; overflow:hidden; line-height:31px; vertical-align:middle; }
+.semiGame.end .evtcon-top .user .u-nm {display:inline-block; max-width:137px; padding:0 2px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; word-break: break-all; word-wrap: break-word; line-height:31px; vertical-align:top; }
+.semiGame.end .evtcon-top .user img { vertical-align:middle;}
+.semiGame.end .evtcon-top .user .u-nm img {margin-right:5px; }
+
+.semiGame.end .gamePlay span.myPlay {font-weight:900; letter-spacing:-2px; font-family:"나눔고딕", "NanumGothic", "Nanum Gothic", sans-serif;color:#003e93; font-size:27px;vertical-align:middle;}

@@ -1,0 +1,1428 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../../css/sub.css" />
+
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript">
+
+$(function ()
+{
+	$(".category_view .view_btn").bind("click", function ()
+	{
+		if(!$(this).is(".on"))
+		{
+			$(".category_view .sub_txt").css({display:"block"});
+			$(".category_view .info_con").css({display:"block"});
+			$(this).addClass("on");
+		}
+		else
+		{
+			$(".category_view .sub_txt").css({display:"none"});
+			$(".category_view .info_con").css({display:"none"});
+			$(this).removeClass("on");
+		}
+		contentSizing();
+	});
+});
+
+</script>
+</head>
+<body>
+
+<!-- header -->
+<header id="header" style="height:126px; background:#ddd;">
+
+</header>
+<!-- //header -->
+
+
+
+<!-- top_visual -->
+<div id="top_visual">
+	<div class="left_visual"></div>
+	<div class="visual_con">
+		<div class="visual"></div>
+	</div>
+</div>
+<!-- //top_visual -->
+
+
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- container -->
+	<article id="container">
+
+		<!-- category -->
+		<section class="content_wrap mypage">
+
+			<!-- lnb -->
+			<div class="bg_lnb"></div>
+			<aside class="lnb my">
+				<h2 class="top_title emt"></h2>
+				<div class="lnb_menu">
+					<!-- menu1  -->
+					<div class="menu_con menu1 first">
+						<ul class="first">
+							<li class="tit on"><a href="#">최근 본 학습카드</a></li>
+						</ul>
+					</div>
+					<!-- //menu1  -->
+
+					<!-- menu2  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">찜 한 학습카드</a></li>
+						</ul>
+					</div>
+					<!-- //menu2  -->
+
+					<!-- menu3  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">내 M노트</a></li>
+						</ul>
+					</div>
+					<!-- //menu3  -->
+
+					<!-- menu4  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">내 문제</a></li>
+							<li class="menu"><a href="#">오답노트</a></li>
+						</ul>
+					</div>
+					<!-- //menu4  -->
+
+					<!-- menu5  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">이용문의 내역</a></li>
+						</ul>
+					</div>
+					<!-- //menu5  -->
+
+					<!-- menu6  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">학습 Q&amp;A 내역</a></li>
+						</ul>
+					</div>
+					<!-- //menu6  -->
+
+					<!-- menu7  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">오류 신고 내역</a></li>
+						</ul>
+					</div>
+					<!-- //menu7  -->
+
+					<!-- menu8  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">학습 커뮤니티</a></li>
+						</ul>
+					</div>
+					<!-- //menu8  -->
+
+					<!-- menu9  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">선생님 커뮤니티</a></li>
+						</ul>
+					</div>
+					<!-- //menu9  -->
+
+					<!-- menu10  -->
+					<div class="menu_con menu1">
+						<ul class="first">
+							<li class="tit"><a href="#">회원정보수정</a></li>
+						</ul>
+					</div>
+					<!-- //menu10  -->
+				</div>
+
+			</aside>
+			<!-- //lnb -->
+
+			<!-- content_right -->
+			<div class="content_right white">
+				<div class="content_set">
+
+					<!-- location_menu -->
+					<div class="ar">
+						<div class="location_menu">
+							<a href="#"><img src="../../images/common/home_icon.png" /> 홈</a>
+							<span class="arrow emt"> > </span>
+							<a href="#">마이페이지</a>
+							<span class="arrow emt"> > </span>
+							<a href="#"><strong>내 문제</strong></a>
+						</div>
+					</div>
+					<!-- //location_menu -->
+
+					<!-- package_top -->
+					<div class="package_top">
+						<div class="top_con">
+							<div class="left_con">
+								<span class="icon"><img src="../../images/common/tag_icon7.png" alt="EBSMath 문제"></a>
+							</div>
+							<div class="right_con">
+								<button type="button" type="button" class="ml5 dark_button"><img src="../../images/common/zzim_icon.png" /> 찜하기</button>
+								<a class="sns_btn facebook emt ml5" href="#">페이스북</a>
+								<a class="sns_btn twitter emt ml5" href="#">트위터</a>
+								<a class="sns_btn kakao emt ml5" href="#">카카오톡</a>
+							</div>
+						</div>
+						<div class="title_con">
+							<h4>
+								[TV중학수학③] 이차함수 y=a(x-p)²+q의 그래프의 축의 방정식과 꼭짓점의 좌표8이차함수 y=a(x-p)²+q의 그래프의 축의 방정식과 꼭짓점의 좌표8 <strong class="type">[심화]</strong>
+							</h4>
+						</div>
+
+						<span class="bottom_2_line"></span>
+
+						<div class="tools">
+							<span class="fl">
+								<button type="button" class="prev">이전</button>
+								<button type="button" class="next">다음</button>
+							</span>
+							<span class="fr">
+								<button type="button" class="percent">100%</button>
+								<button type="button" class="expand">확대</button>
+								<button type="button" class="reduce">축소</button>
+								<button type="button" class="score">채점</button>
+								<button type="button" class="tmpsave">임시저장</button>
+								<button type="button" class="print">인쇄</button>
+							</span>
+						</div>
+					</div>
+					<!-- //package_top -->
+
+
+
+					<!-- 평가서비스 -->
+					<div class="pyeongga_wrap">
+						<!-- 답안 카드 영역 -->
+						<div class="anscard">
+							<p class="ans_top">답안지</p>
+							<div class="ans_con">
+								<div class="ans_list">
+									<ul class="tb_th">
+										<li>번호</li>
+										<li>선택지</li>
+									</ul>
+									<div>
+										<table summary="">
+											<caption></caption>
+											<colgroup>
+												<col width="50px"/>
+												<col width="140px"/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<td><div>1</div></td>
+													<td>
+														<ul class="answer horiz">
+															<li>
+																<div class="as_num">
+																	<em>①</em>
+																	<strong class="mine">내가 선택한 답</strong><!-- 내가 선택한 답 표시 -->
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>②</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>③</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>④</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>⑤</em>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td><div>2</div></td>
+													<td>
+														<ul class="answer horiz">
+															<li>
+																<div class="as_num">
+																	<em>①</em>
+																	<strong class="mine">내가 선택한 답</strong><!-- 내가 선택한 답 표시 -->
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>②</em>
+																	<strong class="correct">정답</strong><!-- 정답 표시 -->
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>③</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>④</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>⑤</em>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td><div>3</div></td>
+													<td>
+														<ul class="answer horiz">
+															<li>
+																<div class="as_num">
+																	<em>①</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>②</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>③</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>④</em>
+																</div>
+															</li>
+															<li>
+																<div class="as_num">
+																	<em>⑤</em>
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td><div>4</div></td>
+													<td>
+														<ul class="answer">
+															<li>
+																<input type="text" id="" class=""/>
+															</li>
+															<li>
+																<input type="text" id="" class=""/>
+															</li>
+															<li>
+																<input type="text" id="" class=""/>
+															</li>
+															<li>
+																<input type="text" id="" class=""/>
+															</li>
+															<li>
+																<input type="text" id="" class=""/>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td><div>5</div></td>
+													<td>
+														<ul class="answer">
+															<li>
+																<div class="long">
+																	<p style="white-space:nowrap">수식수식수식수식수식수식수식</p><!-- 스타일 임시 선언 -->
+																</div>
+															</li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- //답안 카드 영역 -->
+						<form action="">
+						<fieldset>
+						<legend>문제</legend>
+							<!-- 문제 - 객관식 가로형-->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num o">1.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다.<br/>동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때,<br/>이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+										<div class="ac"><img src="../../images/mathEditor/tmp_qz.gif" alt=""/></div>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer horiz"><!-- 선택형이 세로형일때 class="answer" / 가로형일때 class="answer horiz"-->
+										<ol>
+											<li>
+												<div class="as_num">
+													<em>㉠</em>
+													<strong class="mine">내가 선택한 답</strong><!-- 내가 선택한 답 표시 -->
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉡</em>
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉢</em>
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉣</em>
+													<strong class="correct">정답</strong><!-- 정답 표시 -->
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉤</em>
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+										</ol>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 객관식 가로형-->
+
+							<!-- 문제 - 객관식 세로형 -->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num x">9.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다.<br/>동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때,<br/>이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+										<div class="ac"><img src="../../images/mathEditor/tmp_qz.gif" alt=""/></div>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer"><!-- 선택형이 세로형일때 class="answer" / 가로형일때 class="answer horiz"-->
+										<ol>
+											<li>
+												<div class="as_num">
+													<em>㉠</em>
+													<strong class="mine">내가 선택한 답</strong><!-- 내가 선택한 답 표시 -->
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉡</em>
+												</div>
+												<p class="as_txt">그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다. 동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때, 이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉢</em>
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉣</em>
+													<strong class="correct">정답</strong><!-- 정답 표시 -->
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>㉤</em>
+												</div>
+												<p class="as_txt">240lkcal</p>
+											</li>
+										</ol>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 객관식 세로형 -->
+
+							<!-- 문제 - 주관식 입력 1개-->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num o">12.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>다음 그림과 같이 이차함수 y=ax  + bx + c의 그래프의 꼭짓점이 y축 위에 있을 때, 이차함수 y=cx  + ax + b의 그래프가 지나는 사분면을 구하여라.</p>
+										<div class="ac"><img src="../../images/mathEditor/tmp_qz.gif" alt=""/></div>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer">
+										<ol>
+											<li>
+												<input type="text" class="w95p"/>
+											</li>
+										</ol>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 주관식 입력 1개-->
+
+							<!-- 문제 - 주관식 입력 여러개-->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num x">52.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>다음 그림과 같이 이차함수 y=ax  + bx + c의 그래프의 꼭짓점이 y축 위에 있을 때, 이차함수 y=cx  + ax + b의 그래프가 지나는 사분면을 구하여라.</p>
+										<div class="ac"><img src="../../images/mathEditor/tmp_qz.gif" alt=""/></div>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer">
+										<ol>
+											<li>
+												<div class="as_num">
+													<em>ⓐ</em>
+													<strong class="mine">내가 선택한 답</strong><!-- 내가 선택한 답 표시 -->
+												</div>
+												<input type="text" class="w30p"/>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>ⓑ</em>
+												</div>
+												<input type="text" class="w30p"/>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>ⓒ</em>
+												</div>
+												<input type="text" class="w30p"/>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>ⓓ</em>
+													<strong class="correct">정답</strong><!-- 정답 표시 -->
+												</div>
+												<input type="text" class="w30p"/>
+											</li>
+											<li>
+												<div class="as_num">
+													<em>ⓔ</em>
+												</div>
+												<input type="text" class="w30p"/>
+											</li>
+										</ol>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 주관식 입력 여러개-->
+
+							<!-- 문제 - 연결형(왼쪽 오른쪽) -->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num o">100.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다.<br/>동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때,<br/>이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 - 연결형-->
+									<div class="answer link"><!-- 테두리 없을 시 : class="answer link noborder" -->
+										<table summary="" class="lr"><!-- 왼쪽 오른쪽 : lr / 위 아래 : ud -->
+											<caption></caption>
+											<colgroup>
+												<col width="38%"/>
+												<col width=""/>
+												<col width="38%"/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="left">
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td rowspan="5" class="line">&nbsp;</td><!-- 선택지 수 만큼 rowspan 숫자 수정 필요 -->
+													<td class="right">
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="left">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td class="right">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="left">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td class="right">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="left">
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td class="right">
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 연결형(왼쪽 오른쪽) -->
+
+							<!-- 문제 - 연결형(왼쪽 오른쪽 선없음) -->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num x">538.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다.<br/>동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때,<br/>이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer link noborder"><!-- 테두리 없을 시 : class="answer link noborder" -->
+										<table summary="" class="lr"><!-- 왼쪽 오른쪽 : lr / 위 아래 : ud -->
+											<caption></caption>
+											<colgroup>
+												<col width="38%"/>
+												<col width=""/>
+												<col width="38%"/>
+											</colgroup>
+											<tbody>
+												<tr>
+													<td class="left">
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td rowspan="5" class="line">&nbsp;</td><!-- 선택지 수 만큼 rowspan 숫자 수정 필요 -->
+													<td class="right">
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="left">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td class="right">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="left">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td class="right">
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="left">
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td class="right">
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 연결형(왼쪽 오른쪽 선없음) -->
+
+							<!-- 문제 - 연결형(위 아래) -->
+							<div class="pyeongga_con">
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num o">809.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다.<br/>동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때,<br/>이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer link"><!-- 테두리 없을 시 : class="answer link noborder" -->
+										<table summary="" class="ud"><!-- 왼쪽 오른쪽 : lr / 위 아래 : ud -->
+											<caption></caption>
+											<tbody>
+												<tr class="up">
+													<td>
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="line">&nbsp;</td><!-- 선택지 수 만큼 colspan 숫자 수정 필요 -->
+												</tr>
+												<tr class="down">
+													<td>
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 연결형(위 아래) -->
+
+							<!-- 문제 - 연결형(위 아래 선없음) -->
+							<div class="pyeongga_con last"><!-- 마지막 문제 last -->
+								<div class="qz_wrap">
+									<!-- 문제 영역 -->
+									<span class="qz_num x">999.</span><!-- 문제 맞췄을 시 : class="o" / 틀렸을 시 : class="x" -->
+									<div class="qz_con">
+										<p>그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를각각 그래프로 나타낸 것이다.<br/>동희가 오늘 아침으로 한 장에 지방이 20g, 단백질이 15g 들어있는 식빵을 두 장 먹었다고 할 때,<br/>이 두 영양소의 섭취로 동희가 낼 수 있는 총 열량은?</p>
+									</div>
+									<!-- //문제 영역 -->
+
+									<!-- 선택지 -->
+									<div class="answer link noborder"><!-- 테두리 없을 시 : class="answer link noborder" -->
+										<table summary="" class="ud"><!-- 왼쪽 오른쪽 : lr / 위 아래 : ud -->
+											<caption></caption>
+											<tbody>
+												<tr class="up">
+													<td>
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="6" class="line">&nbsp;</td><!-- 선택지 수 만큼 colspan 숫자 수정 필요 -->
+												</tr>
+												<tr class="down">
+													<td>
+														<div class="on"><!-- 선택했을 시 on -->
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div>
+															<p>내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+													<td>
+														<div class="correct"><!-- 정답일 시 correct -->
+															<p>내용1내용1내용1내용1</p>
+															<span>선택</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- //선택지 -->
+
+									<!-- 분류 -->
+									<div class="root_content">
+										<span class="title emt">분류</span>
+										<ul>
+											<li>중학교 1학년</li>
+											<li>함수와 그래프</li>
+											<li>함수의 활용</li>
+										</ul>
+									</div>
+									<!-- //분류 -->
+
+									<div class="btn_func">
+										<button type="button"><img src="../../images/btn/btn_hint.png" alt="힌트보기" /></button>
+										<button type="button"><img src="../../images/btn/btn_error.png" alt="오류신고" /></button>
+									</div>
+								</div>
+							</div>
+							<!-- //문제 - 연결형(위 아래 선없음) -->
+						</fieldset>
+						</form>
+
+					</div>
+					<!-- //평가서비스 -->
+
+					<!-- 하단바 추가 -->
+					<div class="tools">
+						<span class="fr">
+							<button type="button" class="score">채점</button>
+							<button type="button" class="tmpsave">임시저장</button>
+							<button type="button" class="print">인쇄</button>
+						</span>
+					</div>
+					<!-- //하단바 추가 -->
+
+					<!-- pagination -->
+					<div class="pagination">
+						<a class="first" href="#"><img src="../../images/common/page_first.png" alt="처음"></a>
+						<a class="prev" href="#"><img src="../../images/common/page_prev.png" alt="이전"></a>
+						<a class="on" href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next" href="#"><img src="../../images/common/page_next.png" alt="다음"></a>
+						<a class="last" href="#"><img src="../../images/common/page_last.png" alt="마지막"></a>
+					</div>
+					<!-- //pagination -->
+
+				</div>
+				<!-- //content_set -->
+
+			</div>
+			<!-- content_right -->
+
+		</section>
+		<!-- //category -->
+
+	</article>
+	<!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+
+
+
+<!-- footer -->
+<footer id="footer">
+	<!-- footer_con -->
+	<div class="footer_con">
+
+		<!-- family_con -->
+		<div class="family_con">
+			<ul>
+				<li class="btn1"><a class="emt" href="http://www.ebs.co.kr/" target="_blank" title="EBS 메인">EBS 메인</a></li>
+				<li class="btn2"><a class="emt" href="http://www.ebsi.co.kr/" target="_blank" title="EBSi">EBSi</a></li>
+				<li class="btn3"><a class="emt" href="http://www.ebse.co.kr/" target="_blank" title="EBS english">EBS english</a></li>
+				<li class="btn4"><a class="emt" href="http://www.ebslang.co.kr/ebs/index.laf" target="_blank" title="EBS lang">EBS lang</a></li>
+				<li class="btn5"><a class="emt" href="http://clipbank.ebs.co.kr/main/?src=text&kw=00006C" target="_blank" title="EBS 클립뱅크">EBS 클립뱅크</a></li>
+				<li class="btn6"><a class="emt" href="http://ebsstory.blog.me/" target="_blank" title="EBS 스토리 기업블로그">EBS 스토리 기업블로그</a></li>
+				<li class="btn7"><a class="emt" href="http://twitter.com/ebsaudience" target="_blank" title="Twitter EBS SNS">Twitter EBS SNS</a></li>
+				<li class="btn8"><a class="emt" href="http://book.ebs.co.kr/" target="_blank" title="Book Mall">Book Mall</a></li>
+			</ul>
+		</div>
+		<!-- //family_con -->
+
+		<!-- footer_menu -->
+		<div class="footer_menu">
+			<div class="logo_con">
+				<h2 class="blind">EBS Math</h2>
+			</div>
+			<div class="menu_con">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><span style="color:#fff" >개인정보처리방침</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //footer_menu -->
+
+		<!-- copyright_con -->
+		<div class="copyright_con">
+			<address>
+				06762 서울특별시 서초구 바우뫼로1길 35 한국교육방송공사  |  사업자등록번호 : 229-82-01343 (한국교육방송공사사장 신용섭)<br />
+				EBS 고객센터 1588-1580 (발신자 부담)  |  인터넷 문의 <a href="mailTo://helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>  |  FAX : 02-526-3855<br />
+				부가통신사업신고 : 10077  |  통신판매업신고 : 서초-8152호
+			</address>
+			<p class="mt15">
+				<strong>Copyright © EBS All Rights Reserved.</strong>
+			</p>
+			<div class="banner">
+				<img src="../../images/layout/footer_banner.png" />
+			</div>
+		</div>
+		<!-- //copyright_con -->
+
+	</div>
+	<!-- //footer_con -->
+</footer>
+<!-- //footer -->
+
+
+
+
+<!-- blind_con -->
+<div class="blind_con"></div>
+<!-- //blind_con -->
+
+<!-- modalBg -->
+<div class="modalBg"></div>
+<div class="modalPopupContainer">
+	<div class="popupCon"></div>
+</div>
+<!-- //modalBg -->
+
+
+<!-- datepicker -->
+<div class="datepicker"></div>
+<!-- //datepicker -->
+
+<!-- 주관식 입력 팝업 -->
+<div class="layer_popup layer1" style="position:absolute; top:30%; left:30%; width:598px; height:399px; display:none">
+	<div class="pop_wrap">
+		<div class="header">
+			<h1><img src="../../images/popup/pop_logo.png" alt="EBSMath" /></h1>
+			<span class="btn-formula"><a href="#none"><img src="../../images/btn/btn_input_formula.png" alt="수식입력" /></a></span>
+		</div>
+		<div class="conwrap ans-essay">
+			<div class="answrap">
+				<div class="txtbox">
+					<p class="tip">이곳에 정답을 입력하신 후 <span>[입력완료] 버튼</span>을 눌러주세요.<br/>정답 입력 중 오른쪽 <em>[수식입력] 버튼을 통해 수식입력이 가능</em>합니다.</p>
+					<textarea name="" id="" cols="30" rows="10" onclick="$('.tip').hide();" onblur="$('.tip').show();"></textarea>
+				</div>
+				<div class="btn">
+					<button><img src="../../images/btn/btn_rewrite.png" alt="다시입력" /></button>
+					<button><img src="../../images/btn/btn_complete.png" alt="입력완료" /></button>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close" onclick="$(this).closest('.layer1').remove(); return false;"><img src="../../images/btn/btn_close.png" alt="닫기" /></button>
+	</div>
+</div>
+<!-- //주관식 입력 팝업 -->
+
+<!-- 채점하기 -->
+<div class="layer_popup layer2" style="position:absolute; top:80%; left:30%; width:800px; height:550px; display:none">
+	<div class="pop_wrap">
+		<div class="header">
+			<h1><img src="../../images/popup/pop_logo.png" alt="EBSMath" /><span>채점하기</span></h1>
+		</div>
+		<div class="conwrap">
+			<div class="scoring_wrap">
+
+				<div class="scoring_conts">
+					<p>정오(O, X)칸에 주관식 답변의 정답(O) / 오답(X) 여부를 선택하여 주시고, 정답(O)이라면 점수를 입력하여 주십시오.</p>
+
+					<div class="scoring_in">
+						<ul>
+
+							<li>
+								<div class="scoring_top">
+									<div class="scoring_top_left">
+										<ul>
+											<li>
+												<strong>번호</strong>
+												<div class="left_cont"><span class="num">1</span></div>
+											</li>
+											<li>
+												<strong>정오</strong>
+												<div class="left_cont">
+													<div class="left_cont_in">
+													<span>
+														<input id="open_radio1" name="open_radio" type="radio" checked>
+														<label for="open_radio1" style="position:relative;top:3px">O</label>
+													</span>
+													<span class="ml10">
+														<input id="open_radio2" name="open_radio" type="radio">
+														<label for="open_radio2" style="position:relative;top:3px">X</label>
+													</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<strong>점수</strong>
+												<div class="left_cont">
+													<div class="left_cont_in02">
+													<p class="real">10.0</p><p>/10.0점</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="scoring_top_right">
+										<table>
+											<caption>점수 리스트</caption>
+											<colgroup>
+												<col width="50%">
+												<col width="50%">
+											</colgroup>
+
+											<thead>
+												<tr>
+													<th scope="col">내답</th>
+													<th scope="col">정답</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>y=a(x-p)²+q</td>
+													<td>y=a(x-p)²+q</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="scoring_bottom">
+									<h4>해설보기<div class="slide_bt">slide</div></h4>
+									<div class="scoring_bottom_cont">
+										<div class="bottom_cont_t">
+											<img src="../../images/popup/pop_answers.png"alt="해설정답"/>
+											<span>2</span>
+											<p>340kcal</p>
+										</div>
+										<div class="bottom_cont_p">
+											그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를 각각 그래프로 나타낸 것에 대한 해설 입니다. 그림은 두 영양소인 지방과 단백질의 양과 열량 사 이의 관계를 각각 그래프로 나타낸 것에 대한 해설 입니다. 그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를 각각 그래프로 나타낸 것에 대한 해설입니다.
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="scoring_top">
+									<div class="scoring_top_left">
+										<ul>
+											<li>
+												<strong>번호</strong>
+												<div class="left_cont"><span class="num">1</span></div>
+											</li>
+											<li>
+												<strong>정오</strong>
+												<div class="left_cont">
+													<div class="left_cont_in">
+													<span>
+														<input id="open_radio1" name="open_radio2" type="radio" checked>
+														<label for="open_radio1" style="position:relative;top:3px">O</label>
+													</span>
+													<span class="ml10">
+														<input id="open_radio2" name="open_radio2" type="radio">
+														<label for="open_radio2" style="position:relative;top:3px">X</label>
+													</span>
+													</div>
+												</div>
+											</li>
+											<li>
+												<strong>점수</strong>
+												<div class="left_cont">
+													<div class="left_cont_in02">
+													<p class="real">10.0</p><p>/10.0점</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="scoring_top_right">
+										<table>
+											<caption>점수 리스트</caption>
+											<colgroup>
+												<col width="50%">
+												<col width="50%">
+											</colgroup>
+
+											<thead>
+												<tr>
+													<th scope="col">내답</th>
+													<th scope="col">정답</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>y=a(x-p)²+q</td>
+													<td>y=a(x-p)²+q</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="scoring_bottom">
+									<h4>해설보기<div class="slide_bt">slide</div></h4>
+									<div class="scoring_bottom_cont">
+										<div class="bottom_cont_t">
+											<img src="../../images/popup/pop_answers.png"alt="해설정답"/>
+											<span>2</span>
+											<p>340kcal</p>
+										</div>
+										<div class="bottom_cont_p">
+											그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를 각각 그래프로 나타낸 것에 대한 해설 입니다. 그림은 두 영양소인 지방과 단백질의 양과 열량 사 이의 관계를 각각 그래프로 나타낸 것에 대한 해설 입니다. 그림은 두 영양소인 지방과 단백질의 양과 열량 사이의 관계를 각각 그래프로 나타낸 것에 대한 해설입니다.
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="btn">
+					<button><img src="../../images/btn/btn_check.png" alt="확인" /></button>
+					<button><img src="../../images/btn/btn_cancel.png" alt="취소" /></button>
+				</div>
+			</div>
+		</div>
+		<button class="btn-close" onclick="$(this).closest('.layer2').remove(); return false;"><img src="../../images/btn/btn_close.png" alt="닫기" /></button>
+	</div>
+</div>
+<!-- //채점하기 -->
+
+<script>
+$(document).ready(function(){
+	$(".scoring_conts .scoring_in > ul > li .slide_bt").click(function(){
+
+		var s=$(this).parent().next();
+		if(s.css("display") == "none"){
+			$(this).addClass("off");
+		}
+		else{
+			$(this).removeClass("off");
+		}
+		s.slideToggle();
+
+	});
+});
+
+$(function(){
+	var boxtop=parseInt($(".anscard").css("top"));
+	$(window).scroll(function(){
+		if(navigator.userAgent.toLowerCase().indexOf("webkit")<0){
+			var theScrollTop=document.documentElement.scrollTop;
+		}else{
+			var theScrollTop=document.body.scrollTop;
+		}
+		$(".anscard").stop();
+		$(".anscard").animate({"top":theScrollTop+boxtop},500);
+
+	});
+});
+
+</script>
+
+</body>
+</html>

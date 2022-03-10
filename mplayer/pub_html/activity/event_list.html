@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/activity.css" /><!-- 수학활동 -->
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<div class="activity">
+			<section class="course_top">
+				<div class="wrap">
+					<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+					<h2 class="tit_course_m" onclick="openCrsList()">수학 특별활동 <strong class="stit_course_m">이벤트</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+					<ul class="crs_list">
+						<li class="dep2"><a href="#">수학행사</a>
+							<span class="dep3"><a href="#">찾아가는 EBSMath 체험관</a></span>
+							<span class="dep3"><a href="#">3.14 파이데이</a></span>
+							<span class="dep3"><a href="#">2014 서울세계수학자대회</a></span>
+							<span class="dep3"><a href="#">2014 수학교사 한마당</a></span>
+						</li>
+						<li class="dep2 on"><a href="#">이벤트</a></li>
+						<li class="dep2"><a href="#">희망수학 칼럼</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="content_top">
+				<div class="wrap">
+					<h2 class="tit_top">이벤트</h2>
+
+					<p>
+						재밌고 유익한 EBSMath의 이벤트에 참여하세요!
+					</p>
+				</div>
+			</section>
+
+
+			<section class="contents_mid">
+				<div class="wrap">
+
+					<div class="quiry_head">
+						<em class="cmt_result">총 <strong class="txthr_pp">400</strong>건</em>
+					</div>
+				
+  					<div class="event_list">
+						<ul>
+							<li>
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/103.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 입체도형 놀이터 앱 OPEN 기념 이벤트</dt>
+										<dd class="event_cmt">
+											2015년 개정 교육과정을 반영한 EBSMath의 실감형 AR앱 콘텐츠를 이용하고 풍성한 선물도 받아가세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2022.01.24. ~ 2022.02.20</span>
+										</dd>
+										<dd class="flag">
+											<mark class="flag_evt05">이벤트 진행중</mark>
+											<!-- <mark class="flag_evt01">사전 오픈중</mark>
+											<mark class="flag_evt02">당첨자 발표</mark>
+											<mark class="flag_evt03">이벤트 종료</mark>
+											<mark class="flag_evt04">당첨자 선정중</mark>
+											<mark class="flag_evt06">당첨</mark>
+											<mark class="flag_evt07">미당첨</mark> -->
+										</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/102.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학마법학교로 가자! 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 신규 콘텐츠 오픈기념! 세미와 수학마법학교 2, PLAY 세미 2를 보고 풍성한 선물도 받아가세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date"> 2022.01.17. ~ 2022.02.20</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt05">이벤트 진행중</mark></dd>
+									</dl>
+									
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/101.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>끝까지 달린다! 수학 시리즈 정주행 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 찐회원 인증! 시리즈 정주행하고 상품까지 획득하세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2021.11.01. ~ 2021.12.05</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/100.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>달토끼 송편 만들기 이벤트</dt>
+										<dd class="event_cmt">
+											9월 추석 맞이 EVENT! 달이 뜨면 더 많은 송편이?EBSMath에서 학습 후 송편을 만들고 풍성한 상품을 획득하세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2021.08.30. ~ 2021.10.03</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/99.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학 Full 충전, 선풍기 ON! 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 콘텐츠를 학습하고 푸짐한 여름나기 선물을 획득하세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date"> 2021.06.24. ~ 2021.07.25</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/98.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>내 실력 굳히는 문제풀이 이벤트</dt>
+										<dd class="event_cmt">
+											지금 나의 수학 컨디션은 최상! 문제 풀고, 추천 콘텐츠 보면 온 가족이 좋아할 선물이 팡팡!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2021.04.23. ~ 2021.05.30</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/97.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>파이(π)데이 기념! 3.14 스탬프 이벤트</dt>
+										<dd class="event_cmt">
+											끝없이 이어지는 신비의 수 파이(π)! 3.14 파이데이 콘텐츠로 공부하고 파이(π) 스탬프를 찍어주세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2021.03.02. ~ 2021.03.28</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/96.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 세미와 함께 새해맞이 윷놀이 이벤트</dt>
+										<dd class="event_cmt">
+											새롭게 선보이는 PLAY 세미 콘텐츠로 더욱 재밌게 수학 공부하고, 푸짐한 경품의 행운까지 잡아보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.12.28. ~ 2021.01.31</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/95.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>Good Bye 2020! 마무리 실력 테스트</dt>
+										<dd class="event_cmt">
+											다사다난했던 2020년! 실력 테스트로 깔끔하게 마무리하자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.12.07. ~ 2020.12.31</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/94.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 세균 싹쓰리 - 손 씻기 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath에서 수학 공부하고 비누를 모아 세균으로 더러워진 손을 깨끗하게 씻어보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.11.02. ~ 2020.12.06</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/93.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 셀프 진단평가 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath로 학습한 수학 실력을 스스로 진단해보고 보완하는 시간!2학기 진단평가 문제도 풀어보고 푸짐한 경품의 행운까지 잡아보세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.10.12. ~ 2020.11.08</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/92.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 도전! 빙고 왕 이벤트</dt>
+										<dd class="event_cmt">
+											최신 수학 콘텐츠로 공부하고 빙고 판을 채워보세요! 완성된 빙고 수가 많을수록 당첨 확률 UP!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.08.24. ~ 2020.10.04</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/91.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 초간단 수학 학력평가 이벤트</dt>
+										<dd class="event_cmt">
+											1학기 학습 내용 간단하게 시험보고! 나의 수학 실력을 확인해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.08.10. ~ 2020.08.30</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/90.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 수학 게임존 마블 이벤트</dt>
+										<dd class="event_cmt">
+											수학 게임존에서 다양한 수학 게임으로 재밌게 공부하고 주사위를 모아 마블 판을 완주해보세요!완주 횟수가 많을수록 당첨 확률 UP!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.07.06. ~ 2020.08.09</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/89.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 활용 교수&middot;학습 수기 공모 이벤트</dt>
+										<dd class="event_cmt">
+											EBS는 온라인 수업 과정에서 EBSMath를 활용한 사례를 모아 포스트 코로나 시대의 교육을 준비하고자 합니다. 작은 경험일지라도 소중한 교수&middot;학습 경험을 함께 나누어 주세요.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.06.08. ~ 2020.08.15</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/88.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 수학 쪽지시험 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath에서 자기주도 학습한 수학 실력을 확인할 시간!주어진 문제를 풀고 70점 이상 달성해 보세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.05.11. ~ 2020.05.31</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/87.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 지구야 사랑해! 이벤트﻿</dt>
+										<dd class="event_cmt">
+											4월 22일 지구의 날 기념! 지구야 사랑해 이벤트!과학의 달 4월! EBSMath에서 과학과 수학을 통해 지구와 환경에 대해 알아보고, 지구 지키기에 동참해 주세요.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.04.06. ~ 2020.05.03</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/86.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>파이데이 기념! 선물상자 만들기 이벤트﻿﻿</dt>
+										<dd class="event_cmt">
+											파이처럼 달콤한 수학의 발견 파이(π)! EBSMath 학습카드로 파이(π)에 대해 알아보고 맛있는 파이 선물상자 만들기에 도전해보세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.03.09. ~ 2020.04.12</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/85.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 방학생활 완벽 마무리 이벤트</dt>
+										<dd class="event_cmt">
+											남은 방학을 가장 알차게 보내는 방법!EBSMath 학습카드로 초중고 수학 예습하고 방학생활을 완벽하게 마무리 해보세요
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.02.10. ~ 2020.03.15</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/84.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 새해엔 복받쥐 이벤트</dt>
+										<dd class="event_cmt">
+											매일 학습카드 보고, 복주머니를 획득하세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2020.01.06. ~ 2020.02.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/83.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 신규콘텐츠 빙고이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 신규 콘텐츠를 보고 빙고를 완성해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.12.18. ~ 2020.01.05</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/82.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 크리스마스 트리 만들기 이벤트</dt>
+										<dd class="event_cmt">
+											학습카드 보고 눈꽃을 모아 크리스마스 트리를 완성해보세요! 아이패드 에어 등 푸짐한 경품을 드립니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.12.04. ~ 2020.01.12</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/81.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 좋아요♥ 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 학습카드를 보고 좋아요(♥)를 누르면 다양한 경품이 쏟아집니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.10.30. ~ 2019.12.08</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/80.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 다람쥐와 참참참</dt>
+										<dd class="event_cmt">
+											EBSMath 학습카드를 보고 도토리를 모아 다람쥐와 참참참게임을 해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.09.30. ~ 2019.11.06</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/79.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 앱 다운로드 이벤트</dt>
+										<dd class="event_cmt">
+											2학기에도 EBSMath와 함께!EBSMath 모바일 앱에서 학습카드 보면학습 의욕을 불태울 수 있는 다양한 경품이 쏟아집니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.09.02. ~ 2019.10.06</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/78.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 수학왕 이벤트</dt>
+										<dd class="event_cmt">
+											철저한 복습과 예습으로 2학기를 대비하자!EBSMath에서 열공하고 수학왕에 도전해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.08.05. ~ 2019.09.08</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/77.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학 게임존을 즐겨라! 이벤트</dt>
+										<dd class="event_cmt">
+											새롭게 탄생한 EBSMath 수학 게임존에서 다양한 수학 게임을 즐기고 경품 당첨의 행운까지 누려보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.07.08. ~ 2019.08.11</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/76.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>기말고사 대비 이벤트 돌려돌려! 돌림판</dt>
+										<dd class="event_cmt">
+											EBSMath 학습카드를 보고 돌림판을 돌려 100점을 달성해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.06.10. ~ 2019.07.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/75.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>봄 소풍 가는 날 이벤트</dt>
+										<dd class="event_cmt">
+											푸르른 5월, EBSMath와 함께 즐거운 봄 소풍을 떠나보세요!학습카드 보고 소풍 일정 클리어하면 푸짐한 경품까지!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.05.03. ~ 2019.06.09</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/74.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>친구들아 뭉쳐라! 반 대항 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath에서 열공하고 친구들과 간식 먹자!반 친구들과 함께 학습카드를 보고 별 포인트를 모으세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.04.10. ~ 2019.05.19</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/73.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>새학기 EVENT 가방싸고 학교가자!</dt>
+										<dd class="event_cmt">
+											새 학기의 시작은 EBSMath와 함께! EBSMath에서 최신 수학 학습카드 보고 나만의 가방을 완성해 보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.03.11. ~ 2019.04.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/72.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 게임왕! 랭킹 이벤트</dt>
+										<dd class="event_cmt">
+											25종류의 재미있는 수학 학습 게임을 즐기고 누가 누가 더 잘하나~ 대결할 수 있어요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.02.01. ~ 2019.03.10</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/71.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>황금 돼지 키우기 이벤트</dt>
+										<dd class="event_cmt">
+											황금 돼지의 해, 2019년! 돼지에게 맛있는 사과를 먹여줘요 꿀꿀~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2019.01.07. ~ 2019.02.10</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/70.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학친구 = 여자친구 이벤트</dt>
+										<dd class="event_cmt">
+											여자친구와 함께하는 즐거운 수학 여행! 여자친구 멤버들이 직접 작성한 '손글씨' 수학 공식 노트를 받아보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.12.17. ~ 2019.01.06</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/69.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>크리스마스 선물 쟁탈전 이벤트</dt>
+										<dd class="event_cmt">
+											받고 싶다면 학습하라! 친구들 모두 모여 크리스마스 선물 받자! 열심히 학습카드를 보고 팀을 승리로 이끌어 주세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.12.03. ~ 2019.01.06</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/68.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>[선생님 전용] M노트가 쏜다! 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 선생님 공간 오픈기념, M노트가 쏜다! 이벤트M노트를 만들고! 공유하고! 찜하고! 푸짐한 상품의 주인공이 되어보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.11.19. ~ 2018.12.09</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/67.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath와 EBS 초등! 고양이를 찾아라냥 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath와 EBS 초등이 뭉쳤다! 여기저기 숨어있는 귀여운 고양이를 찾으면 푸짐한 상품이 펑펑!!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.10.29. ~ 2018.12.09</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/66.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>가로세로 수학 퍼즐 이벤트</dt>
+										<dd class="event_cmt">
+											알쏭달쏭 가로세로 수학 퍼즐 맞추기! 내가 직접 선택한 경품을 받아보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.10.01. ~ 2018.10.31</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/65.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중간고사 대비, 대박 터트리기 이벤트</dt>
+										<dd class="event_cmt">
+											2학기에도 EBSMath에서 중간고사 대비를 해요!대박 터트리고, 경품도 받고! 100점까지 가즈아~!!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.08.20. ~ 2018.09.21</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/64.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>2018 여름방학 열공신화 이벤트</dt>
+										<dd class="event_cmt">
+											무더운 여름방학, EBSMath에서 열공하고 시원한 경품을 받아보세요!5주 연속 개근하면 닌텐도 스위치의 행운까지!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.07.16. ~ 2018.08.26</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/63.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>앱에게 말해줘! 이벤트</dt>
+										<dd class="event_cmt">
+											앱으로 EBSMath의 재미있는 영상을 쉽게 다운받고 이벤트도 참여하여 경품의 주인공이 되어보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.07.04. ~ 2018.07.18</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/62.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>기말고사 대비, 빗자루 쓱싹 이벤트</dt>
+										<dd class="event_cmt">
+											기말고사를 대비하여 더러워진 교실을 쓱싹~쓱싹~ 깨끗하게 청소하고 푸짐한 경품을 받아보아요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.06.04. ~ 2018.07.08</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/61.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학의 마블! 이벤트</dt>
+										<dd class="event_cmt">
+											푸르른 5월을 더욱 활기차게 보내는 방법! 주사위를 던지고 푸짐한 경품을 받아보세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.04.30. ~ 2018.06.03</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/60.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중간고사 대비, 새싹 키우기 이벤트</dt>
+										<dd class="event_cmt">
+											이번 학기 첫 시험, 중간고사 대비하면서 새싹 키우기! 새싹도 키우고 중간고사도 만점 받자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.04.09. ~ 2018.05.02</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/59.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>새 학기, 퍼즐 맞추기 이벤트</dt>
+										<dd class="event_cmt">
+											퍼즐 맞추고 영상을 보고 닌텐도 스위치 당첨의 행운을 잡아보세요! 새 학기에도 EBSMath에서 재미있는 수학을 만나요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.03.05. ~ 2018.04.08</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/58.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>설날 떡국 먹기 이벤트</dt>
+										<dd class="event_cmt">
+											2018년은 지금부터 시작! 까치까치 설날은~ 떡국 먹지요~ 설날을 맞이하여 세미에게 떡국을 먹여주세요~!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.02.05. ~ 2018.03.04</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/57.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>황금 개띠 해, 강아지 집 보내기 이벤트</dt>
+										<dd class="event_cmt">
+											매일 낱말 5개를 찾고 길 잃은 강아지를 집에 보내주세요.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2018.01.08. ~ 2018.02.07</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/56.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학운동회 오픈 기념 이벤트</dt>
+										<dd class="event_cmt">
+											너넨 머리로 수학하니? 우린 몸으로 한다!매주 오픈하는 수학 운동회 콘텐츠를 보고 도장을 모아보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date"> 2017.12.01. ~ 2018.01.07</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/55.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>기말고사 대비, 선물 뽑기 이벤트</dt>
+										<dd class="event_cmt">
+											다시 돌아온 기말고사! EBSMath에서 열심히 시험공부하고포인트를 모아 선물을 뽑아보세요! 포인트를 많이 적립할수록 상품이 펑펑!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.11.08. ~ 2017.12.10</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/54.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>천고마비의 계절 가을, 말키우기 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath와 EBS중학이 함께하는 천고마비의 계절 가을, 말키우기 이벤트!이번 가을에는 공부도 하고 귀여운 말도 키워보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.10.11. ~ 2017.11.12</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/53.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중간고사 대비 보름달 이벤트</dt>
+										<dd class="event_cmt">
+											2학기 중간고사에는 보름달 빙고다!매일 시험 대비 학습카드를 보고, 보름달로 빙고를 만들면 푸짐한 상품이 펑펑!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.09.13. ~ 2017.10.15</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/52.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>세미 게임 시리즈 오픈 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath의 마스코트! 수학술사 세미의 게임 시리즈가 오픈했어요!세미와 바론, 라미와 함께 게임도 하고 푸짐한 상품도 받아보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.08.16. ~ 2017.09.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/51.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>단원복습게임 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath에서 준비한 초등 수학 놀이터 2탄!친구들과 함께 즐길 수 있는 단원복습게임이 오픈했어요! 플레이만 하면 참여 완료!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.07.18. ~ 2017.07.31</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/50.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>2017 여름방학 열공신화 이벤트</dt>
+										<dd class="event_cmt">
+											여름방학을 더욱 알차고 재미있게 보내는 방법!EBSMath에서 준비한 2017 여름방학 열공신화 이벤트와 함께하세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.07.10. ~ 2017.08.20</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/49.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>기말고사 대비! 가위바위보 이벤트</dt>
+										<dd class="event_cmt">
+											기말고사를 재미있게 준비하는 방법!EBSMath가 알려주는 기말고사 대비 학습카드를 보고 가위바위보 게임도 해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.06.12. ~ 2017.07.09</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/48.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 공식 블로그 오픈 기념 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 공식 블로그에서 이벤트를 준비했어요!제일 좋아하는 학습카드를 골라보고 맛있는 상품에도 도전해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.05.24. ~ 2017.06.25</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/47.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>카네이션 보내기 이벤트</dt>
+										<dd class="event_cmt">
+											재미있는 문제 세트 게임을 풀면 예쁜 카네이션을 다운받을 수 있어요!부모님과 선생님께 감사한 마음을 표현해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.04.24. ~ 2017.05.24</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/46.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>벚꽃고사 이벤트</dt>
+										<dd class="event_cmt">
+											벚꽃의 꽃말은 중간고사라는 거 실화!?슬퍼하지말고 EBSMath에서 시험공부하면서 벚꽃 구경하자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.04.03. ~ 2017.05.13</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/45.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>캐릭터를 구하라! 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath의 캐릭터가 구슬에 갇혔어요! 여러분의 도움이 필요해요ㅠㅠ 학습카드를 보고 유리구슬을 깨트려 캐릭터들을 구해주세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.03.14. ~ 2017.04.22</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/44.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>문제 세트 게임 오픈 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath에서 너무너무너무 재미있는 문제세트게임이 오픈했어요! 문제세트게임을 플레이하고 별★을 모아보세요! 1개만 모아도 이벤트 성공!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.03.06. ~ 2017.04.15</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/43.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>SNS 공유 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath 최고의 홍보단을 찾아라! 좋아하는 카드를 내 SNS에 마구 공유해주세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.02.08. ~ 2017.03.20</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/42.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>2017 퍼즐 맞추기 이벤트</dt>
+										<dd class="event_cmt">
+											새해에 EBSMath가 준비한 수학오락실 3탄! 2017 퍼즐 맞추기 이벤트! 재미있는 퍼즐을 맞추고 영상을 보면 수학 실력도 쑥쑥!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2017.01.09. ~ 2017.02.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/41.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>메리 크리스MATH 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath가 크리스마스 선물을 쏜다! 룰렛을 돌리면 선물이 펑펑! 재미있게 공부하고 선물도 받아가는 행복한 크리스MATH 되세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.11.30. ~ 2017.01.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/40.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>기말워치! 영웅들의 시험이 시작된다!</dt>
+										<dd class="event_cmt">
+											기말고사 대비 문제를 풀고 채점을 하면 계급이 부여됩니다. 문제를 풀고 최고 계급을 달성해보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.11.14. ~ 2016.12.08</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/39.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>틀린 그림 찾기 이벤트</dt>
+										<dd class="event_cmt">
+											수학 오락실 1탄! 틀림 그림 찾기 이벤트!영상카드를 보고 틀린 그림을 찾아보세요^^
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.11.07. ~ 2016.12.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/38.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>도토리를 모으자! 이벤트</dt>
+										<dd class="event_cmt">
+											학습카드를 보고 도토리를 모아서 도토리 나무로 성장시키세요! 도토리 나무를 모으면 상품도 펑펑! 수학실력도 쑥쑥!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.10.10. ~ 2016.11.15</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/37.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중간고사 점수에 날개를 달아라!</dt>
+										<dd class="event_cmt">
+											중간고사 대비 서비스로 중간고사 점수에 날개를 달아라! 점수에 날개를 달아줄 중간고사 대비 문제와 모르는 문제를 질문할 수 있는 학습 Q&A 까지!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.09.19. ~ 2016.10.13</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/36.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>보름달 이벤트</dt>
+										<dd class="event_cmt">
+											한가위 특집, 보름달 이벤트가 시작되었습니다! 재미있는 학습카드도 보고 둥근 보름달도 만들어보세요~!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.09.05. ~ 2016.10.13</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/35.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>모바일웹 신규 회원가입 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath를 더 편리하게 즐길 수 있는 모바일웹 오픈기념 이벤트! 모바일웹에서 회원가입만하면 맛있는 바나나맛 우유를 선물로 드려요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.08.29. ~ 2016.09.19</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/34.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>2016 여름방학 열공신화 이벤트</dt>
+										<dd class="event_cmt">
+											7월 18일! 2016 여름방학 열공신화 이벤트가 시작됩니다! 이번 여름방학은 EBSMath와 재미있게 공부하고, 열공신화의 주인공이 되어보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.07.04. ~ 2016.08.30</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/33.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 기말고사 비밀의 방</dt>
+										<dd class="event_cmt">
+											이번 기말고사는 비밀의 방에서 준비해봐! 모르는 문제도 알려주고 기말고사 대비문제도 있는 비밀의 방!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.06.20. ~ 2016.07.14</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/32.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>찜★찜★한 이벤트</dt>
+										<dd class="event_cmt">
+											별을 누르면 어떤일이 일어날까요? 원하는 카드를 찜하고 학습완료 해보세요. 찜+학습완료 카드가 많을수록 당첨확률 UP!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.06.07. ~ 2016.07.11</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/31.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>빛나는 100개의 아이디어 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath에 바라는 점, 활용 팁 등 여러분의 반짝반짝 빛나는 아이디어를 남겨주세요. 심사를 통해 가장 빛나는 아이디어를 주신 분들을 선정하여 상품을 드립니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.05.10. ~ 2016.06.16</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/30.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>(4차) 세미 페이스북 오픈 이벤트</dt>
+										<dd class="event_cmt">
+											세미가 준비한 마지막 네번째 이벤트! 세미 페이스북 이벤트 게시글에 '수학술사'로 4행시를 지어주세요. 세미가 4행시를 지어주신 분들 중 추첨을 통해 60분께 도넛박스를 쏩니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.05.02. ~ 2016.05.12</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/29.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>(3차) 세미 페이스북 오픈 이벤트</dt>
+										<dd class="event_cmt">
+											세미가 준비한 세번째 이벤트! 세미 페이스북 이벤트 게시글에 친구를 태그하여 이벤트를 소문내주세요. 세미가 친구를 태그해주신 분들 중 추첨을 통해 50분께 영화예매권을 쏩니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.04.25. ~ 2016.05.05</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/28.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>(2차) 세미 페이스북 오픈 이벤트</dt>
+										<dd class="event_cmt">
+											세미가 여러분과 친해지려고 두번째 이벤트를 준비했어요! 세미 페이스북 이벤트 게시글에 ‘좋아요’를 누르고 이벤트를 홍보해주세요. 세미가 '좋아요'를 누른 분들 중 추첨을 통해 40분께 치킨박스를 쏩니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.04.18. ~ 2016.04.28</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/27.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>(1차) 세미 페이스북 오픈 이벤트</dt>
+										<dd class="event_cmt">
+											세미가 여러분과 친해지려고 이벤트를 준비했어요! 세미 페이스북에 ‘좋아요’를 누르고 세미와 친구가 되어주세요. 세미가 '좋아요'를 누른 분들 중 추첨을 통해 30분께 떡튀순을 쏩니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.04.11. ~ 2016.04.21</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/26.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>333 퀘스트 이벤트</dt>
+										<dd class="event_cmt">
+											새로운 모습으로 찾아온 EBSMath가 재미있는 퀘스트 이벤트를 진행합니다. 매일 EBSMath에서 퀘스트를 완료하면 추첨을 통해 세미 피규어를 선물로 드려요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2016.03.14. ~ 2016.04.13</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/25.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBSMath 우수 활용사례 공모</dt>
+										<dd class="event_cmt">
+											다양한 활용 사례를 양식에 맞춰 성심성의껏 작성해서 보내주세요. 최대 100분을 선정하여 문화상품권(3만원권)을 드리며, 최우수 사례자 3분 선정 현장 인터뷰를 진행할 예정입니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.10.08. ~ 2015.10.24</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/24.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>미니 중간고사 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath가 엄선한 각 학년별 시험문제로 중간고사를 미리보자! 수윙(EBSMath 멘토)의 중간고사 대비 꿀팁 공개! 중간고사도 대비하고 선물도 받아가세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.09.23. ~ 2015.10.03</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/23.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>EBS패밀리사이트 YES or NO 송편 퀴즈 이벤트</dt>
+										<dd class="event_cmt">
+											매일 새롭게 출제되는 ‘Yes or No!’ 송편퀴즈의 정답을 맞혀주세요! 퀴즈를 맞히신 분들께 EBSi, EBS English, EBSMath 에서 준비한 푸짐한 선물을 드립니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.09.17. ~ 2015.09.29</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/21.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>여름방학 열공신화 이벤트</dt>
+										<dd class="event_cmt">
+											열공신화 달성하고 선물 받으세요~신청을 못했다면 열공선언 이벤트에 응모해 보세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.07.27. ~ 2015.08.22</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/22.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>제19회 대한민국과학창의축전 홍보이벤트</dt>
+										<dd class="event_cmt">
+											창의축전 기간 동안 일산킨텍스에 있는 EBSMath부스를 찾아 이벤트에 응모하시면 EBS가 자체 제작한 기프트 KIT를 선물로 드립니다~~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date"> 2015.07.28. ~ 2015.08.01</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/21_2.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>여름방학 열공신화 이벤트</dt>
+										<dd class="event_cmt">
+											열공신화를 만들어 갈 열공회원을 모집합니다! 신청 기간이 지나면 이벤트에 참여할 수 없습니다. 신청을 서두르세요~
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.07.13. ~ 2015.07.25</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/20.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>네이든 시사회 이벤트</dt>
+										<dd class="event_cmt">
+											수학에 천재적인 재능을 가진 네이든과 함께할 행운의 주인공은 누구? 5분 영상 학습완료하고 시사회 기대평 남기면 추첨을 통해 50명을 네이든 시사회에 초대합니다! (1인 2매)
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.06.02. ~ 2015.06.13</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/19.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>가정의 달 이벤트</dt>
+										<dd class="event_cmt">
+											가족에게 사랑의 영상을 전달하세요! 감상평 남기기와 facebook과 함께하는 좋아요&가족소환 이벤트에 응모하세요! 추첨을 통해 피자와 치킨, 베스킨라빈스 아이스크림을 드립니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.04.30. ~ 2015.05.16</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/18.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>지구의 날 이벤트</dt>
+										<dd class="event_cmt">
+											수학이 지구를 구할 수 있다. 없다? 동영상 속에 정답이 쏘옥~ 정답을 맞추면 자유시간이 공짜!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.04.16. ~ 2015.04.21</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/17.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중간고사 All 100 도전 이벤트</dt>
+										<dd class="event_cmt">
+											수학의 넘사벽, EBSMath와 함께 뛰어넘자! 신학기 첫 시험, 중간고사 All 100 도전! 수윙(EBSMath멘토)의 중간고사 대비 노하우 전격공개!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.04.13. ~ 2015.04.25</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/16.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>π day Festival</dt>
+										<dd class="event_cmt">
+											3월 14일, 또 다른 π 세상과 만나다! 수학을 사랑하는 사람들은 모두 모여 참여하세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.03.11. ~ 2015.03.31</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/15.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>신규회원가입 이벤트</dt>
+										<dd class="event_cmt">
+											신학기의 설레임을 담은 행운의 7일이 시작됩니다!!! 'LUCKY M BOX의 주인공'이 되세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.03.16. ~ 2015.03.21</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/14.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학공부, 왜 해야 할까요?</dt>
+										<dd class="event_cmt">
+											새 단장한 EBSMATH와 함께 신학기를 시작하자! 동영상을 보고 소감을 남겨주세요! 매일 20명에게 프링글스를 드립니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date"> 2015.02.26. ~ 2015.03.07</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/13.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>도전! 나는야 퍼즐왕</dt>
+										<dd class="event_cmt">
+											퍼즐을 맞춰나갈수록 재미도 UP! 수학내공도 UP! 퍼즐 왕이 되어 상품받아가자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2015.01.05. ~ 2015.01.24</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/12.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>★이벤트 연장오픈★ 이 주의 수학문제 이벤트</dt>
+										<dd class="event_cmt">
+											※2015년 2월 4일까지 이벤트 연장!! 이벤트 기간 동안 이 주의 수학문제 정답자 중 추첨을 통해 선물을 드립니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.12.11. ~ 2015.02.03</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/11.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>우리 학습 커뮤니티를 소개합니다</dt>
+										<dd class="event_cmt">
+											우리 반 학습 커뮤니티의 모습을 자랑하세요! 으뜸 커뮤니티를 선정하여 피자를 쏩니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.11.03. ~ 2014.11.22</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/10.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>수학의 감을 잡아라</dt>
+										<dd class="event_cmt">
+											주어지는 문제를 풀어 수학의 '감'도 살리고 행운의 기회도 잡으세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.10.13. ~ 2014.10.25</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/09.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중간고사대비 열공신화</dt>
+										<dd class="event_cmt">
+											EBSMath 열공신화와 함께 2학기 중간고사 수학은 내가 접수한다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.09.12. ~ 2014.09.27</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/08.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>2014 서울세계수학자대회</dt>
+										<dd class="event_cmt">
+											전 세계의 수학축제인 세계수학자대회에 여러분을 초대합니다!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.08.13. ~ 2014.08.20</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/07.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>공동목표달성 이벤트</dt>
+										<dd class="event_cmt">
+											매일 주어지는 공동학습목표를 '함께' 달성하고 '당첨행운'도 잡으세요!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.07.16. ~ 2014.07.29</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/06.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>학습커뮤니티 개설/가입 이벤트</dt>
+										<dd class="event_cmt">
+											흩어지면 뒤쳐지고 뭉치면 선물 받는다! 학습 커뮤니티 20팀을 뽑아 풍성한 간식을 쏩니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.05.19. ~ 2014.06.04</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/05.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>중학 전 학년 서비스 GRAND OPEN 기념 이벤트</dt>
+										<dd class="event_cmt">
+											"중학 전 학년 서비스 오픈 기념" 축하 댓글을 남겨주시는 많은 분들께 풍성한 선물을!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2014.03.10. ~ 2014.04.05</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/04.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>겨울방학 열공신화 이벤트</dt>
+										<dd class="event_cmt">
+											EBSMath와 함께하는 겨름방학 열공신화! 다양한 학습코스와 나만의 학습계획으로 수학의 신화를 만들어보자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2013.12.30. ~ 2014.01.25</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/03.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>우리반 모여라! EBSMath로-</dt>
+										<dd class="event_cmt">
+											EBSMath로 우리 반 친구들 소환! 인증샷 찍고 반 친구들과 피자 먹자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2013.10.07. ~ 2013.11.02</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/02.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>2013 여름방학 열공신화</dt>
+										<dd class="event_cmt">
+											EBSMath와 함께하는 2013 여름방학 열공신화! 다양한 학습코스와 나만의 학습계획으로 수학의 신화를 만들어보자!
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2013.07.29. ~ 2013.08.24</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+							<li class="end">
+								<a href="#">
+									<span class="thumbmail"><img src="../../images/event/2022/01.jpg" alt="이벤트 배너"></span>
+									<dl>
+										<dt>이 주의 수학문제 열공 응원 이벤트</dt>
+										<dd class="event_cmt">
+											무조건 빨리 풀어야 한다? NO! EBSMath가 끝까지 최선을 다하는 거북이들을 응원합니다.
+										</dd>
+										<dd class="event_info">
+											<span class="hit">105</span>
+											<span class="date">2013.06.13. ~ 2013.07.09</span>
+										</dd>
+										<dd class="flag"><mark class="flag_evt03">이벤트 종료</mark></dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+
+					<div class="pagination">
+						<a class="first arrow" href="#"><i class="blind">처음</i></a>
+						<a class="prev arrow" href="#"><i class="blind">이전</i></a>
+						<a class="on" href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next arrow" href="#"><i class="blind">다음</i></a>
+						<a class="last arrow" href="#"><i class="blind">마지막</i></a>
+					</div>
+
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+
+</body>
+</html>

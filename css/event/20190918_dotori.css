@@ -1,0 +1,128 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.dotori {background:#e9e0c8 url('../../images/event/20190918/bg_event.png') 0 739px no-repeat; }
+.dotori .top {position:relative;}
+
+.dotori .top .btn-pre-apply {position:absolute; top:608px; left:433px; display:block; width:297px; height:74px; background:url('../../images/event/20190918/btn_event_before.png') 0 0 no-repeat;}
+.dotori .top .btn-pre-apply.off {background-position:0 -76px;}
+
+.dotori .top .btn-apply {position:absolute; top:608px; left:433px; display:block; width:287px; height:74px; background:url('../../images/event/20190918/btn_apply.png') 0 0 no-repeat;}
+.dotori .top .btn-apply.off {background-position:0 -76px;}
+
+.dotori .top .btn-winner1 {position:absolute; top:742px; left:232px; display:block; width:298px; height:74px; background:url('../../images/event/20190918/btn_event_fin.png') 0 0 no-repeat;}
+.dotori .top .btn-winner2 {position:absolute; top:742px; left:173px; display:block; width:417px; height:74px; background:url('../../images/event/20190918/btn_event_fin.png') 0-78px no-repeat;}
+.dotori .top .btn-winner3 {position:absolute; top:742px; left:173px; display:block; width:417px; height:74px; background:url('../../images/event/20190918/btn_event_fin.png') 0-156px no-repeat;}
+.dotori .top .cmt_end {position:absolute; top:828px; left:177px}
+
+.dotori .top .cmt {position:absolute; top:775px; text-align:center; width:100%;}
+.dotori .snswrap {position:absolute; top:23px; right:20px;}
+.dotori .snswrap a{display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.dotori .snswrap a.fb {background-position:0 0;}
+.dotori .snswrap a.tw {background-position:-41px 0;}
+.dotori .snswrap a.kko {background-position:-82px 0;}
+
+.dotori .gift .gift_list {width:694px; margin:35px auto 30px; height:253px; overflow:hidden}
+.dotori .gift .gift_list li {float:left; width:160px; height:100%; margin-left:18px; background-image:url('../../images/event/20190918/gift.png'); background-repeat:no-repeat; position:relative}
+.dotori .gift .gift_list li:first-child {margin-left:0}
+.dotori .gift .gift_list .gift01 {background-position:0 0}
+.dotori .gift .gift_list .gift02 {background-position:-178px 0}
+.dotori .gift .gift_list .gift03 {background-position:-356px 0}
+.dotori .gift .gift_list .gift04 {background-position:-534px 0}
+.dotori .gift .gift_list li button {display:inline-block; width:100%; height:100%}
+.dotori .gift .gift_list.end li button {cursor:default;}
+.dotori .gift .gift_list li button:hover:after {display:block; content:""; position:absolute; top:0; left:0; width:160px; height:253px; background:url('../../images/event/20190918/gift_over.png') 0 0 no-repeat;}
+.dotori .gift .gift_list li button.off:after {display:block; content:""; position:absolute; top:0; left:0; width:160px; height:253px; background:url('../../images/event/20190918/gift_dim.png') 0 0 no-repeat;}
+.dotori .gift .gift_list li button.on:after {display:block; content:""; background:none;}
+
+
+.dotori .howto {padding:50px 0 35px}
+
+.dotori .tab_stcard {width:678px; margin:30px auto 60px; overflow:hidden}
+.dotori .tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20190918/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.dotori .tab_stcard li a {display:block; width:100%; height:100%}
+.dotori .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.dotori .tab_stcard li.tab02 {background-position:-173px 0;}
+.dotori .tab_stcard li.tab03 {background-position:-346px 0;}
+.dotori .tab_stcard li.tab04 {background-position:-519px 0;}
+.dotori .tab_stcard li.tab01:hover {background-position:0 -82px}
+.dotori .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.dotori .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.dotori .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.dotori .eventArea .game_start { padding-top:20px; background:url('../../images/event/20190918/bg_obj.png') 50% 50px no-repeat; position:relative}
+.dotori .eventArea .game_start .squirrel {display:block; width:520px; height:192px; margin:35px auto 0;  position:relative; background:url('../../images/event/20190918/img_default.png') 50% 0 no-repeat; }
+.dotori .eventArea .game_start .squirrel.st_T {background:url('../../images/event/20190918/obj_timeover.png') 50% 0 no-repeat; }
+.dotori .eventArea .game_start .squirrel.st_L {background:url('../../images/event/20190918/obj_left.png') 50% 0 no-repeat; }
+.dotori .eventArea .game_start .squirrel.st_R {background:url('../../images/event/20190918/obj_right.png') 50% 0 no-repeat; }
+
+.dotori .eventArea .game_start .bubble {display:block; position:absolute; right:135px; top:100px; }
+.dotori .eventArea .game_start .bubble em {display:block; width:134px; height:135px; }
+.dotori .eventArea .game_start .bubble .st_T { background:url('../../images/event/20190918/bub_timeover.png') 0 0 no-repeat;}
+.dotori .eventArea .game_start .bubble .st_W { background:url('../../images/event/20190918/bub_win.png') 0 0 no-repeat;}
+.dotori .eventArea .game_start .bubble .st_L { background:url('../../images/event/20190918/bub_fail.png') 0 0 no-repeat;}
+.dotori .eventArea .game_start .bubble .st_D { background:url('../../images/event/20190918/bub_start.png') 0 0 no-repeat;}
+.dotori .eventArea .game_start .bubble .count  {background:url('../../images/event/20190918/bub_count.png') 50% 0 no-repeat; text-align:center; }
+.dotori .eventArea .game_start .bubble .count i {display:block; height:107px; margin:0 auto; text-indent:-9999px }
+.dotori .eventArea .game_start .bubble .count .c2 {width:35px; background:url('../../images/event/20190918/img_num1.png') 50% 35px no-repeat;}
+.dotori .eventArea .game_start .bubble .count .c3 {width:34px; background:url('../../images/event/20190918/img_num2.png') 50% 35px no-repeat;}
+.dotori .eventArea .game_start .bubble .count .c4 {width:35px; background:url('../../images/event/20190918/img_num3.png') 50% 35px no-repeat;}
+.dotori .eventArea .game_start .bubble .count .c1 {width:84px;background:url('../../images/event/20190918/img_click.png') 50% 45px no-repeat;}
+
+.dotori .eventArea .game_start .game_button {width:520px; height:100px; overflow:hidden; margin:0 auto}
+.dotori .eventArea .game_start .game_button li {float:left }
+.dotori .eventArea .game_start .game_button li button {display:block; height:100px; background-image:url('../../images/event/20190918/game_button.png'); background-repeat:no-repeat;}
+.dotori .eventArea .game_start .game_button li.btn_l button {width:180px;  background-position:0 -102px;}
+
+.dotori .eventArea .game_start .game_button li.btn_start button {width:158px; background-position:-180px -102px;}
+.dotori .eventArea .game_start .game_button li.btn_start button.off {width:158px; background-position:-180px 0;}
+
+.dotori .eventArea .game_start .game_button li.btn_r button {width:181px; background-position:-338px -102px;}
+.dotori .eventArea .game_start .game_button li.btn_l button.off {width:180px;  background-position:0 0;}
+.dotori .eventArea .game_start .game_button li.btn_start button.off {width:158px; background-position:-180px 0;}
+.dotori .eventArea .game_start .game_button li.btn_r button.off {width:181px; background-position:-338px 0;}
+
+.dotori .eventArea .game_start .score {margin:0 auto; text-align:center; padding:20px 0 70px}
+.dotori .eventArea .score li {display:inline-block; height:31px; padding-right:8px}
+.dotori .eventArea .score li strong {display:inline-block; vertical-align:top; margin-top:-3px; letter-spacing:-1px}
+.dotori .eventArea .score li.score1 { min-width:100px; background:url('../../images/event/20190918/txt_score.png') 0 5px no-repeat; padding-left:95px; }
+.dotori .eventArea .score li.score2 { min-width:40px; background:url('../../images/event/20190918/txt_rest_dotori.png') 0 0 no-repeat; padding-left:131px;}
+.dotori .eventArea .score li.score3 { min-width:40px; background:url('../../images/event/20190918/txt_use_dotori.png') 0 0 no-repeat; padding-left:143px;}
+.dotori .eventArea .score li strong {color:#d92c23; font-size:28px; font-weight:bold}
+.dotori .eventArea .score li strong span {display:inline-block; font-size:18px; vertical-align:top; margin-top:7px}
+.dotori .eventArea .score li.score1 strong em {display:inline-block; vertical-align:top; margin-top:7px; font-style:normal; font-size:18px; color:#000000}
+.dotori .eventArea .score li.score3 strong {color:#612509}
+
+.dotori .eventArea.end {height:304px; background:url('../../images/event/20190918/bg_event.png') 0 -821px no-repeat; position:relative; z-index:100; padding-top:40px}
+.dotori .eventArea.end .result {position:absolute; left:35px; top:279px; width:684px; border:5px solid #090406; border-radius:13px; background:#fff; overflow:hidden; padding:20px 0; margin:0 auto}
+.dotori .eventArea.end .result .score {padding:0 0 15px 0; text-align:center}
+.dotori .eventArea.end .result .score li.score3 { min-width:40px; background:url('../../images/event/20190918/txt_use_dotori_end.png') 0 0 no-repeat; padding-left:143px;}
+
+.dotori .sns_share, .dotori .sns_share_end  {position:relative}
+.dotori .sns_share .heart, .dotori .sns_share_end .heart {display:block;position:absolute; left:588px; top:40px; width:76px; height:36px; background:url('../../images/event/20190918/bg_like.png') 0 0 no-repeat; text-align:center; padding-top:40px; color:#ffd646; font-size:16px; font-weight:600}
+.dotori .sns_share_end .heart {left:588px; top:100px}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000; width:716px; height:639px; margin:-330px auto; /*padding-left:200px*/}
+.pop_sns.pop_common .popcon {width:660px; height:345px; background:#fff; border-radius:15px;}
+.pop_sns.pop_common .popcon .container {padding:35px;}
+.pop_sns .mypost {width:580px; height:180px; overflow:auto; margin:17px 0 0 9px}
+.pop_sns .mypost li {border-bottom:1px solid #d1d1d1; padding:9px 0 10px 10px; position:relative}
+.pop_sns .mypost li .del {position:absolute; right:10px; top:10px; color:#8151e2;  font-size:14px;  font-weight:600}
+.pop_sns .mypost li span {display:inline-block; max-width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; vertical-align:middle; font-size:14px; color:#333333; font-weight:600}
+.pop_sns.pop_common .btn_layerclose{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=1); opacity:1; background:transparent}
+
+/* notice */
+.dotori .notice {padding:35px 30px 30px 35px; background-color:#1c2f66;}
+.dotori .notice ul {padding-top:10px;}
+.dotori .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.dotori .notice li .point {color:#baccff;}
+

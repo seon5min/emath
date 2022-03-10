@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/activity.css" /><!-- 수학활동 -->
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<div class="activity">
+			<section class="course_top">
+				<div class="wrap">
+					<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
+					<h2 class="tit_course_m" onclick="openCrsList()">수학 특별활동 <strong class="stit_course_m">희망수학 칼럼</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+					<ul class="crs_list">
+						<li class="dep2"><a href="#">수학행사</a>
+							<span class="dep3"><a href="#">찾아가는 EBSMath 체험관</a></span>
+							<span class="dep3"><a href="#">3.14 파이데이</a></span>
+							<span class="dep3"><a href="#">2014 서울세계수학자대회</a></span>
+							<span class="dep3"><a href="#">2014 수학교사 한마당</a></span>
+						</li>
+						<li class="dep2"><a href="#">이벤트</a></li>
+						<li class="dep2 on"><a href="#">희망수학 칼럼</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="content_top">
+				<div class="wrap">
+					<h2 class="tit_top">희망수학 칼럼</h2>
+
+					<p>
+						다양한 주제의 수학 칼럼을 통해 수학을 보는 새로운 시각을 만나보세요!
+					</p>
+				</div>
+			</section>
+
+
+			<section class="contents_mid">
+				<!-- s : 게시물 보기 -->
+				<article class="board_view">
+					<header>
+						<h3>
+							인공지능과 수학은 무슨 상관이 있을까?
+						</h3>
+						<ul class="side_info">
+							<li>
+								<dfn>작성자 :</dfn> 운영자
+							</li>
+							<li>
+								<span class="date">작성일 : 2021.11.26</span>
+								<span class="hit"><dfn>조회수 :</dfn> 1,000</span>
+							</li>
+						</ul>
+					</header>
+					<section class="main_article">
+						<div class="main_con">
+							<!-- s: 게시물 영역 -->
+
+							<div class="board_dt_wrap detail">
+							   <div class="detail_top">
+								  <div class="inner">
+									 <h5>수학의 난제와 암호알고리즘</h5>
+									 <br>
+								  </div>
+								  <div class="c-black"> 암호의 어원은 “Kryptóosgráafo”("hidden writing”). 공격자에게 메시지의 내용을 숨기는 것을 의미합니다. 암호학(Cryptography)은 암호를 설계하는 것(cryptology), 그리고 암호를 공격해서 깨는 것(cryptanalysis), 이렇게 두 가지로 구성되죠. 그런 의미에서 암호 연구는 ‘누구도 뚫을 수 없다는 방패’와 ‘그 어떤 것도 뚫을 수 있다는 창’의 숙명적인 대결의 역사이기도 합니다. </div>
+								  <div class="c-black"> 오래 전 줄리어스 시저는 정적들로부터 정보를 보호하기 위해 ‘환자암호’를 이용해서 비밀통신을 한 것으로 유명합니다. 먼저, 시저는 통신 상대인 Bob과 아무도 모르게 “비밀키 3”, 그리고 “함수 ”을 공유합니다. 통신을 할 때 메시지 의 암호문은 이 되죠. 예를 들어, 메세지 “ILOVEYOU”를 로 암호화하면 “LORYHBRX”가 되어 의미 없는 문장이 됩니다. “LORYHBRX”라는 메시지를 받은 Bob은 “”이라는 함수를 써서 원래 메시지를 복원합니다. 그러나, 이 암호는 비밀키의 후보가 26개밖에 되지 않아서 쉽게 해독이 가능합니다. 모든 비밀키 후보를 넣어 복호화를 한 후, 결과 값이 의미 있는 문장이 나오면, 그 후보가 비밀키가 되죠. 이렇게 가능한 키를 모두 다 조사해보는 해독방법을 ‘전수조사’라고 합니다. </div>
+								  <div class="c-black"> 그렇다면, 환자암호를 어떻게 하면 해독하기 어렵게 만들 수 있을까요? 우선, 후보가 되는 키의 공간을 아주 크게 만드는 방법이 있습니다. 키 공간이 클수록 전수조사 공격이 어려워지기 때문이죠. 그 중 한 가지, 모든 알파벳에 일대일 대응관계를 주는 단일치환암호에서 가능한 키의 수는 총 “26!”이고, 그 값은 “403291461126605635584000000”로, 1초에 10억 개의 키를 적용하는 속도로 조사한다고 해도, 모든 키를 조사하는 데 120억년 이상이 걸립니다. 올바른 키를 찾기까지 평균 60억년이 걸리죠. 전수조사로 비밀키를 찾는 것이 불가능하겠죠? </div>
+								  <div class="c-black">
+									 <div class="c-img"> <img alt="삽화1" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_92.jpg"><br>
+										<span>그림 1. 단일치환암호</span> 
+									 </div>
+								  </div>
+								  <div class="c-black"> 그러나, 암호 해독자들은 영리해서 이번엔 알파벳의 빈도 수를 이용해 공격을 합니다. 영어 문장에서 가장 자주 나오는 알파벳은 “e”인데, 암호문을 많이 가지고 있는 공격자는 암호문 중에 가장 많이 나오는 알파벳이 “e”로부터 암호화 되었다고 추측할 수 있고, 이런 방법으로 다음으로 많이 나오는 알파벳을 찾아 계속 추측을 하면 일대일 대응함수를 찾게 됩니다. 여기서 한 가지 교훈을 얻을 수 있죠. 암호문은 어떤 정보도 흘리지 않아야 한다는 것입니다. 그 어떤 정보라도 공격자에게는 해독을 위한 힌트가 될 수 있으니까요. </div>
+								  <div class="c-black"> 근대로 넘어오면서 암호는 주로 전쟁에서 기밀통신을 하는 데 사용됩니다. 가장 유명한 암호는 2차 세계대전에서 독일이 사용했던 기계식 암호 ‘에니그마’인데요. 이 에니그마는 영국의 수학자 알렌 튜링이 만든 암호해독장치 "콜로서스"에 의해 해독되었고, 결국 2차 대전을 연합군의 승리로 이끄는 결정적인 역할을 했습니다. 덕분에 전쟁을 2년이나 앞당겨 끝낼 수 있었고, 1400만 명이라는 인명을 살릴 수 있었죠. 이 암호해독장치가 컴퓨터의 시초가 되었다는 것은 너무나 유명한 사실입니다. 그런데, 이 때까지 사용한 암호는 모두 비밀키 암호였습니다. 비밀키 암호에서는 갑돌이와 갑순이가 통신을 하기 전에 비밀키를 공유해야 하는 ‘키 분배’ 문제가 발생하는데요. 비밀키를 안전하게 공유하는 것이 쉽지 않을 뿐만 아니라, 명과 통신을 할 경우  개의 비밀키를 공유해야 하니 키를 관리하는 게 어려워집니다. </div>
+								  <div class="c-black"> 현대에 들어서 이 문제를 해결하는 개념이 등장합니다. 바로 공개키 암호. 먼저, 갑돌이와 갑순이는 각각 개인의 공개키와 비밀키 쌍을 만듭니다. 그리고 갑돌이가 갑순이에게 암호문을 보낼 때, 갑순이의 공개키를 이용해서 암호문을 만들고, 암호문을 받은 갑순이는 자신의 비밀키로 복호화해서 원래의 메시지를 복원하는 방법입니다. 그럼 사전에 비밀키를 공유할 필요 없이, 공개키는 공개하고, 비밀키는 비밀로 간직하면 되는 거죠. 여기서 ‘공개키’가 갑돌이의 것이 확실한지를 확인하는 절차가 필요해졌고, 신뢰기관이 이를 인증을 해서 발행하게 된 것이 바로 현재 우리가 사용하고 있는 ‘공인인증서’입니다. 이 원리는 예전에 같은 열쇠를 사용해서 문을 잠그고, 열던 시절, ‘문을 열 때만 열쇠를 사용하면 되지 잠글 때 열쇠가 왜 필요한가?’ 라는 질문에서 비롯된 아이디어죠. </div>
+								  <div class="c-black"> 공개키 암호의 개념을 실현하기 위해 필요한 함수가 트랩도어 <b style="font-weight: bold;">일방향 함수</b>입니다. 일방향 함수 의 정의는 ‘ 계산은 쉽지만, 로부터 를 계산하는 것은 어려운 함수’입니다. 암호문을 생성하는 사용자는 를 계산해야 하므로 누구나 효율적으로 계산할 수 있어야 하고, 공격자는 암호문 로부터 평문 를 찾아야 하므로 아주 어려워야 합니다. 그런데, 문제는 암호문을 받은 갑순이는 복호화를 위해 로부터 를 계산해야 하는데, 어떻게 를 찾을 수 있을까요? 그래서, 갑순이만 아는 힌트, 즉, 비밀키를 알면 로부터 를 계산하기가 쉬워지는 함수가 트랩도어 일방향 함수입니다. </div>
+								  <div class="c-black"> 최초로 찾은 트랩도어 일방향 함수가 현재 인터넷에서 널리 사용하고 있는 공개키 암호 RSA입니다. RSA의 공개키는 큰 두 개의 소수의 곱으로 만들어진 합성수 이고 비밀키는 두 소수 입니다. RSA의 안전성은 소인수분해 문제가 어렵다는 사실에 근거를 두고 있는데,  과연 인수분해문제가 어려울까요? 답은 쉽기도 하고 어렵기도 합니다. 작은 수의 인수분해는 아주 쉽고, 적당히 큰 합성수는 컴퓨터로 인수분해 알고리즘을 돌려 계산할 수 있지만, 어느 정도 이상으로 큰 합성수는 전 세계의 수퍼컴퓨터를 수 백년동안 돌려도 계산할 수 없습니다. 현재 사용 중인 RSA-2048는 2048비의 합성수를 쓰고 있고, 이 합성수는 현재의 계산능력으로는 인수분해 할 수 없다고 여겨지고 있습니다. 적당히 큰 합성수의 인수분해는 어떻게 도전해 볼 수 있을까요? 암호학계에서 가장 유명한 학회 Crypto의 rump session에서 학자들이 클라우드를 통해 계산 자원을 빌려 512비트의 합성수를 인수분해를 해보았더니, 비용 241달러로 44시간 걸려 아래의 결과를 얻었다고 합니다. </div>
+								  <div class="c-black">
+									 <div class="c-img"> <img alt="삽화2" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_93.jpg"><br>
+										<span>그림 2. 512비트 합성수 인수분해 결과</span> 
+									 </div>
+								  </div>
+								  <div class="c-black"> 이렇게 공개키 암호는 어렵다고 알려진 수학적 문제를 이용해 설계됐습니다. 암호문을 생성할 때마다 서로 다른 랜덤 수를 사용하기 때문에 암호문을 랜덤한 값과 비교했을 때 구분할 수 없어 일 비트의 정보도 흘리지 않죠. 이 공개키 암호를 설계한 세 명의 수학자의 이름의 첫 자를 딴 RSA는 국제표준으로 제정이 되어 전 세계에서 동일하게 사용되고 있습니다. </div>
+								  <div class="c-black"> 유선 인터넷에서는 RSA를 사용하고 있지만, 무선 인터넷에서는 RSA보다 키 길이가 짧고 계산이 효율적인 타원곡선암호를 사용하고 있습니다. 어떤 연산에 닫혀있고, 그 연산에 대한 역원이 있는 집합에서 P를 a번 더한 값 Q=aP와 P가 주어졌을 때 a를 찾는 문제를 <b style="font-weight: bold;">이산대수문제</b>라고 부르고, 이 문제가 어려운 집합 중 하나가 <b style="font-weight: bold;">타원곡선</b>입니다. 타원곡선은 에 대한 3차방정식으로 정의되는 곡선으로, 좌표평면에 나타내면 그림3과 같지만, 복소수체에서 보면 기하학적으로 구멍이 하나인 토러스(torus)와 동치입니다. 이 때, 토러스는 도넛이나 손잡이가 하나 달린 머그잔과도 기하학적으로 동일한 것이고, 결국, 타원곡선암호는 맛있는 도넛암호인 셈이니, 신기한 일이죠. </div>
+								  <div class="c-black">
+									 <div class="c-img" style="display:flex; justify-content:center; align-items:end"> 
+										<p style="width:auto"><img alt="삽화3" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_82.jpg"></p>
+										<p style="width:33%"><img alt="삽화4" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_79.jpg"></p>
+										<p style="width:33%"><img alt="삽화5" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_80.jpg"></p>
+									 </div>
+									<p style="text-align:center"><span>그림 3. 타원곡선과 기하학적으로 동일한 도넛과 손잡이가 하나 달린 머그잔</span> </p>
+								  </div>
+								  <div class="c-black"> 그렇다면, 공개키 암호 RSA와 타원곡선암호는 언제까지나 안전할까요? 그렇지 않습니다. 사실 언제 어떤 똑똑한 수학자가 인수분해를 해주는 더 효율적인 방법을 제안할지 모르는 일이기 때문입니다. 진화된 공격에 대응하는 방법은 키길이를 늘이는 것입니다. 실제로 2009년까지는 RSA는 1024비트 합성수를 사용했지만, 해독기술의 발달로 2010년부터 2048비트 합성수를 쓰고 있습니다. 그러나, 양자컴퓨터가 개발이 되면 이런 방법으로는 더 이상 대응할 수가 없게 됩니다. 1997년에 Shor라는 암호학자가 큰 규모의 양자컴퓨터가 개발되면 양자알고리즘에 의해 소인수분해문제와 이산대수문제를 실시간 안에 풀 수 있다는 것을 보였기 때문입니다. 이 결과는 양자컴퓨터가 개발되면 RSA와 타원곡선 암호는 모두 깨져 무용지물이 된다는 것을 의미합니다. </div>
+								  <div class="c-black"> 그렇다면, 양자컴퓨터 이 후 시대에는 더 이상 인터넷 뱅킹, 인터넷 쇼핑 등을 하지 못하는 걸까요? 다행히도 그렇지 않습니다. 양자컴퓨터에 안전하다고 알려져 있는 수학적 난제들이 있기 때문인데요. 그 중 하나가 다변수 이차식으로 구성된 연립방정식의 해를 찾는 문제로, 이 문제는 어렵다는 것(NP-hard)이 알려져 있습니다. 중·고등학교 시절에 이원일차연립방정식, 즉, 변수가 2개이고 차수가 일차인 연립방정식을 풀던 시절이 생각나는데요. 일차식의 경우 변수와 방정식의 개수가 늘어나도 해를 찾을 수가 있죠. 가우스 소거법을 이용하면 해가 없거나, 오직 한 개만 존재하거나, 해가 여러 개 존재하는 경우 중의 하나가 된다는 것을 알고 있습니다. 그러나, 방정식의 차수가 2차 이상이 되면 문제가 어려워지고, 변수와 식의 개수가 43개 이상이 되면 현재의 계산 능력으로는 해를 찾지 못합니다. 이 난제를 이용한 공개키 암호인 “다항식 암호”는 비밀키 값을 알면 이차식의 연립방정식을 일차식의 연립방정식으로 바꾸고, 가우스 소거법으로 해를 찾는 트랩도어 일방향 함수를 이용합니다. 이처럼 공개키 암호의 설계는 수학적 난제와 트랩도어 일방향 함수를 찾기 위한 창의적인 아이디어를 요구하는 작업입니다. <br> 이것 외에도 많은 수학자와 암호학자들은 양자컴퓨터에 안전한 공개키 암호 설계를 위해 부단한 노력을 하고 있습니다. 양자컴퓨터 이 후 시대에도 안전한 통신과 정보보호를 위해 새로운 공개키 암호가 반드시 필요하고, 새로운 국제표준 암호 또한 필요하기 때문입니다. 현재 국내에서 사용하는 공개키 암호는 거의 외산암호에 의존하고 있는 상황이고, 새로운 국제표준 공개키 암호를 국내에서 개발할 수 있다면 정말 영광스런 일이 아닐 수 없겠죠. 우리가 만든 공개키 암호를 전 세계에서 사용하는 꿈이 이루어지는 그 날을 상상하며 수학문제를 연구해 보는 것도 의미가 있지 않을까요. </div>
+								  <div class="writer-info">
+									 <div class="w-pic">
+										<img alt="" src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/hopeMath/ntl_78.jpg"> 
+										<div class="w-nm">글쓴이 심경아 박사</div>
+									 </div>
+									 <ul class="w-detail">
+										<li>국가수리과학연구소</li>
+									 </ul>
+								  </div>
+
+									<div class="other_con" style="margin-top:3rem">
+										<h6><img src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/column/tit_relcnt.png" alt="함께 보면 좋은 콘텐츠"></h6>
+
+										<div class="list_result no_trans">
+											<ul class="list_con">
+												<li class="cnt_item">
+													<div class="box_snip tagC"> 
+													   <a href="http://www.ebsmath.co.kr/resource/rscView?cate=11007&amp;cate2=11038&amp;cate3=11114&amp;rscTpDscd=RTP14&amp;grdCd=HGRD02&amp;sno=29063&amp;type=S&amp;historyYn=study">
+															<span class="thumbnail">
+																 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29063/767l626831.jpg" alt="콘텐츠이미지">
+															</span>
+															<mark class="stk"><i class="blind">영상</i></mark>
+															<div class="bottom">5화 벤포드 법칙과 암호해독</div>
+														</a>
+													</div>
+												</li>
+												<li class="cnt_item">
+													<div class="box_snip tagA">
+													   <a href="http://www.ebsmath.co.kr/resource/rscView?cate=10094&amp;cate2=10101&amp;cate3=10114&amp;rscTpDscd=RTP10&amp;grdCd=MGRD01&amp;sno=21221&amp;type=S&amp;historyYn=study">
+															<span class="thumbnail"><img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/21221/C.jpg" alt="콘텐츠이미지" class="swiper-lazy"></span>
+															<mark class="stk"><i class="blind">영상</i></mark>
+															<div class="bottom">소인수분해와 암호</div>
+														</a>
+													</div>
+												</li>
+												<li class="cnt_item">
+													<div class="box_snip tagD">
+													   <a href="http://www.ebsmath.co.kr/resource/rscView?cate=10094&amp;cate2=10101&amp;cate3=10114&amp;rscTpDscd=RTP01&amp;grdCd=MGRD01&amp;sno=19822&amp;type=S&amp;historyYn=study">
+															<span class="thumbnail"><img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/19822/ff3jd5n737.jpg" alt="콘텐츠이미지" class="swiper-lazy"></span>
+															<mark class="stk"><i class="blind">영상</i></mark>
+															<div class="bottom">암호상자</div>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+							   </div>
+							</div>
+
+
+							
+							<!--//e: 게시물 영역 -->
+						</div>
+					</section>
+
+					<section class="board_bottom">
+						<p class="react_like"><button type="button" id="btn_ac_like"><i class="blind">좋아요</i> <em id="">8</em></button></p>
+						<ul>
+							<li><a href="#" class="btn_board btn_type1" id="btn_list">목록보기</a></li>
+						</ul>
+					</section>
+				</article>
+				<!--//e : 게시물 보기 -->
+
+
+			</section>
+
+		</div>
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+$(document).ready(function(){
+	$('#btn_ac_like').on("click", function() {
+		$(this).toggleClass("on");
+	});
+	$('#btn_att_file').on("click", function() {
+		$(".att_file_box").toggleClass("open");
+	});
+});
+
+</script>
+</body>
+</html>

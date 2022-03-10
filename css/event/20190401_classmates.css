@@ -1,0 +1,96 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+
+.classmates {background:none; }
+.classmates .top {position:relative;}
+.classmates .top .btn-apply {position:absolute; top:698px; left:411px; display:block; width:314px; height:76px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.classmates .top .btn-winner1 {position:absolute; top:660px; left:225px; display:block; width:313px; height:74px; background:url('../../images/event/20190401/btn_event_fin.png') 0 0 no-repeat;}
+.classmates .top .btn-winner2 {position:absolute; top:660px; left:165px; display:block; width:433px; height:74px; background:url('../../images/event/20190401/btn_event_fin.png') 0-75px no-repeat;}
+.classmates .top .btn-winner3 {position:absolute; top:660px; left:165px; display:block; width:433px; height:74px; background:url('../../images/event/20190401/btn_event_fin.png') 0-150px no-repeat;}
+.classmates .top .btn-winner4 {position:absolute; top:660px; left:165px; display:block; width:433px; height:74px; background:url('../../images/event/20190401/btn_event_fin.png') 0-225px no-repeat;}
+
+.classmates .top .cmt {position:absolute; top:775px; text-align:center; width:100%;}
+.classmates .snswrap {position:absolute; top:29px; right:20px;}
+.classmates .snswrap a{display:inline-block; width:35px; height:35px; margin-left:6px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.classmates .snswrap a.fb {background-position:0 0;}
+.classmates .snswrap a.tw {background-position:-41px 0;}
+.classmates .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.classmates .eventArea {position:relative}
+.classmates .prenoti {position:relative;z-index:10}
+.classmates .schoolCnt {background:url('../../images/event/20190401/bg_tab.png') 0 0 no-repeat; min-height:285px;}
+.classmates .schoolCnt h3 {text-align:center; padding-top:85px;}
+.classmates .schoolCnt  ul {width:678px; margin:0 auto; overflow:hidden; height:80px; margin-top:13px;}
+.classmates .schoolCnt  ul li {float:left; width:159px; margin-left:14px;}
+.classmates .schoolCnt  ul li:first-child {margin-left:0;}
+.classmates .schoolCnt  ul li a {display:block; width:100%; height:80px; background-image:url('../../images/event/20190401/tab.png'); background-repeat:no-repeat;}
+.classmates .schoolCnt  ul li.tab01 a {background-position:0 0}
+.classmates .schoolCnt  ul li.tab02 a {background-position:-173px 0}
+.classmates .schoolCnt  ul li.tab03 a {background-position:-346px 0}
+.classmates .schoolCnt  ul li.tab04 a {background-position:-519px 0}
+.classmates .schoolCnt  ul li.tab01 a:hover {background-position:0 -80px}
+.classmates .schoolCnt  ul li.tab02 a:hover {background-position:-173px -80px}
+.classmates .schoolCnt  ul li.tab03 a:hover {background-position:-346px -80px}
+.classmates .schoolCnt  ul li.tab04 a:hover {background-position:-519px -80px}
+.classmates .ranking {background:url('../../images/event/20190401/bg_table.png') repeat-y; padding-bottom:80px}
+.classmates .ranking.end {background:url('../../images/event/20190401/bg_table_end.png') repeat-y; padding-bottom:80px}
+.classmates .atstatus1 {width:654px; border:2px solid #090406; background-color:#ffe36f; border-radius:9px; padding:9px 0 9px 29px; margin:0 auto; position:relative}
+.classmates .ranking.end .atstatus1 dt {width:622px}
+.classmates .atstatus1 dt {border-bottom:1px solid #c5a13f; padding:8px 0 9px; width:437px }
+.classmates .atstatus1 dd {padding:8px 0; font-size:16px; color:#000;font-weight:600}
+.classmates .at_name {font-size:18px; color:#000; font-weight:600}
+.classmates .cmt_status {display:inline-block; width:175px; height:20px; background:url('../../images/event/20190401/txt_status.png') 0 0 no-repeat; vertical-align:middle; margin-left:10px}
+.classmates .atstatus1 .btn_atcheck {width:176px; height:51px; position:absolute; top:20px; right:29px; background:url('../../images/event/20190401/btn_atcheck.png') 0 0 no-repeat;}
+.classmates .atstatus1 .btn_atcheck.off {background-position:0 -52px}
+.classmates .atstatusWrap {overflow:hidden; width:683px; margin:13px auto 30px}
+.classmates .atstatusWrap [class^="atstatus"] {float:left; width:335px; height:194px; }
+.classmates .atstatusWrap .atstatus2 {margin-right:13px; background:url('../../images/event/20190401/bg_mystatus.png') 0 0 no-repeat;}
+.classmates .atstatusWrap .atstatus3 {background:url('../../images/event/20190401/bg_mycl_status.png') 0 0 no-repeat;}
+.classmates .atstatusWrap [class^="atstatus"] dt {padding-top:99px }
+.classmates .atstatusWrap [class^="atstatus"] dd {padding:26px 0 29px}
+.classmates .atstatusWrap [class^="atstatus"] dd > span {float:left; width:165px; text-align:center;  font-size:16px; color:#000;font-weight:bold}
+.classmates .atstatusWrap [class^="atstatus"] dd > span em {font-size:22px; color:#f65c16; font-weight:600; font-style:normal}
+.classmates .ranking table {border-top:2px solid #000000; border-bottom:2px solid #000000; width:683px; margin:0 auto}
+.classmates .ranking th {background-color:#405fb2; padding:13px 0 15px; color:#fff; font-size:15px; font-weight:600; border-left:1px solid rgba(255,255,255,0.4);}
+.classmates .ranking th, .classmates .ranking td {text-align:center}
+.classmates .ranking th:first-child, .classmates .ranking td:first-child {border-left:0}
+.classmates .ranking td {border-left:1px solid rgba(119,119,119,0.5); border-bottom:1px solid rgba(119,119,119,0.5); padding:13px 0 15px; background:#fff; color:#000; font-size:13px; font-weight:400}
+.classmates .ranking .hr td {background-color:#ddebfd; font-weight:bold; font-size:14px}
+.classmates .ranking .hr_1st td {background-color:#bac8ef; font-weight:bold; font-size:14px}
+.classmates .ranking .hr_mid1 td {background-color:#d9e2f7; font-weight:bold; font-size:14px}
+.classmates .ranking .hr_mid2 td {background-color:#eef5fe; font-weight:bold; font-size:14px}
+
+.classmates .ranking .point {display:inline-block; width:19px; height:19px; background:url('../../images/event/20190401/icon_star.png') 0 0 no-repeat; margin-right:5px; vertical-align:middle}
+.classmates .ranking .up {display:inline-block; width:10px; height:9px; background:url('../../images/event/20190401/icon_updown.png') 0 0 no-repeat; margin-right:5px; vertical-align:middle}
+.classmates .ranking .down {display:inline-block; width:10px; height:9px; background:url('../../images/event/20190401/icon_updown.png') 0 -11px no-repeat; margin-right:5px; vertical-align:middle}
+
+
+/* pagination */
+.classmates .ranking .paging {margin-top:20px;text-align:center}
+.classmates .ranking .paging a{ display:inline-block;	font-size:13px;	margin-left:4px; color:#000000;}
+.classmates .ranking .paging a.first, .classmates .ranking .paging a.last{padding:7px 8px}
+.classmates .ranking .paging a img{vertical-align:middle;position:relative;top:-1px}
+.classmates .ranking .paging a.on{font-size:15px; font-weight:bold}
+.classmates .ranking .paging a:hover {}
+.classmates .ranking .paging a.on:hover{font-size:15px; font-weight:bold}
+.classmates .ranking .paging .prev {display:inline-block; width:23px; height:23px; background:url('../../images/event/20190401/icon_paging.png') 0 0 no-repeat; vertical-align:middle; margin-right:7px}
+.classmates .ranking .paging .next {display:inline-block; width:23px; height:23px; background:url('../../images/event/20190401/icon_paging.png') -24px 0 no-repeat; vertical-align:middle; margin-left:10px}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0;}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+/* notice */
+.classmates .notice {padding:35px 39px 30px 35px; background-color:#1c2f66;}
+.classmates .notice ul {padding-top:10px;}
+.classmates .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.classmates .notice li .point {color:#baccff;}
+

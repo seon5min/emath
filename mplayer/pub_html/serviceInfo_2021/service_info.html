@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/modernizr-custom.js"></script>
+    <!-- <script src="../../js/common_ui.js"></script> 2021-12-10 스크립트 오류로 히든 처리 -->
+    <!-- <script src="../../js/icheck.min.js"></script> 2021-10-27 삭제 -->
+
+
+</head>
+
+<body>
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+</div>
+<div class="event_banner banner_2108" style="display:none">
+	<a href="#"><i class="blind">수학 에너지 FULL 충전! 선풍기 ON! 이벤트 바로가기</i></a>
+	<span class="today_close">
+		<span class="mo_hide"><input type="checkbox" name="today_event"> 1일 동안 보지 않기</span> <button type="button" class="btn_bnr_hide"><i class="blind">이벤트 배너 닫기</i></button>
+	</div>
+</div>
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<div  class="ebsMath_info"><!-- 2021-12-10 소개 페이지 기준 클래스 -->
+			<section class="series_top">
+				<div class="wrap">
+					<h2>EBSMath 소개</h2>
+					<p>
+						수학은 즐겁고 창의적인 놀이다!<br>
+						EBSMath는 스스로 공부하는 힘을 키워주는 자기주도 수학 학습 지원 사이트입니다.
+					</p>
+				</div>
+			</section>
+
+			<section class="series_wrap">
+				<div class="tab_common1">
+					<a href="#" class="on">서비스 소개</a>
+					<a href="#">홍보 영상</a>
+				</div>
+				
+				<div class="si_mathIs">
+					<h4>EBSMath는?</h4>
+					<p class="mathIs_desc">이용자의 자기주도 학습으로 공교육 역할의 강화와 더불어 이용자의 눈높이에 맞는 수학 콘텐츠를 제공하여 사교육비 경감과 수학의 대중화를 목표로 합니다.</p>
+					<div class="circle_info_step3">
+						<div>
+							<p>
+								<img src="../../images/serviceInfo/circle_blue_img.png" alt="">
+								<span>학생의 자기주도<br>학습 지원</span>
+							</p>
+						</div>
+						<div>
+							<p>
+								<img src="../../images/serviceInfo/circle_yellow_img.png" alt="">
+								<span>사교육비 경감</span>
+							</p>
+						</div>
+						<div>
+							<p>
+								<img src="../../images/serviceInfo/circle_pingk_img.png" alt="">
+								<span>학교 수업 활용으로<br>공교육 지원</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="si_features_step4">
+					<h4>EBSMath 특징</h4>
+					<div class="features_info">
+						<div class="icon_f_01">
+							<strong>차별화된 학습 콘텐츠</strong>
+							<span>지금까지 수학이 어려웠다면?!<br>
+							EBSMath와 함께 다양한 유형의 콘텐츠를 하나씩, 하나씩, 클리어하는 재미를 느껴보세요.<br>
+							모든 콘텐츠를 클리어한다면, 당신은 어느새 수학의 달인!<br><br>                        
+							EBSMath는 여러분에게 익숙한 영상, 웹툰, 게임 등 다양한 형태로 제작되어 학습에 대한 부담을 걷어내고 재미 위주의 학습이 가능하도록 기획 되었습니다.</span>
+						</div>
+						<div class="icon_f_02">
+							<strong>개념부터 심화까지</strong>
+							<span>초등학교 3학년부터 고등학교 3학년까지.<br>
+							수학의 기본기를 탄탄하게 쌓을 수 있는 다양한 유형의 콘텐츠가 여러분을 기다리고 있습니다.<br><br>
+							개념부터 심화까지 차근차근 클리어해 나간다면 누구라도 쉽게 수학을 정복할 수 있습니다.</span>
+						</div>
+						<div class="icon_f_03">
+							<strong>매일 10분 수학으로 가볍게 수학 문제 풀이</strong>
+							<span>초등학교 3학년부터 6학년까지를 대상으로 짧은 시간 동안 가볍게 풀 수 있는 문제를 매일 제공합니다.(매일 10분 수학 서비스 신청 시)<br><br>
+							매일 10분 문제 풀이로 학습 습관을 개선하여, 수학 실력도 향상시켜 보세요.</span>
+						</div>
+						<div class="icon_f_04">
+							<strong>테마별로 풀어낸 학습 시리즈</strong>
+							<span>다양한 테마를 가진 ‘수학시리즈’로 수학을 흥미있게 배워 보세요.<br><br>
+							EBSMath의 아이돌 ‘세미’부터 멋쟁이 차도남, ‘닥터y’, 재미있는 ‘수학운동회’ 등 EBSMath의 인기있는 테마를 모아서 볼 수 있습니다.</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="si_mainSeries_step4">
+					<h4>EBSMath 주요 시리즈 <a href="#none;" class="btn_theView">더보기</a></h4>
+
+					<ul class="series_info">
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_01.png" alt="">
+								<strong>돌도끼 수학</strong>
+								<span>공룡이 나타났다! 나무 위로<br>도망치기 시작한 우리의 주인공,<br>과연 쫓아오는 공룡을 피해<br>수학 문제를 모두 풀 수 있을까요?</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_02.png" alt="">
+								<strong>세미와 수학마법학교</strong>
+								<span>수학술사 세미와 세미의 친구들 홍고하,<br>청돌이와 함께 일상생활에 녹아 있는<br>수학 문제를 발견하고 해결해봐요!</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_03.png" alt="">
+								<strong>닥터y와 스몰y</strong>
+								<span>평소에는 차갑고 무심하지만,<br>수학 앞에서는 열정이 넘치는 수학천재<br>닥터y와 그의 분신, 그들과 떠나는 수학 여행!</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_04.png" alt="">
+								<strong>수학운동회</strong>
+								<span>“너넨 머리로 수학하니? 우린 몸으로 한다!”<br>몸을 움직이며 수학을 공부하면 훨씬 더<br>능률이 오른다는 사실, 알고 있나요?</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_05.png" alt="">
+								<strong>요원K</strong>
+								<span>피타고라스의 계획을 망치라는 임무를 받은<br>요원K. 하지만 피타고라스의 수학 설명을<br>들을수록 그에게 빠져드는데...<br>과연 요원K의 운명은?!</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_06.png" alt="">
+								<strong>이런 수학 처음이지?</strong>
+								<span>10분만에 핵심개념 완벽 이해!<br>고등수학에 꼭 필요한 중학수학의 개념만 설명!<br>유리칠판으로 선생님과 필기를 함께하니<br>더 집중되는 강의!</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_07.png" alt="">
+								<strong>수학사 명장면</strong>
+								<span>수학은 언제부터 있었던 걸까요?<br>어느 날 뚝딱하고 생긴 걸까요?<br>역사적 상황에 따라 수학이 어떻게 탄생해서<br>발전해 왔는지를 밝혀 봅시다.</span>
+							</a>
+						</li>
+						<li>
+							<a href="#none;">
+								<img src="../../images/serviceInfo/img_mainSeries_circle_08.png" alt="">
+								<strong>마테마티카</strong>
+								<span>‘피타고라스의 정의’ 탄생 비결!<br>무게중심은 어떻게 만들어졌을까?<br>마테마티카를 통해 수학의<br>원리를 탐구해 봅시다.</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</section>
+		</div>
+	</div>
+
+
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+	/* 2021-11-16 시리즈 유형별 탭*/
+	var btn_srs_sub = $('.tab_sorting button');
+	$(btn_srs_sub).on("click", function(e) {
+		$(this).siblings().removeClass("on");
+		$(this).addClass("on")
+	});
+</script>
+</body>
+</html>

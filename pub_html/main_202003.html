@@ -1,0 +1,4230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>EBSMath</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1280" />
+<link rel="stylesheet" type="text/css" href="../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../css/main_2020v.css" />
+<link rel="stylesheet" type="text/css" href="../css/header.css" /><!-- 2020-03-19 추가 -->
+
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<!-- <script type="text/javascript" src="../js/greensock/TweenMax.min.js"></script> 삭제-->
+<!-- <script type="text/javascript" src="../js/slider.js"></script> 삭제-->
+<script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+    <div class="skipToNavigation">
+		<a href="#gnb">메뉴 바로가기</a>
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+	<!-- header -->
+	<div id="header" class="renewal2020">
+		<!-- top navigation -->
+		<div class="topWrap">
+			<div class="topArea">
+				<!-- <h1><a href="#none" title="EBS Math"><img src="../images/layout/logo4.png" alt="EBS Math" /></a></h1> -->
+				<h1 style="top:5px"><a href="#none" title="EBS Math"><img src="../images/layout/logo4_teacher.png" alt="EBS Math" /></a></h1><!-- 2020-05-13 로고변경 -->
+				
+				<!-- 우측 통합메뉴 -->
+				<div class="rightMenu cboth">
+					<ul class="menu cboth">
+						<!-- 로그인 전
+						<li><a href="#none" title="로그인으로 이동"><em>로그인</em></a></li>
+						<li><a href="#none" title="회원가입으로 이동"><em>회원가입</em></a></li>
+						//로그인 전 -->
+
+						<!-- 로그인 후 -->
+						<li class="userId">
+							<a href="#none" title="">
+								<!--2019-07-16  i 태그 추가/클래스구분 sns : name_sn  / 선생님 :  name_tc / 일반 : name_nr-->
+
+								<img src="../images/common/icon_kko.png" alt="카카오" class="vm" />
+								<!-- <img src="../images/common/icon_fb.png" alt="페이스북" class="vm"  /> -->
+								<!-- <img src="../images/common/icon_nvr.png" alt="네이버"  /> -->
+								<!-- <em><i class="name_sn">Honggildong</i>님</em><span class="icoArrow"></span> -->
+
+								<em><i class="name_tc">김하하하하하하</i>선생님</em><span class="icoArrow"></span>
+
+								<!-- <em><i class="name_nr">김하하하하하하하하하하</i>님</em><span class="icoArrow"></span> -->
+							</a>
+							<div class="myMenu v1910"><!-- 2019-10-04 클래스 추가 -->
+								<ul><!-- 2020-04-06 문구수정 -->
+									<li><a href="#none">내가 본 콘텐츠</a></li>
+									<li><a href="#none">좋아요 한 콘텐츠</a></li>
+									<li><a href="#none">찜 한 콘텐츠</a></li>
+									<li><a href="#none">내 문제</a></li>
+									<li><a href="#none">회원정보변경</a></li>
+								</ul>
+								<div class="logout"><a href="#none"><img src="../images/layout/logout_icon.png" alt="로그아웃" />로그아웃</a></div>
+							</div>
+						</li>
+						<li><a href="#none" title="마이페이지로 이동">마이페이지</a></li>
+						<!-- //로그인 후 -->
+
+					<li><a href="/cosCenter/eventProList" title="이벤트로 이동">이벤트 <img src="../images/common/ico_newcs01.png" alt="new" /></a></li>
+					<li><a href="/cosCenter/main" title="고객센터로 이동">고객센터</a></li>
+					<li><a href="#" title="선생님 공간">선생님 공간</a></li>
+
+
+					</ul>
+					<div class="searchArea">
+						<form action="">
+							<fieldset>
+								<legend>검색 폼</legend>
+								<input type="text" placeholder="여자친구가 EBSMATH에?" />
+								<button type="submit" class="btnSearch"><img src="../images/common/btn_search.png" alt="검색" /></button>
+							</fieldset>
+						</form>
+						<div class="autoComplete">
+							<div id="searchList" class="searchList">
+								<div class="searchGuide">
+									<p>검색어 <strong>자동 추천 기능</strong>을사용하고 있습니다.
+									<br>입력시 자동으로 관련어를 추천합니다.</p>
+								</div>
+								<div class="searchEmpty">
+									<p>
+										해당 단어로 시작하는 검색어가 없습니다.
+									</p>
+								</div>
+
+								<div class="searchCont">
+									<ul>
+										<li><a href="#"><em>거북이</em>의 계략</a></li>
+										<li><a href="#"><em>거북이</em>계략</a></li>
+										<li><a href="#"><em>거북이</em></a></li>
+										<li><a href="#">아킬레우스를 무시한<em>거북이</em></a></li>
+										<li><a href="#">킬레우스<em>거북이</em>의 계략</a></li>
+									</ul>
+								</div>
+							</div>
+						
+							<div id="mySearch" class="mySearch">
+								<h5 class="title">내가 찾은 검색어</h5>
+								<ul>
+									<li>
+										<a class="myKeyword" href="#none" title="">수학운동회</a>
+										<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+									</li>
+									<li>
+										<a class="myKeyword" href="#none" title="">트리플 악셀의 비밀</a>
+										<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+									</li>
+								</ul>
+							</div>
+							<div class="btnClose">
+								<a href="#none"><img src="../images/common/close_icon.png" alt="닫기" /><span class="ml5">자동완성 닫기</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //우측 통합메뉴 -->
+			</div>
+		</div>
+		<!-- //top navigation -->
+
+		<!-- gnb -->
+		<div class="gnbWrap">
+			<div id="gnb">
+				<ul class="gnb cboth">
+					<li>
+						<a href="#none" class="menu gm1"  title="초등수학"><span class="blind">초등수학</span></a>
+
+
+						<!-- 초등수학 서브메뉴 -->
+						<div class="ele subWrap"><!-- 2019-03-14 display:none 삭제 -->
+							<ul class="cboth">
+								<li class="grade">
+									<div class="gradeTit"><a href="#none">초등학교 3학년</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">1학기</a></li><!-- 미등록 컨텐츠일경우  nocnt 추가 -->
+											<li><a href="#none">2학기</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit"><a href="#none">초등학교 4학년</a></div>
+									<div class="sub"><!-- 2020-03-19 추가 -->
+										<h3>1학기</h3>
+										<ul>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10610"><span class="icoGnb"></span>덧셈과 뺄셈</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10611"><span class="icoGnb"></span>평면도형</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10612"><span class="icoGnb"></span>나눗셈</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10613"><span class="icoGnb"></span>곱셈</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10614"><span class="icoGnb"></span>길이와 시간</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10615"><span class="icoGnb"></span>분수와 소수</a></li>
+										</ul>
+										<h3>2학기</h3>
+										<ul>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10616"><span class="icoGnb"></span>곱셈</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10617"><span class="icoGnb"></span>나눗셈</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10618"><span class="icoGnb"></span>원</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10619"><span class="icoGnb"></span>분수</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10620"><span class="icoGnb"></span>들이와 무게</a></li>
+												<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10621"><span class="icoGnb"></span>자료의 정리</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit"><a href="#none">초등학교 5학년</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">1학기</a></li>
+											<li><a href="#none">2학기</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit"><a href="#none">초등학교 6학년</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">1학기</a></li>
+											<li><a href="#none">2학기</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>	
+							<span class="aside"><a href="http://www.ebsmath.co.kr/siteMap?currentGrdCd=EGRD" class="btn_all" title="전체 교과 보기로 이동">전체교과보기</a></span>
+						</div>
+						<!--// 초등수학 서브메뉴 -->
+					</li>
+					<li>
+						<a href="#none" class="menu gm2"><span class="blind">중학수학</span></a>
+						<!-- 중학수학 서브메뉴 -->
+						<div class="mid subWrap">
+							<ul class="cboth">
+								<li class="grade">
+									<div class="gradeTit on"><a href="#none">중학교 1학년</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">수와 연산</a></li>
+											<li><a href="#none">문자와 식</a></li>
+											<li><a href="#none">좌표평면과 그래프</a></li>
+											<li><a href="#none">기하</a></li>
+											<li><a href="#none">자료의 정리와 해석</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit"><a href="#none">중학교 2학년</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">수와 연산</a></li>
+											<li><a href="#none">문자와 식</a></li>
+											<li><a href="#none">함수</a></li>
+											<li><a href="#none">기하</a></li>
+											<li><a href="#none">확률과 통계</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit"><a href="#none">중학교 3학년</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">수와 연산</a></li>
+											<li><a href="#none">문자와 식</a></li>
+											<li><a href="#none">함수</a></li>
+											<li><a href="#none">확률과 통계</a></li>
+											<li><a href="#none">기하</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="banner">
+									<a href="#" class="easy1">쉽고 재미있는 통계 이지 통계</a><br>
+									<a href="#" class="easy2">쉽게 배우는 그래프 이지 그래프</a>
+								</li>
+							</ul>
+									
+						
+							<span class="aside"><a href="http://www.ebsmath.co.kr/siteMap?currentGrdCd=MGRD" class="btn_all" >전체교과보기</a></span>
+						</div>
+						<!--// 중학수학 서브메뉴 -->
+					</li>
+					<li>
+						<a href="#none" class="menu gm3" ><span class="blind">고교수학</span></a>
+						<!-- 고교수학 서브메뉴 -->
+						<div class="hg subWrap">
+							<ul class="cboth">
+								<li class="grade">
+									<div class="gradeTit on"><a href="#none" title="수학">수학</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">방정식과 부등식</a></li>
+											<li><a href="#none">도형의 방정식</a></li>
+											<li><a href="#none">집합과 명제</a></li>
+											<li><a href="#none">함수</a></li>
+											<li><a href="#none">경우의 수</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit on"><a href="#none">수학 I</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">지수함수와 로그함수 </a></li>
+											<li><a href="#none">삼각함수</a></li>
+											<li><a href="#none">수열</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit on"><a href="#none">수학 II</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">함수의 극한과 연속  </a></li>
+											<li><a href="#none">미분</a></li>
+											<li><a href="#none">적분</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit on"><a href="#none">확률과 통계</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">순열과 조합</a></li>
+											<li><a href="#none">확률</a></li>
+											<li><a href="#none">통계</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="grade">
+									<div class="gradeTit on"><a href="#none">미적분</a></div>
+									<div class="sub">
+										<ul>
+											<li><a href="#none">수열의 극한</a></li>
+											<li><a href="#none">미분</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<span class="aside"><a href="#none" class="btn_all">전체교과보기</a></span>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="moreLink cboth">
+					<li class="mlnk01"><a href="#none">수학 시리즈</a>
+						<div class="moL1 subWrap" style="display:none">
+							<ul class="moreLinkList">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">게임</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학지식카드</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mlnk02"><a href="#none">수학 게임존</a>	
+						<div class="moL2 subWrap" style="display:none">
+							<ul class="moreLinkList">
+								<li><a href="#">4학년 문제 세트 게임</a></li>
+								<li><a href="#">5학년 문제 세트 게임</a></li>
+								<li><a href="#">6학년 문제 세트 게임</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //gnb -->
+	</div>
+	<!-- //header -->
+
+	<!-- main banner -->
+	<div class="mainTopcnt">
+		<div class="topBanner">
+			<ul class="bxslider">
+				<li><span style="background:#1bb3cf;"><a href="#none" onclick="$('.dim, .playerWrap').show();return false;"><img src="../images/main/renewal2020/top_banner01.jpg"></a></span></li>
+				<li><span style="background:#f15d5b;"><a href="#"><img src="../images/main/renewal2020/top_banner02.jpg"></a></span></li>
+				<li><span style="background:#1b6dd1;"><a href="#"><img src="../images/main/renewal2020/top_banner03.jpg"></a></span></li>
+				<li><span style="background:#4e42cb;"><a href="#"><img src="../images/main/renewal2020/top_banner04.jpg"></a></span></li>
+				<li><span style="background:#4e42cb;"><a href="#"><img src="../images/main/renewal2020/top_banner05.jpg"></a></span></li>
+				<li><span style="background:#4e42cb;"><a href="#"><img src="../images/main/renewal2020/top_banner06.jpg"></a></span></li>
+				<li><span style="background:#4e42cb;"><a href="#"><img src="../images/main/renewal2020/top_banner07.jpg"></a></span></li>
+				<li><span style="background:#ffe2ba;"><a href="#"><img src="../images/main/renewal2020/top_banner08.jpg"></a></span></li>
+				<li><span style="background:#c4f5fb;"><a href="#"><img src="../images/main/renewal2020/top_banner09.jpg"></a></span></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //main banner -->
+
+	<!-- 추천 콘텐츠 -->
+	<div class="recommCont">
+		<h2><img src="../images/main/renewal2020/tit_recomd_cnt.png" alt="추천 콘텐츠"></h2>
+		<div class="inner tabContBox_01">
+			<ul class="tab_recm stcard_grade_tab">
+				<li class="on"><button type="button">초등3</button></li>
+				<li><button type="button">초등4</button></li>
+				<li><button type="button">초등5</button></li>
+				<li><button type="button">초등6</button></li>
+				<li><button type="button">중학1</button></li>
+				<li><button type="button">중학2</button></li>
+				<li><button type="button">중학3</button></li>
+				<li><button type="button">고교</button></li>
+			</ul>
+			<div class="tabCont on">
+				<h3>소인수분해 <a href="#none" class="btnMore" title="더 보기"><img src="../images/main/renewal2018/btn_more.png" alt="더 보기"></a></h3><!--  2020-03-27 더보기 추가 -->
+				<!-- 학습카드 타입 추가 2020-03-18-2 -->
+				<div class="box_list_con2020 card_box1">
+					<ul class="main main_card_slider1">
+						<li class="boxB lcard">
+							<a href="dldkdkld">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+								</span>
+							</a>
+							<button type="button" class="fav_con"><i class="blind">북마크</i></button><!-- 2020-03-19 수정 -->
+							<button type="button" class="down_con"><i class="blind">다운로드</i></button><!-- 2020-04-06 다운로드 아이콘 추가 -->
+						</li>
+						<li class="boxG lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb2.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										37회 원주각과 중심각 사이의 관계
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+								</span>
+							</a>
+							<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+						</li>
+						<li class="boxJ lcard">
+							<a href="ewtwet">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb3.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										5회 기약분수, 통분
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+								</span>
+							</a>
+							<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+						</li>
+						<li class="boxK lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb4.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										지구를 지켜라-1t의 물
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxL lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxS lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+				
+			</div>
+			<div class="tabCont">
+				<h3>평면도형  <a href="#none" class="btnMore" title="더 보기"><img src="../images/main/renewal2018/btn_more.png" alt="더 보기"></a></h3>
+				
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box2">
+					<ul class="main main_card_slider2">
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+			</div>
+			<div class="tabCont">
+				<h3>분수와 소수<a href="#none" class="btnMore" title="더 보기"><img src="../images/main/renewal2018/btn_more.png" alt="더 보기"></a></h3>
+
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box3">
+					<ul class="main main_card_slider3">
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+				
+			</div>
+			<div class="tabCont">
+				<h3>길이와시간 <a href="#none" class="btnMore">더보기</a></h3>
+				
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box4">
+					<ul class="main main_card_slider4">
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+			</div>
+			<div class="tabCont">
+				<h3>평면도형  <a href="#none" class="btnMore">더보기</a></h3>
+				
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box5">
+					<ul class="main main_card_slider5">
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+			</div>
+			<div class="tabCont">
+				<h3>분수와 소수 <a href="#none" class="btnMore">더보기</a></h3>
+
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box6">
+					<ul class="main main_card_slider6">
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+				
+			</div>
+			<div class="tabCont">
+				<h3>길이와시간 <a href="#none" class="btnMore">더보기</a></h3>
+				
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box7">
+					<ul class="main main_card_slider7">
+						<li class="boxB lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+			</div>
+			<div class="tabCont">
+				<h3></h3>
+				<!-- 학습카드 -->
+				<div class="box_list_con2020 card_box8">
+					<ul class="main main_card_slider8">
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//학습카드 -->
+			</div>
+		</div>
+	</div>
+
+
+	<div class="midCont">
+		<div class="inner">
+			<!-- 이벤트 -->
+			<section class="event">
+				<h3><img src="../images/main/renewal2020/tit_event.png" alt="이벤트" /></h3>
+				<div class="eventBanWrap">
+					<div class="banner_set">
+						<ul class="mainEventSlider">
+							<li>
+								<a href="#none"><img src="../images/main/renewal2020/img_thumb_event202003_b.png" alt="" /></a>
+							</li>
+							<li>
+								<a href="#none"><img src="../images/main/renewal2020/img_thumb_event202003_b.png" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- //이벤트 -->
+
+			<section class="gamezone">
+				<h3><img src="../images/main/renewal2020/tit_gamezone.png" alt="수학 게임존" /></h3>
+				<a href="#" class="btn_go">바로가기</a>
+				
+				<ul>
+					<li><a href="#" class="setgame4"><span>4학년 문제 세트 게임</span></a></li>
+					<li><a href="#" class="setgame5"><span>5학년 문제 세트 게임</span></a></li>
+					<li><a href="#" class="setgame6"><span>6학년 문제 세트 게임</span></a></li>
+				</ul>
+			</section>
+			
+			<section class="midmath">
+				<h3><img src="../images/main/renewal2020/tit_midmath.png" alt="중학수학 공학도구" /></h3>
+				<ul>
+					<li><a href="#" class="easy1">쉽고 재미있는 통계 이지 통계</a></li>
+					<li><a href="#" class="easy2">쉽게 배우는 그래프 이지 그래프</a></li>
+				</ul>
+				
+			</section>
+		</div>
+	</div>
+	
+	<div class="newCont">
+		<h2><img src="../images/main/renewal2020/tit_new_cnt.png" alt="최신 콘텐츠"></h2>
+		<div class="inner tabContBox_02">
+			<ul class="tab_new stcard_grade_tab">
+				<li class="on"><button type="button">전체</button></li>
+				<li><button type="button">초등</button></li>
+				<li><button type="button">중학</button></li>
+				<li><button type="button">고교</button></li>
+			</ul>
+			<div class="tabCont on">
+				<div class="box_list_con2020 card_box9">
+					<ul class="main main_card_slider9">
+						<li class="boxD lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb2.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										37회 원주각과 중심각 사이의 관계
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb3.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										5회 기약분수, 통분
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb4.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										지구를 지켜라-1t의 물
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabCont">
+				<div class="box_list_con2020 card_box10">
+					<ul class="main main_card_slider10">
+						<li class="boxH lcard check">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabCont">
+				<div class="box_list_con2020 card_box11">
+					<ul class="main main_card_slider11">
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tabCont">
+				<div class="box_list_con2020 card_box12">
+					<ul class="main main_card_slider12">
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxD lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxB lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<span class="running_time">mm:ss</span>
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxE lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+						<li class="boxH lcard">
+							<a href="#">
+								<span class="img_con">
+									<img class="thumb" src="../images/main/renewal2020/img_thumb1.png" alt="">
+									<!-- <span class="running_time">mm:ss</span> -->
+								</span>
+								<span class="info_con">
+									<strong class="title">
+										23회 돌도끼 수학[2-5] 들이와 무게 (2)
+									</strong>
+									<span class="info">
+										초3 <small>|</small> 1학기
+									</span>
+									<em class="react_con">
+										<span class="view">27,616</span>
+										<span class="like">367</span>
+									</em>
+									<button type="button" class="fav_con"><i class="blind">북마크</i></button>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 인기 학습카드 -->
+	<div class="bestCardList">
+		<h3><img src="../images/main/renewal2020/tit_pop_cnt.png" alt="인기콘텐츠"></h3>
+		<div class="inner">
+			<ul class="bestCardTab">
+				<li  class="on"><button type="button">유형별</button></li>
+				<li><button type="button">학교급별</button></li>
+			</ul>
+			<div class="bestCardCnt">
+				<div class="cardWap cboth on">
+					<div class="card_rank1">
+						<h4 class="card_title">영상</h4>
+						<div class="card_pager">
+							<span class="cur_num">1</span><span class="slash">/</span><span class="tot_num">4</span>
+						</div>
+						<div class="card_slider1">
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord mark">1</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">11화 달랑베르와 극한</span>
+									<span class="grade">미적분</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">2</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">확률과통계</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">3</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">4</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">5</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">6</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">7</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">8</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">9</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">10</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">11</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>	
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">12</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">13</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">14</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">15</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">16</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">17</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">18</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">19</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">20</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="card_rank2">
+						<h4 class="card_title">웹툰</h4>
+						<div class="card_pager">
+							<span class="cur_num">1</span><span class="slash">/</span><span class="tot_num">4</span>
+						</div>
+						<div class="card_slider2">
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord mark">1</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">2</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">3</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">4</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">5</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">6</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">7</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">8</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">9</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">10</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">11</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">12</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">13</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">14</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">15</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">16</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">17</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">18</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">19</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">20</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="card_rank3">
+						<h4 class="card_title">게임</h4>
+						<div class="card_pager">
+							<span class="cur_num">1</span><span class="slash">/</span><span class="tot_num">4</span>
+						</div>
+						<div class="card_slider3">
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord mark">1</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj">에라토스테네스의 체</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">2</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">3</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">4</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">5</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">6</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj">에라토스테네스의 체</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">7</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">8</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">9</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">10</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">11</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj">에라토스테네스의 체</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">12</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">13</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">14</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">15</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">16</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj">에라토스테네스의 체</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">17</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">18</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">19</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">20</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="cardWap cboth">
+					<div class="card_rank4">
+						<h4 class="card_title">초등</h4>
+						<div class="card_pager">
+							<span class="cur_num">1</span><span class="slash">/</span><span class="tot_num">4</span>
+						</div>
+						<div class="card_slider4">
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord mark">1</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">2</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">3</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">4</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">5</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">6</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">7</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">8</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">9</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">10</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">11</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>	
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">12</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">13</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">14</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">15</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">16</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard01.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">17</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard02.jpg" alt=""></span>
+									<span class="subj">이차함수 y = ax²(a > 0)의 그래프 그리기</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">18</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard03.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">19</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard04.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">20</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard05.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="card_rank5">
+						<h4 class="card_title">중학</h4>
+						<div class="card_pager">
+							<span class="cur_num">1</span>/4
+						</div>
+						<div class="card_slider5">
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord mark">1</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">2</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">3</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">4</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">5</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">6</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">7</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">8</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">9</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">10</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">11</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">12</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">13</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">14</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">15</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">16</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard06.jpg" alt=""></span>
+									<span class="subj">10회 못 더하면 더 해요</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">17</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard07.jpg" alt=""></span>
+									<span class="subj">1회 약수와 공약수</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">18</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard08.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">19</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard09.jpg" alt=""></span>
+									<span class="subj">1회 제곱근의 정의</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">20</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard10.jpg" alt=""></span>
+									<span class="subj">큰 수를 잘못 읽어 생긴 일</span>
+									<span class="grade">중2</span>
+									</a>
+								</li>
+							</ol>
+							</div>
+					</div>
+					<div class="card_rank6">
+						<h4 class="card_title">고교</h4>
+						<div class="card_pager">
+							<span class="cur_num">1</span><span class="slash">/</span><span class="tot_num">4</span>
+						</div>
+						<div class="card_slider6">
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord mark">1</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj h">에라토스테네스의 체</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">확률과<br>통계</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">2</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj h">1회 약수와 공약수</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">미적분</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">3</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 I</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">4</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 I</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">5</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj h">큰 수를 잘못 읽어 생긴 일</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 II</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">6</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj h">에라토스테네스의 체</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">확률과<br>통계</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">7</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj h">1회 약수와 공약수</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">미적분</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">8</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 I</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">9</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 II</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">10</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj h">큰 수를 잘못 읽어 생긴 일</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">11</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj h">에라토스테네스의 체</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">확률과<br>통계</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">12</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj h">1회 약수와 공약수</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">13</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 II</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">14</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 I</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">15</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj h">큰 수를 잘못 읽어 생긴 일</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">미적분</span>
+									</a>
+								</li>
+							</ol>
+							<ol>
+								<li>
+									<a href="#">
+									<strong class="ord">16</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard11.jpg" alt=""></span>
+									<span class="subj h">고등학교 통계 계산기</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">확률과<br>통계</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">17</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard12.jpg" alt=""></span>
+									<span class="subj h">1회 약수와 공약수</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">18</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard13.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 II</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">19</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard14.jpg" alt=""></span>
+									<span class="subj h">1회 제곱근의 정의</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">수학 I</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<strong class="ord">20</strong>	
+									<span class="thumb"><img src="../images/tmp/bcard15.jpg" alt=""></span>
+									<span class="subj h">큰 수를 잘못 읽어 생긴 일</span><!-- 고등일 경우 h 추가 -->
+									<span class="grade">미적분</span>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// 인기 학습카드 -->
+
+	<!-- 2020-07-31 온라인클래스 수정 -->
+	<div class="onlineClass">
+		<div class="banner">
+			<a href="https://oc.ebssw.kr/" target="_blank" class="btn_oc1"><i class="blind">온라인 클래스 바로가기</i></a>
+			<a href="https://oc.ebssw.kr/ocFaq.html"  target="_blank" class="btn_oc2"><i class="blind">자주 묻는 질문</i></a>
+			<a href="http://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=323&anocLcnCd=002&c.page=2" class="btn_oc3"><i class="blind">COVID-19 예방수칙안내</i></a>
+
+			<a href="https://primary.ebs.co.kr/main/primary"  target="_blank" class="btn_study1"><i class="blind">교과과정기반 자기주도학습 초등</i></a>
+			<a href="https://mid.ebs.co.kr/main/middle"  target="_blank" class="btn_study2"><i class="blind">교과과정기반 자기주도학습 중학</i></a>
+			<a href="http://www.ebsi.co.kr" target="_blank"  class="btn_study3"><i class="blind">교과과정기반 자기주도학습 고교</i></a>
+
+			<a href="http://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=342&anocLcnCd=001&c.page=1" class="btn_data"><i class="blind">모바일 데이터 무료 이용 안내</i></a>
+
+		</div>
+	</div>
+	
+	<div class="sideLnk">
+		<div class="inner">
+			<ul class="cboth">
+				<li class="lnk01">
+					<a href="http://www.ebsmath.co.kr/tchSpace/tchMain">
+						<strong>선생님 공간</strong>
+						교사 인증 후 교사 전용 서비스를<br>
+						바로 이용하실 수 있습니다.
+					</a>
+				</li>
+				<li class="lnk02">
+					<a href="http://www.ebsmath.co.kr/cosCenter/useInqQnaList?qnaClsCd=002">
+						<strong>수학 학습 해결소</strong>
+						EBSMath 콘텐츠와 관련된<br>
+						수학적 궁금증을 해결해 드립니다!
+					</a>
+				</li>
+				<li class="lnk03">
+					<a href="https://blog.naver.com/ebsmath1" target="_blank">
+						<strong>EBSMath 소개</strong>
+						스스로 공부하는 힘을 키워주는<br>EBSMath를 소개합니다.
+					</a>
+				</li>
+				<li class="lnk04">
+					<a href="http://www.ebsmath.co.kr/introduceApp/list?utm_source=math&utm_medium=banner&utm_campaign=m_introduceapp_main">
+						<strong>모바일 서비스 안내</strong>
+						내 손 안에서 만나는 <br>
+						즐겁고 창의적인 수학!
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="csCont">
+		<div class="inner">
+			<div class="notice">
+				<h4><img src="../images/main/renewal2020/tit_notice.png" alt="공지사항"></h4>
+				<ul class="noticeList">
+					<li><a href="#none"><span>EBS Math 사이트 리뉴얼</span><em class="icoNew">New</em></a><span class="noticeDate">2018.01.25</span></li>
+					<li><a href="#none"><span>사이트 개선을 위한 시스템 정기 점검 안내 (7/1)ㅁㅁㅁㅁㅁ</span><em class="icoNew">New</em></a><span class="noticeDate">2018.01.25</span></li>
+					<li><a href="#none"><span>2018년 2월 추가되는 학습카드 학습카드 학습카드 학습카드 학습카드</span></a><span class="noticeDate">2018.01.25</span></li>
+				</ul>
+				<a href="#none" class="btnMore" title="더 보기"><img src="../images/main/renewal2018/btn_more.png" alt="더 보기" /></a>
+			</div>
+			<div class="side_cs first">
+				<h4><img src="../images/main/renewal2020/tit_cs.png" alt="고객센터"></h4>
+				<ul>
+					<li class="lnk1"><a href="http://www.ebsmath.co.kr/cosCenter/useInqList">이용문의</a></li>
+					<li class="lnk2"><a href="http://www.ebsmath.co.kr/cosCenter/faqList">자주 묻는 질문</a></li>
+				</ul>
+			</div>
+			<div class="side_cs">
+				<h4><img src="../images/main/renewal2020/tit_sns.png" alt="공식 SNS 채널"></h4>
+				<ul>
+					<li class="lnk3"><a href="https://blog.naver.com/ebsmath1" target="_blank">EBSMath<br>블로그</a></li>
+					<li class="lnk4"><a href="https://www.facebook.com/ebsmath.Mstory/" target="_blank">EBSMath<br>페이스북</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div id="footer">
+		<!-- footer_con -->
+		<div class="footer_con">
+
+			<!-- family_con -->
+			<div class="family_con">
+				<ul>
+					<li class="btn2"><a class="emt" href="http://www.ebsi.co.kr/" target="_blank" title="EBSi">EBSi</a></li>
+					<li class="btn5"><a class="emt" href="http://mid.ebs.co.kr/" target="_blank" title="EBS 중학">EBS 중학</a></li>
+					<li class="btn4"><a class="emt" href="http://primary.ebs.co.kr/" target="_blank" title="EBS 초등">EBS 초등</a></li>
+					<li class="btn1"><a class="emt" href="http://www.ebs.co.kr/" target="_blank" title="EBS 메인">EBS 메인</a></li>
+					<li class="btn3"><a class="emt" href="http://www.ebse.co.kr/" target="_blank" title="EBS english">EBS english</a></li>
+					<li class="btn6"><a class="emt" href="http://www.ebslang.co.kr/ebs/index.laf" target="_blank" title="EBS lang">EBS lang</a></li>
+					<!-- <li class="btn8"><a class="emt" href="http://book.ebs.co.kr/" target="_blank" title="Book Mall">Book Mall</a></li> -->
+					<!-- <li class="btn9"><a class="emt" href="http://home.ebs.co.kr/software/etc/8/htmlMenu?family" target="_blank" title="EBS 소프트웨어">EBS 소프트웨어</a></li> -->
+					<li class="btn10"><a class="emt" href="http://ebssw.kr" target="_blank" title="이솦">이솦</a></li>
+				</ul>
+			</div>
+			<!-- //family_con -->
+
+			<!-- footer_menu -->
+			<div class="footer_menu">
+				<div class="logo_con">
+					<h2 class="blind">EBS Math</h2>
+				</div>
+				<div class="logo_con2">
+					<ul>
+						<li><a href="#none" target="_blank"><img src="../images/layout/rel_logo.png" alt="EBS" class="vm" /></a></li>
+						<li><a href="#none" target="_blank"><img src="../images/layout/rel_logo2.png" alt="교육부" class="vm" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //footer_menu -->
+
+			<!-- copyright_con -->
+			<div class="copyright_con">
+
+				<div class="menu_con2">
+					<ul>
+						<li><a href="#">EBS 소개</a></li>
+						<li><a href="#">저작권 침해 제보</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><span style="color:#fff" >개인정보처리방침</span></a></li>
+						<li><a href="http://www.ebsmath.co.kr/cosCenter/useInqList"><span style="color:#fff" >이용문의</span></a></li><!-- 2019-06-25 추가 -->
+						<li><a href="http://www.ebsmath.co.kr/cosCenter/faqList"><span style="color:#fff" >FAQ</span></a></li><!-- 2019-06-25 추가 -->
+					</ul>
+				</div>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사  |  사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br />
+					EBS 고객센터 1588-1580 (발신자 부담)  |  인터넷 문의 <a href="mailTo://helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>  |  FAX : 02-526-3855<br />
+					부가통신사업신고 : 10077  |  통신판매업신고 : 고양일산동-1415호
+				</address>
+				<p class="mt15">
+					<strong>Copyright © EBS All Rights Reserved.</strong>
+				</p>
+				<!-- 2020-01-20 추가 -->
+				<div class="banner_award">
+					<img src="../images/layout/footer_webaward.png" alt="2019 웹어워드 코리아 학생/유아교육분야 대상" />
+				</div>
+				<!--// 2020-01-20 추가 -->
+				<div class="banner">
+					<!-- <img src="../images/layout/footer_certification_2019.png" alt="" /> -->
+					<img src="../images/layout/footer_isms_p.png" alt="정보보호 및 개인정보보호 관리체계 인증 ISMS-P [유효기간] 2020.04.29 ~ 2023.04.28 [인증범위] EBS 교육포털 웹서비스" /><!-- 2020-05-19 ISMS-P 배너 추가 -->
+				</div>
+			</div>
+			<!-- //copyright_con -->
+
+		</div>
+		<!-- //footer_con -->
+	</div>
+	<!-- //footer -->
+
+	<!-- 동영상 레이어 -->
+	<div class="dim" onclick="$('.dim, .playerWrap').hide();return false;"></div>
+	<div class="playerWrap">
+		<div class="player">
+			
+		</div>
+		<button type="button" class="btnClose" onclick="$('.dim, .playerWrap').hide();return false;"></button>
+	</div>
+	<!-- 동영상 레이어 -->
+
+
+	<!-- 메인 팝업 -->
+	<div id="popup_notice2002" class="main_popup" style="display:none; position:fixed; right:0; bottom:-100%; width:400px; z-index:9997"><!-- 2020-01-28  z-index 수정 -->
+		<div class="foot">
+			<label class="fL">
+				<span class="icheckbox">
+					<span class="icheckbox"><input type="checkbox" id="setclose_136" >
+					</span>
+					오늘 하루 이 창을 열지 않음
+				</span>
+			오늘 하루 이 창을 열지 않음
+			</label>
+			<a href="#" class="btn_close" onclick="$(this).closest('#popup_136').remove(); return false;"><span>X</span>닫기</a><!-- 2019-07-17 닫기 버튼 수정 -->
+		</div>
+		<div class="content">
+			<!-- 온라인 클래스 2020-05-14 수정-->
+			<style>
+				.main_popup .coronaOnlineWrap .box.lg.wide { width:100%; max-width:640px; height:auto;}
+				.main_popup .coronaOnlineWrap .btn_wrap {position: relative; width:100%;}
+				.main_popup .coronaOnlineWrap .btn_wrap  a[class^="btn_"] { display:block; position:absolute; width: 5%; height: 3.5%; opacity:1; text-indent: -9999px; font-size: 0; background-image:url(about:blank)}
+
+				.main_popup .coronaOnlineWrap .btn_wrap a.btn_mob_guide { top:35.65%;left:10.00%;width:39.00%;height:10.02%}
+
+				.main_popup .coronaOnlineWrap .btn_wrap a.btn_oclass1 { top:47.98%;left:10.00%;width:80.00%;height:9.44% }
+				.main_popup .coronaOnlineWrap .btn_wrap a.btn_oclass2 { top:35.65%;left:51.25%;width:38.75%;height:10.02%}
+
+				.main_popup .coronaOnlineWrap .btn_wrap a.btn_corona01 {top:80.15%;left:15.00%;width:35.00%;height:9.63%}
+				.main_popup .coronaOnlineWrap .btn_wrap a.btn_corona02 {top:80.15%;left:50.75%;width:35.00%;height:9.63%}
+
+				.main_popup .popcon .foot{width:630px; overflow:hidden;  padding:5px 5px 7px 5px; background:#393e42}
+
+			</style>
+			<div class="coronaOnlineWrap">
+				<div class="box lg wide" >
+					<div class="btn_wrap">
+						<img src="../images/common/notice_online_200514_2.png" alt="EBS 온라인 클래스" >
+
+						<a class="btn_mob_guide" href="http://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=333&anocLcnCd=001&c.page=1">모바일 데이터 무료 이용 안내</a>
+						<a class="btn_oclass2" href="https://oc.ebssw.kr/ocFaq.html" target="_blank">온라인클래스 자주 묻는 질문</a>
+
+						<a class="btn_oclass1" href="https://oc.ebssw.kr/" target="_blank">온라인 클래스 바로가기</a>
+
+						<a class="btn_corona01" href="http://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=323&anocLcnCd=002&c.page=2">예방수칙 안내</a>
+						<a class="btn_corona02" href="https://www.ebssw.kr/corona19map/index.do" target="_blank">이동경로 안내지도</a>
+					</div>
+				</div>
+			</div>
+			<!-- // 온라인 클래스 2020-05-14 수정-->
+		</div>
+	</div>
+	<!-- 메인 팝업 -->
+
+	<!--2020-05-22  메인 팝업 -->
+	<div id="popup_notice2003" class="pop_common" style="display:none; z-index:9998">
+		<div class="popcon">
+			<div class="foot">
+				<label class="fL">
+					<span class="icheckbox">
+						<span class="icheckbox"><input type="checkbox" id="setclose_136" >
+						</span>
+						오늘 하루 이 창을 열지 않음
+					</span>
+				오늘 하루 이 창을 열지 않음
+				</label>
+				<a href="#" class="btn_close" onclick="$(this).closest('#popup_136').remove(); return false;"><span>X</span>닫기</a>
+			</div>
+			<div class="content">
+				<style>
+					.pop_common {height:430px !important;  top:174px;}
+					.pop_common .popcon {width:400px !important; }
+					.pop_common .foot {width:390px !important;}
+				</style>
+				<img src="../images/common/notice_200522.png" alt="EBSMath 사이트 점검 안내" usemap="#map_notice0522">
+				<map name="map_notice0522" id="map_notice0522">
+				  <area shape="rect" coords="106,337,293,380" href="http://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=337&anocLcnCd=002&c.page=1" alt="EBSMath 사이트 점검안내 자세히 보기" />
+				</map>
+			</div>
+		</div>
+	</div>
+	<!-- 2020-05-22 메인 팝업 -->
+
+
+</div>
+<script type="text/javascript">
+	$(function (){
+			//로그인 후 마이 메뉴
+			$('.userId').hover(
+				function(){
+					$(this).addClass('on');
+				}, function(){
+					$(this).removeClass('on');
+				}
+			);
+
+			$('.userId').focusin(function(){
+				$(this).addClass('on');
+			});
+
+			$('.logout').focusout(function(){
+				$('.userId').removeClass('on');
+			});
+
+			
+			$(".searchArea input[type='text']").bind("mouseup", function(e){
+				$(".autoComplete").css({display:"block"});
+			});
+
+			$(".autoComplete .btnClose a").bind("click", function(e){
+				$(".autoComplete").css({display:"none"});
+			});
+
+			$('html').click(function(e) {
+				stopEventBubble()
+				var srname = $(e.target).parents();
+				var issrname = srname.hasClass("searchArea")
+				if (issrname == false) {
+					$(".autoComplete").css({display:"none"});
+				}
+			});
+
+			function stopEventBubble(evt) {
+				var eventReference = (typeof evt !== "undefined") ? evt : event;
+				if(eventReference.stopPropagation) {
+					eventReference.stopPropagation();
+				} else {
+					eventReference.cancelBubble = true;
+				}
+			}
+
+			//추천 학습카드
+			$('.tab_recm li').click(function(e){
+				e.preventDefault;
+				var tabN_01 = $(this).index();
+				$('.tab_recm li').removeClass('on');
+				$(this).addClass('on');
+				$('.tabContBox_01 > .tabCont').removeClass('on');
+				$('.tabContBox_01 > .tabCont').eq(tabN_01).addClass('on');
+				initSlider()
+			});
+
+			//최신콘텐츠
+			$('.tab_new li').click(function(e){
+				e.preventDefault;
+				var tabN_01 = $(this).index();
+
+				$('.tab_new li').removeClass('on');
+				$(this).addClass('on');
+				$('.tabContBox_02 > .tabCont').removeClass('on');
+				$('.tabContBox_02 > .tabCont').eq(tabN_01).addClass('on');
+				initSlider()
+			});
+
+			//인기학습카드
+			$('.bestCardTab li').click(function(e){
+				e.preventDefault;
+				var tabN_01 = $(this).index();
+
+				$('.bestCardTab li').removeClass('on');
+				$(this).addClass('on');
+				$('.bestCardCnt > .cardWap').removeClass('on');
+				$('.bestCardCnt > .cardWap').eq(tabN_01).addClass('on');
+			});
+
+
+			//Topbanner 슬라이더
+			var slider_top = $('.bxslider').bxSlider({
+			  auto: true,
+			  autoControls: true,
+			  stopAutoOnClick: true,
+			  pager: true,
+			  startSlide:1,
+			  onSliderLoad: function(currentIndex)
+			  {
+				$(".bx-pager").append("<button type='button' id='top_controls_auto'>컨트롤</button>");
+			  }
+			});
+			
+			//이벤트 슬라이더
+			$("#top_controls_auto").click(function(){
+				 if($(this).attr('class') == 'start'){
+					  slider_top.startAuto();
+					  $(this).removeClass('start');
+				  } else {
+					  slider_top.stopAuto();
+					  $(this).addClass('start');
+				  }
+				return false;
+			});
+
+			//2020-03-20 Topbanner 페이징 클릭시
+			$('.topBanner .bx-wrapper .bx-pager  > div').click(function(e){
+				var i = $(this).index();
+				//console.log(i)
+				slider_top.goToSlide(i);
+				slider_top.stopAuto();
+				restart=setTimeout(function(){
+					slider_top.startAuto();
+				},500);
+				return false;
+			});
+
+
+			
+			var slider_event = $('.mainEventSlider').bxSlider({
+			  auto: true,
+			  autoControls: false,
+			  stopAutoOnClick: true,
+			  pager: true,
+			  controls:false,
+			  startSlide:0
+			});
+
+			//인기 콘텐츠 슬라이더
+			var cardSlider1 = $('.card_slider1').bxSlider({
+			auto: false,
+			  autoControls: false,
+			  stopAutoOnClick: false,
+			  infiniteLoop:false,
+			  pager: true,
+			  slideWidth:293,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex) {
+				ctrlChg(1, newIndex)
+			  }
+			});
+
+			var cardSlider2 = $('.card_slider2').bxSlider({
+			  auto: false,
+			  autoControls: false,
+			  stopAutoOnClick: false,
+			  infiniteLoop:false,
+			  pager: true,
+			  slideWidth:293,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex) {
+				ctrlChg(2,newIndex)
+
+			  }
+			});
+
+			var cardSlider3 = $('.card_slider3').bxSlider({
+			  auto: false,
+			  autoControls: false,
+			  stopAutoOnClick: false,
+			  infiniteLoop:false,
+			  pager: true,
+			  slideWidth:293,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex) {
+					ctrlChg(3,newIndex)
+
+			  }
+			});
+
+			var cardSlider4 = $('.card_slider4').bxSlider({
+			  auto: false,
+			  autoControls: false,
+			  stopAutoOnClick: false,
+			  infiniteLoop:false,
+			  pager: true,
+			  slideWidth:293,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex)  {
+				ctrlChg(4,newIndex)
+			  }
+			});
+
+			var cardSlider5 = $('.card_slider5').bxSlider({
+			  auto: false,
+			  autoControls: false,
+			  stopAutoOnClick: false,
+			  infiniteLoop:false,
+			  pager: true,
+			  slideWidth:293,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex)  {
+				ctrlChg(5,newIndex)
+
+			  }
+			});
+
+			var cardSlider6 = $('.card_slider6').bxSlider({
+			  auto: false,
+			  autoControls: false,
+			  stopAutoOnClick: false,
+			  infiniteLoop:false,
+			  pager: true,
+			  slideWidth:293,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex)  {
+				ctrlChg(6,newIndex)
+			  }
+			});
+
+			//추천콘텐츠&최신콘텐츠
+			var main_card_slider1 = $('.main_card_slider1').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000, 
+				  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(1,newIndex)}
+			});
+
+			var main_card_slider2 = $('.main_card_slider2').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+				  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(2,newIndex)}
+			});
+
+			var main_card_slider3 = $('.main_card_slider3').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+				  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(3,newIndex)}
+			});
+
+			var main_card_slider4 = $('.main_card_slider4').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+				  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(4,newIndex)}
+			});
+
+			var main_card_slider5 = $('.main_card_slider5').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(5,newIndex)}
+			});
+
+			var main_card_slider6 = $('.main_card_slider6').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(6,newIndex)}
+			});
+
+			var main_card_slider7 = $('.main_card_slider7').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(7,newIndex)}
+			});
+
+			var main_card_slider8 = $('.main_card_slider8').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(8,newIndex)}
+			});
+			var main_card_slider9 = $('.main_card_slider9').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(9,newIndex)}
+			});
+			var main_card_slider10 = $('.main_card_slider10').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(10,newIndex)}
+			});
+			var main_card_slider11 = $('.main_card_slider11').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(11,newIndex)}
+			});
+			var main_card_slider12 = $('.main_card_slider12').bxSlider({
+			  auto: false,autoControls: false,stopAutoOnClick: false,infiniteLoop:false,pager: true, slideMargin:53,minSlides:4,maxSlides:4,moveSlides:4,shrinkItems:false,slideWidth:1000,
+			  onSlideBefore: function($slideElement, oldIndex, newIndex){ctrlChg_cnt(12,newIndex)}
+			});
+
+			$('.bestCardList .bx-prev').each(function(e) {
+				$(this).addClass("d");
+			});
+
+			$('.recommCont .box_list_con2020 .bx-prev').each(function(e) {
+				$(this).addClass("d");
+			});
+
+			$('.newCont .box_list_con2020 .bx-prev').each(function(e) {
+				$(this).addClass("d");
+			});
+			
+			/*S : 2019-03-15 GNB 수정*/
+			var gnbAction = function() {
+				var gnbmenu = $('#header.renewal2020 .gnb > li');
+				var moreLnk = $('#header.renewal2020 .moreLink > li');
+
+				var gnbH = [0,0,0];
+				for (var i=0; i <3; i++) {
+					gnbH[i] = $(gnbmenu).eq(i).find(".subWrap").height();
+				}
+				
+				$("#header.renewal2020 .gnb .subWrap").css("height","0");
+				$("#header.renewal2020 .moreLink .subWrap");
+
+				$(gnbmenu).bind({
+					mouseenter:function(e) {
+						var curid =  $(this).index();
+						var curidbox = $(this).find(".subWrap");
+						 $(this).find(".subWrap").stop().animate(
+							{height:gnbH[curid]}
+							 ,500).show();
+					},
+					mouseleave:function(e){
+						var curid =  $(this).index();
+						var curidbox = $(this).find(".subWrap");
+						 $(curidbox).stop().animate({height:0},{complete:function(){$(this).hide()}},300);
+					}
+				});
+
+				$(moreLnk).bind({
+					mouseenter:function(e) {
+						var curid =  $(this).index();
+						var curidbox = $(this).find(".subWrap");
+
+						 $(this).find(".subWrap").stop().show();
+					},
+					mouseleave:function(e){
+						var curid =  $(this).index();
+						var curidbox = $(this).find(".subWrap");
+						 $(curidbox).stop().hide();
+					}
+				});
+			}
+			gnbAction();/* e : 2019-03-15 GNB */
+
+			function ctrlChg(sIdx,cidx) {
+				var isDim = $(".card_rank" +  sIdx + " .bx-controls-direction a").hasClass("d");
+				if (isDim) $(".card_rank" + sIdx + " .bx-controls-direction a").removeClass("d");
+				
+				var cur_page = cidx + 1;
+				$(".card_rank" +  sIdx + " .cur_num").text(cur_page)
+
+				if(cidx == 0) {
+					$(".card_rank" + sIdx + " .bx-prev").addClass('d');
+				}
+				else if(cidx == 3) {
+					$(".card_rank" + sIdx + " .bx-next").addClass('d');
+				}
+			}
+
+			function ctrlChg_cnt(sIdx,cidx) {
+				var card_len = $(".main_card_slider" + sIdx + " li").size()/4 -1;
+				console.log(card_len);
+				var isDim = $(".card_box" +  sIdx + " .bx-controls-direction a").hasClass("d");
+				if (isDim) $(".card_box" + sIdx + " .bx-controls-direction a").removeClass("d");
+				if(cidx == 0) {
+					$(".card_box" + sIdx + " .bx-prev").addClass('d');
+				}
+				else if(cidx == card_len) {
+					$(".card_box" + sIdx + " .bx-next").addClass('d');
+				}
+			}
+
+			function initSlider(){ 
+				var sliderNum = $(".box_list_con2020").size();
+				for (j=1; j<=sliderNum; j++)  {
+					slStrid = eval("main_card_slider" + j);
+					slStrid.goToSlide(0);
+				}
+			}
+			
+			$(".main_popup").animate({bottom: "0px"}, 1000, function() {});
+	});
+</script>
+</body>
+</html>

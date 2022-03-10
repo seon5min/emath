@@ -1,0 +1,103 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+
+.findCat {background:none;}
+.findCat .top {position:relative; width:763px;}
+.findCat .top .btn-apply {position:absolute; top:739px; left:394px; display:block; width:305px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.findCat .snswrap {position:absolute; top:29px; right:20px;}
+.findCat .snswrap a {display:inline-block; width:37px; height:37px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;}
+/* .findCat .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;} */
+.findCat .snswrap a.fb {background-position:0 0;}
+.findCat .snswrap a.tw {background-position:-41px 0;}
+.findCat .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.findCat .eventArea > div {position:relative;}
+
+.findCat .cont_01 .myScore {position:absolute; top:172px; left:416px; display:block; width:27px; text-align:center; font-weight:700; color:#fffd5c; font-size:22px;}
+.findCat .cont_01 .tabGrade {position:absolute; top:230px; left:53px; z-index:1;}
+.findCat .cont_01 .tabGrade li {float:left; width:131px; height:46px; background:url('../../images/event/20181015/btn_off.png') no-repeat 0 0; font-size:0; text-indent:-9999px;}
+.findCat .cont_01 .tabGrade li a {display:block; width:100%; height:46px; text-indent:-9999px;}
+.findCat .cont_01 .tabGrade li  + li {margin-left:1px;}
+.findCat .cont_01 .tabGrade li.btnGrade_01 {background-position:0 0;}
+.findCat .cont_01 .tabGrade li.btnGrade_02 {background-position:-132px 0;}
+.findCat .cont_01 .tabGrade li.btnGrade_03 {background-position:-264px 0;}
+.findCat .cont_01 .tabGrade li.btnGrade_04 {background-position:-396px 0;}
+.findCat .cont_01 .tabGrade li.btnGrade_05 {background-position:-528px 0;}
+.findCat .cont_01 .tabGrade li.on {background-image:url('../../images/event/20181015/btn_on.png');}
+
+.findCat .cont_01 .contGrade {position:absolute; top:273px; left:19px; width:696px; height:295px; padding:16px 15px; background:url('../../images/event/20181015/bg_tab.png') no-repeat 0 0;}
+.findCat .cont_01 .contGrade > div {display:none;}
+.findCat .cont_01 .contGrade > div.on {display:block;}
+
+.findCat .cont_01 .tabSection {float:left; width:126px; }
+.findCat .cont_01 .tabSection li {text-indent:-9999px;}
+.findCat .cont_01 .tabSection li a {display:block;}
+.findCat .cont_01 .tabSection li + li {margin-top:5px;}
+
+.findCat .cont_01 .contGrade_01 .tabSection li a, .findCat .cont_01 .contGrade_02 .tabSection li a {height:45px;}
+.findCat .cont_01 .contGrade_04 .tabSection li a {height:95px;}
+.findCat .cont_01 .contGrade_03 .tabSection li a, .findCat .cont_01 .contGrade_05 .tabSection li a {height:145px;}
+
+.findCat .cont_01 .contGrade_01 .tabSection .btnSection_01, .findCat .cont_01 .contGrade_02 .tabSection .btnSection_01 {background-position:0 0;}
+.findCat .cont_01 .contGrade_01 .tabSection .btnSection_02, .findCat .cont_01 .contGrade_02 .tabSection .btnSection_02 {background-position:0 -50px;}
+.findCat .cont_01 .contGrade_01 .tabSection .btnSection_03, .findCat .cont_01 .contGrade_02 .tabSection .btnSection_03 {background-position:0 -100px;}
+.findCat .cont_01 .contGrade_01 .tabSection .btnSection_04, .findCat .cont_01 .contGrade_02 .tabSection .btnSection_04 {background-position:0 -150px;}
+.findCat .cont_01 .contGrade_01 .tabSection .btnSection_05, .findCat .cont_01 .contGrade_02 .tabSection .btnSection_05 {background-position:0 -200px;}
+.findCat .cont_01 .contGrade_01 .tabSection .btnSection_06, .findCat .cont_01 .contGrade_02 .tabSection .btnSection_06 {background-position:0 -250px;}
+.findCat .cont_01 .contGrade_03 .tabSection .btnSection_01, .findCat .cont_01 .contGrade_05 .tabSection .btnSection_01 {background-position:0 0;}         
+.findCat .cont_01 .contGrade_03 .tabSection .btnSection_02, .findCat .cont_01 .contGrade_05 .tabSection .btnSection_02	 {background-position:0 -150px;}
+.findCat .cont_01 .contGrade_04 .tabSection .btnSection_01 {background-position:0 0;}
+.findCat .cont_01 .contGrade_04 .tabSection .btnSection_02 {background-position:0 -100px;}
+.findCat .cont_01 .contGrade_04 .tabSection .btnSection_03 {background-position:0 -200px;}
+
+.findCat .cont_01 .contGrade_01 .tabSection li {background:url('../../images/event/20181015/btn_01_off.png') no-repeat;}
+.findCat .cont_01 .contGrade_02 .tabSection li {background:url('../../images/event/20181015/btn_02_off.png') no-repeat;}
+.findCat .cont_01 .contGrade_03 .tabSection li {background:url('../../images/event/20181015/btn_03_off.png') no-repeat;}
+.findCat .cont_01 .contGrade_04 .tabSection li {background:url('../../images/event/20181015/btn_04_off.png') no-repeat;}
+.findCat .cont_01 .contGrade_05 .tabSection li {background:url('../../images/event/20181015/btn_05_off.png') no-repeat;}
+.findCat .cont_01 .contGrade_01 .tabSection li.on {background-image:url('../../images/event/20181015/btn_01_on.png');}
+.findCat .cont_01 .contGrade_02 .tabSection li.on {background-image:url('../../images/event/20181015/btn_02_on.png');}
+.findCat .cont_01 .contGrade_03 .tabSection li.on {background-image:url('../../images/event/20181015/btn_03_on.png');}
+.findCat .cont_01 .contGrade_04 .tabSection li.on {background-image:url('../../images/event/20181015/btn_04_on.png');}
+.findCat .cont_01 .contGrade_05 .tabSection li.on {background-image:url('../../images/event/20181015/btn_05_on.png');}
+
+.findCat .cont_01 .btn-go {position:absolute; top:625px; left:156px; display:block; width:467px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+
+.findCat .cont_01 .contSection {float:left; width:567px; margin-top:30px; margin-left:3px;}
+.findCat .cont_01 .contSection > div {display:none;}
+.findCat .cont_01 .contSection > div.on {display:block}
+.findCat .cont_01 .contSection a {float:left; display:table; width:172px; height:52px; margin:2.5px; padding:10px 5px; background-color:#f4f7f9; border:1px solid #d7d7d7; }
+.findCat .cont_01 .contSection a .image {position:relative; float:left; display:table-cell; width:60px; height:50px; margin-right:10px; border:1px solid #dddddd;}
+.findCat .cont_01 .contSection a .image img {width:100%; height:100%;}
+.findCat .cont_01 .contSection a .image .check{position:absolute; top:0; left:0; width:100%; height:50px; background:url('../../images/main/list_check2.png') no-repeat 50% 50%;}
+.findCat .cont_01 .contSection a span.title {display:table-cell; width:105px; line-height:18px; vertical-align:middle; font-weight:600; color:#6b6b6b;}
+.findCat .cont_01 .contSection a:hover {color:#4f8ed2; border:1px solid #4f8ed2; background-color:#e7edf2;}
+.findCat .cont_01 .contSection a:hover span.title{color:#4f8ed2;}
+
+.findCat .cont_02 {position:relative;}
+.findCat .cont_02 .cat img {position:absolute;display:none;}
+.findCat .cont_02 .cat img.cat_01 {top:304px;left:178px;}
+.findCat .cont_02 .cat img.cat_02 {top:367px;left:352px;}
+.findCat .cont_02 .cat img.cat_03 {top:286px;left:516px;}
+.findCat .cont_02 .cat img.cat_04 {top:317px;left:636px;}
+.findCat .cont_02 .cat img.cat_05 {top:482px;left:145px;}
+.findCat .cont_02 .cat img.cat_06 {top:592px;left:219px;}
+.findCat .cont_02 .cat img.cat_07 {top:533px;left:341px;}
+.findCat .cont_02 .cat img.cat_08 {top:511px;left:442px;}
+.findCat .cont_02 .cat img.cat_09 {top:695px;left:410px;}
+.findCat .cont_02 .cat img.cat_10 {top:639px;left:548px;}
+
+/* notice */
+.findCat .notice {padding:35px 39px 30px 35px; background-color:#6d4b35;}
+.findCat .notice ul {padding-top:10px;}
+.findCat .notice li {margin-top:5px; padding-left:15px; color:#ffffff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181015/bul.png') no-repeat 0 10px;}
+.findCat .notice li .point {color:#ffec6b;}
+
+/* 이벤트 종료 */
+.findCat.end .top .btn_win {position:absolute; top:770px; left:95px; display:block; width:275px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.findCat.end .top .btn_info_insert {position:absolute; top:771px; left:379px; display:block; width:295px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.findCat.end .top .myScore {position:absolute; top:905px; left:594px; display:block; width:27px; text-align:center; font-weight:700; color:#fffd5c; font-size:22px;}

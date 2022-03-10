@@ -1,0 +1,57 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+.dim{position:fixed; left:0; top:0; right:0; bottom:0; display:none; background:url('../../images/event/20170119/modal_bg.png'); z-index:999;}
+
+.gFriends {background:none;}
+.gFriends .top {position:relative; width:763px;}
+.gFriends .top .btn-apply {position:absolute; top:586px; left:426px; display:block; width:250px; height:57px; font-size:0; border-radius:28px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.gFriends .snswrap {position:absolute; top:25px; right:25px;}
+/* .gFriends .snswrap a {display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;} */
+/* .gFriends .snswrap a {display:inline-block; width:37px; height:37px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;} */
+.gFriends .snswrap a {display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20181109/img_sns.png'); *display:inline; zoom:1;}
+.gFriends .snswrap a.fb {background-position:0 0;}
+.gFriends .snswrap a.tw {background-position:-41px 0;}
+.gFriends .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.gFriends .eventArea > div {position:relative;}
+
+.gFriends .cont_01 span.myScore {position:absolute; top:235px; left:401px; width:60px; text-align:center; color:#f37e9c; font-size:16px; font-weight:600;}
+.gFriends .cont_01 span.myScore span {margin-right:5px; font-size:25px; font-weight:700;}
+.gFriends .cont_01 .tabGrade {position:absolute; top:283px; left:44px;}
+.gFriends .cont_01 .tabGrade li {position:relative; float:left; width:110px; height:109px; }
+.gFriends .cont_01 .tabGrade li + li {margin-left:3px;}
+.gFriends .cont_01 .tabGrade li a {position:absolute; bottom:0; display:block; width:110px; height:45px; background:url('../../images/event/20181205/btn_off.png') no-repeat 0 0; font-size:0; text-indent:-9999px;}
+.gFriends .cont_01 .tabGrade li.on a {height:109px; background:url('../../images/event/20181205/btn_on.png') no-repeat 0 0;}
+.gFriends .cont_01 .tabGrade li.btn_01 a {background-position:0 0;}
+.gFriends .cont_01 .tabGrade li.btn_02 a {background-position:-113px 0;}
+.gFriends .cont_01 .tabGrade li.btn_03 a {background-position:-226px 0;}
+.gFriends .cont_01 .tabGrade li.btn_04 a {background-position:-339px 0;}
+.gFriends .cont_01 .tabGrade li.btn_05 a {background-position:-452px 0;}
+.gFriends .cont_01 .tabGrade li.btn_06 a {background-position:-565px 0;}
+
+.gFriends .cont_01 .contGrade {position:absolute; top:392px; left:44px; width:606px; height:180px; padding:23.5px 34.5px;}
+.gFriends .cont_01 .contGrade > div {display:none;}
+.gFriends .cont_01 .contGrade > div.on {display:block}
+.gFriends .cont_01 .contGrade a {float:left; display:table; width:175px; height:52px; margin:7.5px; padding:10px 5px; background-color:#f4f7f9; border:1px solid #d7d7d7; }
+.gFriends .cont_01 .contGrade a .image {position:relative; float:left; display:table-cell; width:60px; height:50px; margin-right:10px; border:1px solid #dddddd;}
+.gFriends .cont_01 .contGrade a .image img {width:100%; height:100%;}
+.gFriends .cont_01 .contGrade a .image .check{position:absolute; top:0; left:0; width:100%; height:50px; background:url('../../images/main/list_check2.png') no-repeat 50% 50%;}
+.gFriends .cont_01 .contGrade a span.title {display:table-cell; width:105px; line-height:18px; vertical-align:middle; font-weight:600; color:#6b6b6b;}
+.gFriends .cont_01 .contGrade a:hover {color:#4f8ed2; border:1px solid #4f8ed2; background-color:#e7edf2;}
+.gFriends .cont_01 .contGrade a:hover span.title{color:#4f8ed2;}
+
+/* notice */
+.gFriends .notice {padding:35px 39px 30px 35px; background-color:#2c4561;}
+.gFriends .notice ul {padding-top:10px;}
+.gFriends .notice li {margin-top:5px; padding-left:15px; color:#ffffff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.gFriends .notice li .point {color:#ffec6b;}
+
+/* 이벤트 종료 */
+.gFriends.end .top .btn_win {position:absolute; top:778px; left:103px; display:block; width:249px; height:57px; font-size:0; border-radius:28px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.gFriends.end .top .btn_info_insert {position:absolute; top:778px; left:361px; display:block; width:299px; height:57px; font-size:0; border-radius:28px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.gFriends.end .top span.myScore {position:absolute; top:698px; left:540px; width:60px; text-align:center; color:#333333; font-size:16px; font-weight:600; letter-spacing:-2px;}
+.gFriends.end .top span.myScore span {margin-right:5px; font-size:30px; font-weight:700;}

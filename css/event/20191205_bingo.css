@@ -1,0 +1,115 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.bingo {background:none; }
+.bingo .top, .bingo .top_end {position:relative;}
+.bingo .top h1,.bingo .top_end h1 {position:absolute; top:29px; left:28px;}
+.bingo .top .cnt {padding:100px 0 0 43px;}
+
+.bingo .snswrap {position:absolute; top:23px; right:20px;}
+.bingo .snswrap a{display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.bingo .snswrap a.fb {background-position:0 0;}
+.bingo .snswrap a.tw {background-position:-41px 0;}
+.bingo .snswrap a.kko {background-position:-82px 0;}
+
+.bingo .top .btn-apply {position:absolute; top:493px; left:444px; display:block; width:279px; height:71px; background:url('../../images/event/20191205/btn_apply.png') 0 -74px  no-repeat;}
+.bingo .top .btn-apply.off {background-position:0 0}
+
+.bingo .top_end {width:763px; height:185px; padding-top:434px; background:url('../../images/event/20191205/cont_top_end.png') 0 0 no-repeat;}
+.bingo .top_end [class^="btn-winner"] {margin:30px auto 13px; display:block; height:71px; background-image:url('../../images/event/20191205/btn_event_fin.png'); background-repeat:no-repeat }
+.bingo .top_end .btn-winner1 {width:280px; background-position:0 0}
+.bingo .top_end .btn-winner2 {width:439px; background-position:0 -74px}
+.bingo .top_end .btn-winner3 {width:439px; background-position:0 -148px}
+.bingo .top_end .cmt_end {margin:0 0 16px 0; text-align:center}
+
+.bingo .eventArea {background:#2ac1bc; padding-bottom:58px}
+.bingo_board p {box-sizing:border-box; background:#295257; border-top-left-radius:4px; border-top-right-radius:4px; overflow:hidden; width:683px; height:54px; margin-left:39px; color:#ffd000; font-weight:700; font-size:17px; letter-spacing:-1px; }
+.bingo_board .myb {display:block; float:left; min-width:100px; height: 35px; background:url('../../images/event/20191205/txt_mybingo.png') 0 0 no-repeat; margin:10px 0 0 17px; padding-left:120px;}
+.bingo_board .myb strong {font-size:28px;}
+.bingo_board .friends {float:right; min-width:120px; height: 35px;background:url('../../images/event/20191205/txt_friends.png') 0 50% no-repeat; padding-left:106px;  margin:10px 0 0 17px;}
+.bingo_board .friends  strong {font-size:28px;}
+
+.bingo_board ul {box-sizing:border-box; padding:21px 0 0 12px; width:686px; height:688px;  margin:0 auto; background:url('../../images/event/20191205/bg_bingomap.png') 0 0  no-repeat;}
+.bingo_board li {float:left; width:120px; height:120px; margin:0 0 10px 10px;}
+.bingo_board li button {background-repeat:no-repeat; display:block; width:100%; height:100%; display:none}
+.bingo_board li button.active {display:block}
+.bingo_board li .btn_series1 {background-image:url('../../images/event/20191205/bingo1.png'); background-position:0 0 }
+.bingo_board li .btn_series2 {background-image:url('../../images/event/20191205/bingo2.png'); background-position:0 0 }
+.bingo_board li .btn_series3 {background-image:url('../../images/event/20191205/bingo3.png'); background-position:0 0 }
+.bingo_board li .btn_series4 {background-image:url('../../images/event/20191205/bingo4.png'); background-position:0 0 }
+.bingo_board li .btn_series1.on {background-position:-122px 0 }
+.bingo_board li .btn_series2.on {background-position:-122px 0 }
+.bingo_board li .btn_series3.on {background-position:-122px 0 }
+.bingo_board li .btn_series4.on {background-position:-122px 0 }
+
+.bingo .bonusevent {position:relative;}
+.bingo .bonusevent .btn-survey {position:absolute; top:246px; left:281px; display:block; width:202px; height:52px; background:url('../../images/event/20191205/btn_survey.png') 0 0 no-repeat;}
+.bingo .bonusevent .btn-survey.off {background-position:0 -54px;}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none}
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url('../../images/event/20161116/dim.png') repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:15px; right:15px; width:17px; height:17px; display:block; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000;  margin:-400px auto; overflow:hidden;}
+.pop_survey.pop_common .popcon {width:660px; height:815px; background:#fff;}
+.pop_survey.pop_common .popcon .container {height:620px; overflow:auto; padding:0 5px}
+.pop_survey.pop_common .btn_layerclose{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=1); opacity:1; background:transparent}
+.pop_survey .survey_list >  li {border-bottom:1px dashed #c8c8c8; padding:20px 0 25px 20px; color:#333333; font-weight:600; font-size:14px}
+.pop_survey .survey_list >  li:last-child{border-bottom:0}
+.pop_survey .survey_list >  li span[class^="num"] {display:inline-block; width:32px; height:32px; background-image:url('../../images/event/20191205/number.png'); background-repeat:no-repeat; vertical-align:middle; margin-right:5px; text-indent:-9999px;}
+.pop_survey .survey_list >  li .num1 {background-position:0 0}
+.pop_survey .survey_list >  li .num2 {background-position:-40px 0}
+.pop_survey .survey_list >  li .num3 {background-position:-80px 0}
+.pop_survey .survey_list >  li .num4 {background-position:-120px 0}
+.pop_survey .survey_list >  li .num5 {background-position:-160px 0}
+.pop_survey .survey_list >  li .num6 {background-position:0 -40px}
+.pop_survey .survey_list >  li .num7 {background-position:-40px -40px}
+.pop_survey .survey_list >  li .num8 {background-position:-80px -40px}
+.pop_survey .survey_list >  li .num9 {background-position:-120px -40px}
+.pop_survey .survey_list >  li .num10 {background-position:-160px -40px} 
+.pop_survey .survey_list >  li ul {padding:15px 0 0 38px}
+.pop_survey .survey_list >  li ul li {margin-bottom:8px}
+.pop_survey .survey_list  .grp {width:541px; height:100px; background:url('../../images/event/20191205/img_survey_6.png') 38px 0 no-repeat; overflow:hidden}
+.pop_survey .survey_list  .grp li {float:left; margin-right:1px; width:53px; padding-top:57px; text-align:center}
+.pop_survey .survey_list  .grp li:first-child {width:54px}
+.pop_survey .btn_send {text-align:center; padding:20px 0}
+
+
+/* notice */
+.bingo .notice {padding:35px 30px 30px 35px; background-color:#0d1c49;}
+.bingo .notice ul {padding-top:10px;}
+.bingo .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.bingo .notice li .point {color:#baccff;}
+
+/* iCheck plugin */
+.pop_survey .icheckbox,
+.pop_survey .iradio {
+	position:relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../../images/event/20191205/input_button.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.pop_survey .icheckbox {background-position:-40px 0;}
+.pop_survey .icheckbox.hover {background-position: -40px 0;}
+.pop_survey .icheckbox.checked {background-position: 0 0;}
+.pop_survey .icheckbox.disabled {background-position: -40px 0;cursor: default;}
+.pop_survey .icheckbox.checked.disabled {background-position: 0 0;}
+.pop_survey .iradio {background-position: -122px 0;}
+.pop_survey .iradio.hover {background-position: -122px 0;}
+.pop_survey .iradio.checked {background-position: -80px 0;}
+.pop_survey .iradio.disabled {background-position: -122px 0;cursor: default;}
+.pop_survey .iradio.checked.disabled {background-position: -80px 0;}
+
+.pop_survey input[type="text"] {border-radius:3px; height:25px; vertical-align:middle; margin-left:5px; width:200px;}

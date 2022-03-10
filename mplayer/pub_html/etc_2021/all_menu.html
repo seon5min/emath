@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+
+    <title>EBSMath</title>
+
+	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
+
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/common_ui.js"></script>
+
+
+</head>
+<body>
+
+<div class="skip-content">
+	<a href="#content" id="skipToContent">본문 바로가기</a>
+</div>
+
+<div id="wrap">
+	<header id="header_2021">
+		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+		<nav>
+			<section class="util">
+				<ul class="side_menu">
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">선생님공간</a></li>
+					<li><a href="#">매일 10분 수학</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">마이페이지</a></li>
+				</ul>
+				<div class="searching">
+					<button type="button" class="btn_search"><i class="blind">검색</i></button>
+					<div class="search_box">
+						<fieldset>
+							<legend>검색</legend>
+							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+							<button type="submit"></button>
+						</fieldset>
+
+						<div class="result">
+							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+								입력시 자동으로 관련어를 추천합니다.
+							</p>
+							<ul class="auto_complete">
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+							</ul>
+
+							<dl class="mykeywords" style="display:none">
+								<dt>내가 찾은 검색어</dt>
+								<dd>
+									<ul>
+										<li>
+											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">카타미노 중급</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">미분과 적분</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+										<li>
+											<a href="#">원</a>
+											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
+										</li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
+					</div>
+				</div>
+				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+			</section>
+			<section id="gnb_pc" class="gnb_pc" style="height:72px">
+				<div class="main_menu">
+					<ul>
+						<li class="nor">
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li class="nor">
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li class="easy_tong">
+							<div>
+								<ul class="dep2">
+									<li><a href="#">이지통계-초등</a></li>
+									<li><a href="#">이지통계-중학</a></li>
+									<li><a href="#">이지그래프-중학</a></li>
+								</ul>
+								<a href="#" class="btn_allcont">전체교과보기</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="gnb_mo" class="gnb_mo" style="display:none">
+				<div class="login">
+					<span class="cmt_login">로그인을 해주세요.</span>
+					<a href="#" class="lnk_login">로그인</a>
+					<a href="#" class="lnk_join">회원가입</a>
+					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+				</div>
+				<div class="main_menu">
+					<ul>
+						<li>
+							<a href="#" class="dep1">초등수학</a>
+							<ul class="dep2">
+								<li><a href="#">초등학교 3학년</a></li>
+								<li><a href="#">초등학교 4학년</a></li>
+								<li><a href="#">초등학교 5학년</a></li>
+								<li><a href="#">초등학교 6학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">중학수학</a>
+							<ul class="dep2">
+								<li><a href="#">중학교 1학년</a></li>
+								<li><a href="#">중학교 2학년</a></li>
+								<li><a href="#">중학교 3학년</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고교수학</a>
+							<ul class="dep2">
+								<li><a href="#">수학</a></li>
+								<li><a href="#">수학 Ⅰ </a></li>
+								<li><a href="#">수학 Ⅱ</a></li>
+								<li><a href="#">확률과 통계</a></li>
+								<li><a href="#">미적분</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">게임존</a>
+							<ul class="dep2">
+								<li><a href="#">도전! 랭킹게임</a></li>
+								<li><a href="#">PlAY 세미</a></li>
+								<li><a href="#">전체게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">수학시리즈</a>
+							<ul class="dep2">
+								<li><a href="#">전체</a></li>
+								<li><a href="#">영상</a></li>
+								<li><a href="#">웹툰</a></li>
+								<li><a href="#">수학 지식카드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">선생님 공간</a>
+							<ul class="dep2">
+								<li><a href="#">M노트</a></li>
+								<li><a href="#">학습 커뮤니티</a></li>
+								<li><a href="#">교실 속 EBSMath</a></li>
+								<li><a href="#">선생님 자료실</a></li>
+								<li><a href="#">쌤 톡톡(talk talk)</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">고객센터</a>
+							<ul class="dep2">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이용문의</a></li>
+								<li><a href="#">수학 학습 해결소</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">마이페이지</a>
+							<ul class="dep2">
+								<li><a href="#">내가 본 콘텐츠</a></li>
+								<li><a href="#">좋아요 한 콘텐츠</a></li>
+								<li><a href="#">찜 한 콘텐츠</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dep1">손쉬운 공학도구</a>
+							<ul class="dep2">
+								<li><a href="#">이지통계-초등</a></li>
+								<li><a href="#">이지통계-중학</a></li>
+								<li><a href="#">이지그래프-중학</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+						<li class="sns">
+							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+		</nav>
+	</header>
+
+
+	<div id="content">
+		<!-- s : 전체 교과 보기 -->
+		<div class="all_course_head">
+			<div class="wrap">
+				<h2>전체 교과보기</h2>
+				<div id="tabMenu" class="tabMenu">
+					<ul>
+						<li class="on"><a href="#">초3</a></li>
+						<li><a href="#">초4</a></li>
+						<li><a href="#">초5</a></li>
+						<li><a href="#">초6</a></li>
+						<li><a href="#">중1</a></li>
+						<li><a href="#">중2</a></li>
+						<li><a href="#">중3</a></li>
+						<li><a href="#">수학</a></li>
+						<li><a href="#">수학 I </a></li>
+						<li><a href="#">수학 II </a></li>
+						<li><a href="#">확률과 통계</a></li>
+						<li><a href="#">미적분</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="all_course_wrap">
+			<h3 class="tit_all_course"><strong>초3</strong> 교과보기</h3>
+			<!-- 초3 -->
+			<div class="box_course" id="box_course0" style="display:none">
+				<div class="menu_set">
+					<h4>1학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">덧셈과 뺄셈</a></li>
+						<li><a href="#">평면도형</a></li>
+						<li><a href="#">나눗셈</a></li>
+						<li><a href="#">곱셈</a></li>
+						<li><a href="#">시간과 길이</a></li>
+						<li><a href="#">분수와 소수</a></li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>2학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">곱셈</a></li>
+						<li><a href="#">나눗셈</a></li>
+						<li><a href="#">원</a></li>
+						<li><a href="#">분수</a></li>
+						<li><a href="#">들이와 무게</a></li>
+						<li><a href="#">자료의 정리</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 초4 -->
+			<div class="box_course" id="box_course1" style="display:none">
+				<div class="menu_set">
+					<h4>1학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">큰 수</a></li>
+						<li><a href="#">각도</a></li>
+						<li><a href="#">곱셈과 나눗셈</a></li>
+						<li><a href="#">평면도형의 이동</a></li>
+						<li><a href="#">막대그래프</a></li>
+						<li><a href="#">규칙 찾기</a></li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>2학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">분수의 덧셈과 뺄셈</a></li>
+						<li><a href="#">삼각형</a></li>
+						<li><a href="#">소수의 덧셈과 뺄셈</a></li>
+						<li><a href="#">사각형</a></li>
+						<li><a href="#">꺾은선 그래프</a></li>
+						<li><a href="#">다각형</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 초5 -->
+			<div class="box_course" id="box_course2" style="display:none">
+				<div class="menu_set">
+					<h4>1학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">자연수의 혼합 계산</a></li>
+						<li><a href="#">약수와 배수</a></li>
+						<li><a href="#">규칙과 대응</a></li>
+						<li><a href="#">약분과 통분</a></li>
+						<li><a href="#">분수의 덧셈과 뺄셈</a></li>
+						<li><a href="#">다각형의 둘레와 넓이</a></li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>2학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">수의 범위와 어림하기</a></li>
+						<li><a href="#">분수의 곱셈</a></li>
+						<li><a href="#">합동과 대칭</a></li>
+						<li><a href="#">소수의 곱셈</a></li>
+						<li><a href="#">직육면체</a></li>
+						<li><a href="#">평균과 가능성</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 초6 -->
+			<div class="box_course" id="box_course3" style="display:none">
+				<div class="menu_set">
+					<h4>1학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">분수의 나눗셈</a></li>
+						<li><a href="#">각기둥과 각뿔</a></li>
+						<li><a href="#">소수의 나눗셈</a></li>
+						<li><a href="#">비와 비율</a></li>
+						<li><a href="#">여러 가지 그래프 </a></li>
+						<li><a href="#">직육면체의 부피와 겉넓이 </a></li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>2학기</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">분수의 나눗셈</a></li>
+						<li><a href="#">소수의 나눗셈</a></li>
+						<li><a href="#">공간과 입체</a></li>
+						<li><a href="#">비례식과 비례배분</a></li>
+						<li><a href="#">원의 넓이</a></li>
+						<li><a href="#">원기둥, 원뿔, 구 </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 중1 -->
+			<div class="box_course" id="box_course4" style="display:none">
+				<div class="menu_set">
+					<h4>수와 연산</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">소인수분해</a>
+							<ul class="sub_dep2">
+								<li><a href="#">소인수분해</a></li>
+								<li><a href="#">최대공약수와 최소공배수</a></li>
+							</ul>
+						</li>
+						<li><a href="#">정수와 유리수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">정수와 유리수</a></li>
+								<li><a href="#">정수, 유리수의 덧셈/뺄셈</a></li>
+								<li><a href="#">정수, 유리수의 곱셈/나눗셈</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>문자와 식</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">문자의 사용과 식의 계산</a>
+							<ul class="sub_dep2">
+								<li><a href="#">문자의 사용</a></li>
+								<li><a href="#">일차식과 그 계산</a></li>
+							</ul>
+						</li>
+						<li><a href="#">일차방정식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">방정식과 그 해</a></li>
+								<li><a href="#">일차방정식</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>좌표평면과 그래프</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">좌표평면과 그래프</a>
+							<ul class="sub_dep2">
+								<li><a href="#">순서쌍과 좌표</a></li>
+								<li><a href="#">그래프</a></li>
+							</ul>
+						</li>
+						<li><a href="#">정비례와 반비례</a>
+							<ul class="sub_dep2">
+								<li><a href="#">정비례와 그 그래프</a></li>
+								<li><a href="#">반비례와 그 그래프</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>기하</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">기본 도형</a>
+							<ul class="sub_dep2">
+								<li><a href="#">점, 선, 면, 각</a></li>
+								<li><a href="#">위치 관계</a></li>
+								<li><a href="#">평행선의 성질</a></li>
+							</ul>
+						</li>
+						<li><a href="#">작도와 합동</a>
+							<ul class="sub_dep2">
+								<li><a href="#">삼각형의 작도</a></li>
+								<li><a href="#">삼각형의 합동 조건</a></li>
+							</ul>
+						</li>
+						<li><a href="#">평면도형의 성질</a>
+							<ul class="sub_dep2">
+								<li><a href="#">다각형</a></li>
+								<li><a href="#">원과 부채꼴</a></li>
+							</ul>
+						</li>
+						<li><a href="#">입체도형의 성질</a>
+							<ul class="sub_dep2">
+								<li><a href="#">다면체</a></li>
+								<li><a href="#">회전체</a></li>
+								<li><a href="#">입체도형의 겉넓이</a></li>
+								<li><a href="#">입체도형의 부피</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>자료의 정리와 해석</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">자료의 정리와 해석</a>
+							<ul class="sub_dep2">
+								<li><a href="#">줄기와 잎 그림/도수 분포표</a></li>
+								<li><a href="#">히스토그램/도수분포다각형/</a></li>
+								<li><a href="#">상대도수</a></li>
+								<li><a href="#">실생활 자료의 정리와 해석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 중2 -->
+			<div class="box_course" id="box_course5" style="display:none">
+				<div class="menu_set">
+					<h4>수와 연산</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">유리수와 순환소수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">유리수의 소수표현</a></li>
+								<li><a href="#">순환소수의 분수표현</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>문자와 식</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">식의 계산</a>
+							<ul class="sub_dep2">
+								<li><a href="#">지수법칙</a></li>
+								<li><a href="#">단항식의 곱셈과 나눗셈</a></li>
+								<li><a href="#">다항식의 계산</a></li>
+							</ul>
+						</li>
+						<li><a href="#">연립부등식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">부등식과 그 해</a></li>
+								<li><a href="#">일차부등식의 풀이</a></li>
+							</ul>
+						</li>
+						<li><a href="#">연립일차방정식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">미지수가 2개인연립일차방정식</a></li>
+								<li><a href="#">연립방정식의 활용</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>함수</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">일차함수와 그래프</a>
+							<ul class="sub_dep2">
+								<li><a href="#">함수의 뜻</a></li>
+								<li><a href="#">일차함수의 뜻과 그래프</a></li>
+								<li><a href="#">일차함수의 그래프의 성질</a></li>
+							</ul>
+						</li>
+						<li><a href="#">일차함수와 일차방정식의 관계</a>
+							<ul class="sub_dep2">
+								<li><a href="#">일차함수와 일차방정식</a></li>
+								<li><a href="#">일차함수의 그래프와 연립일차방정식</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>기하</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">삼각형과 사각형의 성질</a>
+							<ul class="sub_dep2">
+								<li><a href="#">이등변삼각형과 직각삼각형</a></li>
+								<li><a href="#">삼각형의 외심과 내심</a></li>
+								<li><a href="#">평행사변형</a></li>
+								<li><a href="#">여러 가지 사각형</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="sub_dep1">
+						<li><a href="#">도형의 닮음</a>
+							<ul class="sub_dep2">
+								<li><a href="#">닮음의 뜻과 성질</a></li>
+								<li><a href="#">삼각형의 닮음조건</a></li>
+								<li><a href="#">평행선과 선분의 길이의 비</a></li>
+								<li><a href="#">삼각형의 무게중심</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="sub_dep1">
+						<li><a href="#">피타고라스 정리</a>
+							<ul class="sub_dep2">
+								<li><a href="#">피타고라스 정리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>확률과 통계</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">확률과 그 기본 성질</a>
+							<ul class="sub_dep2">
+								<li><a href="#">경우의 수</a></li>
+								<li><a href="#">확률의 뜻과 그 성질</a></li>
+								<li><a href="#">확률의 계산</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 중3 -->
+			<div class="box_course" id="box_course6" style="display:none">
+				<div class="menu_set">
+					<h4>수와 연산</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">제곱근과 실수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">제곱근</a></li>
+								<li><a href="#">무리수와 실수</a></li>
+							</ul>
+						</li>
+						<li><a href="#">근호를 포함한 식의 계산</a>
+						<li>
+							<ul class="sub_dep2">
+								<li><a href="#">근호를 포함한 식의 곱셈과 나눗셈</a></li>
+								<li><a href="#">근호를 포함한 식의 덧셈과 뺄셈</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>문자와 식</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">다항식의 인수분해</a>
+							<ul class="sub_dep2">
+								<li><a href="#">다항식의 곱셈</a></li>
+								<li><a href="#">다항식의 인수분해</a></li>
+							</ul>
+						</li>
+						<li><a href="#">이차방정식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">이차방정식의 그 풀이</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>함수</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">이차함수와 그래프</a>
+							<ul class="sub_dep2">
+								<li><a href="#">이차함수의 뜻과 이차함수 y=ax² 의그래프</a></li>
+								<li><a href="#">이차함수 y=a(x-p)²+q 의 그래프</a></li>
+								<li><a href="#">이차함수 y=ax²+bx+c 의 그래프</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>기하</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">삼각비</a>
+							<ul class="sub_dep2">
+								<li><a href="#">삼각비</a></li>
+								<li><a href="#">삼각비의 활용</a></li>
+							</ul>
+						</li>
+						<li><a href="#">원의 성질</a>
+							<ul class="sub_dep2">
+								<li><a href="#">원과 직선</a></li>
+								<li><a href="#">원주각</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>확률과 통계</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">통계</a>
+							<ul class="sub_dep2">
+								<li><a href="#">대푯값과 산포도</a></li>
+								<li><a href="#">상관관계</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 수학 -->
+			<div class="box_course" id="box_course7" style="display:none">
+				<!-- div class="menu_set">
+					<h4>다항식</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">다항식의 연산</a>
+							<ul class="sub_dep2">
+								<li><a href="#">다항식의 덧셈과 뺄셈</a></li>
+								<li><a href="#">다항식의 곱셈과<br>나눗셈</a></li>
+							</ul>
+						</li>
+						<li><a href="#">나머지 정리와 인수분해</a>
+							<ul class="sub_dep2">
+								<li><a href="#">항등식</a></li>
+								<li><a href="#">나머지정리</a></li>
+								<li><a href="#">인수분해</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div -->
+				<div class="menu_set">
+					<h4>방정식과 부등식</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">복소수와 이차방정식</a>
+							<ul class="sub_dep2">
+								<li class="nocnt"><a href="#">복소수와 그 연산</a></li>
+								<li><a href="#">이차방정식의 근과 판별식</a></li>
+								<li><a href="#">이차방정식의 근과 계수의 관계</a></li>
+							</ul>
+						</li>
+						<li><a href="#">이차방정식과 이차함수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">이차방정식과 이차함수의 관계</a></li>
+								<li><a href="#">이차함수의 그래프와 직선의 위치 관계</a></li>
+								<li><a href="#">이차함수의 최대, 최소</a></li>
+							</ul>
+						</li>
+						<li><a href="#">여러가지 방정식과 부등식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">삼차방정식과 사차방정식</a></li>
+								<li><a href="#">연립이차방정식</a></li>
+								<li><a href="#">일차부등식</a></li>
+								<li><a href="#">연립일차부등식</a></li>
+								<li><a href="#">이차부등식</a></li>
+								<li><a href="#">부등식의 활용</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>도형의 방정식</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">평면좌표</a>
+							<ul class="sub_dep2">
+								<li><a href="#">두 점 사이의 거리</a></li>
+								<li><a href="#">선분의 내분점과 외분점</a></li>
+							</ul>
+						</li>
+						<li><a href="#">직선의 방정식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">직선의 방정식</a></li>
+								<li><a href="#">두 직선의 평행과 수직</a></li>
+								<li><a href="#">점과 직선 사이의 거리</a></li>
+							</ul>
+						</li>
+						<li><a href="#">원의 방정식</a>
+							<ul class="sub_dep2">
+								<li><a href="#">원의 방정식</a></li>
+								<li><a href="#">원과 직선의 위치 관계</a></li>
+							</ul>
+						</li>
+						<li><a href="#">도형의 이동</a>
+							<ul class="sub_dep2">
+								<li><a href="#">평행이동</a></li>
+								<li><a href="#">대칭이동</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>집합과 명제</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">집합</a>
+							<ul class="sub_dep2">
+								<li><a href="#">집합</a></li>
+								<li><a href="#">집합 사이의 포함 관계</a></li>
+								<li><a href="#">집합의 연산</a></li>
+							</ul>
+						</li>
+						<li><a href="#">명제</a>
+							<ul class="sub_dep2">
+								<li><a href="#">명제와 조건</a></li>
+								<li><a href="#">명제 사이의 관계</a></li>
+								<li><a href="#">여러 가지 증명법</a></li>
+								<li><a href="#">절대부등식</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>함수</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">함수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">함수</a></li>
+								<li><a href="#">합성함수</a></li>
+								<li><a href="#">역함수</a></li>
+							</ul>
+						</li>
+						<!-- li><a href="#">유리함수와 무리함수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">유리함수</a></li>
+								<li><a href="#">합성함수</a></li>
+								<li><a href="#">무리함수</a></li>
+							</ul>
+						</li -->
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>경우의 수</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">순열과 조합</a>
+							<ul class="sub_dep2">
+								<li><a href="#">경우의 수</a></li>
+								<li><a href="#">순열</a></li>
+								<li><a href="#">조합</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 수학 I  -->
+			<div class="box_course" id="box_course8" style="display:none">
+				<div class="menu_set">
+					<h4>지수함수와 로그함수</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">지수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">거듭제곱과 거듭제곱근</a></li>
+								<li><a href="#">지수의 확장</a></li>
+							</ul>
+						</li>
+						<li><a href="#">로그</a>
+							<ul class="sub_dep2">
+								<li><a href="#">로그</a></li>
+								<li><a href="#">상용로그</a></li>
+							</ul>
+						</li>
+						<li><a href="#">지수함수와 로그함수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">지수함수</a></li>
+								<li><a href="#">로그함수</a></li>
+								<li><a href="#">지수함수와 로그함수의 활용</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>삼각함수</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">삼각함수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">일반각과 호도법</a></li>
+								<li><a href="#">삼각함수</a></li>
+								<li><a href="#">삼각함수의 그래프</a></li>
+							</ul>
+						</li>
+						<li><a href="#">삼각함수의 활용</a>
+							<ul class="sub_dep2">
+								<li><a href="#">사인법칙과 코사인법칙</a></li>
+								<li><a href="#">삼각형의 넓이</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>수열</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">등차수열과 등비수열</a>
+							<ul class="sub_dep2">
+								<li><a href="#">수열 </a></li>
+								<li><a href="#">등차수열</a></li>
+								<li><a href="#">등비수열</a></li>
+							</ul>
+						</li>
+						<li><a href="#">수열의 합</a>
+							<ul class="sub_dep2">
+								<li><a href="#">기호 Σ의 뜻과 성질</a></li>
+								<li><a href="#">여러 가지 수열의 합</a></li>
+							</ul>
+						</li>
+						<li><a href="#">수학적 귀납법</a>
+							<ul class="sub_dep2">
+								<li><a href="#">수열의 귀납적 정의</a></li>
+								<li><a href="#">수학적 귀납법</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 수학 II -->
+			<div class="box_course" id="box_course9" style="display:none">
+				<div class="menu_set">
+					<h4>함수의 극한과 연속</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">함수의 극한</a>
+							<ul class="sub_dep2">
+								<li><a href="#">함수의 극한 </a></li>
+								<li><a href="#">함수의 극한의 성질</a></li>
+							</ul>
+						</li>
+						<li><a href="#">함수의 연속</a>
+							<ul class="sub_dep2">
+								<li><a href="#">연속함수</a></li>
+								<li><a href="#">연속함수의 성질</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>미분</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">미분계수와 도함수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">미분계수</a></li>
+								<li><a href="#">미분가능성과 연속성</a></li>
+								<li><a href="#">함수의 도함수</a></li>
+								<li><a href="#">함수의 실수배, 합, 차, 곱의 미분법</a></li>
+							</ul>
+						</li>
+						<li><a href="#">도함수의 활용</a>
+							<ul class="sub_dep2">
+								<li><a href="#">접선의 방정식</a></li>
+								<li><a href="#">평균값 정리</a></li>
+								<li><a href="#">함수의 증가와 감소, 극대와 극소</a></li>
+								<li><a href="#">함수의 그래프</a></li>
+								<li><a href="#">방정식과 부등식에의 활용</a></li>
+								<li><a href="#">속도와 가속도</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>적분</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">부정적분과 정적분</a>
+							<ul class="sub_dep2">
+								<li><a href="#">부정적분의 뜻 </a></li>
+								<li><a href="#">부정적분의 계산</a></li>
+								<li><a href="#">정적분의 뜻</a></li>
+								<li><a href="#">다항함수의 정적분</a></li>
+							</ul>
+						</li>
+						<li><a href="#">정적분의 활용</a>
+							<ul class="sub_dep2">
+								<li><a href="#">넓이</a></li>
+								<li><a href="#">속도와 거리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 확률과 통계-->
+			<div class="box_course" id="box_course10" style="display:none">
+				<div class="menu_set">
+					<h4>순열과 조합</h4>
+					<ul class="sub_dep1">
+						<!-- <li><a href="#">순열</a>
+							<ul class="sub_dep2">
+								<li><a href="#">여러 가지 순열</a></li>
+							</ul>
+						</li> -->
+						<li><a href="#">조합</a>
+							<ul class="sub_dep2">
+								<li><a href="#">중복조합</a></li>
+								<li><a href="#">이항정리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>확률</h4>
+					<ul class="sub_dep1">
+						<!-- <li><a href="#">확률의 뜻과 활용</a>
+							<ul class="sub_dep2">
+								<li><a href="#">확률</a></li>
+								<li><a href="#">확률의 덧셈정리</a></li>
+							</ul>
+						</li> -->
+						<li><a href="#">조건부확률</a>
+							<ul class="sub_dep2">
+								<li><a href="#">조건부확률</a></li>
+								<li><a href="#">사건의 독립과 종속</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>통계</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">확률분포</a>
+							<ul class="sub_dep2">
+								<li><a href="#">확률변수와 확률분포</a></li>
+								<li><a href="#">이산확률변수의 평균과 표준편차</a></li>
+								<li><a href="#">이항분포</a></li>
+								<li><a href="#">정규분포</a></li>
+							</ul>
+						</li>
+						<li><a href="#">통계적 추정</a>
+							<ul class="sub_dep2">
+								<li><a href="#">모집단과 표본</a></li>
+								<li><a href="#">모평균의 추정</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 미적분-->
+			<div class="box_course" id="box_course11" style="display:none">
+				<div class="menu_set">
+					<h4>지수함수와 로그함수</h4>
+					<ul class="sub_dep1">
+						<!-- <li><a href="#">수열의 극한</a>
+							<ul class="sub_dep2">
+								<li><a href="#">수열의 수렴과 발산</a></li>
+								<li><a href="#">수열의 극한값의 계산</a></li>
+								<li><a href="#">등비수열의 극한</a></li>
+							</ul>
+						</li> -->
+						<li><a href="#">급수</a>
+							<ul class="sub_dep2">
+								<li><a href="#">급수의 수렴과 발산</a></li>
+								<li><a href="#">등비급수</a></li>
+								<li><a href="#">등비급수의 활용</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>미분</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">여러 가지 함수의 미분</a>
+							<ul class="sub_dep2">
+								<li><a href="#">지수함수와 로그함수의 극한</a></li>
+								<li><a href="#">지수함수와 로그함수의 미분</a></li>
+								<li><a href="#">삼각함수의 덧셈정리</a></li>
+								<li><a href="#">삼각함수의 극한 </a></li>
+								<li><a href="#">사인함수와 코사인함수의 미분</a></li>
+							</ul>
+						</li>
+						<!-- <li><a href="#">여러 가지 미분법</a>
+							<ul class="sub_dep2">
+								<li><a href="#">함수의 몫의 미분법</a></li>
+								<li><a href="#">합성함수의 미분법</a></li>
+								<li><a href="#">매개변수로 나타낸 함수의 <br>미분법</a></li>
+								<li><a href="#">음함수와 역함수의 미분법</a></li>
+								<li><a href="#">이계도함수</a></li>
+							</ul>
+						</li>
+						<li><a href="#">도함수의 활용</a>
+							<ul class="sub_dep2">
+								<li><a href="#">접선의 방정식</a></li>
+								<li><a href="#">함수의 그래프</a></li>
+								<li><a href="#">방정식과 부등식에의 활용</a></li>
+								<li><a href="#">속도와 가속도</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<!-- div class="menu_set">
+					<h4>적분</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">여러 가지 적분법</a>
+							<ul class="sub_dep2">
+								<li><a href="#">여러 가지 함수의 부정적분과 정적분</a></li>
+								<li><a href="#">치환적분법</a></li>
+								<li><a href="#">부분적분법</a></li>
+							</ul>
+						</li>
+						<li><a href="#">정적분의 활용</a>
+							<ul class="sub_dep2">
+								<li><a href="#">정적분과 급수</a></li>
+								<li><a href="#">넓이</a></li>
+								<li><a href="#">부피</a></li>
+								<li><a href="#">속도와 거리</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div -->
+			</div>
+
+			<!-- div class="box_course" id="box_course12" style="display:none">
+				<div class="menu_set">
+					<h4>규칙</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">식과 규칙</a>
+							<ul class="sub_dep2">
+								<li><a href="#">여러 현상 속의 규칙</a></li>
+								<li><a href="#">생활 속의 수식</a></li>
+							</ul>
+						</li>
+						<li><a href="#">도형과 규칙</a>
+							<ul class="sub_dep2">
+								<li><a href="#">생활 속의 닮음</a></li>
+								<li><a href="#">생활 속의 합동</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>공간</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">도형의 관찰 </a>
+							<ul class="sub_dep2">
+								<li><a href="#">평면도형과 입체도형의 관찰</a></li>
+								<li"><a href="#">미술 작품 속의 수학</a></li>
+							</ul>
+						</li>
+						<li><a href="#">도형의 표현</a>
+							<ul class="sub_dep2">
+								<li><a href="#">입체도형의 겨냥도와 전개도</a></li>
+								<li><a href="#">겨냥도와 전개도의 활용</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="menu_set">
+					<h4>자료</h4>
+					<ul class="sub_dep1">
+						<li><a href="#">자료의 정리 </a>
+							<ul class="sub_dep2">
+								<li><a href="#">자료의 수집</a></li>
+								<li><a href="#">표와 그래프를 이용한<br> 자료의 정리</a></li>
+							</ul>
+						</li>
+						<li><a href="#">자료의 해석</a>
+							<ul class="sub_dep2">
+								<li class="sub_dep2"><a href="#">대푯값과 산포도를 이용한<br> 자료의 분석</a></li>
+								<li class="sub_dep2"><a href="#">실생활 자료의 수집, 정리, 분석, 해석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div -->
+
+		</div>
+		<!-- e : 전체 교과 보기 -->
+
+	</div>
+	<footer id="footer_2021">
+		<div class="etc_menu">
+			<ul>
+				<li>
+					<a href="#">EBS Math 소개</a>
+				</li>
+				<li>
+					<a href="#">모바일 안내</a>
+				</li>
+				<li>
+					<a href="#">전체교과보기</a>
+				</li>
+				<li>
+					<a href="#">수학 학습 해결소</a>
+				</li>
+				<li>
+					<a href="#">이용문의</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrap_foot1">
+			<dl>
+				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+				<dd class="sns">
+					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+				</dd>
+				<dd class="rel_ebs">
+					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+				</dd>
+			</dl>
+		</div>
+		<div class="wrap_foot2">
+			<div class="ebs_info">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+				</ul>
+				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+				<address>
+					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+				</address>
+				
+				<dl class="about_ebs">
+					<dt>사장</dt>
+					<dd>김명중</dd>
+					<dt>주소</dt>
+					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+					<dt>연락처</dt>
+					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+					<dt>사업자등록번호</dt>
+					<dd>229-82-01343</dd>
+					<dt>통신 판매업 신고번호</dt>
+					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+				</dl>
+				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+			</div>
+			<div class="ebs_site">
+				<div class="familysiteWrap">
+					<div class="familySite">
+						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+						<ul style="display: none;">
+							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="cert_mark">
+					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+						[인증범위] EBS 교육포털 웹서비스</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="../../js/iscroll-lite.js"></script><!-- 2022-01-04 추가 -->
+<script type="text/javascript">
+	/* 전체교과보기 슬라이더 */
+	function allmenuSlider(){
+		var allmenuScroll;
+		$(".tabMenu li").each(function (i){
+			$(this).bind("click", function (e){
+				moveNaviScroll($(this), 500);
+			});
+		});
+		allmenuScroll = new IScroll( document.getElementById("tabMenu") , {scrollX:true, scrollY:false, hScrollbar: false, vScrollbar: false});	
+		moveNaviScroll($(".tabMenu li.on"), 0);
+		function moveNaviScroll(target)	{
+			var tabidx = target.index();
+			var crstxt = target.text()
+			$(".tit_all_course strong").text(crstxt);
+			$(".tabMenu li").removeClass("on");
+			target.addClass("on");
+
+			$(".box_course").hide();
+			$("#box_course" + tabidx).show();
+		}
+	}
+	allmenuSlider();
+</script>
+</body>
+</html>
+

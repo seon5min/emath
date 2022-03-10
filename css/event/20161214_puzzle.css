@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.pop_fulllayer{position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999;}
+.pop_fulllayer .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0;}
+.pop_fulllayer .popcon{position:relative; top:50%; left:50%; width:961px; margin-top:-290px; margin-left:-482px;}
+.pop_fulllayer .popcon.default{margin-top:-240px; margin-left:-326px;}
+.pop_fulllayer .popcon .player{position:absolute; left:70px; top:253px; width:440px; height:auto;}
+.pop_fulllayer .popcon .player video{width:100%; height:100%;}
+.pop_fulllayer .popcon .player .morebtn{display:inline-block; margin-top:10px;}
+.pop_fulllayer .btn_layerclose{position:absolute; top:0; right:0; display:inline-block; width:10px; height:10px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_fulllayer .btn_nomore{position:absolute; bottom:25px; right:25px; display:inline-block;}
+.pop_fulllayer .btn_nomore *{vertical-align:top;}
+.pop_fulllayer .btn_nomore label{top:0; margin-right:10px; color:#fff; font-size:15px; line-height:20px; font-weight:500;}
+
+/* 이벤트 */
+.puzzle{position:relative;}
+.puzzle .top{position:relative;}
+.puzzle .snswrap{position:absolute; top:16px; right:67px;}
+.puzzle .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.puzzle .snswrap .fb a{background-position:0 0;}
+.puzzle .snswrap .tw a{background-position:-41px 0;}
+.puzzle .snswrap .kko a{background-position:-82px 0;}
+
+.puzzle .evtcon_wrap{position:relative; background:#ffbb32;}
+.puzzle .evtcon_wrap .eventbtn{position:absolute; top:204px; left:239px; display:inline-block; width:285px; height:57px; border-radius:30px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+.puzzle .evtcon{padding-bottom:30px; background:#ffbb32}
+.puzzle .evtcon .calendar{position:relative;}
+.puzzle .evtcon .calendar ol{width:630px; margin:0 auto; *zoom:1;}
+.puzzle .evtcon .calendar ol:after{content:''; display:block; clear:both; width:100%;}
+.puzzle .evtcon .calendar li{position:relative; float:left; width:54px; margin-left:10px; margin-bottom:9px; background:url(../../images/event/20161214/bg_day.png) no-repeat 0 0;}
+.puzzle .evtcon .calendar li[data-num="9"],
+.puzzle .evtcon .calendar li[data-num="19"],
+.puzzle .evtcon .calendar li[data-num="29"]{margin-left:0;}
+.puzzle .evtcon .calendar li span{display:inline-block; width:54px; height:54px; text-align:center; color:#ac9169; font-weight:800; font-size:20px; line-height:54px; vertical-align:middle;}
+.puzzle .evtcon .calendar li.stamp_today span{font-size:0; line-height:0; color:#fff; background:url(../../images/event/20161214/stamp_today.png) no-repeat 0 0; cursor:pointer;}
+.puzzle .evtcon .calendar li.stamp_miss span{font-size:0; line-height:0; color:#a6a6a6; background:url(../../images/event/20161214/stamp_miss.png) no-repeat 0 0; cursor:pointer;}
+.puzzle .evtcon .calendar li.stamp_ok span{font-size:0; line-height:0; color:#ff7e00; background:url(../../images/event/20161214/stamp_ok.png) no-repeat 0 0; cursor:pointer;}
+.puzzle .evtcon .calendar li .playing{position:absolute; top:-11px; left:0; display:inline-block; width:54px; height:65px; background:url(../../images/event/20161214/stamp_playing.png) no-repeat 0 0; cursor:pointer;}
+
+/* 퍼즐 */
+.puzzle .pure-button{margin:5px 0; text-decoration:none !important;}
+.puzzle .button-lg{margin:5px 0; padding:.65em 1.6em;}
+
+.puzzle .snappuzzle-wrap{position:relative; display:block;}
+.puzzle .snappuzzle-pile{position:relative;}
+.puzzle .snappuzzle-piece{cursor:move;}
+.puzzle .snappuzzle-slot{position:absolute; background:#fff; opacity:0.8;}
+.puzzle .snappuzzle-slot-hover{background:#eee;}
+
+.puzzle .ui-draggable-dragging{border:2px solid red;}
+
+.puzzle .pzgame{width:680px; margin:0 auto; background:url(../../images/event/20161214/bg_pzwrap.png) no-repeat 0 0;}
+.puzzle .pzgame .l_tit{padding:43px 0 14px; text-align:center; color:#7f5717; font-weight:bold; font-size:20px;}
+.puzzle .pzgame .pz_tit{padding:6px 0 5px; *zoom:1;}
+.puzzle .pzgame .pz_tit:after{content:''; clear:both; width:100%; display:block;}
+.puzzle .pzgame .pz_tit .l_index{float:left; margin-left:55px; color:#7f5717; font-size:16px; font-weight:700; line-height:24px;}
+.puzzle .pzgame .pz_tit .l_index strong{margin-right:6px; padding-right:22px; font-weight:800; background:url(../../images/event/20161214/icon_arr.png) no-repeat right 50%;}
+.puzzle .pzgame .pz_tit .memcnt{float:right; margin-right:24px; color:#7f5717; font-weight:bold; font-size:19px; letter-spacing:-1px;}
+.puzzle #puzzle-containment{}
+.puzzle #puzzle-containment .pure-g{position:relative;}
+.puzzle #puzzle-containment .pure-u-1{position:relative; padding:15px;}
+.puzzle #puzzle-containment .snappuzzle-slot{position:absolute; background:#fff; opacity:0.8; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter:alpha(opacity=80);}
+.puzzle #puzzle-containment .pzpan{padding-top:0; margin-bottom:15px;}
+.puzzle #puzzle-containment .pzpiece{height:327px; background:url(../../images/event/20161214/bg_pzpiece.png) no-repeat 0 0;}
+.puzzle #puzzle-containment .lowie{text-align:center; padding-top:70px;}
+.puzzle #puzzle-containment #puzzle_solved{position:absolute; top:0; left:15px; width:650px; height:296px; padding-top:70px; z-index:1000; text-align:center; background:url(../../images/event/20161214/dim.png) repeat 0 0;}
+
+/* 이벤트 종료 */
+.puzzle.end .evtcon_wrap{padding-bottom:40px; background:#ffd24b;}
+.puzzle.end .winbtn{position:absolute; top:239px; left:59px; display:inline-block; width:190px; height:57px; border-radius:40px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.puzzle.end .modifybtn{position:absolute; top:239px; left:263px; display:inline-block; width:262px; height:57px; border-radius:40px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+/* notice */
+.puzzle .notice{position:relative; padding:28px 25px 25px 34px; background:#ffd24b;}
+.puzzle .notice .emo_puzzle{display:none;}
+.puzzle .notice ul{padding-top:15px;}
+.puzzle .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#966e1d; letter-spacing:-1px; background:url(../../images/event/20161017/bul_notice.png) no-repeat 0 9px;}
+.puzzle .notice li:first-child{margin-top:0;}
+.puzzle .notice li a.point{color:#704f20;}
+.puzzle.end .notice{background:#ffbb32;}
+.puzzle.end .notice .emo_puzzle{display:inline-block; position:absolute; top:-30px; right:165px;}
+

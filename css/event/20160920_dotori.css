@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 이벤트 */
+.dotori{position:relative;}
+.dotori .top{position:relative; background:#ffcd61;}
+.dotori .snswrap{position:absolute; top:15px; right:12px;}
+.dotori .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.dotori .snswrap .fb a{background-position:0 0;}
+.dotori .snswrap .tw a{background-position:-41px 0;}
+.dotori .snswrap .kko a{background-position:-82px 0;}
+
+.dotori .top .eventbtn{position:absolute; top:409px; left:63px;}
+
+.dotori .evtcon{position:relative; background:#ffcd61;}
+
+/* 이벤트 종료 */
+.dotori.end .top .winbtn{position:absolute; top:787px; left:153px;}
+.dotori.end .top .modifybtn{position:absolute; top:787px; left:397px;}
+
+/* notice */
+.dotori .notice{padding:30px 25px 25px 35px; background:#ffe09e;}
+.dotori .notice ul{padding-top:15px;}
+.dotori .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#656565; letter-spacing:-1px; background:url(../../images/event/20160920/bul_notice.png) no-repeat 0 9px;}
+.dotori .notice li:first-child{margin-top:0;}
+.dotori .notice li a.point{color:#a17c53;}

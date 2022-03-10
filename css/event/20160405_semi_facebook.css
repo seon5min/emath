@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.point{color:#3b5998;}
+.point2{color:#ef6b6a;}
+
+/* 이벤트 */
+.semi_facebook{}
+.semi_facebook [class^='conwrap-']{position:relative; width:763px; height:1104px;}
+.semi_facebook .conwrap-fblike{background:url(../../images/event/20160405/img_step1.png) no-repeat 0 0;}
+.semi_facebook .conwrap-bdlike{background:url(../../images/event/20160405/img_step2.png) no-repeat 0 0;}
+.semi_facebook .conwrap-fdtag{background:url(../../images/event/20160405/img_step3.png) no-repeat 0 0;}
+.semi_facebook .conwrap-4poem{height:1040px; background:url(../../images/event/20160405/img_step4.png) no-repeat 0 0;}
+
+.semi_facebook .btn_go_fb{position:absolute; top:770px; right:42px;}
+.semi_facebook .btn_go_fb a{display:inline-block; width:279px; height:77px; font-size:0; line-height:0; vertical-align:top;}
+.semi_facebook .conwrap-fblike .btn_go_fb a{width:229px; background:url(../../images/event/20160405/btn_step1.png) no-repeat 0 0;}
+.semi_facebook .conwrap-bdlike .btn_go_fb a{background:url(../../images/event/20160405/btn_step2.png) no-repeat 0 0;}
+.semi_facebook .conwrap-fdtag .btn_go_fb a{background:url(../../images/event/20160405/btn_step3.png) no-repeat 0 0;}
+.semi_facebook .conwrap-4poem .btn_go_fb a{background:url(../../images/event/20160405/btn_step4.png) no-repeat 0 0;}
+
+/* 이벤트 종료 */
+.semi_facebook .end{position:relative; width:763px; height:1162px;}
+.semi_facebook .end.conwrap-fblike{height:1202px; background:url(../../images/event/20160405/img_step1_end.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-bdlike{background:url(../../images/event/20160405/img_step2_end.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-fdtag{height:937px; background:url(../../images/event/20160405/img_step3_end.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-4poem{height:937px; background:url(../../images/event/20160405/img_step4_end.png) no-repeat 0 0;}
+
+.semi_facebook .end .btn_result{position:absolute; top:564px; right:72px;}
+.semi_facebook .end .btn_result a{display:inline-block; width:213px; height:51px; font-size:0; line-height:0; vertical-align:top;}
+.semi_facebook .end.conwrap-fblike .btn_result{top:532px;}
+.semi_facebook .end.conwrap-fblike .btn_result a{background:url(../../images/event/20160405/btn_step1_result.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-bdlike .btn_result a{background:url(../../images/event/20160405/btn_step2_result.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-fdtag .btn_result a{background:url(../../images/event/20160405/btn_step3_result.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-4poem .btn_result a{background:url(../../images/event/20160405/btn_step4_result.png) no-repeat 0 0;}
+
+.semi_facebook .end .btn_input{position:absolute; top:673px; right:72px;}
+.semi_facebook .end .btn_input a{display:inline-block; width:212px; height:77px; font-size:0; line-height:0; vertical-align:top;}
+.semi_facebook .end.conwrap-fblike .btn_input{top:692px;}
+.semi_facebook .end.conwrap-fblike .btn_input a{background:url(../../images/event/20160405/btn_step1_input.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-bdlike .btn_input a{background:url(../../images/event/20160405/btn_step2_input.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-fdtag .btn_input a{background:url(../../images/event/20160405/btn_step3_input.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-4poem .btn_input a{background:url(../../images/event/20160405/btn_step4_input.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-fdtag .btn_input,
+.semi_facebook .end.conwrap-4poem .btn_input{display:none;}
+
+.semi_facebook .end .btn_code{position:absolute; top:692px; right:72px;}
+.semi_facebook .end .btn_code a{display:inline-block; width:212px; height:77px; font-size:0; line-height:0; vertical-align:top; background:url(../../images/event/20160405/btn_step1_code.png) no-repeat 0 0;}
+
+
+/* notice */
+.semi_facebook .end .notice{position:absolute; left:55px; bottom:50px; width:87%;}
+.semi_facebook .end .notice .tit_notic{display:inline-block; width:137px; height:20px; margin-bottom:10px; font-size:0; line-height:0; }
+.semi_facebook .end.conwrap-fblike .notice .tit_notic{background:url(../../images/event/20160405/txt_step1_notice.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-bdlike .notice .tit_notic{background:url(../../images/event/20160405/txt_step2_notice.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-fdtag .notice .tit_notic{background:url(../../images/event/20160405/txt_step3_notice.png) no-repeat 0 0;}
+.semi_facebook .end.conwrap-4poem .notice .tit_notic{background:url(../../images/event/20160405/txt_step4_notice.png) no-repeat 0 0;}
+
+.semi_facebook .end .notice li{margin-top:3px; padding-left:12px; font-weight:600; line-height:1.5; font-size:13px; color:#747474;}
+.semi_facebook .end .notice li:first-child{margin-top:0;}
+.semi_facebook .end.conwrap-fblike .notice li{background:url(../../images/event/20160405/bul_step1_notice.png) no-repeat 0 7px;}
+.semi_facebook .end.conwrap-bdlike .notice li{background:url(../../images/event/20160405/bul_step2_notice.png) no-repeat 0 7px;}
+.semi_facebook .end.conwrap-fdtag .notice li{background:url(../../images/event/20160405/bul_step3_notice.png) no-repeat 0 7px;}
+.semi_facebook .end.conwrap-4poem .notice li{background:url(../../images/event/20160405/bul_step4_notice.png) no-repeat 0 7px;}
+.semi_facebook .end.conwrap-fdtag .notice li.warning,
+.semi_facebook .end.conwrap-4poem .notice li.warning{background:url(../../images/event/20160405/bul_notice.png) no-repeat 0 7px}
+.semi_facebook .end .notice li.warning strong{padding:1px 0; background:#fff283;}
+
+.semi_facebook .end.conwrap-fblike .notice li a{color:#3b5998;}
+.semi_facebook .end.conwrap-bdlike .notice li a{color:#207081;}
+.semi_facebook .end.conwrap-fdtag .notice li a{color:#88550d;}
+.semi_facebook .end.conwrap-4poem .notice li a{color:#df5f5e;}
+
+
+.semi_facebook .end.conwrap-fblike .notice li.warning,
+.semi_facebook .end.conwrap-bdlike .notice li.warning,
+.semi_facebook .end.conwrap-fdtag .notice li.warning.step4,
+.semi_facebook .end.conwrap-4poem .notice li.warning.step3,
+.semi_facebook .end.conwrap-bdlike .notice li.step_1st,
+.semi_facebook .end.conwrap-fdtag .notice li.step_1st,
+.semi_facebook .end.conwrap-4poem .notice li.step_1st,
+.semi_facebook .end.conwrap-fdtag .notice li.step12,
+.semi_facebook .end.conwrap-4poem .notice li.step12{display:none;}
+

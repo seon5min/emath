@@ -105,10 +105,10 @@
 	.event_banner .today_close {top:8px}
 }
 
-
+#header_2021 nav #gnb_mo {display:none;}/*2022-03-03 추가*/
 #header_2021 nav #gnb_pc {position:relative; width:100%; display:flex; border-bottom:1px solid #e1e1e1; z-index: 9998; height:7.2rem;}
 #header_2021 nav #gnb_pc:before {width:100%; content:""; display:block; position:absolute; top:7.2rem; border-bottom:1px solid #e1e1e1;  z-index: 9999;}
-#header_2021 nav #gnb_pc .main_menu {display:block; width:100%; position:absolute; left:0; top:0; background-color: #fff; height:7.2rem; overflow:hidden}
+#header_2021 nav #gnb_pc .main_menu {width:100%; position:absolute; left:0; top:0; background-color: #fff; height:7.2rem; overflow:hidden}
 #header_2021 nav #gnb_pc .main_menu > ul {display:flex; margin:0 auto;position:relative; padding-left:23vw }
 #header_2021 nav #gnb_pc .main_menu > ul > li {width:13%;}
 #header_2021 nav #gnb_pc .main_menu .nor .dep1 {display:block; font-size:2rem; ; font-weight:600; line-height:7.2rem; text-align:center; white-space:nowrap}
@@ -162,7 +162,7 @@
 	#header_2021 nav .util .btn_gnb_togl {display:block; position:absolute; top:1.5rem; left:4%; width:17px; height:17px;  background:url('../images/layout/icon_allmenu_b.png') 50% 50% no-repeat; background-size:contain;}
     #header_2021 nav .util .side_menu, #header_2021 nav .util .member {display:none}
 	#header_2021 nav #gnb_pc {display:none;}
-    #header_2021 nav #gnb_mo {position:fixed; left:-100%; top:0; z-index:9999; width:100%; height:100%; border-right:1px solid #e1e1e1; background-color:#fff; overflow:auto; transition:all 0.3s;}
+    #header_2021 nav #gnb_mo {display:block;/*2022-03-03 추가*/ position:fixed; left:-100%; top:0; z-index:9999; width:100%; height:100%; border-right:1px solid #e1e1e1; background-color:#fff; overflow:auto; transition:all 0.3s;}
 	#header_2021 nav #gnb_mo.open {left:0; z-index:9999;}
     #header_2021 nav #gnb_mo .login {height:6rem; padding:1.3rem 1.6rem 0; background:#ca2422}
     #header_2021 nav #gnb_mo .cmt_login {height:3.2rem; background:url('../images/layout/logo_mo.png') 0 0 no-repeat; background-size:32px 32px; display:inline-block; padding:0.3rem 0 0 4.5rem; color:#fff; font-size:1.6rem; font-weight:bold; line-height:1.6;}
@@ -331,18 +331,7 @@
 	#header_2021 nav #gnb_mo.ver2 .main_menu > ul > li.open a {width:43.75%}
 }
 
-
 @media all and (max-width:375px)  {
 	#footer_2021 .wrap_foot2 .ebs_info .about_ebs dt {width:40%;}
 	#footer_2021 .wrap_foot2 .ebs_info .about_ebs dd {width:60%;}
-}
-
-/* 2022-03-02 추가 */
-@media all and (min-device-width:810px) and (max-device-width:834px) and (orientation : landscape) {
-    #header_2021 nav #gnb_mo {display:none !important;}
-    #header_2021 nav #gnb_pc {display:block !important;}
-}
-@media all and (min-width:810px) and (max-width:834px) {
-    #header_2021 nav #gnb_mo {display:block !important;}
-    #header_2021 nav #gnb_pc {display:none !important;}
 }

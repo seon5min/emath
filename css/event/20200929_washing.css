@@ -1,0 +1,121 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.washing {position:relative; width:763px; overflow:hidden} 
+.washing  h1 {position:absolute; top:40px; left:30px;}
+.washing .snswrap {position:absolute; top:30px; right:22px;}
+.washing .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20200609/img_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.washing .snswrap a.fb {background-position:0 0;}
+.washing .snswrap a.tw {background-position:-41px 0;}
+.washing .snswrap a.kko {background-position:-82px 0;}
+.washing .top,
+.washing .top_end {position:relative}
+.washing .top .btn-pre-apply {position:absolute; top:431px; left:207px; display:block; width:339px; height:76px; background:url('../../images/event/20200929/btn_event_before.png') 0 0 no-repeat;}
+.washing .top .btn-pre-apply.off {background-position:0 -78px;}
+.washing .top .btn-apply {position:absolute; top:431px; left:243px; display:block; width:287px; height:76px; background:url('../../images/event/20200929/btn_apply.png') 0 0  no-repeat;}
+.washing .top .btn-apply.off {background-position:0 -78px;}
+
+.washing .top .btnArea {position:absolute; top:436px; width:100%; text-align:center; }
+.washing .top [class^="btn-winner"] {display:inline-block; height:76px;}
+.washing .top .btn-winner1 {width:287px; background:url('../../images/event/20200929/btn_event_fin0.png') 0 0 no-repeat}
+.washing .top .btn-winner2 {width:413px; background:url('../../images/event/20200929/btn_event_fin1.png') 0 0 no-repeat}
+.washing .top .btn-winner3 {width:350px; background:url('../../images/event/20200929/btn_event_fin2.png') 0 0 no-repeat}
+
+.washing .eventArea {position: relative;}
+.washing .eventArea .goto_contents {background:#25c9a9; height:278px; }
+.washing .eventArea .goto_contents h3 {padding:40px 0; text-align:center}
+.washing .eventArea .goto_contents ul {width:678px; margin:0 auto}
+.washing .eventArea .goto_contents li {float:left; width:159px; height:81px; background-image:url('../../images/event/20200929/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.washing .eventArea .goto_contents li a {display:block; width:100%; height:100%; position:relative}
+.washing .eventArea .goto_contents li.tab01 {background-position:0 0; margin-left:0}
+.washing .eventArea .goto_contents li.tab02 {background-position:-173px 0;}
+.washing .eventArea .goto_contents li.tab03 {background-position:-346px 0;}
+.washing .eventArea .goto_contents li.tab04 {background-position:-519px 0;}
+.washing .eventArea .goto_contents li a span {display:none; position:absolute; top:-15px; left:-10px; width:175px; height:100px; text-indent: -9999px;}
+.washing .eventArea .goto_contents li a:hover span {display:block;}
+.washing .eventArea .goto_contents li.tab01 a span {background:url('../../images/event/20200929/tab_stcard_on01.png') 0 0 no-repeat;}
+.washing .eventArea .goto_contents li.tab02 a span {background:url('../../images/event/20200929/tab_stcard_on02.png') 0 0 no-repeat;}
+.washing .eventArea .goto_contents li.tab03 a span {background:url('../../images/event/20200929/tab_stcard_on03.png') 0 0 no-repeat;}
+.washing .eventArea .goto_contents li.tab04 a span {background:url('../../images/event/20200929/tab_stcard_on04.png') 0 0 no-repeat;}
+
+.washing .eventArea .mainEvent {background:url('../../images/event/20200929/bg_event_wash.png') 0 0 no-repeat; height:940px;}
+.washing .eventArea .mainEvent h3 {text-align:center; padding:70px 0 37px;}
+.washing .eventArea .mainEvent .my_score {width:632px; height:184px; margin:0 auto; background:url('../../images/event/20200929/bg_scoreboard.png') 0 0 no-repeat;}
+.washing .eventArea .mainEvent .total dt,
+.washing .eventArea .mainEvent .total dd {display:inline-block}
+.washing .eventArea .mainEvent .total .txt_num1 {padding:44px 0 0 228px}
+.washing .eventArea .mainEvent .total .txt_num2 {padding:44px 0 0 238px}
+.washing .eventArea .mainEvent .total [class^="txt_num"] {color:#07ad8d; font-weight:800; font-size:17px;}
+.washing .eventArea .mainEvent .total [class^="txt_num"] strong {font-size:28px; vertical-align:bottom; line-height:100%}
+.washing .eventArea .mainEvent .comment {padding-top:40px; width:610px; margin:0 auto; text-align:center;}
+.washing .eventArea .mainEvent .comment mark {font-size:23px; font-weight:800; color:#ff5d50; background:transparent; vertical-align:middle;}
+.washing .eventArea .mainEvent .comment [class^="txt_p"] {display:inline-block; background-image:url('../../images/event/20200929/txt_todayscore.png'); background-repeat:no-repeat; text-indent: -9999px; vertical-align:middle}
+.washing .eventArea .mainEvent .comment .txt_p1 {background-position:0 0; width:62px; height:20px;}
+.washing .eventArea .mainEvent .comment .txt_bunch1,
+.washing .eventArea .mainEvent .comment .txt_bunch2 {border-bottom:2px solid #000; padding-bottom:7px}
+.washing .eventArea .mainEvent .comment .txt_p2 {background-position:-62px 0; width:20px; height:20px;}
+.washing .eventArea .mainEvent .comment .txt_p3 {background-position:-107px 0; width:80px; height:20px;}
+.washing .eventArea .mainEvent .comment .txt_p4 {background-position:-188px 0; width:82px; height:20px}
+.washing .eventArea .mainEvent .comment .txt_p5 {background-position:-294px 0; width:101px; height:20px}
+.washing .eventArea .mainEvent .comment .txt_p6 {background-position:-395px 0; width:108px; height:20px;}
+
+.washing .eventArea .mainEvent .hand {position:relative; background:url('../../images/event/20200929/img_dirtyhand.png') 50% 100% no-repeat; height:500px; margin:27px auto 0}
+.washing .eventArea .mainEvent .obj_soap {display:none; position:absolute; left:195px; top:120px; width:395px; height:300px; background:url('../../images/event/20200929/img_soap.png') 0 0 no-repeat; text-indent:-9999px}
+.washing .eventArea .mainEvent .hand.clean {background:url('../../images/event/20200929/img_cleanhand.png') 50% 100% no-repeat;}
+.washing .eventArea .mainEvent .hand.finish {background:url('../../images/event/20200929/img_today_finish.png') 50% 100% no-repeat;}
+.washing .eventArea .mainEvent .hand.finish [class^="obj_germ"]  {display:none}
+.washing .eventArea .mainEvent .hand [class^="obj_germ"] {position:absolute; text-indent:-9999px; cursor:pointer}
+.washing .eventArea .mainEvent .hand .obj_germ1 {top:20px; left:79px; width: 113px; height: 132px; background: url('../../images/event/20200929/gem_01x.png') 0 0 no-repeat}
+.washing .eventArea .mainEvent .hand .obj_germ1.o {top:30px; left:60px;  width: 120px; height: 107px; background: url('../../images/event/20200929/gem_01o.png') 0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ2 {top:284px; left:95px; width: 129px; height: 107px; background: url('../../images/event/20200929/gem_02x.png') 0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ2.o {top:284px; left:90px; width: 141px; height: 121px; background: url('../../images/event/20200929/gem_02o.png')  0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ3 {top:-25px; left:525px; width: 94px; height: 103px; background: url('../../images/event/20200929/gem_03x.png')  0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ3.o {top:-25px; left:525px; width: 106px; height: 114px; background: url('../../images/event/20200929/gem_03o.png')  0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ4 {top:110px; left:585px; width: 141px; height: 121px; background: url('../../images/event/20200929/gem_04x.png')  0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ4.o {top:110px; left:590px; width: 129px; height: 107px; background: url('../../images/event/20200929/gem_04o.png')  0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ5 {top:320px; left:600px; width: 117px; height: 139px; background: url('../../images/event/20200929/gem_05x.png')  0 0 no-repeat;}
+.washing .eventArea .mainEvent .hand .obj_germ5.o {top:330px; left:600px; width: 120px; height: 107px; background: url('../../images/event/20200929/gem_05o.png')  0 0 no-repeat;}
+
+.washing .bonus_event {background:url('../../images/event/20200929/bg_bonusevent.png') 0 0 no-repeat; height:463px; position:relative}
+.washing .bonus_event > p {padding:71px 0 0 51px}
+.washing .bonus_event .attcheck {width:362px; height:74px; background:#fff; border-radius:40px; box-sizing:border-box; margin:18px 0 0 228px; padding-left:30px; position: relative;}
+.washing .bonus_event .attcheck strong {color:#ff5152; font-size:25px; font-weight:800; display:inline-block; line-height:75px; margin:0 3px; vertical-align: top;}
+.washing .bonus_event .attcheck span {vertical-align:middle}
+.washing .bonus_event .attcheck [class^="txt"] {display:inline-block; height:90px; background-image:url('../../images/event/20200929/txt_attend.png'); background-repeat:no-repeat; text-indent:-9999px}
+.washing .bonus_event .attcheck .txt1{width:46px; background-position:0 40%;}
+.washing .bonus_event .attcheck .txt2{width:46px; background-position:-71px 40%}
+.washing .bonus_event .attcheck .btn_attend {display:inline-block; background-image:url('../../images/event/20200929/btn_attend.png'); background-position:0 0; background-repeat:no-repeat; position:absolute; right:15px; top:13px; width:184px; height:49px;}
+.washing .bonus_event .attcheck .btn_attend.off {background-position:0 -51px; cursor:default}
+
+/*종료*/
+.washing .eventArea .myResult {background:url('../../images/event/20200929/bg_result.png') 0 0 no-repeat; width:763px; height:237px; padding-top:144px}
+.washing .eventArea .myResult .my_score {width:632px; height:128px; margin:0 auto 0; background:url('../../images/event/20200929/bg_scoreboard_end.png') 0 0 no-repeat;}
+.washing .eventArea .myResult .total dt,
+.washing .eventArea .myResult .total dd {display:inline-block; letter-spacing:-1px; vertical-align: top;}
+.washing .eventArea .myResult .total .txt_num1 {padding:44px 0 0 210px; width:70px; text-align:right;}
+.washing .eventArea .myResult .total .txt_num2 {padding:44px 0 0 210px; width:80px; text-align:right}
+.washing .eventArea .myResult .total [class^="txt_num"] {color:#ff4031; font-weight:800; font-size:17px;}
+.washing .eventArea .myResult .total [class^="txt_num"] strong {font-size:28px; line-height:100%}
+
+.washing .bonus_event.end {background:url('../../images/event/20200929/bg_bonusevent.png') 0 0 no-repeat; height:370px; position:relative}
+.washing .bonus_event.end > p {padding:35px 0 0 51px}
+.washing .bonus_event.end .attcheck {width:230px; height:66px; text-align:center; padding:15px 0 0 0; margin:-7px 0 0 258px}
+.washing .bonus_event.end .attcheck [class^="txt"] {display:inline-block; height:27px; line-height:27px; background-image:url('../../images/event/20200929/txt_end_attend.png'); background-repeat:no-repeat; text-indent:-9999px; }
+.washing .bonus_event.end .attcheck .txt1{width:101px; background-position:0 0}
+.washing .bonus_event.end .attcheck .txt2{width:22px; background-position:-124px 0}
+.washing .bonus_event.end .attcheck strong {color:#ff5152; font-size:27px; font-weight:bold; display:inline-block; line-height:40px; vertical-align:middle}
+
+/* notice */
+.washing .notice {padding:35px 30px 30px 35px; background-color:#434343;}
+.washing .notice ul {padding-top:10px;}
+.washing .notice li {margin-top:5px; padding-left:12px; color:#c3c3c3; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20200929/bul.png') no-repeat 0 10px; letter-spacing:-0.5px}
+.washing .notice li .point {color:#ffffff;}
+
+.washing .eventArea .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.7; width:100%; height:100%}
+.washing .eventArea .dim_popup .layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-300px 0}
+.washing .eventArea.end .dim_popup .layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-200px 0}

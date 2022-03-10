@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+.pop_fulllayer{position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999;}
+.pop_fulllayer .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0;}
+.pop_fulllayer .popcon{position:relative; top:50%; left:50%; width:961px; margin-top:-290px; margin-left:-482px;}
+.pop_fulllayer .popcon.default{margin-top:-240px; margin-left:-326px;}
+.pop_fulllayer .popcon .player{position:absolute; left:70px; top:253px; width:440px; height:auto;}
+.pop_fulllayer .popcon .player video{width:100%; height:100%;}
+.pop_fulllayer .popcon .player .morebtn{display:inline-block; margin-top:10px;}
+.pop_fulllayer .btn_layerclose{position:absolute; top:0; right:0; display:inline-block; width:10px; height:10px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_fulllayer .btn_nomore{position:absolute; bottom:25px; right:25px; display:inline-block;}
+.pop_fulllayer .btn_nomore *{vertical-align:top;}
+.pop_fulllayer .btn_nomore label{top:0; margin-right:10px; color:#fff; font-size:15px; line-height:20px; font-weight:500;}
+
+/* 이벤트 */
+.rps{position:relative;}
+.rps .top{position:relative;}
+.rps .top .eventbtn{position:absolute; bottom:40px; right:67px; display:inline-block; width:240px; height:57px; border-radius:30px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.rps .snswrap{position:absolute; top:23px; right:20px;}
+.rps .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.rps .snswrap .fb a{background-position:0 0;}
+.rps .snswrap .tw a{background-position:-41px 0;}
+.rps .snswrap .kko a{background-position:-82px 0;}
+
+.rps .evtcon_wrap{position:relative; background:#ff686f;}
+.rps .evtcon{background:#ff686f;}
+.rps .evt-card{padding:154px 0 20px; background:url(../../images/event/20170530/bg_studycard.jpg) no-repeat 0 0 #ff686f;}
+.rps .tab-grade{margin-left:34px; *zoom:1;}
+.rps .tab-grade:after{content:''; clear:both; display:block; width:100%;}
+.rps .tab-grade li{float:left; width:129px; margin-left:5px;}
+.rps .tab-grade li:first-child{margin-left:0;}
+.rps .tab-grade li a{display:inline-block; width:100%; height:57px; font:0/0 a; vertical-align:top;}
+.rps .tab-grade li.grade1 a{background:url(../../images/event/20170530/tab_grade1.png) no-repeat 0 0;}
+.rps .tab-grade li.grade2 a{background:url(../../images/event/20170530/tab_grade2.png) no-repeat 0 0;}
+.rps .tab-grade li.grade3 a{background:url(../../images/event/20170530/tab_grade3.png) no-repeat 0 0;}
+.rps .tab-grade li.grade4 a{background:url(../../images/event/20170530/tab_grade4.png) no-repeat 0 0;}
+.rps .tab-grade li a.on{background-position:0 -57px;}
+.rps .tab-grade-cont{width:721px; margin:0 auto;}
+.rps .tab-grade-cont .gradecon{height:328px; padding:0 13px; *zoom:1;}
+.rps .tab-grade-cont .gradecon:after{content:''; display:block; clear:both; width:100%;}
+
+.rps .tab-subj{float:left; padding-top:17px;}
+.rps .tab-subj li{width:126px; margin-top:5px;}
+.rps .tab-subj li:first-child{margin-top:0;}
+.rps .tab-subj li a{display:block; width:100%; vertical-align:top; font:0/0 a;}
+.rps .con1 .tab-subj li{height:45px;}
+.rps .con1 .tab-subj li a{height:45px;}
+.rps .con1 .tab-subj li.subj1 a{background-image:url(../../images/event/20170530/tab_grade1-subj1.png);}
+.rps .con1 .tab-subj li.subj2 a{background-image:url(../../images/event/20170530/tab_grade1-subj2.png);}
+.rps .con1 .tab-subj li.subj3 a{background-image:url(../../images/event/20170530/tab_grade1-subj3.png);}
+.rps .con1 .tab-subj li.subj4 a{background-image:url(../../images/event/20170530/tab_grade1-subj4.png);}
+.rps .con1 .tab-subj li.subj5 a{background-image:url(../../images/event/20170530/tab_grade1-subj5.png);}
+.rps .con1 .tab-subj li.subj6 a{background-image:url(../../images/event/20170530/tab_grade1-subj6.png);}
+.rps .con1 .tab-subj li a.on,
+.rps .con1 .tab-subj li a:hover{background-position:0 -45px;}
+
+.rps .con2 .tab-subj li,
+.rps .con3 .tab-subj li,
+.rps .con4 .tab-subj li,
+.rps .con2 .tab-subj li a,
+.rps .con3 .tab-subj li a,
+.rps .con4 .tab-subj li a{height:95px;}
+.rps .con2 .tab-subj li.subj1 a{background-image:url(../../images/event/20170530/tab_grade2-subj1.png);}
+.rps .con2 .tab-subj li.subj2 a{background-image:url(../../images/event/20170530/tab_grade2-subj2.png);}
+.rps .con2 .tab-subj li.subj3 a{background-image:url(../../images/event/20170530/tab_grade2-subj3.png);}
+.rps .con3 .tab-subj li.subj1 a{background-image:url(../../images/event/20170530/tab_grade3-subj1.png);}
+.rps .con3 .tab-subj li.subj2 a{background-image:url(../../images/event/20170530/tab_grade3-subj2.png);}
+.rps .con3 .tab-subj li.subj3 a{background-image:url(../../images/event/20170530/tab_grade3-subj3.png);}
+.rps .con4 .tab-subj li.subj1 a{background-image:url(../../images/event/20170530/tab_grade4-subj1.png);}
+.rps .con4 .tab-subj li.subj2 a{background-image:url(../../images/event/20170530/tab_grade4-subj2.png);}
+.rps .con4 .tab-subj li.subj3 a{background-image:url(../../images/event/20170530/tab_grade4-subj3.png);}
+
+.rps .con2 .tab-subj li a.on,
+.rps .con3 .tab-subj li a.on,
+.rps .con4 .tab-subj li a.on,
+.rps .con2 .tab-subj li a:hover,
+.rps .con3 .tab-subj li a:hover,
+.rps .con4 .tab-subj li a:hover{background-position:0 -95px;}
+
+.rps .tab-subj-cont{padding-top:19px;}
+.rps .tab-subj-cont .subjcon{margin-top:13px;}
+.rps .tab-subj-cont .subjcon ol{*zoom:1;}
+.rps .tab-subj-cont .subjcon ol:after{content:''; display:block; clear:both; width:100%;}
+.rps .tab-subj-cont .subjcon li{float:left; width:184px; margin-top:5px; margin-left:5px;}
+.rps .tab-subj-cont .subjcon li a{display:table; width:172px; padding:10px 5px; border:1px solid #d7d7d7; background:#f4f7f9; overflow:hidden;}
+.rps .tab-subj-cont .subjcon li .thumnail{position:relative; display:table-cell; width:60px;}
+.rps .tab-subj-cont .subjcon li .thumnail img{width:60px; height:50px; border:1px solid #ddd;}
+.rps .tab-subj-cont .subjcon li .thumnail .check_con{display:none;}
+.rps .tab-subj-cont .subjcon li .title{display:table-cell; width:95px; padding-left:10px; color:#777; font-size:12px; font-weight:bold; line-height:18px; letter-spacing:-1px; vertical-align:middle;}
+.rps .tab-subj-cont .subjcon li .title span{display:block; max-height:35px; overflow:hidden;}
+.rps .tab-subj-cont .subjcon li.on a,
+.rps .tab-subj-cont .subjcon li a:hover{border:1px solid #4f8ed2; background:#e7edf2;}
+.rps .tab-subj-cont .subjcon li.on a .title,
+.rps .tab-subj-cont .subjcon li a:hover .title{color:#4f8ed2;}
+.rps .tab-subj-cont .subjcon li.on a .thumnail .check_con{position:absolute; top:1px; left:1px; display:block; width:60px; height:50px; background:url(../../images/event/20170530/list_check2.png) no-repeat 50% 50%;}
+
+*:first-child + html .rps .tab-subj-cont .subjcon li a{display:block; *zoom:1;}
+*:first-child + html .rps .tab-subj-cont .subjcon li .thumnail,
+*:first-child + html .rps .tab-subj-cont .subjcon LI .title{float:left; display:inline-block;}
+*:first-child + html .rps .tab-subj-cont .subjcon li .title{padding-top:8px;}
+
+.rps .evt-game{padding-top:19px; background:url(../../images/event/20170530/bg_game.jpg) no-repeat 0 0 #ff686f;}
+.rps .evt-game .gamecon{width:721px; margin:0 auto; padding-bottom:44px;}
+.rps .evt-game .ticket{position:relative; height:91px; *zoom:1;}
+.rps .evt-game .ticket:after{clear:both; content:''; width:100%; height:0; display:block;}
+.rps .evt-game .ticket .stamp-cnt{position:absolute; top:35px; left:205px; color:#333; font-weight:bold; font-size:20px; font-style:normal;}
+.rps .evt-game .ticket .alluesd{position:absolute; top:5px; left:20px;}
+.rps .evt-game .ticket .stamp{float:left; padding-top:18px; padding-left:270px;}
+.rps .evt-game .ticket .stamp li{float:left; width:72px; height:57px; margin-left:8px; font:0/0 a; background:url(../../images/event/20170530/stamp_default.png) no-repeat 0 0;}
+.rps .evt-game .ticket .stamp li:first-child{margin-left:0;}
+.rps .evt-game .ticket .stamp li.active{background-image:url(../../images/event/20170530/stamp_active.png);}
+.rps .evt-game .ticket .stamp li.end{background-image:url(../../images/event/20170530/stamp_end.png);}
+.rps .evt-game .ticket .btn-game-start{float:right; padding-top:14px; margin-right:30px;}
+
+.rps .evt-game .wincnt{position:relative; height:52px;}
+.rps .evt-game .wincnt .num{position:absolute; top:10px; left:405px; color:#ffca56; font-weight:bold; font-size:25px; font-style:normal;}
+
+.rps .evt-game .match{position:relative; height:359px;}
+.rps .evt-game .match .p-ebsmath{position:absolute; left:90px; top:30px;}
+.rps .evt-game .match .p-ebsmath .hand{position:relative; display:inline-block; width:175px; height:150px; background:url(../../images/event/20170530/left_hands.gif) no-repeat 0 0;}
+.rps .evt-game .match .p-ebsmath .hand span{position:absolute; top:0; left:0; display:inline-block; width:175px; height:150px;}
+.rps .evt-game .match .p-ebsmath .hand .rock{background:url(../../images/event/20170530/left_rock.jpg) no-repeat 0 0;}
+.rps .evt-game .match .p-ebsmath .hand .paper{background:url(../../images/event/20170530/left_paper.jpg) no-repeat 0 0;}
+.rps .evt-game .match .p-ebsmath .hand .scissors{background:url(../../images/event/20170530/left_scissors.jpg) no-repeat 0 0;}
+.rps .evt-game .match .p-ebsmath .player{margin-top:5px; margin-left:45px; color:#d71f28; font-weight:bold; font-size:16px;}
+
+.rps .evt-game .match .p-user{position:absolute; right:90px; top:30px;}
+.rps .evt-game .match .p-user .hand{position:relative; display:inline-block; width:175px; height:150px;}
+.rps .evt-game .match .p-user .hand span{position:absolute; top:0; left:0; display:inline-block; width:175px; height:150px;}
+.rps .evt-game .match .p-user .hand .rock{background:url(../../images/event/20170530/right_rock.jpg) no-repeat right 0;}
+.rps .evt-game .match .p-user .hand .paper{background:url(../../images/event/20170530/right_paper.jpg) no-repeat right 0;}
+.rps .evt-game .match .p-user .hand .scissors{background:url(../../images/event/20170530/right_scissors.jpg) no-repeat right 0;}
+
+.rps .evt-game .match .p-user .player{color:#333; font-weight:bold; font-size:16px; text-align:center;}
+.rps .evt-game .match .p-user .player span{display:inline-block; max-width:155px; color:#333; font-weight:bold; font-size:16px; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; word-break:break-all; word-wrap:break-word; vertical-align:top;}
+*:first-child + html .rps .evt-game .match .p-user .player span{width:155px;}
+.rps .evt-game .match .select-hand{position:absolute; bottom:26px; left:139px;}
+.rps .evt-game .match .select-hand li{float:left; margin-left:11px;}
+.rps .evt-game .match .select-hand li:first-child{margin-left:0;}
+.rps .evt-game .match .select-hand li button{display:inline-block; width:94px; height:94px; font:0/0 a;}
+.rps .evt-game .match .select-hand li button.scissors{background:url(../../images/event/20170530/icon_scissors.jpg) no-repeat 0 0;}
+.rps .evt-game .match .select-hand li button.rock{background:url(../../images/event/20170530/icon_rock.jpg) no-repeat 0 0;}
+.rps .evt-game .match .select-hand li button.paper{background:url(../../images/event/20170530/icon_paper.jpg) no-repeat 0 0;}
+.rps .evt-game .match .select-hand li.on button,
+.rps .evt-game .match .select-hand li button:hover{background-position:0 -94px;}
+
+.rps .evt-game .match .btn-bet{position:absolute; bottom:40px; right:122px;}
+
+.rps .evt-game .match .badge-result{position:absolute; top:7px; left:260px; width:199px; height:213px;}
+
+
+
+/* 이벤트 종료 */
+.rps.end .evtcon_wrap{background:#ffd24b;}
+.rps.end .people{position:absolute; top:704px; left:265px; color:#fff38c; font-weight:bold; font-size:22px;}
+.rps.end .btn-win{position:absolute; top:622px; right:55px; display:inline-block; width:260px; height:57px; border-radius:40px; background:url(../../images/event/20170530/btn_evt_win.png) no-repeat 0 0;}
+.rps.end .btn-info-insert{position:absolute; top:688px; right:55px; display:inline-block; width:260px; height:57px; border-radius:40px; background:url(../../images/event/20170530/btn_evt_insert.png) no-repeat 0 0;}
+
+/* notice */
+.rps .notice{position:relative; padding:28px 25px 25px 34px; background:#1f346b;}
+.rps .notice .emo_puzzle{display:none;}
+.rps .notice ul{padding-top:15px;}
+.rps .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#fff; letter-spacing:-1px; background:url(../../images/event/20170530/bul_notice.png) no-repeat 0 9px;}
+.rps .notice li:first-child{margin-top:0;}
+.rps .notice li a.point{color:#ffef83;}
+.rps.end .notice{background:#45adec;}
+.rps.end .notice .emo_puzzle{display:inline-block; position:absolute; top:-30px; right:165px;}
+

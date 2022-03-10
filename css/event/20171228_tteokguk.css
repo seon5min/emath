@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix:after { content:""; display:block; }
+.clearfix:after { clear:both; }
+
+.tteokguk{background:none;}
+.tteokguk .top{position:relative; width:763px;}
+.tteokguk .top .btn-apply{position:absolute; top:586px; left:470px; display:block; width:255px; height:65px; font-size:0; border-radius:32px; background:#ff7666; opacity:0; filter:alpha(opacity='0');}
+.tteokguk .snswrap{position:absolute; top:23px; right:19px;}
+.tteokguk .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;}
+.tteokguk .snswrap .fb a{background-position:0 0;}
+.tteokguk .snswrap .tw a{background-position:-41px 0;}
+.tteokguk .snswrap .kko a{background-position:-82px 0;}
+.tteokguk .bannerPromo { position:absolute; top:350px; left:500px; }
+.tteokguk .bannerPromo .btnCloseBan { position:absolute; top:22px; right:30px; display:block; width:33px; height:33px; font-size:0; border-radius:16px; background:#134284; opacity:0; filter:alpha(opacity='0'); }
+
+/* 이벤트 본문 */
+.tteokguk .conwrap { position:relative; }
+.tteokguk .conwrap .btn-point {position:absolute; top:52px; left:603px; display:block; width:105px; height:105px; font-size:0; border-radius:53px; background:#f6710e; opacity:0; filter:alpha(opacity='0');}
+.tteokguk .conwrap .btn-close {position:absolute; top:27px; left:172px; display:block; width:11px; height:11px; font-size:0; background:#f6710e; opacity:0; filter:alpha(opacity='0');}
+.tteokguk .conwrap .popCard { position:absolute; top:128px; left:556px; display:none;}
+
+/* 학습 카드 */
+.tteokguk .cardView { position:relative; }
+.tteokguk .cardView .content { position:absolute; top:174px; left:0; margin-left:33px; padding-bottom:40px; overflow:hidden; }
+.tteokguk .cardView .content .tabBtn { margin-left:0; overflow:hidden; }
+.tteokguk .cardView .content .tabBtn li { float:left; width:137px; height:47px; margin:0 3px 0 0; background:url('../../images/event/20171228/tab_off.png') no-repeat; font-size:0; cursor:pointer;}
+.tteokguk .cardView .content .tabBtn li.on { background:url('../../images/event/20171228/tab_on.png') no-repeat; }
+.tteokguk .cardView .content .tabBtn li.btn_01 { background-position:0 0; }
+.tteokguk .cardView .content .tabBtn li.btn_02 { background-position:-140px 0; }
+.tteokguk .cardView .content .tabBtn li.btn_03 { background-position:-280px 0; }
+.tteokguk .cardView .content .tabBtn li.btn_04 { background-position:-420px 0; }
+.tteokguk .cardView .content .tabBtn li.btn_05 { background-position:-560px 0; }
+
+.tteokguk .cardView .content .tabCont li { display:none; position:relative;}
+.tteokguk .cardView .content .tabCont li.view { display:block; }
+.tteokguk .cardView .content .tabCont .btnArea { position:absolute; top:24px; left:26px; width:681px;}
+.tteokguk .cardView .content .tabCont .btnArea a { display:block; width:205px; height:54px; margin: 6px 5px; border-radius:27px; float:left; background:#2b86cf; opacity:0; filter:alpha(opacity='0');}
+
+/* 떡국 먹기 */
+.tteokguk .eatTteokguk { position:relative; }
+.tteokguk .eatTteokguk .getTteokguk { position:absolute; top:46px; left:33px; width:379px; height:76px; }
+.tteokguk .eatTteokguk .getTteokguk span { display:block; width:379px; height:76px; background:url('../../images/event/20171228/getTteokguk.png') no-repeat 0 0;}
+.tteokguk .eatTteokguk .getTteokguk.getTteokguk01 span { background-position:0 -80px; }
+.tteokguk .eatTteokguk .getTteokguk.getTteokguk02 span { background-position:0 -160px; }
+.tteokguk .eatTteokguk .getTteokguk.getTteokguk03 span { background-position:0 -240px; }
+.tteokguk .eatTteokguk .getTteokguk.getTteokguk04 span { background-position:0 -320px; }
+.tteokguk .eatTteokguk .getTteokguk.getTteokguk05 span { background-position:0 -400px; }
+.tteokguk .eatTteokguk .getTteokguk.getTteokguk06 span { background-position:0 -480px; }
+.tteokguk .eatTteokguk .score_total { position:absolute; top:76px; left:622px; color:#ff614f; font-size:19px; font-weight:bold; }
+
+.tteokguk .eatTteokguk .eatingSemi { position:absolute; top:302px; left:268px;}
+.tteokguk .eatTteokguk .semiTalk { position:absolute; top:193px; left:261px; width:254px; height:56px; padding:20px 0 55px; background:url('../../images/event/20171228/bg_talk.png') no-repeat 0 0;)}
+.tteokguk .eatTteokguk .semiTalk p { display:none; line-height:27px; font-size:19px; text-align:center; font-weight:bold; letter-spacing:-1px;}
+.tteokguk .eatTteokguk .semiTalk p span { color:#e64d4d; }
+.tteokguk .eatTteokguk .semiTalk.on01 p.message01 { display:block; color:#6e513e; line-height:54px;}
+.tteokguk .eatTteokguk .semiTalk.on02 p.message02 { display:block; color:#6e513e; }
+.tteokguk .eatTteokguk .semiTalk.on03 p.message03 { display:block; color:#6e513e; }
+.tteokguk .eatTteokguk .semiTalk.on04 p.message04 { display:block; color:#6e513e; }
+.tteokguk .eatTteokguk .semiTalk.on05 p.message05 { display:block; color:#364e8b; }
+.tteokguk .eatTteokguk .tteokgukToday { position:absolute; top:506px; left:309px; cursor:pointer;}
+
+.tteokguk .eatTteokguk .tteokgukTotal { position:absolute; top:301px; left:188px; width:457px; height:303px; }
+.tteokguk .eatTteokguk .tteokgukTotal .bowl { display:block; width:457px; height:303px; }
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat01 {background:url('../../images/event/20171228/bowl/img_bowl_01.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat02 {background:url('../../images/event/20171228/bowl/img_bowl_02.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat03 {background:url('../../images/event/20171228/bowl/img_bowl_03.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat04 {background:url('../../images/event/20171228/bowl/img_bowl_04.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat05 {background:url('../../images/event/20171228/bowl/img_bowl_05.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat06 {background:url('../../images/event/20171228/bowl/img_bowl_06.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat07 {background:url('../../images/event/20171228/bowl/img_bowl_07.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat08 {background:url('../../images/event/20171228/bowl/img_bowl_08.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat09 {background:url('../../images/event/20171228/bowl/img_bowl_09.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat10 {background:url('../../images/event/20171228/bowl/img_bowl_10.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat11 {background:url('../../images/event/20171228/bowl/img_bowl_11.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat12 {background:url('../../images/event/20171228/bowl/img_bowl_12.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat13 {background:url('../../images/event/20171228/bowl/img_bowl_13.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat14 {background:url('../../images/event/20171228/bowl/img_bowl_14.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat15 {background:url('../../images/event/20171228/bowl/img_bowl_15.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat16 {background:url('../../images/event/20171228/bowl/img_bowl_16.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat17 {background:url('../../images/event/20171228/bowl/img_bowl_17.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat18 {background:url('../../images/event/20171228/bowl/img_bowl_18.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat19 {background:url('../../images/event/20171228/bowl/img_bowl_19.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat20 {background:url('../../images/event/20171228/bowl/img_bowl_20.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat21 {background:url('../../images/event/20171228/bowl/img_bowl_21.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat22 {background:url('../../images/event/20171228/bowl/img_bowl_22.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat23 {background:url('../../images/event/20171228/bowl/img_bowl_23.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat24 {background:url('../../images/event/20171228/bowl/img_bowl_24.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat25 {background:url('../../images/event/20171228/bowl/img_bowl_25.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat26 {background:url('../../images/event/20171228/bowl/img_bowl_26.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat27 {background:url('../../images/event/20171228/bowl/img_bowl_27.png') no-repeat ;}
+.tteokguk .eatTteokguk .tteokgukTotal .bowl.eat28 {background:url('../../images/event/20171228/bowl/img_bowl_28.png') no-repeat ;}
+
+/* notice */
+.tteokguk .notice {padding:35px 58px 31px 34px; background-color:#323c83;}
+.tteokguk .notice ul{padding-top:15px;}
+.tteokguk .notice li{margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20170911/bul.png') no-repeat 0 8px;}
+.tteokguk .notice li:first-child{margin-top:0;}
+.tteokguk .notice li .point{color:#ffd95b;}
+
+/* 이벤트 종료 */
+.tteokguk.end .eatTteokguk .semiTalk { top:50px;}
+.tteokguk.end .eatTteokguk .semiTalk.on01 p.message01 { display:block; color:#6e513e; line-height:27px;}
+.tteokguk.end .eatTteokguk .tteokgukTotal { top:156px;}
+.tteokguk.end .top .btn_win{position:absolute; top:586px; left:445px; display:block; width:280px; height:65px; font-size:0; border-radius:32px; background:#ff7666; opacity:0; filter:alpha(opacity='0');}
+.tteokguk.end .top .btn_info_insert{position:absolute; top:661px; left:445px; display:block; width:280px; height:65px; font-size:0; border-radius:32px; background:#ffb966; opacity:0; filter:alpha(opacity='0');}
+.tteokguk.end .top .total{position:absolute; top:698px; left:95px; display:block; width:100px; text-align:center; font-weight:900; color:#fff; font-size:20px; letter-spacing:-1px; }
+.tteokguk.end .top .myScore{position:absolute; top:698px; left:283px; display:block; width:100px; text-align:center; font-weight:900; color:#fff; font-size:20px; letter-spacing:-1px; }
+.tteokguk.end .evtcon-top { position:relative; }
+.tteokguk.end .evtcon-top .btn-evtlogin {position:absolute; top:122px; left:449px; display:block;width:190px; height:46px; font-size:0; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}

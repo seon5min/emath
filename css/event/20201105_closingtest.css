@@ -1,0 +1,97 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.closingtest {position:relative; width:763px; overflow:hidden} 
+.closingtest  h1 {position:absolute; top:39px; left:30px;}
+.closingtest .snswrap {position:absolute; top:32px; right:22px;}
+.closingtest .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20201105/icon_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.closingtest .snswrap a.fb {background-position:0 0;}
+.closingtest .snswrap a.tw {background-position:-41px 0;}
+.closingtest .snswrap a.kko {background-position:-82px 0;}
+.closingtest .snswrap a.url {background-position:-123px 0;}
+
+.closingtest .top,
+.closingtest .top_end {position:relative}
+.closingtest .top .btn-pre-apply {position:absolute; top:431px; left:207px; display:block; width:339px; height:76px; background:url('../../images/event/20201105/btn_event_before.png') 0 0 no-repeat;}
+.closingtest .top .btn-pre-apply.off {background-position:0 -78px;}
+.closingtest .top .btn-apply {position:absolute; top:498px; left:255px; display:block; width:253px; height:60px; background:url('../../images/event/20201105/btn_apply.png') 0 0  no-repeat;}
+.closingtest .top .btn-apply.off {background-position:0 -62px;}
+
+.closingtest .top .btnArea {position:absolute; top:497px; width:100%; text-align:center; }
+.closingtest .top [class^="btn-winner"] {display:inline-block; height:60px;}
+.closingtest .top .btn-winner1 {width:273px; background:url('../../images/event/20201105/btn_winner1.png') 0 0 no-repeat}
+.closingtest .top .btn-winner2 {width:341px; background:url('../../images/event/20201105/btn_winner2.png') 0 0 no-repeat}
+.closingtest .top .btn-winner3 {width:371px; background:url('../../images/event/20201105/btn_winner3.png') 0 0 no-repeat}
+
+.closingtest .eventArea {position: relative;}
+.closingtest .goto_contents {background:#84aaeb; height:243px; }
+.closingtest .goto_contents h3 {padding:40px 0 32px 0; text-align:center}
+.closingtest .goto_contents ul {width:678px; margin:0 auto}
+.closingtest .goto_contents li {float:left; width:159px; height:86px; background-image:url('../../images/event/20201105/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.closingtest .goto_contents li a {display:block; width:100%; height:100%;  text-indent:-9999px}
+.closingtest .goto_contents li.tab01 {background-position:0 0; margin-left:0}
+.closingtest .goto_contents li.tab02 {background-position:-173px 0;}
+.closingtest .goto_contents li.tab03 {background-position:-346px 0;}
+.closingtest .goto_contents li.tab04 {background-position:-519px 0;}
+.closingtest .goto_contents li.tab01:hover {background-position:0px -88px;}
+.closingtest .goto_contents li.tab02:hover {background-position:-173px -88px;}
+.closingtest .goto_contents li.tab03:hover {background-position:-346px -88px;}
+.closingtest .goto_contents li.tab04:hover {background-position:-519px -88px;}
+
+.closingtest .eventArea .mainEvent .gototest { height:168px; background:url('../../images/event/20201105/cont_test_bg1.png') 0 0 no-repeat; text-align:center; padding-top:335px;}
+.closingtest .eventArea .mainEvent .gototest .btn_gototest {display:inline-block; width:280px; height:62px; background:url('../../images/event/20201105/btn_gotest.png') 0 0 no-repeat; text-indent:-9999px}
+.closingtest .eventArea .mainEvent .gototest .btn_chk_grading {display:inline-block; width:206px; height:62px; background:url('../../images/event/20201105/btn_chk_grading.png') 0 0 no-repeat; text-indent:-9999px}
+
+.closingtest .eventArea .mainEvent .myscore {height:503px; background:url('../../images/event/20201105/cont_test_bg2.png') 0 0 no-repeat; position:relative}
+.closingtest .eventArea .mainEvent .myscore h4 {position:absolute; left:249px; top:380px; width:269px; text-align:center}
+.closingtest .eventArea .mainEvent .myscore h4 .txt1 {display:inline-block; width:97px; height:67px; background:url('../../images/event/20201105/txt_score1.png') 0 70% no-repeat; text-indent:-9999px; vertical-align:bottom;}
+.closingtest .eventArea .mainEvent .myscore h4 .txt2 {display:inline-block; width:36px; height:67px; background:url('../../images/event/20201105/txt_score2.png') 0 55% no-repeat; text-indent:-9999px; vertical-align:bottom;}
+.closingtest .eventArea .mainEvent .myscore h4 strong {font-size:67px; color:#e35b5b; font-weight:800; vertical-align:bottom; letter-spacing:-2px;}
+.closingtest .eventArea .mainEvent .myscore:after {content:""; display:block; position:absolute; top:463px; left:259px; width:268px; height:14px; background:url('../../images/event/20201105/txt_score_notice.png') 0 0 no-repeat;}
+.closingtest .eventArea .mainEvent .myscore .mybutton {position: absolute; width:180px; top:367px; right:28px;}
+.closingtest .eventArea .mainEvent .myscore .mybutton button {display:inline-block; width:180px; height:48px; background-image:url('../../images/event/20201105/btn_test.png'); background-repeat: no-repeat; text-indent: -9999px;}
+.closingtest .eventArea .mainEvent .myscore .mybutton .btn_retry {background-position:0 0; margin-bottom:8px}
+.closingtest .eventArea .mainEvent .myscore .mybutton .btn_grading {background-position:0 -56px;}
+
+.closingtest .eventArea .bonus_event {background-color:#ffcf6a;padding:77px 42px 40px} 
+.closingtest .eventArea .bonus_event .snswrap {position:absolute; top:0px; left:0px; width:164px}
+.closingtest .eventArea .bonus_event .dailyboard {border:4px solid #2a2d5a; width:670px; margin-top:36px}
+.closingtest .eventArea .bonus_event .dailyboard h5 {background-color:#2a2d5a; text-align:center; padding:30px 0}
+.closingtest .eventArea .bonus_event .dailyboard ul {text-align:center; padding:20px 0}
+.closingtest .eventArea .bonus_event .dailyboard li {display:inline-block; width:126px; height:127px; background-image:url('../../images/event/20201105/img_day_off.png'); background-repeat: no-repeat; text-indent:-9999px; margin-bottom:2px}
+.closingtest .eventArea .bonus_event .dailyboard li.day1 {background-position:0 0;}
+.closingtest .eventArea .bonus_event .dailyboard li.day2 {background-position:-129px 0;}
+.closingtest .eventArea .bonus_event .dailyboard li.day3 {background-position:-258px 0;}
+.closingtest .eventArea .bonus_event .dailyboard li.day4 {background-position:-386px 0;}
+.closingtest .eventArea .bonus_event .dailyboard li.day5 {background-position:-515px 0;}
+.closingtest .eventArea .bonus_event .dailyboard li.day6 {background-position:0 -130px;}
+.closingtest .eventArea .bonus_event .dailyboard li.day7 {background-position:-129px -130px;}
+.closingtest .eventArea .bonus_event .dailyboard li.day8 {background-position:-258px -130px;}
+.closingtest .eventArea .bonus_event .dailyboard li.day9 {background-position:-386px -130px;}
+.closingtest .eventArea .bonus_event .dailyboard li.day10 {background-position:-515px -130px;}
+.closingtest .eventArea .bonus_event .dailyboard li.chk {display:inline-block; width:126px; height:127px; background-image:url('../../images/event/20201105/img_day_on.png'); background-repeat: no-repeat; text-indent:-9999px; margin-bottom:2px}
+.closingtest .eventArea .bonus_event .btn_attend {display:block; width:248px; height:73px; background:url('../../images/event/20201105/btn_attend.png') 0 0 no-repeat; text-indent:-9999px; margin:20px auto 0}
+.closingtest .eventArea .bonus_event .btn_attend.off {background-position:0 -75px}
+.closingtest .eventArea .bonus_event .total {width:248px; height:51px; background:#e35b5b; border-radius:35px; margin:20px auto 0; text-align:center; padding-top:22px}
+.closingtest .eventArea .bonus_event .total span {display:inline-block; height:22px; background-image:url('../../images/event/20201105/txt_chkday_end.png'); background-repeat:no-repeat; text-indent:-9999px; vertical-align:middle}
+.closingtest .eventArea .bonus_event .total  strong {font-size:26px; color:#fff3a4; vertical-align:middle; font-weight:800; letter-spacing:-1px}
+.closingtest .eventArea .bonus_event .total .txt1 {background-position:0 0; width:26px;}
+.closingtest .eventArea .bonus_event .total .txt2 {background-position:-57px 0; width:28px;} 
+.closingtest .eventArea .bonus_event .total .txt3 {background-position:-85px 0; width:100px; }
+
+.closingtest .eventArea .bonus_event .btn_chk_att {display:block; width:248px; height:73px; background:url('../../images/event/20201105/btn_chk_chul.png') 0 0 no-repeat; text-indent:-9999px; margin:20px auto 0}
+
+/* notice */
+.closingtest .notice {padding:35px 30px 30px 35px; background-color:#434343;}
+.closingtest .notice ul {padding-top:10px;}
+.closingtest .notice li {margin-top:5px; padding-left:12px; color:#c3c3c3; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20201105/bul.png') no-repeat 0 10px; letter-spacing:-0.5px}
+.closingtest .notice li .point {color:#ffffff;}
+
+.closingtest .eventArea .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%}
+.closingtest .eventArea .dim_popup .layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-320px 0}
+.closingtest .eventArea.end .dim_popup .layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-200px 0}

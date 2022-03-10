@@ -1,0 +1,109 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.xmastree {background:none; }
+.xmastree .top {position:relative; background:#fff url('../../images/event/20191111/bg_top.png') 0 0 no-repeat; padding-bottom:20px}
+.xmastree .top h1 {position:absolute; top:29px; left:28px;}
+.xmastree .top .cnt {padding:100px 0 0 43px;}
+.xmastree .top [class^="btn-winner"] {margin:30px auto 13px; display:block; height:74px; background-image:url('../../images/event/20191111/btn_event_fin.png'); background-repeat:no-repeat }
+.xmastree .top .btn-winner1 {width:299px; background-position:0 0}
+.xmastree .top .btn-winner2 {width:417px; background-position:0 -76px}
+.xmastree .top .btn-winner3 {width:417px; background-position:0 -152px}
+
+.xmastree .top .cmt_end {margin:0 0 16px 0; text-align:center}
+.xmastree .snswrap {position:absolute; top:23px; right:20px;}
+.xmastree .snswrap a{display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.xmastree .snswrap a.fb {background-position:0 0;}
+.xmastree .snswrap a.tw {background-position:-41px 0;}
+.xmastree .snswrap a.kko {background-position:-82px 0;}
+
+.xmastree .top .btn-pre-apply {position:absolute; top:580px; left:441px; display:block; width:287px; height:74px; background:url('../../images/event/20191111/btn_event_before.png') 0 -76px no-repeat;}
+.xmastree .top .btn-pre-apply.off {background-position:0 0;}
+.xmastree .top .btn-apply {position:absolute; top:540px; left:441px; display:block; width:287px; height:74px; background:url('../../images/event/20191111/btn_apply.png') 0 0  no-repeat;}
+.xmastree .top .btn-apply.off {background-position:0 -76px;}
+
+.xmastree .studycard {background:url('../../images/event/20191111/bg_stcard.png') 0 0 no-repeat; padding:187px 0 50px}
+.xmastree .tab_stcard {width:678px; margin:0 auto; overflow:hidden}
+.xmastree .tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20191111/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.xmastree .tab_stcard li a {display:block; width:100%; height:100%}
+.xmastree .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.xmastree .tab_stcard li.tab02 {background-position:-173px 0;}
+.xmastree .tab_stcard li.tab03 {background-position:-346px 0;}
+.xmastree .tab_stcard li.tab04 {background-position:-519px 0;}
+.xmastree .tab_stcard li.tab01:hover {background-position:0 -82px}
+.xmastree .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.xmastree .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.xmastree .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.xmastree .eventArea {background:#e7f6ff url('../../images/event/20191111/bg_tree.png') 0 0 no-repeat; padding:230px 0 45px}
+.xmastree .eventArea.end {background:#e7f6ff url('../../images/event/20191111/bg_tree_end.png') 0 0 no-repeat; padding:155px 0 45px}
+
+.xmastree .eventArea .maketree {width:635px; height:514px; margin:0 auto; overflow:hidden; position:relative}
+.xmastree .eventArea.end .maketree {width:645px;}
+.xmastree .eventArea .maketree .status {float:left; width:240px; margin-top:80px}
+.xmastree .eventArea .maketree .tree {float:right; position:relative; width:347px; height:496px; background:url('../../images/event/20191111/tree.png') 0 35px no-repeat;  }
+.xmastree .eventArea .maketree .tree span[class^="item_"] {display:none}
+.xmastree .eventArea .maketree .tree span[class^="item_"].on { display:block}
+.xmastree .eventArea .maketree .tree .item_H3_1 {position:absolute; left:60px; bottom:5px}
+.xmastree .eventArea .maketree .tree .item_H3_2 {position:absolute; left:155px; bottom:5px}
+.xmastree .eventArea .maketree .tree .item_H3_3 {position:absolute; left:255px; bottom:5px}
+.xmastree .eventArea .maketree .tree .item_J1_1 {position:absolute; left:201px; bottom:0px}
+.xmastree .eventArea .maketree .tree .item_D3_1 {position:absolute; left:18px; bottom:130px}
+.xmastree .eventArea .maketree .tree .item_C2_1 {position:absolute; left:98px; bottom:103px; transform:rotate(-30deg)}
+.xmastree .eventArea .maketree .tree .item_G3_1 {position:absolute; left:180px; bottom:110px}
+.xmastree .eventArea .maketree .tree .item_B3_1 {position:absolute; left:255px; bottom:120px; transform:rotate(-20deg)}
+.xmastree .eventArea .maketree .tree .item_B3_2 {position:absolute; left:63px; bottom:201px; transform:rotate(-20deg)}
+.xmastree .eventArea .maketree .tree .item_F2_1 {position:absolute; left:146px; bottom:152px;}
+.xmastree .eventArea .maketree .tree .item_A2_1 {position:absolute; left:247px; bottom:164px;}
+.xmastree .eventArea .maketree .tree .item_G3_2 {position:absolute; left:105px; bottom:242px}
+.xmastree .eventArea .maketree .tree .item_E2_1 {position:absolute; left:172px; bottom:220px; transform:rotate(-5deg)}
+.xmastree .eventArea .maketree .tree .item_C2_2 {position:absolute; left:240px; bottom:227px;}
+.xmastree .eventArea .maketree .tree .item_E2_2 {position:absolute; left:49px; top:160px}
+.xmastree .eventArea .maketree .tree .item_F2_2 {position:absolute; left:150px; top:166px; transform:rotate(-30deg)}
+.xmastree .eventArea .maketree .tree .item_B3_3 {position:absolute; left:202px; top:147px; transform:rotate(5deg)}
+.xmastree .eventArea .maketree .tree .item_D3_2 {position:absolute; left:268px; top:155px; transform:rotate(25deg)}
+.xmastree .eventArea .maketree .tree .item_A2_2 {position:absolute; left:110px; top:104px;}
+.xmastree .eventArea .maketree .tree .item_G3_3 {position:absolute; left:185px; top:83px}
+.xmastree .eventArea .maketree .tree .item_D3_3 {position:absolute; left:85px; top:50px;  transform:rotate(25deg)}
+.xmastree .eventArea .maketree .tree .item_I1_1 {position:absolute; left:149px; top:0px;}
+
+.xmastree .eventArea .maketree .status li {background:url('../../images/event/20191111/line.png') 0 100% no-repeat; padding:17px 0 10px 0}
+.xmastree .eventArea .maketree .status li > * {display:inline-block; height:47px; } 
+.xmastree .eventArea .maketree .status li span {width:112px;}
+.xmastree .eventArea .maketree .status li strong {width:120px; text-align:right; font-size:60px; font-weight:400; letter-spacing:-2px}
+.xmastree .eventArea .maketree .status li.my span {background:url('../../images/event/20191111/txt_mysnow.png') 0 100% no-repeat; }
+.xmastree .eventArea .maketree .status li.use span {background:url('../../images/event/20191111/txt_usedsnow.png') 0 100% no-repeat; }
+.xmastree .eventArea .maketree .status li.my { color:#ffda47;}
+.xmastree .eventArea .maketree .status li.use { color:#869bdc;}
+.xmastree .eventArea .maketree .obj {position:absolute; bottom:20px; left:0}
+
+.xmastree .eventArea.end .maketree .status {width:290px !important;}
+.xmastree .eventArea.end .maketree .status li {background-repeat:repeat-x}
+.xmastree .eventArea.end .maketree .status li.my span { width:167px !important; background:url('../../images/event/20191111/txt_mysnow_end.png') 0 100% no-repeat;}
+
+.xmastree .eventArea .itemshop {width:714px; height:321px; background:url('../../images/event/20191111/bg_item.png') 0 0 no-repeat; margin:0 auto; box-sizing:border-box; padding:74px 20px 20px; overflow:hidden;}
+.xmastree .eventArea .itemshop li {float:left; width:134px; height:114px; background-image:url('../../images/event/20191111/item_shop.png'); background-repeat:no-repeat; position:relative; text-align:center}
+.xmastree .eventArea .itemshop li em {position:absolute; right:10px; top:8px; font-style:normal; font-weight:bold; color:#444057; font-size:13px; letter-spacing:1px}
+.xmastree .eventArea .itemshop li.tritem_01 {background-position:25px 10px}
+.xmastree .eventArea .itemshop li.tritem_02 {background-position:-106px 10px}
+.xmastree .eventArea .itemshop li.tritem_03 {background-position:-241px 10px}
+.xmastree .eventArea .itemshop li.tritem_04 {background-position:-374px 10px}
+.xmastree .eventArea .itemshop li.tritem_05 {background-position:-508px 10px}
+.xmastree .eventArea .itemshop li.tritem_06 {background-position:25px -105px}
+.xmastree .eventArea .itemshop li.tritem_07 {background-position:-106px -105px}
+.xmastree .eventArea .itemshop li.tritem_08 {background-position:-241px -105px}
+.xmastree .eventArea .itemshop li.tritem_09 {background-position:-374px -105px}
+.xmastree .eventArea .itemshop li.tritem_10 {background-position:-508px -105px}
+.xmastree .eventArea .itemshop li button {display:inline-block; width:90%; height:90%}
+
+/* notice */
+.xmastree .notice {padding:35px 30px 30px 35px; background-color:#0d1c49;}
+.xmastree .notice ul {padding-top:10px;}
+.xmastree .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.xmastree .notice li .point {color:#baccff;}
+

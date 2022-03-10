@@ -1,0 +1,325 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.newyear {position:relative} 
+.newyear  h1 {position:absolute; top:39px; left:33px;}
+.newyear .snswrap {position:absolute; top:34px; right:24px;}
+.newyear .snswrap a{display:inline-block; width:31px; height:31px; margin-left:6px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20191212/img_sns.png'); *display: inline; zoom: 1;}
+.newyear .snswrap a.fb {background-position:0 0;}
+.newyear .snswrap a.tw {background-position:-41px 0;}
+.newyear .snswrap a.kko {background-position:-82px 0;}
+.newyear .top .btn-pre-apply {position:absolute; top:682px; left:421px; display:block; width:307px; height:74px; background:url('../../images/event/20191212/btn_event_before.png') 0 0 no-repeat;}
+.newyear .top .btn-pre-apply.off {background-position:0 -76px;}
+.newyear .top .btn-apply {position:absolute; top:682px; left:421px; display:block; width:287px; height:74px; background:url('../../images/event/20191212/btn_apply.png') 0 0  no-repeat;}
+.newyear .top .btn-apply.off {background-position:0 -76px;}
+
+.newyear .top_end {position:relative}
+.newyear .top_end [class^="btn-winner"] {position:absolute; margin:30px auto 13px; display:inline-block; height:74px; background-image:url('../../images/event/20191212/btn_event_fin.png'); background-repeat:no-repeat }
+.newyear .top_end .btn-winner1 {left:228px; top:720px; width:310px; background-position:0 0}
+.newyear .top_end .btn-winner2 {left:148px; top:720px;width:470px; background-position:0 -76px}
+.newyear .top_end .btn-winner3 {left:148px; top:720px; width:470px; background-position:0 -152px}
+.newyear .top_end .cmt_end {position:absolute; left:0; top:835px; width:100%; text-align:center}
+
+
+.newyear .eventArea {background:#f7e5cd url('../../images/event/20191212/bg_event.png') 0 0 no-repeat; padding:0 0 40px}
+.newyear .eventArea.end {width:763px; height:388px; background:#f7e5cd url('../../images/event/20191212/bg_event_end.png') 0 0 no-repeat; padding-top:55px; box-sizing:border-box}
+.newyear .eventArea.end h2 {text-align:center}
+.newyear .eventArea.end .myresult {width:694px; height:186px; background:#f7e5cd url('../../images/event/20191212/bg_end_bok_board.png') 0 0 no-repeat; margin:35px auto 0; position:relative}
+.newyear .eventArea.end .myresult .mystatus {box-sizing:border-box; width:197px; padding:42px 0 0 45px}
+.newyear .eventArea.end .myresult .mystatus li {display:block; height:37px; font-size:30px; font-weight:bold; letter-spacing:-1px; padding:0 0 10px 0; line-height:37px; vertical-align:top;}
+.newyear .eventArea.end .myresult .mystatus li:first-child {background:url('../../images/event/20191212/txt_mybokmoney.png') 0 0 no-repeat;  color:#fff; }
+.newyear .eventArea.end .myresult .mystatus li:first-child:after {display:block; content:""; height:2px; width:199px; background:url('../../images/event/20191212/bg_dotline.png') 0 0 repeat-x; margin-top:13px;}
+.newyear .eventArea.end .myresult .mystatus li:last-child {background:url('../../images/event/20191212/txt_usebokmoney.png') 0 0 no-repeat; color:#beb17c; margin-top:15px}
+.newyear .eventArea.end .myresult .mystatus li span {margin-left:140px; display:inline-block; width:50px; text-align:right}
+.newyear .eventArea.end .myresult dd {position:absolute; top:85px; right:50px; width:132px; text-align:center; font-size:60px; font-weight:bold; color:#f04b47;letter-spacing:-2px; }
+
+.newyear .eventArea section h3 {text-align:center;}
+.newyear .eventArea .studycard {padding:56px 0 85px}
+.newyear .eventArea .studycard h3 {padding-bottom:26px}
+.newyear .tab_stcard {width:678px; margin:0 auto; overflow:hidden}
+.newyear .tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20191212/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.newyear .tab_stcard li a {display:block; width:100%; height:100%}
+.newyear .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.newyear .tab_stcard li.tab02 {background-position:-173px 0;}
+.newyear .tab_stcard li.tab03 {background-position:-346px 0;}
+.newyear .tab_stcard li.tab04 {background-position:-519px 0;}
+.newyear .tab_stcard li.tab01:hover {background-position:0 -82px}
+.newyear .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.newyear .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.newyear .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.newyear .eventArea .sadari {position:relative}
+.newyear .eventArea .sadari .pop_result {position:absolute; top:390px; left:189px; width:414px; height:273px; background:url('../../images/event/20191212/bg_result_pop.png') 0 0 no-repeat;}
+.newyear .eventArea .sadari .pop_result p {padding:40px 0 0 0; text-align:center}
+.newyear .eventArea .sadari .pop_result p.los {padding-top:25px;}
+.newyear .eventArea .sadari .pop_result button {display:block; width:137px; height:29px; background:url('../../images/event/20191212/btn_getbok_new.png') 0 0 no-repeat; margin:20px auto 0; text-indent:-9999px}
+
+.sadari .mystatus {box-sizing:border-box; border-radius:8px;width:694px; height:56px; background:#573e27; margin:10px auto 0}
+.sadari .mystatus li {display:inline-block; height:100%; line-height:56px;font-size:30px; font-weight:bold;letter-spacing:-1px}
+.sadari .mystatus li:first-child {background:url('../../images/event/20191212/txt_mybokmoney.png') 25px 50% no-repeat; padding-left:155px; min-width:60px; color:#fff; }
+.sadari .mystatus li:first-child:after {display:inline-block; content:""; width:2px; height:12px; background:url('../../images/event/20191212/bar_dot.png') 0 0 no-repeat; margin:23px 0 0 20px; vertical-align:top}
+.sadari .mystatus li:last-child {background:url('../../images/event/20191212/txt_usebokmoney.png') 0 50% no-repeat; padding-left:140px; color:#beb17c}
+
+.sadari .game_board {background:#fff; box-sizing:border-box; border-radius:8px; width:694px; height:556px; padding:30px; margin:0 auto}
+.sadari .game_board .pick_line {width:658px; height:115px; overflow:hidden}
+.sadari .game_board .pick_line li {float:left; margin-left:15px; width:76px; height:112px}
+.sadari .game_board .pick_line li button {display:block;width:100%; height:100%;}
+.sadari .game_board .pick_line li:first-child {width:77px; margin-left:7px;}
+.sadari .game_board .pick_line li.last-child {height:113px}
+.sadari .game_board .pick_line li .btn_pick_e {background:url('../../images/event/20191212/btn_pick_e.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_b {background:url('../../images/event/20191212/btn_pick_b.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_s {background:url('../../images/event/20191212/btn_pick_s.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_m {background:url('../../images/event/20191212/btn_pick_m.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_a  {background:url('../../images/event/20191212/btn_pick_a.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_t {background:url('../../images/event/20191212/btn_pick_t.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_h {background:url('../../images/event/20191212/btn_pick_h.png') 0 0 no-repeat}
+
+.sadari .game_board .pick_line li .btn_pick_e.on  {background:url('../../images/event/20191212/btn_pick_e_on.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_b.on  {background:url('../../images/event/20191212/btn_pick_b_on.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_s.on  {background:url('../../images/event/20191212/btn_pick_s_on.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_m.on {background:url('../../images/event/20191212/btn_pick_m_on.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_a.on  {background:url('../../images/event/20191212/btn_pick_a_on.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_t.on  {background:url('../../images/event/20191212/btn_pick_t_on.png') 0 0 no-repeat}
+.sadari .game_board .pick_line li .btn_pick_h.on {background:url('../../images/event/20191212/btn_pick_h_on.png') 0 0 no-repeat}
+
+.sadari .game_board .board {width:620px; height:338px;overflow:hidden; margin:-30px auto 0; background:url('../../images/event/20191212/bg_sadari.png') 50% 0  no-repeat}
+.sadari .game_board .board span {display:none;}
+.sadari .game_board .board span > span[class^="line_"] {display:block; background:#e74a52; 
+	animation-duration:0.3s; 
+	animation-iteration-count:1;
+	animation-direction:linear;
+
+	-webkit-animation-duration:0.3s; 
+	-webkit-animation-iteration-count:1;
+	-webkit-animation-direction:linear;
+
+	transition-property:all; 
+	animation-fill-mode: forwards;
+}
+.sadari .game_board .board span > span:nth-child(1) {animation-delay:0.1s; -webkit-animation-delay:0.1s; -ms-animation-delay:0.1s;}
+.sadari .game_board .board span > span:nth-child(2) {animation-delay:0.4s;-webkit-animation-delay:0.4s; -ms-animation-delay:0.4s; }
+.sadari .game_board .board span > span:nth-child(3) {animation-delay:0.7s;-webkit-animation-delay:0.7s; -ms-animation-delay:0.7s;}
+.sadari .game_board .board span > span:nth-child(4) {animation-delay:1s;-webkit-animation-delay:1s; -ms-animation-delay:1s;}
+.sadari .game_board .board span > span:nth-child(5) {animation-delay:1.3s;-webkit-animation-delay:1.3s; -ms-animation-delay:1.3s;}
+.sadari .game_board .board span > span:nth-child(6) {animation-delay:1.6s;-webkit-animation-delay:1.6s;-ms-animation-delay:1.6s;}
+.sadari .game_board .board span > span:nth-child(7) {animation-delay:1.9s;-webkit-animation-delay:1.9s;-ms-animation-delay:1.9s;}
+.sadari .game_board .board span > span:nth-child(8) {animation-delay:2.1s;-webkit-animation-delay:2.1s;-ms-animation-delay:2.1s;}
+.sadari .game_board .board span > span:nth-child(9) {animation-delay:2.4s;-webkit-animation-delay:2.4s;-ms-animation-delay:2.4s;}
+
+.sadari .game_board .board span > span:last-child {border-bottom-left-radius:10px; border-bottom-right-radius:12px}
+
+.sadari .game_board .board .line_e {min-width:378px;}
+.sadari .game_board .board .line_e .line_e_circle1 {width:10px; height:0; animation-name:bounce_circle; -webkit-animation-name:bounce_circle;   margin:0 0 0 29px;}
+.sadari .game_board .board .line_e .line_e_circle2 {width:0; height:10px; animation-name:bounce_circle2; -webkit-animation-name:bounce_circle2;  margin:-1px 0 0 29px}
+.sadari .game_board .board .line_e .line_e_circle3 {width:10px; height:0px; animation-name:bounce_circle3;-webkit-animation-name:bounce_circle3; margin:0 0 0 121px}
+.sadari .game_board .board .line_e .line_e_circle4 {width:0; height:10px; animation-name:bounce_circle4; -webkit-animation-name:bounce_circle4; margin:-10px 0 0 131px}
+.sadari .game_board .board .line_e .line_e_circle5 {width:10px; height:0; animation-name:bounce_circle5;-webkit-animation-name:bounce_circle5; margin:0 0 0 213px}
+.sadari .game_board .board .line_e .line_e_circle6 {width:0; height:10px; animation-name:bounce_circle6;-webkit-animation-name:bounce_circle6; margin:-10px 0 0 214px}
+.sadari .game_board .board .line_e .line_e_circle7 {width:10px; height:0; animation-name:bounce_circle7;-webkit-animation-name:bounce_circle7; margin:-10px 0 0 305px}
+.sadari .game_board .board .line_e .line_e_circle8 {width:0; height:10px; animation-name:bounce_circle8;-webkit-animation-name:bounce_circle8; margin:0px 0 0 305px}
+.sadari .game_board .board .line_e .line_e_circle9 {width:10px; height:0; animation-name:bounce_circle9;-webkit-animation-name:bounce_circle9; margin:-10px 0 0 397px}
+@-webkit-keyframes bounce_circle{0%{height:0}100%{height:80px}}
+@-webkit-keyframes bounce_circle2 {	0%{width:0}	100%{width:102px}}
+@-webkit-keyframes bounce_circle3 {	0%{height:0} 100%{height:56px}}
+@-webkit-keyframes bounce_circle4 {	0%{width:0}	100%{width:92px}}
+@-webkit-keyframes bounce_circle5 {	0%{height:0}100%{height:55px}}
+@-webkit-keyframes bounce_circle6 {	0%{width:0}	100%{width:95px}}
+@-webkit-keyframes bounce_circle7 {	0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle8 {	0%{width:0}	100%{width:92px}}
+@-webkit-keyframes bounce_circle9 {	0%{height:0}100%{height:83px}}
+@keyframes bounce_circle{0%{height:0}100%{height:80px}}
+@keyframes bounce_circle2 {	0%{width:0}	100%{width:102px}}
+@keyframes bounce_circle3 {	0%{height:0} 100%{height:56px}}
+@keyframes bounce_circle4 {	0%{width:0}	100%{width:92px}}
+@keyframes bounce_circle5 {	0%{height:0}100%{height:55px}}
+@keyframes bounce_circle6 {	0%{width:0}	100%{width:95px}}
+@keyframes bounce_circle7 {	0%{height:0}100%{height:57px}}
+@keyframes bounce_circle8 {	0%{width:0}	100%{width:92px}}
+@keyframes bounce_circle9 {	0%{height:0}100%{height:83px}}
+
+.sadari .game_board .board .line_b {min-width:194px }
+.sadari .game_board .board .line_b .line_b_circle1 {width:10px; height:0; animation-name:bounce_circle_b1; -webkit-animation-name:bounce_circle_b1; margin:0 0 0 121px}
+.sadari .game_board .board .line_b .line_b_circle2 {width:0; height:10px; animation-name:bounce_circle_b2;  transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_b2; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:9px 0 0 131px; }
+.sadari .game_board .board .line_b .line_b_circle3 {width:10px; height:0; animation-name:bounce_circle_b3;   -webkit-animation-name:bounce_circle_b3; margin:-20px 0 0 29px;}
+.sadari .game_board .board .line_b .line_b_circle4 {width:0; height:10px; animation-name:bounce_circle_b4; -webkit-animation-name:bounce_circle_b4; margin:-1px 0 0 29px; }
+.sadari .game_board .board .line_b .line_b_circle5 {width:10px; height:0; animation-name:bounce_circle_b5;-webkit-animation-name:bounce_circle_b5; margin:-10px 0 0 121px;}
+.sadari .game_board .board .line_b .line_b_circle6 {width:0; height:11px; animation-name:bounce_circle_b6;-webkit-animation-name:bounce_circle_b6; margin:0px 0 0 121px;}
+.sadari .game_board .board .line_b .line_b_circle7 {width:10px; height:0; animation-name:bounce_circle_b7;-webkit-animation-name:bounce_circle_b7; margin:-10px 0 0 213px;}
+@-webkit-keyframes bounce_circle_b1 {0%{height:0}100%{height:80px}}
+@-webkit-keyframes bounce_circle_b2 {	0%{width:0} 100%{width:102px;}}
+@-webkit-keyframes bounce_circle_b3 {0%{height:0}100%{height:112px}}
+@-webkit-keyframes bounce_circle_b4 {	0%{width:0} 100%{width:92px;}}
+@-webkit-keyframes bounce_circle_b5 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_b6 {	0%{width:0} 100%{width:102px;}}
+@-webkit-keyframes bounce_circle_b7 {0%{height:0}100%{height:78px}}
+@keyframes bounce_circle_b1 {0%{height:0}100%{height:80px}}
+@keyframes bounce_circle_b2 {	0%{width:0} 100%{width:102px;}}
+@keyframes bounce_circle_b3 {0%{height:0}100%{height:112px}}
+@keyframes bounce_circle_b4 {	0%{width:0} 100%{width:92px;}}
+@keyframes bounce_circle_b5 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_b6 {	0%{width:0} 100%{width:102px;}}
+@keyframes bounce_circle_b7 {0%{height:0}100%{height:78px}}
+
+.sadari .game_board .board .line_s {min-width:378px}
+.sadari .game_board .board .line_s .line_s_circle1 {width:10px; height:0; animation-name:bounce_circle_s1; -webkit-animation-name:bounce_circle_s1; margin:0 0 0 213px;}
+.sadari .game_board .board .line_s .line_s_circle2 {width:0; height:10px; animation-name:bounce_circle_s2; -webkit-animation-name:bounce_circle_s2;  margin:0 0 0 213px;}
+.sadari .game_board .board .line_s .line_s_circle3 {width:10px; height:0; animation-name:bounce_circle_s3;-webkit-animation-name:bounce_circle_s3; margin:-10px 0 0 305px;}
+.sadari .game_board .board .line_s .line_s_circle4 {width:0; height:10px; animation-name:bounce_circle_s4;-webkit-animation-name:bounce_circle_s4; margin:0 0 0 305px;}
+.sadari .game_board .board .line_s .line_s_circle5 {width:10px; height:0; animation-name:bounce_circle_s5;-webkit-animation-name:bounce_circle_s5; margin:-10px 0 0 397px;}
+.sadari .game_board .board .line_s .line_s_circle6 {width:0; height:10px; animation-name:bounce_circle_s6;-webkit-animation-name:bounce_circle_s6; margin:0 0 0 397px;}
+.sadari .game_board .board .line_s .line_s_circle7 {width:10px; height:0; animation-name:bounce_circle_s7;-webkit-animation-name:bounce_circle_s7; margin:0 0 0 489px;}
+.sadari .game_board .board .line_s .line_s_circle8 {width:0; height:10px; animation-name:bounce_circle_s8;-webkit-animation-name:bounce_circle_s8; margin:-10px 0 0 489px;}
+.sadari .game_board .board .line_s .line_s_circle9 {width:10px; height:0; animation-name:bounce_circle_s9;-webkit-animation-name:bounce_circle_s9; margin:-10px 0 0 581px;}
+@-webkit-keyframes bounce_circle_s1 {0%{height:0}100%{height:79px}}
+@-webkit-keyframes bounce_circle_s2 {0%{width:0}100%{width:93px}}
+@-webkit-keyframes bounce_circle_s3 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_s4 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_s5 {0%{height:0}100%{height:55px}}
+@-webkit-keyframes bounce_circle_s6 {0%{width:0}100%{width:102px}}
+@-webkit-keyframes bounce_circle_s7 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_s8 {0%{width:0}100%{width:93px}}
+@-webkit-keyframes bounce_circle_s9 {0%{height:0}100%{height:78px}}
+@keyframes bounce_circle_s1 {0%{height:0}100%{height:79px}}
+@keyframes bounce_circle_s2 {0%{width:0}100%{width:93px}}
+@keyframes bounce_circle_s3 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_s4 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_s5 {0%{height:0}100%{height:55px}}
+@keyframes bounce_circle_s6 {0%{width:0}100%{width:102px}}
+@keyframes bounce_circle_s7 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_s8 {0%{width:0}100%{width:93px}}
+@keyframes bounce_circle_s9 {0%{height:0}100%{height:78px}}
+
+.sadari .game_board .board .line_m {min-width:286px}
+.sadari .game_board .board .line_m .line_m_circle1 {width:10px; height:0; animation-name:bounce_circle_m1; -webkit-animation-name:bounce_circle_m1; margin:0 0 0 305px;}
+.sadari .game_board .board .line_m .line_m_circle2 {width:0; height:10px; animation-name:bounce_circle_m2; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_m2; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 305px;}
+.sadari .game_board .board .line_m .line_m_circle3 {width:10px; height:0; animation-name:bounce_circle_m3; -webkit-animation-name:bounce_circle_m3; margin:-20px 0 0 213px}
+.sadari .game_board .board .line_m .line_m_circle4 {width:0; height:10px; animation-name:bounce_circle_m4; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_m4; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 213px;}
+.sadari .game_board .board .line_m .line_m_circle5 {width:10px; height:0; animation-name:bounce_circle_m5; -webkit-animation-name:bounce_circle_m5; margin:-20px 0 0 121px}
+.sadari .game_board .board .line_m .line_m_circle6 {width:0; height:10px; animation-name:bounce_circle_m6; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_m6; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 121px;}
+.sadari .game_board .board .line_m .line_m_circle7 {width:10px; height:0; animation-name:bounce_circle_m7; -webkit-animation-name:bounce_circle_m7;  margin:-20px 0 0 29px}
+@-webkit-keyframes bounce_circle_m1 {0%{height:0}100%{height:89px}}
+@-webkit-keyframes bounce_circle_m2 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_m3 {0%{height:0}100%{height:67px}}
+@-webkit-keyframes bounce_circle_m4 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_m5 {0%{height:0}100%{height:65px}}
+@-webkit-keyframes bounce_circle_m6 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_m7 {0%{height:0}100%{height:135px}}
+@keyframes bounce_circle_m1 {0%{height:0}100%{height:89px}}
+@keyframes bounce_circle_m2 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_m3 {0%{height:0}100%{height:67px}}
+@keyframes bounce_circle_m4 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_m5 {0%{height:0}100%{height:65px}}
+@keyframes bounce_circle_m6 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_m7 {0%{height:0}100%{height:135px}}
+
+.sadari .game_board .board .line_a {min-width:194px}
+.sadari .game_board .board .line_a .line_a_circle1 {width:10px; height:0; animation-name:bounce_circle_a1; -webkit-animation-name:bounce_circle_a1; margin:0 0 0 397px}
+.sadari .game_board .board .line_a .line_a_circle2 {width:0; height:10px; animation-name:bounce_circle_a2; -webkit-animation-name:bounce_circle_a2; margin:0 0 0 397px}
+.sadari .game_board .board .line_a .line_a_circle3 {width:10px; height:0; animation-name:bounce_circle_a3;-webkit-animation-name:bounce_circle_a3; margin:0 0 0 489px}
+.sadari .game_board .board .line_a .line_a_circle4 {width:0; height:10px; animation-name:bounce_circle_a4; -webkit-animation-name:bounce_circle_a4; margin:-10px 0 0 489px}
+.sadari .game_board .board .line_a .line_a_circle5 {width:10px; height:0; animation-name:bounce_circle_a5; -webkit-animation-name:bounce_circle_a5; margin:-10px 0 0 581px}
+.sadari .game_board .board .line_a .line_a_circle6 {width:0; height:10px; animation-name:bounce_circle_a6; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_a6; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:9px 0 0 591px;}
+.sadari .game_board .board .line_a .line_a_circle7 {width:10px; height:0; animation-name:bounce_circle_a7; -webkit-animation-name:bounce_circle_a7;  margin:-20px 0 0 489px}
+@-webkit-keyframes bounce_circle_a1 {0%{height:0}100%{height:79px}}
+@-webkit-keyframes bounce_circle_a2 {0%{width:0}100%{width:102px}}
+@-webkit-keyframes bounce_circle_a3 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_a4 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_a5 {0%{height:0}100%{height:113px}}
+@-webkit-keyframes bounce_circle_a6 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_a7 {0%{height:0}100%{height:78px}}
+@keyframes bounce_circle_a1 {0%{height:0}100%{height:79px}}
+@keyframes bounce_circle_a2 {0%{width:0}100%{width:102px}}
+@keyframes bounce_circle_a3 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_a4 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_a5 {0%{height:0}100%{height:113px}}
+@keyframes bounce_circle_a6 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_a7 {0%{height:0}100%{height:78px}}
+
+
+.sadari .game_board .board .line_t {min-width:378px}
+.sadari .game_board .board .line_t .line_t_circle1 {width:10px; height:0; animation-name:bounce_circle_t1; -webkit-animation-name:bounce_circle_t1; margin:0 0 0 489px}
+.sadari .game_board .board .line_t .line_t_circle2 {width:0; height:10px; animation-name:bounce_circle_t2; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_t2; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 489px;}
+.sadari .game_board .board .line_t .line_t_circle3 {width:10px; height:0; animation-name:bounce_circle_t3; -webkit-animation-name:bounce_circle_t3; margin:-10px 0 0 397px}
+.sadari .game_board .board .line_t .line_t_circle4 {width:0; height:10px; animation-name:bounce_circle_t4; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_t4;-webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 397px; }
+.sadari .game_board .board .line_t .line_t_circle5 {width:10px; height:0; animation-name:bounce_circle_t5; -webkit-animation-name:bounce_circle_t5; margin:-10px 0 0 305px;}
+.sadari .game_board .board .line_t .line_t_circle6 {width:0; height:10px; animation-name:bounce_circle_t6; transform-origin: 0 0; transform:rotate(180deg); -webkit-animation-name:bounce_circle_t6; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 305px;}
+.sadari .game_board .board .line_t .line_t_circle7 {width:10px; height:0; animation-name:bounce_circle_t7; -webkit-animation-name:bounce_circle_t7; margin:-10px 0 0 213px;}
+.sadari .game_board .board .line_t .line_t_circle8 {width:0; height:10px; animation-name:bounce_circle_t8; transform-origin: 0 0; transform:rotate(180deg);  -webkit-animation-name:bounce_circle_t8; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 213px;}
+.sadari .game_board .board .line_t .line_t_circle9 {width:10px; height:0; animation-name:bounce_circle_t9; -webkit-animation-name:bounce_circle_t9; margin:-10px 0 0 121px;}
+@-webkit-keyframes bounce_circle_t1 {0%{height:0}100%{height:89px}}
+@-webkit-keyframes bounce_circle_t2 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_t3 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_t4 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_t5 {0%{height:0}100%{height:55px}}
+@-webkit-keyframes bounce_circle_t6 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_t7 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_t8 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_t9 {0%{height:0}100%{height:72px}}
+@keyframes bounce_circle_t1 {0%{height:0}100%{height:89px}}
+@keyframes bounce_circle_t2 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_t3 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_t4 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_t5 {0%{height:0}100%{height:55px}}
+@keyframes bounce_circle_t6 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_t7 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_t8 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_t9 {0%{height:0}100%{height:72px}}
+
+.sadari .game_board .board .line_h {min-width:286px}
+.sadari .game_board .board .line_h .line_h_circle1 {width:10px; height:0; animation-name:bounce_circle_h1; -webkit-animation-name:bounce_circle_h1; margin:0 0 0 582px;}
+.sadari .game_board .board .line_h .line_h_circle2 {width:0; height:10px; animation-name:bounce_circle_h2; transform-origin: 0 0; transform:rotate(180deg);-webkit-animation-name:bounce_circle_h2; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 582px;}
+.sadari .game_board .board .line_h .line_h_circle3 {width:10px; height:0; animation-name:bounce_circle_h3; -webkit-animation-name:bounce_circle_h3; margin:-10px 0 0 489px;}
+.sadari .game_board .board .line_h .line_h_circle4 {width:0; height:10px; animation-name:bounce_circle_h4; transform-origin: 0 0; transform:rotate(180deg);-webkit-animation-name:bounce_circle_h4; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:0 0 0 489px; }
+.sadari .game_board .board .line_h .line_h_circle5 {width:10px; height:0; animation-name:bounce_circle_h5; -webkit-animation-name:bounce_circle_h5; margin:-10px 397px;}
+.sadari .game_board .board .line_h .line_h_circle6 {width:0; height:10px; animation-name:bounce_circle_h6; transform-origin: 0 0; transform:rotate(180deg);-webkit-animation-name:bounce_circle_h6; -webkit-transform-origin: 0 0; -webkit-transform:rotate(180deg); margin:10px 0 0 397px;}
+.sadari .game_board .board .line_h .line_h_circle7 {width:10px; height:0; animation-name:bounce_circle_h7;  -webkit-animation-name:bounce_circle_h7; margin:-10px 305px}
+@-webkit-keyframes bounce_circle_h1 {0%{height:0}100%{height:146px}}
+@-webkit-keyframes bounce_circle_h2 {0%{width:0}100%{width:93px}}
+@-webkit-keyframes bounce_circle_h3 {0%{height:0}100%{height:55px}}
+@-webkit-keyframes bounce_circle_h4 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_h5 {0%{height:0}100%{height:57px}}
+@-webkit-keyframes bounce_circle_h6 {0%{width:0}100%{width:92px}}
+@-webkit-keyframes bounce_circle_h7 {0%{height:0}100%{height:70px}}
+@keyframes bounce_circle_h1 {0%{height:0}100%{height:146px}}
+@keyframes bounce_circle_h2 {0%{width:0}100%{width:93px}}
+@keyframes bounce_circle_h3 {0%{height:0}100%{height:55px}}
+@keyframes bounce_circle_h4 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_h5 {0%{height:0}100%{height:57px}}
+@keyframes bounce_circle_h6 {0%{width:0}100%{width:92px}}
+@keyframes bounce_circle_h7 {0%{height:0}100%{height:70px}}
+
+.sadari .game_board .result {width:616px; height:87px; overflow:hidden; margin:0 auto 0}
+.sadari .game_board .result li {float:left; width:62px; height:100%; margin-left:30px; position:relative;}
+.sadari .game_board .result li:first-child {margin-left:0;}
+.sadari .game_board .result li span {display:block; width:100%; height:100%;opacity:0; filter:alpha(opacity=0);}
+.sadari .game_board .result li span.dim {opacity:0.3; filter:alpha(opacity=30);}
+.sadari .game_board .result li span.sh {opacity:1; filter:alpha(opacity=100);}
+.sadari .game_board .result li:before {display:block; content:""; position:absolute; top:13px; left:0; width:60px; height:55px; background:url('../../images/event/20191212/img_qsmark.png') 50% 0px no-repeat;}
+.sadari .game_board .result.on li:before {opacity:0}
+.sadari .game_board .result li span.bok1 { background:url('../../images/event/20191212/img_bok1.png') 50% 0 no-repeat; }
+.sadari .game_board .result li span.bok3 { background:url('../../images/event/20191212/img_bok3.png') 50% 0 no-repeat;}
+.sadari .game_board .result li span.bok5 { background:url('../../images/event/20191212/img_bok5.png') 50% 0 no-repeat;}
+.sadari .game_board .result li span.bok7 { background:url('../../images/event/20191212/img_bok7.png') 50% 0 no-repeat;}
+.sadari .game_board .result li span.bok10 { background:url('../../images/event/20191212/img_bok10.png') 50% 0 no-repeat;}
+
+.sadari .game_board .result li span.los { background:url('../../images/event/20191212/img_mu.png') 50% 0 no-repeat;}
+
+.sadari .get_bok_num {width:381px; height:59px; overflow:hidden; box-sizing:border-box; margin:43px auto 0; background:url('../../images/event/20191212/my_bok.png') 0 0 no-repeat; letter-spacing:-1px}
+.sadari .get_bok_num dt {float:left; width:256px; text-indent:-9999px}
+.sadari .get_bok_num dd {float:left; width:90px; margin-left:10px; color:#ffe71a; font-size:23px;  font-weight:bold; line-height:59px}
+.sadari .get_bok_num dd strong {display:inline-block; font-size:35px; vertical-align:top}
+.sadari .get_bok_num dd span {display:inline-block; vertical-align:top; margin-top:3px}
+
+
+
+/* notice */
+.newyear .notice {padding:35px 30px 30px 35px; background-color:#0d1c49;}
+.newyear .notice ul {padding-top:10px;}
+.newyear .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.newyear .notice li .point {color:#baccff;}
+

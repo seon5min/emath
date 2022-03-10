@@ -1,0 +1,147 @@
+@charset "utf-8";
+.setGame-wrap{position: relative; width:763px; height:990px; padding-bottom: 80px; margin: 0 auto;}
+.setGame-wrap.element4{background:url('../images/setGame/bg_element4.png') no-repeat;}
+.setGame-wrap.element5{background:url('../images/setGame/bg_element5.png') no-repeat;}
+.setGame-wrap.element6{background:url('../images/setGame/bg_element6_2019.png') no-repeat;}
+.setGame-wrap .event-badge{position:absolute; top:160px; right:10px; z-index: 100;}
+
+.header h5{padding-top:30px; text-align: center;}
+.header .acc{padding-top: 34px; padding-left:83px;}
+.setGame-plate{position: absolute; top:218px; left:79px; width:600px; height: 600px;}
+.setGame-plate .item-wrap{position:relative;}
+.setGame-plate .login-state{position:absolute; top:170px; left:168px; width:270px; height:260px; background:url('../images/setGame/bg_state_logout.png') no-repeat;}
+.setGame-plate .login-state .state-bubble{position:absolute; top:22px; left:12px; width:246px; height:62px;}
+.setGame-plate .login-state.on{background:url('../images/setGame/bg_state_login.png') no-repeat;}
+.setGame-plate .login-state .btn-login{position: absolute; bottom:43px; right:54px;}
+.setGame-plate .login-state .user-info{padding-top:30px; text-align:center;}
+.setGame-plate .login-state .user-info.event{padding-top:78px;}
+.setGame-plate .login-state .user-info .event-bubble{position:absolute; top:11px; left:11px; width:249px; height:63px; background:url('../images/setGame/event_bubble.png') no-repeat;}
+.setGame-plate .login-state .user-info .event-bubble>p{padding:15px 0; text-align:center; color:#FFF; font-size:13px; font-weight:500;}
+.setGame-plate .login-state .user-info .common{color:#ffffff; font-weight:600; font-size:20px;}
+.setGame-plate .user-info .common{color:#ffffff; font-weight:600; font-size:20px;}
+.setGame-plate .user-info .name{font-size:25px;}
+.setGame-plate .user-info .nick{padding-top:6px; font-size:20px;}
+.setGame-plate .user-info .ellipsis{display:inline-block; vertical-align: top; overflow: hidden; width:100px; text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.setGame-plate .user-info .ellipsis.wide{width:200px;}
+.setGame-plate .login-state.on .basic{position:absolute; bottom:47px; left:76px; text-align: center;}
+.setGame-plate .login-state.on .bonus{position:absolute; bottom:47px; left:186px; text-align: center;}
+.setGame-plate .star{font-size:15px; color:#4b4b4b;}
+.setGame-plate .count{font-size:26px; color:#4b4b4b;}
+.setGame-plate .game{position:absolute; width:151px; height: 151px;}
+.setGame-plate .game.open.element4{background-image: url('../images/setGame/spritesheet_ele4.png'); background-repeat: no-repeat;}
+.setGame-plate .game.open.element5{background-image: url('../images/setGame/spritesheet_01.png'); background-repeat: no-repeat;}
+.setGame-plate .game.open.element6{background-image: url('../images/setGame/spritesheet_2019_02.png'); background-repeat: no-repeat;}
+.setGame-plate .blind{font:0/0 a;}
+.setGame-plate .game .bubble{position:absolute;bottom:30px; left:50px; width:53px; height:53px;}
+
+.setGame-plate .game.itme01{top:0px; left:0px;}
+.setGame-plate .game.itme02{top:0px; left:150px; }
+.setGame-plate .game.itme03{top:0px; left:300px; }
+.setGame-plate .game.itme04{top:0px; left:450px; }
+.setGame-plate .game.itme06{top:300px; left:450px;}
+.setGame-plate .game.itme05{top:150px; left:450px;}
+.setGame-plate .game.itme06{top:300px; left:450px;}
+.setGame-plate .game.itme07{top:450px; left:450px;}
+.setGame-plate .game.itme08{top:450px; left:300px;}
+.setGame-plate .game.itme09{top:450px; left:150px;}
+.setGame-plate .game.itme10{top:450px; left:0px;}
+.setGame-plate .game.itme11{top:300px; left:0px;}
+.setGame-plate .game.itme12{top:150px; left:0px;}
+.setGame-plate .game.itme01.open{background-position: -5px -5px;}
+.setGame-plate .game.itme02.open{background-position: -167px -5px;}
+.setGame-plate .game.itme03.open{background-position: -329px -5px;}
+.setGame-plate .game.itme04.open{background-position: -5px -167px;}
+.setGame-plate .game.itme05.open{background-position: -167px -167px;}
+.setGame-plate .game.itme06.open{background-position: -329px -167px;}
+.setGame-plate .game.itme07.open{background-position: -5px -329px;}
+.setGame-plate .game.itme08.open{background-position: -167px -329px;}
+.setGame-plate .game.itme09.open{background-position: -329px -329px;}
+.setGame-plate .game.itme10.open{background-position: -491px -5px;}
+.setGame-plate .game.itme11.open{background-position: -491px -167px;}
+.setGame-plate .game.itme12.open{background-position: -491px -329px;}
+
+.setGame-plate .open .arrow{position:absolute; width:26px; height: 26px; background: url('../images/setGame/arrow.png') no-repeat; z-index: 1;}
+.setGame-plate .open .arrow.right{top:62px; left:137px;background-position: -2px -32px;}
+.setGame-plate .open .arrow.down{top:137px;left:62px; background-position: -2px -2px;}
+.setGame-plate .open .arrow.left{top:62px;right:137px; background-position: -32px -2px;}
+.setGame-plate .open .arrow.up{left:62px;bottom:137px; background-position: -32px -32px;}
+
+.setGame-plate .open .btn{position: absolute; bottom:30px; left:14px; width:123px; height: 52px; background: url('../images/setGame/btn_game.png') no-repeat;}
+.setGame-plate .open .btn.start{background-position:-537px -6px;}
+.setGame-plate .open .btn.start.click{bottom:29px; left:14px; background-position:-668px -6px;}
+.setGame-plate .open .btn.play{left:16px; background-position:-5px -5px;}
+.setGame-plate .open .btn.play.click{bottom:29px; left:14px; background-position:-136px -6px;}
+.setGame-plate .open .btn.replay{bottom:31px; left:15px; background-position:-271px -5px;}
+.setGame-plate .open .btn.replay.click{bottom:29px; left:12px; background-position:-402px -6px;}
+
+
+
+.setGame-wrap.element5 {background:url('../images/setGame/bg_element5_2019.png') no-repeat;}
+.setGame-wrap.element5 .setGame-plate .login-state{position:absolute; top:478px; left:0px; width:600px; height:140px; background:url('../images/setGame/bg_state_logout_2019.png') no-repeat;}
+.setGame-wrap.element5 .setGame-plate .login-state .state-bubble{position:absolute; top:17px; left:36px; width:auto; height:auto }
+.setGame-wrap.element5 .setGame-plate .login-state.on{background:url('../images/setGame/bg_state_login_2019.png') no-repeat;}
+.setGame-wrap.element5 .setGame-plate .login-state .btn-login{position: absolute; bottom:15px; right:90px;}
+.setGame-wrap.element5 .setGame-plate .login-state .user-info{padding:35px 0 0 54px; text-align:left}
+.setGame-wrap.element5 .setGame-plate .user-info .nick{ font-size:20px;}
+.setGame-wrap.element5 .setGame-plate .login-state.on .basic{position:absolute; top:50px; left:362px; text-align: center;}
+.setGame-wrap.element5 .setGame-plate .login-state.on .bonus{position:absolute; top:50px; left:475px; text-align: center;}
+.setGame-wrap.element5 .setGame-plate .star{font-size:15px; color:#4b4b4b;}
+.setGame-wrap.element5 .setGame-plate .game{position:absolute; width:200px;}
+.setGame-wrap.element5 .setGame-plate .game.open.element5{background-image: url('../images/setGame/spritesheet_2019_01.png'); background-repeat: no-repeat;}
+.setGame-wrap.element5 .setGame-plate .game.itme01{top:0px; left:0px;}
+.setGame-wrap.element5 .setGame-plate .game.itme02{top:0px; left:200px; }
+.setGame-wrap.element5 .setGame-plate .game.itme03{top:0px; left:400px; }
+.setGame-wrap.element5 .setGame-plate .game.itme04{top:154px; left:400px; }
+.setGame-wrap.element5 .setGame-plate .game.itme05{top:154px; left:200px;}
+.setGame-wrap.element5 .setGame-plate .game.itme06{top:154px; left:0px;}
+.setGame-wrap.element5 .setGame-plate .game.itme07{top:309px; left:0px;}
+.setGame-wrap.element5 .setGame-plate .game.itme08{top:309px; left:200px;}
+.setGame-wrap.element5 .setGame-plate .game.itme09{top:309px; left:400px;}
+.setGame-wrap.element5 .setGame-plate .game.itme01.open{background-position: -1px -1px; height:154px}
+.setGame-wrap.element5 .setGame-plate .game.itme02.open{background-position: -201px -1px; height:154px}
+.setGame-wrap.element5 .setGame-plate .game.itme03.open{background-position: -401px -1px; height:154px}
+.setGame-wrap.element5 .setGame-plate .game.itme04.open{background-position: -401px -155px; height:155px}
+.setGame-wrap.element5 .setGame-plate .game.itme05.open{background-position: -201px -155px;height:155px}
+.setGame-wrap.element5 .setGame-plate .game.itme06.open{background-position: -1px -155px;height:155px}
+.setGame-wrap.element5 .setGame-plate .game.itme07.open{background-position: -1px -310px; height:155px}
+.setGame-wrap.element5 .setGame-plate .game.itme08.open{background-position: -201px -310px; height:155px}
+.setGame-wrap.element5 .setGame-plate .game.itme09.open{background-position: -401px -310px; height:155px}
+.setGame-wrap.element5 .setGame-plate .open .arrow{position:absolute; width:30px; height:30px; background: url('../images/setGame/arrow_30.png') no-repeat; z-index: 1;}
+.setGame-wrap.element5 .setGame-plate .open .arrow.right{top:62px; left:187px;background-position: 0px 0px;}
+.setGame-wrap.element5 .setGame-plate .open .arrow.down{top:137px;left:85px; background-position: -35px 0px;}
+.setGame-wrap.element5 .setGame-plate .open .arrow.left{top:62px;right:184px; background-position: -35px -35px;}
+.setGame-wrap.element5 .setGame-plate .open .arrow.up{left:62px;bottom:137px; background-position: 0px -35px;}
+.setGame-wrap.element5 .setGame-plate .open .btn{position: absolute; top:69px; left:40px; width:123px; height: 52px; background: url('../images/setGame/btn_game.png') no-repeat;}
+.setGame-wrap.element5 .setGame-plate .open .btn.start{background-position:-537px -6px;}
+.setGame-wrap.element5 .setGame-plate .open .btn.start.click{background-position:-668px -6px;}
+.setGame-wrap.element5 .setGame-plate .open .btn.play{background-position:-5px -5px;}
+.setGame-wrap.element5 .setGame-plate .open .btn.play.click{ background-position:-136px -6px;}
+.setGame-wrap.element5 .setGame-plate .open .btn.replay{background-position:-271px -5px;}
+.setGame-wrap.element5 .setGame-plate .open .btn.replay.click{ background-position:-402px -6px;}
+
+
+.setGame-wrap.element6 .setGame-plate .game.itme01{top:0px; left:0px;}
+.setGame-wrap.element6 .setGame-plate .game.itme02{top:0px; left:150px; }
+.setGame-wrap.element6 .setGame-plate .game.itme03{top:0px; left:300px; }
+.setGame-wrap.element6 .setGame-plate .game.itme04{top:0px; left:450px; }
+.setGame-wrap.element6 .setGame-plate .game.itme05{top:150px; left:450px;}
+.setGame-wrap.element6 .setGame-plate .game.itme06{top:300px; left:450px;}
+.setGame-wrap.element6 .setGame-plate .game.itme07{top:450px; left:450px;}
+.setGame-wrap.element6 .setGame-plate .game.itme08{top:450px; left:300px;}
+.setGame-wrap.element6 .setGame-plate .game.itme09{top:450px; left:150px;}
+.setGame-wrap.element6 .setGame-plate .game.itme10{top:450px; left:0px;}
+.setGame-wrap.element6 .setGame-plate .game.itme11{top:300px; left:0px;}
+.setGame-wrap.element6 .setGame-plate .game.itme12{top:150px; left:0px;}
+
+.setGame-wrap.element6 .setGame-plate .game.itme01.open{background-position: -1px -1px;}
+.setGame-wrap.element6 .setGame-plate .game.itme02.open{background-position: -151px -1px;}
+.setGame-wrap.element6 .setGame-plate .game.itme03.open{background-position: -301px -1px;}
+.setGame-wrap.element6 .setGame-plate .game.itme04.open{background-position: -451px -1px;}
+.setGame-wrap.element6 .setGame-plate .game.itme05.open{background-position: -451px -151px;}
+.setGame-wrap.element6 .setGame-plate .game.itme06.open{background-position: -451px -301px;}
+.setGame-wrap.element6 .setGame-plate .game.itme07.open{background-position: -451px -451px;}
+.setGame-wrap.element6 .setGame-plate .game.itme08.open{background-position: -301px -451px;}
+.setGame-wrap.element6 .setGame-plate .game.itme09.open{background-position: -151px -451px;}
+.setGame-wrap.element6 .setGame-plate .game.itme10.open{background-position: -1px -451px;}
+.setGame-wrap.element6 .setGame-plate .game.itme11.open{background-position: -1px -301px;}
+.setGame-wrap.element6 .setGame-plate .game.itme12.open{background-position: -1px -151px;}

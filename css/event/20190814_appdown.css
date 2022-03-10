@@ -1,0 +1,102 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.appdown {background:none; }
+.appdown .top {position:relative;}
+.appdown .top .btn-apply {position:absolute; top:492px; left:48px; display:block; width:258px; height:65px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.appdown .top .btn-winner1 {position:absolute; top:492px; left:48px; display:block; width:253px; height:62px; background:url('../../images/event/20190814/btn_event_fin.png') 0 0 no-repeat;}
+.appdown .top .btn-winner2 {position:absolute; top:492px; left:48px; display:block; width:342px; height:62px; background:url('../../images/event/20190814/btn_event_fin.png') 0-70px no-repeat;}
+.appdown .top .btn-winner3 {position:absolute; top:492px; left:48px; display:block; width:342px; height:62px; background:url('../../images/event/20190814/btn_event_fin.png') 0-140px no-repeat;}
+
+.appdown .top .cmt {position:absolute; top:775px; text-align:center; width:100%;}
+.appdown .snswrap {position:absolute; top:42px; right:40px;}
+.appdown .snswrap a{display:block; width:35px; height:35px; margin-bottom:10px;  font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png');}
+.appdown .snswrap a.fb {background-position:0 0;}
+.appdown .snswrap a.tw {background-position:-41px 0;}
+.appdown .snswrap a.kko {background-position:-82px 0;}
+
+.appdown .eventArea {background:#f4f7f9; padding:50px 0 0 0 }
+.appdown .mystatus {width:694px; height:200px; margin:0 auto; position:relative;}
+.appdown .mystatus .point_prog { position:relative;}
+.appdown .mystatus .point_prog .bar_box {width:100%; height:48px;  border:4px solid #333; border-radius:10px; box-sizing:border-box; overflow:hidden; background:url('../../images/event/20190814/bg_pgbar.png') 0 0 repeat-x; margin-top:30px}
+.appdown .mystatus .point_prog .bar_box .prog_bar{display:block; width:1px; height:100%; background:url('../../images/event/20190814/pg_bar.png') repeat-x 0 0}
+.appdown .mystatus .point_prog  .prog_bub {position:absolute; left:0; top:-35px; margin-left:-4.9%; width:73px; height:32px; background:url('../../images/event/20190814/icon_bubble.png') repeat-x 0 0; text-align:center; line-height:24px; color:#fff; font-size:12px; font-weight:600}
+.appdown .mystatus .point_prog  .prog_bub.pb100 {margin-left:-6%}
+
+.appdown .mystatus .point_prog .bar_box [class^="bar"] {display:block; position:absolute; top:0; border-right:2px solid #1d1f56; height:48px}
+.appdown .mystatus .point_prog .bar1 {left:18%}
+.appdown .mystatus .point_prog .bar2 {left:28.57%}
+.appdown .mystatus .point_prog .bar3 {left:53.5%}
+.appdown .mystatus .point_prog [class^="prog_flag"] {display:block; position:absolute; top:75px; height:60px; background-image:url('../../images/event/20190814/gift_status.png'); background-repeat: no-repeat;}
+.appdown .mystatus .point_prog .prog_flag1 {left:-3%; width:53px; background-position:0 0;}
+.appdown .mystatus .point_prog .prog_flag2 {left:14%; width:54px; background-position:-117px 0;}
+.appdown .mystatus .point_prog .prog_flag3 {left:23%; width:86px; background-position:-223px 0;}
+.appdown .mystatus .point_prog .prog_flag4 {left:50%; width:60px; background-position:-485px 0;}
+.appdown .mystatus .point_prog .prog_flag1.fin {background-position:0 -60px}
+.appdown .mystatus .point_prog .prog_flag2.fin {background-position:-117px -60px}
+.appdown .mystatus .point_prog .prog_flag3.fin {background-position:-223px -60px}
+.appdown .mystatus .point_prog .prog_flag4.fin {background-position:-485px -60px;}
+.appdown .mystatus .point_prog .prog_gift em {display:block; position:absolute; top:55px; height:11px; background-image:url('../../images/event/20190814/bg_stnum.png'); background-repeat: no-repeat;}
+.appdown .mystatus .point_prog .prog_gift em.stnum1 {left:0%;width:7px; background-position:0 0;}
+.appdown .mystatus .point_prog .prog_gift em.stnum2 {left:17%;width:17px; background-position:-117px 0;}
+.appdown .mystatus .point_prog .prog_gift em.stnum3 {left:27%; width:17px; background-position:-242px 0;}
+.appdown .mystatus .point_prog .prog_gift em.stnum4 {left:52%;width:25px; background-position:-484px 0;}
+
+
+.appdown .sns_share {height:192px; padding-top:226px; background:url('../../images/event/20190814/snsarea.png') no-repeat 0 0;}
+.appdown .sns_share .wrapper {width:632px; margin:0 auto; }
+.appdown .sns_share .wrapper > ul li {display:inline-block; width:54px; height:54px; background-image:url('../../images/event/20190814/btn_sns_share.png'); background-repeat:no-repeat; margin-right:2px}
+.appdown .sns_share .wrapper >  ul li a {width:100%; height:100%; display:inline-block}
+.appdown .sns_share .wrapper >  ul li.fb {background-position:0 0;}
+.appdown .sns_share .wrapper >  ul li.tw {background-position:-62px 0;}
+.appdown .sns_share .wrapper >  ul li.ks {background-position:-124px 0;}
+.appdown .sns_share .wrapper >  ul li.url {background-position:-185px 0;}
+.appdown .sns_share .cmt_hash {margin-top:-50px; text-align:right}
+.appdown .sns_share .inp_url {margin-top:12px; border:1px solid #fff; border-radius:9px; background:#fff;  overflow:hidden}
+.appdown .sns_share .inp_url input[type="text"]{width:511px; border:0; font-size:16px; height:60px; padding:20px 0 20px 25px; box-sizing:border-box; background:#fff;}
+.appdown .sns_share .inp_url  input[type="text"]::-webkit-input-placeholder{color:#8e8e8e; font-weight:600} /* Chrome/Opera/Safari */
+.appdown .sns_share .inp_url  input[type="text"]::-moz-placeholder{color:#8e8e8e; font-weight:600} /* Firefox 19+ */
+.appdown .sns_share .inp_url  input[type="text"]:-ms-input-placeholder{color:#8e8e8e; font-weight:600} /* IE 10+ */
+.appdown .sns_share .inp_url input[type="text"]:-moz-placeholder{color:#8e8e8e; font-weight:600} /* Firefox 18- */
+
+.appdown .sns_share .inp_url .btn_send {display:inline-block; width:55px; height:55px; background:url('../../images/event/20190814/bg_input.png') no-repeat -573px -3px; vertical-align:top; margin-top:2px}
+.appdown .sns_share .inp_url .btn_ok {display:inline-block; width:55px; height:55px; background:url('../../images/event/20190814/btn_ok.png') no-repeat 0 0; vertical-align:top; margin-top:2px}
+.appdown .sns_share .inp_url .btn_modify {display:inline-block; width:55px; height:55px; background:url('../../images/event/20190814/btn_modify.png') no-repeat 0 0; vertical-align:top; margin-top:2px}
+
+.appdown .eventArea.end {background:#0dbcad url('../../images/event/20190814/bg_event_end.png') no-repeat 0 0; padding:65px 0 50px}
+.appdown .eventArea.end .stcard_num {width:630px; height:97px; background:url('../../images/event/20190814/bg_studycardnum.png') no-repeat 0 0;  margin:-7px auto 0; overflow:hidden;  position:relative; z-index:10}
+.appdown .eventArea.end .stcard_num dt {float:left; padding-left:410px;}
+.appdown .eventArea.end .stcard_num dd {float:left; width:100px; color:#fe4241; font-weight:bold; font-size:21px;}
+.appdown .eventArea.end .stcard_num dd strong {display:inline-block; font-size:40px; font-weight:bold; margin-top:5px}
+.appdown .eventArea.end .stcard_num:after {display:block; content:""; width:74px; height:67px; position:absolute; right:20px; top:30px; background:url('../../images/event/20190814/img_obj.png') no-repeat 0 0;  }
+
+.appdown .eventArea.end .url_list {width:631px; margin:-7px auto; }
+.appdown .eventArea.end .url_list {display:block; width:631px; height:156px; padding:15px 0; background:#fff; border:1px solid #fff; border-radius:9px; position:relative; overflow:hidden; font-size:15px; color:#333}
+.appdown .eventArea.end .url_list ul {width:584px; height:154px; margin:0 auto; overflow:auto; padding-top:5px}
+.appdown .eventArea.end .url_list ul li {max-width:580px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap;margin-bottom:15px; font-weight:600}
+
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000; width:716px; height:639px; margin:-330px auto; /*padding-left:200px*/}
+.pop_sns.pop_common .popcon {width:660px; height:345px; background:#fff; border-radius:15px;}
+.pop_sns.pop_common .popcon .container {padding:35px;}
+.pop_sns .mypost {width:580px; height:180px; overflow:auto; margin:17px 0 0 9px}
+.pop_sns .mypost li {border-bottom:1px solid #d1d1d1; padding:9px 0 10px 10px; position:relative}
+.pop_sns .mypost li .del {position:absolute; right:10px; top:10px; color:#8151e2;  font-size:14px;  font-weight:600}
+.pop_sns .mypost li span {display:inline-block; max-width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; vertical-align:middle; font-size:14px; color:#333333; font-weight:600}
+.pop_sns.pop_common .btn_layerclose{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=1); opacity:1; background:transparent}
+
+/* notice */
+.appdown .notice {padding:35px 30px 30px 35px; background-color:#1c2f66;}
+.appdown .notice ul {padding-top:10px;}
+.appdown .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.appdown .notice li .point {color:#baccff;}
+

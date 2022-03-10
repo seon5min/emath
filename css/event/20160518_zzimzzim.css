@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 이벤트 */
+.event_zzim{position:relative;}
+.event_zzim .snswrap{position:absolute; top:30px; right:30px;}
+.event_zzim .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.event_zzim .snswrap .fb a{background-position:0 0;}
+.event_zzim .snswrap .tw a{background-position:-41px 0;}
+.event_zzim .snswrap .kko a{background-position:-82px 0;}
+.event_zzim .gift{position:relative;}
+.event_zzim .gift .joinbtn{position:absolute; bottom:22px; right:71px;}
+.event_zzim .cardzzim{position:relative;}
+.event_zzim .cardzzim .grade_btn{position:absolute; top:155px; left:61px; *zoom:1;}
+.event_zzim .cardzzim .grade_btn:after{content:''; clear:both; display:block;}
+.event_zzim .cardzzim .grade_btn li{float:left; margin-left:20px;}
+.event_zzim .cardzzim .grade_btn li:first-child{margin-left:0;}
+.event_zzim .cardzzim .grade_btn a{display:inline-block; height:45px; font-size:0; line-height:0;  vertical-align:top; background:url(../../images/event/20160518/btn_grade.png) no-repeat 0 0;}
+.event_zzim .cardzzim .grade_btn [data-index="1"] a{width:130px; background-position:0 0;}
+.event_zzim .cardzzim .grade_btn [data-index="1"] a.on,
+.event_zzim .cardzzim .grade_btn [data-index="1"] a:hover{background-position:0 -155px;}
+.event_zzim .cardzzim .grade_btn [data-index="2"] a{width:100px; background-position:-150px 0;}
+.event_zzim .cardzzim .grade_btn [data-index="2"] a.on,
+.event_zzim .cardzzim .grade_btn [data-index="2"] a:hover{background-position:-150px -155px;}
+.event_zzim .cardzzim .grade_btn [data-index="3"] a{width:100px; background-position:-270px 0;}
+.event_zzim .cardzzim .grade_btn [data-index="3"] a.on,
+.event_zzim .cardzzim .grade_btn [data-index="3"] a:hover{background-position:-270px -155px;}
+.event_zzim .cardzzim .grade_btn [data-index="4"] a{width:100px; background-position:-390px 0;}
+.event_zzim .cardzzim .grade_btn [data-index="4"] a.on,
+.event_zzim .cardzzim .grade_btn [data-index="4"] a:hover{background-position:-390px -155px;}
+.event_zzim .cardzzim .grade_btn [data-index="5"] a{width:130px; background-position:-510px 0;}
+.event_zzim .cardzzim .grade_btn [data-index="5"] a.on,
+.event_zzim .cardzzim .grade_btn [data-index="5"] a:hover{background-position:-510px -155px;}
+.event_zzim .cardzzim .mycardbtn{position:absolute; top:93px; right:60px; display:inline-block; width:71px; height:29px; font-size:0; line-height:0; background:url(../../images/event/20160518/btn_ok.png) no-repeat 0 0;}
+
+/* 이벤트 종료 */
+.event_zzim.end .gift .winbtn{position:absolute; bottom:90px; right:71px;}
+.event_zzim.end .gift .modifybtn{position:absolute; bottom:23px; right:71px;}
+.event_zzim.end .cardzzim .cnt_mycard{position:absolute; top:95px; left:670px; text-align:left; color:#ba70d1; font-size:19px; line-height:1.5; font-weight:800;}
+.event_zzim.end .cardzzim .cnt_mycard strong{font-size:20px; line-height:1.5; letter-spacing:-1px;}
+
+/* notice */
+.event_zzim .notice{padding:30px 0 25px 30px; background:#bcb8e0;}
+.event_zzim .notice .tit_notic{display:inline-block; width:137px; height:20px; margin-bottom:15px; font-size:0; line-height:0; vertical-align:top; background:url(../../images/event/20160518/txt_notice.png) no-repeat 0 0;}
+.event_zzim .notice ul{margin-left:8px;}
+.event_zzim .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#5d5c5c; letter-spacing:-1px; background:url(../../images/event/20160518/bul_notice.png) no-repeat 0 9px;}
+.event_zzim .notice li:first-child{margin-top:0;}
+.event_zzim .notice li a.point{color:#5a50ab;}

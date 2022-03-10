@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix::after { display:block; content:""; }
+.clearfix::after { clear:both; }
+
+.deco_line{ height:4px; clear:both; background:url('../images/common/deco_line.png') repeat-x;}
+.cafe_content { position:relative; padding: 0;}
+
+
+/* mathCafe1 intro */
+
+.cafe_content.intro1 { padding:12px 0 0; height:276px; background:url('../images/mathCafe/intro1_bg.png') no-repeat 0 0; }
+.cafe_content.intro1 > div { display:inline-block; vertical-align:middle; zoom:1; *display:inline;}
+.cafe_content.intro1 p { padding-left:20px; width:300px; font-size:13px; line-height:21px; font-weight:600;}
+.cafe_content.intro1 .player { position:absolute; top:25px; right:0; width:430px; }
+
+.cafe_content.intro2 { padding:16px 0 36px; background:url('../images/mathCafe/intro2_bg.png') no-repeat 0 0; }
+.cafe_content.intro2 .card_tab { position:relative; padding:22px 31px; height:390px; background:#fff; border-radius:10px; cursor:pointer; overflow:hidden;}
+.cafe_content.intro2 .card_tab .more_btn { position:absolute; top:38px; right:30px; width:58px; height:15px; background:url('../images/common/more_btn5.png') no-repeat 0 0; }
+.cafe_content.intro2 .card_tab.view { height:auto;}
+.cafe_content.intro2 .card_tab.view .more_btn { background-position: 0 -15px; }
+
+.cafe_content.intro2 ul.card_tab_menu { padding: 10px 0; border-bottom:1px solid #d6dce1; overflow:hidden; }
+.cafe_content.intro2 ul.card_tab_menu li { position:relative; float:left; padding-right:16px; font-size:15px; color:#6b6b6b; font-weight:600; cursor:pointer; background:url('../images/layout/bar_gray4.gif') no-repeat center right;}
+.cafe_content.intro2 ul.card_tab_menu li:nth-child(3) { background:none;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_ico  { margin:0 10px 0 16px; width:29px; height:27px; vertical-align:middle;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_line  { position:absolute; display:none; top:35px; width:95px; height:3px; background:url('../images/mathCafe/mathCafe_tab_line.gif') no-repeat;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_line1 { left:0; background-position:0 0;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_line2 { left:16px; background-position:0 -3px;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_line3 { left:16px; background-position:0 -6px;}
+
+.cafe_content.intro2 ul.card_tab_menu li.on span.tab_line { display:block;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_ico1 { display:inline-block; zoom:1; *display:inline; margin-left:0; background:url('../images/mathCafe/mathCafe_tab_ico.png') no-repeat 0 0;}
+.cafe_content.intro2 ul.card_tab_menu li.on span.tab_ico1 { background-position: 0 -27px;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_ico2 { display:inline-block; zoom:1; *display:inline; background:url('../images/mathCafe/mathCafe_tab_ico.png') no-repeat -29px 0;}
+.cafe_content.intro2 ul.card_tab_menu li.on span.tab_ico2 { background-position: -29px -27px;}
+.cafe_content.intro2 ul.card_tab_menu li span.tab_ico3 { display:inline-block; zoom:1; *display:inline; background:url('../images/mathCafe/mathCafe_tab_ico.png') no-repeat -58px 0;}
+.cafe_content.intro2 ul.card_tab_menu li.on span.tab_ico3 { background-position: -58px -27px;}
+.cafe_content.intro2 ul.card_tab_menu li.on { color:#000;}
+
+.cafe_content.intro2 .card_cont { padding-top:40px; width:100%;}
+.cafe_content.intro2 .card_cont > div { display:none; }
+.cafe_content.intro2 .card_cont .box_list_con li { margin-left:17px; }
+.cafe_content.intro2 .card_cont .box_list_con li.l { margin-left:0; }
+.cafe_content.intro2 .card_cont .box_list_con2019 li { margin-left:17px !important; }
+.cafe_content.intro2 .card_cont .box_list_con2019 li.l { margin-left:0 !important; }
+
+.cafe_content.intro3 { position:relative; }
+.cafe_content.intro3 > div { position:relative; padding:21px 0;}
+.cafe_content.intro3 form { display:inline-block; zoom:1; *display:inline; vertical-align:middle; }
+.cafe_content.intro3 .total { display:inline-block; zoom:1; *display:inline; vertical-align:middle; padding:0 10px; font-size:14px; font-weight:700;}
+.cafe_content.intro3 .list_search { position:absolute; right:0; top:35px;}
+.cafe_content.intro3 .list_search select{ width:100px;}
+.cafe_content.intro3 .list_search input[type="text"]{ width:230px;height:32px;line-height:32px;}
+.cafe_content.intro3 .list_search button{ width:70px;height:34px;}
+.cafe_content.intro3 .list_search button img{ position:relative;top:6px;margin-right:5px;}
+.cafe_content.intro3 .line_list_con { margin-top:20px;}
+.cafe_content.intro3 .line_list_con tbody td:first-child { padding-left:0; text-align:center;}
+.cafe_content.intro3 .line_list_con tbody td { text-align:left;}
+.cafe_content.intro3 .line_list_con tbody td.l .txt_con { padding-right:10px; }
+
+
+/* mathCafe2 poster */
+.cafe_content.poster1 { padding:12px 0 41px; background:url('../images/mathCafe/poster1_bg.png') no-repeat 0 0; }
+.cafe_content.poster1 .poster_tab { position:relative; height:126px; }
+.cafe_content.poster1 ul.poster_tab_menu { position:absolute; bottom:0; margin-left:24px; vertical-align:bottom;}
+.cafe_content.poster1 ul.poster_tab_menu li { position:absolute; bottom:0; float:left; margin:0 1px; width:138px; height:63px; background:url('../images/mathCafe/tab.png') no-repeat 0 0; cursor:pointer; text-indent: -9999px; -webkit-transition:height 1s; transition:height 1s; }
+.cafe_content.poster1 ul.poster_tab_menu li:hover { height:105px; background:url('../images/mathCafe/tab_on.png') no-repeat ; }
+.cafe_content.poster1 ul.poster_tab_menu li.on { height:105px; background:url('../images/mathCafe/tab_on.png') no-repeat ; }
+.cafe_content.poster1 ul.poster_tab_menu li.poster_tab1 {left:0; background-position:0 0; }
+.cafe_content.poster1 ul.poster_tab_menu li.poster_tab2 {left:140px; background-position:-143px 0; }
+.cafe_content.poster1 ul.poster_tab_menu li.poster_tab3 {left:280px;background-position:-286px 0; }
+.cafe_content.poster1 ul.poster_tab_menu li.poster_tab4 {left:420px;background-position:-429px 0; }
+
+.cafe_content.poster1 .poster_cont { margin-top:19px; padding: 20px 30px; height:501px; background:url('../images/mathCafe/poster_player_bg.png') no-repeat 0 0; }
+.cafe_content.poster1 .poster_cont .poster_player_title { font-size:16px; font-weight:700; color:#b4b4b4; }
+.cafe_content.poster1 .poster_cont .poster_cont_inner { display:none; }
+.cafe_content.poster1 .poster_cont .player { margin:20px auto 15px; width:702px; height:394px;}
+.cafe_content.poster1 .poster_cont ul.poster_data { padding:0 4px; overflow:hidden;}
+.cafe_content.poster1 .poster_cont ul.poster_data li { float:left; margin:0 2px; width:170px; height:49px; text-indent:-99999px; background:url('../images/mathCafe/poster_data.png') no-repeat; cursor:pointer;}
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_01 { background-position:0 0; }
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_02 { background-position:-176px 0; }
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_03 { background-position:-352px 0; }
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_04 { background-position:-528px 0; }
+/*
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_01:hover {background-position:0 -51px; }
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_02:hover { background-position:-176px -51px; }
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_03:hover { background-position:-352px -51px; }
+.cafe_content.poster1 .poster_cont ul.poster_data li.poster_data_04:hover { background-position:-528px -51px; }
+ */
+.cafe_content.poster1 .poster_cont ul.poster_data li:first-child { margin-left:1px; }
+
+.cafe_content.poster1 .mplayer-minimal.mp-is-small .mp-btn-play-puase {width:50px;}
+.cafe_content.poster2 { padding:20px 0; }
+.cafe_content.poster2 ul.download { overflow:hidden; padding:10px 9px 0 36px;}
+.cafe_content.poster2 ul.download li { position:relative; float:left; margin-right:26px; }
+.cafe_content.poster2 ul.download li.x2 { width:302px; }
+.cafe_content.poster2 ul.download li.x1 { width:168px; }
+.cafe_content.poster2 ul.download li img { width:100%; }
+.cafe_content.poster2 ul.download li span.down_ico { position:absolute; top:170px; right:18px; display:block; width:39px; height:39px; background:url('../images/mathCafe/ico_download.jpg') no-repeat 0 0;}
+.cafe_content.poster2 ul.download li p.posterTit { padding:12px 0 30px; text-align:center; color:#885a35; font-size:13px; line-height:16px; font-weight:bold;}
+
+
+/* mathCafe3 stats */
+.cafe_content.stats1 { position:relative; margin-bottom:40px; height:352px; background:url('../images/mathCafe/stats1_bg.png') no-repeat 0 0; }
+.cafe_content.stats1 a.start_btn { position:absolute; bottom:30px; right:35px; }
+.cafe_content.stats1 .player { position:absolute; top:40px; left:30px; width:500px; height:282px; }
+
+.cafe_content.stats2 { position:relative; }
+.cafe_content.stats2 .btn_bg { position:absolute; top:-45px; right:7px; width:254px; height: 117px; background:url('../images/mathCafe/btn_download_bg.png') no-repeat 0 0; }
+.cafe_content.stats2 a.download_btn { position:absolute; top:65px; right:40px; }
+
+.cafe_content.stats2 ul.step li { position:relative; height: 216px; margin:10px 0;}
+.cafe_content.stats2 ul.step li.step_01 { background:url('../images/mathCafe/stats2_bg.png') no-repeat 0 0;}
+.cafe_content.stats2 ul.step li.step_02 { background:url('../images/mathCafe/stats2_bg.png') no-repeat 0 -236px;}
+.cafe_content.stats2 ul.step li.step_03 { background:url('../images/mathCafe/stats2_bg.png') no-repeat 0 -472px;}
+.cafe_content.stats2 ul.step li.step_04 { background:url('../images/mathCafe/stats2_bg.png') no-repeat 0 -708px;}
+
+.cafe_content.stats2 ul.step li p { position:absolute; top:72px; right:32px; color:#333;; width:330px; height:120px; font-size:14px; font-weight:700; }
+
+/* mathCafe4 graph */
+.cafe_content.graph1 { position:relative; height:352px; background:url('../images/mathCafe/graph1_bg.png') no-repeat 0 0; }
+.cafe_content.graph1 a.start_btn { position:absolute; bottom:30px; right:35px; }
+.cafe_content.graph1 .player { position:absolute; top:40px; left:30px; width:500px; height:282px; }
+
+.cafe_content.graph2 { position:relative; }
+.cafe_content.graph2 a.download_btn { position:absolute; top:15px; right:35px; }
+
+.cafe_content.graph2 ul.step li { position:relative; height: 216px; margin:10px 0;}
+.cafe_content.graph2 ul.step li.step_01 { background:url('../images/mathCafe/graph2_bg.png') no-repeat 0 0;}
+.cafe_content.graph2 ul.step li.step_02 { background:url('../images/mathCafe/graph2_bg.png') no-repeat 0 -236px;}
+.cafe_content.graph2 ul.step li.step_03 { background:url('../images/mathCafe/graph2_bg.png') no-repeat 0 -472px;}
+.cafe_content.graph2 ul.step li.step_04 { background:url('../images/mathCafe/graph2_bg.png') no-repeat 0 -708px;}
+
+.cafe_content.graph2 ul.step li p { position:absolute; top:72px; right:32px; color:#333; width:330px; height:120px; font-size:14px; font-weight:700;}
+
+.cafe_content .playerDim + img {top:50%; margin-top:-44px;}
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}

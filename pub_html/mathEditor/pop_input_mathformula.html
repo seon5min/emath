@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>EBSMath 주관식 수식편집 팝업</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<link type="text/css" rel="stylesheet" href="../../css/popup.css" />
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+</head>
+
+<body>
+
+<!-- content -->
+<div class="popwrap" style="width:660px; height:500px">
+	<div class="header">
+		<h1><img src="../../images/popup/pop_logo.png" alt="EBSMath" /><span>수식입력</span></h1>
+	</div>
+	<div class="conwrap formula">
+		<div>
+			<ul class="tabmenu">
+				<li data-index="1"><a href="#none" title="수학연산자">수학연산자</a></li><!-- 선택시 a태그에 class="on" 추가 -->
+				<li data-index="2"><a href="#none" title="그리스">그리스</a></li>
+				<li data-index="3"><a href="#none" title="화살표">화살표</a></li>
+				<li data-index="4"><a href="#none" title="분수">분수</a></li>
+				<li data-index="5"><a href="#none" title="근호">근호</a></li>
+				<li data-index="6"><a href="#none" title="첨자">첨자</a></li>
+				<li data-index="7"><a href="#none" title="대형연산자">대형연산자</a></li>
+				<li data-index="8"><a href="#none" title="대괄호">대괄호</a></li>
+				<li data-index="9"><a href="#none" title="함수">함수</a></li>
+				<li data-index="10"><a href="#none" title="연산자">연산자</a></li>
+				<li data-index="11"><a href="#none" title="화살표">화살표</a></li>
+			</ul>
+			<div class="tab-conwrap">
+				<!-- 수학연산자 -->
+				<div class="tabcon f1" style="display:none">
+					<strong class="blind_con"><a href="#none">수학연산자</a></strong>
+					<ul>
+						<li><button title="플러스 마이너스"><img src="../../images/mathEditor/f1/pm.png" alt="플러스 마이너스" /></button></li>
+						<li><button title="무한대"><img src="../../images/mathEditor/f1/infty.png" alt="무한대" /></button></li>
+						<li><button title="같다"><img src="../../images/mathEditor/f1/nun.png" alt="같다" /></button></li>
+						<li><button title="같지 않다"><img src="../../images/mathEditor/f1/ne.png" alt="같지 않다" /></button></li>
+						<li><button title="곱하기"><img src="../../images/mathEditor/f1/times.png" alt="곱하기" /></button></li>
+						<li><button title="나누기"><img src="../../images/mathEditor/f1/div.png" alt="나누기" /></button></li>
+						<li><button title="계승(팩토리얼)"><img src="../../images/mathEditor/f1/fac.png" alt="계승(팩토리얼)" /></button></li>
+						<li><button title="닮음"><img src="../../images/mathEditor/f1/propto.png" alt="닮음" /></button></li>
+						<li><button title="작다"><img src="../../images/mathEditor/f1/cresc.png" alt="작다" /></button></li>
+						<li><button title="크다"><img src="../../images/mathEditor/f1/decresc.png" alt="크다" /></button></li>
+						<li><button title="작거나 같다"><img src="../../images/mathEditor/f1/le.png" alt="작거나 같다" /></button></li>
+						<li><button title="크거나 같다"><img src="../../images/mathEditor/f1/ge.png" alt="크거나 같다" /></button></li>
+						<li><button title="마이너스 플러스"><img src="../../images/mathEditor/f1/mp.png" alt="마이너스 플러스" /></button></li>
+						<li><button title="합동"><img src="../../images/mathEditor/f1/equiv.png" alt="합동" /></button></li>
+						<li><button title="합집합"><img src="../../images/mathEditor/f1/cap.png" alt="합집합" /></button></li>
+						<li><button title="교집합"><img src="../../images/mathEditor/f1/cup.png" alt="교집합" /></button></li>
+						<li><button title="공집합"><img src="../../images/mathEditor/f1/emptyset.png" alt="공집합" /></button></li>
+						<li><button title="퍼센트"><img src="../../images/mathEditor/f1/per.png" alt="퍼센트" /></button></li>
+						<li><button title="도(각도)"><img src="../../images/mathEditor/f1/deg.png" alt="도(각도)" /></button></li>
+						<li><button title="속한다"><img src="../../images/mathEditor/f1/in.png" alt="속한다" /></button></li>
+						<li><button title="속한다"><img src="../../images/mathEditor/f1/ni.png" alt="속한다" /></button></li>
+						<li><button title="이면"><img src="../../images/mathEditor/f1/rightarrow.png" alt="이면" /></button></li>
+						<li><button title="그러므로"><img src="../../images/mathEditor/f1/therefore.png" alt="그러므로" /></button></li>
+						<li><button title="덧셈"><img src="../../images/mathEditor/f1/plus.png" alt="덧셈" /></button></li>
+						<li><button title="뺄셈"><img src="../../images/mathEditor/f1/minus.png" alt="뺄셈" /></button></li>
+						<li><button title="근사값"><img src="../../images/mathEditor/f1/sim.png" alt="근사값" /></button></li>
+						<li><button title="부분 집합"><img src="../../images/mathEditor/f1/subset.png" alt="부분 집합" /></button></li>
+						<li><button title="부분 집합"><img src="../../images/mathEditor/f1/supset.png" alt="부분 집합" /></button></li>
+						<li><button title="부분 집합이거나 같음"><img src="../../images/mathEditor/f1/subseteq.png" alt="부분 집합이거나 같음" /></button></li>
+						<li><button title="포함 집합이거나 같음"><img src="../../images/mathEditor/f1/supseteq.png" alt="포함 집합이거나 같음" /></button></li>
+						<li><button title="수직(직교)"><img src="../../images/mathEditor/f1/perp.png" alt="수직(직교)" /></button></li>
+						<li><button title="적분"><img src="../../images/mathEditor/f1/int.png" alt="적분" /></button></li>
+						<li><button title="원인값"><img src="../../images/mathEditor/f1/because.png" alt="원인값" /></button></li>
+						<li><button title="작거나 같음"><img src="../../images/mathEditor/f1/le2.png" alt="작거나 같음" /></button></li>
+						<li><button title="대략"><img src="../../images/mathEditor/f1/roughly.png" alt="대략" /></button></li>
+						<li><button title="원소가 아님"><img src="../../images/mathEditor/f1/notin.png" alt="원소가 아님" /></button></li>
+						<li><button title="원소로 포함 안함"><img src="../../images/mathEditor/f1/notele.png" alt="원소로 포함 안함" /></button></li>
+						<li><button title="부분 집합이 아님"><img src="../../images/mathEditor/f1/notsubset.png" alt="부분 집합이 아님" /></button></li>
+						<li><button title="포함 집합이 아님"><img src="../../images/mathEditor/f1/notsupset.png" alt="포함 집합이 아님" /></button></li>
+						<li><button title="각"><img src="../../images/mathEditor/f1/angle.png" alt="각" /></button></li>
+					</ul>
+				</div>
+				<!-- //수학연산자 -->
+
+				<!-- 그리스 -->
+				<div class="tabcon f2" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="그리스">그리스</a></strong>
+					<ul>
+						<li><button title="알파"><img src="../../images/mathEditor/f2/alpha.png" alt="알파" /></button></li>
+						<li><button title="베타"><img src="../../images/mathEditor/f2/beta.png" alt="베타" /></button></li>
+						<li><button title="감마"><img src="../../images/mathEditor/f2/gamma.png" alt="감마" /></button></li>
+						<li><button title="델타"><img src="../../images/mathEditor/f2/delta.png" alt="델타" /></button></li>
+						<li><button title="세타"><img src="../../images/mathEditor/f2/theta.png" alt="세타" /></button></li>
+						<li><button title="파이"><img src="../../images/mathEditor/f2/pi.png" alt="파이" /></button></li>
+						<li><button title="시그마"><img src="../../images/mathEditor/f2/sigma.png" alt="시그마" /></button></li>
+						<li><button title="화이"><img src="../../images/mathEditor/f2/varphi.png" alt="화이" /></button></li>
+						<li><button title="오메가"><img src="../../images/mathEditor/f2/omega.png" alt="오메가" /></button></li>
+						<li><button title="총합기호"><img src="../../images/mathEditor/f2/B_Sigma.png" alt="총합기호" /></button></li>
+					</ul>
+				</div>
+				<!-- //그리스 -->
+
+				<!-- 화살표 -->
+				<div class="tabcon f3" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="화살표">화살표</a></strong>
+					<ul>
+						<li><button title="왼쪽 화살표"><img src="../../images/mathEditor/f3/leftarrow.png" alt="왼쪽 화살표" /></button></li>
+						<li><button title="오른쪽 화살표"><img src="../../images/mathEditor/f3/rightarrow.png" alt="오른쪽 화살표" /></button></li>
+						<li><button title="위쪽 화살표"><img src="../../images/mathEditor/f3/uparrow.png" alt="위쪽 화살표" /></button></li>
+						<li><button title="아래쪽 화살표"><img src="../../images/mathEditor/f3/downarrow.png" alt="아래쪽 화살표" /></button></li>
+						<li><button title="왼쪽/오른쪽 화살표"><img src="../../images/mathEditor/f3/leftrightarrow.png" alt="왼쪽/오른쪽 화살표" /></button></li>
+						<li><button title="위쪽/아래쪽 화살표"><img src="../../images/mathEditor/f3/updownarrow.png" alt="위쪽/아래쪽 화살표" /></button></li>
+						<li><button title="긴 오른쪽 이중 화살표"><img src="../../images/mathEditor/f3/B_Rightarrow.png" alt="긴 오른쪽 이중 화살표" /></button></li>
+						<li><button title="긴 왼쪽/오른쪽 이중 화살표"><img src="../../images/mathEditor/f3/B_Leftrightarrow.png" alt="긴 왼쪽/오른쪽 이중 화살표" /></button></li>
+					</ul>
+				</div>
+				<!-- //화살표 -->
+
+				<!-- 분수 -->
+				<div class="tabcon f4" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="분수">분수</a></strong>
+					<ul>
+						<li><button title="상하형 분수"><img src="../../images/mathEditor/f4/icon_math_0101.png" alt="상하형 분수" /></button></li>
+						<li><button title="미분"><img src="../../images/mathEditor/f4/icon_math_0102.png" alt="미분" /></button></li>
+						<li><button title="미분"><img src="../../images/mathEditor/f4/icon_math_0103.png" alt="미분" /></button></li>
+						<li><button title="파이/2"><img src="../../images/mathEditor/f4/icon_math_0106.png" alt="파이/2" /></button></li>
+					</ul>
+				</div>
+				<!-- //분수 -->
+
+				<!-- 근호 -->
+				<div class="tabcon f5" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="근호">근호</a></strong>
+					<ul>
+						<li><button title="제곱근"><img src="../../images/mathEditor/f5/icon_math_0301.png" alt="제곱근" /></button></li>
+						<li><button title="차수가 있는 근호"><img src="../../images/mathEditor/f5/icon_math_0302.png" alt="차수가 있는 근호" /></button></li>
+						<li><button title="차수가 있는 제곱근"><img src="../../images/mathEditor/f5/icon_math_0303.png" alt="차수가 있는 제곱근" /></button></li>
+						<li><button title="세제곱근"><img src="../../images/mathEditor/f5/icon_math_0304.png" alt="세제곱근" /></button></li>
+					</ul>
+				</div>
+				<!-- //근호 -->
+
+				<!-- 첨자 -->
+				<div class="tabcon f6" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="첨자">첨자</a></strong>
+					<ul>
+						<li><button title="위 첨자"><img src="../../images/mathEditor/f6/icon_math_0201.png" alt="위 첨자" /></button></li>
+						<li><button title="아래 첨자"><img src="../../images/mathEditor/f6/icon_math_0202.png" alt="아래 첨자" /></button></li>
+						<li><button title="첨자"><img src="../../images/mathEditor/f6/icon_math_0207.png" alt="첨자" /></button></li>
+					</ul>
+				</div>
+				<!-- //첨자 -->
+
+				<!-- 미적분 -->
+				<div class="tabcon f7" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="미적분">미적분</a></strong>
+					<ul>
+						<li><button title="적분"><img src="../../images/mathEditor/f7/int.png" alt="적분" /></button></li>
+						<li><button title="적분"><img src="../../images/mathEditor/f7/int2.png" alt="적분" /></button></li>
+						<li><button title="선적분"><img src="../../images/mathEditor/f7/oint.png" alt="선적분" /></button></li>
+						<li><button title="미분x"><img src="../../images/mathEditor/f7/icon_math_0419.png" alt="미분x" /></button></li>
+						<li><button title="미분y"><img src="../../images/mathEditor/f7/icon_math_0420.png" alt="미분y" /></button></li>
+						<li><button title="미분theta"><img src="../../images/mathEditor/f7/icon_math_0421.png" alt="미분theta" /></button></li>
+					</ul>
+				</div>
+				<!-- //미적분 -->
+
+				<!-- 대형연산자 -->
+				<div class="tabcon f8" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="대형연산자">대형연산자</a></strong>
+					<ul>
+						<li><button title="총합"><img src="../../images/mathEditor/f8/icon_total.png" alt="총합" /></button></li>
+						<li><button title="총합"><img src="../../images/mathEditor/f8/icon_math_0536.png" alt="총합" /></button></li>
+						<li><button title="총합"><img src="../../images/mathEditor/f8/icon_math_0537.png" alt="총합" /></button></li>
+					</ul>
+				</div>
+				<!-- //대형연산자 -->
+
+				<!-- 대괄호 -->
+				<div class="tabcon f9" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="대괄호">대괄호</a></strong>
+					<ul>
+						<li><button title="대괄호"><img src="../../images/mathEditor/f9/icon_math_0601.png" alt="대괄호" /></button></li>
+						<li><button title="대괄호"><img src="../../images/mathEditor/f9/icon_math_0602.png" alt="대괄호" /></button></li>
+						<li><button title="대괄호"><img src="../../images/mathEditor/f9/icon_math_0603.png" alt="대괄호" /></button></li>
+						<li><button title="구분 기호가 있는 대괄호"><img src="../../images/mathEditor/f9/icon_math_0614.png" alt="구분 기호가 있는 대괄호" /></button></li>
+						<li><button title="경우의 수(조건 2개)"><img src="../../images/mathEditor/f9/icon_math_0633.png" alt="경우의 수(조건 2개)" /></button></li>
+						<li><button title="경우의 수(조건 3개)"><img src="../../images/mathEditor/f9/icon_math_0634.png" alt="경우의 수(조건 3개)" /></button></li>
+						<li><button title="스택 개체"><img src="../../images/mathEditor/f9/icon_math_0636.png" alt="스택 개체" /></button></li>
+					</ul>
+				</div>
+				<!-- //대괄호 -->
+
+				<!-- 함수 -->
+				<div class="tabcon f10" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="함수">함수</a></strong>
+					<ul>
+						<li><button title="사인 함수"><img src="../../images/mathEditor/f10/icon_math_0701.png" alt="사인 함수" /></button></li>
+						<li><button title="코사인 함수"><img src="../../images/mathEditor/f10/icon_math_0702.png" alt="코사인 함수" /></button></li>
+						<li><button title="탄젠트 함수"><img src="../../images/mathEditor/f10/icon_math_0703.png" alt="탄젠트 함수" /></button></li>
+						<li><button title="코시컨트 함수"><img src="../../images/mathEditor/f10/icon_math_0704.png" alt="코시컨트 함수" /></button></li>
+						<li><button title="시컨트 함수"><img src="../../images/mathEditor/f10/icon_math_0705.png" alt="시컨트 함수" /></button></li>
+						<li><button title="코탄젠트 함수"><img src="../../images/mathEditor/f10/icon_math_0706.png" alt="코탄젠트 함수" /></button></li>
+						<li><button title="로그"><img src="../../images/mathEditor/f10/icon_math_0902.png" alt="로그" /></button></li>
+						<li><button title="로그"><img src="../../images/mathEditor/f10/icon_math_0908.png" alt="로그" /></button></li>
+						<li><button title="극한"><img src="../../images/mathEditor/f10/icon_math_0903.png" alt="극한" /></button></li>
+						<li><button title="최소값"><img src="../../images/mathEditor/f10/icon_math_0904.png" alt="최소값" /></button></li>
+						<li><button title="최대값"><img src="../../images/mathEditor/f10/icon_math_0905.png" alt="최대값" /></button></li>
+						<li><button title="자연 로그"><img src="../../images/mathEditor/f10/icon_math_0906.png" alt="자연 로그" /></button></li>
+						<li><button title="극한 예제" class="col2"><img src="../../images/mathEditor/f10/icon_math_0907.png" alt="극한 예제" /></button></li>
+					</ul>
+				</div>
+				<!-- //함수 -->
+
+				<!-- 연산자 -->
+				<div class="tabcon f11" style="display:none;">
+					<strong class="blind_con"><a href="#none" title="연산자">연산자</a></strong>
+					<ul>
+						<li><button title="점"><img src="../../images/mathEditor/f11/icon_math_0801.png" alt="점" /></button></li>
+						<li><button title="상자 테두리 수식(예제)" class="col2"><img src="../../images/mathEditor/f11/icon_border.png" alt="상자 테두리 수식(예제)" /></button></li>
+						<li><button title="ABC와 윗줄"><img src="../../images/mathEditor/f11/icon_abc.png" alt="ABC와 윗줄" /></button></li>
+						<li><button title="대괄호가 있는 빈 행렬"><img src="../../images/mathEditor/f11/icon_math_1117.png" alt="대괄호가 있는 빈 행렬" /></button></li>
+						<li><button title="희소행렬" class="col2"><img src="../../images/mathEditor/f11/icon_math_1121.png" alt="희소행렬" /></button></li>
+					</ul>
+				</div>
+				<!-- //연산자 -->
+				<script type="text/javascript">
+					//<![CDATA[
+					(function($) {
+						var $tabs = $('.tabmenu a'),
+								$cnts = $('.tab-conwrap .tabcon');
+
+								$tabs.on('click', function() {
+									var $index = $(this).parent().index();
+
+									$(this).addClass('on')
+										.parent().siblings()
+										.find('a').removeClass('on');
+
+									$cnts.eq($index)
+										.show()
+										.siblings('.tabcon')
+										.hide();
+									return false;
+								});
+					})(jQuery);
+					//]]>
+				</script>
+			</div>
+		</div>
+		<div class="answrap">
+			<div class="txtbox">
+				<textarea name="" id="" cols="30" rows="10" ></textarea>
+			</div>
+			<div class="btn">
+				<button><img src="../../images/btn/btn_insert.png" alt="삽입" /></button>
+			</div>
+		</div>
+	</div>
+	<button class="btn-close"><img src="../../images/btn/btn_close.png" alt="닫기" /></button>
+</div>
+<!-- //content -->
+
+</body>
+</html>
+
+
+
+
+
+

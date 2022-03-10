@@ -1,0 +1,83 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+
+.gameking {background:none;}
+.gameking .top {position:relative; width:763px;}
+.gameking .top .btn-apply {position:absolute; top:670px; left:380px; display:block; width:345px; height:68px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.gameking .top .btn-winner {position:absolute; top:693px; left:124px; display:block; width:515px; height:65px; background:url('../../images/event/20190115/btn_event_fin.png') 0 0 no-repeat;}
+.gameking .top .btn-inpaddr {position:absolute; top:693px; left:124px; display:block; width:515px; height:65px; background:url('../../images/event/20190115/btn_event_fin.png') 0-67px no-repeat;}
+.gameking .top .btn-nowin {position:absolute; top:693px; left:124px; display:block; width:515px; height:65px; background:url('../../images/event/20190115/btn_event_fin.png') 0-134px no-repeat;}
+.gameking .snswrap {position:absolute; top:29px; right:20px;}
+.gameking .snswrap a{display:inline-block; width:31px; height:31px; margin-left:7px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;}
+.gameking .snswrap a.fb {background-position:0 0;}
+.gameking .snswrap a.tw {background-position:-41px 0;}
+.gameking .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.gameking .eventArea. {background:url('../../images/event/20190115/bg_cont.jpg') 0 0 no-repeat;}
+.gameking .eventArea.ing {background:#09446e url('../../images/event/20190115/bg_cont.jpg') 0 100% no-repeat;padding-bottom:66px}
+.gameking .eventArea.end {background:#09446e url('../../images/event/20190115/bg_cont_end.jpg') 0 0 no-repeat; padding-bottom:56px}
+.attendCheck {width:635px; margin:0 auto; padding-top:15px}
+.attendCheck > img {margin-left:22px }
+.checkdays {display:block;width:635px; height:133px; background:url('../../images/event/20190115/cont_atcheck_bg.png') 0 0 no-repeat; margin-top:30px}
+.checkdays strong {display:inline-block; margin:52px 0 0 190px; color:#f65c16; font-size:25px; font-weight:bold; letter-spacing:-2px; vertical-align:top}
+.checkdays [class^="btn-atcheck"] {display:inline-block; margin:22px 0 0 50px; width:305px; height:65px; background-image:url('../../images/event/20190115/btn_atcheck.png'); background-repeat:no-repeat}
+.checkdays .btn-atcheck {background-position:0 0;}
+.checkdays .btn-atcheck-off {background-position:0 -75px;}
+.checkdays [class^="btn-atcheck"] + img {margin:8px 0 0 330px;}
+.checkdays_end {display:block;width:635px; height:96px; background:url('../../images/event/20190115/cont_atcheck_end_bg.png') 0 0 no-repeat; margin-top:10px}
+.checkdays_end strong {display:inline-block; margin:35px 0 0 385px; color:#f65c16; font-size:25px; font-weight:bold; letter-spacing:-2px}
+
+.rankHeader {margin-top:40px; text-align:center;}
+.rankHeader button {display:inline-block; margin-top:15px}
+.rankTable {width:721px; margin:0 auto 0; padding-top:40px}
+.rankTable:after {content:""; display:block; clear:both}
+.rankTable ul {min-width:728px;}
+.rankTable li {float:left; position:relative;}
+.rank_wrap {width:169px; height:122px; margin:0 7px 7px 0; overflow:hidden; border:3px solid #fff; border-radius:5px; background:#fff}
+.rankTable li.me .rank_wrap {background-color:#fff794}
+.rank_wrap table {margin-top:7px; text-align:center}
+.rank_wrap th {padding-bottom:5px; color:#000}
+.rank_wrap td {padding:2px 0; text-align:left}
+.rank_wrap td:first-child {text-align:center; width:21%}
+.rank_wrap td:last-child {text-align:center; width:39%}
+.me .rank_wrap tr.myrank td {background-color:#f65c16; color:#fff}
+.game_name {display:block; width:100%; height:38px; background:url('../../images/event/20190115/bg_gamename.gif') 0 0 repeat; }
+.game_name strong {margin-left:10px; color:#fff; font-size:15px; line-height:35px}
+.game_name:after {display:block; content:""; position:absolute; top:15px; right:20px; width:6px; height:10px; background:url('../../images/event/20190115/ico_arrow.png') 0 0  no-repeat;}
+.rank-flag {position:absolute; top:-35px; left:-20px; z-index:10; display:block; width:52px; height:54px;  background-image:url('../../images/event/20190115/ico_myrank.png'); background-repeat:no-repeat}
+.rank-flag.top1{background-position:0 0}
+.rank-flag.top2{background-position:-85px 0}
+.rank-flag.top3{background-position:-168px 0}
+.rank_wrap .cmt {color:#2bae9b; font-size:14px; font-weight:600; text-align:center; padding-top:15px}
+
+.btn_openpop {margin:12px 0 15px;}
+.btn_openpop button {display:inline-block; margin:0 2px }
+.pop_fulllayer .popcon{position:relative; top:50%; left:50%; width:710px; height:609px; padding-top:110px; margin-top:-350px; margin-left:-305px; background:url(../../images/event/20190115/popup/bg_pop_rankrule.png) 0 0 no-repeat; }
+.pop_fulllayer .container {width:650px; height:540px; overflow:auto; margin:0 auto;  background-color:#f7f7f7; padding-bottom:30px; text-align:center}
+.pop_myrec > .popcon {position:relative; top:50%; left:50%; width:710px; height:735px; padding-top:90px; margin-top:-350px; margin-left:-305px; background:url(../../images/event/20190115/popup/bg_pop_myrecord.png) 0 0 no-repeat; }
+.pop_myrec > .popcon > .container {width:670px; height:610px; overflow:auto; margin:0 auto; text-align:center; background:#fff}
+.pop_myrec table {width:627px; margin:0 0 20px 5px; border:3px solid #b3906f;  font-weight:600}
+.pop_myrec th, .pop_myrec td {border:1px solid #b3906f; padding:11px 0}
+.pop_myrec th {background-color:#e5d9ce; color:#000; font-size:15px}
+.pop_myrec td {color:#a1774d}
+.pop_myrec td.game_tit {background-color:#f7f3f0; color:#7e552e; font-size:13px}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0;}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+
+/* notice */
+.gameking .notice {padding:35px 39px 30px 35px; background-color:#062d49;}
+.gameking .notice ul {padding-top:10px;}
+.gameking .notice li {margin-top:5px; padding-left:15px; color:#6cb1e2; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20170911/bul.png') no-repeat 0 10px;}
+.gameking .notice li .point {color:#ffea5b;}
+

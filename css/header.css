@@ -1,0 +1,121 @@
+@charset "utf-8";
+#blank_box {width:100%; padding-top:0 !important}
+#blank_box.fix {padding-top:150px !important}
+
+/* renewal2020 :: header */
+#header {position:relative;width:100%;margin:0 auto;z-index:999}
+#header.fix { position: fixed; top: 0; left: 0; right: 0;}
+#header.renewal2020 {height:144px;background:#fff; z-index:9999; min-width:1000px; }
+#header.renewal2020 em {font-style:normal;color:#e74a3b;position:relative}
+#header.renewal2020 .topArea {width:1000px;margin:0 auto;position:relative;height:95px;}
+#header.renewal2020 .topArea h1 {position:absolute;top:28px;left:404px;}
+#header.renewal2020 .topArea .rightMenu > ul {float:left; margin-top:35px;}
+#header.renewal2020 .topArea .rightMenu ul.menu li {position:relative;float:left;padding:5px 6px; font-size:13px;font-weight:600;}
+#header.renewal2020 .topArea .rightMenu ul.menu li:first-child {padding-left:0}
+#header.renewal2020 .topArea .rightMenu ul.menu li + li {background:url('../images/layout/bar_gray4.gif') no-repeat 0 50%;}
+#header.renewal2020 .topArea .rightMenu ul.menu li .icoArrow {display:inline-block;width:8px;height:6px;margin-left:5px;background:url('../images/layout/ico_arrow.png') no-repeat 0 0;}
+#header.renewal2020 .topArea .rightMenu ul.menu li .myMenu {display:none;position:absolute;top:25px;left:50%;width:123px;height:158px;margin-left:-61px;background:url('../images/layout/bg_mymenu.png') no-repeat 0 0;z-index:999;}
+#header.renewal2020 .topArea .rightMenu ul.menu li .myMenu.v1910 {height:183px;background:url('../images/layout/bg_mymenu_new.png') no-repeat 0 0;}
+#header.renewal2020 .topArea .rightMenu ul.menu li.on .myMenu {display:block;}
+#header.renewal2020 .topArea .rightMenu ul.menu li.on .icoArrow {background-position:0 -10px;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu ul {float:none;padding:15px;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu.v1910 ul {padding:15px 10px 15px 13px;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu ul li {float:none;background:none;margin:0;padding:0;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu ul li + li {margin-top:10px;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu ul li a {font-size:12px;color:#4c4c4c;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu .logout {width:119px;line-height:32px;text-align:center;}
+#header.renewal2020 .topArea .rightMenu ul li .myMenu .logout img {vertical-align:middle;margin-right:5px;}
+#header.renewal2020 .topArea .rightMenu .searchArea {position:relative;float:right;width:242px;height:26px;margin:23px 0 0 5px;padding:7px 10px;border:1px solid #cccccc;border-radius:20px;}
+#header.renewal2020 .topArea .rightMenu .searchArea input {border:none;width:190px;}
+#header.renewal2020 .topArea .rightMenu .searchArea button {width:26px;height:26px;background:none;}
+#header.renewal2020 .topArea .rightMenu .menu i[class^="name_"] {display:inline-block; font-style:normal; width:auto; overflow:hidden;text-overflow:ellipsis;white-space:nowrap; vertical-align:top}
+#header.renewal2020 .topArea .rightMenu .menu i.name_nr {max-width:74px;}
+#header.renewal2020 .topArea .rightMenu .menu i.name_tc {max-width:40px;}
+#header.renewal2020 .topArea .rightMenu .menu i.name_sn {max-width:50px;}
+#header.renewal2020 .topArea .rightMenu .menu .vm {margin-top:-2px; vertical-align:top}
+
+/* 검색 자동완성 */
+#header.renewal2020 .autoComplete{display:none;position:absolute;top:40px;width:260px;right:0;border-radius:20px;border:solid 1px #d0d5d8;background-color:#fff;z-index:99;overflow:hidden}
+#header.renewal2020 .autoComplete .searchList{position:relative}
+#header.renewal2020 .autoComplete .searchList .searchGuide, #header.renewal2020 .autoComplete .searchList .searchEmpty {padding:15px 10px;line-height:20px}
+#header.renewal2020 .autoComplete .searchList .searchCont {padding:15px 10px;overflow:hidden;}
+#header.renewal2020 .autoComplete .searchList .searchCont  ul {width:100%;}
+#header.renewal2020 .autoComplete .searchList .searchCont  li {position:relative;margin-top:10px;}
+#header.renewal2020 .autoComplete .searchList .searchCont  li .myKeyword {color:#4c4c4c;display:inline-block;width:200px}
+#header.renewal2020 .autoComplete .searchList .searchCont  li button.btnDel {position:absolute;top:-3px;right:0; width:20px; height:20px; background:url('../images/common/del_icon.png') no-repeat 50% 50%; text-indent:-99999px}
+#header.renewal2020 .autoComplete .searchList .searchCont  li a:hover {text-decoration:underline}
+#header.renewal2020 .autoComplete .mySearch{padding:15px 10px;background-color:#fbfdff;border-top:solid 1px #d0d5d8;overflow:hidden;}
+#header.renewal2020 .autoComplete .mySearch ul {width:100%;}
+#header.renewal2020 .autoComplete .mySearch li {position:relative;margin-top:10px;}
+#header.renewal2020 .autoComplete .mySearch li .myKeyword {color:#4c4c4c;display:inline-block;width:200px}
+#header.renewal2020 .autoComplete .mySearch li button.btnDel {position:absolute;top:-3px;right:0; width:20px; height:20px; background:url('../images/common/del_icon.png') no-repeat 50% 50%; text-indent:-99999px}
+#header.renewal2020 .autoComplete .mySearch li a:hover {text-decoration:underline}
+#header.renewal2020 .autoComplete .btnClose {width:240px;padding:10px;background-color:#f7f8f9;border-top:solid 1px #d0d5d8;text-align:right;}
+#header.renewal2020 .autoComplete .btnClose img {vertical-align:top;position:relative;top:4px}
+
+#header.renewal2020 .gnbWrap {position:relative; background-color:#152941; position:relative}
+#header.renewal2020 #gnb {width:1000px; height:55px; margin:0 auto;}
+#header.renewal2020 #gnb a:hover {text-decoration:none}
+#header.renewal2020 #gnb > ul { margin:0 auto; height:55px}
+#header.renewal2020 #gnb > ul > li {float:left; }
+#header.renewal2020 #gnb ul.gnb {min-width:345px;background:none; float:left}
+#header.renewal2020 #gnb ul.gnb > li {width:72px; float:left; min-height:55px; margin-right:45px;}
+#header.renewal2020 #gnb ul.gnb > li > a {display:block; width:100%; height:55px; min-height:20px; margin:0 auto; background-image:url('../images/main/renewal2020/gnb_grade.png'); background-repeat:no-repeat}
+#header.renewal2020 #gnb ul.gnb > li a.gm1 { background-position:0 18px}
+#header.renewal2020 #gnb ul.gnb > li a.gm2 { background-position:-118px 18px}
+#header.renewal2020 #gnb ul.gnb > li a.gm3 { background-position:-235px 18px}
+#header.renewal2020 #gnb ul.gnb > li a.gm1:hover{background-position:0 -25px }
+#header.renewal2020 #gnb ul.gnb > li a.gm2:hover{background-position:-118px -25px}
+#header.renewal2020 #gnb ul.gnb > li a.gm3:hover{background-position:-235px -25px}
+
+#header.renewal2020 #gnb .moreLink { float:right; margin-top:-55px}
+#header.renewal2020 #gnb .moreLink > li {float:left}
+#header.renewal2020 #gnb .moreLink > li  > a {display:block; height:55px; background-image:url('../images/main/renewal2020/gnb_cnt.png'); background-repeat:no-repeat; text-indent:-19999px}
+#header.renewal2020 #gnb .moreLink li.mlnk01 > a {width:82px; background-position:-131px 18px; padding-right:15px}
+#header.renewal2020 #gnb .moreLink li.mlnk02 > a {width:100px;  background-position:0 18px;}
+#header.renewal2020 #gnb .moreLink > li.mlnk01:hover > a,
+#header.renewal2020 #gnb .moreLink > li.mlnk01.on > a  {background-position:-131px -24px; }
+#header.renewal2020 #gnb .moreLink > li.mlnk02:hover > a,
+#header.renewal2020 #gnb .moreLink > li.mlnk02.on > a {background-position:0px -24px; }
+#header.renewal2020 #gnb .moreLink li.mlnk02:before {content:""; display:block;float:left; height:19px;width:1px; border-right:1px solid rgba(220,220,220,0.2); margin:18px 0 0 -15px}
+
+/*서브메뉴*/
+#header.renewal2020 .subWrap {width:100%;display:none; position:absolute; top:55px; left:0; background:#fff; box-shadow: 0px 5px 10px rgba(0,0,0,0.4); overflow:hidden; }
+#header.renewal2020 .subWrap .sub h3 {display: inline-block; border-bottom: 1px solid #333; padding-bottom: 1px; color: #333; font-size: 17px;}
+#header.renewal2020 .subWrap .sub h3  + ul {padding-top:10px; padding-bottom:20px}
+#header.renewal2020 .subWrap > ul {padding-top:45px;}
+#header.renewal2020 .subWrap > ul:after {clear:both; height:0; display:block; content:"";}
+#header.renewal2020 .subWrap li  a { color:inherit}
+#header.renewal2020 .subWrap > ul {width:1000px; margin:0 auto}
+#header.renewal2020 .subWrap .grade {float:left; color:#808080}
+#header.renewal2020 .subWrap .banner {float:left; width:215px; margin-left:50px;}
+#header.renewal2020 .subWrap.ele .banner {margin-left:35px;}
+#header.renewal2020 .subWrap .banner a {width:100%; height:76px; display:block; background-image:url('../images/main/renewal2020/btn_easymath.png'); background-repeat:no-repeat; text-indent:-9999px}
+#header.renewal2020 .subWrap .banner a.easy0 {background-position:0 0;}
+#header.renewal2020 .subWrap .banner a.easy1 {background-position:0 -86px}
+#header.renewal2020 .subWrap .banner a.easy2 {background-position:0 -172px}
+
+#header.renewal2020 .subWrap.ele {padding-bottom:35px}
+#header.renewal2020 .subWrap.mid {padding-bottom:35px}
+#header.renewal2020 .subWrap.hg {padding-bottom:35px}
+
+#header.renewal2020 .subWrap.ele .grade{width:160px; margin-left:30px;}
+#header.renewal2020 .subWrap.mid .grade{width:215px; margin-left:35px;}
+#header.renewal2020 .subWrap.hg .grade{width:170px; margin-left:30px;}
+#header.renewal2020 .subWrap > ul > li.grade:first-child {margin-left:10px}
+#header.renewal2020 .subWrap .gradeTit {border-bottom:1px solid #999999; font-size:18px; color:#222222; padding-bottom:8px; font-weight:600; margin-bottom:25px; }
+#header.renewal2020 .subWrap .sub li {margin-bottom:5px; font-size:14px; font-weight:600}
+#header.renewal2020 .subWrap .sub li a {display:inline-block; background:url('../images/main/renewal2020/ico_list.png') no-repeat 2px 7px; padding-left:11px; margin-bottom:8px; color:#666666;}
+#header.renewal2020 .subWrap .sub li a:hover {background:url('../images/main/renewal2020/ico_list_red.png') no-repeat 2px 7px; color:#e74a3b; text-decoration:underline !important;}
+#header.renewal2020 .subWrap .sub li.nocnt a {color:#aaaaaa}
+#header.renewal2020 .subWrap .sub li.nocnt a:hover {background:url('../images/main/renewal2020/ico_list.png') no-repeat 2px 7px; color:#aaaaaa}
+#header.renewal2020 .aside {display:block; width:980px; margin:0 auto 0; text-align:right}
+#header.renewal2020 .aside .btn_all {display:inline-block; width:85px; height:15px; padding:8px 15px 10px 25px; border:1px solid #f59288; background:#fff url('../images/main/renewal2020/ico_allmenu.png') 15px 12px no-repeat; color:#ca2422; font-size:14px; font-weight:600;}
+
+#header.renewal2020 .subWrap .moreLinkList {padding:17px 0  3px; height:34px; overflow:hidden; text-align:right}
+#header.renewal2020 .subWrap .moreLinkList li  {display:inline-block; font-size:15px; color:#222; font-weight:600; letter-spacing:-1px}
+#header.renewal2020 .moL1 .moreLinkList li, #header.renewal2020 .moL2 .moreLinkList  li {margin-left:23px; }
+#header.renewal2020 [class^="moL"] .moreLinkList  li a:hover {color:#e74a3b }
+#header.renewal2020 + #top_visual{position:absolute;top:143px;left:0;width:100%;min-width:1000px;height:220px;background:url(../images/layout/bg_sub.png) no-repeat center 0 #b8bec8}
+#header.renewal2020 + #top_visual.series_top {top:17px;height:485px;}
+#header.renewal2020 + #top_visual.idea100_top{top:17px;height:568px;background:url(../images/layout/top_bg_idea100.png) no-repeat center 0 #ffe46b;}

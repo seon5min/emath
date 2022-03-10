@@ -1,0 +1,145 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+
+.wordPuzzle {background:none;}
+.wordPuzzle .top {position:relative; width:763px;}
+.wordPuzzle .top .btn-apply {position:absolute; top:715px; left:390px; display:block; width:305px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.wordPuzzle .top .btn-apply.before {left:219px; width:325px;}
+.wordPuzzle .snswrap {position:absolute; top:29px; right:20px;}
+.wordPuzzle .snswrap a {display:inline-block; width:37px; height:37px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;}
+/* .wordPuzzle .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;} */
+.wordPuzzle .snswrap a.fb {background-position:0 0;}
+.wordPuzzle .snswrap a.tw {background-position:-41px 0;}
+.wordPuzzle .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 상품 */
+.wordPuzzle .gift {position:relative;}
+.wordPuzzle .gift .giftSelect {position:absolute; top:164px; left:29px;}
+.wordPuzzle .gift .giftSelect li {float:left; width:213px; height:235px; margin:11px; font-size:0; text-indent:-9999px; background:url('../../images/event/20180907/img_cover_default.png') repeat 0 0;}
+.wordPuzzle .gift .giftSelect li.hover {cursor:pointer;}
+.wordPuzzle .gift .giftSelect li.hover:hover {background:url('../../images/event/20180907/img_cover_hover.png') repeat 0 0;}
+.wordPuzzle .gift .giftSelect li.select {background:url('../../images/event/20180907/img_cover_select.png') repeat 0 0;}
+.wordPuzzle .gift .giftSelect li.out {background:url('../../images/event/20180907/img_cover_out.png') repeat 0 0;}
+
+/* 이벤트 영역 */
+.wordPuzzle .eventArea > div {position:relative;}
+
+.wordPuzzle .eventArea .cont_01 a {position:absolute; top:715px; left:390px; display:block; width:315px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.wordPuzzle .eventArea .cont_01 a.btnHind_01 {top:226px; left:61px;}
+.wordPuzzle .eventArea .cont_01 a.btnHind_02 {top:226px; left:387px;}
+
+.wordPuzzle .eventArea .cont_02 {background:url('../../images/event/20180907/bg_cont.jpg') repeat 0 0;}
+.wordPuzzle .eventArea .cont_02 .myScore {position:absolute; top:143px; left:409px; width:60px; text-align:center; font-weight:700; color:#fff; font-size:18px;}
+
+.wordPuzzle .eventArea .cont_02 .boardWrap.active_01 .board.ele {display:block;}
+.wordPuzzle .eventArea .cont_02 .boardWrap.active_01 .board.mid {display:none;}
+.wordPuzzle .eventArea .cont_02 .boardWrap.active_02 .board.ele {display:none;}
+.wordPuzzle .eventArea .cont_02 .boardWrap.active_02 .board.mid {display:block;}
+
+.wordPuzzle .eventArea .cont_02 .board {position:relative;}
+.wordPuzzle .eventArea .cont_02 .board ul.tabBtn {position:absolute; top:0; left:40px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.wordPuzzle .eventArea .cont_02 .board ul.tabBtn li {float:left; width:340px; height:64px; margin-right:3px; font-size:0; cursor:pointer;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard {position:absolute; top:93px; left:61px; width:637px; border-collapse:separate;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td {display:inline-block; float:left; width:44px; height:44px; margin:5px 0 0 5px; background:url('../../images/event/20180907/bg_block.png') no-repeat 0 0; *display:inline; zoom:1;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td input {width:44px; height:44px; border:none; padding:0; font-size:18px; line-height:44px; font-weight:bold; color:#212121; text-align:center; background:none;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.error input {color:#fff;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num1 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 0;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num2 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -50px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num3 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -100px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num4 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -150px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num5 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -200px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num6 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -250px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num7 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -300px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num8 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -350px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num9 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -400px;}
+.wordPuzzle .eventArea .cont_02 .board table.wordBoard td.num10 input {background:url('../../images/event/20180907/ico_num.png') no-repeat 0 -450px;}
+
+.wordPuzzle .eventArea .cont_02 .board.ele table.wordBoard td.hor {background:url('../../images/event/20180907/bg_block_01.png') no-repeat 0 0;}
+.wordPuzzle .eventArea .cont_02 .board.ele table.wordBoard td.ver {background:url('../../images/event/20180907/bg_block_02.png') no-repeat 0 0;}
+.wordPuzzle .eventArea .cont_02 .board.mid table.wordBoard td.hor {background:url('../../images/event/20180907/bg_block_03.png') no-repeat 0 0;}
+.wordPuzzle .eventArea .cont_02 .board.mid table.wordBoard td.ver {background:url('../../images/event/20180907/bg_block_04.png') no-repeat 0 0;}
+.wordPuzzle .eventArea .cont_02 .board.ele table.wordBoard td.error,
+.wordPuzzle .eventArea .cont_02 .board.mid table.wordBoard td.error {background:url('../../images/event/20180907/bg_block_05.png') no-repeat 0 0;}
+
+.wordPuzzle .eventArea .cont_02 .board .result {position:absolute; top:85px; left:55px; display:none;}
+.wordPuzzle .eventArea .cont_02 .board .result p {position:absolute; top:200px; left:0; width:100%; text-align:center; font-weight:bold; color:#fff;}
+.wordPuzzle .eventArea .cont_02 .board .result p.score {font-size:55px;}
+.wordPuzzle .eventArea .cont_02 .board .result p.score span {font-size:80px;}
+.wordPuzzle .eventArea .cont_02 .board .result p.text {top:315px; font-size:25px; line-height:33px;}
+
+.wordPuzzle .eventArea .cont_02 .board .btnArea {position:absolute; top:763px; left:0; width:100%; text-align:center;}
+.wordPuzzle .eventArea .cont_02 .board .btnArea a {display:inline-block; margin-left:5px; *display:inline; zoom:1;}
+.wordPuzzle .eventArea .cont_02 .board .quiz {position:relative; padding:20px 0 40px; text-align:center;}
+.wordPuzzle .eventArea .cont_02 .board .quiz ul {position:absolute;}
+.wordPuzzle .eventArea .cont_02 .board .quiz ul li {position:absolute; left:0;}
+.wordPuzzle .eventArea .cont_02 .board .quiz ul li a {display:block; width:52px; height:26px; font-size:0; border-radius:13px; background-color:#f65c16; opacity:0; filter:alpha(opacity='0');}
+
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor {top:91px; left:310px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_01 {top:0;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_02 {top:42px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_03 {top:84px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_04 {top:116px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_05 {top:157px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_06 {top:208px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_07 {top:258px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_08 {top:299px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_09 {top:341px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.hor li.hint_10 {top:392px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver {top:91px; left:655px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_01 {top:0;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_02 {top:42px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_03 {top:90px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_04 {top:140px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_05 {top:191px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_06 {top:241px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_07 {top:291px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_08 {top:341px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_09 {top:382px;}
+.wordPuzzle .eventArea .cont_02 .board.ele .quiz ul.ver li.hint_10 {top:418px;}
+
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor {top:101px; left:318px;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_01 {top:0; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_02 {top:49px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_03 {top:98px; left:0;}  
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_04 {top:148px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_05 {top:198px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_06 {top:249px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_07 {top:290px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_08 {top:331px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_09 {top:385px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.hor li.hint_10 {top:435px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver {top:101px; left:648px;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_01 {top:0; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_02 {top:49px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_03 {top:98px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_04 {top:148px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_05 {top:192px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_06 {top:225px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_07 {top:268px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_08 {top:309px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_09 {top:352px; left:0;}
+.wordPuzzle .eventArea .cont_02 .board.mid .quiz ul.ver li.hint_10 {top:395px; left:0;}
+
+/* notice */
+.wordPuzzle .notice {padding:35px 39px 30px 35px; background-color:#694b29;}
+.wordPuzzle .notice ul {padding-top:10px;}
+.wordPuzzle .notice li {margin-top:5px; padding-left:15px; color:#d3b08a; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20180907/bul.png') no-repeat 0 10px;}
+.wordPuzzle .notice li .point {color:#ffec6b;}
+
+/* 이벤트 종료 */
+.wordPuzzle.end .top .btn_win {position:absolute; top:759px; left:99px; display:block; width:275px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.wordPuzzle.end .top .btn_info_insert {position:absolute; top:759px; left:384px; display:block; width:275px; height:65px; font-size:0; border-radius:32px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.wordPuzzle.end .top .myScore {position:absolute; top:343px; left:405px; font-weight:700; width:70px; text-align:center; color:#fff; font-size:22px;}
+.wordPuzzle.end .top .myScore span {font-weight:700; color:#fff; font-size:22px;}
+.wordPuzzle.end .gift .giftSelect {top:111px;}
+
+.wordPuzzle.end .eventArea .boardWrap.active_01 .board.ele {display:block;}
+.wordPuzzle.end .eventArea .boardWrap.active_01 .board.mid {display:none;}
+.wordPuzzle.end .eventArea .boardWrap.active_02 .board.ele {display:none;}
+.wordPuzzle.end .eventArea .boardWrap.active_02 .board.mid {display:block;}
+.wordPuzzle.end .eventArea .board {position:relative;}
+.wordPuzzle.end .eventArea .board ul.tabBtn {position:absolute; top:194px; left:40px;}
+.wordPuzzle.end .eventArea .board ul.tabBtn li {float:left; width:340px; height:64px; margin-right:3px; font-size:0; cursor:pointer;}

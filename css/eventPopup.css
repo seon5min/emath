@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/* 공통 */
+.pt5{padding-top:5px;}
+.mgt0{margin-top:0 !important;}
+.mgr20{margin-right:20px;}
+.mgb5{margin-bottom:5px;}
+.cl_both{clear:both; overflow:hidden;}
+.fl_l{float:left;}
+
+.popwrap{position:relative;}
+.popwrap .header{height:50px; line-height:50px; background-color:#72b1e1;}
+.popwrap.semiGame .header{background-color:#434bac;}
+.popwrap.navy .header{background-color:#434bac;}
+.popwrap .header h1{float:left; padding-top:18px; padding-left:25px; color:#fff; font-size:16px; line-height:1; }
+.popwrap .header h1 *{vertical-align:top;}
+.popwrap .header h1 span{display:inline-block; margin-left:13px; padding-left:13px; color:#fff; font-size:16px; line-height:1; background:url('../../images/popup/bar_gray.gif') no-repeat 0 50%;}
+.popwrap .header .btn-formula{position:absolute; top:12px; right:55px;}
+.popwrap button.btn-close{position:absolute; top:19px; right:25px; width:14px; height:13px; background-color:transparent;}
+.popwrap .conwrap{clear:both; overflow:hidden; padding:0 5px 5px; background-color:#72b1e1;}
+.popwrap .btn{padding-top:20px; text-align:center;}
+.popwrap .btn *{vertical-align:top;}
+.popwrap .btn button{width:94px; height:29px; margin-left:8px; background-color:#fff;}
+.popwrap .btn button:first-child{margin-left:0;}
+
+.popwrap .pop_cont{padding:0 6px 6px; background-color:#72b1e1;}
+.popwrap.semiGame .pop_cont{background-color:#434bac;}
+.popwrap.navy .pop_cont{background-color:#434bac;}
+.popwrap .conwrap{padding:20px; color:#2d2d2d; font-size:11px; word-break:break-all; word-wrap:break-word; background-color:#fff;}
+.popwrap .conwrap h3{text-align:center; padding:17px 0}
+.popwrap .conwrap h4{background:url('../images/common/popup/type01_bull.png') no-repeat 0 50%; margin-top:23px; padding-left:15px; font-size:15px; line-height:20px; font-weight:600; color:#3a4354; letter-spacing:-1px; margin-bottom:8px;}
+.popwrap .conwrap h4 strong{color:#e83e47; font-size:15px;}
+.popwrap .conwrap h4 .caution{font-size:15px; color:#e83e47; vertical-align:top;}
+.popwrap .conwrap .agr-noti{color:#25577e; font-size:12.5px; margin-bottom:10px; font-weight:600;}
+.popwrap .conwrap .goal_tb{margin-top:5px; border:0; border-collapse:collapse; border-top:2px solid #778c9d; border-bottom:2px solid #778c9d; background-color:#fff; empty-cells:show;}
+.popwrap .conwrap .goal_tb th{font-size:12px; padding:15px; border-bottom:1px solid #d1d5d8; text-align:left; line-height:1.4; background-color:#e7edf2;}
+.popwrap .conwrap .goal_tb th .textRed{color:#e83e47;}
+.popwrap .conwrap .goal_tb td{font-size:12px; padding:15px; border-bottom:1px solid #d1d5d8; line-height:1.4; text-align:left;}
+.popwrap .conwrap .goal_tb td.txtC{text-align:center;}
+.popwrap .conwrap .goal_tb td.addr div *{vertical-align:middle; line-height:20px;}
+.popwrap .conwrap .goal_tb select{height:22px; line-height:22px;}
+.popwrap .conwrap .goal_tb .must{margin-right:3px; color:#ff0a03;}
+
+.popwrap .conwrap .priv{float:left; width:290px;}
+.popwrap .conwrap .priv ul{height:130px; padding:10px; margin-top:5px; border:1px solid #d1d5d8; line-height:1.4; overflow:auto;}
+.popwrap .conwrap .priv ul li{color:#808080; font-size:12px; padding-left:14px; text-indent:-12px; letter-spacing:-1px; ;}
+.popwrap .conwrap .priv .agr-check{padding-top:7px; overflow:hidden;}
+.popwrap .conwrap .priv .agr-check *{vertical-align:middle; color:#555;}
+.popwrap .conwrap .priv .agr-check .input_wrap{float:right;}
+.popwrap .conwrap .priv .agr-check > span{ font-weight:bold; color:#4c4c4c; font-size:12px; float:left; line-height:20px;}
+.popwrap .conwrap .priv .agr-check input{margin-right:3px;}
+.popwrap .conwrap .priv .agr-check label{margin-right:5px; font-size:12px; margin-bottom:3px;}
+.popwrap .conwrap .priv .agr-check label.first{margin-right:20px;}
+.popwrap .conwrap .btnAreaPop{clear:both; padding-top:20px; text-align:center;}
+
+.popwrap .conwrap .priv.col1 {float:none;width:608px;}
+.popwrap .conwrap .priv.col1 ul{height:auto;line-height:1.2;}
+
+.popwrap.type01 h2{text-align:center; padding:5px 0 15px;}
+.popwrap.type01 h2#full{margin-left:-20px; }
+.popwrap.type01 h2 img{display:block; margin:0 auto;}
+.popwrap.type01 h2 img.cong{margin-top:10px;}
+.popwrap.type01 .input_area{overflow:hidden;}
+.popwrap.type01 .input_area .select_wrap{float:left;}
+.popwrap.type01 .input_area em{float:left; margin:8px 5px 0; font-style:inherit;}
+.popwrap.type01 .input_area input[type="text"],.popwrap.type01 .input_area input[type="readonly"] {float:left; padding:9px; border:1px solid #d7d7d7; width:60px; border-radius:3px; height:auto; line-height:1;}
+.popwrap.type01 .text_wrap{overflow:hidden;}
+.popwrap.type01 .text_wrap span{float:left; line-height:34px; font-size:12px;}
+.popwrap.type01 .text_wrap input[type="text"]{float:left; height:auto; line-height:1; padding:8px; border:1px solid #d7d7d7; border-radius:3px;}
+.popwrap.type01 .text_wrap a{float:left; margin:3px 0 0 5px;}
+.popwrap.type01 .agree{padding:10px; border:1px solid #d1d5d8;}
+.popwrap.type01 .agree li{color:#808080; font-size:12px; letter-spacing:-1px;}
+.popwrap.type01 .agree li + li {margin-top:10px;}
+.popwrap.type01 .checkAgree{margin-top:5px;}
+.popwrap.type01 .checkAgree label{font-weight:bold;}
+
+.popwrap.type02 strong{color:#25577e; font-size:14px; font-weight:600; text-align:center; display:block;}
+.popwrap.type02 .pop_cont.ok{background:url('../images/common/popup/bg_ok.png') no-repeat 0 -57px; height:100px;}
+.popwrap.type02 .pop_cont.false{background:url('../images/common/popup/bg_false.png') no-repeat 0 -57px; height:100px;}
+.popwrap.type02 .pop_cont.ok .conwrap,
+.popwrap.type02 .pop_cont.false .conwrap{background-color:transparent;}
+.popwrap.type02 .pop_cont .conwrap .text_wrap02{text-align:center; margin-top:10px;}
+.popwrap.type02 .pop_cont .conwrap .text_wrap{overflow:hidden; display:inline-block; zoom:1; *display:inline; margin-top:10px;}
+.popwrap.type02 .pop_cont .conwrap .text_wrap input[type="text"]{float:left; padding:9px; border:1px solid #d7d7d7; width:60px; border-radius:3px; height:auto; line-height:1;}
+.popwrap.type02 .pop_cont .conwrap {text-align:center;}
+.popwrap.type02 .pop_cont .conwrap .text_wrap a{float:left; margin-left:5px;}
+
+.popwrap.type03 h2{text-align:center; padding:5px 0 15px;}
+.popwrap.type03 h2 img{display:block; margin:0 auto;}
+.popwrap.type03 .graph_wrap{overflow:hidden;}
+.popwrap.type03 .graph_wrap > img{float:left;}
+.popwrap.type03 .graph_wrap .graph_in{float:left; position:relative; overflow:hidden; width:340px; height:40px; margin-top:12px; background:url('../images/common/popup/type03_bg01.png') repeat-x 0 0; border-radius:5px;}
+.popwrap.type03 .graph_wrap .graph_in [class^='graph_cont']{height:40px; font-size:16px; font-weight:600; letter-spacing:-1px; text-align:center; line-height:40px;}
+.popwrap.type03 .graph_wrap .graph_in .graph_cont1{float:left; background:url('../images/common/popup/type03_bg02.png') repeat-x 0 0; border-radius:5px 0 0 5px; color:#fff;}
+.popwrap.type03 .graph_wrap .graph_in .graph_cont2{float:right; background:url('../images/common/popup/type03_bg03.png') repeat-x 0 0; border-radius:0 5px 5px 0; color:#6d7880;}
+.popwrap.type03 .conwrap p{font-size:14px; color:#828282; text-align:center;}
+.popwrap.type03 .conwrap p strong{color:#147e87;}
+.popwrap.type03 .bt_wrap {text-align:center; margin-top:20px;}
+
+.popwrap.type04{padding-bottom:15px; background:#dee1f7;}
+.popwrap.type04 .header{background-color:#dee1f7;}
+.popwrap.type04 h1{color:#323998;}
+.popwrap.type04 h2{text-align:center; padding:5px 0 15px;}
+.popwrap.type04 .reviewGameBtn{width:652px; margin:0 auto;}
+.popwrap.type04 .reviewGameBtn li{margin-top:10px;}
+.popwrap.type04 .reviewGameBtn li:first-child{margin-top:0;}
+.popwrap.type04 .reviewGameBtn li a{display:inline-block; width:652px; height:82px; font:0/0 a; vertical-align:top;}
+.popwrap.type04 .reviewGameBtn li a.btn_choose1{background:url(../images/event/20170515/popup/btn_choose1.jpg) no-repeat 0 0;}
+.popwrap.type04 .reviewGameBtn li a.btn_choose1.on{background:url(../images/event/20170515/popup/btn_choose1_on.jpg) no-repeat 0 0;}
+.popwrap.type04 .reviewGameBtn li a.btn_choose2{background:url(../images/event/20170515/popup/btn_choose2.jpg) no-repeat 0 0;}
+.popwrap.type04 .reviewGameBtn li a.btn_choose2.on{background:url(../images/event/20170515/popup/btn_choose2_on.jpg) no-repeat 0 0;}
+.popwrap.type04 .pop_cont{width:652px; margin:0 auto; padding:0; background:none;}
+.popwrap.type04 .conwrap{border-radius:15px;}
+
+.popwrap .infobox{margin-bottom:19px; padding:13px 17px; border-radius:3px; border:2px solid #778c9d; text-align:center; color:#4c4c4c; letter-spacing:-1px;
+font-size:14px; font-weight:700; background:#f9f9f9;}
+.popwrap .infobox span{margin-left:20px; padding-left:12px; background:url(../images/event/20160805/popup/bull.png) no-repeat 0 50%;}
+.popwrap .infobox span:first-child{margin-left:0;}
+.popwrap .infobox b{color:#5995c3;}
+
+.popwrap .infotext {margin-bottom:19px; font-size: 13px; line-height: 1.6;}
+
+
+.popwrap .grade{padding-bottom:10px; border-bottom:1px solid #d1d5d8; *zoom:1;}
+.popwrap .grade:after{content:''; clear:both; display:block;}
+.popwrap .grade h4{float:left;}
+.popwrap .grade .selectbox{float:right; display:inline-block; width:150px; margin-top:20px;}
+.popwrap .grade .selectbox select{width:100%;}
+.popwrap .grade .selectbox .customSelectBoxContainer{height:24px;}
+
+
+
+
+.popwrap.new2018 .header, .popwrap.new2018 .pop_cont{background-color:#434bac;}
+.popwrap.new2018 .header h1 img {margin-right:15px;}
+.popwrap.new2018 .pop_cont h2 {padding:0; text-align:center;}
+.popwrap.new2018 .pop_cont h2 + p {font-size:13px; font-weight:bold; padding:15px 20px; margin:20px 0; line-height:1.5; letter-spacing:-1px; color:#353d98; border:1px solid #cecece; background-color:#f3f3f3;}
+.popwrap.new2018 .priv.col1 ul.agree {padding:15px;}
+.popwrap.new2018 .priv.col1 ul.agree li + li {margin-top:5px;}
+.popwrap.new2018 .textRed {color:#e83e47;}
+.popwrap.new2018 .notice {margin-top:20px; padding:15px; border:1px solid #ffc20e; background-color:#fff9e9;}
+.popwrap.new2018 .notice h4{margin-top:0; margin-bottom:4px; font-size:14px; background:url('../images/common/popup/bul.png') no-repeat 3px 7px;}
+.popwrap.new2018 .notice ul li {padding-left:10px; background:none; color:#808080; font-size:12px; letter-spacing:-1px; text-indent:-6px; line-height:1.5;}

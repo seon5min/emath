@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+
+<link rel="stylesheet" type="text/css" href="../../css/qzpaper.css" />
+
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+
+</head>
+<body>
+	<div class="create_qzpaper">
+		<!-- 좌 -->
+		<div class="col-l">
+			<h1><img src="../../images/common/img_makepp.jpg" alt="EBSMath 문제지 만들기" /></h1>
+			<ul class="list-type">
+				<li><a href="#none" class="on">리스트 이미지로 보기</a></li>
+				<li><a href="#none">리스트 텍스트로 보기</a></li>
+			</ul>
+			<div class="tab-conwrap tab1-on">
+				<!-- 이미지 보기 -->
+				<ul class="tabcon list-thumb">
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"></span>
+							<a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><img src="../../images/common/@tmp2.gif" alt="" /></span>
+							<a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><img src="../../images/common/@tmp3.gif" alt="" /></span>
+							<a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><img src="../../images/common/@tmp.gif" alt="" /></span>
+							<a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><img src="../../images/common/@tmp2.gif" alt="" /></span>
+							<a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><img src="../../images/common/@tmp3.gif" alt="" /></span>
+							<a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a>
+						</div>
+					</li>
+				</ul>
+				<!-- //이미지 보기 -->
+
+				<!-- 텍스트 보기 -->
+				<ul class="tabcon list-txt" style="display:none">
+					<li>
+						<div>
+							<span>1</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>2</span>
+							<strong><em>[문제지]</em>문자</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>3</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>4</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>5</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>6</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>7</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>8</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>9</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>10</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>30</span>
+							<strong><em>[문제]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>330</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>330</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>330</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>330</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>330</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+					<li>
+						<div>
+							<span>330</span>
+							<strong><em>[문제지]</em>문자의 사용과 식의 계산 1문자의 사용과 식의 계산 1</strong>
+						</div>
+						<span class="btn-close"><a href="#none"><img src="../../images/btn/btn_close2.gif" alt="닫기" /></a></span>
+					</li>
+				</ul>
+				<!-- 텍스트 보기 -->
+			</div>
+			<script type="text/javascript">
+				(function($) {
+					var $tabs = $('.list-type a'),
+							$cnts = $('.tab-conwrap .tabcon');
+
+					$tabs.on('click', function() {
+						var $index = $(this).parent().index();
+
+						$(this).addClass('on')
+							.parent().siblings()
+							.find('a').removeClass('on');
+
+						$cnts.eq($index)
+							.show()
+							.siblings('.tabcon')
+							.hide();
+
+						if($index == 0){
+							$cnts.parent().addClass('tab1-on');
+						}else{
+							$cnts.parent().removeClass('tab1-on');
+						}
+
+						return false;
+					});
+
+				})(jQuery);
+			</script>
+			<div class="btn_list">
+				<a href="#none"><img src="../../images/common/btn_ppmake.png" alt="문제지 추출" /></a>
+			</div>
+		</div>
+		<!-- //좌 -->
+
+		<!-- 우 -->
+		<div class="col-r">
+			<div class="srch-wrap">
+				<div class="srch">
+					<div class="srch1_l">
+						<span class="tit">교과분류</span>
+						<span>
+							<select>
+								<option value="">전체</option>
+								<option value="">중1</option>
+								<option value="">중2</option>
+								<option value="">중3</option>
+							</select>
+						</span>
+						<span>
+							<select>
+								<option value="">전체</option>
+								<option value="">수와 연산</option>
+								<option value="">문자와 식</option>
+								<option value="">함수</option>
+								<option value="">확률과 통계</option>
+							</select>
+						</span>
+						<span>
+							<select style="width:180px; min-width:180px; max-width:180px;">
+								<option value="">전체</option>
+								<option value="">도표분포표와 상대도수도표분포표와 상대도수</option>
+								<option value="">문자의 사용과 식의 계산</option>
+							</select>
+						</span>
+						<span>
+							<select>
+								<option value="">전체</option>
+								<option value="">일차식의 계산</option>
+								<option value="">일차방정식의 활용</option>
+								<option value="">함수</option>
+							</select>
+						</span>
+					</div>
+				</div>
+				<div class="srch">
+					<div class="srch2_1">
+						<span class="tit">유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;형</span>
+						<span>
+							<select>
+								<option value="">전체 콘텐츠</option>
+								<option value="" selected="selected">찜 한 학습카드</option>
+							</select>
+						</span>
+						<input type="checkbox" id="ck1" name="" /><label for="ck1">전체</label>
+						<input type="checkbox" id="ck2" name="" /><label for="ck2">문제</label>
+						<input type="checkbox" id="ck3" name="" /><label for="ck3">문제지</label>
+					</div>
+				</div>
+				<div class="srch">
+					<div class="srch3_1">
+						<span class="tit">검색조건</span>
+						<span>
+							<select>
+								<option value="">제목</option>
+								<option value="">분류</option>
+								<option value="">태그</option>
+							</select>
+						</span>
+						<label for="srch-word" class="blind">검색어</label>
+						<input type="text" id="srch-word" value="검색어를 입력해 주세요." onclick="if(this.value=='검색어를 입력해 주세요.')this.value='';" onblur="if(this.value=='')this.value='검색어를 입력해 주세요.';"/>
+						<a href="#none"><img src="../../images/btn/btn_srch.png" alt="검색" /></a>
+					</div>
+					<div class="srch3_2">
+						<div class="sort_type">
+							<input type="radio" id="r1" name="" /><label for="r1">최신순</label>
+							<input type="radio" id="r2" name="" /><label for="r2">조회순</label>
+							<input type="radio" id="r3" name="" /><label for="r3">제목순</label>
+						</div>
+						<div class="sort_con">
+							<span class="sort_page">
+								<ul>
+									<li><a class="box_btn on emt" href="javascript:fnRscList('RTP10', 'A', 't', '');"></a></li>
+									<li><a class="list_btn  emt" href="javascript:fnRscList('RTP10', 'A', 'l', '');"></a></li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="list-con">
+				<div class="noresult" style="display:none"><p>검색된 결과가 없습니다.</p></div>
+
+				<!-- 썸네일형 -->
+				<ul class="list-thumb">
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<!-- <a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a> -->
+								<a href="#none"><img src="../../images/btn/btn_put_ok.png" alt="담기완료" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp2.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야이런 수학 처음이야이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp2.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야이런 수학 처음이야이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp2.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제지</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp2.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<em>문제</em>
+							<span class="tmb-img"><a href="#none" onclick="$('#preview').show();"><img src="../../images/common/@tmp3.gif" alt="" /></a></span>
+							<p>이런 수학 처음이야</p>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<!-- //썸네일형 -->
+
+				<!-- 요약형 -->
+				<ul class="list-txt" style="display:none">
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp.gif" alt=""  /></span>
+								<em>문제</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<!-- <a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a> -->
+								<a href="#none"><img src="../../images/btn/btn_put_ok.png" alt="담기완료" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp3.gif" alt=""  /></span>
+								<em>문제</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp3.gif" alt=""  /></span>
+								<em>문제</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>이미지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp.gif" alt=""  /></span>
+								<em>문서</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+					<li>
+						<div>
+							<a href="#none" onclick="$('#preview').show();" class="thumbimg">
+								<span><img src="../../images/common/@tmp2.gif" alt=""  /></span>
+								<em>문제지</em>
+							</a>
+							<div class="txt">
+								<strong>[중학수학]문자의 사용과 식의 계산 1[중학수학]문자의 사용과 식의 계산 1</strong>
+								<p>중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기중2 모빌을 사랑한 아기</p>
+							</div>
+							<span class="btn-more">
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_put.png" alt="담기" /></a>
+								<a href="#none" target="_blank"><img src="../../images/btn/btn_detail.png" alt="상세보기" /></a>
+							</span>
+						</div>
+					</li>
+				</ul>
+				<!-- 요약형 -->
+
+				<script type="text/javascript">
+				//퍼블리싱 화면 보기용 스크립트
+				(function($) {
+					var $tabs = $('.sort_con a'),
+							$cnts = $('.list-con [class^="list-"]');
+
+					$tabs.on('click', function() {
+						var $index = $(this).parent().index();
+
+						$cnts.eq($index)
+							.show()
+							.siblings('[class^="list-"]')
+							.hide();
+
+						return false;
+					});
+
+				})(jQuery);
+			</script>
+			</div>
+		</div>
+		<!-- //우 -->
+
+	</div>
+
+	<!-- 미리보기 팝업 -->
+	<div class="preview_layer" id="preview" style="display:none">
+		<div class="preview_wrap">
+			<p>미리보기</p>
+			<div><img src="../../images/common/@img_question.jpg" alt="문제 미리보기" /></div>
+			<a href="#none" class="close-layer" onclick="$('#preview').hide();"><img src="../../images/btn/btn_close3.gif" alt="닫기" /></a>
+		</div>
+	</div>
+
+</body>
+</html>

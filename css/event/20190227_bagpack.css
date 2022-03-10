@@ -1,0 +1,143 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+
+.bagpack {background:none; }
+.bagpack .top {position:relative;}
+.bagpack .top .btn-apply {position:absolute; top:563px; left:428px; display:block; width:294px; height:70px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.bagpack .top .btn-winner {position:absolute; top:668px; left:165px; display:block; width:515px; height:71px; background:url('../../images/event/20190227/btn_event_fin.png') 0 0 no-repeat;}
+.bagpack .top .btn-inpaddr {position:absolute; top:668px; left:165px; display:block; width:515px; height:71px; background:url('../../images/event/20190227/btn_event_fin.png') 0-71px no-repeat;}
+.bagpack .top .btn-nowin {position:absolute; top:668px; left:165px; display:block; width:515px; height:71px; background:url('../../images/event/20190227/btn_event_fin.png') 0-142px no-repeat;}
+.bagpack .snswrap {position:absolute; top:29px; right:20px;}
+.bagpack .snswrap a{display:inline-block; width:31px; height:31px; margin-left:7px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;}
+.bagpack .snswrap a.fb {background-position:0 0;}
+.bagpack .snswrap a.tw {background-position:-41px 0;}
+.bagpack .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.bagpack .eventArea {position:relative}
+.bagpack .prenoti {position:relative;z-index:10}
+.bagpack .gift {position:relative}
+.bagpack .gift [class^="img_book"] {position:absolute; right:0; width:137px; height:218px; background:url('../../images/event/20190227/bg_cont_book.png') 0 0 no-repeat; z-index:1 }
+.bagpack .gift .img_book_pre {top:-50px;}
+.bagpack .gift .img_book{top:-90px;}
+.bagpack .gift .img_book_end {top:632px; right:35px; width:227px; height:160px; background:url('../../images/event/20190227/img_icecream.png') 0 0 no-repeat; z-index:1 }
+.bagpack .link {width:763px; height:660px; background:url('../../images/event/20190227/cont_link.jpg') 0 0 no-repeat; }
+.bagpack .link h3 {padding:40px 0 10px 40px; }
+.bagpack .link h4 {padding:23px 0 11px 40px;}
+
+.bagpack .link .hg_link {width:683px; height:144px; margin:0 auto; border:3px solid #13446e; border-radius:10px; background:#fff; overflow:hidden}
+.bagpack .link .hg_link:after {display:block; content:""; height:0}
+.bagpack .link .hg_link li {float:left;  height:141px; background-image:url('../../images/event/20190227/link_mh.gif'); background-repeat:no-repeat; position:relative}
+.bagpack .link .hg_link .newcard1 {width:168px; background-position:0 0}
+.bagpack .link .hg_link .newcard2 {width:170px; background-position:-168px 0}
+.bagpack .link .hg_link .newcard3 {width:171px; background-position:-336px 0}
+.bagpack .link .hg_link .newcard4 {width:168px; background-position:-509px 0}
+.bagpack .link .hg_link li span {display:inline-block; position:absolute; top:89px; height:45px; padding:12px 0 0 20px; background:#f3f3f3 url('../../images/event/20190227/link_mh_text.png'); background-repeat:no-repeat;}
+.bagpack .link .hg_link li:hover span {background-color:#f2e8bb}
+.bagpack .link .hg_link .newcard1 span {left:0;  width:147px; background-position:20px 10px;}
+.bagpack .link .hg_link .newcard2 span {left:0px;  width:152px; background-position:-151px 10px; }
+.bagpack .link .hg_link .newcard3 span {left:3px;  width:150px; background-position:-328px 10px; }
+.bagpack .link .hg_link .newcard4 span {left:1px;  width:153px; background-position:-484px 10px; }
+
+.bagpack .link .mid_link {width:680px; height:101px; background:url('../../images/event/20190227/bg_link_el.png') 0 0 no-repeat;  margin:0 auto; border:3px solid #13446e; border-radius:10px; overflow:hidden}
+.bagpack .link .mid_link:after {display:block; content:""; height:0}
+.bagpack .link .mid_link li {float:left; height:50px; background:#ffffff; margin-right:1px;}
+.bagpack .link .mid_link li:hover {background-color:#dbf9cc }
+.bagpack .link .mid_link .newcard1 {width:167px; margin-bottom:1px}
+.bagpack .link .mid_link .newcard2 {width:170px; margin-bottom:1px}
+.bagpack .link .mid_link .newcard3 {width:170px; margin-bottom:1px}
+.bagpack .link .mid_link .newcard4 {width:170px; margin-bottom:1px; margin-right:0}
+.bagpack .link .mid_link .newcard5 {width:167px}
+.bagpack .link .mid_link .newcard6 {width:170px}
+.bagpack .link .mid_link .newcard7 {width:170px}
+.bagpack .link .mid_link .newcard8 {width:170px; margin-right:0}
+
+.bagpack .link .mid_link li a {display:block;  text-align:center; height:31px; padding-top:19px; }
+.bagpack .link .mid_link li span {display:inline-block; height:15px; background-image:url('../../images/event/20190227/link_el_text.png'); background-repeat:no-repeat;}
+.bagpack .link .mid_link .newcard1 span {width:22px; background-position:0px 0;}
+.bagpack .link .mid_link .newcard2 span {width:22px; background-position:-168px 0px; }
+.bagpack .link .mid_link .newcard3 span {width:22px; background-position:-340px 0px; }
+.bagpack .link .mid_link .newcard4 span {width:22px; background-position:-510px 0px; }
+.bagpack .link .mid_link .newcard5 span {width:22px; background-position:0 -51px;}
+.bagpack .link .mid_link .newcard6 span {width:22px; background-position:-168px -51px; }
+.bagpack .link .mid_link .newcard7 span {width:22px; background-position:-340px -51px; }
+.bagpack .link .mid_link .newcard8 span {width:110px; background-position:-466px -51px; }
+
+.bagpack .link .hg_link li a {display:block; width:100%; height:100%}
+.bagpack .myNametag {background:url('../../images/event/20190227/bg_cont.gif') repeat-y; padding:12px 0 60px 0;}
+.bagpack .myNametag h3 {text-align:center}
+.bagpack .nameTagNum {width:663px; height:87px; margin:15px auto 0; background:rgba(0,0,0,0.25); border-radius:13px; padding:19px 0 18px 20px; overflow:hidden}
+.bagpack .nameTagNum > * {display:inline-block; vertical-align:middle}
+.bagpack .nameTagNum .myName {background:url('../../images/event/20190227/img_nametag_big.png') 0 0 no-repeat; width:181px; height:72px; margin-left:29px; line-height:85px; text-indent:71px; text-align:center; color:#000000; font-weight:bold; font-size:22px;}
+.bagpack .nameTagNum .mybagNum {background:url('../../images/event/20190227/ico_x.png') 0 50% no-repeat; min-width:37px; padding-left:20px; margin:10px 0 0 10px; color:#fff; font-size:30px; font-weight:bold;;}
+.bagpack .putNametag {width:683px;margin:30px auto 0}
+.bagpack .putNametag .tagLst {width:683px;min-height:550px; background:url('../../images/event/20190227/img_stationery.png') 50% 0 no-repeat; margin:30px auto 0; position:relative}
+.bagpack .putNametag .tagLst li {position:absolute;}
+.bagpack .putNametag .tagLst li span {display:none; background:url('../../images/event/20190227/img_nametag.png') 0 0 no-repeat;  width:55px; min-height:30px; padding:18px 12px 0 52px; color:#000000; font-size:14px; font-weight:600; text-align:center}
+.bagpack .putNametag .tagLst li.on span {display:block}
+.bagpack .putNametag .tagLst li.tag01 {top:48px; left:396px;}
+.bagpack .putNametag .tagLst li.tag02 {top:85px; left:525px;}
+.bagpack .putNametag .tagLst li.tag03 {top:171px; left:516px;}
+.bagpack .putNametag .tagLst li.tag04 {top:339px; left:495px;}
+.bagpack .putNametag .tagLst li.tag05 {top:460px; left:475px;}
+.bagpack .putNametag .tagLst li.tag06 {top:424px; left:107px;}
+.bagpack .putNametag .tagLst li.tag07 {top:383px; left:-10px;}
+.bagpack .putNametag .tagLst li.tag08 {top:228px; left:43px;}
+.bagpack .putNametag .tagLst li.tag09 {top:70px; left:96px;}
+.bagpack .putNametag .tagLst li.tag10 {top:45px; left:240px;}
+.bagpack .putNametag .bagWrap {margin-top:-30px; text-align:center; position:relative;z-index:100}
+.bagpack .putNametag .bagWrap .btn_putall {display:inline-block; width:247px; height:64px; background-image:url('../../images/event/20190227/btn_bag.png'); background-repeat:no-repeat; background-position:0 0; cursor:pointer}
+.bagpack .putNametag .bagWrap .btn_putall.fin {background-position:0 -65px; cursor:default;}
+.bagpack .putNametag .bagWrap .btn_putall.off {background-position:0 -130px; cursor:default;}
+.bagpack .putNametag .bagWrap p {margin:14px 0 20px}
+.bagpack .putNametag .bagWrap dl {background:#ffffff; border-radius:18px; width:247px; height:38px; margin:0 auto;  padding-top:3px}
+.bagpack .putNametag .bagWrap dl * {display:inline-block;}
+.bagpack .putNametag .bagWrap dt {width:141px; height:33px; background:url('../../images/event/20190227/txt_mybagnum.png') 0 0 no-repeat}
+.bagpack .putNametag .bagWrap dd {color:#e34a44; font-size:16px; font-weight:bold; vertical-align:top}
+.bagpack .putNametag .bagWrap strong {font-size:25px; font-weight:bold;}
+.bagpack .snsArea {background:url('../../images/event/20190227/bg_cont_sns.gif') repeat; padding:40px 0 0 40px }
+.bagpack .snsArea .snsShare {background:#fff; border-radius:14px; width:659px; padding:15px 0 15px 24px; height:56px; margin-top:5px}
+.bagpack .snsArea .snsShare ul {height:40px; overflow:hidden; padding-top:7px} 
+.bagpack .snsArea .snsShare li {float:left; background-image:url('../../images/event/20190227/btn_sns.gif'); background-repeat:no-repeat; margin-right:6px }
+.bagpack .snsArea .snsShare li.sns01 {width:38px; height:42px; background-position:0 0;}
+.bagpack .snsArea .snsShare li.sns02 {width:42px; height:42px; background-position:-44px 0;}
+.bagpack .snsArea .snsShare li.sns03 {width:42px; height:42px; background-position:-90px 0;}
+.bagpack .snsArea .snsShare li.sns04 {width:42px; height:42px; background-position:-136px 0;}
+.bagpack .snsArea .snsShare li button {display:inline-block; width:100%; height:100%}
+.bagpack .snsArea .snsShare dl {margin-top:-48px; padding-left:200px}
+.bagpack .snsArea .snsShare dt {margin-bottom:8px}
+.bagpack .snsArea .snsShare dd {height:32px; overflow:hidden }
+.bagpack .snsArea .snsShare dd input[type="text"] {float:left; width:350px; height:30px; background:#f9f9f9; border:1px solid #d8d8d8; border-right:0}
+.bagpack .snsArea .snsShare dd button {float:left; width:66px; height:32px; background-color:#264278; background-position:50% 50%; background-repeat:no-repeat}
+.bagpack .snsArea .snsShare dd button.btn_save {background-image:url('../../images/event/20190227/txt_save.gif')}
+.bagpack .snsArea .snsShare dd button.btn_modi {background-image:url('../../images/event/20190227/txt_modi.gif')}
+.bagpack .mysnsArea {background:url('../../images/event/20190227/bg_cont_end.gif') repeat-y; padding:40px 0 68px 40px;}
+.bagpack .mysnsArea .myStatus {background:#ffffff; border:2px solid #264278; border-radius:18px; width:247px; height:38px; margin:-50px 0 20px 185px; padding-top:4px }
+.bagpack .mysnsArea .myStatus  * {display:inline-block;}
+.bagpack .mysnsArea .myStatus  dt {width:141px; height:33px; background:url('../../images/event/20190227/txt_mybagnum.png') 0 2px no-repeat; margin-left:20px}
+.bagpack .mysnsArea .myStatus  dd {color:#e34a44; font-size:16px; font-weight:bold; vertical-align:top }
+.bagpack .mysnsArea .myStatus  dd strong {font-size:25px; font-weight:bold;}
+.bagpack .mysnsArea .snsShare { background:#fff; border-radius:14px; width:659px; padding:15px 0 17px 30px;}
+.bagpack .mysnsArea .snsShare dt {margin:0 0 7px 7px}
+.bagpack .mysnsArea .snsShare dd {height:32px; overflow:hidden }
+.bagpack .mysnsArea .snsShare dd input[type="text"] {float:left; width:542px; height:30px; background:#f9f9f9; border:1px solid #d8d8d8; border-right:0}
+.bagpack .mysnsArea .snsShare dd button {float:left; width:66px; height:32px; background:#264278 url('../../images/event/20190227/txt_ok.gif') 50% 50% no-repeat; }
+
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0;}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+/* notice */
+.bagpack .notice {padding:35px 39px 30px 35px; background-color:#1c2f66;}
+.bagpack .notice ul {padding-top:10px;}
+.bagpack .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.bagpack .notice li .point {color:#baccff;}
+

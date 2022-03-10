@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.spring_test {position:relative; width:763px; overflow:hidden}
+.spring_test  h1 {position:absolute; top:30px; left:30px;}
+.spring_test .snswrap {position:absolute; top:30px; right:29px;}
+.spring_test .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20201105/icon_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.spring_test .snswrap a.fb {background-position:0 0;}
+.spring_test .snswrap a.tw {background-position:-41px 0;}
+.spring_test .snswrap a.kko {background-position:-82px 0;}
+.spring_test .snswrap a.url {background-position:-123px 0;}
+.spring_test .top,
+.spring_test .top_end {position:relative}
+.spring_test .top .btn-pre-apply {position:absolute; top:578px; right:40px; display:block; width:273px; height:69px; background:url('../../images/event/20210331/btn_pre_apply.png') 0 -71px no-repeat;}
+.spring_test .top .btn-pre-apply.off {background-position:0 0;}
+.spring_test .top .btn-apply {position:absolute; top:578px; right:40px; display:block; width:248px; height:69px; background:url('../../images/event/20210331/btn_apply.png') 0 0  no-repeat;}
+.spring_test .top .btn-apply.off {background-position:0 -72px;}
+.spring_test .top [class^="btn-winner"] {position:absolute; right:40px; bottom:33px; display:inline-block; width:272px; height:69px;}
+.spring_test .top .btn-winner1 {background:url('../../images/event/20210331/btn_winner1.png') 0 0 no-repeat }
+.spring_test .top .btn-winner2 {background:url('../../images/event/20210331/btn_winner2.png') 0 0 no-repeat }
+.spring_test .top .btn-winner3 {background:url('../../images/event/20210331/btn_winner3.png') 0 0 no-repeat }
+
+.spring_test .eventArea {background:#2b74c1; position:relative; padding:28px 0 40px;}
+.spring_test .eventArea:before {position:absolute; content:""; display: block; bottom:177px; left:21px; width:128px; height:185px; background:url('../../images/event/20210331/obj_student1.png') 0 0 no-repeat; z-index:10}
+.spring_test .eventArea:after {position:absolute; content:""; display: block; bottom:20px; left:37px; width:79px; height:157px; background:url('../../images/event/20210331/obj_student2.png') 0 0 no-repeat; z-index:10}
+.spring_test .eventArea .mainEvent {width:683px; margin:0 auto; box-sizing:border-box; border-radius:25px; overflow:hidden; background-color: #fff; padding-bottom:32px;}
+.spring_test .eventArea .mainEvent .top {background:#ffadbb; padding:30px 20px;}
+.spring_test .eventArea .mainEvent .top ul { display:flex; justify-content:space-around}
+.spring_test .eventArea .mainEvent .top li {border-radius:30px; width:195px; text-align:center; border:4px solid #ff7288; background:#fff; height:57px; display:flex;align-items:center; justify-content: center;}
+.spring_test .eventArea .mainEvent .top li span[class^="txt"] {display:inline-block; margin-right:10px}
+.spring_test .eventArea .mainEvent .top li strong {display:inline-block; font-size:24px; color:#0b57ad; font-weight:800}
+.spring_test .eventArea .mainEvent .top li span[class="unit"] {display: inline-block; margin-left:3px; color:#000; font-weight:800; font-size:16px}
+
+.spring_test .eventArea .mainEvent .accm_point {padding-top:64px;text-align:center}
+.spring_test .eventArea .mainEvent .accm_point h3 {margin-bottom:32px}
+.spring_test .eventArea .mainEvent .accm_point h3 * {vertical-align:middle;}
+.spring_test .eventArea .mainEvent .accm_point h3 span {display:inline-block; width:152px; height:35px; background:url('../../images/event/20210331/txt_acc.png') 0 0 no-repeat; text-indent:-9999px; margin-right:15px}
+.spring_test .eventArea .mainEvent .accm_point h3 strong {color:#0a57af; font-size:37px; font-weight:800;}
+.spring_test .eventArea .mainEvent .accm_point h3 strong:after {content:""; display:inline-block; width:31px; height:32px; background:url('../../images/event/20210331/txt_acc.png') -264px 0 no-repeat; vertical-align:middle; margin:-3px 0 0 5px}
+.spring_test .eventArea .mainEvent .accm_point .ticket {width:516px; margin:40px auto 0; display:flex; justify-content:space-between;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li {width:247px; height:119px;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li:nth-child(1) {background:url('../../images/event/20210331/ticket_1st.png') 0 0 no-repeat;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li:nth-child(2) {background:url('../../images/event/20210331/ticket_2nd.png') 0 0 no-repeat;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li.on {background-position:0 -121px;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li.on a {width:76px; height:24px; display:block; margin:80px 0 0 100px; text-indent:-9999px;}
+
+.spring_test .eventArea .mainEvent .accm_point .ticket li.gift1 {background:url('../../images/event/20210331/apply_gift_waffle.png') 0 0 no-repeat;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li.gift2 {background:url('../../images/event/20210331/apply_gift_rummi.png') 0 0 no-repeat;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li.gift3 {background:url('../../images/event/20210331/apply_gift_chicken.png') 0 0 no-repeat;}
+.spring_test .eventArea .mainEvent .accm_point .ticket li.gift4 {background:url('../../images/event/20210331/apply_gift_icecream.png') 0 0 no-repeat;}
+
+.spring_test .eventArea .mainEvent .test {width:620px; background-color: #f5f5f5; border-radius:15px; margin:65px auto 0; text-align:center; padding:45px 0 37px;}
+.spring_test .eventArea .mainEvent .test h3 {margin-bottom:32px}
+.spring_test .eventArea .mainEvent .test .text {margin-bottom:40px}
+.spring_test .eventArea .mainEvent .test .btns {text-align:center}
+.spring_test .eventArea .mainEvent .test .btns a:first-child {margin-right:15px}
+.spring_test .eventArea .mainEvent .test .btns span:first-child {margin-right:15px}
+
+.spring_test .today_cont {height:642px; background:url('../../images/event/20210331/bg_recomm.png') 0 0 no-repeat; box-sizing:border-box; padding-top:224px}
+.spring_test .today_cont .study_box {width:683px; height:378px; background:#fff; border-radius:20px; margin:0 auto; display:flex; box-sizing:border-box; padding:40px; justify-content: space-between;}
+.spring_test .today_cont .study_box .cont_card {width:208px; border:1px solid #d4d4d4; box-sizing: border-box;}
+.spring_test .today_cont .study_box .cont_card .thumb {display: block; border-bottom:1px solid #d4d4d4; margin-bottom:19px; position:relative}
+.spring_test .today_cont .study_box .cont_card .thumb img {width:206px; height:auto}
+.spring_test .today_cont .study_box .cont_card .title { display:block; padding:0 17px; font-size:14px; word-wrap: break-word; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient: vertical; height:52px; line-height:18px; overflow:hidden; color:#4c4c4c; }
+.spring_test .today_cont .study_box .cont_card .thumb:after {content:""; display:block; position:absolute; top:142px; right:9px; width:48px; height:48px; background-repeat:no-repeat; background-position:0 0; background-color:transparent; text-indent:-9999px; z-index:100}
+.spring_test .today_cont .study_box .cont_card.boxB .thumb:after{background-image:url('../../images/main/renewal2020/tag_mov.png')} /*영상*/
+.spring_test .today_cont .study_box .cont_card.boxC .thumb:after{background-image:url('../../images/main/renewal2020/tag_quiz.png')} /*문제*/
+.spring_test .today_cont .study_box .cont_card.boxD .thumb:after{background-image:url('../../images/main/renewal2020/tag_toon.png')} /*웹툰*/
+.spring_test .today_cont .study_box .cont_card.boxE .thumb:after{background-image:url('../../images/main/renewal2020/tag_game.png')} /*게임*/
+.spring_test .today_cont .study_box .cont_card.boxG .thumb:after{background-image:url('../../images/main/renewal2020/tag_img.png')} /*이미지*/
+.spring_test .today_cont .study_box .cont_card.boxH .thumb:after{background-image:url('../../images/main/renewal2020/tag_kng.png')} /*지식카드*/
+.spring_test .today_cont .study_box .cont_card.boxJ .thumb:after{background-image:url('../../images/main/renewal2020/tag_game2.png')} /*문제세트 게임*/
+.spring_test .today_cont .study_box .cont_card.boxK .thumb:after{background-image:url('../../images/main/renewal2020/tag_qpaper.png')} /*문제지*/
+.spring_test .today_cont .study_box .cont_card.boxL .thumb:after{background-image:url('../../images/main/renewal2020/tag_qzlec.png')} /*문제+강의*/
+.spring_test .today_cont .study_box .cont_card.boxS .thumb:after{background-image:url('../../images/main/renewal2020/tag_series.png')} /*시리즈*/
+
+.spring_test .today_cont .study_box .cont_card .btn_gostudy {padding-left:10px}
+.spring_test .today_cont .study_box .calendar {width:338px; background:url('../../images/event/20210331/img_cal.png') 0 0 no-repeat; }
+.spring_test .today_cont .study_box .calendar ul {width:338px; margin-top:33px; display:flex; flex-wrap:wrap; align-content:center; margin-left:4px}
+.spring_test .today_cont .study_box .calendar ul li {width:47px; height:46px; text-align:center; position:relative}
+.spring_test .today_cont .study_box .calendar ul li.chk::before {content:""; display:block; position:absolute; left:14px; top:5px; width:24px; height:24px; background:url('../../images/event/20210331/tag_point.png') 0 0 no-repeat;}
+.spring_test .today_cont .study_box .calendar ul+p {margin-top:17px; text-align:center}
+
+.spring_test .eventArea.end:before {position:absolute; content:""; display: block; bottom:177px; left:-5px; width:128px; height:185px; background:url('../../images/event/20210331/obj_student1.png') 0 0 no-repeat; z-index:10}
+.spring_test .eventArea.end:after {position:absolute; content:""; display: block; bottom:20px; left:11px; width:79px; height:157px; background:url('../../images/event/20210331/obj_student2.png') 0 0 no-repeat; z-index:10}
+.spring_test .eventArea.end .mainEvent .accm_point {padding:64px 0 34px; text-align:center}
+
+/* notice */
+.spring_test .notice {padding:35px 30px 30px 35px; background-color:#192c4f;}
+.spring_test .notice ul {padding-top:10px;}
+.spring_test .notice li {margin-top:5px; padding-left:12px; color:#929da6; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20210331/bul.png') no-repeat 0 10px;}
+.spring_test .notice li .point {color:#ffb9c4;}
+
+.spring_test .event_wrapper {position:relative}
+.spring_test .event_wrapper .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%; z-index: 1000;}
+.spring_test .event_wrapper .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-450px 0; z-index: 1001}
+.spring_test .event_wrapper.end .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-160px 0}
+
+.spring_test .popup_event .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%; z-index:1000;}
+.spring_test .popup_event .layer_gift {position:absolute; top:50%; left:50%; width:622px; height:479px; margin:-500px -310px; background:#fff; border-radius:20px; box-sizing: border-box;  z-index:1001; box-shadow:15px 15px 10px rgba(0,0,0,0.2), -10px 10px 10px rgba(0,0,0,0.2);}
+.spring_test .popup_event .layer_gift h3 {text-align:center; padding:50px 0 34px}
+.spring_test .popup_event .layer_gift ul {display:flex; justify-content:space-between; padding:0 20px}
+.spring_test .popup_event .layer_gift ul li {background-repeat:no-repeat; background-position:0 0;}
+.spring_test .popup_event .layer_gift ul li button {text-indent: -9999px; display:block; width:100%; height:100%}
+.spring_test .popup_event .layer_gift ul li.gift1 {width:137px; height:168px; background-image:url('../../images/event/20210331/pop_gift1.png')}
+.spring_test .popup_event .layer_gift ul li.gift1.on { background-position:-139px 0;}
+.spring_test .popup_event .layer_gift ul li.gift2 {width:137px; height:168px; background-image:url('../../images/event/20210331/pop_gift2.png')}
+.spring_test .popup_event .layer_gift ul li.gift2.on { background-position:-139px 0;}
+.spring_test .popup_event .layer_gift ul li.gift3 {width:137px; height:168px; background-image:url('../../images/event/20210331/pop_gift3.png')}
+.spring_test .popup_event .layer_gift ul li.gift3.on { background-position:-138px 0;}
+.spring_test .popup_event .layer_gift ul li.gift4 {width:137px; height:168px; background-image:url('../../images/event/20210331/pop_gift4.png')}
+.spring_test .popup_event .layer_gift ul li.gift4.on { background-position:-138px 0;}
+.spring_test .popup_event .layer_gift ul+p {margin:50px 0; text-align:center}
+.spring_test .popup_event .layer_gift .bottom {width:100%; height:75px; background:url('../../images/event/20210331/pop_bg_button.png') 50% 100% no-repeat; display:flex;}
+.spring_test .popup_event .layer_gift .bottom button {display:block; width:50%; text-indent:-9999px;}
+
+.spring_test .popup_test .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%; z-index:1000;}
+.spring_test .popup_test .layer_test {position:absolute; top:50%; left:50%; width:660px; height:809px; margin:-580px -330px; background:#0060c4; box-sizing: border-box; z-index:1001; padding:7px;}
+.spring_test .popup_test .layer_test .header {position:relative; height:43px; padding-left:125px; background:url('../../images/layout/logo3.png') no-repeat 15px 50%; color:#fff; font-size:16px; line-height:43px;}
+.spring_test .popup_test .layer_test .header button {position:absolute; right:5px; top:2px; width:30px; height:30px; background:url('../../images/event/20210331/ico_close.png') no-repeat 50% 50%; text-indent: -9999px;}
+.spring_test .popup_test .container {background-color: #fff; height:753px}
+.spring_test .popup_test .container h3{ text-align:center;  padding:34px 0 30px}
+.spring_test .popup_test .container .myinfo {width:607px; background-color:#152941; display:flex; height:63px; justify-content: space-between; padding:16px 30px; box-sizing: border-box; margin: 0 auto;}
+.spring_test .popup_test .container .myinfo li {color:#fff; font-size: 14px;}
+.spring_test .popup_test .container .myinfo li span {display:inline-block; background-color: #fff; border-radius:5px; height:32px; line-height:32px; width:70px; color:#343434; text-align:center; margin-left:3px}
+.spring_test .popup_test .container .myinfo li span strong {display:inline-block; color:#e83e47; margin-right:3px}
+.spring_test .popup_test .container .myinfo li:first-child {width:42%}
+.spring_test .popup_test .container .myinfo li:first-child span {width:98px}
+.spring_test .popup_test .container .test_paper {width:607px; height:462px; box-sizing:border-box; margin: 0 auto; border-width:0px 1px 1px 1px; border-style:solid; border-color:#d5d5d5; padding:15px 10px; overflow:auto;}
+.spring_test .popup_test .container .expl_paper {width:607px; height:574px; box-sizing:border-box; margin: 0 auto; border-width:0px 1px 1px 1px; border-style:solid; border-color:#d5d5d5; padding:15px 10px; overflow:auto;}
+
+.spring_test .popup_test .container .bottom {margin-top:25px; text-align:center}
+.spring_test .popup_test .container .bottom button {display:inline-block; width:160px; height:48px; background-image: url('../../images/event/20210331/btn_pop_test.png'); background-repeat:no-repeat;}
+.spring_test .popup_test .container .bottom button.btn_pop_grading {background-position:0 0;}
+.spring_test .popup_test .container .bottom button.btn_pop_test2 {background-position:0 -52px;}
+.spring_test .popup_test .container .bottom + p {text-align:center; margin-top:15px}

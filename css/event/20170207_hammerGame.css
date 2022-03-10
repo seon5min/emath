@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* 이벤트 */
+.hammer-evt{position:relative;}
+.hammer-evt .top{position:relative;}
+.hammer-evt .snswrap{position:absolute; top:30px; right:30px;}
+.hammer-evt .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.hammer-evt .snswrap .fb a{background-position:0 0;}
+.hammer-evt .snswrap .tw a{background-position:-41px 0;}
+.hammer-evt .snswrap .kko a{background-position:-82px 0;}
+
+.hammer-evt .top{position:relative;}
+.hammer-evt .top .btn-event{position:absolute; bottom:42px; left:240px; width:288px; height:58px; background: url('../../images/event/20170207/btn_evt_join.png') no-repeat;}
+.hammer-evt .top .evt-participant{position:absolute; bottom:158px; right:87px; font-size: 18px; font-weight: bold; color:#fff38c;}
+.hammer-evt .top .btn-win{position:absolute; bottom:40px; left:97px; width: 246px; height:58px; background:url('../../images/event/20170207/btn_evt_win.png') no-repeat;}
+.hammer-evt .top .btn-info-insert{position:absolute; bottom:40px; right:89px; width: 314px; height:58px; background:url('../../images/event/20170207/btn_evt_insert.png') no-repeat;}
+
+
+.hammer-evt .evt-end-info{position: relative;}
+.hammer-evt .evt-end-info img{display: block;}
+.hammer-evt .evt-end-info .count{position: absolute; top:40px; right:70px; font-weight:bold; font-size:18px; color:#fff38c;}
+.hammer-evt .evt-end-info .btn-inquiry{position: absolute; top:121px; left:48px; display: inline-block; width:211px; height:58px;}
+.hammer-evt .evt-end-info .btn-enter{position: absolute; top:121px; left:270px; display: inline-block; width:278px; height:58px;}
+
+.hammer-evt .gift-info{position:relative; padding-bottom:52px; background-color:#6ec7c9;}
+.hammer-evt .gift-info .btn-lens{position:absolute; top:137px; left:410px; display: inline-block;}
+.hammer-evt .gift-info .acc{position: absolute; bottom:-128px; left:34px; display: inline-block;}
+.hammer-evt .gift-info.end{position:relative;}
+.hammer-evt .gift-info.end .acc{position: absolute; top:-84px; left:564px; display: inline-block;}
+
+
+.hammer-evt .evtcon{position:relative;}
+.hammer-evt .evtcon.cursor-hammer{cursor: url(http://www.ebsmath.co.kr/common/innovativepot/math2016/images/event/20170207/cusor_hammer.png), url(http://www.ebsmath.co.kr/common/innovativepot/math2016/images/event/20170207/cusor_hammer.cur), default;}
+.hammer-evt .evtcon .btn-event{position:absolute; top:17px; right:51px;}
+.hammer-evt .evtcon .progress-bar{position:absolute; top:49px; left:177px; width:219px; height:64px; background:url('../../images/event/20170207/bar_status.png') no-repeat 0 0;}
+.hammer-evt .evtcon .progress-bar.status0{background-position:0 0;}
+.hammer-evt .evtcon .progress-bar.status1{background-position:0 -84px;}
+.hammer-evt .evtcon .progress-bar.status2{background-position:0 -165px;}
+.hammer-evt .evtcon .progress-bar.status3{background-position:0 -248px;}
+.hammer-evt .evtcon .progress-bar.status3{background-position:0 -248px;}
+.hammer-evt .evtcon .progress-bar.status4{background-position:0 -331px;}
+.hammer-evt .evtcon .progress-bar.status5{background-position:0 -414px;}
+
+.hammer-evt .evtcon .semi{position: absolute; bottom:513px; left:143px;}
+.hammer-evt .evtcon .doctorY{position: absolute; bottom:513px; left:413px;}
+.hammer-evt .evtcon .missMdino{position: absolute; bottom:297px; left:41px;}
+.hammer-evt .evtcon .agentK{position: absolute; bottom:297px; left:276px;}
+.hammer-evt .evtcon .mathIlkuck{position: absolute; bottom:297px; left:514px;}
+.hammer-evt .evtcon .metia{position: absolute; bottom:81px; left:143px;}
+.hammer-evt .evtcon .phDngirl{position: absolute; bottom:81px; left:413px;}
+
+
+/* bead location */
+.hammer-evt .evtcon .bead{position: absolute; bottom: 0px; left:0px;}
+.hammer-evt .evtcon .b100{width: 218px; height: 209px; background:url('../../images/event/20170207/bead_100.png') no-repeat;}
+.hammer-evt .evtcon .b75{width: 218px; height: 164px; background:url('../../images/event/20170207/bead_75.png') no-repeat;}
+.hammer-evt .evtcon .b50{width: 218px; height: 114px; background:url('../../images/event/20170207/bead_50.png') no-repeat;}
+.hammer-evt .evtcon .b25{left:14px; width: 192px; height: 58px; background:url('../../images/event/20170207/bead_25.png') no-repeat;}
+.hammer-evt .evtcon .b0{top:-40px; width: 208px; height: 57px; background:url('../../images/event/20170207/bead_0.png') no-repeat;
+}
+
+.hammer-evt .evtcon .location{position:relative; width:218px; height:209px;}
+.hammer-evt .evtcon .location:hover .tooltip-txt{visibility:visible;}
+.hammer-evt .evtcon .tooltip-txt{position: absolute; bottom:-25px; left:-18px; z-index: 1; visibility:hidden; width:240px; height: 37px; text-align:center; font-size:13px; line-height:3.5; letter-spacing:-1px; background:url('../../images/event/20170207/speech_bubble.png') no-repeat;}
+.hammer-evt .evtcon .tooltip-txt .tooltip-cnt{color:#3884fc;}
+.hammer-evt .evtcon .location .success{position: absolute; bottom:5px; left:16px; width:160px; height:79px; background:url('../../images/event/20170207/success.png');}
+
+
+/* 학습카드 선택 */
+.hammer-evt .evt-select{position:relative;}
+.hammer-evt .evt-select .grade_btn{position:absolute; bottom:84px; left:61px; *zoom:1;}
+.hammer-evt .evt-select .grade_btn:after{content:''; clear:both; display:block;}
+.hammer-evt .evt-select .grade_btn li{float:left; margin-left:20px;}
+.hammer-evt .evt-select .grade_btn li:first-child{margin-left:0;}
+.hammer-evt .evt-select .grade_btn a{display:inline-block; height:45px; font-size:0; line-height:0;  vertical-align:top; background:url(../../images/event/20170207/btn_grade.png) no-repeat 0 0;}
+.hammer-evt .evt-select .grade_btn [data-index="1"] a{width:130px; background-position:0 0;}
+.hammer-evt .evt-select .grade_btn [data-index="1"] a.on,
+.hammer-evt .evt-select .grade_btn [data-index="1"] a:hover{background-position:0 -155px;}
+.hammer-evt .evt-select .grade_btn [data-index="2"] a{width:100px; background-position:-150px 0;}
+.hammer-evt .evt-select .grade_btn [data-index="2"] a.on,
+.hammer-evt .evt-select .grade_btn [data-index="2"] a:hover{background-position:-150px -155px;}
+.hammer-evt .evt-select .grade_btn [data-index="3"] a{width:100px; background-position:-270px 0;}
+.hammer-evt .evt-select .grade_btn [data-index="3"] a.on,
+.hammer-evt .evt-select .grade_btn [data-index="3"] a:hover{background-position:-270px -155px;}
+.hammer-evt .evt-select .grade_btn [data-index="4"] a{width:100px; background-position:-390px 0;}
+.hammer-evt .evt-select .grade_btn [data-index="4"] a.on,
+.hammer-evt .evt-select .grade_btn [data-index="4"] a:hover{background-position:-390px -155px;}
+.hammer-evt .evt-select .grade_btn [data-index="5"] a{width:130px; background-position:-510px 0;}
+.hammer-evt .evt-select .grade_btn [data-index="5"] a.on,
+.hammer-evt .evt-select .grade_btn [data-index="5"] a:hover{background-position:-510px -155px;}
+
+
+/* notice */
+.hammer-evt .notice{position:relative; padding:28px 25px 25px 34px; background:#fad55d;}
+.hammer-evt .notice ul{padding-top:15px;}
+.hammer-evt .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#986e15; letter-spacing:-1px; background:url(../../images/event/20170207/bul_notice.png) no-repeat 0 9px;}
+.hammer-evt .notice li:first-child{margin-top:0;}
+.hammer-evt .notice li a.point{color:#704f20;}
+
+
+
+/* modal popup */
+#modal {position: fixed;left: 0; top: 0;right: 0;bottom: 0;z-index: 100000;}
+#modal.on {display: block;}
+#modal.off {display: none;}
+.layer {position:absolute;left:50%;top:55%; margin-left:-355px; margin-top:-355px; z-index: 10;}
+.modal-dimmed {position: absolute;left: 0;top: 0;right: 0;bottom: 0;background: url(../../images/event/20170207/modal_bg.png);z-index: 5;}
+
+.popwrap{width: 710px; height:719px; background:url(../../images/event/20170207/popup/img_popup_bg.png) no-repeat;}
+.popwrap p{padding:25px;}
+.popwrap .header{position: relative;}
+.popwrap .btn-close{position:absolute; top:25px; right:25px; background-color: #fff;}

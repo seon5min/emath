@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix::after { content:""; display:block; }
+.clearfix::after { clear:both; }
+
+.pickGift{background:none;}
+.pickGift .top{position:relative; width:763px;}
+.pickGift .top .btn-apply{position:absolute; top:528px; left:455px; display:block; width:248px; height:57px; font-size:0; border-radius:29px; background:#e94f17; opacity:0; filter:alpha(opacity='0');}
+.pickGift .top .btn-apply.before{position:absolute; top:517px; left:440px; display:block; width:285px; height:57px; font-size:0; border-radius:29px; background:#e94f17; opacity:0; filter:alpha(opacity='0');}
+.pickGift .snswrap{position:absolute; top:23px; right:19px;}
+.pickGift .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20171018/img_sns.png'); *display: inline; zoom: 1;}
+.pickGift .snswrap .fb a{background-position:0 0;}
+.pickGift .snswrap .tw a{background-position:-41px 0;}
+.pickGift .snswrap .kko a{background-position:-82px 0;}
+
+/* 이벤트 본문 */
+.pickGift .conwrap { position:relative; }
+.pickGift .conwrap .btn-point {position:absolute; top:52px; left:603px; display:block; width:105px; height:105px; font-size:0; border-radius:53px; background:#f6710e; opacity:0; filter:alpha(opacity='0');}
+.pickGift .conwrap .btn-close {position:absolute; top:27px; left:172px; display:block; width:11px; height:11px; font-size:0; background:#f6710e; opacity:0; filter:alpha(opacity='0');}
+.pickGift .conwrap .popCard { position:absolute; top:128px; left:556px; display:none;}
+
+/* 포인트 적립 */
+.pickGift .plusPoint { position:relative; background:#2b86cf; }
+.pickGift .plusPoint .content { margin-left:47px; padding-bottom:40px; overflow:hidden; }
+.pickGift .plusPoint .content .tabBtn { margin-left:17px; overflow:hidden; }
+.pickGift .plusPoint .content .tabBtn li { float:left; width:160px; height:40px; margin:0 1px; background:url('../../images/event/20171018/tab_off.png') no-repeat; font-size:0; cursor:pointer;}
+.pickGift .plusPoint .content .tabBtn li.on { background:url('../../images/event/20171018/tab_on.png') no-repeat; }
+.pickGift .plusPoint .content .tabBtn li.btn_01 { background-position:0 0; }
+.pickGift .plusPoint .content .tabBtn li.btn_02 { background-position:-162px 0; }
+.pickGift .plusPoint .content .tabBtn li.btn_03 { background-position:-324px 0; }
+.pickGift .plusPoint .content .tabBtn li.btn_04 { background-position:-486px 0; }
+
+.pickGift .plusPoint .content .tabCont li { display:none; position:relative;}
+.pickGift .plusPoint .content .tabCont li.view { display:block; }
+.pickGift .plusPoint .content .tabCont .btnArea { position:absolute; top:20px; left:18px; width:681px;}
+.pickGift .plusPoint .content .tabCont .btnArea a { display:block; width:205px; height:54px; margin: 6px 5px; border-radius:27px; float:left; background:#2b86cf; opacity:0; filter:alpha(opacity='0');}
+
+/* 선물 뽑기 */
+.pickGift .pick { position:relative; }
+.pickGift .pick .score .score_total { position:absolute; top:84px; left:570px; color:#ff614f; font-size:20px; font-weight:bold; }
+.pickGift .pick .score .score_my { position:absolute; top:185px; left:421px; color:#fff; font-size:20px; font-weight:bold; }
+.pickGift .pick .score .score_best { position:absolute; top:560px; left:0px; width:651px; margin:0 41px; padding:0 13px 0 17px; color:#95d0ff; font-size:18px; font-weight:bold; overflow:hidden;}
+.pickGift .pick .score .score_best li { float:left; text-align:center; width:20%;}
+.pickGift .pick .score .score_best li.best_03 { width:23%; }
+.pickGift .pick .score .score_best li.best_04 { width:17%; }
+.pickGift .pick .score .score_best li.best_05 { width:20%; }
+
+.pickGift .pick .icoSelect { }
+.pickGift .pick .icoSelect .icoArrow { position:absolute; top:216px; display:none; width:20px; height:20px; background:url('../../images/event/20171018/ico_select.png') no-repeat 0 0; }
+.pickGift .pick .icoSelect .icoSelect_01 { left:112px; }
+.pickGift .pick .icoSelect .icoSelect_02 { left:241px; }
+.pickGift .pick .icoSelect .icoSelect_03 { left:388px; }
+.pickGift .pick .icoSelect .icoSelect_04 { left:513px; }
+.pickGift .pick .icoSelect .icoSelect_05 { left:636px; }
+
+.pickGift .pick .giftBox { position:absolute; top:245px; left:41px; width:647px; height:268px; padding:0 17px; overflow:hidden; }
+.pickGift .pick .giftBox ul { overflow:hidden;}
+.pickGift .pick .giftBox ul li { position:relative; margin-top:0; float:left; text-align:center; width:20%; height:268px;}
+.pickGift .pick .giftBox ul li img { position:absolute; top:0; left:0; cursor:pointer; }
+.pickGift .pick .giftBox ul li.gift_03 { width:24%; }
+.pickGift .pick .giftBox ul li.gift_04 { width:17%; }
+.pickGift .pick .giftBox ul li.gift_05 { width:19%; }
+.pickGift .pick .giftBox ul li.gift_01 img { left:17px; }
+.pickGift .pick .giftBox ul li.gift_02 img { left:1px; }
+.pickGift .pick .giftBox ul li.gift_03 img { left:15px; }
+.pickGift .pick .giftBox ul li.gift_04 img { left:-1px; }
+.pickGift .pick .giftBox ul li.gift_05 img { left:11px; }
+
+/* notice */
+.pickGift .notice {padding:35px 58px 31px 34px; background-color:#2b86cf;}
+.pickGift .notice ul{padding-top:15px;}
+.pickGift .notice li{margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20171018/bul.png') no-repeat 0 8px;}
+.pickGift .notice li:first-child{margin-top:0;}
+.pickGift .notice li .point{color:#ffef83;}
+
+/* 이벤트 종료 */
+.pickGift.end .top .btn_win{position:absolute; top:570px; left:69px; display:block; width:308px; height:58px; font-size:0; border-radius:29px; background:#e94f17; opacity:0; filter:alpha(opacity='0');}
+.pickGift.end .top .btn_info_insert{position:absolute; top:570px; left:386px; display:block; width:306px; height:58px; font-size:0; border-radius:29px; background:#e98417; opacity:0; filter:alpha(opacity='0');}
+.pickGift.end .top .total{position:absolute; top:426.5px; left:547px; display:block; width:64px; text-align:center; font-weight:900; color:#ffeb44; font-size:20px; letter-spacing:-1px; }
+.pickGift.end .evtcon-top { position:relative; }
+.pickGift.end .evtcon-top .btn-evtlogin {position:absolute; top:122px; left:449px; display:block;width:190px; height:46px; font-size:0; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}

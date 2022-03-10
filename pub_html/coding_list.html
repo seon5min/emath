@@ -1,0 +1,1092 @@
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title></title>
+<style type="text/css">
+*{padding:0;margin:0;border:0;outline:0}
+body{font-size:12px;line-height:1.3;color:#666;font-family:Dotum, sans-serif}
+.bln{border-left:0}
+.btn{border-top:0}
+h1{padding-left:20px;font-size:24px;height:40px;line-height:40px;border-bottom:3px solid #acf1fc;font-size:1.8em;letter-spacing:-1px}
+.info{margin:10px 0; padding:20px; line-height:1.5; border:1px solid #b5b5b5; background:#efefef;}
+table{table-layout:fixed;border-collapse:collapse;width:100%;border-top:2px solid #ccc;border-bottom:1px solid #ccc}
+table thead th{height:30px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;background:#f5f5f5}
+table thead th:first-child{border-left:0}
+table tbody td{height:35px;padding:0 3%;border-left:1px solid #ccc;border-top:1px solid #ccc;word-wrap:break-word;}
+table tbody td.f0{background:#f0f0f0}
+
+</style>
+</head>
+<body>
+	<h1>EBS Math 고도화</h1>
+
+	<div class="info">
+		<strong>* 기본 css</strong><br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/nanumbarungothic.css" /&gt;<br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/common.css" /&gt;<br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/layout.css" /&gt;<br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/default.css" /&gt;<br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/customSelectBox.css" /&gt;<br/><br/>
+
+		<strong>- 아래부턴 각 페이지에 추가 -</strong><br/>
+		<strong>* 통합검색 css</strong><br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/search.css"&gt;<br/>
+		<strong>* 평가문항 css</strong><br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/sub.css" /&gt;<br/>
+		<strong>* 모든 팝업 css</strong><br/>
+		&lt;link rel="stylesheet" type="text/css" href="/common/innovativepot/math2016/css/popup.css" /&gt;<br/>
+	</div>
+
+	<table>
+		<colgroup>
+			<col width="15"/>
+			<col width="18"/>
+			<col width="15"/>
+			<col width="50"/>
+			<col width="15"/>
+			<col width="15"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>1depth</th>
+				<th>2depth</th>
+				<th>3depth</th>
+				<th>파일명</th>
+				<th>HTML 진행상태</th>
+				<th>비고</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>로그인 페이지</td>
+			<td></td>
+			<td></td>
+			<td><a href="./login.html" target="_blank">./login.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>로그인 후</td>
+			<td></td>
+			<td></td>
+			<td><a href="./login_on.html" target="_blank">./login_on.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>메인</td>
+			<td></td>
+			<td></td>
+			<td><a href="./main.html" target="_blank">./main.html</a></td>
+			<td>완료</td>
+			<td>풋터 패밀리 사이트 순서 변경<br /> 탑메뉴 전체교과보기 띄어쓰기</td>
+		</tr>
+		<tr>
+			<td>메인 rewind</td>
+			<td></td>
+			<td></td>
+			<td><a href="./main.html" target="_blank">./main_rewind.html</a></td>
+			<td>완료</td>
+			<td>2017-08-25일<br /> 메인페이지 개선</td>
+		</tr>
+		<tr>
+			<td rowspan="8">lnb 가이드</td>
+			<td>초등5</td>
+			<td></td>
+			<td><a href="./lnb1.html" target="_blank">./lnb1.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>초등6</td>
+			<td></td>
+			<td><a href="./lnb2.html" target="_blank">./lnb2.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>중학1</td>
+			<td></td>
+			<td><a href="./lnb3.html" target="_blank">./lnb3.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br /> 정수, 유리수의 곱셈/나누셈 -> 정수, 유리수의 곱셈/나눗셈</td>
+		</tr>
+		<tr>
+			<td>중학2</td>
+			<td></td>
+			<td><a href="./lnb4.html" target="_blank">./lnb4.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>중학3</td>
+			<td></td>
+			<td><a href="./lnb5.html" target="_blank">./lnb5.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>초등 수학 놀이터</td>
+			<td></td>
+			<td><a href="./lnb6.html" target="_blank">./lnb6.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>중학수학카페</td>
+			<td></td>
+			<td><a href="./lnb7.html" target="_blank">./lnb7.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>고객센터</td>
+			<td></td>
+			<td><a href="./lnb8.html" target="_blank">./lnb8.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="16">카테고리</td>
+			<td>카테고리1</td>
+			<td></td>
+			<td><a href="./category/category1.html" target="_blank">./category/category1.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션</td>
+		</tr>
+		<tr>
+			<td>카테고리2</td>
+			<td></td>
+			<td><a href="./category/category2.html" target="_blank">./category/category2.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션</td>
+		</tr>
+		<tr>
+			<td>카테고리3</td>
+			<td></td>
+			<td><a href="./category/category3.html" target="_blank">./category/category3.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션<br />조회버튼->검색</td>
+		</tr>
+		<tr>
+			<td>카테고리4</td>
+			<td></td>
+			<td><a href="./category/category4.html" target="_blank">./category/category4.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션</td>
+		</tr>
+		<tr>
+			<td>카테고리5</td>
+			<td></td>
+			<td><a href="./category/category5.html" target="_blank">./category/category5.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션</td>
+		</tr>
+		<tr>
+			<td>카테고리6</td>
+			<td></td>
+			<td><a href="./category/category6.html" target="_blank">./category/category6.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 유형 상관없이 단색처리<br />툴팁삭제</td>
+		</tr>
+		<tr>
+			<td>카테고리7</td>
+			<td></td>
+			<td><a href="./category/category7.html" target="_blank">./category/category7.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션</td>
+		</tr>
+		<tr>
+			<td>카테고리8</td>
+			<td></td>
+			<td><a href="./category/category8.html" target="_blank">./category/category8.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>카테고리9</td>
+			<td></td>
+			<td><a href="./category/category9.html" target="_blank">./category/category9.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />교사활용팁 버튼 이미지 제거</td>
+		</tr>
+		<tr>
+			<td>카테고리10</td>
+			<td></td>
+			<td><a href="./category/category10.html" target="_blank">./category/category10.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />전체화면 채첨 버튼 추가</td>
+		</tr>
+		<tr>
+			<td>카테고리11</td>
+			<td></td>
+			<td><a href="./category/category11.html" target="_blank">./category/category11.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />전체화면 채첨 버튼 추가</td>
+		</tr>
+		<tr>
+			<td>카테고리12</td>
+			<td></td>
+			<td><a href="./category/category12.html" target="_blank">./category/category12.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />교사활용팁 버튼 이미지 제거<br /> 이전화 다음화 삭제</td>
+		</tr>
+		<tr>
+			<td>카테고리13</td>
+			<td></td>
+			<td><a href="./category/category13.html" target="_blank">./category/category13.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />교사활용팁 버튼 이미지 제거</td>
+		</tr>
+		<tr>
+			<td>카테고리14</td>
+			<td></td>
+			<td><a href="./category/category14.html" target="_blank">./category/category14.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션<br />교사활용팁 버튼 이미지 제거<br />스타트 영역변경</td>
+		</tr>
+		<tr>
+			<td>카테고리15</td>
+			<td></td>
+			<td><a href="./category/category15.html" target="_blank">./category/category15.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션<br />이전 다음 버튼삭제</td>
+		</tr>
+		<tr>
+			<td>카테고리16</td>
+			<td></td>
+			<td><a href="./category/category16.html" target="_blank">./category/category16.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />이전 다음 버튼삭제<br />툴팁제거<br />카드유형에 상관없이 단색처리</td>
+		</tr>
+		<tr>
+			<td rowspan="2">시리즈</td>
+			<td>시리즈1</td>
+			<td></td>
+			<td><a href="./series/series1.html" target="_blank">./series/series1.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>시리즈2</td>
+			<td></td>
+			<td><a href="./series/series2.html" target="_blank">./series/series2.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션</td>
+		</tr>
+		<tr>
+			<td rowspan="33">고객센터</td>
+			<td>메인</td>
+			<td></td>
+			<td><a href="./customer/customer1.html" target="_blank">./mypage/customer1.html</a></td>
+			<td>완료</td>
+			<td>2016-01-08 수정</td>
+		</tr>
+		<tr>
+			<td>FAQ  - 전체</td>
+			<td></td>
+			<td><a href="./customer/customer2.html" target="_blank">./mypage/customer2.html</a></td>
+			<td>완료</td>
+			<td>2016-01-08 수정</td>
+		</tr>
+		<tr>
+			<td>FAQ  - 검색결과 없음</td>
+			<td></td>
+			<td><a href="./customer/customer3.html" target="_blank">./mypage/customer3.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>FAQ  - 회원정보/가입</td>
+			<td></td>
+			<td><a href="./customer/customer4.html" target="_blank">./mypage/customer4.html</a></td>
+			<td>완료</td>
+			<td>2016-01-08 수정</td>
+		</tr>
+		<tr>
+			<td>FAQ  - 사이트 이용안내</td>
+			<td></td>
+			<td><a href="./customer/customer5.html" target="_blank">./mypage/customer5.html</a></td>
+			<td>완료</td>
+			<td>2016-01-08 수정</td>
+		</tr>
+		<tr>
+			<td>FAQ  - 커뮤니티 이용안내</td>
+			<td></td>
+			<td><a href="./customer/customer6.html" target="_blank">./mypage/customer6.html</a></td>
+			<td>완료</td>
+			<td>2016-01-08 수정</td>
+		</tr>
+		<tr>
+			<td>FAQ  - 교사 이용안내</td>
+			<td></td>
+			<td><a href="./customer/customer7.html" target="_blank">./mypage/customer7.html</a></td>
+			<td>완료</td>
+			<td>2016-01-08 수정</td>
+		</tr>
+		<tr>
+			<td>이용문의 - 리스트</td>
+			<td></td>
+			<td><a href="./customer/customer8.html" target="_blank">./mypage/customer8.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이용문의 - 검색결과 없음</td>
+			<td></td>
+			<td><a href="./customer/customer9.html" target="_blank">./mypage/customer9.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이용문의 - 상세</td>
+			<td></td>
+			<td><a href="./customer/customer10.html" target="_blank">./mypage/customer10.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이용문의 - 상세 답변없음</td>
+			<td></td>
+			<td><a href="./customer/customer11.html" target="_blank">./mypage/customer11.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이용문의 - 등록</td>
+			<td></td>
+			<td><a href="./customer/customer12.html" target="_blank">./mypage/customer12.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 리스트</td>
+			<td></td>
+			<td><a href="./customer/customer13.html" target="_blank">./mypage/customer13.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 조회 내용 없음</td>
+			<td></td>
+			<td><a href="./customer/customer14.html" target="_blank">./mypage/customer14.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 검색</td>
+			<td></td>
+			<td><a href="./customer/customer15.html" target="_blank">./mypage/customer15.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 검색 조회 내용 없음</td>
+			<td></td>
+			<td><a href="./customer/customer16.html" target="_blank">./mypage/customer16.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 상세</td>
+			<td></td>
+			<td><a href="./customer/customer17.html" target="_blank">./mypage/customer17.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 상세 답변없음</td>
+			<td></td>
+			<td><a href="./customer/customer18.html" target="_blank">./mypage/customer18.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 등록</td>
+			<td></td>
+			<td><a href="./customer/customer19.html" target="_blank">./mypage/customer19.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정<br />문의내용 안에 문구수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A - 답변 등록</td>
+			<td></td>
+			<td><a href="./customer/customer20.html" target="_blank">./mypage/customer20.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이벤트 - 리스트</td>
+			<td></td>
+			<td><a href="./customer/customer21.html" target="_blank">./mypage/customer21.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>이벤트 - 상세</td>
+			<td></td>
+			<td><a href="./customer/customer22.html" target="_blank">./mypage/customer22.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이벤트 - 당첨자 조회 -  리스트</td>
+			<td></td>
+			<td><a href="./customer/customer23.html" target="_blank">./mypage/customer23.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>이벤트 - 당첨자 조회 -  결과없음</td>
+			<td></td>
+			<td><a href="./customer/customer24.html" target="_blank">./mypage/customer24.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>이벤트 - 당첨자 조회 - 상세</td>
+			<td></td>
+			<td><a href="./customer/customer25.html" target="_blank">./mypage/customer25.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>수학행사 - 수학교사 한마당</td>
+			<td></td>
+			<td><a href="./customer/customer26.html" target="_blank">./mypage/customer26.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />셀렉박스 위치 변경</td>
+		</tr>
+		<tr>
+			<td>수학행사 - 서울세계수학자대회</td>
+			<td></td>
+			<td><a href="./customer/customer27.html" target="_blank">./mypage/customer27.html</a></td>
+			<td>완료</td>
+			<<td>2016-01-21 수정<br />셀렉박스 위치 변경</td>
+		</tr>
+		<tr>
+			<td>수학행사 - 서울세계수학자대회 상세</td>
+			<td></td>
+			<td><a href="./customer/customer31.html" target="_blank">./mypage/customer31.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />셀렉박스 위치 변경</td>
+		</tr>
+		<tr>
+			<td>수학행사 - 찾아가는 EBSMath 체험관</td>
+			<td></td>
+			<td><a href="./customer/customer32.html" target="_blank">./mypage/customer32.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>공지사항 - 미리 보는 EBSMath</td>
+			<td></td>
+			<td><a href="./customer/customer33.html" target="_blank">./mypage/customer33.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>공지사항 - 리스트</td>
+			<td></td>
+			<td><a href="./customer/customer28.html" target="_blank">./mypage/customer28.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>공지사항 - 검색결과 없음</td>
+			<td></td>
+			<td><a href="./customer/customer29.html" target="_blank">./mypage/customer29.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>공지사항 - 상세</td>
+			<td></td>
+			<td><a href="./customer/customer30.html" target="_blank">./mypage/customer30.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+
+		<tr>
+			<td rowspan="24">마이페이지</td>
+			<td>최근 본 학습카드</td>
+			<td></td>
+			<td><a href="./mypage/mypage1.html" target="_blank">./mypage/mypage1.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />카드 이미지 그라데이션<br />내가 한번이라도 본 학습카드는 모두 이곳에 보관됩니다. 추가</td>
+		</tr>
+
+		<tr>
+			<td>최근 본 학습카드 - 데이터 없음</td>
+			<td></td>
+			<td><a href="./mypage/mypage2.html" target="_blank">./mypage/mypage2.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />내가 한번이라도 본 학습카드는 모두 이곳에 보관됩니다. 추가</td>
+		</tr>
+
+		<tr>
+			<td>찜 한 학습카드</td>
+			<td></td>
+			<td><a href="./mypage/mypage3.html" target="_blank">./mypage/mypage3.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />선택삭제 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>찜 한 학습카드 - 데이터 없음</td>
+			<td></td>
+			<td><a href="./mypage/mypage4.html" target="_blank">./mypage/mypage4.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />선택삭제 버튼 수정<br />리스트 문구수정</td>
+		</tr>
+		<tr>
+			<td>내 M노트</td>
+			<td></td>
+			<td><a href="./mypage/mypage5.html" target="_blank">./mypage/mypage5.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />하단문구 수정<br />자물쇠 아이콘 추가</td>
+		</tr>
+		<tr>
+			<td>내 M노트 - 기존 교사 인증용</td>
+			<td></td>
+			<td><a href="./mypage/mypage24.html" target="_blank">./mypage/mypage24.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>내 M노트 - 데이터 없음</td>
+			<td></td>
+			<td><a href="./mypage/mypage6.html" target="_blank">./mypage/mypage6.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />하단문구 수정</td>
+		</tr>
+		<tr>
+			<td>내 문제</td>
+			<td></td>
+			<td><a href="./mypage/mypage7.html" target="_blank">./mypage/mypage7.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />하단문구 수정</td>
+		</tr>
+		<tr>
+			<td>내 문제 - 문제</td>
+			<td></td>
+			<td><a href="./mypage/mypage8.html" target="_blank">./mypage/mypage8.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>오답노트</td>
+			<td></td>
+			<td><a href="./mypage/mypage9.html" target="_blank">./mypage/mypage9.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />문제지로 만들기 담기 버튼 수정</td>
+		</tr>
+
+		<tr>
+			<td>오답노트 - 문제</td>
+			<td></td>
+			<td><a href="./mypage/mypage10.html" target="_blank">./mypage/mypage10.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>이용 문의 내역</td>
+			<td></td>
+			<td><a href="./mypage/mypage11.html" target="_blank">./mypage/mypage11.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />문의하기 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>이용 문의 내역 - 상세</td>
+			<td></td>
+			<td><a href="./mypage/mypage12.html" target="_blank">./mypage/mypage12.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />목록보기 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 내역</td>
+			<td></td>
+			<td><a href="./mypage/mypage13.html" target="_blank">./mypage/mypage13.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />문의하기 버튼 수정<br />탭메뉴 문구 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 답변관리</td>
+			<td></td>
+			<td><a href="./mypage/mypage14.html" target="_blank">./mypage/mypage14.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 내역 - 상세</td>
+			<td></td>
+			<td><a href="./mypage/mypage15.html" target="_blank">./mypage/mypage15.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />목록보기 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 답변관리 - 상세</td>
+			<td></td>
+			<td><a href="./mypage/mypage16.html" target="_blank">./mypage/mypage16.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />하단 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 답변관리 - 답변등록</td>
+			<td></td>
+			<td><a href="./mypage/mypage17.html" target="_blank">./mypage/mypage17.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />하단 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 내역 - 답변없음</td>
+			<td></td>
+			<td><a href="./mypage/mypage18.html" target="_blank">./mypage/mypage18.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />목록보기 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습 Q&A 내역 - 답변 평가하기</td>
+			<td></td>
+			<td><a href="./mypage/mypage19.html" target="_blank">./mypage/mypage19.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />목록보기 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>오류 신고 내역</td>
+			<td></td>
+			<td><a href="./mypage/mypage20.html" target="_blank">./mypage/mypage20.html</a></td>
+			<td>완료</td>
+			<td>2016-01-12 수정</td>
+		</tr>
+		<tr>
+			<td>오류 신고 내역 - 상세</td>
+			<td></td>
+			<td><a href="./mypage/mypage21.html" target="_blank">./mypage/mypage21.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />목록보기 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>회원정보 수정 - 로그인</td>
+			<td></td>
+			<td><a href="./mypage/mypage22.html" target="_blank">./mypage/mypage22.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>회원정보 수정</td>
+			<td></td>
+			<td><a href="./mypage/mypage23.html" target="_blank">./mypage/mypage23.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />회원탈퇴, 리스트 하단 버튼 수정<br />서브타이틀 삭제<br />나의 정보 관리 -> 내 기본 정보</td>
+		</tr>
+		<tr>
+			<td rowspan="26">마이페이지 - 커뮤니티</td>
+			<td>학습커뮤니티 - 커뮤니티 개설 및 관리</td>
+			<td></td>
+			<td><a href="./mypage/community1.html" target="_blank">./mypage/community1.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 명</td>
+			<td></td>
+			<td><a href="./mypage/community2.html" target="_blank">./mypage/community2.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />학습과제출제, 글등록하기 버튼 수정<br />페이지네이션 변경<br />출석상태 문구 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 상세</td>
+			<td></td>
+			<td><a href="./mypage/community3.html" target="_blank">./mypage/community3.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />리스트 하단 버튼 수정 위치변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 글등록</td>
+			<td></td>
+			<td><a href="./mypage/community4.html" target="_blank">./mypage/community4.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />리스트 하단 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 글등록_1</td>
+			<td></td>
+			<td><a href="./mypage/community5.html" target="_blank">./mypage/community5.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />리스트 하단 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 내 학습 커뮤니티</td>
+			<td></td>
+			<td><a href="./mypage/community6.html" target="_blank">./mypage/community6.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />커뮤니티명->커뮤니티 이름</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 가입한 커뮤니티 없음</td>
+			<td></td>
+			<td><a href="./mypage/community7.html" target="_blank">./mypage/community7.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 학습게시판</td>
+			<td></td>
+			<td><a href="./mypage/community8.html" target="_blank">./mypage/community8.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />출석하기 버튼 수정<br />페이지네이션 변경<br />출석상태 문구 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 자유게시판</td>
+			<td></td>
+			<td><a href="./mypage/community9.html" target="_blank">./mypage/community9.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br />페이지네이션 변경<br />출석상태 문구 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 찾기</td>
+			<td></td>
+			<td><a href="./mypage/community10.html" target="_blank">./mypage/community10.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브 타이틀 변경<br /> 검색 상단 문구변경<br />리스트 하단 문구변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 학습 과제출제</td>
+			<td></td>
+			<td><a href="./mypage/community11.html" target="_blank">./mypage/community11.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />학습 콘텐츠 등록 문구 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 학습 과제출제 콘텐츠 없음</td>
+			<td></td>
+			<td><a href="./mypage/community12.html" target="_blank">./mypage/community12.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />학습 콘텐츠 등록 문구 수정<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 상세_1</td>
+			<td></td>
+			<td><a href="./mypage/community13.html" target="_blank">./mypage/community13.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />삭제 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 상세_2</td>
+			<td></td>
+			<td><a href="./mypage/community14.html" target="_blank">./mypage/community14.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />삭제 버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 상세_3</td>
+			<td></td>
+			<td><a href="./mypage/community15.html" target="_blank">./mypage/community15.html</a></td>
+			<td>완료</td>
+			<td>2016-01-12 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 생성/관리_1</td>
+			<td></td>
+			<td><a href="./mypage/community16.html" target="_blank">./mypage/community16.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 생성/관리_2</td>
+			<td></td>
+			<td><a href="./mypage/community17.html" target="_blank">./mypage/community17.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경<br />운영종료, 리스트 하단버튼 수정<br />커뮤니티 운영상태 수정<br />페이지네이션 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 개설한 커뮤니티 상세</td>
+			<td></td>
+			<td><a href="./mypage/community26.html" target="_blank">./mypage/community26.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경<br />리스트 하단버튼 수정<br />페이지네이션 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 회원 관리</td>
+			<td></td>
+			<td><a href="./mypage/community18.html" target="_blank">./mypage/community18.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경<br />리스트 하단버튼 수정<br />페이지네이션 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 이력 조회</td>
+			<td></td>
+			<td><a href="./mypage/community19.html" target="_blank">./mypage/community19.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 커뮤니티 이력 조회_1</td>
+			<td></td>
+			<td><a href="./mypage/community20.html" target="_blank">./mypage/community20.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경</td>
+		</tr>
+		<tr>
+			<td>학습커뮤니티 - 회원 이력조회</td>
+			<td></td>
+			<td><a href="./mypage/community21.html" target="_blank">./mypage/community21.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />서브타이틀 변경<br />페이지네이션 변경<br />일별, 월별 수정</td>
+		</tr>
+		<tr>
+			<td>선생님 커뮤니티</td>
+			<td></td>
+			<td><a href="./mypage/community22.html" target="_blank">./mypage/community22.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />버튼 수정</td>
+		</tr>
+		<tr>
+			<td>선생님 커뮤니티 - 리스트</td>
+			<td></td>
+			<td><a href="./mypage/community23.html" target="_blank">./mypage/community23.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>선생님 커뮤니티 - 글등록</td>
+			<td></td>
+			<td><a href="./mypage/community24.html" target="_blank">./mypage/community24.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />리스트 하단버튼 수정</td>
+		</tr>
+		<tr>
+			<td>선생님 커뮤니티 - 상세</td>
+			<td></td>
+			<td><a href="./mypage/community25.html" target="_blank">./mypage/community25.html</a></td>
+			<td>완료</td>
+			<td>2016-01-21<br />리스트 하단버튼 수정 위치변경</td>
+		</tr>
+
+		<tr>
+			<td rowspan="4">기타</td>
+			<td>전체 교과보기</td>
+			<td></td>
+			<td><a href="./etc/all_menu.html" target="_blank">./etc/all_menu.html</a></td>
+			<td>완료</td>
+			<td>2016-01-18 수정</td>
+		</tr>
+		<tr>
+			<td>EBS Math 소개</td>
+			<td></td>
+			<td><a href="./etc/intro.html" target="_blank">./etc/intro.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>에러 페이지</td>
+			<td></td>
+			<td><a href="./etc/error.html" target="_blank">./etc/error.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>에러 페이지 - 페이지 내 css</td>
+			<td></td>
+			<td><a href="./etc/error2.html" target="_blank">./etc/error2.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		</tbody>
+	</table>
+	<table>
+		<colgroup>
+		<col width="15%"/>
+		<col width="20%"/>
+		<col width="5%"/>
+		<col width="*"/>
+		<col width="10%"/>
+		<col width="5%"/>
+		</colgroup>
+		<thead>
+		<tr>
+		<th>1depth</th>
+		<th>2depth</th>
+		<th>3depth</th>
+		<th>파일명</th>
+		<th>HTML 진행상태</th>
+		<th>비고</th>
+		</tr>
+		</thead>
+		<tbody>
+
+		<tr>
+			<td rowspan="12">평가문항 서비스</td>
+			<td>[팝업]주관식 답안작성</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pop_essay_qz.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pop_essay_qz.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>[팝업]수식편집</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pop_input_mathformula.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pop_input_mathformula.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>[팝업]인쇄</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pop_print.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pop_print.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>[팝업]채점하기</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pop_scoring.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pop_scoring.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>[팝업]오류신고</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pop_error.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pop_error.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 리스트</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_list.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_list.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 상세</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_detail.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_detail.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 상세 - 해설</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_detail2.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_detail2.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 상세 - 문제 + 강의</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_detail3.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_detail3.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 상세 - 선택지 연결형(가로형)</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_link_lr.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_link_lr.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 상세 - 선택지 연결형(세로형)</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_link_ud.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_link_ud.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 상세 - 선택지 연결형 해설</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mathEditor/pyeongga_link_detail.html" target="_blank">/innovativepot/math2016/pub_html/mathEditor/pyeongga_link_detail.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td rowspan="2">마이페이지</td>
+			<td>문제 리스트</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mypage/myqz_list.html" target="_blank">/innovativepot/math2016/pub_html/mypage/myqz_list.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제 채점</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/mypage/myqz_list2.html" target="_blank">/innovativepot/math2016/pub_html/mypage/myqz_list2.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td rowspan="9">통합검색</td>
+			<td>기본</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search.html" target="_blank">/innovativepot/math2016/pub_html/search/search.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>학습카드모음</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_card.html" target="_blank">/innovativepot/math2016/pub_html/search/search_card.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>영상</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_vod.html" target="_blank">/innovativepot/math2016/pub_html/search/search_vod.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>문제</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_qna.html" target="_blank">/innovativepot/math2016/pub_html/search/search_qna.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>웹툰</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_webtoon.html" target="_blank">/innovativepot/math2016/pub_html/search/search_webtoon.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>게임</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_interactive.html" target="_blank">/innovativepot/math2016/pub_html/search/search_interactive.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>M노트</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_mnote.html" target="_blank">/innovativepot/math2016/pub_html/search/search_mnote.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>시리즈</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_series.html" target="_blank">/innovativepot/math2016/pub_html/search/search_series.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>게시물</td>
+			<td></td>
+			<td><a href="http://172.20.51.126/math/innovativepot/math2016/pub_html/search/search_board.html" target="_blank">/innovativepot/math2016/pub_html/search/search_board.html</a></td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+
+		</tbody>
+	</table>
+</body>
+</html>

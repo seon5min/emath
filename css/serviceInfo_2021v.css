@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* 서비스 소개 인페이지 */
+.ebsMath_info .series_wrap .tab_sorting {display:flex; justify-content:center; margin:3rem auto;}
+
+/* EBSMath는 */
+.ebsMath_info .si_mathIs {position:relative; width:100%;}
+.ebsMath_info .si_mathIs > h4 {position:relative; text-align:left; font-weight:bold; font-size:2rem; color:#333; padding-left:2.5rem; margin-bottom:1.8rem; line-height:1.5; vertical-align:top;}/* 2021-12-14 수정 */
+.ebsMath_info .si_mathIs > h4:before {content:''; position:absolute; left:0; top:0.8rem; width:18px; height:17px; margin-right:5px; background:url('../images/serviceInfo/arrow_title_plus.png') no-repeat left center; background-size:18px 17px; vertical-align:top;}/* 2021-12-14 수정 */
+.ebsMath_info .si_mathIs .mathIs_desc {text-align:left; font-weight:400; font-size:1.4rem; color:#333; line-height:1.4;}
+.ebsMath_info .si_mathIs .circle_info_step3 {display:flex; justify-content:center; margin:2.5rem 0 6rem 0;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div:first-child {margin-right:-1.5rem;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div:last-child {margin-left:-1.5rem;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div > p {position:relative;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div > p > img {width:100%; max-width:21.8rem;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div > p > span {position:absolute; left:0; top:13rem; width:100%; text-align:center; font-weight:400; font-size:1.4rem; color:#4e42ca; line-height:1.4;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div:nth-child(2) > p > span {color:#f1b700;}
+.ebsMath_info .si_mathIs .circle_info_step3 > div:last-child > p > span {color:#f05d5b;}
+
+/* EBSMath 특징 */
+.ebsMath_info .si_features_step4 {position:relative; width:100%; margin-bottom:6rem;}
+.ebsMath_info .si_features_step4 > h4 {position:relative; text-align:left; font-weight:bold; font-size:2rem; color:#333; padding-left:2.5rem; margin-bottom:2rem; line-height:1.5; vertical-align:top;}/* 2021-12-14 수정 */
+.ebsMath_info .si_features_step4 > h4:before {content:''; position:absolute; left:0; top:0.8rem; width:18px; height:17px; margin-right:5px; background:url('../images/serviceInfo/arrow_title_plus.png') no-repeat left center; background-size:18px 17px; vertical-align:top;}/* 2021-12-14 수정 */
+.ebsMath_info .si_features_step4 .features_info {display:flex; justify-content:space-between;}
+.ebsMath_info .si_features_step4 .features_info > div {width:100%; max-width:30rem; margin-right:2.5rem; text-align:center; padding:3rem 2rem; border:1px solid #4e42ca; box-sizing:border-box;}
+.ebsMath_info .si_features_step4 .features_info > div:last-child {margin-right:0;}
+.ebsMath_info .si_features_step4 .features_info > div.icon_f_01 {background:url('../images/serviceInfo/icon_features_01.png') no-repeat center 3rem; background-size:60px 66px;}
+.ebsMath_info .si_features_step4 .features_info > div.icon_f_02 {background:url('../images/serviceInfo/icon_features_02.png') no-repeat center 3rem; background-size:60px 82px;}
+.ebsMath_info .si_features_step4 .features_info > div.icon_f_03 {background:url('../images/serviceInfo/icon_features_03.png') no-repeat center 3rem; background-size:60px 78px;}
+.ebsMath_info .si_features_step4 .features_info > div.icon_f_04 {background:url('../images/serviceInfo/icon_features_04.png') no-repeat center 3rem; background-size:60px 75px;}
+.ebsMath_info .si_features_step4 .features_info > div > img {width:60px; margin:0 auto;}
+.ebsMath_info .si_features_step4 .features_info > div > strong {display:block; width:100%; text-align:center; font-weight:500; font-size:1.6rem; color:#333; padding:11rem 0 1.5rem 0;}
+.ebsMath_info .si_features_step4 .features_info > div > span {display:block; width:100%; text-align:center; font-weight:400; font-size:1.4rem; color:#333; line-height:1.4;}
+
+/* EBSMath 주요 시리즈 */
+.ebsMath_info .si_mainSeries_step4 {overflow:hidden; position:relative; width:100%; margin-bottom:6rem;}
+.ebsMath_info .si_mainSeries_step4 > h4 {position:relative; text-align:left; font-weight:bold; font-size:2rem; color:#333; padding-left:2.5rem; line-height:1.5; vertical-align:top;}/* 2021-12-14 수정 */
+.ebsMath_info .si_mainSeries_step4 > h4:before {content:''; position:absolute; left:0; top:0.8rem; width:18px; height:17px; margin-right:5px; background:url('../images/serviceInfo/arrow_title_plus.png') no-repeat left center; background-size:18px 17px; vertical-align:top;}/* 2021-12-14 수정 */
+.ebsMath_info .si_mainSeries_step4 > h4 > a.btn_theView {position:relative; text-align:left; font-weight:400; font-size:1.4rem; color:#4e42ca; padding-left:2rem; vertical-align:top;}
+.ebsMath_info .si_mainSeries_step4 > h4 > a.btn_theView:after {content:''; display:inline-block; width:8px; height:12px; margin-left:3px; background:url('../images/serviceInfo/arrow_the_view.png') no-repeat left center; background-size:8px 12px; vertical-align:initial;}
+.ebsMath_info .si_mainSeries_step4 .series_info {position:relative; width:100%;}
+.ebsMath_info .si_mainSeries_step4 .series_info > li {float:left; width:calc(100% / 4); min-height:31rem; margin:2rem 0 2.5rem 0; text-align:center;}
+.ebsMath_info .si_mainSeries_step4 .series_info > li > a {display:block;}
+.ebsMath_info .si_mainSeries_step4 .series_info > li > a > img {width:100%; max-width:18rem;}
+.ebsMath_info .si_mainSeries_step4 .series_info > li > a > strong {display:block; width:100%; text-align:center; font-weight:500; font-size:1.6rem; color:#333; padding:2rem 0 1.5rem 0;}
+.ebsMath_info .si_mainSeries_step4 .series_info > li > a > span {display:block; width:100%; text-align:center; font-weight:400; font-size:1.4rem; color:#333; line-height:1.4;}
+
+/* 2021 EBSMath */
+.ebsMath_info .si_movies {overflow:hidden; position:relative; width:100%; margin-bottom:6rem; padding-bottom:5rem; border-bottom:1px solid #e1e1e1;}
+.ebsMath_info .si_movies:last-child {padding-bottom:0; border-bottom:0;}
+.ebsMath_info .si_movies > h4 {position:relative; text-align:left; font-weight:bold; font-size:2rem; color:#333; padding-left:2.5rem; margin-bottom:2rem; line-height:1.5; vertical-align:top;}
+.ebsMath_info .si_movies > h4 > em {color:#4e42ca;}
+.ebsMath_info .si_movies > h4:before {content:''; position:absolute; left:0; top:0.8rem; width:18px; height:17px; margin-right:5px; background:url('../images/serviceInfo/arrow_title_plus.png') no-repeat left center; background-size:18px 17px; vertical-align:top;}
+
+.ebsMath_info .si_movies .mv_con_wrap {overflow:hidden; position:relative; width:100%;}
+.ebsMath_info .si_movies .mv_con_wrap .con_box {width:100%; margin:1.5rem 0 3rem 0;}
+.ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; width:96rem; height:54rem; margin:0 auto; background:#000;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu {display:flex; justify-content:space-evenly; width:100%;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu.w_size {display:flex; width:100%; max-width:96rem; margin:0 auto;}
+
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li {width:90%; margin-left:0.8rem; background:rgba(78, 66, 202, 0.11); border:1px solid #4e42ca;  border-radius:4rem;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li a {position:relative; display:block; height:4rem; line-height:3.8rem; text-align:center; font-size:1.4rem; color:#4e42ca;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li a:before {content:''; display:inline-block; width:26px; height:26px; margin-right:1rem; vertical-align:middle;}
+
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on {border-color:#4e42ca; background:rgba(78, 66, 202, 1);}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on a {color:#fff;}
+
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon01 a:before {background: url('../images/serviceInfo/icon_movie_menu_01.png') no-repeat left top; background-size:26px 52px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon01.on a:before {background-position:left bottom;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon02 a:before {background: url('../images/serviceInfo/icon_movie_menu_02.png') no-repeat left top; background-size:26px 52px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon02.on a:before {background-position:left bottom;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon03 a:before {background: url('../images/serviceInfo/icon_movie_menu_03.png') no-repeat left top; background-size:26px 52px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon03.on a:before {background-position:left bottom;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon04 a:before {background: url('../images/serviceInfo/icon_movie_menu_04.png') no-repeat left top; background-size:26px 52px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon04.on a:before {background-position:left bottom;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon05 a:before {background: url('../images/serviceInfo/icon_movie_menu_05.png') no-repeat left top; background-size:26px 52px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon05.on a:before {background-position:left bottom;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon06 a:before {background: url('../images/serviceInfo/icon_movie_menu_06.png') no-repeat left top; background-size:26px 52px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon06.on a:before {background-position:left bottom;}
+
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner {display:flex; justify-content:space-evenly; width:85%; margin:0 auto;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li {width:90%; height:4rem; margin-left:0.8rem; background:none; border:0; border-radius:none;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.on {background:none; border:0; border-radius:none;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li a {display:block; width:100%; height:100%;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner01 a {background: url('../images/serviceInfo/icon_banner_menu_01.png') no-repeat center center; background-size:auto 39px; text-indent:-9999px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner02 a {background: url('../images/serviceInfo/icon_banner_menu_02.png') no-repeat center center; background-size:auto 39px; text-indent:-9999px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner03 a {background: url('../images/serviceInfo/icon_banner_menu_03.png') no-repeat center center; background-size:auto 39px; text-indent:-9999px;}
+
+
+@media all and (max-width:995px) {
+    /* EBSMath 특징 */
+    .ebsMath_info .si_features_step4 .features_info {display:block;}
+    .ebsMath_info .si_features_step4 .features_info > div {float:left; width:calc(96% / 2 ); max-width:100%; min-height:40rem; margin:0 2% 4% 0;}
+    .ebsMath_info .si_features_step4 .features_info > div:nth-child(even) {margin:0 0 4% 2%;}
+    .ebsMath_info .si_features_step4 .features_info > div:nth-child(3),
+    .ebsMath_info .si_features_step4 .features_info > div:nth-child(4) {min-height:35rem; margin-bottom:5rem;}
+    .ebsMath_info .si_features_step4 .features_info > div > strong {font-size:1.6rem;}
+    .ebsMath_info .si_features_step4 .features_info > div > span {font-size:1.4rem;}
+
+    /* EBSMath 주요 시리즈 */
+    .ebsMath_info .si_mainSeries_step4 .series_info > li {width:calc(100% / 3);}
+}
+
+@media all and (max-width:760px) {
+    /* 서비스 소개_홍보영상 탭 */
+    .series_wrap .tab_sorting button {width:50%;}
+
+    /* EBSMath는 */
+    .ebsMath_info .si_mathIs .circle_info_step3 {position:relative; overflow:hidden; display:block; max-width:35rem; min-width:35rem; min-height:35rem; margin:3rem auto; padding-bottom:35rem;}
+    .ebsMath_info .si_mathIs .circle_info_step3 > div {width:50%;}
+    .ebsMath_info .si_mathIs .circle_info_step3 > div:first-child {position:absolute; top:0; left:50%; -webkit-transform:translate(-50%, 0%);transform:translate(-50%, 0%);}
+    .ebsMath_info .si_mathIs .circle_info_step3 > div:nth-child(2) {position:absolute; top:14rem; left:0.7rem;}
+    .ebsMath_info .si_mathIs .circle_info_step3 > div:last-child {position:absolute; top:14rem; right:0.7rem;}
+    .ebsMath_info .si_mathIs .circle_info_step3 > div > p > span {top:60%;}
+
+    /* EBSMath 특징 */
+    .ebsMath_info .si_features_step4 .features_info > div {width:calc(100% / 1 ); min-height:auto; margin:0 0 4% 0;}
+    .ebsMath_info .si_features_step4 .features_info > div:nth-child(even) {margin-left:0;}
+    .ebsMath_info .si_features_step4 .features_info > div:nth-child(3) {min-height:auto; margin-bottom:4%;}
+    .ebsMath_info .si_features_step4 .features_info > div:nth-child(4) {min-height:auto; margin-bottom:5rem;}
+
+
+    /* EBSMath 주요 시리즈 */
+    .ebsMath_info .si_mainSeries_step4 {margin-bottom:0;}
+    .ebsMath_info .si_mainSeries_step4 .series_info > li {width:calc(96% / 2); min-height:31rem; margin:2rem 0 2.5rem 0;}
+    .ebsMath_info .si_mainSeries_step4 .series_info > li:nth-child(odd) {margin-right:2%;}
+    .ebsMath_info .si_mainSeries_step4 .series_info > li:nth-child(even) {margin-left:2%;}
+    .ebsMath_info .si_mainSeries_step4 .series_info > li > a {display:block;}
+    .ebsMath_info .si_mainSeries_step4 .series_info > li > a > img {width:100%; max-width:18rem;}
+
+
+    /* 2021 EBSMath */
+    .ebsMath_info .si_movies {margin-bottom:3rem; padding-bottom:3rem;}
+    .ebsMath_info .si_movies .mv_con_wrap {overflow:hidden; position:relative; width:100%;}
+    .ebsMath_info .si_movies .mv_con_wrap .con_box {width:100%; margin:0 0 2rem 0;}
+    .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; overflow:hidden; width:100%; height:0; margin:0 auto; padding-bottom:56.25%;}
+    .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box iframe,
+    .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box object,
+    .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box embed {position:absolute; left:0; top:0; height:100%; width:100%;}
+
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu {display:block; width:100%;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li {float:left; width:30%; margin-bottom:1rem; border-radius:2rem;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu.w_size li {margin-bottom:0;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li:nth-child(4),
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li:nth-child(5) {margin-bottom:0;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a {height:auto; padding:1.5rem 0; line-height:1;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a:before {display:block; width:26px; height:26px; margin:0 auto 1rem; vertical-align:top;}
+
+    .ebsMath_info .si_movies .mv_con_wrap .tabBanner li a {display:block; width:100%; height:100%;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner01 a {background-size:100%;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner02 a {background-size:100%;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner03 a {background-size:100%;}
+}

@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript">
+
+
+$(function ()
+{
+	$(".series_lnb .menu_con").each(function ( i )
+	{
+		$(this).find(".title").bind("click", function ( e )
+		{
+			$(".series_lnb .menu_con").removeClass("on");
+			$(".series_lnb .menu_con").eq(i).addClass("on");
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+
+<!-- header -->
+<div id="header" class="renewal2018">
+	<!-- top navigation -->
+	<div class="topWrap">
+		<div class="topArea">
+			<h1><a href="#none" title="EBS Math"><img src="../../images/layout/logo4.png" alt="EBS Math" /></a></h1>
+			
+			<!-- 우측 통합메뉴 -->
+			<div class="rightMenu cboth">
+				<ul class="menu cboth">
+					<!-- 로그인 전 -->
+					<li><a href="#none" title="로그인으로 이동"><em>로그인</em></a></li>
+					<li><a href="#none" title="회원가입으로 이동"><em>회원가입</em></a></li>
+					<!-- //로그인 전 -->
+
+					<!-- 로그인 후 -->
+					<li class="userId">
+						<a href="#none" title="">
+							<img src="../../images/common/icon_kko.png" alt="카카오" class="vm"/>
+							<!-- <img src="../images/common/icon_fb.png" alt="페이스북" class="vm" /> -->
+							<!-- <img src="../images/common/icon_nvr.png" alt="네이버" class="vm"/> -->
+							<em>홍길동 님</em><span class="icoArrow"></span>
+						</a>
+						<div class="myMenu">
+							<ul>
+								<li><a href="#none" title="내가 본 학습카드로 이동">내가 본 학습카드</a></li>
+								<li><a href="#none" title="찜 한 학습카드로 이동">찜 한 학습카드</a></li>
+								<li><a href="#none" title="내 문제로 이동">내 문제</a></li>
+								<li><a href="#none" title="회원정보변경으로 이동">회원정보변경</a></li>
+							</ul>
+							<div class="logout"><a href="#none" title="로그아웃"><img src="../../images/layout/logout_icon.png" alt="로그아웃" />로그아웃</a></div>
+						</div>
+					</li>
+					<li><a href="#none" title="마이페이지로 이동">마이페이지</a></li>
+					<!-- //로그인 후 -->
+
+					<li><a href="#none" title="이벤트로 이동">이벤트</a></li>
+					<li><a href="#none" title="고객센터로 이동">고객센터</a></li>
+				</ul>
+				<div class="searchArea">
+					<form action="">
+						<fieldset>
+							<legend>검색 폼</legend>
+							<input type="text" />
+							<button type="submit" class="btnSearch"><img src="../../images/common/btn_search.png" alt="검색" /></button>
+						</fieldset>
+					</form>
+					<div class="autoComplete">
+						<div id="searchList" class="searchList">
+							<div class="searchGuide">
+								<p>검색어 <strong>자동 추천 기능</strong>을사용하고 있습니다.
+								<br>입력시 자동으로 관련어를 추천합니다.</p>
+							</div>
+							<div class="searchEmpty">
+								<p>
+									해당 단어로 시작하는 검색어가 없습니다.
+								</p>
+							</div>
+
+							<div class="searchCont">
+								<ul>
+									<li><a href="#"><em>거북이</em>의 계략</a></li>
+									<li><a href="#"><em>거북이</em>계략</a></li>
+									<li><a href="#"><em>거북이</em></a></li>
+									<li><a href="#">아킬레우스를 무시한<em>거북이</em></a></li>
+									<li><a href="#">킬레우스<em>거북이</em>의 계략</a></li>
+								</ul>
+							</div>
+						</div>
+					
+						<div id="mySearch" class="mySearch">
+							<h5 class="title">내가 찾은 검색어</h5>
+							<ul>
+								<li>
+									<a class="myKeyword" href="#none" title="">수학운동회</a>
+									<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+								</li>
+								<li>
+									<a class="myKeyword" href="#none" title="">트리플 악셀의 비밀</a>
+									<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+								</li>
+							</ul>
+						</div>
+						<div class="btnClose">
+							<a href="#none"><img src="../../images/common/close_icon.png" alt="닫기" /><span class="ml5">자동완성 닫기</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //우측 통합메뉴 -->
+		</div>
+	</div>
+	<!-- //top navigation -->
+
+	<!-- gnb -->
+	<div class="gnbWrap">
+		<div id="gnb">
+			<ul class="gnb cboth">
+				<li>
+					<a href="#none" class="menu" title="초등수학">초등수학</a>
+					<div class="subWrap">
+						<div class="eleWrap">
+							<ul class="cboth">
+								<li class="grade ele_03">
+									<div class="gradeTit on"><a href="#none" title="초등학교 3학년">초등학교 3학년</a></div>
+									<div class="sub sub_ele_03">
+										<ul class="season_01">
+											<li><a href="#none" title="덧셈과 뺄셈으로 이동"><span class="icoGnb"></span>덧셈과 뺄셈</a></li>
+											<li><a href="#none" title="평면도형으로 이동"><span class="icoGnb"></span>평면도형</a></li>
+											<li><a href="#none" title="나눗셈으로 이동"><span class="icoGnb"></span>나눗셈</a></li>
+											<li><a href="#none" title="곱셈으로 이동"><span class="icoGnb"></span>곱셈</a></li>
+										</ul>
+										<ul class="season_01">
+											<li><a href="#none" title="시간과 길이로 이동"><span class="icoGnb"></span>시간과 길이</a></li>
+											<li><a href="#none" title="분수와 소수로 이동"><span class="icoGnb"></span>분수와 소수</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="곱셈으로 이동"><span class="icoGnb"></span>곱셈</a></li>
+											<li><a href="#none" title="나눗셈으로 이동"><span class="icoGnb"></span>나눗셈</a></li>
+											<li><a href="#none" title="원으로 이동"><span class="icoGnb"></span>원</a></li>
+											<li><a href="#none" title="분수로 이동"><span class="icoGnb"></span>분수</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="들이와 무게로 이동"><span class="icoGnb"></span>들이와 무게</a></li>
+											<li><a href="#none" title="자료의 정리로 이동"><span class="icoGnb"></span>자료의 정리</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+								<li class="grade ele_04">
+									<div class="gradeTit"><a href="#none" title="초등학교 4학년">초등학교 4학년</a></div>
+									<div class="sub sub_ele_04">
+										<ul class="season_01">
+											<li><a href="#none" title="큰 수로 이동"><span class="icoGnb"></span>큰 수</a></li>
+											<li><a href="#none" title="각도로 이동"><span class="icoGnb"></span>각도</a></li>
+											<li><a href="#none" title="곱셈과 나눗셈으로 이동"><span class="icoGnb"></span>곱셈과 나눗셈</a></li>
+											<li><a href="#none" title="평면도형의 이동으로 이동"><span class="icoGnb"></span>평면도형의 이동</a></li>
+										</ul>
+										<ul class="season_01">
+											<li><a href="#none" title="막대그래프로 이동"><span class="icoGnb"></span>막대그래프</a></li>
+											<li><a href="#none" title="규칙 찾기로 이동"><span class="icoGnb"></span>규칙 찾기</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="분수의 덧셈과 뺄셈으로 이동"><span class="icoGnb"></span>분수의 덧셈과 뺄셈</a></li>
+											<li><a href="#none" title="삼각형으로 이동"><span class="icoGnb"></span>삼각형</a></li>
+											<li><a href="#none" title="소수의 덧셈과 뺄셈으로 이동"><span class="icoGnb"></span>소수의 덧셈과 뺄셈</a></li>
+											<li><a href="#none" title="사각형으로 이동"><span class="icoGnb"></span>사각형</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="꺾은선 그래프로 이동"><span class="icoGnb"></span>꺾은선 그래프</a></li>
+											<li><a href="#none" title="다각형으로 이동"><span class="icoGnb"></span>다각형</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+								<li class="grade ele_05">
+									<div class="gradeTit"><a href="#none" title="초등학교 5학년">초등학교 5학년</a></div>
+									<div class="sub sub_ele_05">
+										<ul class="season_01">
+											<li><a href="#none" title="약수와 배수로 이동"><span class="icoGnb"></span>약수와 배수</a></li>
+											<li><a href="#none" title="직육면체로 이동"><span class="icoGnb"></span>직육면체</a></li>
+											<li><a href="#none" title="약분과 통분으로 이동"><span class="icoGnb"></span>약분과 통분</a></li>
+											<li><a href="#none" title="분수의 덧셈과 뺄셈으로 이동"><span class="icoGnb"></span>분수의 덧셈과 뺄셈</a></li>
+										</ul>
+										<ul class="season_01">
+											<li><a href="#none" title="다각형의 넓이로 이동"><span class="icoGnb"></span>다각형의 넓이</a></li>
+											<li><a href="#none" title="분수의 곱셈으로 이동"><span class="icoGnb"></span>분수의 곱셈</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="소수의 곱셈으로 이동"><span class="icoGnb"></span>소수의 곱셈</a></li>
+											<li><a href="#none" title="합동과 대칭으로 이동"><span class="icoGnb"></span>합동과 대칭</a></li>
+											<li><a href="#none" title="분수의 나눗셈으로 이동"><span class="icoGnb"></span>분수의 나눗셈</a></li>
+											<li><a href="#none" title="소수의 나눗셈으로 이동"><span class="icoGnb"></span>소수의 나눗셈</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="여러 가지 단위로 이동"><span class="icoGnb"></span>여러 가지 단위</a></li>
+											<li><a href="#none" title="자료의 표현으로 이동"><span class="icoGnb"></span>자료의 표현</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+								<li class="grade ele_06">
+									<div class="gradeTit"><a href="#none" title="초등학교 6학년">초등학교 6학년</a></div>
+									<div class="sub sub_ele_06">
+										<ul class="season_01">
+											<li><a href="#none" title="각기둥과 각뿔로 이동"><span class="icoGnb"></span>각기둥과 각뿔</a></li>
+											<li><a href="#none" title="분수의 나눗셈으로 이동"><span class="icoGnb"></span>분수의 나눗셈</a></li>
+											<li><a href="#none" title="소수의 나눗셈으로 이동"><span class="icoGnb"></span>소수의 나눗셈</a></li>
+											<li><a href="#none" title="비와 비율로 이동"><span class="icoGnb"></span>비와 비율</a></li>
+										</ul>
+										<ul class="season_01">
+											<li><a href="#none" title="원의 넓이로 이동"><span class="icoGnb"></span>원의 넓이</a></li>
+											<li><a href="#none" title="직육면체의 겉넓이와 부피로 이동"><span class="icoGnb"></span>직육면체의 겉넓이와 부피</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="쌓기나무로 이동"><span class="icoGnb"></span>쌓기나무</a></li>
+											<li><a href="#none" title="비례식과 비례배분으로 이동"><span class="icoGnb"></span>비례식과 비례배분</a></li>
+											<li><a href="#none" title="원기둥, 원뿔, 구로 이동"><span class="icoGnb"></span>원기둥, 원뿔, 구</a></li>
+											<li><a href="#none" title="비율 그래프로 이동"><span class="icoGnb"></span>비율 그래프</a></li>
+										</ul>
+										<ul class="season_02">
+											<li><a href="#none" title="정비례와 반비례로 이동"><span class="icoGnb"></span>정비례와 반비례</a></li>
+											<li><a href="#none" title="여러가지 문제로 이동"><span class="icoGnb"></span>여러가지 문제</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+							</ul>	
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="#none" class="menu" title="중학수학">중학수학</a>
+					<div class="subWrap">
+						<div class="midWrap">
+							<ul class="cboth">
+								<li class="grade mid_01">
+									<div class="gradeTit on"><a href="#none" title="중학교 1학년">중학교 1학년</a></div>
+									<div class="sub sub_mid_01">
+										<ul class="section_01">
+											<li><a href="#none" title="소인수분해로 이동"><span class="icoGnb"></span>소인수분해</a></li>
+											<li><a href="#none" title="정수와 유리수로 이동"><span class="icoGnb"></span>정수와 유리수</a></li>
+										</ul>
+										<ul class="section_02">
+											<li><a href="#none" title="문자의 사용과 식의 계산으로 이동"><span class="icoGnb"></span>문자의 사용과<br/>식의 계산</a></li>
+											<li><a href="#none" title="일차방정식으로 이동"><span class="icoGnb"></span>일차방정식</a></li>
+										</ul>
+										<ul class="section_03">
+											<li><a href="#none" title="함수와 그래프로 이동"><span class="icoGnb"></span>함수와 그래프</a></li>
+										</ul>
+										<ul class="section_04">
+											<li><a href="#none" title="도수분포표와 상대도수로 이동"><span class="icoGnb"></span>도수분포표와<br/>상대도수</a></li>
+										</ul>
+										<ul class="section_05">
+											<li><a href="#none" title="기본 도형과 위치 관계로 이동"><span class="icoGnb"></span>기본 도형과<br/>위치 관계</a></li>
+											<li><a href="#none" title="작도와 합동으로 이동"><span class="icoGnb"></span>작도와 합동</a></li>
+											<li><a href="#none" title="평면도형의 성질로 이동"><span class="icoGnb"></span>평면도형의 성질</a></li>
+											<li><a href="#none" title="입체도형의 성질로 이동"><span class="icoGnb"></span>입체도형의 성질</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+								<li class="grade mid_02">
+									<div class="gradeTit"><a href="#none" title="중학교 2학년">중학교 2학년</a></div>
+									<div class="sub sub_mid_02">
+										<ul class="section_01">
+											<li><a href="#none" title="유리수와 순환소수로 이동"><span class="icoGnb"></span>유리수와 순환소수</a></li>
+										</ul>
+										<ul class="section_02">
+											<li><a href="#none" title="식의 계산으로 이동"><span class="icoGnb"></span>식의 계산</a></li>
+											<li><a href="#none" title="연립일차방정식으로 이동"><span class="icoGnb"></span>연립일차방정식</a></li>
+											<li><a href="#none" title="일차부등식과 연립일차부등식으로 이동"><span class="icoGnb"></span>일차부등식과<br/>연립일차부등식</a></li>
+										</ul>
+										<ul class="section_03">
+											<li><a href="#none" title="일차함수와 그래프로 이동"><span class="icoGnb"></span>일차함수와 그래프</a></li>
+											<li><a href="#none" title="일차함수와 일차방정식의 관계로 이동"><span class="icoGnb"></span>일차함수와<br/>일차방정식의 관계</a></li>
+										</ul>
+										<ul class="section_04">
+											<li><a href="#none" title="확률과 그 기본 성질로 이동"><span class="icoGnb"></span>확률과 그 기본 성질</a></li>
+										</ul>
+										<ul class="section_05">
+											<li><a href="#none" title="삼각형과 사각형의 성질로 이동"><span class="icoGnb"></span>삼각형과 사각형의<br/>성질</a></li>
+											<li><a href="#none" title="도형의 닮음으로 이동"><span class="icoGnb"></span>도형의 닮음</a></li>
+											<li><a href="#none" title="닮음의 활용으로 이동"><span class="icoGnb"></span>닮음의 활용</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+								<li class="grade mid_03">
+									<div class="gradeTit"><a href="#none" title="중학교 3학년">중학교 3학년</a></div>
+									<div class="sub sub_mid_03">
+										<ul class="section_01">
+											<li><a href="#none" title="제곱근과 실수로 이동"><span class="icoGnb"></span>제곱근과 실수</a></li>
+											<li><a href="#none" title="근호를 포함한 식의 계산으로 이동"><span class="icoGnb"></span>근호를 포함한<br/>식의 계산</a></li>
+										</ul>
+										<ul class="section_02">
+											<li><a href="#none" title="다항식의 인수분해로 이동"><span class="icoGnb"></span>다항식의 인수분해</a></li>
+											<li><a href="#none" title="이차방정식으로 이동"><span class="icoGnb"></span>이차방정식</a></li>
+										</ul>
+										<ul class="section_03">
+											<li><a href="#none" title="이차함수와 그래프로 이동"><span class="icoGnb"></span>이차함수와 그래프</a></li>
+										</ul>
+										<ul class="section_04">
+											<li><a href="#none" title="대푯값과 산포도로 이동"><span class="icoGnb"></span>대푯값과 산포도</a></li>
+										</ul>
+										<ul class="section_05">
+											<li><a href="#none" title="피타고라스의 정리로 이동"><span class="icoGnb"></span>피타고라스의 정리</a></li>
+											<li><a href="#none" title="삼각비로 이동"><span class="icoGnb"></span>삼각비</a></li>
+											<li><a href="#none" title="원의 성질로 이동"><span class="icoGnb"></span>원의 성질</a></li>
+										</ul>
+										<a href="#none" class="btnViewAll" title="전체 교과 보기로 이동"><img src="../../images/layout/btn_view.png" alt="전체 교과 보기"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="moreLink cboth">
+				<li><a href="#none" title="테마별 수학시리즈로 이동">테마별 수학시리즈</a></li>
+				<li><a href="#none" title="초등 수학 게임방으로 이동">초등 수학 게임방</a></li>
+				<li><a href="#none" title="중학 수학 카페로 이동">중학 수학 카페</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //gnb -->
+</div>
+<!-- //header -->
+
+<!-- top_visual -->
+<div id="top_visual" class="series_sub_top"><!-- series_sub_top class추가 -->
+</div>
+<!-- //top_visual -->
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- container -->
+	<article id="container" class="series_sub_wrap"><!-- series_sub_wrap class추가 -->
+
+		<!-- series -->
+		<section class="content_wrap series">
+
+			<!-- content_set -->
+			<div class="content_set">
+
+				<!-- 타이틀 -->
+				<div class="package_top">
+					<div class="title_con may2021 eventtit"><!--5월 이벤트 : may2021 / 이벤트 뱃지 붙을시 eventtit class 추가 / 익스플로러 외 브라우저 error class 추가-->
+						<h4 class="ellipsis">
+							[TV중학수학②] 유한소수로 나타낼 수 있는 분수 17 
+							<font color="#f58e30">[창의(상)]</font>
+						</h4>
+						<div class="counting">
+							<!-- 카운팅 -->
+							<span class="start" style="display:none">
+								<strong>60</strong>초 후에 미션 완료!
+							</span>
+							<!-- //카운팅 -->
+
+							<span class="finish" style="display:block">
+								오늘 학습 완료
+							</span>
+
+							<!-- 크롬일 때 -->
+							<span class="error" style="display:none">
+								<p class="blind">익스플로러 외 브라우저에서 미션 완료 불가 </p>
+							</span>
+							<!--// 크롬일 때 -->
+						</div>
+					</div>
+					<div class="title_con mar2020 eventtit" style="display:none"><!--3/4월 이벤트 두개 동시 진행일 때-->
+						<h4 class="ellipsis">
+							[TV중학수학②] 유한소수로 나타낼 수 있는 분수 17 
+							<font color="#f58e30">[창의(상)]</font>
+						</h4>
+						<div class="counting">
+							<!-- 카운팅 -->
+							<span class="start" style="display:none">
+								<strong>60</strong>초 후에 미션 완료!
+							</span>
+							<!-- //카운팅 -->
+
+							<!-- 미션  -->
+							<span class="get" >
+								학습 완료 <strong>(2/10)</strong>
+								<em>x2</em><!--하트 두개 획득-->
+							</span>
+							<!-- //미션 -->
+
+							<!-- 미션  -->
+							<span class="finish" style="display:none">
+								오늘 학습 완료 <strong>(10/10)</strong>
+							</span>
+							<!-- //미션 -->
+
+							<!-- 4월 이벤트 카운팅 -->
+							<span class="start_b" style="display:none">
+								<strong>60</strong>초 후에 미션 완료!
+							</span>
+							<!-- // 4월 이벤트 카운팅 -->
+
+							<!-- 4월 이벤트  미션  -->
+							<span class="get_b">
+								학습 완료 <strong>(2/10)</strong>
+								<em>x2</em><!-- 하트 두개 획득-->
+							</span>
+							<!-- //4월 이벤트  미션 -->
+
+							<!-- 4월 이벤트  미션완료  -->
+							<span class="finish_b" style="display:none">
+								오늘 학습 완료 <strong>(10/10)</strong>
+							</span>
+							<!-- //4월 이벤트  미션완료 -->
+
+
+							<!-- 크롬일 때 -->
+							<span class="error" style="display:none">
+								<p class="blind">익스플로러 외 브라우저에서 미션 완료 불가 </p>
+							</span>
+							<!--// 크롬일 때 -->
+						</div>
+					</div>
+				</div>
+				<!-- //타이틀 -->
+
+				<!-- 게임 -->
+				<div class="multi_con">
+					<div>
+						<div class="game_con" id="studyAjaxArea">
+							<div id="studywin" class="pcwin">
+								<div class="container">
+									<!-- 콘텐츠 -->
+									<div class="contents">
+										<!-- 예외사항 -->
+										<style>
+											.player_noti{width:100%; height:557px; background:#f2f5fc;}
+											.player_noti .conwrap{width:750px; margin:0 auto; padding:40px 40px 0; text-align:left;}
+											.player_noti .conwrap .title{margin-bottom:46px; color:#333334; font-weight:bold; text-align:left;}
+											.player_noti .conwrap .title span{color:#0f2c5d;}
+											.player_noti .conwrap ul li{padding-top:40px; border-top:1px dashed #c6c6ce;}
+											.player_noti .conwrap ul li:first-child{border:none; padding-top:0; padding-bottom:40px;}
+											.player_noti .conwrap ul li p{margin-bottom:9px; color:#525252; font-size:20px; font-weight:bold; letter-spacing:-1px;}
+											.player_noti .conwrap ul li p.f_28{font-size:28px; line-height:45px;}
+											.player_noti .conwrap ul li p span{color:#526b9c;}
+											.player_noti .conwrap .btnplug{display:inline-block; width:200px; height:40px; font-size:17px; line-height:40px; color:#fff;}
+										</style>
+										<div class="player_noti" style="display:none;">
+											<div class="conwrap">
+												<ul>
+													<li>
+														<p class="mt100 f_28">본 브라우저에서는 해당 콘텐츠의 학습에 필요한<br>프로그램 설치가 불가능 합니다.<br/>
+														<span>인터넷 익스플로러 11(Internet Explore 11) 이하<br/>브라우저를 활용</span>해주시기 바랍니다.</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="conwrap">
+												<p class="title"></p>
+												<ul>
+													<li>
+														<p class="f_28">게임카드는 3D나 함수의 좌표 프로그램 또는 플래시를 이용해서<br/>게임을 하듯 재미있게 학습할 수 있는 콘텐츠입니다.<br/>게임카드를 학습하려면 <span>Flash Play</span>와 더불어 <span>Autograph Player, Cabri 3D</span> 플러그인이 필요해요.</p>
+														<div class="pdt20 ac"><a href="" class="blue_button btnplug" onclick="">플러그인 설치 방법</a></div>
+													</li>
+													<li class="ac">
+														<p><a href="#none"><span>Autograph Player 를 설치하여 주세요.</span></a></p>
+														<p class="pdt20"><a href="#none"><span>Cabri 3D Plugin 을 설치하여 주세요.</span></a></p>
+													</li>
+												</ul>
+											</div>
+
+										</div>
+										<!-- //예외사항 -->
+
+										<div class="plugin_guide2">
+											<p class="fst">
+												게임카드는 3D나 함수의 좌표 프로그램 또는 플래시를 이용해서 게임을 하듯 재미있게 학습할 수 있는 콘텐츠입니다.<br>
+												게임카드를 학습하려면 <font color="#4890e4">Flash Play</font>와 더불어 <font color="#4890e4">Autograph Player, Cabri 3D</font> 플러그인이 필요해요.
+											</p>
+											<div><button class="blue_button" onclick="goSiteInfo()" type="submit">플러그인 설치방법</button></div>
+											<div class="mt10">
+												<span><a href="#none" class="link">&middot; Autograph Player를 설치하여 주세요.</a></span>
+												<span class="ml40"><a href="#none" class="link">&middot; Cabri 3D Plugin을 설치하여 주세요.</a></span>
+											</div>
+										</div>
+
+										<div class="image_viewer_ctr">
+											<a href="javascript:allScreenGame(21585);" class="all_view_btn"><img src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/common/all_view_btn.png"></a>
+											<span class="fr mr10"><img src="http://www.ebsmath.co.kr/common/innovativepot/math2016/images/common/txt_loading_msg.png" alt="네트워크 환경에 따라 로딩 속도가 느릴 수 있습니다."></span>
+										</div>
+										<object width="100%" height="100%" type="application/cabri3d">
+											<PARAM NAME="url" VALUE="http://www.ebsmath.co.kr:80/innovativelrms/web_lrms/content/resource/PC/18785/1361866769456.cg3">
+											<PARAM NAME="src" VALUE="http://www.ebsmath.co.kr:80/innovativelrms/web_lrms/content/resource/PC/18785/1361866769456.cg3">
+											<PARAM NAME="data" VALUE='<?xml version="1.0" encoding="UTF-8"?>&#10;<document>&#10;    <cabriml_version>2.1.2 (318,Windows NT)</cabriml_version>&#10;    <animation_state>stopped</animation_state>&#10;    <replay_construction_cycling_mode>off</replay_construction_cycling_mode>&#10;    <display_scale>0.961</display_scale>&#10;    <active_view>%8</active_view>&#10;    <active_page>%1</active_page>&#10;    <ref>&#10;        <id>document_toolbar</id>&#10;        <target>default_document_toolbar</target>&#10;    </ref>&#10;    <point3>&#10;        <id>O_point</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,0,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <point3>&#10;        <id>X1_point</id>&#10;        <state>no_display no_picking</state>&#10;        <value>(1,0,0,1)</value>&#10;    </point3>&#10;    <point3>&#10;        <id>Y1_point</id>&#10;        <state>no_display no_picking</state>&#10;        <value>(0,1,0,1)</value>&#10;    </point3>&#10;    <point3>&#10;        <id>Z1_point</id>&#10;        <state>no_display no_picking</state>&#10;        <value>(0,0,1,1)</value>&#10;    </point3>&#10;    <vector3>&#10;        <id>I_vector</id>&#10;        <gstate>defined</gstate>&#10;        <origin>(0,0,0,1)</origin>&#10;        <value>(1,0,0)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>orange_red</curve_color1>&#10;        <base_point_size>vector3_base_point_size</base_point_size>&#10;        <base_curve_radius>vector3_base_curve_radius</base_curve_radius>&#10;    </vector3>&#10;    <vector3>&#10;        <id>J_vector</id>&#10;        <gstate>defined</gstate>&#10;        <origin>(0,0,0,1)</origin>&#10;        <value>(0,1,0)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>lawn_green</curve_color1>&#10;        <base_point_size>vector3_base_point_size</base_point_size>&#10;        <base_curve_radius>vector3_base_curve_radius</base_curve_radius>&#10;    </vector3>&#10;    <vector3>&#10;        <id>K_vector</id>&#10;        <gstate>defined</gstate>&#10;        <origin>(0,0,0,1)</origin>&#10;        <value>(0,0,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>steel_blue</curve_color1>&#10;        <base_point_size>vector3_base_point_size</base_point_size>&#10;        <base_curve_radius>vector3_base_curve_radius</base_curve_radius>&#10;    </vector3>&#10;    <plane3>&#10;        <id>Z0_Plane</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,1,0)</value>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>ivory</surface_color1>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>dim_gray</curve_color1>&#10;        <base_surface_thickness>template_plane3_base_surface_thickness</base_surface_thickness>&#10;        <base_curve_radius>plane3_base_curve_radius</base_curve_radius>&#10;    </plane3>&#10;    <ref>&#10;        <id>history_data</id>&#10;        <target>%12</target>&#10;    </ref>&#10;    <settings>&#10;        <id>doc_settings</id>&#10;        <window_x_offset>-399</window_x_offset>&#10;        <window_y_offset>0</window_y_offset>&#10;        <settings>&#10;            <id>history_window</id>&#10;            <hidden>1</hidden>&#10;            <dockinfo>1</dockinfo>&#10;            <width>961</width>&#10;            <height>433</height>&#10;            <y>0</y>&#10;            <x>0</x>&#10;            <state>4</state>&#10;        </settings>&#10;        <settings>&#10;            <id>document_window</id>&#10;            <hidden>0</hidden>&#10;            <width>600</width>&#10;            <height>800</height>&#10;            <y>0</y>&#10;            <x>0</x>&#10;            <state>2</state>&#10;        </settings>&#10;    </settings>&#10;    <page>&#10;        <id>%1</id>&#10;        <number>1</number>&#10;        <height>29.700</height>&#10;        <width>21.000</width>&#10;        <views>%8</views>&#10;    </page>&#10;    <free_crystal_ball3>&#10;        <id>%6</id>&#10;        <panning>-0.275 3.275</panning>&#10;        <elevation>33.500</elevation>&#10;        <azimuth>108.016</azimuth>&#10;        <out_transfo>%7</out_transfo>&#10;        <in_center>origin3</in_center>&#10;    </free_crystal_ball3>&#10;    <transfo3>&#10;        <id>%7</id>&#10;        <value>((-0.95097018538965894,0.17070448786249065,-0.25790634797065859,0),(-0.30928256740391569,-0.52487561724561738,0.79300055480502307,0),(0,0.83388582206716821,0.55193698531205815,0),(-0.27500000000000002,-3.2749999999999999,0,1))</value>&#10;    </transfo3>&#10;    <gview3>&#10;        <id>%8</id>&#10;        <show_locked>false</show_locked>&#10;        <y>0.000</y>&#10;        <x>0.000</x>&#10;        <height>14.000</height>&#10;        <width>21.000</width>&#10;        <surface_clipping>default_surface_clipping_transfo3</surface_clipping>&#10;        <projection>%7</projection>&#10;        <optics>central_medium_lens</optics>&#10;        <layers>default_layer</layers>&#10;        <clipping>default_clipping_transfo3</clipping>&#10;        <auto_rotate>no_auto_rotate</auto_rotate>&#10;    </gview3>&#10;    <vector_by_two_points3>&#10;        <id>%9</id>&#10;        <out_vector>I_vector</out_vector>&#10;        <in_origin>O_point</in_origin>&#10;        <in_end>X1_point</in_end>&#10;    </vector_by_two_points3>&#10;    <vector_by_two_points3>&#10;        <id>%10</id>&#10;        <out_vector>J_vector</out_vector>&#10;        <in_origin>O_point</in_origin>&#10;        <in_end>Y1_point</in_end>&#10;    </vector_by_two_points3>&#10;    <vector_by_two_points3>&#10;        <id>%11</id>&#10;        <out_vector>K_vector</out_vector>&#10;        <in_origin>O_point</in_origin>&#10;        <in_end>Z1_point</in_end>&#10;    </vector_by_two_points3>&#10;    <history>&#10;        <id>%12</id>&#10;        <font_point>10</font_point>&#10;        <font_family>Helvetica</font_family>&#10;        <wordwrap>1</wordwrap>&#10;        <short_desc>0</short_desc>&#10;        <hidden_filter>0</hidden_filter>&#10;        <synthetic_filter>0</synthetic_filter>&#10;    </history>&#10;    <circle_on_plane_by_center_and_point3>&#10;        <id>%13</id>&#10;        <out_conic>%14</out_conic>&#10;        <in_point>%15</in_point>&#10;        <in_plane>Z0_Plane</in_plane>&#10;        <in_center>O_point</in_center>&#10;    </circle_on_plane_by_center_and_point3>&#10;    <conic3>&#10;        <id>%14</id>&#10;        <gstate>defined</gstate>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>deep_pink</curve_color1>&#10;        <base_curve_radius>conic3_base_curve_radius</base_curve_radius>&#10;    </conic3>&#10;    <point3>&#10;        <id>%15</id>&#10;        <gstate>defined</gstate>&#10;        <value>(1.9737875217422245,2.7372514516790467,0,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_plane3>&#10;        <id>%16</id>&#10;        <poly_position>(-1,0,0)</poly_position>&#10;        <position>(0.56078074425859159,0.77769156476405976,0.2841140386598458)</position>&#10;        <out_point>%15</out_point>&#10;        <in_plane>Z0_Plane</in_plane>&#10;    </free_point_on_plane3>&#10;    <line_perpendicular_to_plane_by_point3>&#10;        <id>%17</id>&#10;        <out_line>%18</out_line>&#10;        <in_point>O_point</in_point>&#10;        <in_plane>Z0_Plane</in_plane>&#10;    </line_perpendicular_to_plane_by_point3>&#10;    <line3>&#10;        <id>%18</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,-1,0,0,0)</value>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>cornflower_blue</curve_color1>&#10;        <base_curve_radius>line3_base_curve_radius</base_curve_radius>&#10;    </line3>&#10;    <segment_by_two_points3>&#10;        <id>%19</id>&#10;        <out_subline>%20</out_subline>&#10;        <in_points>O_point %21</in_points>&#10;    </segment_by_two_points3>&#10;    <subline3>&#10;        <id>%20</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,0,1)(0,0,7.1724161636045389,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>brown</curve_color1>&#10;        <base_point_size>subline3_base_point_size</base_point_size>&#10;        <base_curve_radius>subline3_base_curve_radius</base_curve_radius>&#10;    </subline3>&#10;    <point3>&#10;        <id>%21</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,7.1724161636045389,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_line3>&#10;        <id>%22</id>&#10;        <position>(0.99042005204813766,0.13808736546463812)</position>&#10;        <out_point>%21</out_point>&#10;        <in_line>%18</in_line>&#10;    </free_point_on_line3>&#10;    <plane_perpendicular_bisector_of_segment3>&#10;        <id>%45</id>&#10;        <out_plane>%46</out_plane>&#10;        <in_segment>%20</in_segment>&#10;    </plane_perpendicular_bisector_of_segment3>&#10;    <plane3>&#10;        <id>%46</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,5.5511151231257827e-17,0.26859904640758187,-0.96325207099125287)</value>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>light_steel_blue</surface_color1>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>dim_gray</curve_color1>&#10;        <base_surface_thickness>plane3_base_surface_thickness</base_surface_thickness>&#10;        <base_curve_radius>plane3_base_curve_radius</base_curve_radius>&#10;    </plane3>&#10;    <plane_perpendicular_to_line_by_point3>&#10;        <id>%57</id>&#10;        <out_plane>%58</out_plane>&#10;        <in_point>%21</in_point>&#10;        <in_line>%18</in_line>&#10;    </plane_perpendicular_to_line_by_point3>&#10;    <plane3>&#10;        <id>%58</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,2.7755575615628914e-17,0.13808736546463812,-0.99042005204813755)</value>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>light_steel_blue</surface_color1>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>dim_gray</curve_color1>&#10;        <base_surface_thickness>plane3_base_surface_thickness</base_surface_thickness>&#10;        <base_curve_radius>plane3_base_curve_radius</base_curve_radius>&#10;    </plane3>&#10;    <cone_by_conic_and_point3>&#10;        <id>%63</id>&#10;        <out_quadric>%64</out_quadric>&#10;        <in_point>O_point</in_point>&#10;        <in_conic>%14</in_conic>&#10;    </cone_by_conic_and_point3>&#10;    <quadric3>&#10;        <id>%64</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>violet</surface_color1>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>large_curve_radius</curve_radius>&#10;        <curve_color1>white</curve_color1>&#10;        <base_surface_thickness>quadric3_base_surface_thickness</base_surface_thickness>&#10;        <base_curve_radius>quadric3_base_curve_radius</base_curve_radius>&#10;    </quadric3>&#10;    <plane_perpendicular_bisector_of_segment3>&#10;        <id>%89</id>&#10;        <out_plane>%90</out_plane>&#10;        <in_segment>%20</in_segment>&#10;    </plane_perpendicular_bisector_of_segment3>&#10;    <plane3>&#10;        <id>%90</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,5.5511151231257827e-17,0.26859904640758187,-0.96325207099125287)</value>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>light_steel_blue</surface_color1>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>dim_gray</curve_color1>&#10;        <base_surface_thickness>plane3_base_surface_thickness</base_surface_thickness>&#10;        <base_curve_radius>plane3_base_curve_radius</base_curve_radius>&#10;    </plane3>&#10;    <point3>&#10;        <id>%99</id>&#10;        <state>locked</state>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0,0,9.020458737515499,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_line3>&#10;        <id>%100</id>&#10;        <position>(0.99391119446021203,0.11018410741424937)</position>&#10;        <out_point>%99</out_point>&#10;        <in_line>%18</in_line>&#10;    </free_point_on_line3>&#10;    <segment_by_two_points3>&#10;        <id>%101</id>&#10;        <out_subline>%102</out_subline>&#10;        <in_points>%99 %103</in_points>&#10;    </segment_by_two_points3>&#10;    <subline3>&#10;        <id>%102</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0,0,9.020458737515499,1)(0,0,-1.860724364939786,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>black</curve_color1>&#10;        <base_point_size>subline3_base_point_size</base_point_size>&#10;        <base_curve_radius>subline3_base_curve_radius</base_curve_radius>&#10;    </subline3>&#10;    <point3>&#10;        <id>%103</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0,0,-1.860724364939786,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_line3>&#10;        <id>%104</id>&#10;        <position>(-0.88085190441344063,0.47339193327645041)</position>&#10;        <out_point>%103</out_point>&#10;        <in_line>%18</in_line>&#10;    </free_point_on_line3>&#10;    <circle_by_axis_and_point3>&#10;        <id>%105</id>&#10;        <out_conic>%106</out_conic>&#10;        <in_point>%107</in_point>&#10;        <in_line>%102</in_line>&#10;    </circle_by_axis_and_point3>&#10;    <conic3>&#10;        <id>%106</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>no_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>deep_pink</curve_color1>&#10;        <base_curve_radius>conic3_base_curve_radius</base_curve_radius>&#10;    </conic3>&#10;    <point3>&#10;        <id>%107</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0.047246177302106673,0.53181550907359199,8.3716679773612928,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_in_space3>&#10;        <id>%108</id>&#10;        <position>(0.047246177302106673,0.53181550907359199,8.3716679773612928,1)</position>&#10;        <out_point>%107</out_point>&#10;    </free_point_in_space3>&#10;    <point3>&#10;        <id>%109</id>&#10;        <gstate>defined</gstate>&#10;        <value>(-0.44115481273789187,0.30073637651448398,8.3716679773612945,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%110</id>&#10;        <position>(1,-0.35232411744281339)</position>&#10;        <out_point>%109</out_point>&#10;        <in_conic>%106</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%111</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(-0.18976626356638804,-0.49904779547946898,8.3716679773612892,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%112</id>&#10;        <position>(1,0.4308734312130395)</position>&#10;        <out_point>%111</out_point>&#10;        <in_conic>%106</in_conic>&#10;    </free_point_on_conic3>&#10;    <circle_arc_by_three_points3>&#10;        <id>%113</id>&#10;        <out_subconic>%114</out_subconic>&#10;        <in_points>%109 %111 %115</in_points>&#10;    </circle_arc_by_three_points3>&#10;    <subconic3>&#10;        <id>%114</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(-0.44115481273789187,0.30073637651448398,8.3716679773612945,1)(-0.18976626356638804,-0.49904779547946898,8.3716679773612892,1)(0.49095659900001909,0.20981314272275803,8.3716679773612892,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>gray</curve_color1>&#10;        <base_point_size>subconic3_base_point_size</base_point_size>&#10;        <base_curve_radius>subconic3_base_curve_radius</base_curve_radius>&#10;    </subconic3>&#10;    <point3>&#10;        <id>%115</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.49095659900001909,0.20981314272275803,8.3716679773612892,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%116</id>&#10;        <position>(0,-0.74866412762366463)</position>&#10;        <out_point>%115</out_point>&#10;        <in_conic>%106</in_conic>&#10;    </free_point_on_conic3>&#10;    <vector_by_two_points3>&#10;        <id>%117</id>&#10;        <out_vector>%118</out_vector>&#10;        <in_origin>%115</in_origin>&#10;        <in_end>%119</in_end>&#10;    </vector_by_two_points3>&#10;    <vector3>&#10;        <id>%118</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <origin>(0.49095659900001909,0.20981314272275803,8.3716679773612892,1)</origin>&#10;        <value>(-0.15635961353259945,0.2062455001113756,0)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>gray</curve_color1>&#10;        <base_point_size>vector3_base_point_size</base_point_size>&#10;        <base_curve_radius>vector3_base_curve_radius</base_curve_radius>&#10;    </vector3>&#10;    <point3>&#10;        <id>%119</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0.33459698546741967,0.41605864283413369,8.371667977361291,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%120</id>&#10;        <position>(0,-0.46526068927286257)</position>&#10;        <out_point>%119</out_point>&#10;        <in_conic>%106</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%123</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,3.586208081802269,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <point_by_line_and_plane3>&#10;        <id>%124</id>&#10;        <out_point>%123</out_point>&#10;        <in_plane>%90</in_plane>&#10;        <in_line>%102</in_line>&#10;    </point_by_line_and_plane3>&#10;    <line_parallel_to_line_by_point3>&#10;        <id>%125</id>&#10;        <out_line>%126</out_line>&#10;        <in_point>%127</in_point>&#10;        <in_line>%18</in_line>&#10;    </line_parallel_to_line_by_point3>&#10;    <line3>&#10;        <id>%126</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0,0,-0.28411403865984586,-0.19167836903819968,0.93943526433663738,0)</value>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>cornflower_blue</curve_color1>&#10;        <base_curve_radius>line3_base_curve_radius</base_curve_radius>&#10;    </line3>&#10;    <point3>&#10;        <id>%127</id>&#10;        <gstate>defined</gstate>&#10;        <value>(3.3065429246928964,0.67465293141563365,0,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%128</id>&#10;        <position>(1,0.30469039379382745)</position>&#10;        <out_point>%127</out_point>&#10;        <in_conic>%14</in_conic>&#10;    </free_point_on_conic3>&#10;    <circle_on_plane_by_center_and_point3>&#10;        <id>%129</id>&#10;        <out_conic>%130</out_conic>&#10;        <in_point>%131</in_point>&#10;        <in_plane>%90</in_plane>&#10;        <in_center>%123</in_center>&#10;    </circle_on_plane_by_center_and_point3>&#10;    <conic3>&#10;        <id>%130</id>&#10;        <gstate>defined</gstate>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>deep_pink</curve_color1>&#10;        <base_curve_radius>conic3_base_curve_radius</base_curve_radius>&#10;    </conic3>&#10;    <point3>&#10;        <id>%131</id>&#10;        <gstate>defined</gstate>&#10;        <value>(3.3065429246928964,0.67465293141563354,3.5862080818022695,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <point_by_line_and_plane3>&#10;        <id>%132</id>&#10;        <out_point>%131</out_point>&#10;        <in_plane>%90</in_plane>&#10;        <in_line>%126</in_line>&#10;    </point_by_line_and_plane3>&#10;    <line_by_two_points3>&#10;        <id>%133</id>&#10;        <out_line>%134</out_line>&#10;        <in_points>%123 %135</in_points>&#10;    </line_by_two_points3>&#10;    <line3>&#10;        <id>%134</id>&#10;        <gstate>defined</gstate>&#10;        <value>(-0.094789356952442672,0.25131738009856131,-1.6531171299769666e-16,-0.90127641960683325,-0.33993435797168997,0)</value>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>cornflower_blue</curve_color1>&#10;        <base_curve_radius>line3_base_curve_radius</base_curve_radius>&#10;    </line3>&#10;    <point3>&#10;        <id>%135</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.1909297296107904,-3.1575416180683247,3.5862080818022712,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>very_large_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;        <animation_data>&#10;            <id>%1</id>&#10;            <state>animated</state>&#10;            <speed>1.00000000</speed>&#10;            <speed_unit>cm/s</speed_unit>&#10;            <reverse>no</reverse>&#10;        </animation_data>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%136</id>&#10;        <position>(1,0.073961328501143453)</position>&#10;        <out_point>%135</out_point>&#10;        <in_conic>%130</in_conic>&#10;    </free_point_on_conic3>&#10;    <plane_by_two_coplanar_lines3>&#10;        <id>%137</id>&#10;        <out_plane>%138</out_plane>&#10;        <in_lines>%134 %102</in_lines>&#10;    </plane_by_two_coplanar_lines3>&#10;    <plane3>&#10;        <id>%138</id>&#10;        <gstate>defined</gstate>&#10;        <value>(0.93565998636198899,0.35290280520432632,0,8.3266726846886741e-16)</value>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>light_steel_blue</surface_color1>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>dim_gray</curve_color1>&#10;        <base_surface_thickness>plane3_base_surface_thickness</base_surface_thickness>&#10;        <base_curve_radius>plane3_base_curve_radius</base_curve_radius>&#10;    </plane3>&#10;    <circle_on_plane_by_center_and_point3>&#10;        <id>%139</id>&#10;        <out_conic>%140</out_conic>&#10;        <in_point>%135</in_point>&#10;        <in_plane>%138</in_plane>&#10;        <in_center>%123</in_center>&#10;    </circle_on_plane_by_center_and_point3>&#10;    <conic3>&#10;        <id>%140</id>&#10;        <gstate>defined</gstate>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>deep_pink</curve_color1>&#10;        <base_curve_radius>conic3_base_curve_radius</base_curve_radius>&#10;    </conic3>&#10;    <point3>&#10;        <id>%141</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(3.3003934450102576e-16,-9.3713342633300245e-16,6.9608758714823678,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <point3>&#10;        <id>%142</id>&#10;        <gstate>defined</gstate>&#10;        <value>(4.0800304697949417e-17,3.5793715580163071e-16,0.2115402921221714,1)</value>&#10;        <point_style>sphere_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>hidden_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <points_by_line_and_conic3>&#10;        <id>%143</id>&#10;        <out_points>%141 %142</out_points>&#10;        <in_line>%102</in_line>&#10;        <in_conic>%140</in_conic>&#10;    </points_by_line_and_conic3>&#10;    <circle_arc_by_three_points3>&#10;        <id>%144</id>&#10;        <out_subconic>%145</out_subconic>&#10;        <in_points>%141 %135 %142</in_points>&#10;    </circle_arc_by_three_points3>&#10;    <subconic3>&#10;        <id>%145</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(3.3003934450102576e-16,-9.3713342633300245e-16,6.9608758714823678,1)(1.1909297296107904,-3.1575416180683247,3.5862080818022712,1)(4.0800304697949417e-17,3.5793715580163071e-16,0.2115402921221714,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>teal</curve_color1>&#10;        <base_point_size>subconic3_base_point_size</base_point_size>&#10;        <base_curve_radius>subconic3_base_curve_radius</base_curve_radius>&#10;    </subconic3>&#10;    <point3>&#10;        <id>%146</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.13369781491868119,-0.35447634260377192,6.9395428559524115,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%147</id>&#10;        <arc_position>0.03581003831157855</arc_position>&#10;        <out_point>%146</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%148</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.24958922441082268,-0.66174211954228712,6.8859331123140599,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%149</id>&#10;        <arc_position>0.067208075249883661</arc_position>&#10;        <out_point>%148</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%150</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.36271773773214611,-0.96168256113241779,6.8005486339299734,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%151</id>&#10;        <arc_position>0.098511708622368771</arc_position>&#10;        <out_point>%150</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%152</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.47905577298196478,-1.2701324880526683,6.6758118945702032,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%153</id>&#10;        <arc_position>0.13177298775166071</arc_position>&#10;        <out_point>%152</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%154</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.59479408965231839,-1.5769923661843919,6.5098526837700241,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%155</id>&#10;        <arc_position>0.1664596864474778</arc_position>&#10;        <out_point>%154</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%156</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.70110592286829798,-1.8588595742372955,6.3141146525795193,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%157</id>&#10;        <arc_position>0.20036190660946537</arc_position>&#10;        <out_point>%156</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%158</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.78069143715274658,-2.0698666280545219,6.1346499023520238,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%159</id>&#10;        <arc_position>0.22755516995137948</arc_position>&#10;        <out_point>%158</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%160</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.84500038005881284,-2.2403705281513351,5.9642528553495913,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%161</id>&#10;        <arc_position>0.25109271283129575</arc_position>&#10;        <out_point>%160</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%162</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.93979054639744908,-2.4916900541956464,5.6590460140653889,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%163</id>&#10;        <arc_position>0.28946483020916969</arc_position>&#10;        <out_point>%162</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%164</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.99347104877622339,-2.6340145055259452,5.4472200513034732,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%165</id>&#10;        <arc_position>0.31406893072289493</arc_position>&#10;        <out_point>%164</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%166</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.0370386234139419,-2.7495262999639358,5.2454364295768343,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%167</id>&#10;        <arc_position>0.3363860498355839</arc_position>&#10;        <out_point>%166</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%168</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.0961900970546932,-2.9063560734987548,4.9052396719700271,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%169</id>&#10;        <arc_position>0.37217674131325401</arc_position>&#10;        <out_point>%168</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%170</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.14094400287386,-3.0250132173096751,4.5536399957436604,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%171</id>&#10;        <arc_position>0.40745011022555822</arc_position>&#10;        <out_point>%170</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%172</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.1680448670391816,-3.0968664126410115,4.244594215878446,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%173</id>&#10;        <arc_position>0.43749796998853863</arc_position>&#10;        <out_point>%172</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%174</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.1837157641871312,-3.1384150520836527,3.9570862844160191,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%175</id>&#10;        <arc_position>0.46494672869205372</arc_position>&#10;        <out_point>%174</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%176</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.1815650716375259,-3.1327128674255622,3.1638376727335364,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%177</id>&#10;        <arc_position>0.53994413408506792</arc_position>&#10;        <out_point>%176</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%178</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.1530861056263411,-3.0572058763881835,2.7422487503807802,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%179</id>&#10;        <arc_position>0.58045910667202727</arc_position>&#10;        <out_point>%178</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%180</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.1195005950273347,-2.9681597766530681,2.4350657584136171,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%181</id>&#10;        <arc_position>0.61080380755077335</arc_position>&#10;        <out_point>%180</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%182</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.0831048329372457,-2.8716627872309237,2.1830618143000251,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%183</id>&#10;        <arc_position>0.6364941581715603</arc_position>&#10;        <out_point>%182</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%184</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(1.0110557462842931,-2.6806372514716812,1.8028592952122127,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%185</id>&#10;        <arc_position>0.67722721739100578</arc_position>&#10;        <out_point>%184</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%186</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.94462943304244373,-2.5045195147312209,1.5311071292296787,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%187</id>&#10;        <arc_position>0.70842053387172055</arc_position>&#10;        <out_point>%186</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%188</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.859507410073585,-2.2788333777110479,1.2502825394608568,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%189</id>&#10;        <arc_position>0.74335584691395384</arc_position>&#10;        <out_point>%188</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%190</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.79844513883397994,-2.1169374589687711,1.0823223324535498,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%191</id>&#10;        <arc_position>0.76610601504115394</arc_position>&#10;        <out_point>%190</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%192</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.71800845969029936,-1.9036736905864136,0.89383496087592995,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%193</id>&#10;        <arc_position>0.79401281651976741</arc_position>&#10;        <out_point>%192</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%194</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.64643928568968223,-1.7139205591807711,0.75195769458542106,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%195</id>&#10;        <arc_position>0.81736332370501097</arc_position>&#10;        <out_point>%194</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%196</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.55848581372877082,-1.4807273310119311,0.60561705689422851,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%197</id>&#10;        <arc_position>0.84463264929913129</arc_position>&#10;        <out_point>%196</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%198</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.4919993885592801,-1.3044502180223503,0.512980312654154,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%199</id>&#10;        <arc_position>0.86443826885958308</arc_position>&#10;        <out_point>%198</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%200</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.39131221209684325,-1.0374958023408858,0.39891143676069341,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%201</id>&#10;        <arc_position>0.89343092926202561</arc_position>&#10;        <out_point>%200</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%202</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.28418355958377689,-0.75346294096615551,0.3090269772922829,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%203</id>&#10;        <arc_position>0.92330389144721159</arc_position>&#10;        <out_point>%202</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%204</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.20602912292540623,-0.54625013885889817,0.26242326972318519,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%205</id>&#10;        <arc_position>0.94465440334039685</arc_position>&#10;        <out_point>%204</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <point3>&#10;        <id>%206</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <value>(0.11252285166170423,-0.29833463576534769,0.22663701637426659,1)</value>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <base_point_size>point3_base_point_size</base_point_size>&#10;    </point3>&#10;    <free_point_on_conic3>&#10;        <id>%207</id>&#10;        <arc_position>0.96988013581957622</arc_position>&#10;        <out_point>%206</out_point>&#10;        <in_conic>%145</in_conic>&#10;    </free_point_on_conic3>&#10;    <polygon_by_n_coplanar_points3>&#10;        <id>%208</id>&#10;        <out_subplane>%209</out_subplane>&#10;        <in_points>%141 %146 %148 %150 %152 %154 %156 %158 %160 %162 %164 %166 %168 %170 %172 %174 %135 %176 %178 %180 %182 %184 %186 %188 %190 %192 %194 %196 %198 %200 %202 %204 %206 %142</in_points>&#10;    </polygon_by_n_coplanar_points3>&#10;    <subplane3>&#10;        <id>%209</id>&#10;        <gstate>no_hidden defined</gstate>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>lawn_green</surface_color1>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>tomato</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>white</curve_color1>&#10;        <base_surface_thickness>subplane3_base_surface_thickness</base_surface_thickness>&#10;        <base_point_size>subplane3_base_point_size</base_point_size>&#10;        <base_curve_radius>subplane3_base_curve_radius</base_curve_radius>&#10;    </subplane3>&#10;    <trace_of_object3>&#10;        <id>%210</id>&#10;        <out_trace>%211</out_trace>&#10;        <in_object>%209</in_object>&#10;    </trace_of_object3>&#10;    <trace3>&#10;        <id>%211</id>&#10;        <gstate>defined</gstate>&#10;        <class_name>subplane3</class_name>&#10;        <size>250</size>&#10;        <surface_thickness>normal_surface_thickness</surface_thickness>&#10;        <surface_style>solid_surface_style</surface_style>&#10;        <surface_color1>lawn_green</surface_color1>&#10;        <point_style>no_point_style</point_style>&#10;        <point_size>normal_point_size</point_size>&#10;        <point_color>red</point_color>&#10;        <graphic_layers>default_layer</graphic_layers>&#10;        <curve_style>solid_curve_style</curve_style>&#10;        <curve_radius>normal_curve_radius</curve_radius>&#10;        <curve_color1>lawn_green</curve_color1>&#10;        <base_surface_thickness>trace3_base_surface_thickness</base_surface_thickness>&#10;        <base_point_size>trace3_base_point_size</base_point_size>&#10;        <base_curve_radius>trace3_base_curve_radius</base_curve_radius>&#10;    </trace3>&#10;</document>&#10;'>
+											<PARAM NAME="docWidth" VALUE="763">
+											<PARAM NAME="docHeight" VALUE="529">
+											<PARAM NAME="linked" VALUE="-1">
+											<PARAM NAME="highPrintQuality" VALUE="0">
+											<PARAM NAME="versionString" VALUE="2.1.2 (318)">
+											<PARAM NAME="buildNumber" VALUE="318"><!-- 풀경로를 해야 파일을 로딩해서 풀경로로 만듬 -->
+											<param name="src" value="http://www.ebsmath.co.kr:80/innovativelrms/web_lrms/content/resource/PC/18785/1361866769456.cg3">
+											<param name="wmode" value="opaque">
+											<div style="width:100%; height:100%; min-height:300px; line-height:300px; text-align:center; vertical-align:middle;">
+												<a href="http://www.cabri.com/direct/cabri3d-plugin" target="_blank">Download Cabri 3D Plugin.</a>
+											</div>
+										</object>
+										<!-- <object type="application/x-shockwave-flash" width="100%" height="557px" align="top" quality="high" wmode="Opaque" allowscriptaccess="sameDomain" pluginspage="http://www.adobe.com/go/getflashplayer" allowfullscreen="true" data="http://www.ebsmath.co.kr/innovativelrms/web_lrms/content/resource/PC/19822/1384910094217.swf" id="ITEMPOOL" style="visibility: visible;">
+											<param name="wmode" value="opaque">
+											<param name="flashvars" value="width=100%&amp;height=557px&amp;align=top&amp;quality=high&amp;wmode=Opaque&amp;allowScriptAccess=sameDomain&amp;type=application/x-shockwave-flash&amp;pluginspage=http://www.adobe.com/go/getflashplayer&amp;allowFullScreen=true">
+										</object> -->
+									</div>
+									<!-- //콘텐츠 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //게임 -->
+
+				<div class="series_view_top">
+					<!-- 시리즈 내용 -->
+					<div class="info_con">
+						<div class="top_con">
+							<p class="srtit">게임으로 이해하는 수학<span class="srtit_sub">입체도형의 성질-회전체의 단면</span></p>
+							<span class="count">
+								<img src="../../images/common/view_icon5.png">
+								<font color="#4890e4">16,888</font>
+							</span>
+
+							<!-- 2017-12-18 btnArea 묶음 -->
+							<div class="btnArea">
+								<button type="button" class="dark_button zzimbtn"><img src="../../images/common/zzim_icon.png"> 찜하기</button>
+								<button type="button" class="ml5 dark_button sharebtn" style="width:77px" onclick="$('.sharewrap').show();return false;"><img src="../../images/common/share_icon.png" style="position:relative;top:3px"> 공유하기</button>
+							</div>
+							<!--// 2017-12-18 btnArea 묶음 -->
+
+							<!-- sns공유 -->
+							<div class="sharewrap" style="display:none; top:110px; right:30px;">
+								<div>
+									<p class="tit">공유하기</p>
+									<div class="sharebox">
+										<a class="sns_btn facebook emt ml10" href="#">페이스북</a>
+										<a class="sns_btn twitter emt ml10" href="#">트위터</a>
+										<a class="sns_btn kakao emt ml10" href="#">카카오톡</a>
+									</div>
+									<div class="share_url">
+										<input type="text" value="http://www.ebsmath.co.kr/resource/rscView?cate=10094&cate2=10101" readonly="readonly"/>
+										<button type="button" class="copy_btn light_button" onclick="" style="width:45px;">복사</button>
+									</div>
+									<button type="button" class="shareclose_btn emt" onclick="$('.sharewrap').hide();return false;">닫기</button>
+								</div>
+							</div>
+							<!-- //sns공유 -->
+
+						</div>
+						<div class="summary">
+							<p>수학에 상처받은 외로운 영혼을 위해 ‘닥터y’가 왔다!<br/>평소에는 차갑고 무심한 ‘차도남‘. 하지만 수학 앞에선 열정이 넘치는 수학천재 ‘닥터y’<br/>그가 바라보는 이 세상 모든 곳에는 언제나 수학이 숨어 있다. ‘닥터y’, 그리고 분신 ‘스몰y’와 함께 함수를 공부해요.</p>
+						</div>
+					</div>
+					<!-- //시리즈 내용 -->
+
+					<!-- 시리즈 플레이 목록 -->
+					<div class="playlist">
+						<ul>
+							<li class="on">
+								<a href="#none">
+									<span class="num">1</span>
+									<div class="img_con">
+										<img class="thumb" src="../../images/tmp/tmp_thumb.jpg">
+										<span class="check_con"></span>
+									</div>
+									<span class="reltxt">함수가 뭐에요?</span>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<span class="num">2</span>
+									<div class="img_con">
+										<img class="thumb" src="../../images/tmp/tmp_thumb.jpg">
+										<!-- <span class="check_con"></span> -->
+									</div>
+									<span class="reltxt">함수인 것과 함수가 아닌 것…</span>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<span class="num">21</span>
+									<div class="img_con">
+										<img class="thumb" src="../../images/tmp/tmp_thumb.jpg">
+										<!-- <span class="check_con"></span> -->
+									</div>
+									<span class="reltxt">y=-2x는 왜 정비례인가요?</span>
+								</a>
+							</li>
+							<li>
+								<a href="#none">
+									<span class="num">50</span>
+									<div class="img_con">
+										<img class="thumb" src="../../images/tmp/tmp_thumb.jpg">
+										<!-- <span class="check_con"></span> -->
+									</div>
+									<span class="reltxt">y=-2x는 왜 정비례인가요?</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //시리즈 플레이 목록 -->
+				</div>
+
+				<div class="series_view_con">
+
+					<!-- 학습카드 -->
+					<div class="box_list_con">
+						<h5 class="title">콘텐츠<span class="total">총 <font class="vt" color="#4890e4">30</font>건의 콘텐츠가 있습니다.</span></h5>
+						<ul>
+							<li class="boxE l on check"><!-- 현 페이지 해당카드 : class on 추가 -->
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con" onclick="">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#" onclick="">
+													교실 속 EBSMath (중2 > 함수 > 일차함수와 일차방정식의 관계)
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 좌표평면과 그래프
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="boxE check">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의 수직이등분선
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 좌표평면과 그래프
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="boxE on">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="http://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/24668/9aaie59h129999.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													공간에서 직선과 평면의 위치 관계(직선이 평면에 포함된다)
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="boxE l t">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의<br />
+													수직이등분선
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="boxE t">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="boxE t">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의<br />
+													수직이등분선
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li class="boxE l t">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의<br />
+													수직이등분선
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="boxE t">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="boxE t">
+								<div class="box_set">
+									<div class="list_set">
+										<div class="img_con">
+											<img class="thumb" src="../../images/tmp/tmp_thumb.jpg" />
+											<span class="gradation"></span>
+											<span class="tag_icon"><img src="../../images/common/list_tag5.png" /></span>
+											<span class="check_con"></span>
+										</div>
+										<div class="info_con">
+											<h4 class="title">
+												<a href="#">
+													[실력] 원의 중심과 현의<br />
+													수직이등분선
+												</a>
+											</h4>
+											<p class="info">
+												<strong>중1</strong> | 수의 연산
+											</p>
+											<div class="bottom_con">
+												<span class="view"><img src="../../images/common/view_icon5.png" /> <font color="#4890e4">999.999+</font></span>
+											</div>
+											<button type="button" class="morebtn light_button" style="width: 77px">자세히 보기</button>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- pagination -->
+						<div class="pagination">
+							<a class="first" href="#"><img src="../../images/common/page_first.png" alt="처음" /></a>
+							<a class="prev" href="#"><img src="../../images/common/page_prev.png" alt="이전" /></a>
+							<a class="on" href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a class="next" href="#"><img src="../../images/common/page_next.png" alt="다음" /></a>
+							<a class="last" href="#"><img src="../../images/common/page_last.png" alt="마지막" /></a>
+						</div>
+						<!-- //pagination -->
+					</div>
+					<!-- //학습카드 -->
+
+					<!-- 테마별 수학시리즈 -->
+					<div class="series_l">
+						<h5 class="title">수학시리즈 <button class="allbtn dark_button" type="button" onclick="fnGoMain();">전체보기</button></h5>
+						<div class="series_lnb">
+
+							<!-- 영상 -->
+							<div class="menu_con menu1">
+								<h4 class="title">
+									<a href="javascript:">영상<span class="arrow"></span></a>
+								</h4>
+								<ul>
+									<li class="menu on"><a href="#">Enjoyable Math</a></li>
+									<li class="menu"><a href="#">닥터y,스몰y</a></li>
+									<li class="menu"><a href="#">수학의 원리-마테마티카</a></li>
+									<li class="menu"><a href="#">미스M(math)과 공룡 </a></li>
+									<li class="menu"><a href="#">박사와 소녀-수와 연사</a></li>
+									<li class="menu"><a href="#">박사와 소녀-확률과 통계</a></li>
+									<li class="menu"><a href="#">배움너머, 또 다른 세상</a></li>
+									<li class="menu"><a href="#">수학술사 세미</a></li>
+									<li class="menu"><a href="#">요원K</a></li>
+								</ul>
+							</div>
+							<!-- //영상 -->
+
+							<!-- 웹툰 -->
+							<div class="menu_con menu2">
+								<h4 class="title">
+									<a href="javascript:">웹툰<span class="arrow"></span></a>
+								</h4>
+								<ul>
+									<li class="menu on"><a href="#">수학열차</a></li>
+									<li class="menu"><a href="#">수학만화로 엮어가는 스토리텔링 수학</a></li>
+									<li class="menu"><a href="#">수학사명장면 20</a></li>
+								</ul>
+							</div>
+							<!-- //웹툰 -->
+
+							<!-- 게임 -->
+							<div class="menu_con menu3 on">
+								<h4 class="title">
+									<a href="javascript:">게임<span class="arrow"></span></a>
+								</h4>
+								<ul>
+									<li class="menu on"><a href="#">게임으로 이해하는 수학-수와 연산</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-문자와 식</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-함수</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-확률과 통계</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-기본 도형과 위치 관계</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-입체도형의 성질-다면체</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-입체도형의 성질-회전체</a></li>
+									<li class="menu"><a href="#">게임으로 이해하는 수학-입체도형의 성질-회전체의 단면</a></li>
+								</ul>
+							</div>
+							<!-- //게임 -->
+						</div>
+
+					</div>
+					<!-- //테마별 수학시리즈 -->
+				</div>
+
+			</div>
+			<!-- //content_set -->
+
+		</section>
+		<!-- //series -->
+
+	</article>
+	<!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+
+
+
+<!-- footer -->
+<footer id="footer">
+	<!-- footer_con -->
+	<div class="footer_con">
+
+		<!-- family_con -->
+		<div class="family_con">
+			<ul>
+				<li class="btn1"><a class="emt" href="http://www.ebs.co.kr/" target="_blank" title="EBS 메인">EBS 메인</a></li>
+				<li class="btn2"><a class="emt" href="http://www.ebsi.co.kr/" target="_blank" title="EBSi">EBSi</a></li>
+				<li class="btn3"><a class="emt" href="http://www.ebse.co.kr/" target="_blank" title="EBS english">EBS english</a></li>
+				<li class="btn4"><a class="emt" href="http://primary.ebs.co.kr/" target="_blank" title="EBS 초등">EBS 초등</a></li>
+				<li class="btn5"><a class="emt" href="http://mid.ebs.co.kr/" target="_blank" title="EBS 중학">EBS 중학</a></li>
+				<li class="btn6"><a class="emt" href="http://www.ebslang.co.kr/ebs/index.laf" target="_blank" title="EBS lang">EBS lang</a></li>
+				<li class="btn7"><a class="emt" href="http://clipbank.ebs.co.kr/main/?src=text&kw=00006C" target="_blank" title="EBS 클립뱅크">EBS 클립뱅크</a></li>
+				<li class="btn8"><a class="emt" href="http://book.ebs.co.kr/" target="_blank" title="Book Mall">Book Mall</a></li>
+			</ul>
+		</div>
+		<!-- //family_con -->
+
+		<!-- footer_menu -->
+		<div class="footer_menu">
+			<div class="logo_con">
+				<h2 class="blind">EBS Math</h2>
+			</div>
+			<div class="menu_con">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><span style="color:#fff" >개인정보처리방침</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //footer_menu -->
+
+		<!-- copyright_con -->
+		<div class="copyright_con">
+			<address>
+				06762 서울특별시 서초구 바우뫼로1길 35 한국교육방송공사  |  사업자등록번호 : 229-82-01343 (한국교육방송공사사장 우종범)<br />
+				EBS 고객센터 1588-1580 (발신자 부담)  |  인터넷 문의 <a href="mailTo://helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>  |  FAX : 02-526-3855<br />
+				부가통신사업신고 : 10077  |  통신판매업신고 : 서초-8152호
+			</address>
+			<p class="mt15">
+				<strong>Copyright © EBS All Rights Reserved.</strong>
+			</p>
+			<div class="banner">
+				<img src="../../images/layout/footer_banner.png" />
+			</div>
+		</div>
+		<!-- //copyright_con -->
+
+	</div>
+	<!-- //footer_con -->
+</footer>
+<!-- //footer -->
+
+
+
+
+<!-- blind_con -->
+<div class="blind_con"></div>
+<!-- //blind_con -->
+
+<!-- modalBg -->
+<div class="modalBg"></div>
+<div class="modalPopupContainer">
+	<div class="popupCon"></div>
+</div>
+<!-- //modalBg -->
+
+
+<!-- datepicker -->
+<div class="datepicker"></div>
+<!-- //datepicker -->
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+.pop_fulllayer{position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999;}
+.pop_fulllayer .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0;}
+.pop_fulllayer .popcon{position:relative; top:50%; left:50%; width:961px; margin-top:-290px; margin-left:-482px;}
+.pop_fulllayer .popcon.default{margin-top:-240px; margin-left:-326px;}
+.pop_fulllayer .popcon .player{position:absolute; left:70px; top:253px; width:440px; height:auto;}
+.pop_fulllayer .popcon .player video{width:100%; height:100%;}
+.pop_fulllayer .popcon .player .morebtn{display:inline-block; margin-top:10px;}
+.pop_fulllayer .btn_layerclose{position:absolute; top:0; right:0; display:inline-block; width:10px; height:10px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_fulllayer .btn_nomore{position:absolute; bottom:25px; right:25px; display:inline-block;}
+.pop_fulllayer .btn_nomore *{vertical-align:top;}
+.pop_fulllayer .btn_nomore label{top:0; margin-right:10px; color:#fff; font-size:15px; line-height:20px; font-weight:500;}
+
+/* 이벤트 */
+.christmath{position:relative;}
+.christmath .top{position:relative;}
+.christmath .snswrap{position:absolute; top:25px; right:25px;}
+.christmath .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.christmath .snswrap .fb a{background-position:0 0;}
+.christmath .snswrap .tw a{background-position:-41px 0;}
+.christmath .snswrap .kko a{background-position:-82px 0;}
+
+.christmath .top .ment{position:absolute; top:450px; left:0; width:100%; text-align:center;}
+.christmath .top .ment .eventbtn{position:absolute; top:11px; right:60px; display:inline-block; width:220px; height:57px; border-radius:25px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+.christmath .evtcon_wrap{position:relative; background:#e0edf9;}
+.christmath .evtcon{background:#e0edf9 url(../../images/event/20161116/bg_con.jpg) no-repeat 0 0;}
+.christmath .evtcon .roulette{position:relative; width:590px; height:612px; margin:30px auto 0; background:url(../../images/event/20161116/bg_pan.png) no-repeat 0 0;}
+.christmath .evtcon .roulette .rpan{position:relative; display:inline-block; padding:25px;}
+.christmath .evtcon .roulette .rpan .btn_start{overflow:hidden; display:block; position:absolute; top:50%; left:50%; margin-top:-75px; margin-left:-75px; width:150px; height:150px; box-shadow:5px 5px 5px #cbc8a8; border-radius:50%; background:url(../../images/event/20161116/btn_start.gif) no-repeat 0 0;}
+.christmath .evtcon .roulette .rpan .btn_start:hover{margin-top:-68px; margin-left:-68px; width:135px; height:135px; background:url(../../images/event/20161116/btn_start_over.png) no-repeat 0 0;}
+.christmath .evtcon .roulette .rpin{position:absolute; top:-8px; left:50%; margin-left:-30px;}
+.christmath .evtcon .roulette .cookie{position:absolute; bottom:-61px; right:-22px;}
+
+.christmath .evtcon .calendar{position:relative; padding:8px 0 20px;}
+.christmath .evtcon .calendar ol{width:652px; margin:0 auto; *zoom:1;}
+.christmath .evtcon .calendar ol:after{content:''; display:block; clear:both; width:100%;}
+.christmath .evtcon .calendar li{float:left; width:76px; margin-left:20px; margin-bottom:20px; background:url(../../images/event/20161116/bg_day.png) no-repeat 0 0;}
+.christmath .evtcon .calendar li[data-num="7"],
+.christmath .evtcon .calendar li[data-num="14"],
+.christmath .evtcon .calendar li[data-num="21"],
+.christmath .evtcon .calendar li[data-num="28"],
+.christmath .evtcon .calendar li[data-num="4"]{margin-left:0;}
+.christmath .evtcon .calendar li span{display:inline-block; width:76px; height:76px; text-align:center; color:#ac9169; font-weight:800; font-size:20px; line-height:76px; vertical-align:middle;}
+.christmath .evtcon .calendar li.on span{font-size:0; line-height:0; color:#99da8f; background:url(../../images/event/20161116/img_stamp.png) no-repeat 0 0;}
+.christmath .evtcon .calendar li[data-num="7"].on span{background-position:0px 0px;}
+.christmath .evtcon .calendar li[data-num="8"].on span{background-position:-96px 0px;}
+.christmath .evtcon .calendar li[data-num="9"].on span{background-position:-192px 0px;}
+.christmath .evtcon .calendar li[data-num="10"].on span{background-position:-288px 0px;}
+.christmath .evtcon .calendar li[data-num="11"].on span{background-position:-384px 0px;}
+.christmath .evtcon .calendar li[data-num="12"].on span{background-position:-480px 0px;}
+.christmath .evtcon .calendar li[data-num="13"].on span{background-position:-576px 0px;}
+.christmath .evtcon .calendar li[data-num="14"].on span{background-position:0px -96px;}
+.christmath .evtcon .calendar li[data-num="15"].on span{background-position:-96px -96px;}
+.christmath .evtcon .calendar li[data-num="16"].on span{background-position:-192px -96px;}
+.christmath .evtcon .calendar li[data-num="17"].on span{background-position:-288px -96px;}
+.christmath .evtcon .calendar li[data-num="18"].on span{background-position:-384px -96px;}
+.christmath .evtcon .calendar li[data-num="19"].on span{background-position:-480px -96px;}
+.christmath .evtcon .calendar li[data-num="20"].on span{background-position:-576px -96px;}
+.christmath .evtcon .calendar li[data-num="21"].on span{background-position:0px -192px;}
+.christmath .evtcon .calendar li[data-num="22"].on span{background-position:-96px -192px;}
+.christmath .evtcon .calendar li[data-num="23"].on span{background-position:-192px -192px;}
+.christmath .evtcon .calendar li[data-num="24"].on span{background-position:-288px -192px;}
+.christmath .evtcon .calendar li[data-num="25"].on span{background-position:-384px -192px;}
+.christmath .evtcon .calendar li[data-num="26"].on span{background-position:-480px -192px;}
+.christmath .evtcon .calendar li[data-num="27"].on span{background-position:-576px -192px;}
+.christmath .evtcon .calendar li[data-num="28"].on span{background-position:0px -288px;}
+.christmath .evtcon .calendar li[data-num="29"].on span{background-position:-96px -288px;}
+.christmath .evtcon .calendar li[data-num="30"].on span{background-position:-192px -288px;}
+.christmath .evtcon .calendar li[data-num="31"].on span{background-position:-288px -288px;}
+.christmath .evtcon .calendar li[data-num="1"].on span{background-position:-384px -288px;}
+.christmath .evtcon .calendar li[data-num="2"].on span{background-position:-480px -288px;}
+.christmath .evtcon .calendar li[data-num="3"].on span{background-position:-576px -288px;}
+.christmath .evtcon .calendar li[data-num="4"].on span{background-position:0px -384px;}
+.christmath .evtcon .calendar li[data-num="5"].on span{background-position:-96px -384px;}
+
+.christmath .evtcon .mission{position:absolute; top:26px; left:25px; width:540px; height:540px; background:url(../../images/event/20161116/dim2.png) no-repeat 0 0;}
+.christmath .evtcon .mission [class^="msbox_"]{position:relative; width:401px; height:282px; margin:154px auto 0; padding:0 16px 0 6px; text-align:center;}
+.christmath .evtcon .mission .msbox_video{background:url(../../images/event/20161116/bg_ms_video.png) no-repeat 0 0;}
+.christmath .evtcon .mission .msbox_toon{background:url(../../images/event/20161116/bg_ms_toon.png) no-repeat 0 0;}
+.christmath .evtcon .mission .msbox_game{background:url(../../images/event/20161116/bg_ms_game.png) no-repeat 0 0;}
+.christmath .evtcon .mission .msbox_qz{background:url(../../images/event/20161116/bg_ms_qz.png) no-repeat 0 0;}
+.christmath .evtcon .mission .msbox_qz2{height:296px; background:url(../../images/event/20161116/bg_ms_qz2.png) no-repeat 0 0;}
+.christmath .evtcon .mission .msbox_secret{background:url(../../images/event/20161116/bg_ms_secret.png) no-repeat 0 0;}
+
+.christmath .evtcon .mission [class^="msbox_"] .ms_txt{display:table; width:80%; height:80px; margin:0 auto; padding-top:85px;}
+.christmath .evtcon .mission [class^="msbox_"] .ms_txt span{display:table-cell; vertical-align:middle; font-size:18px; font-weight:600; color:#805512; line-height:30px; letter-spacing:-1px;}
+.christmath .evtcon .mission [class^="msbox_"] .ms_txt span input[type="text"]{display:inline-block; width:100px; padding:0; margin:0 5px; border:none; border-bottom:2px solid #53a25d !important; font-size:20px; color:#53a25d; line-height:28px; background:transparent;}
+.christmath .evtcon .mission .msbox_secret .ms_txt span{color:#5f8088;}
+.christmath .evtcon .mission [class^="msbox_"] .btn_ms{position:absolute; top:172px; left:0; width:100%; text-align:center;}
+.christmath .evtcon .mission [class^="msbox_"] .ms_popcorn{position:absolute; top:242px; left:0; width:100%; text-align:center;}
+
+/* 이벤트 종료 */
+.christmath.end .top .totalcnt{position:absolute; top:525px; left:585px; display:inline-block; width:60px; height:20px; color:#fff04f; font-size:18px; font-weight:bold; text-align:right;}
+.christmath.end .top .attendcnt{position:absolute; top:537px; left:567px; display:inline-block; width:60px; height:20px; color:#fff04f; font-size:18px; font-weight:bold; text-align:right;}
+.christmath.end .top .winbtn{position:absolute; top:651px; left:153px; display:inline-block; width:189px; height:57px; border-radius:25px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.christmath.end .top .modifybtn{position:absolute; top:651px; left:352px; display:inline-block; width:258px; height:57px; border-radius:25px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+/* notice */
+.christmath .notice{position:relative; padding:0 25px 25px 35px; background:#365469;}
+.christmath .notice > .tit_notice{display:inline-block; margin-top:-20px; margin-left:-21px;}
+.christmath .notice ul{padding-top:15px;}
+.christmath .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#9ba6af; letter-spacing:-1px; background:url(../../images/event/20161017/bul_notice.png) no-repeat 0 9px;}
+.christmath .notice li:first-child{margin-top:0;}
+.christmath .notice li a.point{color:#d8d8d8;}

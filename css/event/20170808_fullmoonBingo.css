@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix::after { content:""; display:block; }
+.clearfix::after { clear:both; }
+
+.fullmoonBingo{background:none;}
+.fullmoonBingo .top{position:relative; width:763px;}
+.fullmoonBingo .top .btn-apply{position:absolute; top:549px; left:432px; display:block; width:269px; height:61px; font-size:0; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+.fullmoonBingo .snswrap{position:absolute; top:23px; right:19px;}
+.fullmoonBingo .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170808/img_sns.png')}
+.fullmoonBingo .snswrap .fb a{background-position:0 0;}
+.fullmoonBingo .snswrap .tw a{background-position:-41px 0;}
+.fullmoonBingo .snswrap .kko a{background-position:-82px 0;}
+.fullmoonBingo .conwrap .btn-howto{position:absolute; top:819px; left:517px; display:block; width:193px; height:32px; font-size:0; border-radius:30px; background:#5796c8; opacity:0; filter:alpha(opacity='0');}
+
+
+/* 보름달 빙고판 */
+.fullmoonBingo .board { position:relative; }
+.fullmoonBingo .board .moonNum li{ position:absolute; top:107px; font-size:22px; font-weight:900; letter-spacing:-3px;}
+.fullmoonBingo .board .moonNum li.score_01{ width:70px; left:190px; color:#ff6511; }
+.fullmoonBingo .board .moonNum li.score_02{ width:70px; left:400px; color:#ff6511; }
+.fullmoonBingo .board .moonNum li.score_03{ width:120px; left:636px; color: #915342; }
+.fullmoonBingo .board .moonNum span { font-size:23px; letter-spacing:-1px; font-family: "나눔고딕", "NanumGothic", "Nanum Gothic", sans-serif; font-weight:900; }
+
+.fullmoonBingo .board .bingoLine div {position:absolute;display:none;}
+.fullmoonBingo .board .bingoLine div.on { display:block; }
+.fullmoonBingo .board .bingoLine div.v {top:200px;}
+.fullmoonBingo .board .bingoLine div.v1 { left:88px; }
+.fullmoonBingo .board .bingoLine div.v2 { left:174px; }
+.fullmoonBingo .board .bingoLine div.v3 { left:260px; }
+.fullmoonBingo .board .bingoLine div.v4 { left:346px; }
+.fullmoonBingo .board .bingoLine div.v5 { left:432px; }
+.fullmoonBingo .board .bingoLine div.h { left:73px; }
+.fullmoonBingo .board .bingoLine div.h1 { top:213px; }
+.fullmoonBingo .board .bingoLine div.h2 { top:299px; }
+.fullmoonBingo .board .bingoLine div.h3 { top:385px; }
+.fullmoonBingo .board .bingoLine div.h4 { top:471px; }
+.fullmoonBingo .board .bingoLine div.h5 { top:557px; }
+.fullmoonBingo .board .bingoLine div.cross { top:210px; left:84px; }
+
+.fullmoonBingo .board .bingoBoard { position:absolute; top:166px; left:42px; width:430px; height:430px; padding:7px; }
+.fullmoonBingo .board .bingoBoard li { float:left; width:80px; height:80px; margin:3px; background:url('../../images/event/20170808/bg_moon.png') no-repeat center center; cursor:default;}
+.fullmoonBingo .board .bingoBoard.bingoBoardBg li.on { background:url('../../images/event/20170808/bg_moon_on.png') no-repeat 0 0; }
+.fullmoonBingo .board .bingoBoard li.on span { display: inline-block; width:80px; height:80px; background:url('../../images/event/20170808/ico_moon_on.png') no-repeat center center; cursor:pointer;}
+
+.fullmoonBingo .board .bingoBanner { position:absolute; top:166px; left:500px; }
+.fullmoonBingo .board .bingoBanner .bingoBan { position:relative; }
+.fullmoonBingo .board .bingoBanner .bingoBan a { position:absolute; height:36px; display:block; font-size:0; border-radius:18px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_ele { top:294px; left:59px; width:104px; }
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_m1 { top:339px; left:20px; width:56px; }
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_m2 { top:339px; left:81px; width:56px;}
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_m3 { top:339px; left:144px; width:56px; }
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_high { top:384px; left:59px; width:104px;}
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_check { top:344px; left:44px; width:135px;}
+.fullmoonBingo .board .bingoBanner .bingoBan .btn_find { top:344px; left:44px; width:135px;}
+
+.layer-howto { position:fixed; left: 0;    top: 0;    right: 0;    bottom: 0;    z-index: 9999; }
+.layer-howto .layer { position: absolute; left: 50%; top: 50%; margin-left: -355px; margin-top: -300px; z-index: 10; }
+.layer-howto .modal-dimmed{ position:absolute; left:0; top:0; right:0; bottom:0; background:url('../../images/event/20170207/modal_bg.png'); z-index:5;}
+.layer-howto .popwrap {width: 710px; height: 600px; overflow: hidden; background: url('../../images/event/20170609/popup/img_popup_bg.png') no-repeat; }
+.layer-howto .popwrap .header{ position:relative;}
+.layer-howto .popwrap .header p{ padding:25px;}
+.layer-howto .popwrap .btn-close{ position:absolute; top:25px; right:25px; display:block; background-color:#fff;}
+.layer-howto .popwrap .pop_cont{ position:relative; height:486px; margin:0 25px; overflow-y:scroll;}
+.layer-howto .popwrap .pop_cont .ac { position:relative; }
+.layer-howto .popwrap .btn_submit { position:absolute; bottom:57px; left:268px; display:block; width:108px; height:45px; font-size:0; border-radius:22px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+
+
+/* notice */
+.fullmoonBingo .notice {padding:35px 58px 31px 34px; background-color:#131a41;}
+.fullmoonBingo .notice ul{padding-top:15px;}
+.fullmoonBingo .notice li{margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20170808/bul.png') no-repeat 0 8px;}
+.fullmoonBingo .notice li:first-child{margin-top:0;}
+.fullmoonBingo .notice li .point{color:#fae79f;}
+
+/* 이벤트 종료 */
+.fullmoonBingo.end .top .btn_win{position:absolute; top:597px; left:108px; display:block; width:242px; height:62px; font-size:0; border-radius:31px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+.fullmoonBingo.end .top .btn_info_insert{position:absolute; top:597px; left:362px; display:block; width:303px; height:62px; font-size:0; border-radius:31px; background:#44caf4; opacity:0; filter:alpha(opacity='0');}
+.fullmoonBingo.end .top .total{position:absolute; top:554px; left:442px; display:block; font-weight:900; color:#fff04f; font-size:20px; letter-spacing:-1px; }
+
+.fullmoonBingo.end .evtcon-top { position:relative; }
+.fullmoonBingo.end .evtcon-top .btn-evtlogin {position:absolute; top:122px; left:449px;  display:block;width:190px; height:46px; font-size:0; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+
+.fullmoonBingo.end .evtcon-top .user {position: absolute; top:130px; left:0; width:100%; padding:0; text-align:center; font-weight:900; color:#003e93; font-size:21px; letter-spacing:-2px; background:none; overflow:hidden; line-height:31px; vertical-align:middle; }
+.fullmoonBingo.end .evtcon-top .user .u-nm {display:inline-block; max-width:137px; padding:0 2px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; word-break: break-all; word-wrap: break-word; line-height:31px; vertical-align:middle; }
+.fullmoonBingo.end .evtcon-top .user img { vertical-align:middle;}
+.fullmoonBingo.end .evtcon-top .user .u-nm img {margin-right:5px; }
+
+.fullmoonBingo.end .notice { background:url('../../images/event/20170808/bg_end_notice.jpg') no-repeat 0 0; }
+
+.fullmoonBingo.end span.myBingo {font-weight:900; letter-spacing:-2px; font-family:"나눔고딕", "NanumGothic", "Nanum Gothic", sans-serif;color:#d85036; font-size:33px;vertical-align:middle;}

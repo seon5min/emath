@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* bottom contents Background Color */
+body{background-color:#f4f7f9;}
+
+
+/* top_visual */
+.main-content-wrap{padding-bottom:45px;}
+
+
+/* renewal - quick menu*/
+.quick-menu{overflow:hidden; margin-bottom:16px;}
+.quick-menu li{float:left; width:121px; height:112px; margin-left:16px; background:#fff; border-radius:15px; text-align:center;}
+.quick-menu li:first-child{margin-left:0px;}
+.quick-menu li a{display:block;}
+.quick-menu li .ico{display:inline-block; width:65px; height:65px; margin:12px 0px 6px; background:#fff; background:url('../images/main/renewal/sp_btn_quick_menu.png') no-repeat; overflow:hidden;}
+.quick-menu .ico.idea{background-position:-5px -0px;}
+.quick-menu .ico.intro{background-position:-75px -0px;}
+.quick-menu .ico.qna{background-position:-5px -70px;}
+.quick-menu .ico.solve{background-position:-75px -70px;}
+.quick-menu li .title{font-weight:600; font-size:14px; color:#555555;}
+.quick-menu li > a:hover .title{text-decoration:underline;}
+
+
+/* main-banner */
+.banner_content{overflow:hidden; margin-bottom:16px;}
+.banner_content .main_banner{position:relative; float:left; width:528px; height:264px; border:2px solid #fff; overflow:hidden; border-radius:8px; transform:translate3d(0px, 0px, 0px);}
+.banner_content .main_banner .banner_set{height:264px;}
+.banner_content .main_banner .banner_ctrl{position:absolute; bottom:27px; right:21px; display:inline-block; height:10px;}
+.banner_content .main_banner .banner_ctrl *{vertical-align:top;}
+.banner_content .main_banner .banner_ctrl > span{display:inline-block; height:10px;}
+.banner_content .main_banner .banner_ctrl .page_menu a{display:inline-block; width:10px; height:10px; background:url(../images/common/banner_btn.png) no-repeat -28px 0; margin-left:2px;}
+.banner_content .main_banner .banner_ctrl .page_menu a:first-child{margin-left:0;}
+.banner_content .main_banner .banner_ctrl .page_menu a.on{width:24px; background-position:0 0;}
+.banner_content .main_banner .banner_ctrl .play_btn{position:relative; top:5px; display:inline-block; width:20px; height:20px; background:url(../images/common/play_btn.png) no-repeat 0 0; margin-left:5px;}
+.banner_content .main_banner .banner_ctrl .play_btn.on{background-position:0 -21px;}
+*:first-child+html .banner_content .main_banner .banner_ctrl .play_btn{top:0; margin-left:0; width:25px; background-position:5px 0;}
+*:first-child+html .banner_content .main_banner .banner_ctrl .play_btn.on{background-position:5px -21px;}
+.banner_content .dir_menu{float:left; margin-left:18px; width:225px;}
+.banner_content .dir_menu .menu_con{margin-top:25px; overflow:hidden; border-radius:8px;}
+.banner_content .dir_menu .menu_con ul{overflow:hidden;}
+.banner_content .dir_menu .menu_con li{float:left; width:112px; height:110px; margin-left:1px;}
+.banner_content .dir_menu .menu_con li.l{margin-left:0;}
+.banner_content .dir_menu .menu_con li.t{margin-top:1px;}
+.banner_content .dir_menu .menu_con li a{display:block; width:112px; height:110px;}
+.banner_content .dir_menu .menu_con li a.menu1{background:url(../images/main/dir_menu1.png) no-repeat;}
+.banner_content .dir_menu .menu_con li a.menu2{background:url(../images/main/dir_menu2.png) no-repeat;}
+.banner_content .dir_menu .menu_con li a.menu3{background:url(../images/main/dir_menu3.png) no-repeat;}
+.banner_content .dir_menu .menu_con li a.menu4{background:url(../images/main/dir_menu4.png) no-repeat;}
+.banner_content .dir_menu .menu_con li a:hover{background-position:0 -110px;}
+
+
+/* event banner */
+.event_banner{float:left; width:260px; height:264px; border:2px solid #fff; margin-left:16px; overflow:hidden; border-radius:8px; transform:translate3d(0px, 0px, 0px);}
+.banner_content .event_banner .banner_set{height:264px;}
+
+
+/* shortcut-menu */
+.shortcut-menu{position:relative; overflow:hidden;}
+.shortcut-menu ul li > a{display:block;}
+.shortcut-menu .icon{display:inline-block; width:76px; height:75px; background:url('../images/main/renewal/sp_btn_shortcut_menu.png') no-repeat;}
+.shortcut-menu .title{padding-top:11px; font-size:14px; font-weight:600;}
+.shortcut-menu ul li:hover .title{text-decoration:underline; color:#222222;}
+
+
+/* 초등수학놀이터 */
+.element{float:left; width:254px; height:214px; border:2px solid #fff; background:url(../images/main/renewal/bg_element.gif) no-repeat #fff; border-radius:8px;}
+.element .setGame{float:left; width:126px; padding-top:83px; text-align:center;}
+.element .setGame .icon{background-position:-10px -200px;}
+.element .setGame:hover .icon{background-position:-106px -200px;}
+.element .reviewGame{float:left;width:126px; padding-top:83px; text-align:center;}
+.element .reviewGame .icon{background-position:-202px -11px;}
+.element .reviewGame:hover .icon{background-position:-202px -106px;}
+.element .reviewGame > a{position: relative;}
+.beta_ico { display:inline-block; width:45px; height:24px; position:absolute; right:11px; top:-10px; background:url('../images/common/mainBeta.png') no-repeat;}
+
+
+/* 중학수학놀이터 */
+.middle{position:relative; float:left; width:254px; height:214px; margin-left:16px; border:2px solid #fff; background:url(../images/main/renewal/bg_middle.gif) no-repeat #fff; border-radius:8px;}
+.middle .easyStats{float:left; width:126px; padding-top:83px; text-align:center;}
+.middle .easyStats .icon{background-position:-10px -10px;}
+.middle .easyStats:hover .icon{background-position:-106px -10px;}
+.middle .easyGraph{float:left; width:126px; padding-top:83px; text-align:center;}
+.middle .easyGraph .icon{background-position:-10px -105px;}
+.middle .easyGraph:hover .icon{background-position:-106px -105px;}
+
+
+/* 새로운 소식 */
+.math-news{position:relative; float:left; width:238px; height:192px; padding:13px; margin-left:16px; background-color:#fff; border-radius:8px;}
+.math-news .banner{margin:14px 0px 0px;}
+.math-news .banner img{border-radius:8px;}
+.math-news .news-list li{position:relative; padding-left:10px; margin-top:5px; .margin-top:-8px;}
+.math-news .news-list li:first-child{margin-top:15px; .margin-top:1px;}
+.math-news .news-list li .bullet{position:absolute; top:45%; .top:70%; display:inline-block; width:4px; height:4px; background:url('../images/main/renewal/icon_bullet.png') no-repeat;}
+.math-news .news-list li p{width:206px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; margin-left:11px; font-size:13px; color:#6b6b6b;}
+.math-news .news-list li p:hover{text-decoration:underline;}
+.math-news .more_btn{position:absolute; right:14px; top:21px; display:block; width:64px; height:15px; background:url('../images/main/renewal/renewal.png') no-repeat;}
+
+.bn-ict{position:absolute; top:0; right:95px;}
+.bn-survey{position:absolute; top:0; right:95px;}
+.sns-link-wrap{float:left; margin-left:18px; padding-top:124px;}
+.sns-link-wrap .title{text-align:center; margin-top:-7px; font-size:13px; font-weight:500; color:#ffffff;}
+.sns-link-wrap .blog{float:left;}
+.sns-link-wrap .facebook{float:left; margin-left:15px;}
+
+.studyCard-wrap{overflow:hidden; padding:33px 0px 63px; background-color:#f4f7f9;}
+.studyCard-wrap .bar{display:block; width:100%; height:4px; margin-top:9px; background:url('../images/main/renewal/bar_seperate.png') repeat-x;}
+.popular-card{float:left; width:220px; counter-reset:cardCounter;}
+
+
+
+/* 친구들은 뭘 봤을까? popularlist numbering */
+.popular-card .popular-list li{margin-top:8px; padding-left:10px; color:#6b6b6b; font-size:13px;}
+.popular-card .popular-list li:first-child{margin-top:23px;}
+.popular-card .popular-list li > span{display:inline-block; width:19px; height:19px; padding-top:1px; padding-left:5px; vertical-align:middle; background:url('../images/main/renewal/sp_list_numbering.png') no-repeat;}
+.popular-card .popular-list li > span.item01{background-position:-5px -5px;}
+.popular-card .popular-list li:hover > span.item01{background-position:-34px -5px;}
+.popular-card .popular-list li > span.item02{background-position:-63px -5px;}
+.popular-card .popular-list li:hover > span.item02{background-position:-92px -5px;}
+.popular-card .popular-list li > span.item03{background-position:-5px -34px;}
+.popular-card .popular-list li:hover > span.item03{background-position:-34px -34px;}
+.popular-card .popular-list li > span.item04{background-position:-63px -34px;}
+.popular-card .popular-list li:hover > span.item04{background-position:-92px -34px;}
+.popular-card .popular-list li > span.item05{background-position:-5px -63px;}
+.popular-card .popular-list li:hover > span.item05{background-position:-34px -63px;}
+.popular-card .popular-list li > span.item06{background-position:-63px -63px;}
+.popular-card .popular-list li:hover > span.item06{background-position:-92px -63px;}
+.popular-card .popular-list li > span.item07{background-position:-5px -92px;}
+.popular-card .popular-list li:hover > span.item07{background-position:-34px -92px;}
+.popular-card .popular-list li > span.item08{background-position:-63px -92px;}
+.popular-card .popular-list li:hover > span.item08{background-position:-92px -92px;}
+.popular-card .popular-list li > span.item09{background-position:-121px -5px;}
+.popular-card .popular-list li:hover > span.item09{background-position:-121px -34px;}
+.popular-card .popular-list li > span.item10{background-position:-121px -63px;}
+.popular-card .popular-list li:hover > span.item10{background-position:-121px -92px;}
+
+.popular-card .popular-list li .txt{overflow:hidden; display:inline-block; width:140px; margin-left:-4px; .margin-left:3px; vertical-align:middle; text-overflow:ellipsis; white-space:nowrap; color:#6b6b6b;}
+.popular-card .popular-list li:hover .txt{color:#fa5d5b;}
+.popular-card .popular-list li .line{display:inline-block; width:1px; height:12px; margin-left:12px; vertical-align:middle; background-color:#b0b0b0;}
+.popular-card .popular-list li:hover .line{background-color:#fa5d5b;}
+.popular-card .popular-list li .type{margin-left:5px; vertical-align:middle;}
+.popular-card .popular-list li:hover .type{color:#fa5d5b;}
+
+
+/* 이번주 꼭 봐야 할 학습카드 */
+.weekly-study-card{position:relative; float:left; width:735px; margin-left:43px;}
+.weekly-study-card .card-tab-wrap{position:absolute; top:0px; right:0px;}
+.weekly-study-card .card-tab-wrap li{float:left; width:80px; height:14px; padding:7px 0px 9px; border:1px solid #ef6461; margin-left:5px; border-radius:8px; background-color:#ffffff; font-size:15px; text-align:center;}
+.weekly-study-card .card-tab-wrap li.on{font-weight:600; background-color:#ef6461;}
+.weekly-study-card .card-tab-wrap li > a{display:block; color:#ef6461;}
+.weekly-study-card .card-tab-wrap li.on > a{color:#ffffff;}
+
+.weekly-study-card .main-card-style{margin-top:22px;}
+.weekly-study-card .main-card-style.box_list_con li{margin-left:33px;}
+.weekly-study-card .main-card-style.box_list_con li:first-child{margin-left:0px;}
+
+
+/* 내 활동이력 더 보기 personal modal */
+#personal-modal{left:0; top:0; right:0; bottom:0; z-index:100;}
+#personal-modal.on{display:block;}
+#personal-modal.off{display:none;}
+.layer{position:absolute; top:390px; left:50%;  margin-left:-355px; margin-top:-355px; z-index:10;}
+
+.popwrap{width:502px; height:223px; padding:26px 38px; background:url(../images/main/badge/ban_per_box.png) no-repeat;}
+.popwrap .popwrap{position:relative;}
+.popwrap .btn-close{position:absolute; top:26px; right:27px; background-color:#f1f1f1;}
+.popwrap .header h4{font-size:18px; color:#777777;}
+.popwrap .header h4 .name{display:inline-block; padding:5px 17px 6px; border-radius:17px; color:#fff; background-color:#fa5d5b;}
+.popwrap .pop_cont{overflow:hidden; margin-top:22px;}
+.popwrap .pop_cont li{float:left; width:148px; margin-left:29px; text-align:center;}
+.popwrap .pop_cont li:first-child{margin-left:0px;}
+.popwrap .pop_cont li p{margin-top:13px; line-height:1.3; font-size:14px; color:#777777; font-weight:600; letter-spacing:-1px;}
+.popwrap .pop_cont li .point{color:#fa5d5b;}

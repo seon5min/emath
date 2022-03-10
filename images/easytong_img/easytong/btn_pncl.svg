@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<g transform="translate(4, 1) rotate(-45 20 20)">
+	<path fill="#FFFFFF" d="M9.586,12.586l-6.5,3.5l6.5,3.5h15v-3.5h-15v-1.5h15v-2H9.586z M26.586,12.586h4.5v7h-4.5V12.586z"/>
+</g>
+</svg>

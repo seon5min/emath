@@ -1,0 +1,518 @@
+@charset "utf-8";
+
+.game .game-wrap{position: relative; width:763px; height:911px; padding-bottom: 80px; margin: 0 auto;}
+
+.game .game_table h5{ position:relative; text-align: center;}
+.game .game_table ul { position:absolute; left:85px; top:70px; }
+.game .game_table li{ display:block; float:left; text-align: center; color:#fff; font-size:28px; font-weight:700;  font-family:"나눔고딕", "NanumGothic", "Nanum Gothic", sans-serif;}
+.game .game_table li.today_date {width:205px; }
+.game .game_table li.today_visit {width:217px;}
+.game .game_table li.total {width:256px; }
+
+.game .rolling_banner { border:4px solid #fff; border-radius:15px; overflow:hidden; }
+.game .game_tab_menu { display:block; margin:0 17px; list-style-type:none; height:47px; }
+.game .game_tab_menu li {float:left; margin:0 1px; width:241px; height:47px; text-indent:-99999px; cursor:pointer;}
+.game .tab_01 {background:url(../images/layout/tab_menu_on.jpg) no-repeat -19px 0; }
+.game .tab_02 {background:url(../images/layout/tab_menu_off.jpg) no-repeat -261px 0; }
+.game .tab_03 {background:url(../images/layout/tab_menu_off.jpg) no-repeat -503px 0; }
+
+.game .game_tab_cont {position:relative; height:333px;}
+.game .game_tab_cont > div {position:absolute; left:0; top:0; background:url('../images/layout/tab_cont_bg.jpg') no-repeat 0 0; }
+.game .game_tab_cont .tab_cont {display:none; width:763px; height:333px; }
+.game .game_tab_cont .tab_cont.active {display:block; }
+.game .game_tab_cont .tab_cont .tab_sub {text-align:center; }
+.game .game_tab_cont .tab_cont .tab_sub > li { float:left; }
+.game .game_tab_cont .tab_cont .tab_sub .tab_left { display:block; width:361px;}
+.game .game_tab_cont .tab_cont .tab_sub .tab_right { padding-top: 63px; width:402px; }
+.game .game_tab_cont .tab_cont .tab_left .tab_sub_title { margin:20px 0; font-weight:bold; font-size:18px; color:#ab6b12; }
+.game .game_tab_cont .tab_cont .tab_left .tab_sub_game img { border:1px solid #b4babd; }
+.game .game_tab_cont .tab_cont .btn_area { margin: 16px 0; }
+.game .game_tab_cont .tab_cont .btn_area li { display:inline-block; margin:0 11px; vertical-align:middle; zoom:1; *display:inline;}
+.game .game_tab_cont .tab_cont .btn_area a.challenge { display: inline-block; zoom:1; *display:inline; width:209px; height:36px; background:url('../images/layout/game_btn.png') no-repeat 0 0; }
+.game .game_tab_cont .tab_cont .btn_area a.challenge:active { background-position: 0 -40px;}
+.game .game_tab_cont .tab_cont .btn_area a.all_view {display: inline-block; width:72px; height:15px; background:url('../images/layout/game_btn.png') no-repeat -230px -10px; }
+.game .game_tab_cont .tab_cont .game_list { display:inline-block; position:relative; zoom:1; *display:inline;}
+.game .game_tab_cont .tab_cont .game_list a { display: inline-block; }
+.game .game_tab_cont .tab_cont .game_list div.game_thumb {margin: 0 10px; width:160px; height:90px;}
+.game .game_tab_cont .tab_cont .game_list div.game_thumb img{ width:160px; height:90px; cursor:pointer;  }
+.game .game_tab_cont .tab_cont .game_list div.game_thumb > img{ border:1px solid #b4babd;  }
+.game .game_tab_cont .tab_cont .game_list div.game_text { margin: 0 10px; width: 160px; line-height:40px; overflow:hidden; text-overflow:ellipsis; word-break:break-all; white-space:nowrap;}
+.game .game_tab_cont .tab_cont .game_list span.gradation {display:none; }
+.game .game_tab_cont .tab_cont .game_list span.tag_icon img {position:absolute; right:20px; bottom:51px; width:28px; height:26px; }
+.game .game_tab_cont .tab_cont .game_list a:hover div.game_text {color:#4890e4;}
+.game .game_tab_cont .tab_cont .game_list a:hover span.gradation {position:absolute; top:0; left:10px; display:block; width:162px; height:92px; border:5px solid #b4babd; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+.game .bottom_banner {margin: 40px 0; }
+
+/* 4학년 추가 */
+.game_tab.tab4 .game_tab_menu {margin:0 17px;}
+.game_tab.tab4 .game_tab_menu li {margin-right:0; width:181px;}
+.game_tab.tab4 .tab_01 {background:url('../images/layout/tab4_menu_on.jpg') no-repeat -19px 0; }
+.game_tab.tab4 .tab_02 {background:url('../images/layout/tab4_menu_off.jpg') no-repeat -201px 0; }
+.game_tab.tab4 .tab_03 {background:url('../images/layout/tab4_menu_off.jpg') no-repeat -383px 0; }
+.game_tab.tab4 .tab_04 {background:url('../images/layout/tab4_menu_off.jpg') no-repeat -565px 0; }
+
+/* 수학술사 세미 게임 */
+.gameSemi .game-wrap{position:relative; width:763px; margin:0 auto;}
+.gameSemi .section {position:relative;}
+.gameSemi .section ul {position:absolute; top:57px; left:32px;}
+.gameSemi .section ul li {float:left; width:155px; height:91px; margin:24px 10px;}
+.gameSemi .section ul li.btn_09,
+.gameSemi .section ul li.btn_10,
+.gameSemi .section ul li.btn_11 {margin:28px 10px;}
+.gameSemi .section ul li a {display:block; width:100%; height:100%; font-size:0; text-indent:-9999px;}
+.gameSemi .section ul.season_01 li a {background:url('../images/layout/img_semiGame_02.png') no-repeat;}
+.gameSemi .section ul.season_02 li a {background:url('../images/layout/img_semiGame_03.png') no-repeat;}
+.gameSemi .section ul.season_01 li:hover a {background-image:url('../images/layout/img_semiGame_02_on.png');}
+.gameSemi .section ul.season_02 li:hover a {background-image:url('../images/layout/img_semiGame_03_on.png');}
+.gameSemi .section ul li.btn_01 a {background-position:-42px -81px;}
+.gameSemi .section ul li.btn_02 a {background-position:-217px -81px;}
+.gameSemi .section ul li.btn_03 a {background-position:-392px -81px;}
+.gameSemi .section ul li.btn_04 a {background-position:-567px -81px;}
+.gameSemi .section ul li.btn_05 a {background-position:-42px -220px;}
+.gameSemi .section ul li.btn_06 a {background-position:-217px -220px;}
+.gameSemi .section ul li.btn_07 a {background-position:-392px -220px;}
+.gameSemi .section ul li.btn_08 a {background-position:-567px -220px;}
+.gameSemi .section ul li.btn_09 a {background-position:-42px -363px;}
+.gameSemi .section ul li.btn_10 a {background-position:-217px -363px;}
+.gameSemi .section ul li.btn_11 a {background-position:-392px -363px;}
+
+.clearfix::before, .clearfix::after { display:block; content:""; }
+.clearfix::after { clear:both; }
+img.map, map area{ outline: none; border:0; }
+
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {  position: relative;  padding: 0;  *zoom: 1;  -ms-touch-action: pan-y;  touch-action: pan-y; }
+.bx-wrapper img {  max-width: 100%;  display: block; }
+.bx-viewport { border-radius:15px; overflow:hidden; }
+.bxslider {  margin: 0;  padding: 0; border-radius:15px; overflow:hidden; width:763px; height:317px; }
+/** THEME
+===================================*/
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position: absolute;left:592px;top:270px;}
+/* PAGER */
+.bx-wrapper .bx-pager {  text-align: center;  font-size: .85em;  font-family: Arial;  font-weight: bold;  color: #666; }
+.bx-wrapper .bx-pager.bx-default-pager a {  background: url('../images/layout/icon_page.png') no-repeat -17px 0;  text-indent: -9999px;  display: block;  width: 13px;  height: 13px;  margin: 0 3px;  outline: 0;  -moz-border-radius: 5px;  -webkit-border-radius: 5px;  border-radius: 5px;}
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {  background: url('../images/layout/icon_page.png') no-repeat 0 0;}
+.bx-wrapper .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {  display: inline-block;  vertical-align: bottom;  *zoom: 1;  *display: inline;}
+.bx-wrapper .bx-pager-item {  font-size: 0;  line-height: 0;}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {left:568px; background: url('../images/layout/icon_arrow_page.png') no-repeat 0 0; }
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {  background-position: 0 0; }
+.bx-wrapper .bx-next {right:64px; background: url('../images/layout/icon_arrow_page.png') no-repeat -16px 0; }
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {  background-position: -16px 0; }
+.bx-wrapper .bx-controls-direction a { position: absolute;  top: 285px;  display:block; margin-top: -18px;  outline: 0;  width: 12px;  height: 19px;  text-indent: -9999px;  z-index: 9999; }
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {  text-align: center;}
+.bx-wrapper .bx-controls-auto .bx-start {  display: block;  text-indent: -9999px;  width: 10px;  height: 11px;  outline: 0;  background: url('images/controls.png') -86px -11px no-rep2017-07-10eat;  margin: 0 3px;}
+.bx-wrapper .bx-controls-auto .bx-start:hover, .bx-wrapper .bx-controls-auto .bx-start.active, .bx-wrapper .bx-controls-auto .bx-start:focus {  background-position: -86px 0;}
+.bx-wrapper .bx-controls-auto .bx-stop {  display: block;  text-indent: -9999px;  width: 9px;  height: 11px;  outline: 0;  background: url('images/controls.png') -86px -44px no-repeat;  margin: 0 3px; }
+.bx-wrapper .bx-controls-auto .bx-stop:hover, .bx-wrapper .bx-controls-auto .bx-stop.active, .bx-wrapper .bx-controls-auto .bx-stop:focus {  background-position: -86px -33px;}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {  text-align: left;  width: 80%; }
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {  right: 0;  width: 35px;}
+
+/* 2019 게임방 개선 */
+body.game2019 {background-color:#fff}
+.mathGameCon {width:100%; overflow:hidden; padding-top:30px; min-width:1000px; }
+.mathGameCon .inner_wrap {width:1000px; margin:0 auto; overflow:hidden}
+.mathGameCon .tabwrap {height:51px; background:url('../images/layout/game2019/bg_tab.png') 0 0 repeat-x; text-align:center; overflow:hidden;}
+.mathGameCon .tab {margin:0 auto; }
+.mathGameCon .tab li {float:left;  color:#808080; font-size:15px; padding:15px 0 0; cursor:pointer; height:32px }
+.mathGameCon .tab li.on {border-bottom:4px solid #ff9d00; color:#333333; font-weight:600; font-size:16px}
+
+.mathGameCon .headerGame {height:260px; overflow:hidden}
+.mathGameCon .headerGame .topslider {float:left; width:700px; }
+.mathGameCon .headerGame .topslider li {border-radius:20px; overflow:hidden}
+.mathGameCon .headerGame .mini_game {float:right; width:280px; box-sizing:border-box; border-radius:8px; overflow:hidden;}
+.mathGameCon .headerGame .mini_game.my { border:1px solid #3e9199; }
+.mathGameCon .headerGame .mini_game.rc { border:1px solid #3e5399; }
+
+.mathGameCon .headerGame .mini_game h3 {width:100%; height:55px; padding-top:19px; box-sizing:border-box; text-align:center}
+.mathGameCon .headerGame .mini_game.my h3 {background:url('../images/layout/game2019/bg_top_bn1.png') repeat;}
+.mathGameCon .headerGame .mini_game.rc h3 {background:url('../images/layout/game2019/bg_top_bn2.png') repeat;}
+.mathGameCon .headerGame .mini_list {height:180px; padding-top:23px; background:#f4f7f9}
+.mathGameCon .headerGame .mini_list ul {width:215px; overflow:hidden; margin:0 auto 0;}
+.mathGameCon .headerGame .mini_list li {float:left; width:113px;  text-align:center}
+.mathGameCon .headerGame .mini_list li .gtxt{display:inline-block; overflow:hidden;max-width:90%;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap;}
+.mathGameCon .headerGame .mini_list li img { border:1px solid #d4d4d4; border-radius:8px; overflow:hidden; display:block; margin-bottom:8px }
+.mathGameCon .headerGame .mini_list li:first-child {margin-left:0}
+
+.mathGameCon .rankingGame {background:#f4f7f9; }
+.mathGameCon .rankingGame .inner_wrap {padding:40px 0 0;}
+.mathGameCon .rankingGame  h2 {background:#fff; border-bottom:1px solid #e4e4e4; text-align:center; padding:50px 0 20px; }
+.mathGameCon .rankingGame .rank_list {float:left; width:235px; border:1px solid #d4d4d4; border-radius:9px; background:#fff url('../images/layout/game2019/icon_cup.png') 14px 16px no-repeat; padding-bottom:15px; position:relative}
+.mathGameCon .rankingGame .rank_list h3 {padding:22px 0 0 77px}
+.mathGameCon .rankingGame .rank_list h3 .sel_game_name {display:inline-block; margin-top:7px; color:#e74a3b; font-size:14px; font-weight:600; letter-spacing:-1px; white-space:nowrap }
+.mathGameCon .rankingGame .rank_list h4 {background:#ff9d00; color:#ffffff; font-weight:600; font-size:14px; text-align:center; padding:9px 0 10px; margin-top:10px}
+.mathGameCon .rankingGame .rank_list  table {width:213px; margin:13px auto 0}
+.mathGameCon .rankingGame .rank_list th, .mathGameCon .rankingGame .rank_list td {height:26px; text-align:center;  font-weight:600}
+.mathGameCon .rankingGame .rank_list tr.even *  {background:#f9f8f6}
+.mathGameCon .rankingGame .rank_list strong[class^="num"] {display:inline-block; width:18px; height:18px; background-image:url('../images/layout/game2019/icon_number.png'); background-repeat:no-repeat; text-indent:-99999px}
+.mathGameCon .rankingGame .rank_list strong.num1 {background-position:0 0}
+.mathGameCon .rankingGame .rank_list strong.num2 {background-position:0 -50px}
+.mathGameCon .rankingGame .rank_list strong.num3 {background-position:0 -100px}
+.mathGameCon .rankingGame .rank_list  tr.myrank th, .mathGameCon .rankingGame .rank_list  tr.myrank td {border-top:2px solid #ff9d00;border-bottom:2px solid #ff9d00; }
+.mathGameCon .rankingGame .rank_list  tr.myrank th {border-left:2px solid #ff9d00; }
+.mathGameCon .rankingGame .rank_list  tr.myrank td:last-child {border-right:2px solid #ff9d00; }
+.mathGameCon .rankingGame .rank_list .rank_noti {position:absolute; bottom:-22px; left:0; text-align:center; width:235px; color:#808080}
+.mathGameCon  .rankingGame .btn_caution {position:absolute; right:15px; top:23px; background:transparent}
+.mathGameCon  .rankingGame .pop_alim_layer {width:274px; height:203px; position:absolute; left:227px; top:0px; z-index:9997; display:none; background:url('../images/layout/game2019/laypop_alim.png') 0 0 no-repeat; display:none}
+.mathGameCon  .rankingGame .pop_alim_layer.on {display:block}
+.mathGameCon  .rankingGame .pop_alim_layer .btn_p_close {position:absolute; left:240px; top:170px; z-index:9997; display:block;  width:19px; height:19px; background:url('../images/layout/game2019/btn_ly_close.png') 0 0 no-repeat;}
+.mathGameCon  .rankingGame .pop_alim_layer > ul {margin:15px 0 0 24px;}
+.mathGameCon  .rankingGame .pop_alim_layer > ul >  li {background:url('../images/layout/game2019/icon_bul.png') 0 5px no-repeat; padding-left:8px; color:#808080; margin-bottom:8px; line-height:16px;}
+.mathGameCon  .rankingGame .pop_alim_layer > ul ul {margin-top:5px;}
+.mathGameCon  .rankingGame .pop_alim_layer > ul ul li {margin-bottom:2px}
+
+.mathGameCon .rankingGame .game_list {float:right; width:730px; height:0; overflow:hidden; visibility:hidden}
+.mathGameCon .rankingGame .game_list.on {visibility:visible; height:451px; }
+.mathGameCon .rankingGame .game_list_slider {width:760px; overflow:hidden}
+.mathGameCon .rankingGame .game_list ul {width:760px; }
+.mathGameCon .rankingGame .game_list li {float:left; width:160px; height:130px; margin-right:30px; text-align:center; position:relative}
+.mathGameCon .rankingGame .game_list li em { font-style:normal; color:#4c4c4c}
+.mathGameCon .rankingGame .game_list li:nth-child(4n) {margin-right:0}
+.mathGameCon .rankingGame .game_list li span.rk_thumb {/* border:1px solid #d4d4d4;*/ border-radius:8px; overflow:hidden; display:block; margin-bottom:8px;position:relative}
+.mathGameCon .rankingGame .game_list li span.rk_thumb .over_info_con {display:flex; align-items:center;  justify-content:center;  position:absolute; left:0; top:130px; width:100%; height:100%; z-index:1000; background:rgba(0,0,0,0.7); color:#fff; text-align:center; box-sizing:border-box; line-height:150%; padding:0 12px; font-size:11px}
+.mathGameCon .rankingGame .game_list li span.rk_thumb:hover  .over_info_con {transition:all 0.3s; top:0px;}
+.mathGameCon .rankingGame .game_list [class^="grd_ico_"] {display:inline-block;width:36px; height:21px; background-image:url('../images/layout/game2019/icon_sticker.png'); background-repeat:no-repeat; position:absolute; right:0px; top:0px; text-indent:-9999px; z-index:900}
+.mathGameCon .rankingGame .game_list .grd_ico_el{background-position:0 -79px}
+.mathGameCon .rankingGame .game_list .grd_ico_el6{background-position:0 -180px; width:77px}
+.mathGameCon .rankingGame .game_list .grd_ico_mid{background-position:0 -0}
+.mathGameCon .rankingGame .game_list .grd_ico_hg{background-position:0 -280px}
+
+.mathGameCon .eleGame {padding:60px 0; background:#e6e2dc}
+.mathGameCon .eleGame h2{ text-align:center; padding-bottom:40px}
+.mathGameCon .eleGame .gameset {overflow:hidden}
+.mathGameCon .eleGame .gameset li {float:left; width:310px; padding-right:35px}
+.mathGameCon .eleGame .gameset li:last-child {border-right:0; padding-right:0px}
+.mathGameCon .eleGame .gameset dl {margin-top:13px;}
+.mathGameCon .eleGame .gameset dt, .mathGameCon .eleGame .gameset dd {display:inline-block;}
+.mathGameCon .eleGame .gameset dt {border-radius:20px; width:40px; height:40px; background:#e68536; color:#fff; line-height:40px; text-align:center; font-size:14px; font-weight:600; letter-spacing:-1px}
+.mathGameCon .eleGame .gameset dd {vertical-align:middle; margin-left:5px; font-size:13px; color:#555555; line-height:18px}
+.mathGameCon .eleGame .gameset dd em {font-style:normal; color:#df7015;font-weight:600; }
+
+.mathGameCon .totGame {padding:60px 0 0; position:relative}
+.mathGameCon .totGame  h2 {text-align:center}
+.mathGameCon .totGame .tabwrap { margin-top:25px; border-top:1px solid #e4e4e4;}
+.mathGameCon .totGame .tab {height:51px;}
+.mathGameCon .totGame .inner_wrap {padding:30px 0 50px;}
+.mathGameCon .totGame .game_type {width:1000px; margin:0 auto; position:relative}
+.mathGameCon .totGame .game_type .btn_type_wrap {position:absolute; right:0; top:-28px; border:1px solid #dcdcdc; border-radius:4px; height:30px; overflow:hidden}
+.mathGameCon .totGame .game_type .btn_type_wrap button {float:left; height:100%; background:#eff1f3; border-left:1px solid #dcdcdc; padding:0 11px; text-align:center; color:#808080; font-weight:600; font-size:12px}
+.mathGameCon .totGame .game_type .btn_type_wrap button:first-child {border-left:0}
+.mathGameCon .totGame .game_type .btn_type_wrap button.on {background:#fff; color:#333333}
+.mathGameCon .totGame  .type_cont {visibility:hidden; height:0; overflow:hidden}
+.mathGameCon .totGame  .type_cont.on {visibility:visible; min-height:520px; padding:0 0 40px 0}
+
+.mathGameCon .totGame .tot_game_wrap {background:#f4f7f9;visibility:hidden; height:0; overflow:hidden}
+.mathGameCon .totGame .tot_game_wrap.on {visibility:visible; min-height:430px; padding:30px 0}
+.mathGameCon .totGame .bx-wrapper, .mathGameCon .totGame [class^="tot_game_slider"]  {width:1000px; margin:0 auto;}
+.mathGameCon .totGame .tot_game_list:after {content:""; display:block; clear:both; height:0px }
+.mathGameCon .totGame .tot_game_list li {width:240px; padding:0 0 0 10px;  float:left; height:53px;}
+.mathGameCon .totGame .tot_game_list li img {display:inline-block;width:38px; height:31px; border:1px solid #dddddd; margin-right:12px; vertical-align:middle;}
+.mathGameCon .totGame .tot_game_list li em {display:inline-block; width:160px; vertical-align:middle; white-space:word-wrap; font-style:normal}
+.mathGameCon .totGame .tot_game_list li a {color:#4c4c4c}
+.mathGameCon .totGame .tot_game_list li [class^="icon_"] {display:inline-block; background-image:url('../images/layout/game2019/icon_badge.png'); background-repeat:no-repeat; text-indent:-9999px; vertical-align:middle; margin:0 2px}
+.mathGameCon .totGame .tot_game_list li .icon_mo {width:34px; height:14px; background-position:0 0; overflow:hidden}
+.mathGameCon .totGame .tot_game_list li .icon_new{width:14px; height:14px; background-position:0 -36px; overflow:hidden}
+
+.mathGameCon .tot_notice {background:#e4e4e4 url('../images/layout/game2019/bg_totnoti.png') 0 100% repeat-x; padding:10px 0 37px; border-top:1px solid #cccccc; text-align:center}
+.mathGameCon .tot_notice p {display:inline-block; min-width:660px; min-height:24px; background:url('../images/layout/game2019/icon_noti.png') 0 -96px no-repeat; text-align:left; padding:2px 0  0 33px; color:#4c4c4c; font-size:15px; font-weight:600;  letter-spacing:-1px;}
+.mathGameCon .tot_notice .banner {width:1000px; margin:30px auto 0; height:120px; overflow:hidden}
+.mathGameCon .tot_notice .banner > span {float:left; margin-right:0}
+.mathGameCon .tot_notice .banner > span:first-child {margin-right:20px}
+
+.mathGameCon .playSemi {height:648px; position:relative; background:#4045a6 url('../images/layout/game2019/bg_playsemi.png') 0 0 no-repeat; overflow:hidden}
+.mathGameCon .playSemi h2 {text-align:center;padding:35px 0 33px; }
+.mathGameCon .playSemi .wrapper {width:1000px; margin:0 auto; position:relative; z-index:200}
+/*.mathGameCon .playSemi .wrapper:before {position:absolute; left:-44px; top:-53px; content:""; width:1016px; height:500px; background:url('../images/layout/game2019/img_semi.png') 0 0 no-repeat}*/
+.mathGameCon .playSemi .semi_list {width:760px; overflow:hidden; margin-left:270px}
+.mathGameCon .playSemi .semi_list li {float:left; width:160px; height:140px; margin-right:30px; text-align:center; position:relative;}
+.mathGameCon .playSemi .semi_list li em { font-style:normal; font-weight:bold; color:#434343; font-size:11px}
+.mathGameCon .playSemi .semi_list li:nth-child(4n) {margin-right:0}
+.mathGameCon .playSemi .semi_list li:nth-child(n+5) em {color:#fff}
+.mathGameCon .playSemi .semi_list li span.rk_thumb { display:block; margin-bottom:5px; position:relative; zoom:1; overflow:hidden}
+.mathGameCon .playSemi .semi_list li > a > span.rk_thumb {display:block; border-radius:8px }
+.mathGameCon .playSemi .semi_list li span.rk_thumb .over_info_con {display:flex; align-items:center;  justify-content:center;  position:absolute; left:0; top:130px; width:100%; height:100%; z-index:1000; background:rgba(0,0,0,0.7); color:#fff; text-align:center; box-sizing:border-box; line-height:150%; padding:0 12px;  font-size:11px; border-radius:8px; -webkit-border-radius:8px;}
+.mathGameCon .playSemi .semi_list li span.rk_thumb:hover  .over_info_con {transition:all 0.3s; top:0px;}
+.mathGameCon .playSemi .semi_list [class^="grd_ico_"] {display:inline-block;width:36px; height:21px; background-image:url('../images/layout/game2019/icon_sticker.png'); background-repeat:no-repeat; position:absolute; right:1px; top:1px; text-indent:-9999px; z-index:900}
+.mathGameCon .playSemi .semi_list .grd_ico_el{background-position:0 -79px}
+.mathGameCon .playSemi .semi_list .grd_ico_el6{background-position:0 -180px; width:77px}
+.mathGameCon .playSemi .semi_list .grd_ico_mid{background-position:0 -0}
+.mathGameCon .playSemi .semi_list .grd_ico_hg{background-position:0 -280px}
+.mathGameCon .playSemi .semi_ani_area {display:none}
+.mathGameCon .playSemi .semi_ani_area.on {display:block; opacity:1; width:1000px; margin:-648px auto 0; position:relative}
+.mathGameCon .playSemi .semi_ani_area.on [class^="aniobj"] {position:absolute;}
+.mathGameCon .playSemi .semi_ani_area.on .aniobj1{
+    top:208px; left:-30px;
+    -webkit-animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-bottom-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    -webkit-animation-delay:0.2s;animation-delay:0.2s;
+    z-index:180;
+}
+.mathGameCon .playSemi .semi_ani_area.on .aniobj2 {
+    top:194px; left:-52px;
+    -webkit-animation:flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation:flip-in-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   -webkit-animation-delay:1s;animation-delay:1s;
+}
+.mathGameCon .playSemi .semi_ani_area.on .aniobj3 {
+    top:505px; left:620px;
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation-delay:1.5s;animation-delay:1.5s;
+    z-index:180;
+}
+.mathGameCon .playSemi .semi_ani_area.on .aniobj4 {
+    top:507px; left:729px;
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation-delay:1.7s;animation-delay:1.7s;
+    z-index:178
+}
+@-webkit-keyframes swing-in-bottom-fwd {
+    0% {-webkit-transform: rotateX(100deg);transform: rotateX(100deg);-webkit-transform-origin: bottom;transform-origin: bottom;opacity: 0;}
+    100% {-webkit-transform: rotateX(0);transform: rotateX(0);-webkit-transform-origin: bottom;transform-origin: bottom;opacity: 1;}
+}
+@keyframes swing-in-bottom-fwd {
+    0% {-webkit-transform: rotateX(100deg);transform: rotateX(100deg);-webkit-transform-origin: bottom;transform-origin: bottom;opacity: 0;}
+    100% {-webkit-transform: rotateX(0);transform: rotateX(0);-webkit-transform-origin: bottom;transform-origin: bottom;opacity: 1;}
+}
+
+@-webkit-keyframes flip-in-ver-right {
+    0% {-webkit-transform: rotateY(-80deg);transform: rotateY(-80deg);opacity: 0;}
+    100% {-webkit-transform: rotateY(0);transform: rotateY(0);opacity: 1;}
+}
+@keyframes flip-in-ver-right {
+    0% {-webkit-transform: rotateY(-80deg);transform: rotateY(-80deg);opacity: 0;}
+    100% {-webkit-transform: rotateY(0);transform: rotateY(0);opacity: 1;}
+}
+@-webkit-keyframes slide-in-bottom {
+    0% {-webkit-transform: translateY(1000px);transform: translateY(1000px);opacity: 0;}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+  }
+@keyframes slide-in-bottom {
+    0% {-webkit-transform: translateY(1000px);transform: translateY(1000px);opacity: 0;}
+    100% {-webkit-transform: translateY(0);transform: translateY(0);opacity: 1;}
+}
+/*slider*/
+.mathGameCon .bx-viewport { border-radius:0; overflow:hidden; }
+.topslider .bx-wrapper {position:relative !important}
+.topslider .bx-wrapper .bx-pager, .topslider .bx-wrapper .bx-controls-auto {position:absolute; top:220px; left:55px; }
+.topslider .bx-controls .bx-pager .bx-pager-ite {display:inline-block; width:28px; height:4px; }
+.topslider .bx-controls .bx-pager .bx-pager-item a {display:inline-block; width:28px; height:4px; background-image:url('../images/layout/game2019/btn_t_page.png'); background-position: -34px 0 }
+.topslider .bx-controls .bx-pager .bx-pager-item a.active { background-position: 0 0}
+
+.topslider .bx-wrapper .bx-prev {left:0; background: url('../images/layout/game2019/btn_t_nav.png') no-repeat 0 0; }
+.topslider .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {  background-position: 0 0; }
+.topslider .bx-wrapper .bx-next {right:0; background: url('../images/layout/game2019/btn_t_nav.png') no-repeat -27px 0; }
+.topslider .bx-wrapper .bx-next:hover, .topslider .bx-wrapper .bx-next:focus {  background-position: -27px 0; }
+.topslider .bx-wrapper .bx-controls-direction a { position:absolute;  top:118px;  display:block; margin-top:0;  outline:0;  width:25px;  height:25px;  text-indent:-9999px;  z-index: 9000; }
+
+.slider_common .bx-wrapper {margin-left:15px; position:relative !important}
+.slider_common .bx-wrapper .bx-pager, .slider_common .bx-wrapper .bx-controls-auto {position:static; margin-top:25px}
+.slider_common .bx-controls .bx-pager .bx-pager-ite {display:inline-block; width:15px; height:15px; }
+.slider_common .bx-controls .bx-pager .bx-pager-item a {display:inline-block; width:15px; height:15px; background-image:url('../images/layout/game2019/btn_m_page.png'); background-position:-22px 0 }
+.slider_common .bx-controls .bx-pager .bx-pager-item a.active { background-position: 0 0}
+
+.slider_common .bx-wrapper .bx-prev {display:block; position:absolute; background: url('../images/layout/game2019/btn_m_nav.png') no-repeat 0 0; }
+.slider_common .bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {  background-position: 0 0; }
+.slider_common .bx-wrapper .bx-next {display:block;  position:absolute; background: url('../images/layout/game2019/btn_m_nav.png') no-repeat -12px 0; }
+.slider_common .bx-wrapper .bx-next:hover, .slider_common .bx-wrapper .bx-next:focus {  background-position: -12px 0; }
+.slider_common .bx-wrapper .bx-controls-direction a { display:inline-block; margin-top:0;  outline:0;  width:10px;  height:15px;  text-indent:-9999px;  z-index: 9000; }
+
+.mini_list .bx-wrapper .bx-pager, .mini_list .bx-wrapper .bx-controls-auto {margin-top:23px}
+.mini_list .bx-wrapper .bx-prev {top:144px; left:120px}
+.mini_list .bx-wrapper .bx-next {top:144px; right:120px}
+.game_list .bx-wrapper {margin-left:0;position:relative !important}
+.game_list .bx-wrapper .bx-prev {top:396px; left:355px}
+.game_list .bx-wrapper .bx-next { top:396px; right:355px}
+.game_list.slider_common .bx-pager {position:static; margin-top:5px !important}
+.totGame .bx-wrapper .bx-prev {top:400px; left:490px}
+.totGame .bx-wrapper .bx-next {top:400px; right:490px}
+.tot_game_wrap.slider_common .bx-pager {position:static; margin-top:28px !important}
+
+/*2019 게임플레이어*/
+.gamePlayerWrap {width:1024px; height:740px; background:#fff;}
+.gamePlayerWrap:after {clear:both; display:block; content:""; height:0; }
+.gamePlayerWrap .cntL {float:left; width:763px; position:relative; padding-bottom:30px}
+.gamePlayerWrap .cntL .title_con {border-bottom:1px solid #3e5399; height:44px; line-height:44px; overflow:hidden; color:#333333; font-size:18px; padding-left:20px}
+.gamePlayerWrap .cntL .game_player {width:763px; height:470px; overflow:hidden; border-bottom:1px solid #bfc2c6}
+.gamePlayerWrap .cntL .game_player .game_con {height:450px;}
+/*.gamePlayerWrap .cntL .game_player img {width:100%; height:auto}*/
+.gamePlayerWrap .cntL .btn_large {position:absolute; right:0px; top:0; width:44px; height:44px; background:url('../images/layout/game2019/btn_p_large.png') 0 0 no-repeat; color:#fff; font-size:18px; font-weight:bold}
+.gamePlayerWrap .cntL .btn_large.recv {background-position:0 -54px}
+.gamePlayerWrap .cntR {float:left; width:260px; height:740px; border-left:1px solid #bfc2c6; background:#f4f7f9}
+.gamePlayerWrap .game_info {padding:25px 20px 0; position:relative}
+.gamePlayerWrap .game_info h2 {color:#333333; font-size:15px; padding-bottom:14px}
+.gamePlayerWrap .game_info h2 a {color:#333333;}
+.gamePlayerWrap .game_info .right_button {position:absolute; right:20px; top:25px;}
+.gamePlayerWrap .game_info .right_button:after {content:""; display:block; clear:both}
+.gamePlayerWrap .game_info .right_button .dark_button img {vertical-align:middle }
+.gamePlayerWrap .game_info .right_button .dark_button:last-child {width:77px}
+.gamePlayerWrap .game_info .comment {border-top:1px solid #edf0f2; margin-top:13px; padding-top:17px; color:#757474; font-size:12px; line-height:20px; font-weight:600; }
+.gamePlayerWrap .game_info .comment >.cmt_boxt { height:100px; overflow:auto}
+
+.gamePlayerWrap .cntR h3 { background:#f4f7f9; border-bottom:1px solid #d4d7db; font-weight:600; text-align:center; font-size:13px; letter-spacing:-1px; cursor:pointer; height:45px; line-height:43px; }
+.gamePlayerWrap .cntR .tab_gamebx {height:45px;overflow:hidden}
+.gamePlayerWrap .cntR .tab_gamebx li {float:left; width:86px; height:43px;line-height:43px; background:#d7d9da;border-top:1px solid #bfc2c6; border-bottom:1px solid #bfc2c6; border-right:1px solid #bfc2c6;  text-align:center; font-size:13px; letter-spacing:-1px; cursor:pointer; color:#4c4c4c}
+.gamePlayerWrap .cntR .tab_gamebx li:last-child {width:85px;}
+.gamePlayerWrap .cntR .tab_gamebx li.on {background:#f4f7f9; border-bottom:1px solid #f4f7f9; font-weight:600}
+
+.gamePlayerWrap .cntR .gamebox {overflow:auto; height:663px; padding:15px 0 15px 10px;}
+.gamePlayerWrap .cntR .gamebox ul {width:100%; overflow:hidden}
+.gamePlayerWrap .cntR .gamebox ul li {width:225px; border-bottom:1px solid #d4d7db; padding:10px 0 10px 10px}
+.gamePlayerWrap .cntR .gamebox ul li a {display:block; color:#4c4c4c; width:100%; /*height:100%;*/}
+.gamePlayerWrap .cntR .gamebox ul li.on {background:#fff}
+.gamePlayerWrap .cntR .gamebox ul li.on a {color:#e74a3b; font-weight:600}
+.gamePlayerWrap .cntR .gamebox ul li .thumb {display:inline-block; width:59px; height:48px; overflow:hidden; border:1px solid #e0e1e1; vertical-align:middle}
+.gamePlayerWrap .cntR .gamebox ul li .thumb img {width:100%; height:100%}
+.gamePlayerWrap .cntR .gamebox ul li em { display:inline-block; vertical-align:middle; margin-left:8px; font-style:normal; width:139px; overflow:hidden}
+.count {display:inline-block; padding-left:20px; line-height:20px; font-size:16px; font-weight:600; color:#4589d9; background:url('../images/common/view_icon5.png') 0 2px no-repeat;}
+
+.gamePlayerWrap.large .cntL {width:1024px; border-bottom:0}
+.gamePlayerWrap.large .game_player {width:1024px; min-height:694px; overflow:auto}
+.gamePlayerWrap.large .game_player object {min-height:694px;}
+.gamePlayerWrap.large .game_info {display:none}
+.gamePlayerWrap.large .cntR {display:none}
+
+/* 공유하기 */
+.gamePlayerWrap .sharewrap{position:absolute; top:52px; right:20px; padding:15px; border:1px solid #d8d8d8; border-radius:4px; background:#fff; z-index:100;}
+.gamePlayerWrap .sharewrap > div{position:relative;}
+.gamePlayerWrap .sharewrap .tit{position: relative; height:20px; line-height:20px; padding-left:20px; margin-bottom:8px; color:#708494; font-weight:700; font-size:13px; background:url(../images/common/share_icon2.png) no-repeat 0 50%;}
+.gamePlayerWrap .sharewrap .btn-evt-ing{position:absolute; top: -6px; left:78px; display: inline-block; width: 104px; height: 31px; background:url('../images/event/20170119/btn_evt_ing.png') no-repeat;}
+.gamePlayerWrap .sharewrap .sharebox{margin-bottom:5px; padding:10px 0; border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e7edf2; text-align:center;}
+.gamePlayerWrap .sharewrap .share_url{position:relative; height:32px; border:1px solid #d0d5d8; border-radius:4px;}
+.gamePlayerWrap .sharewrap .share_url > input[type="text"]{width:160px; height:32px; margin:0 60px 0 10px; padding:0; line-height:32px; color:#6b6b6b; border:none; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+*:first-child + html .gamePlayerWrap .sharewrap .share_url > input[type="text"]{padding-left:10px;}
+.gamePlayerWrap .sharewrap .share_url .copy_btn{position:absolute; top:3px; right:3px;}
+.gamePlayerWrap .sharewrap .shareclose_btn{position:absolute; top:3px; right:0; display:inline-block; width:14px; height:14px !important; background:url(../images/btn/btn_close5.png) no-repeat 0 0;}
+*:first-child + html .gamePlayerWrap .sharewrap .shareclose_btn{color:#fff;}
+
+.gamePlayerWrap .sharewrap .sns_btn{display:inline-block;width:26px;height:26px;line-height:26px}
+*:first-child + html .gamePlayerWrap .sharewrap .sns_btn{color:#fff;}
+.gamePlayerWrap .sharewrap .sns_btn.facebook{background:url(../images/common/facebook.png) no-repeat}
+.gamePlayerWrap .sharewrap .sns_btn.twitter{background:url(../images/common/twitter.png) no-repeat}
+.gamePlayerWrap .sharewrap .sns_btn.kakao{background:url(../images/common/kakao.png) no-repeat}
+.gamePlayerWrap .sharewrap .sns_btn.facebook:hover{background-position:0 -26px}
+.gamePlayerWrap .sharewrap .sns_btn.twitter:hover{background-position:0 -26px}
+.gamePlayerWrap .sharewrap .sns_btn.kakao:hover{background-position:0 -26px}
+
+/* 게임존 이벤트 뱃지*/
+.gamePlayerWrap .title_con h1 > span {display:block; width:700px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.gamePlayerWrap {padding-top:0 !important; padding-bottom:0 !important}
+.gamePlayerWrap h1 > span   {width:300px }
+.gamePlayerWrap .counting  {width:400px;margin-top:1px; padding-right:1px}
+.gamePlayerWrap .counting span {display:inline-block}
+
+.gamePlayerWrap .title_con.jul2019 .counting .start {width:135px; height:42px; margin-top:0; line-height:42px; padding-left:32px; background:url('../images/event/20190618/bg_complete.png') no-repeat 0 50%}
+.gamePlayerWrap .title_con.jul2019 .counting .finish {width:172px; height:38px; margin-top:0; line-height:42px; padding-left:38px; background:url('../images/event/20190618/bg_finish.png') no-repeat 0 50%;}
+.gamePlayerWrap .title_con.jul2019 .counting .error {display:inline-block; width:305px; height:32px; margin-top:4px; font-size:14px; color:#fff; font-weight:bold; text-align:left; background:url('../images/event/20180705/bg_error.png') no-repeat 0 50%; cursor:pointer;}
+
+/*12월 이벤트*/
+.eventtit.dec2019 .counting .start {margin-top:0px;}
+.eventtit.dec2019 .counting .finish {margin-top:-2px;}
+.eventtit.dec2019 .counting .error {margin-top:4px;}
+
+/*2월이벤트*/
+.eventtit.feb2020 h1 > span   {width:250px }
+.eventtit.feb2020 .counting  {width:420px; margin-top:-45px}
+.eventtit.feb2020 .counting .error {margin-top:7px;}
+
+/*3월이벤트*/
+.eventtit.mar2020 h1 > span   {width:235px }
+.eventtit.mar2020 .counting  {width:475px; margin-top:-45px}
+.eventtit.mar2020 .counting .error {margin-top:7px;}
+
+/*4월이벤트*/
+.eventtit.apr2020 h1 > span   {width:235px }
+.eventtit.apr2020 .counting  {width:435px; margin-top:-45px}
+.eventtit.apr2020 .counting .error {margin-top:7px;}
+
+/*7월이벤트*/
+.eventtit.jul2020 h1 > span   {width:435px }
+.eventtit.jul2020 .counting  {width:435px; margin-top:-45px}
+.eventtit.jul2020 .counting .start  {margin-top:0px}
+.eventtit.jul2020 .counting .error {margin-top:7px;}
+
+/*9월이벤트*/
+.eventtit.sep2020 h1 > span   {width:300px }
+.eventtit.sep2020 .counting  {min-width:198px; width:auto; margin-top:-40px}
+.eventtit.sep2020 .counting .start {margin-top:-2px}
+.eventtit.sep2020 .counting .finish {margin-top:0px}
+.eventtit.sep2020 .counting .error {margin-top:3px;}
+
+/*11월이벤트*/
+.eventtit.nov2020 h1 > span   {width:300px }
+.eventtit.nov2020 .counting  {min-width:179px; width:auto; margin-top:-42px}
+.eventtit.nov2020 .counting .start {margin-top:0px}
+.eventtit.nov2020 .counting .finish {margin-top:0px}
+.eventtit.nov2020 .counting .error {margin-top:3px;}
+
+/*2021년 1월이벤트*/
+.eventtit.jan2021 h1 > span   {width:370px }
+.eventtit.jan2021 .counting  {min-width:179px; width:auto; margin-top:-42px}
+.eventtit.jan2021 .counting .start {margin-top:0px}
+.eventtit.jan2021 .counting .get {margin-top:-1px}
+.eventtit.jan2021 .counting .get2 {margin-top:-1px}
+.eventtit.jan2021 .counting .finish {margin-top:-1px}
+.eventtit.jan2021 .counting .error {margin-top:3px;}
+
+/*2021년 3월이벤트*/
+.eventtit.mar2021 h1 > span   {width:370px }
+.eventtit.mar2021 .counting  {min-width:179px; width:auto; margin-top:-42px}
+.eventtit.mar2021 .counting .start {margin-top:0px}
+.eventtit.mar2021 .counting .get {margin-top:0px}
+.eventtit.mar2021 .counting .get2 {margin-top:0px}
+.eventtit.mar2021 .counting .coupon {margin-top:0px}
+.eventtit.mar2021 .counting .finish {margin-top:0px}
+.eventtit.mar2021 .counting .error {margin-top:3px;}
+
+
+/*2021년 5월이벤트*/
+.eventtit.may02021 h1 > span   {width:370px }
+.eventtit.may02021 .counting  {min-width:179px; width:auto; margin-top:-42px}
+.eventtit.may02021 .counting .start {margin-top:0px}
+.eventtit.may02021 .counting .finish {margin-top:-1px}
+.eventtit.may02021 .counting .error {margin-top:3px;}
+
+/*2021년 7월이벤트*/
+.eventtit.july2021 h1 > span   {width:370px }
+.eventtit.july2021 .counting  {min-width:200px; width:auto; margin-top:-42px}
+.eventtit.july2021 .counting .start {min-width:230px; margin-top:0px}
+.eventtit.july2021 .counting .finish {margin-top:-1px;}
+.eventtit.july2021 .counting .event_on {min-width:190px; margin-top:-3px}
+.eventtit.july2021 .counting .error {margin-top:3px;}
+
+/*2021년 9월이벤트*/
+.eventtit.sep2021 h1 > span   {width:370px }
+.eventtit.sep2021 .counting  {min-width:200px; width:auto; margin-top:-42px}
+.eventtit.sep2021 .counting .start {min-width:230px; margin-top:0px}
+.eventtit.sep2021 .counting .finish {margin-top:0}
+.eventtit.sep2021 .counting .event_on {min-width:190px; margin-top:0}
+.eventtit.sep2021 .counting .error {margin-top:3px;}
+
+/*팝업  7월이벤트*/
+.pop_event_dice {background:url('../images/event/20200609/pop_gamezone.png') 0 0 no-repeat; width:397px; height:320px; position:fixed; left:50%; top:290px; margin:0 0  0 -200px; z-index:9999;}
+.pop_event_dice .container {width:367px; padding-top:158px; text-align:center; font-size:18px; font-weight:600; margin-left:11px}
+.pop_event_dice .container > p {color:#ffffff; margin-bottom:20px; line-height:130%}
+.pop_event_dice .container > p .getnum {color:#fff79f}
+.pop_event_dice .container > span {display:block}
+.pop_event_dice .container > span button {display:inline-block; border-radius:5px; background:#fff; color:#262626; font-size:16px; width:125px; height:38px; font-weight:600}
+.pop_event_dice .container > span button:first-child {margin-right:5px}
+
+
+/*팝업  9월이벤트*/
+.pop_event_bingo {background:url('../images/event/20200803/pop_gamezone.png') 0 0 no-repeat; width:397px; height:320px; position:fixed; left:50%; top:290px; margin:0 0  0 -200px; z-index:9999;}
+.pop_event_bingo .container {width:367px; padding-top:158px; text-align:center; font-size:18px; font-weight:600; margin-left:11px}
+.pop_event_bingo .container > p {color:#ffffff; margin-bottom:20px; line-height:130%}
+.pop_event_bingo .container > p .getnum {color:#fff79f}
+.pop_event_bingo .container > span {display:block}
+.pop_event_bingo .container > span button {display:inline-block; border-radius:5px; background:#fff; color:#262626; font-size:16px; width:125px; height:38px; font-weight:600}
+.pop_event_bingo .container > span button:first-child {margin-right:5px}
+
+

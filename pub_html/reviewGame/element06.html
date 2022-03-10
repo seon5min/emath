@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../../css/reviewGame.css" />
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="../../css/setGame_ie7.css" />
+<![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+
+<!-- header -->
+<header id="header">
+	<!-- top_nav -->
+	<div class="top_nav">
+		<div class="nav_con">
+			<h1 class="logo"><a class="emt" href="#">EBS Math</a></h1>
+			<div class="right_menu on">
+				<a class="fav_btn" href="javascript:browserChk();">즐겨찾기 추가</a>
+				<span class="line"></span>
+				<a class="all_btn" href="#">전체 교과 보기</a>
+				<span class="line"></span>
+				<a class="customer_btn" href="#">고객센터</a>
+				<span class="line"></span>
+				<a class="my_btn" href="#">마이페이지</a>
+				<span class="line"></span>
+				<a class="logon_btn" href="javascript:">홍길동 님 <span class="arrow"></span></a>
+			</div>
+
+			<div class="my_menu_con">
+				<div class="arrow"></div>
+				<div class="my_menu">
+					<ul>
+						<li><a href="#">최근 본 학습카드</a></li>
+						<li><a href="#">찜 한 학습카드</a></li>
+						<li><a href="#">나의 문제</a></li>
+						<li><a href="#">회원정보변경</a></li>
+					</ul>
+				</div>
+				<div class="logout">
+					<a href="#"><img src="../../images/layout/logout_icon.png" /><span class="ml5">로그아웃</span></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //top_nav -->
+
+	<!-- gnb -->
+	<nav class="gnb">
+		<div class="gnb_wrap">
+			<div class="main_menu">
+				<div class="menu_con">
+					<ul>
+						<li><a href="#">초등5</a></li>
+						<li><a href="#">초등6</a></li>
+						<li><a href="#">중학1</a></li>
+						<li><a href="#">중학2</a></li>
+						<li><a href="#">중학3</a></li>
+					</ul>
+				</div>
+				<div class="search_con">
+					<form action="">
+						<fieldset>
+							<legend>검색 폼</legend>
+							<input type="text">
+							<button type="submit"><img src="../../images/common/search_btn.png" alt="검색" /></button>
+						</fieldset>
+					</form>
+
+				</div>
+			</div>
+
+			<div class="auto_complete">
+				<div class="serch_list">
+					<div class="guide_con">
+						<p>
+							검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br />
+							입력시 자동으로 관련어를 추천합니다.
+						</p>
+					</div>
+					<div class="empty_con">
+						<p>
+							해당 단어로 시작하는 검색어가 없습니다.
+						</p>
+					</div>
+					<div class="serch_con">
+						<ul>
+							<li><a href="#"><font color="#4890e4">거북이</font>의 계략</a></li>
+							<li><a href="#"><font color="#4890e4">거북이</font>계략</a></li>
+							<li><a href="#"><font color="#4890e4">거북이</font></a></li>
+							<li><a href="#">아킬레우스를 무시한<font color="#4890e4">거북이</font></a></li>
+							<li><a href="#">킬레우스<font color="#4890e4">거북이</font>의 계략</a></li>
+						</ul>
+					</div>
+					<div class="my_search">
+						<h4 class="title">내가 찾은 검색어</h4>
+						<ul>
+							<li><a class="btn" href="#">거북이</a><a class="del_btn" href="#"><img src="../../images/common/del_icon.png" alt="삭제" /></a></li>
+							<li><a class="btn" href="#">아기의 몸무게는</a><a class="del_btn" href="#"><img src="../../images/common/del_icon.png" alt="삭제" /></a></li>
+							<li><a class="btn" href="#">이등변삼각형</a><a class="del_btn" href="#"><img src="../../images/common/del_icon.png" alt="삭제" /></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="close_con">
+					<a href="javascript:"><img src="../../images/common/close_icon.png" /><span class="ml5">자동완성 닫기</span></a>
+				</div>
+			</div>
+
+
+			<div class="sub_menu">
+
+				<div class="menu_con menu1">
+					<div class="title_con elementary5">
+						<h3 class="blind">초등학교 5학년</h3>
+					</div>
+					<div class="menu_set">
+						<div class="sub_con sub1">
+							<h4 class="title"><img src="../../images/layout/elementary5_title1.png" alt="1학기" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">약수와 배수</a></li>
+								<li><span class="icon"></span><a href="#">직육면체</a></li>
+								<li><span class="icon"></span><a href="#">약분과 통분</a></li>
+							</ul>
+							<ul>
+								<li><span class="icon"></span><a href="#">분수의 덧셈과 뺄셈</a></li>
+								<li><span class="icon"></span><a href="#">다각형의 넓이</a></li>
+								<li><span class="icon"></span><a href="#">분수의 곱셈</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/elementary5_title2.png" alt="2학기" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">소수의 곱셈</a></li>
+								<li><span class="icon"></span><a href="#">합동과 대칭</a></li>
+								<li><span class="icon"></span><a href="#">분수의 나눗셈</a></li>
+							</ul>
+							<ul>
+								<li><span class="icon"></span><a href="#">소수의 나눗셈</a></li>
+								<li><span class="icon"></span><a href="#">여러 가지 단위</a></li>
+								<li><span class="icon"></span><a href="#">자료의 표현</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_con menu2">
+					<div class="title_con elementary6">
+						<h3 class="blind">초등학교 6학년</h3>
+					</div>
+					<div class="menu_set">
+						<div class="sub_con sub1">
+							<h4 class="title"><img src="../../images/layout/elementary6_title1.png" alt="1학기" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">각기둥과 각뿔</a></li>
+								<li><span class="icon"></span><a href="#">분수의 나눗셈</a></li>
+								<li><span class="icon"></span><a href="#">소수의 나눗셈</a></li>
+							</ul>
+							<ul>
+								<li><span class="icon"></span><a href="#">비와 비율</a></li>
+								<li><span class="icon"></span><a href="#">원의 넓이</a></li>
+								<li><span class="icon"></span><a href="#">직육면체의 겉넓이와 부피</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/elementary6_title2.png" alt="2학기" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">쌓기나무</a></li>
+								<li><span class="icon"></span><a href="#">비례식과 비례배분</a></li>
+								<li><span class="icon"></span><a href="#">원기둥, 원뿔, 구</a></li>
+							</ul>
+							<ul>
+								<li><span class="icon"></span><a href="#">비율 그래프</a></li>
+								<li><span class="icon"></span><a href="#">정비례와 반비례</a></li>
+								<li><span class="icon"></span><a href="#">여러 가지 문제</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_con menu3">
+					<div class="title_con middle1">
+						<h3 class="blind">중학교 1학년</h3>
+					</div>
+					<div class="menu_set">
+						<div class="sub_con sub1">
+							<h4 class="title"><img src="../../images/layout/middle1_title1.png" alt="수와연산" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">소인수분해</a></li>
+								<li><span class="icon"></span><a href="#">정수와 유리수</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/middle1_title2.png" alt="도형" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">문자의 사용과<br />식의 계산</a></li>
+								<li><span class="icon"></span><a href="#">일차방정식</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub3">
+							<h4 class="title"><img src="../../images/layout/middle1_title3.png" alt="함수" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">함수와 그래프</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub4">
+							<h4 class="title"><img src="../../images/layout/middle1_title4.png" alt="확률과 통계" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">도수분포표와<br />상대도수</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub5">
+							<h4 class="title"><img src="../../images/layout/middle1_title5.png" alt="기하" /></h4>
+							<ul>
+								<li class="on"><span class="icon"></span><a href="#">기본 도형과 위치관계</a></li>
+								<li><span class="icon"></span><a href="#">작도와 합동</a></li>
+								<li><span class="icon"></span><a href="#">평면도형의 성질</a></li>
+								<li><span class="icon"></span><a href="#">입체도형의 성질</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_con menu4">
+					<div class="title_con middle2">
+						<h3 class="blind">중학교 2학년</h3>
+					</div>
+					<div class="menu_set">
+						<div class="sub_con sub1">
+							<h4 class="title"><img src="../../images/layout/middle2_title1.png" alt="수와연산" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">유리수와 순환소수</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/middle2_title2.png" alt="문자와 식" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">식의 계산</a></li>
+								<li><span class="icon"></span><a href="#">연립일차방정식</a></li>
+								<li><span class="icon"></span><a href="#">일차부등식과<br />연립일차부등식</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/middle2_title3.png" alt="함수" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">일차함수와 그래프</a></li>
+								<li><span class="icon"></span><a href="#">일차함수와<br />일차방정식의 관계</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub3">
+							<h4 class="title"><img src="../../images/layout/middle2_title4.png" alt="확률과 통계" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">확률과 그 기본 성질</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub4">
+							<h4 class="title"><img src="../../images/layout/middle2_title5.png" alt="기하" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">삼각형과 사각형의<br />성질</a></li>
+								<li><span class="icon"></span><a href="#">도형의 닮음</a></li>
+								<li><span class="icon"></span><a href="#">닮음의 활용</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu_con menu5">
+					<div class="title_con middle3">
+						<h3 class="blind">중학교 3학년</h3>
+					</div>
+					<div class="menu_set">
+						<div class="sub_con sub1">
+							<h4 class="title"><img src="../../images/layout/middle3_title1.png" alt="수와연산" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">제곱근과 실수</a></li>
+								<li><span class="icon"></span><a href="#">근호를 포함한 식의 계산</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/middle3_title2.png" alt="문자와 식" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">다항식의 인수분해</a></li>
+								<li><span class="icon"></span><a href="#">이차방정식</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub2">
+							<h4 class="title"><img src="../../images/layout/middle3_title3.png" alt="함수" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">이차함수와 그래프</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub3">
+							<h4 class="title"><img src="../../images/layout/middle3_title4.png" alt="확률과 통계" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">대푯값과 산포도</a></li>
+							</ul>
+						</div>
+						<div class="sub_con sub4">
+							<h4 class="title"><img src="../../images/layout/middle3_title5.png" alt="기하" /></h4>
+							<ul>
+								<li><span class="icon"></span><a href="#">피타고라스의 정리</a></li>
+								<li><span class="icon"></span><a href="#">삼각비</a></li>
+								<li><span class="icon"></span><a href="#">원의 성질</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+	<!-- //gnb -->
+
+	<!--  -->
+	<div class="etcmenu_wrap">
+		<div class="etcmenu">
+			<a class="emt" href="#테마별">테마별 수학시리즈</a>
+		</div>
+	</div>
+	<!--  -->
+
+</header>
+<!-- //header -->
+
+
+
+<!-- top_visual -->
+<!-- 매월 sub_top** 증가  -->
+<div id="top_visual" class="sub_top15"><!-- @@2017-02-15 -->
+</div>
+<!-- //top_visual -->
+
+
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- container -->
+	<article id="container">
+
+		<!-- category -->
+		<section class="content_wrap category">
+
+			<!-- lnb -->
+			<div class="bg_lnb setGame"></div>
+			<aside class="lnb setGame">
+
+				<a href="#" title="초등 수학 게임방"><h2 class="top_title emt">초등 수학 게임방</h2></a>
+
+				<div class="lnb_menu lnb_setGame">
+					<div class="dotted"></div>
+					<!-- menu1  -->
+					<div class="menu_con setGame ele5">
+						<h4 class="title"><img src="../../images/layout/setGame_elementary5.png" alt="5학년" /></h4>
+						<ul class="first">
+							<li><a href="#"><span class="set"></span>문제 세트 게임</a></li>
+						</ul>
+					</div>
+					<!-- //menu1  -->
+					<div class="dotted"></div>
+					<!-- menu2  -->
+					<div class="menu_con setGame ele6">
+						<h4 class="title"><img src="../../images/layout/setGame_elementary6.png" alt="6학년" /></h4>
+						<ul class="first">
+							<li class=""><a href="#"><span class="set"></span>문제 세트 게임</a></li>
+							<li class="on"><a href="#"><span class="review"></span>단원 복습 게임</a>
+								<!-- <span class="bubble">
+									<img src="../../images/layout/bubble_serviceOpen.png" alt="곧 만나요!">
+								</span> -->
+							</li>
+						</ul>
+
+					</div>
+					<!-- //menu2  -->
+
+				</div>
+				<!-- <div class="ac"><a href="#none"><img src="../../images/layout/img_bn.png" alt="수학술사 세미 게임 Beta" /></a></div> -->
+				<!-- @@2016-06-24 -->
+
+			</aside>
+			<!-- //lnb -->
+
+			<!-- content_right -->
+			<div class="content_right">
+				<div class="content_set reivewGame">
+
+					<!-- location_menu -->
+					<div class="ar">
+						<div class="location_menu">
+							<a href="#"><img src="/common/innovativepot/math2016/images/common/home_icon.png"> 홈</a>
+							<span class="arrow emt"></span>
+							<a href="#">초등 수학 게임방</a>
+							<span class="arrow emt"></span>
+							<a href="#"></a>
+						</div>
+					</div>
+					<!-- //location_menu -->
+
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					$('.positionCar').hide();
+
+					$('.btn.start').click(function(){
+						$(this).addClass("click").delay(300).queue(function(next){
+							$(this).removeClass("click");
+							next();
+						})
+					});
+					$('li.element6.game').mouseenter(function(){
+						$(this).siblings().removeClass('on');
+						$(this).siblings().find('.positionCar').hide();
+						$(this).addClass("on");
+						$(this).find('.positionCar').show();
+					})
+				});
+				</script>
+				<div class="reviewGame-wrap element6">
+					<div class="header">
+						<h5><img src="../../images/reviewGame/title_element6.png" alt="6학년 문제세트 게임"></h5>
+					</div>
+					<div class="reviewGame-plate">
+						<div class="acc">
+							<img src="../../images/reviewGame/acc_start.png" alt="start!!">
+						</div>
+						<ul class="item-wrap">
+							<li class="element6 game itme01">
+								<span class="blind">각기둥과 각뿔</span>
+								<a href="#" class="btn start">
+									<span class="blind">게임시작</span>
+								</a>
+								<div class="positionCar"><span class="signboard1">단원복습게임 이벤트에 도전해 보세요!</span></div><!-- signboard1 : 이벤트 참여전 -->
+							</li>
+							<li class="element6 game itme02">
+								<span class="blind">분수의 나눗셈</span>
+								<a href="#" class="btn start">
+									<span class="blind">게임시작</span>
+								</a>
+								<div class="positionCar"><span class="signboard2">&lt;이벤트 진행중&gt;게임을 플레이 해보세요!</span></div><!-- signboard2 : 이벤트 완료전 -->
+							</li>
+							<li class="element6 game itme03">
+								<span class="blind">소수의 나눗셈</span>
+								<a href="#" class="btn start">
+									<span class="blind">게임시작</span>
+								</a>
+								<div class="positionCar"><span class="signboard3">이벤트 참여완료!</span></div><!-- signboard3 : 이벤트 가입,참여 완료 -->
+							</li>
+							<li class="element6 game itme04">
+								<span class="blind">비와 비율</span>
+								<a href="#" class="btn start">
+									<span class="blind">게임시작</span>
+								</a>
+								<div class="positionCar"><span class="signboard3"></span></div>
+							</li>
+							<li class="element6 game itme05">
+								<span class="blind">원의 넓이</span>
+								<a href="#" class="btn start">
+									<span class="blind">게임시작</span>
+								</a>
+								<div class="positionCar left"><span class="signboard3"></span></div>
+							</li>
+							<li class="element6 game itme06">
+								<span class="blind">직육면체의 겉넓이와 부피</span>
+								<a href="#" class="btn start">
+									<span class="blind">게임시작</span>
+								</a>
+								<div class="positionCar left"><span class="signboard1"></span></div>
+							</li>
+							<li class=" itme07">
+								<span class="blind">쌓기나무</span>
+								<div class="positionCar left"></div>
+							</li>
+							<li class=" itme08">
+								<span class="blind">비례식과 비례배분</span>
+								<div class="positionCar"></div>
+							</li>
+							<li class=" itme09">
+								<span class="blind">원기둥, 원뿔, 구</span>
+								<div class="positionCar"></div>
+							</li>
+							</li>
+							<li class=" itme10">
+								<span class="blind">비율 그래프</span>
+								<div class="positionCar"></div>
+							</li>
+							<li class=" itme11">
+								<span class="blind">정비례와 반비례</span>
+								<div class="positionCar"></div>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 이벤트 뱃지 -->
+					<div class="event-badge" style="display:block;">
+						<img src="../../images/event/20170515/event_badge.png" usemap="#eventBadge" border="0">
+						<map name="eventBadge" id="eventBadge">
+							<area shape="circle" coords="245,42,13" href="#" onclick="$('.event-badge').hide(); return false;" alt="플로팅 배너 닫기"/>
+							<area shape="rect" coords="78,229,214,257" target="_blank" href="#" alt="이벤트 설명보기">
+							<area shape="rect" coords="77,269,214,295" href="#" alt="오늘하루보지않기">
+						</map>
+					</div>
+					<!-- //이벤트 뱃지 -->
+
+				</div>
+			</div>
+			<!-- content_right -->
+
+		</section>
+		<!-- //category -->
+
+	</article>
+	<!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+
+
+
+<!-- footer -->
+<footer id="footer">
+	<!-- footer_con -->
+	<div class="footer_con">
+
+		<!-- family_con -->
+		<div class="family_con">
+			<ul>
+				<li class="btn1"><a class="emt" href="http://www.ebs.co.kr/" target="_blank" title="EBS 메인">EBS 메인</a></li>
+				<li class="btn2"><a class="emt" href="http://www.ebsi.co.kr/" target="_blank" title="EBSi">EBSi</a></li>
+				<li class="btn3"><a class="emt" href="http://www.ebse.co.kr/" target="_blank" title="EBS english">EBS english</a></li>
+				<li class="btn4"><a class="emt" href="http://primary.ebs.co.kr/" target="_blank" title="EBS 초등">EBS 초등</a></li>
+				<li class="btn5"><a class="emt" href="http://mid.ebs.co.kr/" target="_blank" title="EBS 중학">EBS 중학</a></li>
+				<li class="btn6"><a class="emt" href="http://www.ebslang.co.kr/ebs/index.laf" target="_blank" title="EBS lang">EBS lang</a></li>
+				<li class="btn7"><a class="emt" href="http://clipbank.ebs.co.kr/main/?src=text&kw=00006C" target="_blank" title="EBS 클립뱅크">EBS 클립뱅크</a></li>
+				<li class="btn8"><a class="emt" href="http://book.ebs.co.kr/" target="_blank" title="Book Mall">Book Mall</a></li>
+			</ul>
+		</div>
+		<!-- //family_con -->
+
+		<!-- footer_menu -->
+		<div class="footer_menu">
+			<div class="logo_con">
+				<h2 class="blind">EBS Math</h2>
+			</div>
+			<div class="menu_con">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><font color="#fff">개인정보처리방침</font></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //footer_menu -->
+
+		<!-- copyright_con -->
+		<div class="copyright_con">
+			<address>
+				06762 서울특별시 서초구 바우뫼로1길 35 한국교육방송공사  |  사업자등록번호 : 229-82-01343 (한국교육방송공사사장 우종범)<br />
+				EBS 고객센터 1588-1580 (발신자 부담)  |  인터넷 문의 <a href="mailTo://helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>  |  FAX : 02-526-3855<br />
+				부가통신사업신고 : 10077  |  통신판매업신고 : 서초-8152호
+			</address>
+			<p class="mt15">
+				<strong>Copyright © EBS All Rights Reserved.</strong>
+			</p>
+			<div class="banner">
+				<img src="../../images/layout/footer_banner.png" />
+			</div>
+		</div>
+		<!-- //copyright_con -->
+
+	</div>
+	<!-- //footer_con -->
+</footer>
+<!-- //footer -->
+
+
+
+
+<!-- blind_con -->
+<div class="blind_con"></div>
+<!-- //blind_con -->
+
+<!-- modalBg -->
+<div class="modalBg"></div>
+<div class="modalPopupContainer">
+	<div class="popupCon"></div>
+</div>
+<!-- //modalBg -->
+
+
+<!-- datepicker -->
+<div class="datepicker"></div>
+<!-- //datepicker -->
+
+
+</body>
+</html>

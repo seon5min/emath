@@ -1,0 +1,135 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.piday {position:relative; width:763px; overflow:hidden} 
+.piday  h1 {position:absolute; top:39px; left:33px;}
+.piday .snswrap {position:absolute; top:34px; right:24px;}
+.piday .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20201105/icon_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.piday .snswrap a.fb {background-position:0 0;}
+.piday .snswrap a.tw {background-position:-41px 0;}
+.piday .snswrap a.kko {background-position:-82px 0;}
+.piday .snswrap a.url {background-position:-123px 0;}
+.piday .top,
+.piday .top_end {position:relative}
+.piday .top .btn-apply {position:absolute; top:549px; right:39px; display:block; width:245px; height:66px; background:url('../../images/event/20210204/btn_apply.png') 0 0  no-repeat;}
+.piday .top .btn-apply.off {background-position:0 -68px;}
+.piday .top .btn_piday {position:absolute; top:415px; left:295px; display:block;}
+
+.piday .top [class^="btn-winner"] {position:absolute; right:22px; top:560px; display:inline-block; width:245px;  height:66px;}
+.piday .top .btn-winner1 {background:url('../../images/event/20210204/btn_winner1.png') 0 0 no-repeat }
+.piday .top .btn-winner2 {background:url('../../images/event/20210204/btn_winner3.png') 0 0 no-repeat }
+.piday .top .btn-winner3 {background:url('../../images/event/20210204/btn_winner2.png') 0 0 no-repeat }
+
+.piday .goto_contents {background:url('../../images/event/20210204/cont_pi.png') 0 0 no-repeat; height:569px; position:relative; text-align:center}
+.piday .goto_contents .go_picont {display:block; padding-top:228px}
+.piday .goto_contents h3 {padding-top:50px}
+.piday .goto_contents ul {width:678px; margin:0 auto; padding-top:38px}
+.piday .goto_contents li {float:left; width:159px; height:80px; background-image:url('../../images/event/20210204/tab_cont.png'); background-repeat:no-repeat; margin-left:14px}
+.piday .goto_contents li a {display:block; width:100%; height:100%;  text-indent:-9999px; position:relative}
+.piday .goto_contents li.tab01 {background-position:0 0; margin-left:0}
+.piday .goto_contents li.tab02 {background-position:-175px 0;}
+.piday .goto_contents li.tab03 {background-position:-349px 0;}
+.piday .goto_contents li.tab04 {background-position:-524px 0;}
+.piday .goto_contents li.tab01:hover {background-position:0px -82px;}
+.piday .goto_contents li.tab02:hover {background-position:-175px -82px;}
+.piday .goto_contents li.tab03:hover {background-position:-349px -82px;}
+.piday .goto_contents li.tab04:hover {background-position:-524px -82px;}
+.piday .goto_contents li a:hover:after {content:""; display:block; position:absolute; right:-13px; top:-23px; width:70px; height:71px; background-image:url('../../images/event/20210204/img_stamp.png'); background-repeat:no-repeat;}
+.piday .goto_contents li.tab01 a:hover:after {background-position:0 0}
+.piday .goto_contents li.tab02 a:hover:after {background-position:-175px 0}
+.piday .goto_contents li.tab03 a:hover:after {background-position:-349px 0}
+.piday .goto_contents li.tab04 a:hover:after {background-position:-525px 0}
+
+.piday .event_wrapper {position:relative}
+.piday .eventArea {background:#c2faf1 url('../../images/event/20210204/bg_mainevent.png') 0 0 no-repeat; position:relative; height:991px; padding-top:227px; box-sizing:border-box;}
+.piday .eventArea .obj_pp {position:absolute; top:89px; right:54px; width:123px; height:199px; background:url('../../images/event/20210204/img_people.png') 0 0 no-repeat; z-index:999}
+
+.piday .eventArea .mainEvent {background:url('../../images/event/20210204/bg_stampboard.png') 0 0 no-repeat; width:683px; height:725px; margin:0 auto }
+.piday .eventArea .mainEvent .my_stamp {width:560px; height:64px; margin:0 auto; overflow:hidden; padding-top:30px}
+.piday .eventArea .mainEvent .my_stamp li {float:left; width:260px; height:64px; border:3px solid #c199d8; border-radius:30px; box-sizing:border-box; background:#fff;position:relative}
+.piday .eventArea .mainEvent .my_stamp li:first-child {width:280px; margin:0 13px 0 4px; padding-left:192px; line-height:60px}
+.piday .eventArea .mainEvent .my_stamp li:first-child:before{content:""; display:block; width:198px; height:46px; position:absolute; top:0px; left:-7px; background:url('../../images/event/20210204/txt_pistamp.png') 0 0 no-repeat;  }
+.piday .eventArea .mainEvent .my_stamp li strong {display:inline-block; font-weight:700; width:34px; text-align:right; font-size:26px; color:#28c3b3}
+.piday .eventArea .mainEvent .my_stamp li span {display:inline-block; color:#322222; font-size:16px; font-weight:700; margin-left:2px}
+.piday .eventArea .mainEvent .my_stamp li:last-child {padding-left:178px; line-height:60px}
+.piday .eventArea .mainEvent .my_stamp li:last-child:before{content:""; display:block; width:184px; height:46px; position:absolute; top:0px; left:-7px; background:url('../../images/event/20210204/txt_gestamp.png') 0 0 no-repeat;  }
+
+.piday .eventArea .mainEvent .board {width:673px; margin:0 auto;position:relative; }
+.piday .eventArea .mainEvent .board .pi {width:580px; margin:0 auto; border-bottom:1px solid #e5dac8; text-align:center; padding:45px 0 10px 0}
+.piday .eventArea .mainEvent .board .pi span {display:inline-block; width:125px; height:128px; background:url('../../images/event/20210204/stamp_pi_off.png') 0 0 no-repeat; margin:0 3px}
+.piday .eventArea .mainEvent .board .pi span.on {background:url('../../images/event/20210204/stamp_pi.png') 0 0 no-repeat;}
+.piday .eventArea .mainEvent .board .gen {position:relative; width:580px; height:400px; margin:0 auto}
+.piday .eventArea .mainEvent .board .gen [class^="gen_stamp"] {background-repeat:no-repeat; display:inline-block; margin:0 2px; background-image:url('../../images/event/20210204/stamp_gen_off.png'); width:89px; height:88px; }
+.piday .eventArea .mainEvent .board .gen .p01 {margin:10px 0 0 3px}
+.piday .eventArea .mainEvent .board .gen .p02 {margin:10px 0 0 0; text-align:center}
+.piday .eventArea .mainEvent .board .gen .p03 {margin:10px 0 0 0; text-align:center}
+.piday .eventArea .mainEvent .board .gen .p04 {margin:5px 0 0 0; text-align:center}
+.piday .eventArea .mainEvent .board .gen .gen_stamp01 {background-position:0 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp02 {background-position:-95px 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp03 {background-position:-190px 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp04 {background-position:-284px 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp05 {background-position:-378px 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp06 {background-position:-473px 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp07 {background-position:-186px -99px;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp08 {background-position:-295px -99px; margin-left:18px}
+.piday .eventArea .mainEvent .board .gen .gen_stamp09 {height:90px; background-position:-176px -199px;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp10 {background-position:-304px -199px; margin-left:38px}
+.piday .eventArea .mainEvent .board .gen .gen_stamp11 {background-position:-56px -296px;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp12 {background-position:-155px -296px; margin-left:5px}
+.piday .eventArea .mainEvent .board .gen .gen_stamp13 {background-position:-341px -293px; margin-left:90px}
+.piday .eventArea .mainEvent .board .gen .gen_stamp14 {background-position:-436px -255px; position:relative; top:-40px}
+.piday .eventArea .mainEvent .board .gen [class^="gen_stamp"].on{background-position:0 0;}
+.piday .eventArea .mainEvent .board .gen .gen_stamp01.on {background-image:url('../../images/event/20210204/stamp01.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp02.on {background-image:url('../../images/event/20210204/stamp02.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp03.on {background-image:url('../../images/event/20210204/stamp03.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp04.on {background-image:url('../../images/event/20210204/stamp04.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp05.on {background-image:url('../../images/event/20210204/stamp05.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp06.on {background-image:url('../../images/event/20210204/stamp06.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp07.on {background-image:url('../../images/event/20210204/stamp07.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp08.on {background-image:url('../../images/event/20210204/stamp08.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp09.on {background-image:url('../../images/event/20210204/stamp09.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp10.on {background-image:url('../../images/event/20210204/stamp03.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp11.on {background-image:url('../../images/event/20210204/stamp10.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp12.on {background-image:url('../../images/event/20210204/stamp11.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp13.on {background-image:url('../../images/event/20210204/stamp05.png');}
+.piday .eventArea .mainEvent .board .gen .gen_stamp14.on {background-image:url('../../images/event/20210204/stamp12.png');}
+.piday .eventArea .mainEvent .board .coupon {display:block; position:absolute; top:330px; left:14px; background:url('../../images/event/20210204/img_complete.png') 0 0 no-repeat; width:234px; height:137px; text-indent:-9999px;}
+
+.piday .bonusevent {background:url('../../images/event/20210204/bonusevent.png') 0 0 no-repeat; height:467px}
+.piday .bonusevent .point {padding-top:276px; width:658px; margin:0 auto; height:138px; overflow:hidden} 
+.piday .bonusevent .point li {float:left; width:320px; text-align:center}
+.piday .bonusevent .point li:first-child {margin-right:17px}
+.piday .bonusevent .point li:first-child p {padding-top:60px;}
+.piday .bonusevent .point li:first-child p strong {font-size:35px; font-weight:800; color:#ea3433}
+.piday .bonusevent .point li:first-child p span {font-size:25px; font-weight:800; color:#342021}
+
+.piday .bonusevent .point li:last-child p {padding-top:0px; margin-bottom:18px}
+.piday .bonusevent .point li:last-child p span {display:inline-block; height:21px; background-image:url('../../images/event/20210204/txt_bonusday.png'); background-repeat:no-repeat; text-indent:-9999px; vertical-align:middle}
+.piday .bonusevent .point li:last-child p strong {font-size:24px; font-weight:800; color:#ea3431; vertical-align:middle}
+.piday .bonusevent .point li:last-child p .txt1 {width:44px;  background-position:0 0}
+.piday .bonusevent .point li:last-child p .txt2 {width:41px;  background-position:-85px 0}
+.piday .bonusevent .point li:last-child .btn_attend {display:inline-block; width:248px; height:73px; background-image:url('../../images/event/20210204/btn_attend.png'); background-repeat:no-repeat; text-indent:-9999px; background-position:0 0}
+.piday .bonusevent .point li:last-child .btn_attend.off {background-position:0 -75px }
+
+.piday .event_wrapper.end .eventArea {background:url('../../images/event/20210204/bg_mainevent_end.png') 0 0 no-repeat; height:451px;  padding-top:215px; }
+.piday .event_wrapper.end .eventArea .mainEvent {background:none; width:683px; height:64px; margin:0 auto;}
+
+.piday .event_wrapper.end .bonusevent {background:url('../../images/event/20210204/bg_bonusevent_end.png') 0 0 no-repeat; height:289px}
+.piday .event_wrapper.end .bonusevent .fin_point {width:auto; padding:185px 0 0 153px; height:46px} 
+.piday .event_wrapper.end .bonusevent .fin_point strong{display:inline-block; width:48px; text-align:right; font-size:32px; font-weight:800; color:#ea3433; line-height:40px; letter-spacing:-2px}
+.piday .event_wrapper.end .bonusevent .fin_point span {display:inline-block; margin-left:3px; font-size:20px;font-weight:800; color:#342021}
+
+/* notice */
+.piday .notice {padding:35px 30px 30px 35px; background-color:#2a2d5a;}
+.piday .notice ul {padding-top:10px;}
+.piday .notice li {margin-top:5px; padding-left:12px; color:#ffffff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.piday .notice li .point {color:#fcd262;}
+
+.piday .event_wrapper .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%; z-index:1000}
+.piday .event_wrapper .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-150px 0; z-index:1001}
+.piday .event_wrapper.end .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-155px 0}

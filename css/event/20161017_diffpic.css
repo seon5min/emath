@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* 이벤트 */
+.diffpic{position:relative;}
+.diffpic .top{position:relative;}
+.diffpic .snswrap{position:absolute; top:15px; right:12px;}
+.diffpic .snswrap a{display:inline-block; width:31px; height:31px; margin-left:5px; vertical-align:top; font-size:0; line-height:0; background:url(../../images/event/20160426/img_sns.png)}
+.diffpic .snswrap .fb a{background-position:0 0;}
+.diffpic .snswrap .tw a{background-position:-41px 0;}
+.diffpic .snswrap .kko a{background-position:-82px 0;}
+
+.diffpic .top .eventbtn{position:absolute; top:482px; left:52px; display:inline-block; width:280px; height:57px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+
+.diffpic .evtcon_wrap{position:relative; background:#76cdd0;}
+.diffpic .evtcon_wrap .howto{margin-top:-30px; padding-bottom:27px; text-align:center;}
+.diffpic .evtcon_wrap .evtcon{background:#bce4e5 url(../../images/event/20161017/bg_wave.jpg) no-repeat 0 0;}
+
+.diffpic .evtcon .bf{padding:27px 0 30px; text-align:center;}
+.diffpic .evtcon .af{overflow:hidden; padding:18px 0 30px;}
+.diffpic .evtcon .af .cnt{position:relative;}
+.diffpic .evtcon .af .cnt span{position:absolute; top:39px; left:334px; width:50px; height:24px; font-size:0; line-height:0; color:#fff;}
+.diffpic .evtcon .af .cnt span strong{display:inline-block; width:50px; height:24px; font-size:27px; font-weight:700; line-height:24px; text-align:center; color:#ff8977; letter-spacing:-2px;}
+
+.diffpic .evtcon .numlist{margin-bottom:20px; background:url(../../images/event/20161017/bg_wave2.png) no-repeat center top;}
+.diffpic .evtcon .numlist ol{width:740px; margin:0 auto; padding:3px 0 10px; background:url(../../images/event/20161017/bg_wave2.png) no-repeat center bottom; *zoom:1;}
+.diffpic .evtcon .numlist ol:after{clear:both; content:''; width:100%; display:block;}
+.diffpic .evtcon .numlist li{position:relative; float:left; width:49px; height:51px; background:url(../../images/event/20161017/lens.png) no-repeat right bottom;}
+.diffpic .evtcon .numlist li span{position:absolute; top:14px; right:7px;display:inline-block; width:27px; height:27px; text-align:center; font-size:0; line-height:0; color:#25abd4; background:no-repeat 50% 5px;}
+.diffpic .evtcon .numlist li[data-index="1"] span{background-image:url(../../images/event/20161017/num1.png);}
+.diffpic .evtcon .numlist li[data-index="2"] span{background-image:url(../../images/event/20161017/num2.png);}
+.diffpic .evtcon .numlist li[data-index="3"] span{background-image:url(../../images/event/20161017/num3.png);}
+.diffpic .evtcon .numlist li[data-index="4"] span{background-image:url(../../images/event/20161017/num4.png);}
+.diffpic .evtcon .numlist li[data-index="5"] span{background-image:url(../../images/event/20161017/num5.png);}
+.diffpic .evtcon .numlist li[data-index="6"] span{background-image:url(../../images/event/20161017/num6.png);}
+.diffpic .evtcon .numlist li[data-index="7"] span{background-image:url(../../images/event/20161017/num7.png);}
+.diffpic .evtcon .numlist li[data-index="8"] span{background-image:url(../../images/event/20161017/num8.png);}
+.diffpic .evtcon .numlist li[data-index="9"] span{background-image:url(../../images/event/20161017/num9.png);}
+.diffpic .evtcon .numlist li[data-index="10"] span{background-image:url(../../images/event/20161017/num10.png);}
+.diffpic .evtcon .numlist li[data-index="11"] span{background-image:url(../../images/event/20161017/num11.png);}
+.diffpic .evtcon .numlist li[data-index="12"] span{background-image:url(../../images/event/20161017/num12.png);}
+.diffpic .evtcon .numlist li[data-index="13"] span{background-image:url(../../images/event/20161017/num13.png);}
+.diffpic .evtcon .numlist li[data-index="14"] span{background-image:url(../../images/event/20161017/num14.png);}
+.diffpic .evtcon .numlist li[data-index="15"] span{background-image:url(../../images/event/20161017/num15.png);}
+.diffpic .evtcon .numlist li[data-index="16"] span{background-image:url(../../images/event/20161017/num16.png);}
+.diffpic .evtcon .numlist li[data-index="17"] span{background-image:url(../../images/event/20161017/num17.png);}
+.diffpic .evtcon .numlist li[data-index="18"] span{background-image:url(../../images/event/20161017/num18.png);}
+.diffpic .evtcon .numlist li[data-index="19"] span{background-image:url(../../images/event/20161017/num19.png);}
+.diffpic .evtcon .numlist li[data-index="20"] span{background-image:url(../../images/event/20161017/num20.png);}
+.diffpic .evtcon .numlist li[data-index="21"] span{background-image:url(../../images/event/20161017/num21.png);}
+.diffpic .evtcon .numlist li[data-index="22"] span{background-image:url(../../images/event/20161017/num22.png);}
+.diffpic .evtcon .numlist li[data-index="23"] span{background-image:url(../../images/event/20161017/num23.png);}
+.diffpic .evtcon .numlist li[data-index="24"] span{background-image:url(../../images/event/20161017/num24.png);}
+.diffpic .evtcon .numlist li[data-index="25"] span{background-image:url(../../images/event/20161017/num25.png);}
+.diffpic .evtcon .numlist li[data-index="26"] span{background-image:url(../../images/event/20161017/num26.png);}
+.diffpic .evtcon .numlist li[data-index="27"] span{background-image:url(../../images/event/20161017/num27.png);}
+.diffpic .evtcon .numlist li[data-index="28"] span{background-image:url(../../images/event/20161017/num28.png);}
+.diffpic .evtcon .numlist li[data-index="29"] span{background-image:url(../../images/event/20161017/num29.png);}
+.diffpic .evtcon .numlist li[data-index="30"] span{background-image:url(../../images/event/20161017/num30.png);}
+.diffpic .evtcon .numlist li.off{background:url(../../images/event/20161017/lens_off.png) no-repeat right bottom;}
+.diffpic .evtcon .numlist li.on{background:url(../../images/event/20161017/lens_on.png) no-repeat right bottom;}
+.diffpic .evtcon .numlist li.on span{background-position:50% -35px;}
+.diffpic .evtcon .numlist li span a{display:inline-block; width:100%; height:100%;}
+
+.diffpic .evtcon .gamewrap{position:relative; width:680px; height:771px; margin:0 auto; background:url(../../images/event/20161017/bg_game.gif) no-repeat 0 0;}
+.diffpic .evtcon .gamewrap .player{width:650px; margin:0 auto; padding-top:15px;}
+.diffpic .evtcon .gamewrap .player video{display:inline-block; width:650px; height:365px; vertical-align:middle; line-height:365px; color:#fff; text-align:center; background:#2e2e2e;}
+
+.diffpic .evtcon .picwrap{position:absolute; bottom:15px; left:15px; width:650px; height:360px; cursor:url(http://www.ebsmath.co.kr/common/innovativepot/math2016/images/event/20161017/pointer.png), url(http://www.ebsmath.co.kr/common/innovativepot/math2016/images/event/20161017/pointer.cur), pointer;}
+.diffpic .evtcon .picwrap > div{position:relative;}
+.diffpic .evtcon .picwrap .dim{position:absolute; top:0; left:0; width:650px; height:360px; background:url(../../images/event/20161017/dim.png) no-repeat 0 0; z-index:10;}
+.diffpic .evtcon .picwrap [class^="pic"]{position:relative;}
+.diffpic .evtcon .picwrap [class^="pic"] span{position:absolute; display:inline-block; width:50px; height:55px; font-size:0; line-height:0; background:url(../../images/event/20161017/img_transparent.png) repeat 0 0;}
+.diffpic .evtcon .picwrap [class^="pic"] span.o{width:53px; height:56px; background:url(../../images/event/20161017/icon_o.png) no-repeat 0 0;}
+.diffpic .evtcon .picwrap [class^="pic"] span.x{width:50px; height:52px; background:url(../../images/event/20161017/icon_x.png) no-repeat 0 0;}
+
+/* 이벤트 종료 */
+.diffpic.end .top .winbtn{position:absolute; top:629px; left:52px; display:inline-block; width:164px; height:52px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.diffpic.end .top .modifybtn{position:absolute; top:629px; left:224px; display:inline-block; width:229px; height:52px; background-color:#fff; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.diffpic.end .evtcon_wrap{padding-bottom:20px;}
+
+/* notice */
+.diffpic .notice{padding:30px 25px 25px 35px; background:#7dc8ca;}
+.diffpic.end .notice{padding:50px 25px 25px 35px; background:#bce4e5 url(../../images/event/20161017/bg_wave.jpg) no-repeat 0 0;}
+.diffpic .notice ul{padding-top:15px;}
+.diffpic .notice li{margin-top:8px; padding-left:12px; font-weight:600; line-height:1.7; font-size:13px; color:#656565; letter-spacing:-1px; background:url(../../images/event/20161017/bul_notice.png) no-repeat 0 9px;}
+.diffpic .notice li:first-child{margin-top:0;}
+.diffpic .notice li a.point{color:#206b87;}

@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>EBSMath</title>
+<meta charset="utf-8">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" type="text/css" href="../../css/nanumbarungothic.css" />
+<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../css/customSelectBox.css" />
+<link rel="stylesheet" type="text/css" href="../../css/mathCafe.css" />
+
+<script type="text/javascript" src="../../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.browser.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="../../js/modernizr-1.5.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/TweenMax.min.js"></script>
+<script type="text/javascript" src="../../js/greensock/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="../../js/icheck.min.js"></script>
+<script type="text/javascript" src="../../js/customSelectBox.js"></script>
+<script type="text/javascript" src="../../js/slider.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script>
+<script type="text/javascript" src="../../js/gnb.js"></script>
+<script type="text/javascript" src="../../mplayer/mplayer.min.js"></script>
+</head>
+<body>
+
+<!-- header -->
+<div id="header" class="renewal2019">
+	<!-- top navigation -->
+	<div class="topWrap">
+		<div class="topArea">
+			<h1><a href="#none" title="EBS Math"><img src="../../images/layout/logo4.png" alt="EBS Math" /></a></h1>
+			
+			<!-- 우측 통합메뉴 -->
+			<div class="rightMenu cboth">
+				<ul class="menu cboth">
+					<!-- 로그인 전
+					<li><a href="#none" title="로그인으로 이동"><em>로그인</em></a></li>
+					<li><a href="#none" title="회원가입으로 이동"><em>회원가입</em></a></li>
+					//로그인 전 -->
+
+					<!-- 로그인 후 -->
+					<li class="userId">
+						<a href="#none" title="">
+							<img src="../../images/common/icon_kko.png" alt="카카오" class="vm"/>
+							<!-- <img src="../../images/common/icon_fb.png" alt="페이스북" class="vm" /> -->
+							<!-- <img src="../../images/common/icon_nvr.png" alt="네이버" class="vm"/> -->
+							<em>홍길동 님</em><span class="icoArrow"></span>
+						</a>
+						<div class="myMenu">
+							<ul>
+								<li><a href="#none">내가 본 학습카드</a></li>
+								<li><a href="#none">찜 한 학습카드</a></li>
+								<li><a href="#none">내 문제</a></li>
+								<li><a href="#none">회원정보변경</a></li>
+							</ul>
+							<div class="logout"><a href="#none"><img src="../../images/layout/logout_icon.png" alt="로그아웃" />로그아웃</a></div>
+						</div>
+					</li>
+					<li><a href="#none" title="마이페이지로 이동">마이페이지</a></li>
+					<!-- //로그인 후 -->
+
+					<li><a href="http://www.ebsmath.co.kr/cosCenter/eventProList">이벤트</a></li>
+					<li><a href="http://www.ebsmath.co.kr/cosCenter/main">고객센터</a></li>
+				</ul>
+				<div class="searchArea">
+					<form action="">
+						<fieldset>
+							<legend>검색 폼</legend>
+							<input type="text" placeholder="여자친구가 EBSMATH에?" />
+							<button type="submit" class="btnSearch"><img src="../../images/common/btn_search.png" alt="검색" /></button>
+						</fieldset>
+					</form>
+					<div class="autoComplete">
+						<div id="searchList" class="searchList">
+							<div class="searchGuide">
+								<p>검색어 <strong>자동 추천 기능</strong>을사용하고 있습니다.
+								<br>입력시 자동으로 관련어를 추천합니다.</p>
+							</div>
+							<div class="searchEmpty">
+								<p>
+									해당 단어로 시작하는 검색어가 없습니다.
+								</p>
+							</div>
+
+							<div class="searchCont">
+								<ul>
+									<li><a href="#"><em>거북이</em>의 계략</a></li>
+									<li><a href="#"><em>거북이</em>계략</a></li>
+									<li><a href="#"><em>거북이</em></a></li>
+									<li><a href="#">아킬레우스를 무시한<em>거북이</em></a></li>
+									<li><a href="#">킬레우스<em>거북이</em>의 계략</a></li>
+								</ul>
+							</div>
+						</div>
+					
+						<div id="mySearch" class="mySearch">
+							<h5 class="title">내가 찾은 검색어</h5>
+							<ul>
+								<li>
+									<a class="myKeyword" href="#none" title="">수학운동회</a>
+									<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+								</li>
+								<li>
+									<a class="myKeyword" href="#none" title="">트리플 악셀의 비밀</a>
+									<button type="button" class="btnDel" title="삭제" onclick="">삭제</button>
+								</li>
+							</ul>
+						</div>
+						<div class="btnClose">
+							<a href="#none"><img src="../../images/common/close_icon.png" alt="닫기" /><span class="ml5">자동완성 닫기</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //우측 통합메뉴 -->
+		</div>
+	</div>
+	<!-- //top navigation -->
+
+	<!-- gnb -->
+	<div class="gnbWrap">
+		<div id="gnb">
+			<ul class="gnb cboth">
+				<li>
+					<a href="#none" class="menu gm1"  title="초등수학"><span class="blind">초등수학</span></a>
+					<!-- 초등수학 서브메뉴 -->
+					<div class="ele subWrap" style="display:none">
+						<ul class="cboth">
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 3학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">덧셈과 뺄셈</a></li>
+										<li><a href="#none">평면도형</a></li>
+										<li><a href="#none">나눗셈</a></li>
+										<li><a href="#none">곱셈</a></li>
+										<li><a href="#none">길이와시간</a></li>
+										<li><a href="#none">분수와 소수</a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none">곱셈</a></li>
+										<li><a href="#none">나눗셈</a></li>
+										<li><a href="#none">원</a></li>
+										<li><a href="#none">분수</a></li>
+										<li><a href="#none">들이와 무게</a></li>
+										<li><a href="#none">자료의 정리</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 4학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">큰 수</a></li>
+										<li><a href="#none">각도</a></li>
+										<li><a href="#none">곱셈과 나눗셈</a></li>
+										<li><a href="#none">평면도형의 이동</a></li>
+										<li><a href="#none">막대그래프</a></li>
+										<li><a href="#none">규칙 찾기</a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none">분수의 덧셈과 뺄셈</a></li>
+										<li><a href="#none">삼각형</a></li>
+										<li><a href="#none">소수의 덧셈과 뺄셈</a></li>
+										<li><a href="#none">사각형</a></li>
+										<li><a href="#none">꺾은선 그래프</a></li>
+										<li><a href="#none">다각형</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 5학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">자연수의 혼합 계산</a></li>
+										<li><a href="#none">약수와 배수</a></li>
+										<li><a href="#none">규칙과 대응</a></li>
+										<li><a href="#none">약분과 통분</a></li>
+										<li><a href="#none">분수의 덧셈과 뺄셈</a></li>
+										<li><a href="#none">다각형의 둘레와 넓이 </a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none">수의 범위와 어림하기</a></li>
+										<li><a href="#none">분수의 곱셈</a></li>
+										<li><a href="#none">합동과 대칭</a></li>
+										<li><a href="#none">소수의 곱셈</a></li>
+										<li><a href="#none">직육면체</a></li>
+										<li><a href="#none">평균과 가능성</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">초등학교 6학년</a></div>
+								<div class="sub">
+									<h3>1학기</h3>
+									<ul>
+										<li><a href="#none">분수의 나눗셈</a></li>
+										<li><a href="#none">각기둥과 각뿔</a></li>
+										<li><a href="#none">소수의 나눗셈</a></li>
+										<li><a href="#none">비와 비율</a></li>
+										<li><a href="#none">여러 가지 그래프 </a></li>
+										<li><a href="#none">직육면체의 부피와 겉넓이 </a></li>
+									</ul>
+
+									<h3>2학기</h3>
+									<ul>
+										<li><a href="#none" title="쌓기나무로 이동">분수의 나눗셈</a></li>
+										<li><a href="#none" title="비례식과 비례배분으로 이동">소수의 나눗셈</a></li>
+										<li><a href="#none" title="원기둥, 원뿔, 구로 이동">공간과 입체</a></li>
+										<li><a href="#none" title="비율 그래프로 이동">비례식과 비례배분</a></li>
+										<li><a href="#none" title="정비례와 반비례로 이동">원의 넓이</a></li>
+										<li><a href="#none" title="여러가지 문제로 이동">원기둥, 원뿔, 구</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>	
+						<span class="aside"><a href="http://www.ebsmath.co.kr/siteMap?currentGrdCd=EGRD" class="btn_all" title="전체 교과 보기로 이동">전체교과보기</a></span>
+					</div>
+					<!--// 초등수학 서브메뉴 -->
+				</li>
+				<li>
+					<a href="#none" class="menu gm2"><span class="blind">중학수학</span></a>
+					<!-- 중학수학 서브메뉴 -->
+					<div class="mid subWrap" style="display:none">
+						<ul class="cboth">
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">중학 1학년</a></div>
+								<div class="sub">
+									<h3>수와 연산</h3>
+									<ul>
+										<li><a href="#none">소인수분해</a></li>
+										<li><a href="#none">정수와 유리수</a></li>
+									</ul>
+
+									<h3>문자와 식</h3>
+									<ul>
+										<li><a href="#none">문자의 사용과 식의 계산</a></li>
+										<li><a href="#none">일차방정식</a></li>
+									</ul>
+
+									<h3>좌표평면과 그래프</h3>
+									<ul>
+										<li><a href="#none">좌표평면과 그래프</a></li>
+										<li><a href="#none">정비례와 반비례</a></li>
+									</ul>
+
+									<h3>기하</h3>
+									<ul>
+										<li><a href="#none">기본 도형</a></li>
+										<li><a href="#none">작도와 합동</a></li>
+										<li><a href="#none">평면도형의 성질</a></li>
+										<li><a href="#none">입체도형의 성질</a></li>
+									</ul>
+
+									<h3>자료의 정리와 해석</h3>
+									<ul>
+										<li><a href="#none">자료의 정리와 해석</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">중학 2학년</a></div>
+								<div class="sub">
+									<h3>수와 연산</h3>
+									<ul>
+										<li><a href="#none">유리수와 순환소수</a></li>
+									</ul>
+
+									<h3>문자와 식</h3>
+									<ul>
+										<li><a href="#none">식의 계산</a></li>
+										<li><a href="#none">연립부등식</a></li>
+										<li><a href="#none">연립일차방정식</a></li>
+									</ul>
+
+									<h3>함수</h3>
+									<ul>
+										<li><a href="#none">일차함수와 그래프</a></li>
+										<li><a href="#none">일차함수와 일차방정식의 관계</a></li>
+									</ul>
+
+									<h3>기하</h3>
+									<ul>
+										<li><a href="#none">삼각형과 사각형의<br/>성질</a></li>
+										<li><a href="#none">도형의 닮음</a></li>
+										<li><a href="#none">피타고라스 정리</a></li>
+									</ul>
+
+									<h3>확률과 통계</h3>
+									<ul>
+										<li><a href="#none">확률과 그 기본 성질</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit"><a href="#none">중학 3학년</a></div>
+								<div class="sub">
+									<h3>수와 연산</h3>
+									<ul>
+										<li><a href="#none">제곱근과 실수</a></li>
+										<li><a href="#none">근호를 포함한 식의 계산</a></li>
+									</ul>
+
+									<h3>문자와 식</h3>
+									<ul>
+										<li><a href="#none">다항식의 인수분해</a></li>
+										<li><a href="#none">이차방정식</a></li>
+									</ul>
+
+									<h3>함수</h3>
+									<ul>
+										<li><a href="#none">이차함수와 그래프</a></li>
+									</ul>
+
+									<h3>확률과 통계</h3>
+									<ul>
+										<li><a href="#none">대푯값과 산포도</a></li>
+									</ul>
+
+									<h3>기하</h3>
+									<ul>
+										<li><a href="#none">피타고라스의 정리</a></li>
+										<li><a href="#none">삼각비</a></li>
+										<li><a href="#none">원의 성질</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<span class="aside"><a href="http://www.ebsmath.co.kr/siteMap?currentGrdCd=MGRD" class="btn_all" >전체교과보기</a></span>
+					</div>
+					<!--// 중학수학 서브메뉴 -->
+				</li>
+				<li>
+					<a href="#none" class="menu gm3" ><span class="blind">고교수학</span></a>
+					<!-- 고교수학 서브메뉴 -->
+					<div class="hg subWrap"  style="display:none">
+						<ul class="cboth">
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none" title="수학">수학</a></div>
+								<div class="sub">
+									<h3>방정식과 부등식</h3>
+									<ul>
+										<li><a href="#none">복소수와 이차방정식 </a></li>
+										<li><a href="#none">이차방정식과 이차함수</a></li>
+										<li><a href="#none">여러가지 방정식과 부등식</a></li>
+									</ul>
+
+									<h3>도형의 방정식</h3>
+									<ul>
+										<li><a href="#none">평면좌표</a></li>
+										<li><a href="#none">직선의 방정식</a></li>
+										<li><a href="#none">원의 방정식</a></li>
+										<li><a href="#none">도형의 이동</a></li>
+									</ul>
+
+									<h3>집합과 명제</h3>
+									<ul >
+										<li><a href="#none">집합 </a></li>
+										<li><a href="#none">명제 </a></li>
+									</ul>
+
+									<h3>함수</h3>
+									<ul>
+										<li><a href="#none">함수 </a></li>
+									</ul>
+
+									<h3>경우의 수</h3>
+									<ul>
+										<li><a href="#none">순열과 조합</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">수학 I</a></div>
+								<div class="sub">
+									<h3>지수함수와 로그함수</h3>
+									<ul>
+										<li><a href="#none">지수 </a></li>
+										<li><a href="#none">로그</a></li>
+										<li><a href="#none">지수함수와 로그함수</a></li>
+									</ul>
+
+									<h3>삼각함수</h3>
+									<ul>
+										<li><a href="#none">삼각함수</a></li>
+										<li><a href="#none">삼각함수의 활용</a></li>
+									</ul>
+
+									<h3>수열</h3>
+									<ul >
+										<li><a href="#none">등차수열과 등비수열 </a></li>
+										<li><a href="#none">수열의 합</a></li>
+										<li><a href="#none">수학적 귀납법</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">수학 II</a></div>
+								<div class="sub">
+									<h3>함수의 극한과 연속 </h3>
+									<ul>
+										<li><a href="#none">함수의 극한 </a></li>
+										<li><a href="#none">함수의 연속</a></li>
+									</ul>
+
+									<h3>미분</h3>
+									<ul>
+										<li><a href="#none">미분계수와 도함수</a></li>
+										<li><a href="#none">도함수의 활용</a></li>
+									</ul>
+
+									<h3>적분</h3>
+									<ul >
+										<li><a href="#none">부정적분과 정적분</a></li>
+										<li><a href="#none">정적분의 활용</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">확률과 통계</a></div>
+								<div class="sub">
+									<h3>순열과 조합</h3>
+									<ul>
+										<li><a href="#none">조합</a></li>
+									</ul>
+
+									<h3>확률</h3>
+									<ul>
+										<li><a href="#none">조건부확률</a></li>
+									</ul>
+
+									<h3>통계</h3>
+									<ul>
+										<li><a href="#none">확률분포</a></li>
+										<li><a href="#none">통계적 추정</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="grade">
+								<div class="gradeTit on"><a href="#none">미적분</a></div>
+								<div class="sub">
+									<h3>수열의 극한 </h3>
+									<ul>
+										<li><a href="#none">급수</a></li>
+									</ul>
+
+									<h3>미분</h3>
+									<ul>
+										<li><a href="#none">여러 가지 함수의 미분</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<span class="aside"><a href="#none" class="btn_all">전체교과보기</a></span>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="moreLink cboth">
+				<li class="mlnk01"><a href="#none">테마별 수학시리즈</a>
+					<div class="moL1 subWrap" style="display:none">
+						<ul class="moreLinkList">
+							<li><a href="#">전체</a></li>
+							<li><a href="#">영상</a></li>
+							<li><a href="#">게임</a></li>
+							<li><a href="#">웹툰</a></li>
+							<li><a href="#">수학지식카드</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mlnk02"><a href="#none">초등 수학 게임방</a>	
+					<div class="moL2 subWrap" style="display:none">
+						<ul class="moreLinkList">
+							<li><a href="#">4학년 문제 세트 게임</a></li>
+							<li><a href="#">5학년 문제 세트 게임</a></li>
+							<li><a href="#">수학술사 세미 게임</a></li>
+							<li><a href="#">6학년 문제 세트 게임</a></li>
+							<li><a href="#">단원 복습 게임</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="mlnk03"><a href="#none">중학 수학 카페</a>
+					<div class="moL3 subWrap" style="display:none">
+						<ul class="moreLinkList">
+							<li><a href="#">통계 포스터 제작 가이드</a></li>
+							<li><a href="#">통계 관련 자료</a></li>
+							<li><a href="#">이지통계</a> </li>
+							<li><a href="#">이지그래프</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //gnb -->
+</div>
+<!-- //header -->
+
+<!-- top_visual -->
+<div id="top_visual">
+
+</div>
+<!-- //top_visual -->
+
+
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- container -->
+	<article id="container">
+
+		<!-- category -->
+		<section class="content_wrap category">
+
+			<!-- lnb -->
+			<div class="bg_lnb mathCafe"></div>
+			<aside class="lnb mathCafe">
+
+				<h2 class="top_title emt">중학 수학 카페</h2>
+
+				<div class="lnb_menu lnb_mathCafe">
+					<div class="dotted"></div>
+					<!-- menu1  -->
+					<div class="menu_con mathCafe cafe1 on">
+						<h4 class="title">통계 교육 한마당</h4>
+						<ul class="first">
+							<li class="cafe_menu poster"><a href="#" title="통계 포스터 제작 가이드">통계 포스터 제작 가이드</a></li>
+							<li class="cafe_menu intro on"><a href="#" title="통계 관련 자료">통계 관련 자료</a></li>
+						</ul>
+					</div>
+					<!-- //menu1  -->
+					<!-- menu2  -->
+					<div class="menu_con mathCafe cafe2">
+						<h4 class="title">수학 공학 SW</h4>
+						<ul class="first">
+							<li class="cafe_menu stats"><a href="#" title="이지통계">이지통계</a></li>
+							<li class="cafe_menu graph"><a href="#" title="이지그래프">이지그래프</a>
+							</li>
+						</ul>
+
+					</div>
+					<!-- //menu2  -->
+
+				</div>
+
+			</aside>
+			<!-- //lnb -->
+
+			<!-- content_right -->
+			<div class="content_right">
+				<div class="content_set mathCafe" style="background:#f4f7f9;">
+
+					<!-- location_menu -->
+					<div class="ar">
+						<div class="location_menu">
+							<a href="#"><img src="../../images/common/home_icon.png" /> 홈</a>
+							<span class="arrow emt"> > </span>
+							<a href="#">중학 수학 카페</a>
+						</div>
+					</div>
+					<!-- //location_menu -->
+
+					<!-- mathCafe-wrap -->
+					<div class="mathCafe-wrap">
+						<div class="cafe_top">
+							<img src="../../images/mathCafe/intro_top.png" alt="맛있게 즐기는 통계와 그래프 중학 수학 카페" />
+							<p class="blind">빅데이터 시대를 맞이하여 EBSMath에서 준비한 통계적 소양 기르기 프로젝트! 실생활 중심의 통계교육을 쉽고 재미있게 즐겨보자!</p>
+						</div>
+
+						<div class="cafe_content intro1">
+							<div>
+								<img src="../../images/mathCafe/intro_title_01.png" alt="실용 통계 교육이란?" />
+								<p>수많은 데이터가 쏟아져 나오는 빅데이터 시대.<br/>이제 통계 교육은 기존의 계산 방식이 아닌 <br/>수많은 데이터를 올바르게 해석, 분석하는 능력을 <br/>기르는 실용적인 내용으로 바뀌어야 합니다.  <br/>누구나 생활 속에서 즐길 수 있는 <br/>실용 통계 교육을 위해 <br/>EBSMath 중학 수학 카페에서 <br/>선생님들과 학생들을 지원합니다.</p>
+							</div>
+							<!-- 플레이어 -->
+							<div class="video-area player">
+								<div style="padding-top: 56.25%; position: relative;">
+									<div style="width: 100%; height: 100%; position: absolute; top:0; left: 0;">
+										<video id="minimal" controls poster="http://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/21375/C.jpg" width="330" height="auto">
+											<source src="http://wstr.ebsmath.co.kr/ebsvod/ebsm/M41M1301/M201300005/M201300005_1000K_M00049.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+							</div>
+							<!-- //플레이어 -->
+						</div>
+
+						<div class="deco_line"></div>
+						<div class="cafe_content intro2">
+							<div>
+								<img src="../../images/mathCafe/intro_title_02.png" alt="통계 관련 학습카드 소개" />
+								<div class="card_tab">
+									<ul class="card_tab_menu clearfix">
+										<li class="on"><span class="tab_ico tab_ico1"></span>영상카드<span class="tab_line tab_line1"></span></li>
+										<li class=""><span class="tab_ico tab_ico2"></span>웹툰카드<span class="tab_line tab_line2"></span></li>
+										<li class=""><span class="tab_ico tab_ico3"></span>게임카드<span class="tab_line tab_line3"></span></li>
+									</ul>
+									<div class="more_btn"></div>
+									<div class="card_cont">
+										<div class="card_cont_01">
+											<!--2019-04-18  box_list_con2019 클래스 교체 &  전체 수정 -->
+											<div class="box_list_con2019">
+												<ul>
+													<li class="boxB l check">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con on">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB square">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB l t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB l t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB l t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxB t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_210x170.jpg" alt="">
+																		<span class="check_con"></span><!-- 체크된 이미지 -->
+																		<span class="gradation"></span>
+																		<span class="running_time">mm:ss</span><!-- 영상카드에만 -->
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagB">영상</span>
+																		<span class="down_con"><a href="#"><i class="blind">다운로드</i></a></span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			세상의 기본요소 점, 선, 면<br>두 줄
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //box_list_con -->
+										</div>
+										<div class="card_cont_02">
+											<!--2019-04-18  box_list_con2019 클래스 교체 &  전체 수정 -->
+											<div class="box_list_con2019">
+												<ul>
+													<li class="boxD l check">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxD">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxD">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxD l t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxD t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxD t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxD l t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagD">웹툰</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			쿠키와 약수
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //box_list_con -->
+										</div>
+										<div class="card_cont_03">
+											<!--2019-04-18  box_list_con2019 클래스 교체 &  전체 수정 -->
+											<div class="box_list_con2019">
+												<ul>
+													<li class="boxE l check">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagE">게임</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			5회 기약분수, 통분
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxE">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagE">게임</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			5회 기약분수, 통분
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxE">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagE">게임</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			5회 기약분수, 통분
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxE l t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagE">게임</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			5회 기약분수, 통분
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+													<li class="boxE t">
+														<div class="box_set">
+															<div class="list_set">
+																<span class="img_con">
+																	<a href="#">
+																		<img class="thumb" src="../images/tmp/img_thumb_200x170.png" alt="">
+																		<span class="check_con"></span>
+																		<span class="gradation"></span>
+																	</a>
+																	<span class="tag_icon">
+																		<span class="tagE">게임</span>
+																		<span class="fav_con">
+																			<button type="button"><i class="blind">북마크</i></button>
+																		</span>
+																	</span>
+																</span>
+																<span class="info_con">
+																	<a href="#">
+																		<strong class="title">
+																			5회 기약분수, 통분
+																		</strong>
+																		<span class="info">
+																			<strong>중1</strong> | 기하
+																		</span>
+																		<span class="bottom_con">
+																			<span class="view">27,616</span><!-- 2019-03-12 수정 -->
+																		</span>
+																		<span class="over_info_con">
+																			기타를 연주하기 전에는 조율을 해야
+																			합니다. 듣기 좋은 연주를 하기 위함
+																			이죠. 그런데 조율을 제일 먼저 발견
+																			한 사람은 음악가가 아니라,...
+																		</span>
+																	</a>
+																</span>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<!-- //box_list_con -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="deco_line"></div>
+
+						<!--div class="cafe_content intro3">
+							<div>
+								<img src="../../images/mathCafe/intro_title_03.png" alt="통계 질문사전" />
+								<!-- list_search -->
+								<!--div class="list_search">
+									<div class="total">총 <font color="#ff5656">123</font>건</div>
+									<form method="" action="">
+										<span>
+											<select>
+												<option value="">전체</option>
+												<option value="">제목</option>
+												<option value="">내용</option>
+											</select>
+										</span>
+										<span class="ml10">
+											<input class="round" type="text">
+										</span>
+										<span class="ml10">
+											<button class="blue_button" type="submit"><img src="../../images/common/search_icon.png" />검색</button>
+										</span>
+									</form>
+								</div>
+								<!-- //list_search -->
+											
+								<!-- line_list_con -->
+								<!--div class="line_list_con oneline">
+									<table>
+										<caption>통계 질문사전</caption>
+										<colgroup>
+											<col width="12%">
+											<col width="3%">
+											<col width="">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th colspan="2">제목</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="list">
+												<td>999</td>
+												<td><img src="../../images/common/q_icon.png" /></td>
+												<td class="l">
+													<a style="text-align=left;" class="list_title" href="javascript:">히스토그램과 막대그래프의 차이</a>
+												</td>
+											</tr>
+											<tr class="view">
+												<td></td>
+												<td class="vt"><img src="../../images/common/a_icon.png" /></td>
+												<td class="l">
+													<div class="txt_con">
+														그래프의 한 축에 눈금을 표시하여 통계자료의 크기를 선으로 이어 그린 그림으로 시간의 흐름에 따라 변해 가는 모습을 나타내기 편리합니다
+													</div>
+												</td>
+											</tr>
+											<tr class="list">
+												<td>999</td>
+												<td><img src="../../images/common/q_icon.png" /></td>
+												<td class="l">
+													<a class="list_title" href="javascript:">상대도수의 그래프를 그리는 이유</a>
+												</td>
+											</tr>
+											<tr class="view">
+												<td></td>
+												<td class="vt"><img src="../../images/common/a_icon.png" /></td>
+												<td class="l">
+													<div class="txt_con">
+														그래프의 한 축에 눈금을 표시하여 통계자료의 크기를 선으로 이어 그린 그림으로 시간의 흐름에 따라 변해 가는 모습을 나타내기 편리합니다
+													</div>
+												</td>
+											</tr>
+											<tr class="list">
+												<td>999</td>
+												<td><img src="../../images/common/q_icon.png" /></td>
+												<td class="l">
+													<a class="list_title" href="javascript:">꺾은선그래프란?</a>
+												</td>
+											</tr>
+											<tr class="view">
+												<td></td>
+												<td class="vt"><img src="../../images/common/a_icon.png" /></td>
+												<td class="l">
+													<div class="txt_con">
+														그래프의 한 축에 눈금을 표시하여 통계자료의 크기를 선으로 이어 그린 그림으로 시간의 흐름에 따라 변해 가는 모습을 나타내기 편리합니다
+													</div>
+												</td>
+											</tr>
+											<tr class="list">
+												<td>999</td>
+												<td><img src="../../images/common/q_icon.png" /></td>
+												<td class="l">
+													<a class="list_title" href="javascript:">꺾은선그래프란?</a>
+												</td>
+											</tr>
+											<tr class="view">
+												<td></td>
+												<td class="vt"><img src="../../images/common/a_icon.png" /></td>
+												<td class="l">
+													<div class="txt_con">
+														그래프의 한 축에 눈금을 표시하여 통계자료의 크기를 선으로 이어 그린 그림으로 시간의 흐름에 따라 변해 가는 모습을 나타내기 편리합니다
+													</div>
+												</td>
+											</tr>
+											<tr class="list">
+												<td>999</td>
+												<td><img src="../../images/common/q_icon.png" /></td>
+												<td class="l">
+													<a class="list_title" href="javascript:">꺾은선그래프란?</a>
+												</td>
+											</tr>
+											<tr class="view">
+												<td></td>
+												<td class="vt"><img src="../../images/common/a_icon.png" /></td>
+												<td class="l">
+													<div class="txt_con">
+														그래프의 한 축에 눈금을 표시하여 통계자료의 크기를 선으로 이어 그린 그림으로 시간의 흐름에 따라 변해 가는 모습을 나타내기 편리합니다
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- //line_list_con -->
+
+								<!-- pagination -->
+								<!--div class="pagination">
+									<a class="first" href="#"><img src="../../images/common/page_first.png" alt="처음" /></a>
+									<a class="prev" href="#"><img src="../../images/common/page_prev.png" alt="이전" /></a>
+									<a class="on" href="#">1</a>
+									<a href="#">2</a>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a class="next" href="#"><img src="../../images/common/page_next.png" alt="다음" /></a>
+									<a class="last" href="#"><img src="../../images/common/page_last.png" alt="마지막" /></a>
+								</div>
+								<!-- //pagination -->
+
+							</div>
+						</div>
+
+					</div>
+					<!-- //mathCafe-wrap -->
+				</div>
+			</div>
+			<!-- content_right -->
+
+		</section>
+		<!-- //category -->
+
+	</article>
+	<!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+
+
+
+<!-- footer -->
+<footer id="footer">
+	<!-- footer_con -->
+	<div class="footer_con">
+
+		<!-- family_con -->
+		<div class="family_con">
+			<ul>
+				<li class="btn1"><a class="emt" href="http://www.ebs.co.kr/" target="_blank" title="EBS 메인">EBS 메인</a></li>
+				<li class="btn2"><a class="emt" href="http://www.ebsi.co.kr/" target="_blank" title="EBSi">EBSi</a></li>
+				<li class="btn3"><a class="emt" href="http://www.ebse.co.kr/" target="_blank" title="EBS english">EBS english</a></li>
+				<li class="btn4"><a class="emt" href="http://primary.ebs.co.kr/" target="_blank" title="EBS 초등">EBS 초등</a></li>
+				<li class="btn5"><a class="emt" href="http://mid.ebs.co.kr/" target="_blank" title="EBS 중학">EBS 중학</a></li>
+				<li class="btn6"><a class="emt" href="http://www.ebslang.co.kr/ebs/index.laf" target="_blank" title="EBS lang">EBS lang</a></li>
+				<li class="btn7"><a class="emt" href="http://clipbank.ebs.co.kr/main/?src=text&kw=00006C" target="_blank" title="EBS 클립뱅크">EBS 클립뱅크</a></li>
+				<li class="btn8"><a class="emt" href="http://book.ebs.co.kr/" target="_blank" title="Book Mall">Book Mall</a></li>
+			</ul>
+		</div>
+		<!-- //family_con -->
+
+		<!-- footer_menu -->
+		<div class="footer_menu">
+			<div class="logo_con">
+				<h2 class="blind">EBS Math</h2>
+			</div>
+			<div class="menu_con">
+				<ul>
+					<li><a href="#">EBS 소개</a></li>
+					<li><a href="#">저작권 침해 제보</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#"><span style="color:#fff" >개인정보처리방침</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //footer_menu -->
+
+		<!-- copyright_con -->
+		<div class="copyright_con">
+			<address>
+				06762 서울특별시 서초구 바우뫼로1길 35 한국교육방송공사  |  사업자등록번호 : 229-82-01343 (한국교육방송공사사장 우종범)<br />
+				EBS 고객센터 1588-1580 (발신자 부담)  |  인터넷 문의 <a href="mailTo://helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a>  |  FAX : 02-526-3855<br />
+				부가통신사업신고 : 10077  |  통신판매업신고 : 서초-8152호
+			</address>
+			<p class="mt15">
+				<strong>Copyright © EBS All Rights Reserved.</strong>
+			</p>
+			<div class="banner">
+				<img src="../../images/layout/footer_banner.png" />
+			</div>
+		</div>
+		<!-- //copyright_con -->
+
+	</div>
+	<!-- //footer_con -->
+</footer>
+<!-- //footer -->
+
+
+
+
+<!-- blind_con -->
+<div class="blind_con"></div>
+<!-- //blind_con -->
+
+<!-- modalBg -->
+<div class="modalBg"></div>
+<div class="modalPopupContainer">
+	<div class="popupCon"></div>
+</div>
+<!-- //modalBg -->
+
+
+<!-- datepicker -->
+<div class="datepicker"></div>
+<!-- //datepicker -->
+
+
+</body>
+</html>
+
+
+<script>
+	$('.card_cont_01').show();
+
+	$('.card_tab_menu li').click(function(){
+		$('.card_tab_menu li').removeClass('on');
+		$(this).addClass('on');
+		$('.tab_line').css({'display':'none'});
+		$(this).find('.tab_line').css({'display':'block'});
+
+		var n=$(this).index();
+
+		$('.card_cont > div').css({'display':'none'});
+		$('.card_cont > div').eq(n).css({'display':'block'});
+	});
+
+	$('.more_btn').click(function(){
+		$('.card_tab').toggleClass('view');
+	});
+
+	$(".line_list_con tbody tr.list").each( function ( i )
+	{
+		$(this).bind("mouseenter", function (e)
+		{
+			$(this).addClass("on");
+		});
+
+		$(this).bind("mouseleave", function (e)
+		{
+			$(this).removeClass("on");
+		});
+
+		$(this).bind("click", function ( e )
+		{
+			if($(this).is(".show"))
+			{
+				showView(-1);
+				$(this).removeClass("show");
+			}
+			else
+			{
+				showView(i);
+				$(".line_list_con tbody tr.list").removeClass("show");
+				$(this).addClass("show");
+			}
+		});
+	});
+	
+	showView = function(idx) {
+		var display = "table-cell";
+
+		if($.browser.msie && parseInt($.browser.version) == 7)
+		{
+			display = "block";
+		}
+
+		$(".line_list_con tbody tr.view").each( function ( i )
+		{
+			if(i == idx)
+			{
+				$(this).find("td").css({display:display});
+			}
+			else
+			{
+				$(this).find("td").css({display:"none"});
+			}
+		});
+	};
+
+	var minimal = new MPlayer('#minimal', {
+		flexible: true,
+		skin: 'minimal'
+	});
+
+</script>

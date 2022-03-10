@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+.clearfix::before, .clearfix::after { content:""; display:block; }
+.clearfix::after { clear:both; }
+
+.horse{background:none;}
+.horse .top{position:relative; width:763px;}
+.horse .top .btn-apply{position:absolute; top:506px; left:424px; display:block; width:292px; height:63px; font-size:0; border-radius:31px; background:#bf2b1c; opacity:0; filter:alpha(opacity='0');}
+.horse .top .btn-apply.before {position:absolute; top:482px; left:382px; display:block; width:364px; height:105px; font-size:0; border-radius:52px; background:#bf2b1c; opacity:0; filter:alpha(opacity='0');}
+.horse .snswrap{position:absolute; top:23px; right:19px;}
+.horse .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;}
+.horse .snswrap .fb a{background-position:0 0;}
+.horse .snswrap .tw a{background-position:-41px 0;}
+.horse .snswrap .kko a{background-position:-82px 0;}
+.horse .conwrap .btn-howto{position:absolute; top:819px; left:517px; display:block; width:193px; height:32px; font-size:0; border-radius:30px; background:#5796c8; opacity:0; filter:alpha(opacity='0');}
+
+/* 말 키우기 */
+.horse .growHorse { position:relative; }
+.horse .growHorse .score { position:absolute; top:162px; left:184px; }
+.horse .growHorse .score p { display:inline-block; *display: inline; zoom: 1;}
+.horse .growHorse .score span { display:block; text-align:center; font-weight:900; font-size:22px; letter-spacing:-1px; }
+.horse .growHorse .score span.myCarrot { width:74px; color:#f04e19; }
+.horse .growHorse .score span.horseOwner { width:100px; margin-left:147px; color:#5b300e; }
+.horse .growHorse .btn-levelup{position:absolute; top:158px; left:530px; display:block; width:193px; height:32px; font-size:0; border-radius:30px; background:#836343; opacity:0; filter:alpha(opacity='0');}
+
+.horse .growHorse .growing { position:absolute; top:290px; left:50%; width:291px; height:320px; margin-left:-145px;}
+.horse .growHorse.horse01 .growing { background:url('../../images/event/20170911/horse01.png') no-repeat center bottom; }
+.horse .growHorse.horse02 .growing { background:url('../../images/event/20170911/horse02.png') no-repeat center bottom; }
+.horse .growHorse.horse03 .growing { background:url('../../images/event/20170911/horse03.png') no-repeat center bottom; }
+.horse .growHorse.horse04 .growing{ background:url('../../images/event/20170911/horse04.png') no-repeat center bottom; }
+.horse .growHorse.horse05 .growing { background:url('../../images/event/20170911/horse05.png') no-repeat center bottom; }
+
+.horse .growHorse .medal { float:left; display:inline-block; width:80px; height:86px; background:url('../../images/event/20170911/medal.png') no-repeat; *display: inline; zoom: 1;}
+.horse .growHorse.horse01 .medal {background-position: 0 0;}
+.horse .growHorse.horse02 .medal {background-position: -80px 0;}
+.horse .growHorse.horse03 .medal {background-position: -160px 0;}
+.horse .growHorse.horse04 .medal {background-position: -240px 0;}
+.horse .growHorse.horse05 .medal {background-position: -320px 0 ;}
+
+.horse .growHorse .name { position: absolute; top:620px; left:245px; }
+.horse .growHorse .horseName { display:inline-block; width:198px; height:86px; line-height:86px; color:#5b300e; font-size:25px; font-weight:900; text-align:center; background:url('../../images/event/20170911/bg_name.png') no-repeat center center; *display: inline; zoom: 1; }
+
+.horse .growHorse .snswrapHorse a { position:absolute; top:217px; display:inline-block; width:38px; height:38px; font-size:0; border-radius:4px; opacity:0; filter:alpha(opacity='0'); *display: inline; zoom: 1;}
+.horse .growHorse .snswrapHorse a.fb { left:375px; background:#38599c; }
+.horse .growHorse .snswrapHorse a.tw { left:419px; background:#46adea; }
+.horse .growHorse .snswrapHorse a.kko { left:463px; background:#fbc201; }
+
+.horse .growHorse .carrot > div { position:absolute; }
+.horse .growHorse .carrot .carrot01 { top:416px; left:72px; }
+.horse .growHorse .carrot .carrot02 { top:299px; left:93px; }
+.horse .growHorse .carrot .carrot03 { top:270px; left:456px; }
+.horse .growHorse .carrot .carrot04 { top:337px; left:524px; }
+.horse .growHorse .carrot .carrot05 { top:442px; left:526px; }
+
+/* 오늘의 미션 */
+.horse .todayMission { position:relative; }
+.horse .todayMission .missionSelect { position:absolute; top:116px; left:47px; }
+.horse .todayMission .missionSelect li { float:left; width:78px; height:104px; margin-left:5px; font-size:0; background:url('../../images/event/20170911/btn_mission.png') no-repeat; cursor:pointer;}
+.horse .todayMission .missionSelect li.mission01 { background-position:0 0; }
+.horse .todayMission .missionSelect li.mission02 { background-position:-83px 0; }
+.horse .todayMission .missionSelect li.mission03 { background-position:-166px 0; }
+.horse .todayMission .missionSelect li.mission04 { background-position:-249px 0; }
+.horse .todayMission .missionSelect li.mission05 { background-position:-332px 0; }
+.horse .todayMission .missionSelect li.finish { background:url('../../images/event/20170911/btn_mission_finish.png') no-repeat 0 0; cursor:default; }
+
+.horse .todayMission .missionBox { position:absolute; top:51px; right:39px; }
+.horse .todayMission .missionBox li { position:relative; display:none;}
+.horse .todayMission .missionBox li.on { display:block;}
+.horse .todayMission .missionBox li .mission { position:absolute; top:25px; left:25px; width:200px; font-size:22px; font-weight:bold; text-align:center; }
+.horse .todayMission .missionBox li .missionTit { margin: 0 auto 10px; color:#fed01a;}
+.horse .todayMission .missionBox li .missionText { margin: 0 auto; #position:absolute; #top:150%; #left:0; display:table-cell; height:42px; text-align:center; vertical-align:middle; zoom:1; *height:auto;}
+.horse .todayMission .missionBox li .missionText > div { #position:relative; #top:-50%; text-align:center; vertical-align:middle;}
+.horse .todayMission .missionBox li .missionText span { display:block; width:200px; font-size:18px; color:#fff; line-height:1.2em; text-align:center; overflow:hidden; }
+.horse .todayMission .missionBox li .btn_go { position:absolute; top:118px; left:52px; width:146px; height:33px; display:block; font-size:0; border-radius:17px; background:#ffe444; opacity:0; filter:alpha(opacity='0'); }
+
+/* 레이어 팝업 */
+.layer-levelup { position:fixed; left: 0;    top: 0;    right: 0;    bottom: 0;    z-index: 9999; }
+.layer-levelup .layer { position: absolute; left: 50%; top: 50%; margin-left: -355px; margin-top: -300px; z-index: 10; }
+.layer-levelup .modal-dimmed{ position:absolute; left:0; top:0; right:0; bottom:0; background:url('../../images/event/20170207/modal_bg.png'); z-index:5;}
+.layer-levelup .popwrap {width: 710px; height: 600px; overflow: hidden; background: url('../../images/event/20170609/popup/img_popup_bg.png') no-repeat; }
+.layer-levelup .popwrap .header{ position:relative;}
+.layer-levelup .popwrap .header p{ padding:25px;}
+.layer-levelup .popwrap .btn-close{ position:absolute; top:25px; right:25px; display:block; background-color:#fff;}
+.layer-levelup .popwrap .pop_cont{ position:relative; height:486px; margin:0 25px; overflow-y:scroll;}
+.layer-levelup .popwrap .pop_cont .ac { position:relative; }
+.layer-levelup .popwrap .btn_submit { position:absolute; bottom:70px; left:268px; display:block; width:108px; height:45px; font-size:0; border-radius:22px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+
+/* notice */
+.horse .notice {padding:35px 58px 31px 34px; background-color:#86831c;}
+.horse .notice ul{padding-top:15px;}
+.horse .notice li{margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20170911/bul.png') no-repeat 0 8px;}
+.horse .notice li:first-child{margin-top:0;}
+.horse .notice li .point{color:#fae79f;}
+
+/* 이벤트 종료 */
+.horse.end .top .btn_win{position:absolute; top:599px; left:74px; display:block; width:262px; height:63px; font-size:0; border-radius:31px; background:#bf2b1c; opacity:0; filter:alpha(opacity='0');}
+.horse.end .top .btn_info_insert{position:absolute; top:599px; left:359px; display:block; width:335px; height:63px; font-size:0; border-radius:31px; background:#763c2b; opacity:0; filter:alpha(opacity='0');}
+.horse.end .top .total{position:absolute; top:551px; left:415px; display:block; width:100px; text-align:center; font-weight:900; color:#5b300e; font-size:22px; letter-spacing:-1px; }
+.horse.end .evtcon-top { position:relative; }
+.horse.end .evtcon-top .btn-evtlogin {position:absolute; top:122px; left:449px; display:block;width:190px; height:46px; font-size:0; border-radius:30px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}

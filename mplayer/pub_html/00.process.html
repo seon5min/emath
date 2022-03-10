@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>EBS Math Markup Process</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		* {margin:0; padding:0;}
+		body {padding:0 0 15px 0; font-family:"맑은고딕", "Malgun Gothic", 돋움, Dotum , sans-serif; color:#3e4549; font-size:12px; background-color:#dcdcdc; overflow-y:scroll;}
+		h1 {margin:0 0 10px; text-align:center;}
+		h2 {margin:0 0 10px;}
+		p {padding:5px 0 0; text-align:right;}
+		a {color:#000; text-decoration:none; cursor:pointer;}
+		a:visited {text-decoration:none;}
+		a:hover {text-decoration:underline;}
+		li {list-style:none;}
+		table {border-collapse:collapse; border-spacing:0; empty-cells:show;}
+		caption {font-weight:bold; text-align:left;}
+		.clearfix::before, .clearfix:after {content:""; display:block; height:0;}
+		.clearfix:after {clear:both;}
+		.process .header {position:relative;}
+		.process .header h1 {color:#3e4549; font-size:20px; font-weight:bold; padding:20px 0 10px;}
+		.process .article {position:relative; background-color:#fff; padding:20px 20px 10px; margin:0 20px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px;}
+		.process .article .info {margin:10px 0; padding:20px; line-height:1.5; border:1px solid #b5b5b5; background-color:#efefef;}
+		.process ul {margin:20px 0;}
+		.process ul li {float:left; margin:-2px 0 0 -2px; padding:0 13px; line-height:30px; text-align:center; border:2px solid #193657; font-weight:bold; box-sizing:border-box; cursor:pointer;}
+		.process ul li.on {background-color:#193657; color:#fff;}
+		.process table {width:100%; margin:0 auto 10px; border-radius:5px; border-collapse:separate;}
+		.process table th, .process table td {padding:5px 2px 5px;}
+		.process table thead th {background-color:#eee; color:#434856; border-top:1px solid #c0c9d3; border-bottom:1px solid #c0c9d3; border-right:1px solid #c0c9d3;}
+		.process table thead tr > th:first-child {border-radius:5px 0 0 0; border-left:1px solid #c0c9d3;}
+		.process table thead tr > th:last-child {border-radius:0 5px 0 0;}
+		.process table th {color:#FFF; font-size:1em; line-height:1.5em;}
+		.process table td {color:#666; height:1.5em; font-size:1em; line-height:1.8em; white-space:nowrap; border-bottom:1px solid #c0c9d3; border-right:1px solid #c0c9d3; padding:5px 5px;}
+		.process table tbody tr td:first-child {border-left:1px solid #c0c9d3;}
+		.process table tbody tr:last-child > td:first-child {border-radius:0 0 0 5px;}
+		.process table tbody tr:last-child > td:last-child {border-radius:0 0 5px 0;}
+		.process table tr:hover td {background-color:#EAEAE0;}
+		.process table td.borderNone {border-bottom:1px solid #FFF;}
+		.process table td.noCoding {color:#999;}
+		.footer {background-color:#fff; padding:10px 20px; margin:10px 20px; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px;}
+		.footer p {text-align:center; color:#999;}
+	</style>
+	<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+</head>
+
+</head>
+<body>
+<div class="process">
+	<div class="header">
+		<h1>EBS Math</h1>
+	</div>
+
+	<div class="article">
+		<div style="padding:10px 0;font-weight:bold;text-align:right;">- Device : PC / - OS : Window / - Browser : Chorme, Firefox, Whale, Safari, IE7 이상</div>
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>메인</td>
+					<td>&nbsp;</td>
+					<td>ver.202003</td>
+					<td>&nbsp;</td>
+					<td><a href="">main_202003</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>ver.201903</td>
+					<td>&nbsp;</td>
+					<td><a href="">main_201903</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>ver.201802</td>
+					<td>&nbsp;</td>
+					<td><a href="">main_201802</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>renewal</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">main_renewal</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>rewind</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">main_rewind</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>default</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">main</a></td>
+				</tr>
+				<tr>
+					<td>로그인</td>
+					<td>전</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">login</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>후</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">login_on</a></td>
+				</tr>
+				<tr>
+					<td>lnb 가이드</td>
+					<td>초등</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_el</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>중학</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_mid</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>고교</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_hg</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>초등문제세트게임</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_elsetgame</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>중학수학카페</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_midcafe</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>고객센터</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_cscenter</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>마이페이지</td>
+					<td>일반</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_mypage</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>선생님 공간</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">lnb_teacher</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>카테고리</td>
+					<td>학습카드모음</td>
+					<td>ver.201903</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>영상카드 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제카드 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>웹툰카드 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category4</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>게임카드 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category5</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>이미지카드 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category21</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학지식카드 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category22</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>카드 리스트</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category6</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>카드</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category7</a></td>
+				</tr>
+				<tr>
+					<td>학습카드 상세페이지</td>
+					<td>영상 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category8</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>영상 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category9</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category10</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제&영상 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category11</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>웹툰 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category12</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>게임 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category13</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>M노트 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category14</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>이미지 카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category19</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학지식카드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category20</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>단원별 학습카드 모음</td>
+					<td>차시 - 박스 형태</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category15</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>차시 - 리스트 형태</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category16</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>단원명 - 박스 형태</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category17</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>단원명 - 리스트 형태</td>
+					<td>&nbsp;</td>
+					<td><a href="">category/category18</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- 테마별 시리즈 -->
+				<!-- <tr>
+					<td>시리즈</td>
+					<td>테마별 수학시리즈 모음</td>
+					<td>시리즈 전체 보기</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>시리즈별</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series2</a></td>
+				</tr> -->
+				<tr>
+					<td>시리즈</td>
+					<td>시리즈 메인 화면</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series1_renewal</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>시리즈 상세 화면</td>
+					<td>게임</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series2_renewal_game</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>웹툰</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series2_renewal_toon</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>영상</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series2_renewal_video</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>이미지</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series2_renewal_image</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>수학지식카드</td>
+					<td>&nbsp;</td>
+					<td><a href="">series/series2_renewal_knowledge</a></td>
+				</tr>
+			<!-- //테마별 시리즈 -->
+			
+			<!-- 게임방 / 카페 -->
+				<!-- <tr>
+					<td>초등 수학 게임방</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">game</a></td>
+				</tr> -->
+				<tr>
+					<td>수학 게임존</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">game_1905</a></td>
+				</tr>
+				<tr>
+					<td>수학 게임존</td>
+					<td>게임플레이어</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">game_player_1905</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학술사 세미게임</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">game_semi</a></td>
+				</tr>
+				<tr>
+					<td>중학 수학 카페</td>
+					<td>통계 교육 한마당</td>
+					<td>통계 관련 자료</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathCafe/mathcafe1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>통계 포스터 제작 가이드</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathCafe/mathcafe2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학 공식 SW</td>
+					<td>이지통계</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathCafe/mathcafe3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>이지그래프</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathCafe/mathcafe4</a></td>
+				</tr>
+				<tr>
+					<td>문제세트게임</td>
+					<td>4학년</td>
+					<td>로그인 전</td>
+					<td>&nbsp;</td>
+					<td><a href="">setGame/element04_2019</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>로그인 후</td>
+					<td>&nbsp;</td>
+					<td><a href="">setGame/element04_login</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>5학년</td>
+					<td>로그인 전</td>
+					<td>&nbsp;</td>
+					<td><a href="">setGame/element05_2019</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>로그인 후</td>
+					<td>&nbsp;</td>
+					<td><a href="">setGame/element05_login</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>6학년</td>
+					<td>로그인 전</td>
+					<td>&nbsp;</td>
+					<td><a href="">setGame/element06_2019</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>로그인 후</td>
+					<td>&nbsp;</td>
+					<td><a href="">setGame/element06_login</a></td>
+				</tr>
+				<!-- <tr>
+					<td>단원복습게임</td>
+					<td>6학년</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">reviewGame/element06</a></td>
+				</tr> -->
+			<!-- //게임방 / 카페 -->
+			</tbody>
+		</table>
+
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- 고객센터 -->
+				<!-- <tr>
+					<td>고객센터</td>
+					<td>메인</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer1</a></td>
+				</tr>
+ -->				<tr>
+					<td>고객센터</td>
+					<td>메인</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>자주 묻는 질문</td>
+					<td>전체</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>검색결과 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>회원정보/가입</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer4</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>사이트 이용안내</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer5</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>커뮤니티 이용안내</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer6</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>교사 이용안내</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer7</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>이용문의</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer8</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>검색결과 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer9</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer10</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변없음</td>
+					<td><a href="">customer/customer11</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>등록</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer12</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학 학습 해결소</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer13</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>조회 내용 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer14</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>검색</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer15</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>검색 조회 내용 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer16</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer17</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변없음</td>
+					<td><a href="">customer/customer18</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>등록</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer19</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변 등록</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer20</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>희망수학칼럼</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer37_column.html</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>이벤트</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer21</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>당첨자 조회 리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer23</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>당첨자 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer24</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>당첨자 상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer25</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학행사</td>
+					<td>수학교사 한마당</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer26</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>파이데이</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer26_piDay</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>서울세계수학자대회</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer27</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td><a href="">customer/customer31</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>찾아가는 EBSMath 체험관</td>
+					<td>2017</td>
+					<td><a href="">customer/customer32</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>찾아가는 EBSMath 체험관</td>
+					<td>2018</td>
+					<td><a href="">customer/customer32_2018</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>찾아가는 EBSMath 체험관</td>
+					<td>2019</td>
+					<td><a href="">customer/customer32_2019</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>공지사항</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer28</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>검색결과 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer29</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer30</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>미리 보는 EBSMath</td>
+					<td>미리 보는 수학운동회</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer33</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>돌도끼 수학</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer34</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>오! 여기에 수학이?!</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/customer35</a></td>
+				</tr>
+			<!-- //고객센터 -->
+			</tbody>
+		</table>
+
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- 마이페이지 -->
+				<tr>
+					<td>마이페이지</td>
+					<td>내가 본 학습카드</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>찜 한 학습카드</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage4</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>내 M노트</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage5</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage24</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage6</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>내 문제</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage7</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage8</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/myqz_list</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/myqz_list2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>오답노트</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage9</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage10</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>이용 문의 내역</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage11</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage12</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>수학 학습 해결소 내역</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage13</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>답변 O</td>
+					<td><a href="">mypage/mypage15</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변 X</td>
+					<td><a href="">mypage/mypage18</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변 평가</td>
+					<td><a href="">mypage/mypage19</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변관리</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage14</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td><a href="">mypage/mypage16</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>답변등록</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage17</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>오류 신고 내역</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage20</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage21</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>회원 정보 수정</td>
+					<td>로그인</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage22</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage23</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>100개의 아이디어</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage25</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/mypage26</a></td>
+				</tr>
+			<!-- //마이페이지 -->
+
+			<!-- 커뮤니티 -->
+				<tr>
+					<td>커뮤니티</td>
+					<td>탭 - 내 학습 커뮤니티</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>탭 - 커뮤니티 생성/관리</td>
+					<td>새 커뮤니티 개설</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community16</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>커뮤니티 정보 수정</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community17</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>선택된 커뮤니티 정보</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community26</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>탭 - 커뮤니티 회원 관리</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community18</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>탭 - 커뮤니티 이력 조회</td>
+					<td>상태</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community19</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>총 댓글</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community20</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>탭 - 회원 이력 조회</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community21</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>학습 커뮤니티</td>
+					<td>커뮤니티 글 리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>글 상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>글 등록하기 - 대장</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community4</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>글 등록하기</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community5</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community6</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>가입한 커뮤니티 없음</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community7</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>학습게시판</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community8</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>자유게시판</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community9</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>찾기</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community10</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>학습 과제출제</td>
+					<td>콘텐츠 O</td>
+					<td><a href="">mypage/community11</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>콘텐츠 X</td>
+					<td><a href="">mypage/community12</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>학습 과제출제</td>
+					<td>상세</td>
+					<td><a href="">mypage/community13</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>상세</td>
+					<td><a href="">mypage/community14</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>컨텐츠 상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community15</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>선생님 커뮤니티</td>
+					<td>커뮤니티 이력 조회</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community22</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>글 리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community23</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>글 등록하기</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community24</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>글 상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/community25</a></td>
+				</tr>
+			<!-- //커뮤니티 -->
+
+			</tbody>
+		</table>
+
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- 검색 -->
+				<tr>
+					<td>검색</td>
+					<td>통합검색</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>학습카드모음</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_card</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>영상</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_vod</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_qna</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>웹툰</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_webtoon</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>게임</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_interactive</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>M노트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_mnote</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>시리즈</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_series</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>게시물</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_board</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>스페셜 검색 타입1</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_special_type1</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>스페셜 검색 타입2</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_special_type3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>스페셜 검색 타입3</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">search/search_special_type3_19.html</a></td>
+				</tr>
+			<!-- //검색 -->
+			</tbody>
+		</table>
+
+		<table class="menu01">
+			<colgroup>
+				<col style="width:15%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="width:20%;" /><col style="/" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>1Depth</th>
+					<th>2Depth</th>
+					<th>3Depth</th>
+					<th>File Name</th>
+				</tr>
+			</thead>
+			<tbody>
+			<!-- 기타 -->
+				<tr>
+					<td>기타</td>
+					<td>전체교과보기</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/all_menu</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>소개 페이지</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/intro</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>일일 사이트 통계양식</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/dailyStatistics</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>에러 페이지</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/error</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>에러 페이지</td>
+					<td>페이지 내 css</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/error2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>100개의 아이디어</td>
+					<td>리스트</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/idea100_list</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>리뉴얼</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/idea100_list_renew</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>등록</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/idea100_write</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>메일 양식</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/mailform</a></td>
+				</tr>
+			<!-- //기타 -->
+
+			<!-- 팝업 -->
+				<tr>
+					<td>팝업</td>
+					<td>게임실행가이드</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">customer/pop_gameguide</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제지 만들기</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mypage/create_qzpaper</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>오류신고</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pop_error</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>주관식 입력</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pop_essay_qz</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>주관식 수식 편집</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pop_input_mathformula</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제 인쇄</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pop_print</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>채점하기</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pop_scoring</a></td>
+				</tr>
+			<!-- //팝업 -->
+
+			<!-- 평가문항 서비스 -->
+				<tr>
+					<td>평가문항 서비스</td>
+					<td>문제 리스트</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pyeongga_list</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>문제</td>
+					<td>상세</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pyeongga_detail</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>정답 & 해설</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pyeongga_detail2</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>해설강의</td>
+					<td>&nbsp;</td>
+					<td><a href="">mathEditor/pyeongga_detail3</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>선택지 연결형</td>
+					<td>가로형</td>
+					<td><a href="">mathEditor/pyeongga_link_lr</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>세로형</td>
+					<td><a href="">mathEditor/pyeongga_link_ud</a></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>해설</td>
+					<td><a href="">mathEditor/pyeongga_link_detail</a></td>
+				</tr>
+			<!-- //평가문항 서비스 -->
+			<!-- DM -->
+
+				<tr>
+					<td>DM</td>
+					<td>이메일 수신 거부 신청</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/mail_unsub1</a></td>
+				</tr>
+				<tr>
+					<td>DM</td>
+					<td>이메일 수신 거부 완료</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/mail_unsub2</a></td>
+				</tr>
+				<tr>
+					<td>DM</td>
+					<td>이메일 수신 거부 확인</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td><a href="">etc/mail_unsub3</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(e){
+	$(".menu01 a").click(function(){
+		var thisname = $(this).text(); 
+		var thisname = "./"+thisname+".html"; 
+		$(this).attr("href",thisname);
+		$(this).attr("target",'_blank');
+	}); 
+}); 
+</script>
+</body>
+</html>

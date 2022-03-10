@@ -1,0 +1,119 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+
+.roulette {background:none; }
+.roulette .top {position:relative;}
+.roulette .top .btn-apply {position:absolute; top:513px; left:426px; display:block; width:297px; height:73px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.roulette .top .btn-winner1 {position:absolute; top:635px; left:234px; display:block; width:297px; height:71px; background:url('../../images/event/20190523/btn_event_fin.png') 0 0 no-repeat;}
+.roulette .top .btn-winner2 {position:absolute; top:635px; left:199px; display:block; width:367px; height:71px; background:url('../../images/event/20190523/btn_event_fin.png') 0-74px no-repeat;}
+.roulette .top .btn-winner3 {position:absolute; top:635px; left:169px; display:block; width:426px; height:71px; background:url('../../images/event/20190523/btn_event_fin.png') 0-148px no-repeat;}
+
+.roulette .top .cmt {position:absolute; top:775px; text-align:center; width:100%;}
+.roulette .snswrap {position:absolute; top:29px; right:20px;}
+.roulette .snswrap a{display:inline-block; width:35px; height:35px; margin-left:6px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.roulette .snswrap a.fb {background-position:0 0;}
+.roulette .snswrap a.tw {background-position:-41px 0;}
+.roulette .snswrap a.kko {background-position:-82px 0;}
+
+.roulette .eventArea {background:#373976 url('../../images/event/20190523/bg_eventarea.png') 0 0 no-repeat;  padding-top:65px}
+.roulette .eventArea_end {background:#373976 url('../../images/event/20190523/bg_eventarea2.png') 0 0 no-repeat; padding-top:65px; padding-bottom:30px}
+
+.eventArea > h3, .eventArea_end > h3 {text-align:center; margin-bottom:30px}
+.tab_stcard {width:678px; margin:0 auto; overflow:hidden; margin-bottom:60px}
+.tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20190523/tab.png'); background-repeat:no-repeat; margin-left:8px}
+.tab_stcard li a {display:block; width:100%; height:100%}
+.tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.tab_stcard li.tab02 {background-position:-173px 0;}
+.tab_stcard li.tab03 {background-position:-346px 0;}
+.tab_stcard li.tab04 {background-position:-519px 0;}
+.tab_stcard li.tab01:hover {background-position:0 -82px}
+.tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.roulette_inner {background:url('../../images/event/20190523/bg_roulette.png') 0 -50px no-repeat}
+.roulette_inner h3 {text-align:center; margin-bottom:20px }
+.my_status {background:#1d1f56; border-radius:20px; width:655px; margin:0 auto;  padding:18px 0 18px 28px;}
+.my_status li {display:inline-block; font-size:15px;}
+.my_status li.my_ticket {width:255px;  color:#ffd97d;}
+.my_status li.my_point {width:165px; background:url('../../images/event/20190523/txt_status2.png') 0 0 no-repeat; color:#fff}
+.my_status li.friends {width:217px; background:url('../../images/event/20190523/txt_status3.png') 0 0 no-repeat; color:#ffd97d}
+.my_status li span {display:inline-block; line-height:100%; vertical-align:top}
+.my_status li strong {display:inline-block; color:#ffd97d; font-size:22px;vertical-align:top; letter-spacing:-1px}
+.my_status li.my_ticket span:first-child {display:inline-block; min-width:30px; max-width:65px; background:url('../../images/event/20190523/txt_status1.png') 0 0 no-repeat; padding-left:68px}
+.my_status li.my_ticket span:first-child:after {content:"/"; font-size:15px; color:#fff; display:inline-block; margin-left:3px;  line-height:100%; vertical-align:top}
+.my_status li.my_ticket span:last-child {width:65px;  background:url('../../images/event/20190523/txt_status1.png') 0 -86px no-repeat; padding-left:55px}
+.my_status li.my_point span {padding-left:80px}
+.my_status li.friends span {padding-left:143px}
+
+.my_status_end {background:#1d1f56; border-radius:30px; width:223px; margin:0 auto;  padding:18px 0 18px 0;}
+.my_status_end li {display:inline-block; font-size:15px; background:url('../../images/event/20190523/txt_status4.png') 0 50% no-repeat; color:#fff; margin-left:37px; vertical-align:top; }
+.my_status_end li strong {display:inline-block; color:#ffd97d; font-size:22px;margin-left:84px}
+.roulette_cnt {position:relative;width:683px; margin:20px auto 0}
+.roulette_cnt .rlt_board {display:block; text-align:center; margin-bottom:10px}
+.roulette_cnt .imgObj1 {position:absolute; top:35px; left:140px}
+.roulette_cnt .imgObj2 {position:absolute; top:265px; left:60px}
+.roulette_cnt .imgObj3 {position:absolute; top:240px; left:540px}
+.roulette_cnt .rlt_point {position:absolute; top:-10px; left:319px}
+.roulette_cnt .rlt_start {position:absolute; top:169px; left:297px}
+
+.point_prog {width:683px; padding:183px 0 60px; margin:0 auto; position:relative}
+.point_prog .bar_box {border:4px solid #1d1f56; border-radius:8px; height:40px; background:#fff; padding-left:0px; overflow:hidden; position:relative}
+.point_prog .bar_box .prog_bar{display:block; width:1px; height:100%; background:url('../../images/event/20190523/pg_bar.png') repeat-x 0 0}
+.point_prog > p {margin:11px 0 0 5px;}
+.point_prog .prog_flag1 {position:absolute; left:0; top:25px; margin-left:-25px}
+.point_prog .prog_flag2 {position:absolute; left:0; top:25px; margin-left:-25px}
+.point_prog .prog_flag3 {position:absolute; left:0; top:43px; margin-left:-30px}
+.point_prog .prog_flag4 {position:absolute; right:-20px; top:45px}
+.point_prog .prog_end_flag1 {position:absolute; left:0; top:38px; margin-left:-15px}
+.point_prog .prog_end_flag2 {position:absolute; left:0; top:38px; margin-left:-15px}
+.point_prog .prog_end_flag3 {position:absolute; left:0; top:32px; margin-left:-40px}
+.point_prog .bar50 { display:block; position:absolute; top:0; left:50%; border-right:1px solid #1d1f56; height:40px }
+.point_prog .bar80 { display:block;  position:absolute; top:0; left:80%; border-right:1px solid #1d1f56; height:40px }
+
+.btn_pop_point {position:absolute; width:151px; height:32px ;top:20px; right:-10px; background:url('../../images/event/20190523/pop_point.png') 0 0 no-repeat;}
+.pop_point {position:absolute; width:151px; height:186px;top:52px; right:-10px; background:url('../../images/event/20190523/pop_point.png') 0 -32px no-repeat; display:none}
+.pop_point.on {display:block}
+
+.snsArea {background:#5475cf url('../../images/event/20190523/bg_share_event.png') 0 0 repeat-y; padding:57px 40px; position:relative}
+.snsArea .h_mypost {text-align:right; margin-bottom:10px}
+.snsShare .snslink {border-top-left-radius:12px; border-top-right-radius:12px; background:#f6f8fd; padding:15px 25px; overflow:hidden; margin-top:15px; border-bottom:1px dashed #b1bde7}
+.snsShare .snslink > p {float:left; padding-top:10px}
+.snsShare .snslink ul {float:right; width:182px; height:40px; overflow:hidden} 
+.snsShare .snslink li {float:left; background-image:url('../../images/event/20190227/btn_sns.gif'); background-repeat:no-repeat; margin-right:6px }
+.snsShare .snslink li button {display:inline-block; width:100%; height:100%}
+.snsShare .snslink li.sns01 {width:38px; height:42px; background-position:0 0;}
+.snsShare .snslink li.sns02 {width:42px; height:42px; background-position:-44px 0;}
+.snsShare .snslink li.sns03 {width:42px; height:42px; background-position:-90px 0;}
+.snsShare .snslink li.sns04 {width:42px; height:42px; background-position:-136px 0; margin-right:0}
+.snslink_inp {border-bottom-left-radius:12px; border-bottom-right-radius:12px; background:#fff; padding:15px 25px }
+.snslink_inp dt {margin-bottom:10px}
+.snslink_inp input[type="text"] {border:1px solid #d8d8d8; background:#f9f9f9; height:28px; line-height:30px; width:470px;}
+.snslink_inp .btn_save {background:#264278 url('../../images/event/20190523/txt_save.png') 50% 50% no-repeat; width:66px; height:30px; border:1px solid #264278}
+.snslink_inp .btn_add {background:#fff url('../../images/event/20190523/txt_add.png') 50% 50% no-repeat; width:66px; height:30px; border:1px solid #264278}
+.snslink_inp .btn_del {background:#fff url('../../images/event/20190523/txt_del.png') 50% 50% no-repeat; width:66px; height:30px; border:1px solid #264278}
+.snslink_inp .inp_row {display:inline-block; margin-bottom:10px}
+.snsArea .sns_notice {margin-top:15px}
+.mypost {border-radius:20px; background:#fff; padding:27px 42px;}
+.mypost li {border:1px solid #d8d8d8; background:#f9f9f9; height:28px; line-height:30px; width:100%; margin-bottom:5px; text-indent:10px}
+.snsArea .imgObj1 {position:absolute; top:100px; left:20px}
+
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000; width:696px; height:425px; margin:-250px auto; /*padding-left:200px*/}
+
+/* notice */
+.roulette .notice {padding:35px 30px 30px 35px; background-color:#1c2f66;}
+.roulette .notice ul {padding-top:10px;}
+.roulette .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.roulette .notice li .point {color:#baccff;}
+

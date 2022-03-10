@@ -1,0 +1,44 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+
+.tchSpace {background:none;}
+.tchSpace .top {position:relative; width:763px;}
+.tchSpace .top .btn-apply {position:absolute; top:518px; left:257px; display:block; width:249px; height:58px; font-size:0; background-color:#fff; opacity:0; filter:alpha(opacity='0'); border-radius:29px; }
+.tchSpace .snswrap {position:absolute; top:35px; left:177px;}
+/* .tchSpace .snswrap a {display:inline-block; width:37px; height:37px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;} */
+/* .tchSpace .snswrap a{display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;} */
+.tchSpace .snswrap a {display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20181109/img_sns.png'); *display:inline; zoom:1;}
+.tchSpace .snswrap a.fb {background-position:0 0;}
+.tchSpace .snswrap a.tw {background-position:-41px 0;}
+.tchSpace .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.tchSpace .eventArea > div {position:relative;}
+
+.tchSpace .eventArea .cont_01 .sliderViewer {position:absolute;top:151px;left:0;width:763px;height:350px;}
+.tchSpace .eventArea .cont_01 a.btnMake {position:absolute; top:556px; left:88px; display:block; width:289px; height:58px; font-size:0; border-radius:29px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.tchSpace .eventArea .cont_01 a.btnZzim {position:absolute; top:556px; left:387px; display:block; width:289px; height:58px; font-size:0; border-radius:29px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+
+.bx-wrapper .bx-prev {left:568px;background:url('../../images/event/20181109/btn_arrow.png') no-repeat 0 0;}
+.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {background-position:0 0;}
+.bx-wrapper .bx-pager {position:absolute;top:297px;left:250px;}
+.bx-wrapper .bx-pager .bx-pager-item {float:left;margin-left:15px;}
+.bx-wrapper .bx-pager .bx-pager-item a {display:block;width:16px;height:16px;font-size:0;text-indent:-9999px;background:url('../../images/event/20181109/btn_pager.png') no-repeat 0 0;}
+.bx-wrapper .bx-pager .bx-pager-item a.active {background-position:-20px 0;}
+.bx-wrapper .bx-controls-direction a {position:absolute;top:144px;display:block;width:28px;height:53px;background:url('../../images/event/20181109/btn_arrow.png') no-repeat 0 0;font-size:0;text-indent:-9999px;}
+.bx-wrapper .bx-controls-direction a.bx-prev {left:11px;}
+.bx-wrapper .bx-controls-direction a.bx-next {right:11px;background-position:-30px 0;}
+
+/* notice */
+.tchSpace .notice {padding:35px 39px 30px 35px; background-color:#6a5cb3;}
+.tchSpace .notice ul {padding-top:10px;}
+.tchSpace .notice li {margin-top:5px; padding-left:15px; color:#ffffff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181109/bul.png') no-repeat 0 10px;}
+.tchSpace .notice li .point {color:#ffec6b;}
+
+/* 이벤트 종료 */
+.tchSpace.end .top a {position:absolute; top:526px; height:58px; display:block; font-size:0; border-radius:29px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.tchSpace.end .top .btn_win {left:123px; width:229px;}
+.tchSpace.end .top .btn_info_insert {left:362px; width:279px;}

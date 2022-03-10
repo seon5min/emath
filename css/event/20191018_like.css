@@ -1,0 +1,118 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.ebslike {background:none; }
+.ebslike .top {position:relative}
+.ebslike .top .btn-winner1 {position:absolute; top:745px; left:233px;; display:inline-block; width:299px; height:74px; background:url('../../images/event/20191018/btn_event_fin.png') 0 0 no-repeat;}
+.ebslike .top .btn-winner2 {position:absolute; top:745px; left:173px; display:inline-block; width:417px; height:74px; background:url('../../images/event/20191018/btn_event_fin.png') 0 -78px no-repeat;}
+.ebslike .top .btn-winner3 {position:absolute; top:745px; left:173px; display:inline-block; width:417px; height:74px; background:url('../../images/event/20191018/btn_event_fin.png') 0 -156px no-repeat;}
+
+.ebslike .top .cmt_end {margin:-30px 0 16px 0; text-align:center}
+.ebslike .snswrap {position:absolute; top:23px; right:20px;}
+.ebslike .snswrap a{display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.ebslike .snswrap a.fb {background-position:0 0;}
+.ebslike .snswrap a.tw {background-position:-41px 0;}
+.ebslike .snswrap a.kko {background-position:-82px 0;}
+
+.ebslike .top .btn-pre-apply {position:absolute; top:730px; left:432px; display:block; width:297px; height:74px; background:url('../../images/event/20191018/btn_event_before.png') 0 -76px no-repeat;}
+.ebslike .top .btn-pre-apply.off {background-position:0 0;}
+.ebslike .top .btn-apply {position:absolute; top:730px; left:432px; display:block; width:287px; height:74px; background:url('../../images/event/20191018/btn_apply.png') 0 -76px no-repeat;}
+.ebslike .top .btn-apply.off {background-position:0 0;}
+
+.ebslike .eventArea {background:#c9c1f3; padding:0 }
+.ebslike .tab_stcard {width:678px; margin:30px auto 60px; overflow:hidden}
+.ebslike .tab_stcard li {float:left; width:159px; height:80px; background-image:url('../../images/event/20191018/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.ebslike .tab_stcard li a {display:block; width:100%; height:100%}
+.ebslike .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.ebslike .tab_stcard li.tab02 {background-position:-173px 0;}
+.ebslike .tab_stcard li.tab03 {background-position:-346px 0;}
+.ebslike .tab_stcard li.tab04 {background-position:-519px 0;}
+.ebslike .tab_stcard li.tab01:hover {background-position:0 -82px}
+.ebslike .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.ebslike .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.ebslike .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.ebslike .cmt_like_area .wrapper {width:678px; margin:0 auto; background:#ffffff; border-radius:12px; padding:20px 0 10px; margin-top:20px}
+.ebslike .cmt_like_area .wrapper li {margin:0 25px 10px; box-sizing:border-box; width:100%; display:table}
+.ebslike .cmt_like_area .wrapper li span {display:table-cell}
+.ebslike .cmt_like_area .wrapper li .uname {width:17%; color:#7261ca; font-size:15px; font-weight:600 }
+.ebslike .cmt_like_area .wrapper li .comment {width:83%; height:45px; box-sizing:border-box; padding-left:32px; background:url('../../images/event/20191018/img_bubble_cmt.png') 0 0 no-repeat; line-height:45px; font-size:14px; font-weight:600; color:#1f135a}
+.ebslike .cmt_like_area .wrapper li .comment em {display:inline-block;overflow:hidden;max-width:478px;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap; font-style:normal}
+
+.ebslike  .my_like_record {margin-top:58px; padding-bottom:48px;  text-align:center}
+.ebslike  .my_like_record .like_num {position:relative; width:321px; height:125px; margin:20px auto 0; padding-top:35px;  background:url('../../images/event/20191018/img_like_num.png') no-repeat 0 0; text-align:center;}
+.ebslike  .my_like_record .like_num strong {display:inline-block; min-width:52px; height:31px; background:url('../../images/event/20191018/icon_heart.png') no-repeat 0 0; padding-left:42px; color:#fff; font-weight:600; font-size:25px; letter-spacing:-1px}
+.ebslike  .my_like_record .like_num a {display:block; margin-top:52px; width:318px; height:43px;}
+
+.ebslike .bonusevent {background:#42367e; padding-bottom:50px; position:relative}
+.ebslike .sns_share {padding-top:33px;}
+.ebslike .sns_share .inp_url {width:636px; margin:0 auto 15px; border:3px solid #1f135a; border-radius:10px; background:#fff; overflow:hidden}
+.ebslike .sns_share .inp_url input[type="text"]{width:516px; border:0; font-size:16px; height:62px; padding:20px 0 20px 25px; box-sizing:border-box; background:#fff;}
+.ebslike .sns_share .inp_url  input[type="text"]::-webkit-input-placeholder{color:#8e8e8e; font-weight:600} /* Chrome/Opera/Safari */
+.ebslike .sns_share .inp_url  input[type="text"]::-moz-placeholder{color:#8e8e8e; font-weight:600} /* Firefox 19+ */
+.ebslike .sns_share .inp_url  input[type="text"]:-ms-input-placeholder{color:#8e8e8e; font-weight:600} /* IE 10+ */
+.ebslike .sns_share .inp_url input[type="text"]:-moz-placeholder{color:#8e8e8e; font-weight:600} /* Firefox 18- */
+
+.ebslike .sns_share .inp_url .btn_send {display:inline-block; width:55px; height:55px; background:url('../../images/event/20191018/btn_input.png') no-repeat 0 0; vertical-align:top; margin-top:3px}
+.ebslike .sns_share .inp_url .btn_ok {display:inline-block; width:55px; height:55px; background:url('../../images/event/20191018/btn_input.png') no-repeat -58px 0; vertical-align:top; margin-top:3px}
+.ebslike .sns_share .inp_url .btn_modify {display:inline-block; width:55px; height:55px; background:url('../../images/event/20191018/btn_modify.png') no-repeat 0 0; vertical-align:top; margin-top:3px}
+
+.ebslike .eventArea.end {background:#f8c5de; padding-bottom:73px}
+.ebslike .eventArea.end .stcard_num {width:630px; height:97px; background:url('../../images/event/20191018/bg_studycardnum.png') no-repeat 0 0;  margin:-7px auto 0; overflow:hidden;  position:relative; z-index:10}
+.ebslike .eventArea.end .stcard_num dt {float:left; padding-left:410px;}
+.ebslike .eventArea.end .stcard_num dd {float:left; width:100px; color:#fe4241; font-weight:bold; font-size:21px;}
+.ebslike .eventArea.end .stcard_num dd strong {display:inline-block; font-size:40px; font-weight:bold; margin-top:5px}
+.ebslike .eventArea.end .stcard_num:after {display:block; content:""; width:74px; height:67px; position:absolute; right:20px; top:30px; background:url('../../images/event/20191018/img_obj.png') no-repeat 0 0;  }
+
+.ebslike .eventArea.end .url_list {width:678px; margin:20px auto 0; }
+.ebslike .eventArea.end .url_list {display:block; width:678px; height:156px; padding:15px 0; background:#fff; border:1px solid #fff; border-radius:9px; position:relative; overflow:hidden; font-size:15px; color:#333}
+.ebslike .eventArea.end .url_list ul {width:610px; height:154px; margin:0 auto; overflow:auto; padding:5px 0 0 10px; box-sizing:border-box}
+.ebslike .eventArea.end .url_list ul li {max-width:590px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;white-space:nowrap;margin-bottom:15px; font-weight:600}
+
+
+/* 공유하기 */
+.ebslike .sharewrap{position:absolute; top:596px; left:180px; right:auto; padding:15px; border:1px solid #d8d8d8; border-radius:4px; background:#fff; z-index:100; display:none}
+.ebslike .sharewrap > div{position:relative;}
+.ebslike .sharewrap .tit{position: relative; height:20px; line-height:20px; padding-left:20px; margin-bottom:8px; color:#708494; font-weight:700; font-size:13px; background:url('../../images/common/share_icon2.png') no-repeat 0 50%;}
+.ebslike .sharewrap .btn-evt-ing{position:absolute; top: -6px; left:78px; display: inline-block; width: 104px; height: 31px; background:url('../../images/event/20170119/btn_evt_ing.png') no-repeat;}
+.ebslike .sharewrap .sharebox{margin-bottom:5px; padding:10px 0; border-top:2px solid #ccc; border-bottom:2px solid #ccc; background:#e7edf2; text-align:center;}
+.ebslike .sharewrap .share_url{position:relative; height:32px; border:1px solid #d0d5d8; border-radius:4px;}
+.ebslike .sharewrap .share_url > input[type="text"]{width:160px; height:32px; margin:0 60px 0 10px; padding:0; line-height:32px; color:#6b6b6b; border:none; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+*:first-child + html .ebslike .sharewrap .share_url > input[type="text"]{padding-left:10px;}
+.ebslike .sharewrap .share_url .copy_btn{position:absolute; top:3px; right:3px;}
+.ebslike .sharewrap .shareclose_btn{position:absolute; top:3px; right:0; display:inline-block; width:14px; height:14px !important; background:url('../../images/btn/btn_close5.png') no-repeat 0 0;}
+*:first-child + html .ebslike .sharewrap .shareclose_btn{color:#fff;}
+
+.ebslike .sharewrap .sns_btn{display:inline-block;width:26px;height:26px;line-height:26px}
+*:first-child + html .ebslike .sharewrap .sns_btn{color:#fff;}
+.ebslike .sharewrap .sns_btn.facebook{background:url(../../images/common/facebook.png) no-repeat}
+.ebslike .sharewrap .sns_btn.twitter{background:url(../../images/common/twitter.png) no-repeat}
+.ebslike .sharewrap .sns_btn.kakao{background:url(../../images/common/kakao.png) no-repeat}
+.ebslike .sharewrap .sns_btn.facebook:hover{background-position:0 -26px}
+.ebslike .sharewrap .sns_btn.twitter:hover{background-position:0 -26px}
+.ebslike .sharewrap .sns_btn.kakao:hover{background-position:0 -26px}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000; width:716px; height:639px; margin:-330px auto; /*padding-left:200px*/}
+.pop_sns.pop_common .popcon {width:660px; height:345px; background:#fff; border-radius:15px;}
+.pop_sns.pop_common .popcon .container {padding:35px;}
+.pop_sns .mypost {width:580px; height:180px; overflow:auto; margin:17px 0 0 9px}
+.pop_sns .mypost li {border-bottom:1px solid #d1d1d1; padding:9px 0 10px 10px; position:relative}
+.pop_sns .mypost li .del {position:absolute; right:10px; top:10px; color:#8151e2;  font-size:14px;  font-weight:600}
+.pop_sns .mypost li span {display:inline-block; max-width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; vertical-align:middle; font-size:14px; color:#333333; font-weight:600}
+.pop_sns.pop_common .btn_layerclose{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=1); opacity:1; background:transparent}
+
+/* notice */
+.ebslike .notice {padding:35px 30px 30px 35px; background-color:#1c2f66;}
+.ebslike .notice ul {padding-top:10px;}
+.ebslike .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.ebslike .notice li .point {color:#baccff;}
+

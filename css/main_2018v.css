@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* ----------------------------------------------------------------------- layout */
+body {overflow-y:scroll; background:#fff;}
+.main201802 {overflow:hidden;}
+.inner {position:relative; width:1000px; margin:0 auto; overflow:hidden;}
+#content .middleCont, #content .bottomCont {background:url('../images/common/deco_line.png') repeat-x;}
+
+/* ----------------------------------------------------------------------- skip navigation */
+.skipToNavigation {position:absolute; top:-1000em; left:-1000em;}
+.skipToNavigation a {display:block; overflow:hidden; height:1px; width:1px; margin:0 -1px -1px 0; font-size:0; line-height:0;}
+.skipToNavigation a:focus {outline:2px solid #4475cb;}
+
+/* ----------------------------------------------------------------------- top contents */
+.topCont {margin:35px 0 20px; overflow:hidden;}
+.topCont > div {float:left;}
+.topCont > div > h4 {margin-bottom:17px;}
+.topCont .popularCard, .topCont .event, .topCont .blog {margin-left:29px;}
+
+/* 이 주의 테마별 수학시리즈 */
+.topCont .thisWeek {position:relative; width:451px;}
+.topCont .thisWeek .btnMore {position:absolute; top:5px; right:0;}
+.topCont .thisWeek .contBox {display:block; width:431px; height:296px; padding:10px; background:url('../images/main/renewal2018/bg_thisweek.png') no-repeat;}
+.topCont .thisWeek .contBox .cardDec {float:left; width:209px; height:296px;}
+.topCont .thisWeek .contBox .cardDec img {max-width:209px;}
+.topCont .thisWeek .contBox .cardArea {display:block; float:right; width:212px; cursor:pointer;}
+.topCont .thisWeek .contBox .cardArea:hover h4 {text-decoration:underline;}
+.topCont .thisWeek .contBox .cardArea .list_title{font-size:14px; color:#708494; padding-bottom:10px}
+.topCont .thisWeek .contBox .cardArea .box_set{width:210px; height:294px; border:1px solid #d6d6d6; background:none;}
+.topCont .thisWeek .contBox .cardArea .list_set{width:210px; overflow:hidden;}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con{position:relative; width:210px; height:170px; overflow:hidden; background:#eceff0;}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con a {display:block;}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .thumb{width:210px; height:170px}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .tag_icon{position:absolute; right:10px; bottom:10px}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .check_con{display:none; position:absolute; top:0; left:0; width:210px; height:170px; background:url(../images/main/list_check3.png) no-repeat}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .count_con{position:absolute; top:8px; left:8px; display:inline-block; width:44px; height:44px; background:url(../images/common/list_num_bg.png) no-repeat; text-align:center; font-size:16px; color:#4f8ed2; font-weight:600; padding-top:12px}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .chk_box{position:absolute; top:8px; left:8px; display:inline-block}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .type_icon{position:absolute; left:10px; bottom:10px}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .running_time{position:absolute; left:10px; bottom:10px; padding:3px 10px; border-radius:10px; background:#3b3838; color:#fff; font-size:11px; line-height:15px; letter-spacing:0.5px;}
+.topCont .thisWeek .contBox .cardArea .list_set .img_con .gradation{display:inline-block; width:210px; height:170px; position:absolute; top:0; left:0; background:url(../images/main/card_gra.png) no-repeat bottom}
+.topCont .thisWeek .contBox .cardArea.check .list_set .img_con .check_con{display:block}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con{position:relative; height:94px; padding:15px; background:#fff;}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .title{font-size:13px; line-height:17px; min-height:54px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .title a{color:#4c4c4c}
+.topCont .thisWeek .contBox .cardArea:hover .list_set .info_con .title a{text-decoration:underline}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .info{color:#808080}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .bottom_con{margin-top:8px; height:14px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .bottom_con span img{vertical-align:middle; margin-right:3px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .bottom_con .movie{color:#17b6a0}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .bottom_con .quest{color:#f58e30; margin-left:5px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .bottom_con .webtoon{color:#ff8481}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .bottom_con .game{color:#4890e4; margin-left:5px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .fav_con{position:absolute; bottom:14px; right:14px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .fav_con a{display:inline-block; width:30px; height:30px; vertical-align:top; background:url(../images/common/fav_icon.png) no-repeat}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .fav_con a:hover{background-position:0 -30px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .fav_con.on a{background-position:0 -30px}
+.topCont .thisWeek .contBox .cardArea .list_set .info_con .morebtn{position:absolute; bottom:11px; right:15px;}
+
+/* 인기 학습카드 */
+.topCont .popularCard {position:relative; width:229px;}
+.topCont .popularCard .btnSort {position:absolute; top:0; right:0; overflow:hidden; *top:3px;}
+.topCont .popularCard .btnSort button {float:left; padding:5px; font-size:12px; color:#808080; background:none; *padding:0;}
+.topCont .popularCard .btnSort button.on {color:#e74a3b;}
+.topCont .popularCard .btnSort button + button {background:url('../images/layout/bar_gray4.gif') no-repeat 0 center #fff;}
+.topCont .popularCard .tabSort {display:none;}
+.topCont .popularCard .tabSort.on {display:block;}
+.topCont .popularCard .tabBtnCard {overflow:hidden;}
+.topCont .popularCard .tabBtnCard button {display:block; float:left; width:58px; height:33px; font-size:13px; font-weight:600; color:#808080; background:url('../images/layout/bg_cardtab.png') no-repeat 0 0; background-size:100% 100%;}
+.topCont .popularCard .tabBtnCard button + button {margin-left:-1px;}
+.topCont .popularCard .tabBtnCard button.on {color:#e74a3b; line-height:28px; background:url('../images/layout/bg_cardtab_on.png') no-repeat 0 0; background-size:100% 100%; *line-height:25px;}
+.topCont .popularCard .cardList {display:none; width:225px; margin:3px 1px;}
+.topCont .popularCard .cardList.on {display:block;}
+.topCont .popularCard .cardList li {position:relative; line-height:28px;}
+.topCont .popularCard .cardList li a {display:block;}
+.topCont .popularCard .cardList li .txt {display:block; width:170px; margin-left:20px; padding-right:10px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#6b6b6b;}
+.topCont .popularCard .cardList li .type {position:absolute; top:0; right:0;; width:23px; padding-left:10px; text-align:center; background:url('../images/layout/bar_gray4.gif') no-repeat 0 50%;}
+.topCont .popularCard .cardList li .num {position:absolute; top:6px; left:0; display:block; width:16px; height:16px; background:url('../images/main/renewal2018/ico_list_num.png') no-repeat;}
+.topCont .popularCard .cardList li.num1 .num{background-position:0 0;}
+.topCont .popularCard .cardList li.num2 .num{background-position:0 -20px;}
+.topCont .popularCard .cardList li.num3 .num{background-position:0 -40px;}
+.topCont .popularCard .cardList li.num4 .num{background-position:0 -60px;}
+.topCont .popularCard .cardList li.num5 .num{background-position:0 -80px;}
+.topCont .popularCard .cardList li.num6 .num{background-position:0 -100px;}
+.topCont .popularCard .cardList li.num7 .num{background-position:0 -120px;}
+.topCont .popularCard .cardList li.num8 .num{background-position:0 -140px;}
+.topCont .popularCard .cardList li.num9 .num{background-position:0 -160px;}
+.topCont .popularCard .cardList li.num10 .num{background-position:0 -180px;}
+.topCont .popularCard .cardList li.num1:hover .num{background-position:-20px 0;}
+.topCont .popularCard .cardList li.num2:hover .num{background-position:-20px -20px;}
+.topCont .popularCard .cardList li.num3:hover .num{background-position:-20px -40px;}
+.topCont .popularCard .cardList li.num4:hover .num{background-position:-20px -60px;}
+.topCont .popularCard .cardList li.num5:hover .num{background-position:-20px -80px;}
+.topCont .popularCard .cardList li.num6:hover .num{background-position:-20px -100px;}
+.topCont .popularCard .cardList li.num7:hover .num{background-position:-20px -120px;}
+.topCont .popularCard .cardList li.num8:hover .num{background-position:-20px -140px;}
+.topCont .popularCard .cardList li.num9:hover .num{background-position:-20px -160px;}
+.topCont .popularCard .cardList li.num10:hover .num{background-position:-20px -180px;}
+.topCont .popularCard .cardList li:hover .txt, .popularCard .cardList ol li:hover .type {color:#e74a3b;}
+
+/* 이벤트 */
+.topCont .event {width:262px; overflow:hidden;}
+.topCont .event .eventBanWrap{position:relative; width:262px; height:217px; transform:translate3d(0px, 0px, 0px);}
+.topCont .event .eventBanWrap .banner_set{height:217px; border-radius:10px; overflow:hidden;}
+.topCont .event .eventBanWrap .banner_ctrl{position:absolute; top:-30px; right:0; display:inline-block; height:10px;}
+.topCont .event .eventBanWrap .banner_ctrl *{vertical-align:top;}
+.topCont .event .eventBanWrap .banner_ctrl > span{display:inline-block; height:10px;}
+.topCont .event .eventBanWrap .banner_ctrl .page_menu a{display:inline-block; width:10px; height:10px; background:url('../images/main/renewal2018/btn_slider.png') no-repeat -28px 0; margin-left:2px; font-size:0;}
+.topCont .event .eventBanWrap .banner_ctrl .page_menu a:first-child{margin-left:0;}
+.topCont .event .eventBanWrap .banner_ctrl .page_menu a.on{width:24px; background-position:0 0;}
+*:first-child+html .topCont .event .eventBanWrap .banner_ctrl .play_btn{top:0; margin-left:0; width:25px; background-position:5px 0;}
+*:first-child+html .topCont .event .eventBanWrap .banner_ctrl .play_btn.on{background-position:5px -21px;}
+
+/* 블로그 */
+.topCont .blog {width:262px; height:79px; margin-top:20px; background:url('../images/main/renewal2018/bg_blog.png') no-repeat;}
+.topCont .blog a:hover span {text-decoration:underline;}
+.topCont .blog .btnGoBlog {display:block; padding:14px 16px; line-height:51px; font-size:15px; font-weight:600; color:#808080;}
+.topCont .blog .btnGoBlog img{vertical-align:middle; margin-right:10px;}
+
+/* ----------------------------------------------------------------------- middle contents */
+.middleCont  {padding-top:10px; background:url('../images/common/deco_line.png') repeat-x;}
+.middleCont > div {position:relative;}
+.middleCont > div > h4 {margin:30px 0; padding-bottom:15px; border-bottom:1px solid #dcdcdc;}
+
+/* 이 주의 학습카드 */
+.middleCont .eleContList {margin-top:50px;}
+.middleCont .tabBtn {position:absolute; top:-9px; right:0;}
+.middleCont .tabBtn_02 {top:-10px;}
+.middleCont .tabBtn li {float:left; width:120px; height:48px; text-align:center; background:#f1f1f1; border:1px solid #dcdcdc;}
+.middleCont .tabBtn li button {width:100%; line-height:48px; font-size:14px; font-weight:500; color:#808080; background:none;}
+.middleCont .tabBtn li + li {margin-left:-1px;}
+.middleCont .tabBtn li.on {height:47px; color:#e74a3b; background:#fff; border-top:2px solid #e74a3b; border-bottom:1px solid #fff;}
+.middleCont .tabBtn li.on button {line-height:47px;}
+.middleCont .tabContBox .tabCont {position:relative;}
+.middleCont .tabContBox .tabCont .box_list_con {width:auto; margin-top:15px;}
+.middleCont .tabContBox .tabCont .tabTit {font-size:16px; font-weight:700; color:#4c4c4c;}
+.middleCont .tabContBox .tabCont {display:none;}
+.middleCont .tabContBox .tabCont.on {display:block;}
+.middleCont .tabContBox .btnMore {position:absolute; top:0; right:0;}
+.middleCont .box_list_con li .list_set .img_con {height:169px; border:1px solid #eceff0;}
+.middleCont .box_list_con li .list_set .img_con .check_con {width:209px; overflow:hidden; border-top-left-radius:10px; border-top-right-radius:10px;}
+.middleCont .box_list_con li.square .list_set .img_con .check_con {border-radius:0;}
+.middleCont .box_list_con li.boxF .list_set .gameTit .check_con {width:209px; height:228px; overflow:hidden; border-top-left-radius:10px; border-top-right-radius:10px;}
+.middleCont .box_list_con li.boxF.square .list_set .gameTit .check_con {border-radius:0;}
+
+/* ----------------------------------------------------------------------- bottom contents */
+.bottomCont {margin-top:20px; padding-top:25px; padding-bottom:60px; background:url('../images/common/deco_line.png') repeat-x; overflow:hidden;}
+.bottomCont > div {float:left;}
+.bottomCont > div > h4 {margin:25px 0 15px;}
+.bottomCont .midTool, .bottomCont .appLink {margin-left:32px;}
+
+/* shortcut menu */
+.bottomCont .shortcut {position:relative; background:url('../images/main/renewal2018/bg_shortcut.png') no-repeat;}
+.bottomCont .shortcut h4 {float:left; width:192px; margin-top:29px; text-align:center;}
+.bottomCont .shortcut.midTool h4 img {margin-left:-12px;}
+.bottomCont .shortcut a {display:block;}
+.bottomCont .shortcut a:hover {text-decoration:underline;}
+.bottomCont .shortcut ul {float:left; width:225px; height:79px; padding:11px 30px 11px 37px;}
+.bottomCont .shortcut ul li {float:left; width:77px; text-align:center;}
+.bottomCont .shortcut ul li + li {margin-left:67px;}
+.bottomCont .shortcut ul li span.icoShort {display:block; width:60px; height:60px; margin:0 0 5px 8px; background:url('../images/main/renewal2018/ico_shortcut.png') no-repeat;}
+.bottomCont .shortcut ul li.game_01 span.icoShort {background-position:0 0;}
+.bottomCont .shortcut ul li.game_02 span.icoShort {background-position:0 -60px;}
+.bottomCont .shortcut ul li.tool_01 span.icoShort {background-position:0 -120px;}
+.bottomCont .shortcut ul li.tool_02 span.icoShort {background-position:0 -180px;}
+.bottomCont .shortcut ul li.game_01:hover span.icoShort {background-position:-60px 0;}
+.bottomCont .shortcut ul li.game_02:hover span.icoShort {background-position:-60px -60px;}
+.bottomCont .shortcut ul li.tool_01:hover span.icoShort {background-position:-60px -120px;}
+.bottomCont .shortcut ul li.tool_02:hover span.icoShort {background-position:-60px -180px;}
+.bottomCont .shortcut ul li span.titShort {font-size:13px; font-weight:400; color:#555555; letter-spacing:-1px;}
+.bottomCont .shortcut ul li:hover span.titShort {font-size:13px; font-weight:500; color:#222222;}
+.bottomCont .shortcut .btnMore {position:absolute; top:61px; left:37px;}
+
+/* 공지사항 */
+.bottomCont .notice {position:relative; width:484px;}
+.bottomCont .notice .btnMore {position:absolute; top:30px; right:0;}
+.bottomCont .notice ul {width:429px; height:81px; padding:10px 20px 10px 35px; background:url('../images/main/renewal2018/bg_app.png') no-repeat;}
+.bottomCont .notice ul li {position:relative; font-size:13px; line-height:27px;}
+.bottomCont .notice ul li .icoNotice {display:block; position:absolute; top:12px; left:-12px; width:4px; height:4px; background:url('../images/main/renewal2018/blt_notice.png') no-repeat;}
+.bottomCont .notice ul li a {display:block; width:350px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.bottomCont .notice ul li a:hover {text-decoration:underline;}
+.bottomCont .notice ul li .noticeDate {float:right; margin-top:-26px; font-size:12px;}
+
+/* 모바일 앱 서비스 */
+.bottomCont .appLink {position:relative; width:484px;}
+.bottomCont .appLink a:hover span {text-decoration:underline;}
+.bottomCont .appLink .btnGoApp {display:block; width:439px; height:81px; padding:16px 20px 10px 25px; background:url('../images/main/renewal2018/bg_app.png') no-repeat;}
+.bottomCont .appLink .btnGoApp img {float:left;}
+.bottomCont .appLink .btnGoApp img + img {margin:10px 12px 0 26px;}
+.bottomCont .appLink .btnGoApp p {float:left; margin-top:9px; font-size:14px; line-height:25px; font-weight:500; color:#e74a3b;}
+.bottomCont .appLink .btnGoApp span {font-size:17px; font-weight:600; color:#808080; vertical-align:middle;}
+.bottomCont .appLink .btnGoApp span + span{font-size:13px; font-weight:600; color:#000;}
+
+/* 동영상 레이어 */
+.dim {position:fixed; top:0; bottom:0; left:0; right:0; display:none; width:100%; height:100%; background:#404040; opacity:0.5; filter:alpha(opacity=50); z-index:998;}
+.playerWrap {position:fixed; top:50%; left:50%; display:none; width:804px; height:430px; margin-top:-215px; margin-left:-422px; z-index:999;}
+.playerWrap .player {position:relative; width:764px; height:430px; background:#000; z-index:999;}
+.playerWrap .btnClose {position:absolute; top:0; right:0; width:40px; height:40px; background:url('../images/btn/btn_close7.png') no-repeat center center #e74a3b; z-index:999;}
+
+.cboth::before, .cboth:after { content:""; display:block; height:0; }
+.cboth:after { clear:both; }

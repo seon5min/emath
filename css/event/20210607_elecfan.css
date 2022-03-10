@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.elecfan {position:relative; width:763px; overflow:hidden}
+.elecfan .snswrap {position:absolute; top:25px; right:27px;}
+.elecfan .snswrap a {float:left; width:28px; height:28px; font-size:0; line-height:0;margin-left:7px}
+.elecfan .top,
+.elecfan .top.before,
+.elecfan .top.end {position:relative}
+.elecfan .top.before, .elecfan .top {height:761px; background:url('../../images/event/20210607/cont_top.png') 0 0 no-repeat;}
+.elecfan .top.end {height:1009px; background:url('../../images/event/20210607/cont_top_end.png') 0 0 no-repeat;}
+.elecfan .top.before .cnt {position:absolute; top:543px; left:140px}
+
+.elecfan .top.before .btn_apply,
+.elecfan .top .btn_apply {display:block; position:absolute; top:516px; right:140px;}
+
+.elecfan .top [class^="btn_winner"] {position:absolute}
+.elecfan .top .btn_winner1 {top:761px; right:137px;}
+.elecfan .top .btn_winner2 {top:761px; right:137px;}
+.elecfan .top .btn_winner3 {top:761px; right:137px;}
+.elecfan .top .btn_winner2 .tooltip {position:absolute; right:-80px; top:-40px; z-index:1000}
+.elecfan .top .btn_winner3 .tooltip {position:absolute; right:-80px; top:-40px; z-index:1000}
+
+.elecfan .top::after {display:block; content:""; position:absolute; bottom:-55px; right:0; width:87px; height:121px; background:url('../../images/event/20210607/img_obj1.png') 0 0 no-repeat; z-index:9999;}
+.elecfan .gift, .elecfan .howto {position:relative}
+.elecfan .gift::after {display:block; content:""; position:absolute; bottom:-40px; left:0; width:119px; height:174px; background:url('../../images/event/20210607/img_obj2.png') 0 0 no-repeat; z-index:9999}
+.elecfan .howto::after {display:block; content:""; position:absolute; bottom:-70px; right:0; width:105px; height:161px; background:url('../../images/event/20210607/img_obj3.png') 0 0 no-repeat; z-index:9999}
+.elecfan .bonus_event::after {display:block; content:""; position:absolute; top:-120px; left:0; width:105px; height:161px; background:url('../../images/event/20210607/img_obj3.png') 0 0 no-repeat; transform: rotateY(180deg);}
+
+.elecfan .prenoti {position:absolute; top:-72px; left:0px; width:100%; height:100%; text-align:center}
+.elecfan .dim_event {position:absolute; top:-70px; left:0px; width:100%; height:100%; text-align:center}
+.elecfan .end .dim_event {position:absolute; top:-71px; left:0px; width:100%; height:100%; text-align:center}
+
+.elecfan .eventArea {position:relative;}
+.elecfan .eventArea .math_contents {background:url('../../images/event/20210607/bg_contents.png') 0 0 no-repeat; height:213px;}
+.elecfan .eventArea .tab_cnt {overflow:hidden; width:566px; height:41px; margin:0 auto; padding-top:125px}
+.elecfan .eventArea .tab_cnt li {float:left; width:134px; height:100%; margin-left:10px; background-image:url('../../images/event/20210607/tab_cont.png'); background-repeat:no-repeat}
+.elecfan .eventArea .tab_cnt li a {display:block; width:100%;height:100%; text-indent: -9999px;}
+.elecfan .eventArea .tab_cnt li:first-child {margin-left:0; background-position:0 0;}
+.elecfan .eventArea .tab_cnt li:nth-child(2) {background-position:-144px 0;}
+.elecfan .eventArea .tab_cnt li:nth-child(3) {background-position:-288px 0;}
+.elecfan .eventArea .tab_cnt li:nth-child(4) {background-position:-432px 0;}
+.elecfan .eventArea .tab_cnt li:first-child:hover {background-position:0 -42px;}
+.elecfan .eventArea .tab_cnt li:nth-child(2):hover {background-position:-144px -42px;}
+.elecfan .eventArea .tab_cnt li:nth-child(3):hover {background-position:-288px -42px;}
+.elecfan .eventArea .tab_cnt li:nth-child(4):hover {background-position:-432px -42px;}
+
+.elecfan .eventArea .main_event {background:url('../../images/event/20210607/bg_main_event.png') 0 0 no-repeat; height:641px}
+.elecfan .eventArea .main_event .fan.off {padding:150px 0 5px 232px}
+.elecfan .eventArea .main_event .fan.on {padding:123px 0 5px 90px}
+.elecfan .eventArea .main_event .fan.on .fanimg1 {display:none}
+.elecfan .eventArea .main_event .fan.on .fanimg2 {display:block}
+.elecfan .eventArea .main_event .fan.off .fanimg1 {display:block}
+.elecfan .eventArea .main_event .fan.off .fanimg2 {display:none}
+.elecfan .eventArea .main_event .my_status {width:578px; height:128px; background:url('../../images/event/20210607/status_charging.png') 0 0 no-repeat; margin:0 auto; overflow:hidden;}
+.elecfan .eventArea .main_event .my_status li {float:left; box-sizing:border-box; position:relative}
+.elecfan .eventArea .main_event .my_status li .battery {position:absolute; left:31px; top:28px; width:125px; height:63px; background-image:url('../../images/event/20210607/img_battery.png'); background-repeat:no-repeat; }
+.elecfan .eventArea .main_event .my_status li .battery.r0 {background-position:0 0; height:62px;}
+.elecfan .eventArea .main_event .my_status li .battery.r20 {background-position:0 -63px;}
+.elecfan .eventArea .main_event .my_status li .battery.r40 {background-position:0 -126px;}
+.elecfan .eventArea .main_event .my_status li .battery.r60 {background-position:0 -189px;}
+.elecfan .eventArea .main_event .my_status li .battery.r80 {background-position:0 -252px;}
+.elecfan .eventArea .main_event .my_status li .battery.r100 {background-position:0 -315px;}
+.elecfan .eventArea .main_event .my_status li .bat_rate {position:absolute; left:174px; top:57px; font-size:24px;  font-weight:600;  color:#09141c}
+.elecfan .eventArea .main_event .my_status li .bat_rate strong { font-weight:800; color:#4656fa}
+.elecfan .eventArea .main_event .my_status li:first-child {width:350px;}
+.elecfan .eventArea .main_event .my_status li:last-child {width:228px;}
+.elecfan .eventArea .main_event .my_status li .get_num {position:absolute; left:433px; top:57px; font-size:24px; width:70px; font-weight:800; color:#4656fa; }
+.elecfan .eventArea .main_event .my_status li .get_num strong::after {content:""; display:inline-block; width:22px; height:26px; background:url('../../images/event/20210607/txt_time.png') 0 0 no-repeat; vertical-align:top; margin-left:2px}
+.elecfan  .bonus_event {background:url('../../images/event/20210607/bonus_evnet.png') 0 0 no-repeat; height:671px; position:relative;}
+.elecfan  .bonus_event a,
+.elecfan  .bonus_event span {position:absolute; display:block; left:170px; top:557px; width:436px; height:56px; background-image:url('../../images/event/20210607/btn_go_blog.png'); background-repeat:no-repeat; text-indent:-9999px; font-size:0}
+.elecfan  .bonus_event .btn_blog_v {background-position:0 0}
+.elecfan  .bonus_event .btn_blog_c {background-position:0 -58px}
+.elecfan  .bonus_event .btn_blog_w {background-position:0 -116px}
+.elecfan  .bonus_event .btn_blog_f {background-position:0 -174px}
+
+.elecfan .eventArea .event_result {height:255px; background:url('../../images/event/20210607/bg_bonus_result.png') 0 0 no-repeat; box-sizing:border-box; padding-top:85px}
+.elecfan .eventArea .event_result ul {width:578px; height:128px; margin:0 auto; overflow:hidden;}
+.elecfan .eventArea .event_result ul li {float:left; box-sizing:border-box; position:relative}
+.elecfan .eventArea .event_result ul li .on_num {position:absolute; left:124px; top:57px; font-size:24px;  font-weight:600;  color:#09141c}
+.elecfan .eventArea .event_result ul li .on_num strong { font-weight:800; color:#4656fa}
+.elecfan .eventArea .event_result ul li .on_num strong::after {content:""; display:inline-block; width:22px; height:26px; background:url('../../images/event/20210607/txt_time.png') 0 0 no-repeat; vertical-align:top; margin-left:2px}
+.elecfan .eventArea .event_result ul li:first-child {width:350px;}
+.elecfan .eventArea .event_result ul li:last-child {width:228px;}
+.elecfan .eventArea .event_result ul li .bonus_date {position:absolute; left:377px; top:57px; font-size:24px; width:160px; font-weight:800; color:#4656fa; }
+.elecfan .eventArea .event_result ul li .bonus_date * {display:inline-block}
+.elecfan .eventArea .event_result ul li .bonus_date span[class^="txt"] {height:27px; text-indent:-9999px; font-size:0; background-image:url('../../images/event/20210607/txt_date.png'); background-repeat:no-repeat;vertical-align:top;}
+.elecfan .eventArea .event_result ul li .bonus_date .txt1 {width:22px; background-position:-22px 0;}
+.elecfan .eventArea .event_result ul li .bonus_date .txt2 {width:74px; background-position:-66px 0;}
+
+/* notice */
+.elecfan .notice {padding:35px 0 30px 70px; background-color:#2f3031;}
+.elecfan .notice ul {padding-top:10px;}
+.elecfan .notice li {margin-top:5px; padding-left:12px; color:#ffffff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20210607/bul.png') no-repeat 0 10px; letter-spacing:-0.5px;}
+.elecfan .notice li .point {color:#ffc13b;}
+
+.elecfan .event_wrapper {position:relative}
+.elecfan .event_wrapper .dim_popup .dim {position:absolute; left:0; top:0; background:#000; opacity:0.6; width:100%; height:100%; z-index: 1000;}
+.elecfan .event_wrapper .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-450px 0; z-index: 1001}
+.elecfan .event_wrapper.end .dim_popup .s_layer {position:absolute; top:50%; left:0; width:763px; text-align:center; margin:-160px 0}

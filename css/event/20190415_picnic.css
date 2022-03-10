@@ -1,0 +1,159 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+
+.picnic {background:none; }
+.picnic .top {position:relative;}
+.picnic .top .btn-apply {position:absolute; top:697px; left:411px; display:block; width:314px; height:76px; font-size:0; border-radius:18px; background:#ffd121; opacity:0; filter:alpha(opacity='0');}
+.picnic .top .btn-winner1 {position:absolute; top:749px; left:228px; display:block; width:308px; height:74px; background:url('../../images/event/20190415/btn_event_fin.png') 0 0 no-repeat;}
+.picnic .top .btn-winner2 {position:absolute; top:749px; left:158px; display:block; width:447px; height:74px; background:url('../../images/event/20190415/btn_event_fin.png') 0-79px no-repeat;}
+.picnic .top .btn-winner3 {position:absolute; top:749px; left:158px; display:block; width:447px; height:74px; background:url('../../images/event/20190415/btn_event_fin.png') 0-158px no-repeat;}
+
+.picnic .top .cmt {position:absolute; top:775px; text-align:center; width:100%;}
+.picnic .snswrap {position:absolute; top:29px; right:20px;}
+.picnic .snswrap a{display:inline-block; width:35px; height:35px; margin-left:6px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20190401/img_sns.png'); *display: inline; zoom: 1;}
+.picnic .snswrap a.fb {background-position:0 0;}
+.picnic .snswrap a.tw {background-position:-41px 0;}
+.picnic .snswrap a.kko {background-position:-82px 0;}
+
+.picnic .eventArea {background:#bcdb5d; padding-top:30px; position:relative}
+.eventArea h3 {text-align:center; margin-bottom:15px}
+.tab_stcard {width:643px; margin:0 auto; border:2px solid #45771a; border-radius:20px; padding:17px 22px; overflow:hidden; background:#fff; margin-bottom:30px}
+.tab_stcard li {float:left; width:153px; height:54px; background-image:url('../../images/event/20190415/tab.png'); background-repeat:no-repeat; margin-left:9px}
+.tab_stcard li a {display:block; width:100%; height:100%}
+.tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.tab_stcard li.tab02 {background-position:-162px 0;}
+.tab_stcard li.tab03 {background-position:-324px 0;}
+.tab_stcard li.tab04 {background-position:-486px 0;}
+.tab_stcard li.tab01:hover {background-position:0 -56px}
+.tab_stcard li.tab02:hover {background-position:-162px -56px;}
+.tab_stcard li.tab03:hover {background-position:-324px -56px;}
+.tab_stcard li.tab04:hover {background-position:-486px -56px;}
+.eventArea h4 {text-align:center;  margin-bottom:15px}
+.btn_apply_rule {display:inline-block; width:152px;  margin:0 0 35px 305px;; position:relative; z-index:400;}
+.imgobj_top {position:absolute; left:50px; top:260px; z-index:300}
+
+.att_benefit.hid { display:none}
+.att_benefit {width:683px; height:63px; overflow:hidden; background:#bcdb5d url('../../images/event/20190415/att_benefit.png') 0 0 no-repeat ; margin:0 auto 40px;}
+.att_benefit li {float:left; width:340px; color:#fff; font-size:25px;}
+.att_benefit li:first-child {margin-right:3px; }
+.att_benefit li strong {display:inline-block; line-height:60px; color:#fffd31; font-size:40px; margin-left:240px}
+.att_benefit li:first-child strong {margin-left:212px}
+
+.racewrap { height:827px; position:relative; background:#bcdb5d url('../../images/event/20190415/race_shadow.png') 35px 5px no-repeat }
+.racewrap span[class^="race"] {position:absolute; background-repeat:no-repeat: background-position:0 0}
+.racewrap span[class^="race"].on {background-position:0 -150px;}
+.racewrap .race1 {left:224px; top:0; width:88px; height:95px; background-image:url('../../images/event/20190415/race1.png'); z-index:232}
+.racewrap .race2 {left:312px; top:0; width:85px; height:95px;  background-image:url('../../images/event/20190415/race2.png'); z-index:231}
+.racewrap .race3 {left:397px; top:0; width:83px; height:95px;  background-image:url('../../images/event/20190415/race3.png'); z-index:230}
+.racewrap .race4 {left:480px; top:0; width:97px; height:97px;  background-image:url('../../images/event/20190415/race4.png'); z-index:229}
+.racewrap .race5 {left:544px; top:7px; width:105px; height:120px;  background-image:url('../../images/event/20190415/race5.png'); z-index:228 }
+.racewrap .race6 {left:548px; top:106px; width:101px; height:120px;  background-image:url('../../images/event/20190415/race6.png'); z-index:227}
+.racewrap .race7 {left:488px; top:140px; width:102px; height:95px;  background-image:url('../../images/event/20190415/race7.png'); z-index:226}
+.racewrap .race8 {left:406px; top:143px; width:82px; height:95px;  background-image:url('../../images/event/20190415/race8.png'); z-index:225}
+.racewrap .race9 {left:324px; top:142px; width:82px; height:95px;  background-image:url('../../images/event/20190415/race9.png'); z-index:224}
+.racewrap .race10 {left:240px; top:142px; width:84px; height:88px;  background-image:url('../../images/event/20190415/race10.png'); z-index:223}
+.racewrap .race11 {left:146px; top:142px; width:94px; height:95px;  background-image:url('../../images/event/20190415/race11.png'); z-index:222}
+.racewrap .race12 {left:60px; top:144px; width:109px; height:115px;  background-image:url('../../images/event/20190415/race12.png'); z-index:221}
+.racewrap .race13 {left:57px; top:232px; width:98px; height:125px;  background-image:url('../../images/event/20190415/race13.png'); z-index:220}
+.racewrap .race14 {left:100px; top:280px; width:112px; height:97px;  background-image:url('../../images/event/20190415/race14.png'); z-index:219}
+.racewrap .race15 {left:212px; top:286px; width:83px; height:97px;  background-image:url('../../images/event/20190415/race15.png'); z-index:218}
+.racewrap .race16 {left:295px; top:287px; width:84px; height:88px;  background-image:url('../../images/event/20190415/race16.png'); z-index:217}
+.racewrap .race17 {left:379px; top:287px; width:83px; height:88px;  background-image:url('../../images/event/20190415/race17.png'); z-index:216}
+.racewrap .race18 {left:462px; top:288px; width:84px; height:88px;  background-image:url('../../images/event/20190415/race18.png'); z-index:215}
+.racewrap .race19 {left:546px; top:288px; width:98px; height:88px;  background-image:url('../../images/event/20190415/race19.png'); z-index:214}
+.racewrap .race20 {left:613px; top:292px; width:105px; height:108px;  background-image:url('../../images/event/20190415/race20.png'); z-index:213}
+.racewrap .race21 {left:621px; top:385px; width:98px; height:119px;  background-image:url('../../images/event/20190415/race21.png'); z-index:212}
+.racewrap .race22 {left:560px; top:427px; width:106px; height:108px;  background-image:url('../../images/event/20190415/race22.png'); z-index:211}
+.racewrap .race23 {left:478px; top:431px; width:83px; height:95px;  background-image:url('../../images/event/20190415/race23.png'); z-index:209}
+.racewrap .race24 {left:394px; top:431px; width:84px; height:95px;  background-image:url('../../images/event/20190415/race24.png'); z-index:208}
+.racewrap .race25 {left:297px; top:430px; width:100px; height:95px;  background-image:url('../../images/event/20190415/race25.png'); z-index:207}
+.racewrap .race26 {left:221px; top:436px; width:106px; height:110px;  background-image:url('../../images/event/20190415/race26.png'); z-index:206}
+.racewrap .race27 {left:221px; top:533px; width:99px; height:115px;  background-image:url('../../images/event/20190415/race27.png'); z-index:205}
+.racewrap .race28 {left:278px; top:570px; width:105px; height:115px;  background-image:url('../../images/event/20190415/race28.png'); z-index:204}
+.racewrap .race29 {left:383px; top:575px; width:81px; height:88px;  background-image:url('../../images/event/20190415/race29.png'); z-index:203}
+.racewrap .race30 {left:464px; top:575px; width:83px; height:88px;  background-image:url('../../images/event/20190415/race30.png'); z-index:202}
+.racewrap .race31 {left:547px; top:575px; width:84px; height:88px;  background-image:url('../../images/event/20190415/race31.png'); z-index:201}
+.racewrap .race32 {left:631px; top:575px; width:86px; height:88px;  background-image:url('../../images/event/20190415/race32.png'); z-index:200}
+.racewrap .gift_twix {position:absolute; top:64px; left:10px}
+.racewrap .gift_bunsik {position:absolute; top:60px; left:10px}
+.racewrap .gift_chichen { position:absolute; top:-10px; left:30px}
+.racewrap .gift_speaker { position:absolute; top:75px; left:70px}
+.racewrap .start {position:absolute; left:150px; top:10px}
+.racewrap .imgobj1 {position:absolute; left:396px; top:72px; z-index:300}
+.racewrap .imgobj2 {position:absolute; left:438px; top:218px; z-index:300}
+.racewrap .imgobj3 {position:absolute; left:488px; top:377px; z-index:300}
+.racewrap .imgobj4 {position:absolute; left:573px; top:509px; z-index:300}
+.racewrap .imgobj5 {position:absolute; left:609px; top:658px; z-index:300}
+.racewrap .imgobj6 {position:absolute; right:20px; top:-10px; z-index:300}
+
+.racewrap .bus {position:absolute; z-index:400; left:77px; top:10px}
+.racewrap .bus.hid {display:none}
+.racewrap .race1 .bus{left:20px; top:10px}
+.racewrap .race2 .bus{left:12px; top:10px}
+.racewrap .race3 .bus{left:12px; top:10px}
+.racewrap .race4 .bus{left:8px; top:10px}
+.racewrap .race5 .bus{left:25px; top:27px}
+.racewrap .race6 .bus{left:20px; top:10px}
+.racewrap .race7 .bus{left:10px; top:15px}
+.racewrap .race8 .bus{left:10px; top:10px}
+.racewrap .race9 .bus{left:10px; top:10px}
+.racewrap .race10 .bus{left:10px; top:10px}
+.racewrap .race11 .bus{left:25px; top:10px}
+.racewrap .race12 .bus{left:35px; top:25px}
+.racewrap .race13 .bus{left:20px; top:15px}
+.racewrap .race14 .bus{left:40px; top:15px}
+.racewrap .race15 .bus{left:10px; top:15px}
+.racewrap .race16 .bus{left:10px; top:15px}
+.racewrap .race17 .bus{left:10px; top:15px}
+.racewrap .race18 .bus{left:10px; top:15px}
+.racewrap .race19 .bus{left:10px; top:15px}
+.racewrap .race20 .bus{left:25px; top:30px}
+.racewrap .race21 .bus{left:20px; top:15px}
+.racewrap .race22 .bus{left:10px; top:15px}
+.racewrap .race23 .bus{left:10px; top:15px}
+.racewrap .race24 .bus{left:10px; top:15px}
+.racewrap .race25 .bus{left:30px; top:15px}
+.racewrap .race26 .bus{left:30px; top:25px}
+.racewrap .race27 .bus{left:20px; top:10px}
+.racewrap .race28 .bus{left:30px; top:15px}
+.racewrap .race29 .bus{left:10px; top:10px}
+.racewrap .race30 .bus{left:10px; top:10px}
+.racewrap .race31 .bus{left:10px; top:10px}
+.racewrap .race32 .bus{left:10px; top:10px}
+
+.bonus_event {width:763px; height:260px; background:url('../../images/event/20190415/bonus_attdevent.png') 0 0 no-repeat; position:relative}
+.bonus_event a, .bonus_event > span, .bonus_event > em {display:block; position:absolute; top:155px; left:52px; width:268px; height:44px; background:url('../../images/event/20190415/bg_attdevent.png') 0 0 no-repeat; text-align:left;  padding:13px 0 0 30px}
+.bonus_event em.chk_attd {width:254px; height:57px; background-position:0 -60px; font-style:normal}
+
+.bonus_event span.finish {width:228px; height:57px; padding:0; background:url('../../images/event/20190415/bg_attdevent_f.png') 0 0 no-repeat}
+.bonus_event a span,  .bonus_event em span {display:inline-block; font-size:18px; color:#fffd31; font-weight:600;}
+.bonus_event a strong, .bonus_event em strong  {color:#fff; font-size:22px}
+
+.picnic .eventArea_end {background:url('../../images/event/20190415/bg_myresult.png') 0 0 no-repeat; padding-bottom:80px}
+.eventArea_end .myresult {padding:130px 0 0 0;}
+.eventArea_end .myresult ul {width:645px; height:82px; background:url('../../images/event/20190415/bg_appresult.png') 0 0 no-repeat; margin:0 auto; overflow:hidden; padding:16px 21px}
+.eventArea_end .myresult ul li {float:left; width:298px;}
+.eventArea_end .myresult ul li:first-child {margin-right:45px;}
+.eventArea_end .myresult .finalcs {display:block; width:100%; height:80px; background:url('../../images/event/20190415/bg_resultmark.png') 0 0 no-repeat; color:#fffd31; font-weight:bold; font-size:20px; line-height:80px}
+.eventArea_end .myresult .finalcs strong {display:inline-block; margin-left:160px; font-size:40px}
+.eventArea_end .myresult .apply {display:block; width:100%; height:80px; background:url('../../images/event/20190415/bg_resultmark.png') 0 -85px no-repeat;}
+.eventArea_end .myresult .noapply {display:block; width:100%; height:80px; background:url('../../images/event/20190415/bg_resultmark.png') 0 -170px no-repeat;}
+
+/*팝업공통*/
+.pop_common {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999; display:none }
+.pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
+.pop_common .btn_layerclose{position:absolute; top:20px; right:20px; display:inline-block; width:40px; height:40px; background-color:#fff;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); opacity:0;}
+.pop_common .popcon {position:relative; top:50%; z-index:10000; width:696px; height:425px; margin:-250px auto; /*padding-left:200px*/}
+
+/* notice */
+.picnic .notice {padding:35px 30px 30px 35px; background-color:#1c2f66;}
+.picnic .notice ul {padding-top:10px;}
+.picnic .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.picnic .notice li .point {color:#baccff;}
+

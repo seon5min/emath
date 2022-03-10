@@ -1,0 +1,104 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.dice {position:relative; width:763px; overflow:hidden} 
+.dice  h1 {position:absolute; top:39px; left:33px;}
+.dice .snswrap {position:absolute; top:34px; right:24px;}
+.dice .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20200609/img_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.dice .snswrap a.fb {background-position:0 0;}
+.dice .snswrap a.tw {background-position:-41px 0;}
+.dice .snswrap a.kko {background-position:-82px 0;}
+.dice .top,
+.dice .top_end {position:relative}
+.dice .top .btn-pre-apply {position:absolute; top:460px; left:208px; display:block; width:352px; height:78px; background:url('../../images/event/20200609/btn_event_before.png') 0 0 no-repeat;}
+.dice .top .btn-pre-apply.off {background-position:0 -80px;}
+.dice .top .btn-apply {position:absolute; top:460px; left:231px; display:block; width:304px; height:78px; background:url('../../images/event/20200609/btn_apply.png') 0 0  no-repeat;}
+.dice .top .btn-apply.off {background-position:0 -80px;}
+.dice .top [class^="btn-winner"] {position:absolute; top:460px; display:inline-block; height:78px; background-image:url('../../images/event/20200609/btn_event_fin.png'); background-repeat:no-repeat }
+.dice .top .btn-winner1 {left:225px; width:304px; background-position:0 0}
+.dice .top .btn-winner2 {left:199px; width:371px; background-position:0 -80px}
+.dice .top .btn-winner3 {left:169px; width:428px; background-position:0 -160px}
+.dice .top .cmt_end {position:absolute; left:73px; top:662px;}
+
+.dice .eventArea {background:url('../../images/event/20200609/bg_eventarea.png') 0 0 no-repeat; box-sizing:border-box; height:922px; position:relative;}
+.dice .eventArea.noapply {padding-bottom:0}
+.dice .eventArea .mydiceNum {width:653px; padding-top:102px; height:24px; margin:0 auto; overflow:hidden}
+.dice .eventArea .mydiceNum > * {display:block; float:left; height:24px; }
+.dice .eventArea .mydiceNum .tit1 {width:143px}
+.dice .eventArea .mydiceNum .tit1 + dd {width:76px; margin-right:10px; }
+.dice .eventArea .mydiceNum .tit2 {width:152px}
+.dice .eventArea .mydiceNum .tit2 + dd {width:66px; margin-right:10px}
+.dice .eventArea .mydiceNum .tit3 {width:123px}
+.dice .eventArea .mydiceNum dd {color:#ff5152;font-size:20px; font-weight:bold; vertical-align:top; line-height:20px; letter-spacing:-1px}
+.dice .eventArea .mydiceNum dd [class^="txt_num"]{display:inline-block; width:15px; height:19px; background-image:url(../../images/event/20200609/txt_mynum.png); background-repeat:no-repeat; text-indent:-9999px; margin-left:2px}
+.dice .eventArea .mydiceNum dd .txt_num1 {background-position:0 2px}
+.dice .eventArea .mydiceNum dd .txt_num2 {background-position:0 -21px}
+.dice .eventArea .marble {width:652px; height:653px; position:relative; margin:53px auto 0}
+.dice .eventArea .marble [class^="cell"] .tag_obj {position:absolute; width:107px; height:138px; background:url('../../images/event/20200609/img_piece.png') 0 0 no-repeat; text-indent:-9999px}
+.dice .eventArea .marble > .cell_1 .tag_obj {left:10px; top:-40px;}
+.dice .eventArea .marble > .cell_2 .tag_obj {left:142px; top:-40px;}
+.dice .eventArea .marble > .cell_3 .tag_obj {left:280px; top:-40px;}
+.dice .eventArea .marble > .cell_4 .tag_obj {left:408px; top:-40px;}
+.dice .eventArea .marble > .cell_5 .tag_obj {left:540px; top:-40px;}
+.dice .eventArea .marble > .cell_6 .tag_obj {left:540px; top:100px; }
+.dice .eventArea .marble > .cell_7 .tag_obj {left:540px; top:230px;}
+.dice .eventArea .marble > .cell_8 .tag_obj {left:540px; top:365px;}
+.dice .eventArea .marble > .cell_9 .tag_obj {left:540px; top:500px;}
+.dice .eventArea .marble > .cell_10 .tag_obj {left:408px; top:500px;}
+.dice .eventArea .marble > .cell_11 .tag_obj {left:280px; top:500px}
+.dice .eventArea .marble > .cell_12 .tag_obj {left:142px; top:500px}
+.dice .eventArea .marble > .cell_13 .tag_obj {left:10px; top:500px}
+.dice .eventArea .marble > .cell_14 .tag_obj {left:10px; top:365px;}
+.dice .eventArea .marble > .cell_15 .tag_obj {left:10px; top:230px}
+.dice .eventArea .marble > .cell_16 .tag_obj {left:10px; top:100px}
+.dice .eventArea .marble > .cell_17 .tag_obj {left:10px; top:-40px;}
+
+.dice .eventArea .marble > p {padding-top:250px;}
+.dice .eventArea .marble > p * {display:block;}
+.dice .eventArea .marble > p #dice_obj {display:block; width:195px; height:127px; background:url('../../images/event/20200609/img_init_dice.png') 50% 0 no-repeat; margin:0 auto; text-indent:-9999px;}
+.dice .eventArea .marble > p #dice_obj.num1 {background:url('../../images/event/20200609/img_dice1.png') 50% 50% no-repeat}
+.dice .eventArea .marble > p #dice_obj.num2 {background:url('../../images/event/20200609/img_dice2.png') 50% 50% no-repeat}
+.dice .eventArea .marble > p #dice_obj.num3 {background:url('../../images/event/20200609/img_dice3.png') 50% 50% no-repeat}
+.dice .eventArea .marble > p #dice_obj.num4 {background:url('../../images/event/20200609/img_dice4.png') 50% 50% no-repeat}
+.dice .eventArea .marble > p #dice_obj.num5 {background:url('../../images/event/20200609/img_dice5.png') 50% 50% no-repeat}
+.dice .eventArea .marble > p #dice_obj.num6 {background:url('../../images/event/20200609/img_dice6.png') 50% 50% no-repeat}
+.dice .eventArea .marble > p .btn_dice {width:316px; height:95px; background:url('../../images/event/20200609/btn_throw_dice.png') 0 0 no-repeat; margin:15px auto 0;text-indent:-9999px; }
+.dice .eventArea .marble > p .btn_dice.off {background-position:0 -97px; cursor:default}
+
+.dice .eventArea.end {background:url('../../images/event/20200609/bg_end_result.png') 0 0 no-repeat; box-sizing:border-box; width:763px; height:465px; position:relative;}
+.dice .eventArea.end .mydiceNum {width:100px; height:200px; position:absolute; left:430px; top:95px}
+.dice .eventArea.end .mydiceNum span {display:block; color:#ff5152;font-size:26px; font-weight:bold; vertical-align:top; line-height:26px; letter-spacing:-1px; margin-bottom:38px}
+.dice .eventArea.end .mydiceNum [class^="txt_num"]{display:inline-block; width:18px; height:23px; background-image:url(../../images/event/20200609/txt_mynum2.png); background-repeat:no-repeat; margin-left:2px; text-indent:-9999px}
+.dice .eventArea.end .mydiceNum .txt_num1 {background-position:0 5px}
+.dice .eventArea.end .mydiceNum .txt_num2 {background-position:0 -27px}
+
+.dice .eventArea.dim {height:auto}
+.dice .bonus_event {background:url('../../images/event/20200609/img_bonusevent.png') 0 0 no-repeat; height:373px; position:relative}
+.dice .bonus_event .attcheck {position:absolute; top:256px; left:83px; width:324px; height:65px; background:url('../../images/event/20200609/bg_attendbutton.png') 0 0 no-repeat; box-sizing:border-box; padding:10px 0 0 28px}
+.dice .bonus_event .attcheck strong {color:#ff5152; font-size:23px; font-weight:bold; display:inline-block; line-height:42px}
+.dice .bonus_event .attcheck span {vertical-align:top}
+.dice .bonus_event .attcheck [class^="txt"] {display:inline-block;height:50px; line-height:50px; background-image:url('../../images/event/20200609/txt_attend.png'); background-repeat:no-repeat; text-indent:-9999px}
+.dice .bonus_event .attcheck .txt1{width:43px; background-position:0 40%}
+.dice .bonus_event .attcheck .txt2{width:40px; background-position:-76px 40%}
+.dice .bonus_event .attcheck .btn_attend {display:inline-block; background-image:url('../../images/event/20200609/btn_attend.png'); background-position:0 0; background-repeat:no-repeat;  position:absolute; left:155px; top:9px; width:161px; height:49px; }
+.dice .bonus_event .attcheck .btn_attend.off {background-position:0 -51px; cursor:default}
+
+.dice .bonus_event.end {background:url('../../images/event/20200609/bg_end_bonusevent.png') 0 0 no-repeat; height:375px; position:relative}
+.dice .bonus_event.end .attdays {position:absolute; top:258px; left:136px; width:222px; height:46px; border-radius:34px; background:#fff; overflow:hidden;text-align:center; padding-top:20px}
+
+.dice .bonus_event.end .attdays [class^="txt"] {display:inline-block; height:27px; line-height:27px; background-image:url('../../images/event/20200609/txt_end_attend.png'); background-repeat:no-repeat; text-indent:-9999px; vertical-align:top}
+.dice .bonus_event.end .attdays .txt1{width:94px; background-position:0 0; margin-right:3px}
+.dice .bonus_event.end .attdays .txt2{width:23px; background-position:-140px 0}
+.dice .bonus_event.end .attdays strong {color:#ff5152; font-size:27px; font-weight:bold; display:inline-block; line-height:20px}
+
+/* notice */
+.dice .notice {padding:35px 30px 30px 35px; background-color:#0d1c49;}
+.dice .notice ul {padding-top:10px;}
+.dice .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.dice .notice li .point {color:#baccff;}
+

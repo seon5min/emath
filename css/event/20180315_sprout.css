@@ -1,0 +1,86 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+
+.sprout {background:none;}
+.sprout .top {position:relative; width:763px;}
+.sprout .top .btn-apply {position:absolute; top:535px; left:419px; display:block; width:283px; height:70px; font-size:0; border-radius:35px; background:#043673; opacity:0; filter:alpha(opacity='0');}
+.sprout .snswrap {position:absolute; top:29px; right:20px;}
+.sprout .snswrap a {display:inline-block; width:37px; height:37px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;}
+.sprout .snswrap a.fb {background-position:0 0;}
+.sprout .snswrap a.tw {background-position:-41px 0;}
+.sprout .snswrap a.kko {background-position:-82px 0;}
+
+/* 이벤트 영역 */
+.sprout .eventArea {background:url('../../images/event/20180315/bg_cont.jpg') repeat;}
+.sprout .eventArea > div {position:relative;}
+.sprout .eventArea .cont_01 .tabBtn {margin:0 103px; ;}
+.sprout .eventArea .cont_01 .tabBtn li {float:left; width:137px; height:47px; background:url('../../images/event/20180315/btn_tab_off.png') no-repeat 0 0; font-size:0; text-indent:-9999px; cursor:pointer;}
+.sprout .eventArea .cont_01 .tabBtn li.btn_02 {margin-left:3px; background-position:-140px 0;}
+.sprout .eventArea .cont_01 .tabBtn li.btn_03 {margin-left:3px; background-position:-280px 0;}
+.sprout .eventArea .cont_01 .tabBtn li.btn_04 {margin-left:3px; background-position:-420px 0;}
+.sprout .eventArea .cont_01 .tabBtn li.on {background-image:url('../../images/event/20180315/btn_tab_on.png');}
+.sprout .eventArea .cont_01 .tabCont {margin-top:-1px;}
+.sprout .eventArea .cont_01 .tabCont li {position:relative; display:none; margin-left:55px;}
+.sprout .eventArea .cont_01 .tabCont li.view {display:block;}
+.sprout .eventArea .cont_01 .tabCont .btnArea { position:absolute; top:25px; left:10px; width:633px;}
+.sprout .eventArea .cont_01 .tabCont .btnArea a { display:block; width:205px; height:54px; margin:6px 3px; border-radius:27px; float:left; background:#ffffff; opacity:0; filter:alpha(opacity='0');}
+
+.sprout .eventArea .cont_02 .btn-levelup{position:absolute; top:551px; left:285px; display:block; width:193px; height:32px; font-size:0; border-radius:30px; background:#138035; opacity:0; filter:alpha(opacity='0');}
+.sprout .eventArea .cont_02 .score p {position:absolute; top:151px; color:#0d7a30; font-weight:700;}
+.sprout .eventArea .cont_02 .score p span {font-size:24px; vertical-align:middle; letter-spacing:-1px; line-height:24px;}
+.sprout .eventArea .cont_02 .score p span + span {margin-left:5px; font-size:18px;}
+.sprout .eventArea .cont_02 .score p.score_01 {left:250px;}
+.sprout .eventArea .cont_02 .score p.score_02 {left:535px;}
+.sprout .eventArea .cont_02 .snswrap {position:static;}
+.sprout .eventArea .cont_02 .snswrap a {position:absolute; top:206px; display:inline-block; width:38px; height:38px; font-size:0; border-radius:4px; opacity:0; filter:alpha(opacity='0'); *display:inline; zoom:1;}
+.sprout .eventArea .cont_02 .snswrap a.fb {left:372px; background:#38599c;}
+.sprout .eventArea .cont_02 .snswrap a.tw {left:416px; background:#46adea;}
+.sprout .eventArea .cont_02 .snswrap a.kko {left:460px; background:#fbc201;}
+
+.sprout .eventArea .cont_02 .pot {position:relative;}
+.sprout .eventArea .cont_02 .waterDrop div {position:absolute;cursor:pointer;}
+.sprout .eventArea .cont_02 .waterDrop .waterDrop_01 {top:179px; left:245px;}
+.sprout .eventArea .cont_02 .waterDrop .waterDrop_02 {top:137px; left:342px;}
+.sprout .eventArea .cont_02 .waterDrop .waterDrop_03 {top:179px; left:434px;}
+.sprout .eventArea .cont_02 .myFlower .flowerPot {position:absolute; top:255px; left:337px; width:98px; height:205px; font-size:0; text-indent:-9999px;}
+.sprout .eventArea .cont_02 .myFlower.pot_01 .flowerPot {background:url('../../images/event/20180315/img_pot_01.png') no-repeat 0 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_02 .flowerPot {background:url('../../images/event/20180315/img_pot_02.png') no-repeat 0 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_03 .flowerPot {background:url('../../images/event/20180315/img_pot_03.png') no-repeat 0 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_04 .flowerPot {background:url('../../images/event/20180315/img_pot_04.png') no-repeat 0 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_05 .flowerPot {background:url('../../images/event/20180315/img_pot_05.png') no-repeat 0 0;}
+.sprout .eventArea .cont_02 .myFlower .myLevel {position:absolute; top:476px; left:316px; width:132px; height:46px; font-size:0; text-indent:-9999px; background:url('../../images/event/20180315/ico_level.png') no-repeat 0 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_01 .myLevel {background-position:0 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_02 .myLevel {background-position:-140px 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_03 .myLevel {background-position:-280px 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_04 .myLevel {background-position:-420px 0;}
+.sprout .eventArea .cont_02 .myFlower.pot_05 .myLevel {background-position:-560px 0;}
+
+/* 레이어 팝업 */
+.layer-levelup {position:fixed; left:0; top:0; right:0; bottom:0; z-index:9999;}
+.layer-levelup .layer {position:absolute; left:50%; top:50%; margin-left:-355px; margin-top:-300px; z-index:10;}
+.layer-levelup .modal-dimmed {position:absolute; left:0; top:0; right:0; bottom:0; background:url('../../images/event/20170207/modal_bg.png'); z-index:5;}
+.layer-levelup .popwrap {width:710px; height:600px; overflow:hidden; background:url('../../images/event/20170609/popup/img_popup_bg.png') no-repeat;}
+.layer-levelup .popwrap .header {position:relative;}
+.layer-levelup .popwrap .header p {padding:25px;}
+.layer-levelup .popwrap .btn-close {position:absolute; top:25px; right:25px; display:block; background-color:#fff;}
+.layer-levelup .popwrap .pop_cont {position:relative; height:486px; margin:0 25px; overflow-y:scroll;}
+.layer-levelup .popwrap .pop_cont .ac {position:relative;}
+.layer-levelup .popwrap .btn_submit {position:absolute; bottom:69px; left:268px; display:block; width:108px; height:45px; font-size:0; border-radius:22px; background:#ffe444; opacity:0; filter:alpha(opacity='0');}
+
+
+/* notice */
+.sprout .notice {padding:35px 39px 30px 35px; background-color:#288c44;}
+.sprout .notice ul {padding-top:15px;}
+.sprout .notice li {margin-top:5px; padding-left:15px; color:#fff; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20170911/bul.png') no-repeat 0 10px;}
+.sprout .notice li:first-child {margin-top:0;}
+.sprout .notice li .point {color:#ffd95b;}
+
+/* 이벤트 종료 */
+.sprout.end .top .btn_win {position:absolute; top:628px; left:56px; display:block; width:283px; height:70px; font-size:0; border-radius:35px; background:#043674; opacity:0; filter:alpha(opacity='0');}
+.sprout.end .top .btn_info_insert {position:absolute; top:628px; left:356px; display:block; width:344px; height:70px; font-size:0; border-radius:35px; background:#046d33; opacity:0; filter:alpha(opacity='0');}
+.sprout.end .top .total {position:absolute; top:465px; left:586px; display:block; font-weight:700; color:#f66b1e; font-size:20px; letter-spacing:-1px;}
+.sprout.end .top .myLevel {position:absolute; top:505px; left:545px; display:block; font-weight:700; color:#f66b1e; font-size:20px; letter-spacing:-1px;}
+.sprout.end .top .myWater {position:absolute; top:545px; left:586px; display:block; font-weight:700; color:#f66b1e; font-size:20px; letter-spacing:-1px;}

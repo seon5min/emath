@@ -1,0 +1,171 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+button {background-color:transparent;}
+.pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:1; content:"";  background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.simpleTest {position:relative; width:763px; overflow:hidden} 
+.simpleTest  h1 {position:absolute; top:39px; left:33px;}
+.simpleTest .snswrap {position:absolute; top:34px; right:24px;}
+.simpleTest .snswrap a{display:inline-block; width:35px; height:35px; vertical-align:top; font-size:0; line-height:0; background-image:url('../../images/event/20200408/img_sns.png'); *display: inline; zoom: 1; margin-left:3px}
+.simpleTest .snswrap a.fb {background-position:0 0;}
+.simpleTest .snswrap a.tw {background-position:-41px 0;}
+.simpleTest .snswrap a.kko {background-position:-82px 0;}
+.simpleTest .top,
+.simpleTest .top_end {position:relative}
+.simpleTest .top .btn-pre-apply {position:absolute; top:579px; left:68px; display:block; width:291px; height:65px; background:url('../../images/event/20200709/btn_event_before.png') 0 0 no-repeat;}
+.simpleTest .top .btn-pre-apply.off {background-position:0 -67px;}
+.simpleTest .top .btn-apply {position:absolute; top:535px; left:256px; display:block; width:253px; height:60px; background:url('../../images/event/20200709/btn_apply.png') 0 0  no-repeat;}
+.simpleTest .top .btn-apply.off {background-position:0 -62px;}
+.simpleTest .top .btnArea {position:absolute; top:541px; width:100%; text-align:center; }
+.simpleTest .top [class^="btn-winner"] {display:inline-block; height:60px; background-image:url('../../images/event/20200709/btn_event_fin.png'); background-repeat:no-repeat }
+.simpleTest .top .btn-winner1 {width:272px; background-position:0 0}
+.simpleTest .top .btn-winner2 {width:331px; background-position:0 -62px}
+.simpleTest .top .btn-winner3 {width:253px; background-position:0 -124px}
+
+.simpleTest .goto_stcard {background:#e4582f; height:233px; position:relative}
+.simpleTest .goto_stcard h3 {text-align:center;padding:43px 0 33px}
+.simpleTest .goto_stcard .tab_stcard {width:682px; margin:0 auto 30px; overflow:hidden}
+.simpleTest .goto_stcard .tab_stcard li {float:left; width:160px; height:81px; background-image:url('../../images/event/20200709/tab_stcard.png'); background-repeat:no-repeat; margin-left:14px}
+.simpleTest .goto_stcard .tab_stcard li a {display:block; width:100%; height:100%}
+.simpleTest .goto_stcard .tab_stcard li.tab01 {background-position:0 0; margin-left:0}
+.simpleTest .goto_stcard .tab_stcard li.tab02 {background-position:-173px 0;}
+.simpleTest .goto_stcard .tab_stcard li.tab03 {background-position:-346px 0;}
+.simpleTest .goto_stcard .tab_stcard li.tab04 {background-position:-519px 0;}
+.simpleTest .goto_stcard .tab_stcard li.tab01:hover {background-position:0 -82px}
+.simpleTest .goto_stcard .tab_stcard li.tab02:hover {background-position:-173px -82px;}
+.simpleTest .goto_stcard .tab_stcard li.tab03:hover {background-position:-346px -82px;}
+.simpleTest .goto_stcard .tab_stcard li.tab04:hover {background-position:-519px -82px;}
+
+.simpleTest .eventArea.eventAreaTop {background:#f7f4f3 url('../../images/event/20200709/bg_paper.jpg') 0 0 no-repeat;}
+.simpleTest .eventArea h3 {padding-top:16px}
+.simpleTest .eventArea .myInfo {background:url('../../images/event/20200709/bg_line.png') 0 100% no-repeat; display:flex; justify-content:center; padding:45px 0 31px;}
+.simpleTest .eventArea .myInfo li {border:2px solid #3d3d3d;vertical-align:middle; margin-left:16px}
+.simpleTest .eventArea .myInfo li:first-child {margin-left:0}
+.simpleTest .eventArea .myInfo li span {display:inline-block; border-right:2px solid #3d3d3d; width:60px; height:51px; text-indent:-9999px;}
+.simpleTest .eventArea .myInfo li strong { display:inline-block; min-width:110px; max-width:190px; height:36px; vertical-align:top; padding:15px 10px 0 6px; font-size:16px; color:#272727; overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.simpleTest .eventArea .myInfo li span.name {background:url('../../images/event/20200709/info_box.png') -2px -2px no-repeat;}
+.simpleTest .eventArea .myInfo li span.school {background:url('../../images/event/20200709/info_box.png') -211px -2px no-repeat; }
+.simpleTest .eventArea .myInfo li span.grade {background:url('../../images/event/20200709/info_box.png') -492px -2px no-repeat;}
+
+.simpleTest .eventArea .exam_container {padding:40px 0 0;}
+.simpleTest .eventArea .exam_container.end {padding-bottom:0}
+.simpleTest .eventArea .exam_container.ing {padding-bottom:95px}
+.simpleTest .eventArea .exam_wrap {width:680px; height:700px; box-sizing:border-box; margin:0 auto; border:3px solid #3d3d3d; border-radius:3px; background:#fff; overflow: auto;}
+.simpleTest .eventArea .grading {height:164px; background:url('../../images/event/20200709/bg_obj1.png') 50% 100% no-repeat; text-align:center}
+.simpleTest .eventArea .grading button[class^="btn_"] {width:253px; height:60px; background-image:url('../../images/event/20200709/btn_grading.png'); background-repeat:no-repeat; text-indent:-9999px; margin-top:54px}
+.simpleTest .eventArea .grading  .btn_grading { background-position:0 0}
+.simpleTest .eventArea .grading  .btn_retry { background-position:0 -62px}
+.simpleTest .eventArea em[class^="point_"] {display:inline-block; background-image:url('../../images/event/20200709/point.png'); background-repeat:no-repeat; width: 111px;}
+.simpleTest .eventArea .point_0{background-position:0 0; height: 73px;}
+.simpleTest .eventArea .point_5{background-position:-150px 0; height:77px;}
+.simpleTest .eventArea .point_10{background-position:-300px 0;height:73px;}
+.simpleTest .eventArea .point_15{background-position:-450px 0;height:77px;}
+.simpleTest .eventArea .point_20{background-position:-600px 0;height:73px;}
+.simpleTest .eventArea .point_25{background-position:-750px 0; height:77px;}
+.simpleTest .eventArea .point_30{background-position:0 -100px;height:73px;}
+.simpleTest .eventArea .point_35{background-position:-150px -100px; height:77px;}
+.simpleTest .eventArea .point_40{background-position:-300px -100px; height:73px;}
+.simpleTest .eventArea .point_45{background-position:-450px -100px; height:77px;}
+.simpleTest .eventArea .point_50{background-position:-600px -100px; height: 77px;}
+.simpleTest .eventArea .point_55{background-position:-750px -100px; height:77px;}
+.simpleTest .eventArea .point_60{background-position:0 -200px;height:74px;}
+.simpleTest .eventArea .point_65{background-position:-150px -200px; height:77px;}
+.simpleTest .eventArea .point_70{background-position:-300px -200px; height:76px;}
+.simpleTest .eventArea .point_75{background-position:-450px -200px; height:77px;}
+.simpleTest .eventArea .point_80{background-position:-600px -200px; height:75px;}
+.simpleTest .eventArea .point_85{background-position:-750px -200px; height:77px;}
+.simpleTest .eventArea .point_90{background-position:0 -300px;	height:74px;}
+.simpleTest .eventArea .point_95{background-position:-150px -300px; height:77px;}
+.simpleTest .eventArea .point_100{background-position:-300px -300px; height:73px;}
+.simpleTest .eventArea .pointNone {display:inline-block; width:23px; height:7px; background-image:unset; background:url('../../images/event/20200709/point_none.png') 0 0 no-repeat; margin-top: 35px;}
+
+.simpleTest .eventArea .testDate {width:682px; position:relative; border-bottom:3px solid #3d3d3d; padding:0 0 18px; margin:0 auto 30px; font-size:18px;
+    color: #272727; font-weight:bold}
+.simpleTest .eventArea .testDate li span.txt_date {display:inline-block; width:98px; height:20px; background:url('../../images/event/20200709/txt_exam_date.png') 0 0 no-repeat; text-indent:-9999px; vertical-align:middle;}
+.simpleTest .eventArea .testDate li span.txt_myscore {display:inline-block; width:77px; height:20px; background:url('../../images/event/20200709/txt_myscore.png') 0 0 no-repeat; vertical-align:top; text-indent:-9999px}
+.simpleTest .eventArea .testDate li:last-child {position: absolute; right:0; top:0}
+.simpleTest .eventArea .testDate li:last-child em {margin-top:-20px}
+
+.simpleTest .eventArea .grading_table {width:682px; display:flex; justify-content: space-between; margin:0 auto}
+.simpleTest .eventArea .grading_table table {width:336px; border:2px solid #3d3d3d}
+.simpleTest .eventArea .grading_table th {background:#ffe0d7; padding:12px 0 10px;}
+.simpleTest .eventArea .grading_table th span {text-indent:-9999px;}
+.simpleTest .eventArea .grading_table th span.txt_th1 {display:inline-block; width:52px; height:13px; background:url('../../images/event/20200709/txt_tb1.png') 0 0 no-repeat;}
+.simpleTest .eventArea .grading_table th span.txt_th2 {display:inline-block; width:24px; height:12px; background:url('../../images/event/20200709/txt_tb2.png') 0 0 no-repeat;}
+.simpleTest .eventArea .grading_table th span.txt_th3 {display:inline-block; width:37px; height:12px; background:url('../../images/event/20200709/txt_tb3.png') 0 0 no-repeat;}
+.simpleTest .eventArea .grading_table th span.txt_th4 {display:inline-block; width:24px; height:12px; background:url('../../images/event/20200709/txt_tb4.png') 0 0 no-repeat;}
+.simpleTest .eventArea .grading_table th, td {border:1px solid #676665; text-align:center; color:#3d3d3d; font-weight: bold;}
+.simpleTest .eventArea .grading_table td {padding:9px 0 10px}
+.simpleTest .eventArea .grading_table td .qs {display:inline-block; overflow:hidden; max-width:90%;/* text-overflow:ellipsis; */vertical-align:middle;white-space:nowrap;}
+.simpleTest .eventArea .grading_table td span.c_w {color:#e4582f; font-family:Verdana; font-size:13px}
+
+.simpleTest .eventArea .resultArea {width:682px; height:547px; box-sizing:border-box; border:2px solid #3d3d3d; background:url('../../images/event/20200709/bg_graph.png?202008') 55px 43px no-repeat; margin:10px auto 0; position: relative;}
+.simpleTest .eventArea .resultArea.beforeCount {width:682px; height:557px; box-sizing:border-box; border:2px solid #3d3d3d; background:url('../../images/event/20200709/bg_graph2.png') 55px 43px no-repeat; margin:10px auto 0; position: relative;}
+.simpleTest .eventArea .resultArea ul {margin:120px 0 0 80px; height:350px; overflow:hidden}
+.simpleTest .eventArea .resultArea li {float:left; width:166px; height:100%; position: relative;}
+.simpleTest .eventArea .resultArea li.avg1 {margin-right:20px}
+.simpleTest .eventArea .resultArea li.avg2 {margin-right:16px}
+.simpleTest .eventArea .resultArea li .top_bub {display:inline-block; box-sizing:border-box; width:68px; height:75px; background:url('../../images/event/20200709/bubble_rate.png') 0 0 no-repeat; text-align:center; padding-top:35px; font-weight:bold; font-size:16px; margin-left:50px}
+.simpleTest .eventArea .resultArea li .examinee {display:block; position:absolute; left:50%;  bottom:0; min-width:94px; border:1px solid #878787; color:#878787; font-size:11px; text-align:center; padding:2px; font-weight:600; margin:0 -50px }
+.simpleTest .eventArea .resultArea li.avg3 .examinee {margin:0 -45px}
+.simpleTest .eventArea .resultArea li > div {width:36px; height:200px; position:relative; background:rgba(170,170,170,0.5); margin:9px 0 0 64px}
+.simpleTest .eventArea .resultArea li .avg_bar {display:block; background:#73260f; position:absolute; bottom:0; left:0; width:36px; height:50%; z-index:1 }
+.simpleTest .eventArea .resultArea li .my_bar {display:block; background:#e4582f; position:absolute; bottom:0; left:0; width:36px; height:65%; z-index:1 }
+.simpleTest .eventArea .resultArea li .avg_bar::after {display:block; content:""; position:absolute; left:-45px; top:-5px; width:99px; height:12px; background:url('../../images/event/20200709/pointer_avg.png') 0 0 no-repeat; }
+.simpleTest .eventArea .resultArea li .my_bar::after {display:block; content:""; position:absolute; left:-18px; top:-30px; width:121px; height:57px; background:url('../../images/event/20200709/pointer_myscore.png') 0 0 no-repeat; }
+.simpleTest .eventArea .resultArea em[class^="point_"] {position:absolute; top:20px; left:494px;}
+.simpleTest .eventArea .resultArea .pointNone {position: absolute; top:50px; left:500px; margin-top:0}
+
+.simpleTest .eventArea .resultArea.beforeCount ul {margin:195px 0 0 80px; height:350px; overflow:hidden}
+.simpleTest .eventArea .resultArea.beforeCount .top_bub {display:none} 
+.simpleTest .eventArea .resultArea.beforeCount  li .examinee {display:block; position:absolute; left:50%;  bottom:75px; min-width:94px; border:1px solid #878787; color:#878787; font-size:11px; text-align:center; padding:2px; font-weight:600; margin:0 -50px }
+
+.simpleTest .eventWronganswer {background:url('../../images/event/20200709/bg_bottom.png') repeat-y; padding-top:60px; position:relative}
+.simpleTest .eventWronganswer h3 {text-align:center}
+.simpleTest .eventWronganswer .exam_wrap {margin-top:30px; border:0}
+.simpleTest .eventWronganswer .bottom_notice {margin:20px 0 0 60px;}
+.simpleTest .eventWronganswer .obj1 {position:absolute; top:-60px; left:0}
+.simpleTest .eventWronganswer .obj2 {position:absolute; top:-60px; right:0}
+
+.simpleTest .final_score {width:520px; margin:0 auto; padding-top:29px; text-align:center}
+.simpleTest .final_score li {display:inline-block; vertical-align:top}
+.simpleTest .final_score li:first-child {margin-right:30px}
+.simpleTest .final_score li span { display:inline-block; height:20px; background-image:url('../../images/event/20200709/txt_score.png'); background-repeat:no-repeat; text-indent:-9999px; vertical-align:top; margin-top:30px}
+.simpleTest .final_score li span.txt_score1 {width:107px; background-position:0 0;}
+.simpleTest .final_score li span.txt_score2 {width:135px; background-position:-245px 0;}
+.simpleTest .final_score li span.txt_score3 {width:105px; background-position:-570px 0;}
+.simpleTest  .final_score_box{border:2px solid #3d3d3d; width:682px; height:130px; box-sizing:border-box; padding:0  0 15px; margin:10px auto 0}
+
+/* notice */
+.simpleTest .notice {padding:35px 30px 30px 35px; background-color:#0d1c49;}
+.simpleTest .notice ul {padding-top:10px;}
+.simpleTest .notice li {margin-top:5px; padding-left:12px; color:#6f8ce1; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181205/bul.png') no-repeat 0 10px;}
+.simpleTest .notice li .point {color:#baccff;}
+
+.simpleTest .eventArea .resultArea .loading {position:absolute; top:142px; left:200px}
+.simpleTest .eventArea .resultArea .loading .loader {font-size: 5px; width: 1em; height: 1em; border-radius: 50%; position: relative; text-indent: -9999em; -webkit-animation: load5 1.5s infinite ease; animation: load5 1.5s infinite ease; -webkit-transform: translateZ(0);-ms-transform: translateZ(0);  transform: translateZ(0);}
+@-webkit-keyframes load5 {
+  0%,
+  100% {box-shadow: 0em -2.6em 0em 0em #323231, 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.5), -1.8em -1.8em 0 0em rgba(50,50,49, 0.7);}
+  12.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.7), 1.8em -1.8em 0 0em #323231, 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.5); }
+  25% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.5), 1.8em -1.8em 0 0em rgba(50,50,49, 0.7), 2.5em 0em 0 0em #323231, 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  37.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.5), 2.5em 0em 0 0em rgba(50,50,49, 0.7), 1.75em 1.75em 0 0em #323231, 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2); }
+  50% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.5), 1.75em 1.75em 0 0em rgba(50,50,49, 0.7), 0em 2.5em 0 0em #323231, -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  62.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.5), 0em 2.5em 0 0em rgba(50,50,49, 0.7), -1.8em 1.8em 0 0em #323231, -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  75% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.5), -1.8em 1.8em 0 0em rgba(50,50,49, 0.7), -2.6em 0em 0 0em #323231, -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  87.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.5), -2.6em 0em 0 0em rgba(50,50,49, 0.7), -1.8em -1.8em 0 0em #323231;}
+}
+@keyframes load5 {
+  0%,
+  100% {box-shadow: 0em -2.6em 0em 0em #323231, 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.5), -1.8em -1.8em 0 0em rgba(50,50,49, 0.7);}
+  12.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.7), 1.8em -1.8em 0 0em #323231, 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.5);}
+  25% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.5), 1.8em -1.8em 0 0em rgba(50,50,49, 0.7), 2.5em 0em 0 0em #323231, 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  37.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.5), 2.5em 0em 0 0em rgba(50,50,49, 0.7), 1.75em 1.75em 0 0em #323231, 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  50% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.5), 1.75em 1.75em 0 0em rgba(50,50,49, 0.7), 0em 2.5em 0 0em #323231, -1.8em 1.8em 0 0em rgba(50,50,49, 0.2), -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2); }
+  62.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.5), 0em 2.5em 0 0em rgba(50,50,49, 0.7), -1.8em 1.8em 0 0em #323231, -2.6em 0em 0 0em rgba(50,50,49, 0.2), -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  75% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.5), -1.8em 1.8em 0 0em rgba(50,50,49, 0.7), -2.6em 0em 0 0em #323231, -1.8em -1.8em 0 0em rgba(50,50,49, 0.2);}
+  87.5% {box-shadow: 0em -2.6em 0em 0em rgba(50,50,49, 0.2), 1.8em -1.8em 0 0em rgba(50,50,49, 0.2), 2.5em 0em 0 0em rgba(50,50,49, 0.2), 1.75em 1.75em 0 0em rgba(50,50,49, 0.2), 0em 2.5em 0 0em rgba(50,50,49, 0.2), -1.8em 1.8em 0 0em rgba(50,50,49, 0.5), -2.6em 0em 0 0em rgba(50,50,49, 0.7), -1.8em -1.8em 0 0em #323231;}
+}

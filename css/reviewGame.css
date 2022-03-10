@@ -1,0 +1,44 @@
+@charset "utf-8";
+.reviewGame-wrap{position: relative; width:763px; height:1030px; padding-bottom: 80px; margin: 0 auto;}
+.reviewGame-wrap.element6{background:url('../images/reviewGame/bg_element6.png') no-repeat;}
+.reviewGame-wrap .event-badge{position:absolute; top:190px; right:10px; z-index: 100;}
+
+.header h5{padding-top:30px; text-align: center;}
+.beta_ico {position: absolute; right:122px; top:140px; }
+.reviewGame-plate{position: absolute; top:242px; left:43px; width:677px; height: 585px;}
+.reviewGame-plate .acc{position:absolute; top:145px; left:26px;}
+.reviewGame-plate .item-wrap{position:relative;}
+
+.reviewGame-plate .game{position:absolute; width:143px; height: 143px;}
+.reviewGame-plate .game.element6{background-image: url('../images/reviewGame/spritesheet_off.png'); background-repeat: no-repeat;}
+.reviewGame-plate .game.element6.on{background-image: url('../images/reviewGame/spritesheet_on.png'); background-repeat: no-repeat;}
+.reviewGame-plate .game.element6 .positionCar{position:absolute; top:-47px; left:16px; width: 123px; height: 89px;background-image: url('../images/reviewGame/position_car.png'); background-repeat: no-repeat;}
+.reviewGame-plate .game.element6 .positionCar.left{background-image: url('../images/reviewGame/position_car_left.png');}
+
+.reviewGame-plate .game.element6 .signboard1{position:absolute; top:-59px; left:-16px; display:inline-block; width:144px; height:62px; font:0/0 a; background:url('../images/reviewGame/img_signboard1.png') no-repeat 0 0;}
+.reviewGame-plate .game.element6 .signboard2{position:absolute; top:-59px; left:-16px; display:inline-block; width:144px; height:62px; font:0/0 a; background:url('../images/reviewGame/img_signboard2.png') no-repeat 0 0;}
+.reviewGame-plate .game.element6 .signboard3{position:absolute; top:-59px; left:-16px; display:inline-block; width:144px; height:62px; font:0/0 a; background:url('../images/reviewGame/img_signboard3.png') no-repeat 0 0;}
+.reviewGame-plate .game.element6 .left .signboard1{left:-9px;}
+.reviewGame-plate .game.element6 .left .signboard2{left:-9px;}
+.reviewGame-plate .game.element6 .left .signboard3{left:-9px;}
+
+.reviewGame-plate .blind{font:0/0 a;}
+
+.reviewGame-plate .game.itme01{top:0px; left:0px; background-position: -10px -10px;}
+.reviewGame-plate .game.itme02{top:0px; left:161px; background-position: -173px -10px;}
+.reviewGame-plate .game.itme03{top:0px; left:322px; background-position: -336px -10px;}
+.reviewGame-plate .game.itme04{top:0px; left:483px; background-position: -10px -173px;}
+
+.reviewGame-plate .game.itme05{top:213px; left:427px; background-position: -173px -173px;}
+.reviewGame-plate .game.itme06{top:213px; left:266px; background-position: -336px -173px;}
+.reviewGame-plate .game.itme07{top:213px; left:105px; background-position: -10px -336px;}
+
+.reviewGame-plate .game.itme08{top:444px; left:53px; background-position: -173px -336px;}
+.reviewGame-plate .game.itme09{top:444px; left:214px; background-position: -336px -336px;}
+.reviewGame-plate .game.itme10{top:444px; left:375px; background-position: -499px -10px;}
+.reviewGame-plate .game.itme11{top:444px; left:536px; background-position: -499px -173px;}
+
+
+.reviewGame-plate .btn{position: absolute; bottom:26px; left:26px; width:90px; height: 37px; background: url('../images/reviewGame/btn_game.png') no-repeat; background-position: -105px -5px;}
+.reviewGame-plate .game.element6.on .btn.start{background-position: -5px -5px;}
+.reviewGame-plate .game.element6.on .btn.start.click{height: 34px; background-position: -205px -5px;}

@@ -1,0 +1,127 @@
+@charset "utf-8"; 
+
+.clearfix {overflow:hidden;}
+.clearfix:before, .clearfix:after {content:""; display:block;}
+.clearfix:after {clear:both;}
+.dim{position:fixed; left:0; top:0; right:0; bottom:0; display:none; background:url('../../images/event/20170119/modal_bg.png'); z-index:999;}
+
+.xmasGift {background:none;}
+.xmasGift .top {position:relative; width:763px;}
+.xmasGift .top .btn-apply {position:absolute; top:690px; left:462px; display:block; width:260px; height:62px; font-size:0; border-radius:31px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.xmasGift .snswrap {position:absolute; top:25px; right:25px;}
+.xmasGift .snswrap a {display:inline-block; width:31px; height:31px; margin-left:10px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20170911/img_sns.png'); *display: inline; zoom: 1;}
+/* .xmasGift .snswrap a {display:inline-block; width:37px; height:37px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20180213/img_sns.png'); *display:inline; zoom:1;} */
+/* .xmasGift .snswrap a {display:inline-block; width:35px; height:35px; margin-left:4px; vertical-align:top; font-size:0; line-height:0; background:url('../../images/event/20181109/img_sns.png'); *display:inline; zoom:1;} */
+.xmasGift .snswrap a.fb {background-position:0 0;}
+.xmasGift .snswrap a.tw {background-position:-41px 0;}
+.xmasGift .snswrap a.kko {background-position:-82px 0;}
+
+/* 경품 */
+.xmasGift .gift {position:relative;}
+.xmasGift .gift a {position:absolute; top:127px; right:86px; display:block; width:162px; height:39px; border-radius:20px; font-size:0; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.xmasGift .gift .noticeLayer {position:absolute; top:172px; right:86px; display:none; z-index:9999;}
+.xmasGift .gift .noticeLayer a {position:absolute; top:19px; right:20px; display:block; width:20px; height:20px; font-size:0; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+
+/* 이벤트 영역 */
+.xmasGift .eventArea > div {position:relative;}
+
+.xmasGift .eventArea .cont_01 .myTeam {position:absolute; top:216px; left:192px; width:380px; height:166px;}
+.xmasGift .eventArea .cont_01 .myTeam .myScore {position:absolute; top:55px; left:205px; font-size:20px; font-weight:600; color:#ffe16d;}
+.xmasGift .eventArea .cont_01 .myTeam .myScore span {margin-right:5px; font-size:30px; font-weight:700; letter-spacing:-2px;}
+.xmasGift .eventArea .cont_01 .teamGauge {position:absolute; top:402px; width:322px;}
+.xmasGift .eventArea .cont_01 .teamGauge .snowman {position:absolute; top:0; left:29px; margin-left:-29px;}
+.xmasGift .eventArea .cont_01 .teamGauge .gauge {position:absolute; top:90px; height:60px;}
+.xmasGift .eventArea .cont_01 .teamGauge .score {margin-top:155px; font-size:20px; font-weight:600;}
+.xmasGift .eventArea .cont_01 .teamGauge .score span {margin-right:5px; font-size:30px; font-weight:700;}
+
+.xmasGift .eventArea .cont_01 .myTeam.red {background:url('../../images/event/20181115/bg_team_01.png') no-repeat 0 0;}
+.xmasGift .eventArea .cont_01 .myTeam.green {background:url('../../images/event/20181115/bg_team_02.png') no-repeat 0 0;}
+.xmasGift .eventArea .cont_01 .redTeam {left:30px;}
+.xmasGift .eventArea .cont_01 .greenTeam {right:30px;}
+.xmasGift .eventArea .cont_01 .greenTeam .snowman {left:auto; right:29px; margin-right:-29px;}
+.xmasGift .eventArea .cont_01 .redTeam .gauge {left:0; background:url('../../images/event/20181115/img_gauge_01.png') no-repeat 0 0;}
+.xmasGift .eventArea .cont_01 .greenTeam .gauge {right:0; background:url('../../images/event/20181115/img_gauge_02.png') no-repeat right 0;}
+.xmasGift .eventArea .cont_01 .redTeam .score {margin-left:8px; color:#db2a2c;}
+.xmasGift .eventArea .cont_01 .greenTeam .score {margin-right:8px; text-align:right; color:#098e56;}
+
+.xmasGift .eventArea .cont_02 .btnArea {position:absolute; top:177px; left:46px;}
+.xmasGift .eventArea .cont_02 .btnArea a {float:left; display:block; width:158px; height:50px; margin:5px; border-radius:25px; font-size:0; text-indent:-9999px; background:url('../../images/event/20181115/btn_tab.png') no-repeat;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_01 {background-position:0px 0px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_02 {background-position:0px -60px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_03 {background-position:0px -120px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_04 {background-position:0px -180px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_05 {background-position:0px -240px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_06 {background-position:0px -300px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_07 {background-position:0px -360px;}
+.xmasGift .eventArea .cont_02 .btnArea a.btnGrade_08 {background-position:0px -420px;}
+.xmasGift .eventArea .cont_02 .btnArea a:hover {background-image:url('../../images/event/20181115/btn_tab_on.png');}
+
+.xmasGift .eventArea .cont_03 .board {position:absolute; top:302px; left:38px;}
+.xmasGift .eventArea .cont_03 .board li {float:left; width:97px; height:102px; margin:1px 0 0 1px; background:transparent;}
+.xmasGift .eventArea .cont_03 .board li.today {background:url('../../images/event/20181115/btn_check_01.png') no-repeat; cursor:pointer;}
+.xmasGift .eventArea .cont_03 .board li.finish {background:url('../../images/event/20181115/btn_check_02.png') no-repeat;}
+.xmasGift .eventArea .cont_03 .board li.past {background:url('../../images/event/20181115/btn_check_03.png') no-repeat;}
+
+.xmasGift .eventArea .cont_03 .board li.day_01 {background-position:0px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_02 {background-position:-98px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_03 {background-position:-196px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_04 {background-position:-294px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_05 {background-position:-392px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_06 {background-position:-490px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_07 {background-position:-588px 0px;}
+.xmasGift .eventArea .cont_03 .board li.day_08 {background-position:0px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_09 {background-position:-98px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_10 {background-position:-196px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_11 {background-position:-294px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_12 {background-position:-392px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_13 {background-position:-490px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_14 {background-position:-588px -103px;}
+.xmasGift .eventArea .cont_03 .board li.day_15 {background-position:0px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_16 {background-position:-98px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_17 {background-position:-196px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_18 {background-position:-294px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_19 {background-position:-392px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_20 {background-position:-490px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_21 {background-position:-588px -206px;}
+.xmasGift .eventArea .cont_03 .board li.day_22 {background-position:0px -309px;}
+.xmasGift .eventArea .cont_03 .board li.day_23 {background-position:-98px -309px;}
+.xmasGift .eventArea .cont_03 .board li.day_24 {background-position:-196px -309px;}
+.xmasGift .eventArea .cont_03 .board li.day_25 {background-position:-294px -309px;}
+.xmasGift .eventArea .cont_03 .board li.day_26 {background-position:-392px -309px;}
+.xmasGift .eventArea .cont_03 .board li.day_27 {background-position:-490px -309px;}
+.xmasGift .eventArea .cont_03 .board li.day_28 {background-position:-588px -309px;}
+
+/* notice */
+.xmasGift .notice {padding:35px 39px 30px 35px; background:url('../../images/event/20181115/bg_notice.jpg') no-repeat 0 0 #062a53;}
+.xmasGift .notice ul {padding-top:10px;}
+.xmasGift .notice li {margin-top:5px; padding-left:15px; color:#8e97a5; font-weight:600; line-height:1.8; font-size:13px; background:url('../../images/event/20181115/bul.png') no-repeat 0 10px;}
+.xmasGift .notice li .point {color:#ffffff;}
+
+/* 이벤트 종료 */
+.xmasGift.end .top .btn_win {position:absolute; top:733px; left:108px; display:block; width:229px; height:62px; font-size:0; border-radius:31px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.xmasGift.end .top .btn_info_insert {position:absolute; top:733px; left:347px; display:block; width:309px; height:62px; font-size:0; border-radius:31px; background-color:#fff; opacity:0; filter:alpha(opacity='0');}
+.xmasGift.end .top .myResult {position:absolute; top:350px; left:405px; width:287px; height:104px;}
+.xmasGift.end .top .myResult.red {background:url('../../images/event/20181115/bg_team_end_01.png') no-repeat 0 0;}
+.xmasGift.end .top .myResult.green {background:url('../../images/event/20181115/bg_team_end_02.png') no-repeat 0 0;}
+.xmasGift.end .top .myResult span {color:#ffe16d; font-size:15px; font-weight:600;}
+.xmasGift.end .top .myResult span.myScore {position:absolute; top:39px; left:169px;}
+.xmasGift.end .top .myResult span.myCheck {position:absolute; top:65px; left:183px;}
+.xmasGift.end .top .myResult span span {margin-right:3px; font-size:22px; font-weight:700;}
+
+.xmasGift.end .top .result .teamGauge {position:absolute; top:881px; width:322px;}
+.xmasGift.end .top .result .teamGauge .snowman {position:absolute; top:0; left:29px; margin-left:-29px;}
+.xmasGift.end .top .result .teamGauge .gauge {position:absolute; top:90px; height:60px;}
+.xmasGift.end .top .result .teamGauge .score {margin-top:155px; font-size:20px; font-weight:600;}
+.xmasGift.end .top .result .teamGauge .score span {margin-right:5px; font-size:30px; font-weight:700;}
+.xmasGift.end .top .result .resultMarker {position:absolute; top:-20px; left:0; width:200px; height:95px;}
+.xmasGift.end .top .result .win .resultMarker {background:url('../../images/event/20181115/img_win.png') no-repeat center center;}
+.xmasGift.end .top .result .lose .resultMarker {background:url('../../images/event/20181115/img_lose.png') no-repeat center center;}
+
+.xmasGift.end .top .result .redTeam {left:30px;}
+.xmasGift.end .top .result .greenTeam {right:30px;}
+.xmasGift.end .top .result .greenTeam .snowman {left:auto; right:29px; margin-right:-29px;}
+.xmasGift.end .top .result .redTeam .gauge {left:0; background:url('../../images/event/20181115/img_gauge_01.png') no-repeat 0 0;}
+.xmasGift.end .top .result .greenTeam .gauge {right:0; background:url('../../images/event/20181115/img_gauge_02.png') no-repeat right 0;}
+.xmasGift.end .top .result .redTeam .score {margin-left:8px; color:#db2a2c;}
+.xmasGift.end .top .result .greenTeam .score {margin-right:8px; text-align:right; color:#098e56;}
+.xmasGift.end .top .result .greenTeam .resultMarker {left:auto; right:0;}
