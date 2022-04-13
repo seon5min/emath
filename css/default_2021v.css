@@ -254,6 +254,7 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 .board_view header .side_info .date:after {display:inline-block; content:""; width:1px; height:12px; background-color:#9a9a9a; margin:2px 5px 0 7px; vertical-align:top}
 
 .board_view .main_article {border-bottom:1px solid #dfdfdf; position:relative; padding:4.7rem 2rem 4rem; min-height:20rem; line-height:150%}
+.board_view .main_article img {max-width:100%;}
 .board_view .main_article.qs {border-bottom:0; padding-bottom:0}
 .board_view .main_article .att_file {position:absolute; top:1rem; right:2rem; text-align:right}
 .board_view .main_article .att_file button {background-color: #333; border-radius:4px; color:#fff; padding:5px 10px}
@@ -288,6 +289,16 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 .board_view .answer_area .eval em.icon_like1 {background-image:url('../images/contents/icon_smile1.png');}
 .board_view .answer_area .eval em.icon_like2 {background-image:url('../images/contents/icon_smile2.png');}
 .board_view .answer_area .eval em.icon_like3 {background-image:url('../images/contents/icon_smile3.png');}
+
+/* 평가하기 */
+.board_view .answer_area .assess_area {background-color: rgba(78, 66, 202, 0.15);}
+.board_view .answer_area .assess_area .assess_tit {display: flex;font-size: 16px; color: #4e42ca;font-weight: 500;padding: 2rem 1.4rem 1.2rem;}
+.board_view .answer_area .assess_area p {margin-right:3px;}
+.board_view .answer_area .assess_area ul {display: flex; padding: 0 1.4rem 2rem; width: 100%; max-width: 340px; justify-content: space-between;}
+.board_view .answer_area .assess_area ul li {display: flex; align-items: center;margin-right:5px;}
+.board_view .answer_area .assess_area ul li input { margin-right: 5px;}
+.board_view .answer_area .assess_area ul li input[type="radio"]:checked + label {font-weight: 500;}
+
 /*게시판 버튼*/
 .btn_board {width:102px; display:inline-block; border-radius:4px; border:1px solid #4e42ca; text-align:center;font-size:1.4rem; padding:7px 0 8px;}
 .btn_board.btn_type1 {background:#4e42ca; color:#fff; }
@@ -863,9 +874,10 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 .pop_rel_con {display:none;visibility:hidden; position:fixed; top:0; left:0; width:100%; height:100%; z-index:101;}
 .pop_rel_con.open {display:block;visibility:visible; z-index:9999;}
 .pop_rel_con::before {content:""; display:block; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9998;}
-/* 2022-03-10 모바일 전용 터치사용금지 추가 */
-.touch_mob .pop_rel_con.open {visibility:hidden; z-index:-1}
-.touch_mob .pop_rel_con::before {content:""; display:block; position:fixed; top:0; left:0; width:0; height:0; background:none; z-index:-1;}
+/* 2022-03-15 모바일 전용 터치사용금지 추가 */
+.touch_mob .pop_download.open.mob_no {display:none; visibility:hidden; z-index:-1}
+.touch_mob .pop_download.open.mob_no::before {content:""; display:none; position:fixed; top:0; left:0; width:0; height:0; background:none; z-index:-1;}
+#pop_mob_no.btn_download {display:block !important;}
 .pop_rel_con .pop_container {position:absolute; opacity:0; width:100%; left:auto; top:50%; transform:translateY(-30%);; z-index:9999; transition:all 0.4s 0.1s ease-in-out}
 .pop_rel_con.open .pop_container {position:absolute; opacity:1; left:auto; top:50%; transform:translateY(-50%); z-index:9999; transition:all 0.4s 0.1s ease-in-out}
 .pop_rel_con .pop_content,
@@ -1168,7 +1180,8 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 	.course_sub .search_option li .items select.cate_mid:last-child {margin-right:0}
 
 	.list_result .sort_head .btn_content {width:40px; height:40px; text-indent:-9999px;overflow:hidden; background-color:#fff; background-position:50% 50%; padding:0; border-radius:50%}
-	.list_result .sort_head fieldset.diff_opt {flex-wrap:wrap}
+    .list_result .sort_head .btn_content.btn_download {display: none;} /* 2022-03-14 모바일 다운로드 숨김 */
+    .list_result .sort_head fieldset.diff_opt {flex-wrap:wrap}
 	.list_result .sort_head fieldset.diff_opt ul {width:70%; margin-bottom:0; height:3rem; overflow:hidden}
 	.list_result .sort_head fieldset.diff_opt ul.open {overflow:visible; height:auto}
 	.list_result .sort_head fieldset.diff_opt {position:relative}
@@ -1276,6 +1289,12 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 	.course_view h3.event span.counting,
 	.series_main h3.event span.counting {position:static; transform:none; margin:1rem 0 0;}
 	.course_view .wrap h3.event em {width: calc(100% - 50px);}
+
+	/* 평가하기 */
+	.board_view .answer_area .assess_area .assess_tit {flex-direction: column; padding: 1.4rem 4%;}
+	.board_view .answer_area .assess_area p {font-size: 1.6rem; }
+	.board_view .answer_area .assess_area p.assess_sub {font-size: 1.4rem;}
+	.board_view .answer_area .assess_area ul {max-width:400px;padding: 0 4% 1.4rem 4%;}
 }
 
 @media all and (min-width:500px) and (max-width:760px) {
@@ -1287,7 +1306,6 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 	.series_wrap .series_list {margin:3rem -15px 0}
 	.series_wrap .series_list li {width:calc(100% / 3)}
 	.series_wrap .series_list li .srs_set {margin:0 15px}
-
 }
 
 @media all and (max-width:499px) {

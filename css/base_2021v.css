@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* ------------------------------------------ font import ------------------------------------------ 
+/* ------------------------------------------ font import ------------------------------------------
 @import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto');*/
 
@@ -68,12 +68,12 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
 input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {color:transparent;}/* Mozilla Firefox 4 to 18 */
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color:transparent;}/* Mozilla Firefox 19+ */
 
-input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0}
 textarea {-webkit-border-radius:0; -webkit-appearance:none;}
 input[type="image"] {-webkit-border-radius:0; -webkit-appearance:none}
 input[type="button"], input[type="submit"] {-webkit-appearance:button; border-radius:0}
-input:-webkit-autofill, textarea:-webkit-autofill, 
+input:-webkit-autofill, textarea:-webkit-autofill,
 select:-webkit-autofill {
 	 transition: background-color 5000s ease-in-out 0s;
 	 -webkit-transition: background-color 9999s ease-out;
@@ -91,11 +91,11 @@ details > summary::-webkit-details-marker {
 }
 
 /*텍스트 강조*/
-.txthr_pp {color:#4e42ca} 
+.txthr_pp {color:#4e42ca}
 .txthr_rd {color:#ca2422}
 .txthr_gr {color:#9a9a9a}
 .txthr_gn {color:#69c7b6}
-.txthr_bl {color:#333333} 
+.txthr_bl {color:#333333}
 
 /* 체크박스 2021-10-27 수정 */
 .list_chk {position:absolute;top:3%;left:3%; z-index:1010} /*콘텐츠 리스트 체크*/
@@ -131,15 +131,15 @@ input[type="radio"]:disabled + label {color:#9a9a9a}
 /*학습기록삭제, 선택삭제, 전체삭제*/ .btn_del_rcd, .btn_del_opt, .btn_del_all {background:#fff url('../images/common/icon_trash.svg') 13px 50% no-repeat; background-size:13px 14px; padding-left:33px; padding-right:13px;}
 .btn_download {background:#fff  url('../images/common/icon_psdown.svg') 15px 50% no-repeat; background-size:8px 14px; padding-left:34px; padding-right:13px;}
 .btn_qpaper {background:#fff  url('../images/common/icon_qpaper.png') 13px 50% no-repeat; background-size:12px auto; padding-left:35px; padding-right:13px;}
-/*교사활용팁*/ .btn_tip_tc {width:110px; background:#fff url('../images/common/icon_psdown.svg') 17px 50% no-repeat; background-size:8px 14px; padding-left:30px;} 
-/*채점*/ .btn_grading {width:104px; background:#fff url('../images/common/icon_marking.svg') 25px 50% no-repeat; background-size:16px 16px; padding-left:50px;} 
-/*선택*/ .btn_del_sel {background:#fff url('../images/common/icon_check_s.png') 13px 50% no-repeat; background-size:13px 14px; padding-left:33px; padding-right:13px;} 
-/*교사활용팁 다운로드*/ 
+/*교사활용팁*/ .btn_tip_tc {width:110px; background:#fff url('../images/common/icon_psdown.svg') 17px 50% no-repeat; background-size:8px 14px; padding-left:30px;}
+/*채점*/ .btn_grading {width:104px; background:#fff url('../images/common/icon_marking.svg') 25px 50% no-repeat; background-size:16px 16px; padding-left:50px;}
+/*선택*/ .btn_del_sel {background:#fff url('../images/common/icon_check_s.png') 13px 50% no-repeat; background-size:13px 14px; padding-left:33px; padding-right:13px;}
+/*교사활용팁 다운로드*/
 .btn_tip_tc_dn {
-	height:32px; border:solid 1px #e1e1e1; 
+	height:32px; border:solid 1px #e1e1e1;
 	cursor:pointer;  width:auto; background:#fff url('../images/contents/icon_tip.png') 17px 50% no-repeat; background-size:12px 14px; padding:5px 15px 5px 35px;
 	font-size:1.4rem; font-weight:500; text-align:left;
-} 
+}
 /*취소,등록, 확인*/
 .btn_btm_exec {border-radius:4px; background-color:#4e42ca; padding-left:25px; padding-right:25px; height:32px; line-height:23px; text-align:center; color: #fff; font-size:1.4rem}
 .btn_cancel, .btn_conf {border-radius:4px; border:1px solid #4e42ca; background-color: rgba(78, 66, 202, 0.15); padding-left:25px; padding-right:25px; height:32px; line-height:23px; font-size:1.4rem; font-weight:500}
@@ -163,6 +163,7 @@ input[type="radio"]:disabled + label {color:#9a9a9a}
 .tit_type2 {font-size:1.6rem; font-weight:500; line-height:150%}
 
 .pc_only {display:block}
+.pc_m_i_only {display:inline-block !important;}
 .m_only {display:none}
 .pc_only_f {display:flex}
 .m_only_f {display:none}
