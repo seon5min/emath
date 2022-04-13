@@ -291,9 +291,9 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 
 /* 평가하기 */
 .board_view .answer_area .assess_area {background-color: rgba(78, 66, 202, 0.15);}
-.board_view .answer_area .assess_area .assess_tit {display: flex;font-size: 16px; color: #4e42ca;font-weight: 500;padding: 2rem 1.4rem 1.2rem;}
+.board_view .answer_area .assess_area .assess_tit {display: flex;font-size: 16px; color: #4e42ca;font-weight: 500;padding: 2rem 2rem 1.3rem;}
 .board_view .answer_area .assess_area p {margin-right:3px;}
-.board_view .answer_area .assess_area ul {display: flex; padding: 0 1.4rem 2rem; width: 100%; max-width: 340px; justify-content: space-between;}
+.board_view .answer_area .assess_area ul {display: flex; padding: 0 2rem 2rem; width: 100%; max-width: 340px; justify-content: space-between;}
 .board_view .answer_area .assess_area ul li {display: flex; align-items: center;margin-right:5px;}
 .board_view .answer_area .assess_area ul li input { margin-right: 5px;}
 .board_view .answer_area .assess_area ul li input[type="radio"]:checked + label {font-weight: 500;}
