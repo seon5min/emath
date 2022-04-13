@@ -63,7 +63,6 @@
 .wrap_error .footer {width:100%;background:transparent; color:#9a9a9a; }
 .wrap_error .footer p {width:100%;border-top:solid 1px #e1e1e1; padding:8rem 0; font-size:1.4rem; text-align:center; }
 
-
 /*콘텐츠 타입*/
 mark.stk { display:inline-block; background:transparent; background-size:contain}
 .tagA mark.stk {background-image:url('../images/common/tag_mov.png')} /*영상*/
