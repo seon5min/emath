@@ -9,7 +9,7 @@
 .list_mycont .srch_item .thumbnail img {display:block; width:auto; border:solid 1px #e1e1e1; height:170px; border-radius:10px; vertical-align:top; background-color:transparent}
 .list_mycont .srch_item .thumbnail input[type="checkbox"] {border-color:#333; position:absolute; left:1.3rem; top:1rem}
 .list_mycont .srch_item .thumbnail .runtime {
-	display:inline-block; position:absolute; bottom:10px; right:5%; 
+	display:inline-block; position:absolute; bottom:10px; right:5%;
 	width:65px; height:24px; padding:1px 0 0 8px; border-radius:12px; background:rgba(0,0,0,0.7) url('../images/common/icon_play.png') 7px 50% no-repeat;
 	font-size:1.4rem; line-height:2rem; text-align:center;color: #fff;
 }
@@ -157,7 +157,7 @@
 .mypage_2021 .list_result .list_con .cnt_item a:hover .btm_info subj {text-decoration:underline}
 .mypage_2021 .list_result .list_con .cnt_item:hover { transform:unset;  transition:unset; top:unset; left:unset; box-shadow:unset; z-index:1}
 .mypage_2021 .list_result .list_con .cnt_item:hover .box_snip .thumbnail img,
-.mypage_2021 .list_result .list_con .cnt_item:hover .box_snip .thumbnail video {border-bottom-left-radius:10px;border-bottom-right-radius:10px} 
+.mypage_2021 .list_result .list_con .cnt_item:hover .box_snip .thumbnail video {border-bottom-left-radius:10px;border-bottom-right-radius:10px}
 .mypage_2021 .box_snip mark.stk {width:40px; height:40px}
 .mypage_2021 .list_result.recom_list .list_con .cnt_item .bottom {position:relative; height:5rem; width:99%; font-size:1.6rem; font-weight:bold; word-wrap:break-word; text-overflow:ellipsis; white-space: nowrap; overflow:hidden; padding:1.5rem 0 0 0}
 
@@ -286,12 +286,12 @@
 .mypage_2021 .everyday_10m .chart_area2 ul li span mark {display:block; position:absolute; left:0; top:0; height:30px; background-color:rgba(78, 66, 202, 0.2);  border-radius:10px;}
 .mypage_2021 .everyday_10m .chart_area3 {height:162px; border:2px solid #4e42ca; border-radius:10px; background-color: rgba(78, 66, 202, 0.15); padding:3rem 0; text-align:center}
 .mypage_2021 .everyday_10m .chart_area3 dl {display:flex; justify-content:center; margin-bottom:2rem}
-.mypage_2021 .everyday_10m .chart_area3 dt mark {display:inline-block; background:#fff; border-radius:16px; border:1px solid #333; width:80px; height:32px; text-align:center; line-height:170%; font-size:1.6rem; font-weight:bold;} 
+.mypage_2021 .everyday_10m .chart_area3 dt mark {display:inline-block; background:#fff; border-radius:16px; border:1px solid #333; width:80px; height:32px; text-align:center; line-height:170%; font-size:1.6rem; font-weight:bold;}
 .mypage_2021 .everyday_10m .chart_area3 dd {text-align:left; font-size:1.4rem; margin-left:2rem}
 .mypage_2021 .everyday_10m .chart_area3 dd span,
 .mypage_2021 .everyday_10m .chart_area3 dd strong {display:block;}
 .mypage_2021 .everyday_10m .chart_area3 dd strong {margin-bottom:5px}
-.mypage_2021 .everyday_10m .chart_area3 .myscore {display:flex; justify-content:center; white-space:nowrap; width:}
+.mypage_2021 .everyday_10m .chart_area3 .myscore {display:flex; justify-content:center; white-space:nowrap;}
 .mypage_2021 .everyday_10m .chart_area3 .myscore p {display:flex; justify-content:space-between; max-width:220px; padding-top:1rem}
 .mypage_2021 .everyday_10m .chart_area3 .myscore .btm .btn_exec {padding-top:0}
 .mypage_2021 .everyday_10m .chart_area3 .myscore em {font-size:1.6rem;}
@@ -363,7 +363,7 @@
 .mypage_2021 .every10m_sub .info_quiz .inform1 .subj {display:inline-block; font-size:1.6rem; font-weight:bold}
 .mypage_2021 .every10m_sub .info_quiz .inform2 { width:52px; white-space:nowrap;  font-size:1.6rem; padding-top:1.5rem}
 .mypage_2021 .every10m_sub .info_quiz .inform2 strong {color:#69c7b6}
-.mypage_2021 .every10m_sub .quiz_con {border-radius:10px;  border:1px solid #e1e1e1; padding:3rem}
+.mypage_2021 .every10m_sub .quiz_con {border-radius:10px;  border:1px solid #e1e1e1; padding: 2rem;} /* 2022-05-19 여백 조절 */
 .mypage_2021 .every10m_sub .btn {text-align:center; margin-top:4rem}
 .mypage_2021 .every10m_sub .btn .btn_quiz {display:inline-block; border-radius:4px; border:1px solid #69c7b6; background-color:#69c7b6; padding:10px 0 10px; min-width:110px; text-align:center; font-size:1.6rem; color:#fff}
 .mypage_2021 .every10m_sub .btn .btn_list {display:inline-block; border-radius:4px;  border:1px solid #69c7b6; background-color:rgba(105, 199, 182, 0.15); padding:10px 0 10px; min-width:110px; text-align:center; font-size:1.6rem; font-weight:bold}
@@ -373,7 +373,7 @@
 .mypage_2021 .recom_list  h4 {margin-bottom:2.5rem}
 .mypage_2021 .recom_list .list_con .cnt_item {display:none; padding-bottom:2rem}
 .mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+4) {display:block;}
-.mypage_2021 .recom_list .list_con + p {border-top:1px solid #e1e1e1} 
+.mypage_2021 .recom_list .list_con + p {border-top:1px solid #e1e1e1}
 .mypage_2021 .recom_list.open .list_con .cnt_item:not(:nth-child(-n+4)){display:block} /*더보기 클릭시 */
 .mypage_2021 .recom_list .btn_more_con {position:relative; bottom:20px; left:50%; transform:translateX(-50%); z-index:1001; text-align:center; font-size:1.2rem; }
 .mypage_2021 .recom_list .btn_more_con span {display:block; position:relative; width:40px; height:40px; box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.1); background-color:#fff; border:1px solid #4e42ca;  border-radius:50%;  text-indent:-9999px; margin:0 auto 1rem}
@@ -595,7 +595,7 @@
 	.mypage_2021 .latest_achvmt .resultArea {width:46%}
 	.mypage_2021 .latest_achvmt .status {width:calc(57% - 4rem)}
 
-	.mypage_2021 .every10m_sub .head_wrap h3, 
+	.mypage_2021 .every10m_sub .head_wrap h3,
 	.mypage_2021 .every10m_sub .content_wrap {padding-left:4%; padding-right:4%}
 	.mypage_2021 .every10m_sub [class*="latest_"] {padding-left:0; padding-right:0}
 
@@ -734,7 +734,7 @@
 	.list_mycont .srch_item .thumbnail img {height:160px}
 	.list_mycont .srch_item .sub_tit,
 	.list_mycont .srch_item .detail {font-size:1.4rem}
-	.list_mycont .srch_item .info span dfn, 
+	.list_mycont .srch_item .info span dfn,
 	.list_mycont .srch_item .info span{font-size:1.2rem}
 
 }
@@ -794,7 +794,7 @@
 	.mypage_2021 .resultArea .graph.type4 li {display:inline-block; margin:0 1.5rem}
 
 	.mytbl_type1 {margin-top:1.5rem; border-top:1px solid #e1e1e1;  border-bottom:0}
-	.mytbl_type1, .mytbl_type1 tr, .mytbl_type1 th, .mytbl_type1 td {width:100%} 
+	.mytbl_type1, .mytbl_type1 tr, .mytbl_type1 th, .mytbl_type1 td {width:100%}
 	.mytbl_type1 th, .mytbl_type1 thead, .mytbl_type1 tr .ord {display:none}
 	.mytbl_type1 tr {display:flex; flex-wrap:wrap; position:relative; width:100%; border-bottom:1px solid #e1e1e1; padding:1.2rem 0 2rem;}
 	.mytbl_type1 tr td.chk {width:8%;}
@@ -868,7 +868,7 @@
 	.mypage_2021 .latest_contents .tab_sub li a em {display:block}
 	.mypage_2021 .latest_achvmt .inner_wrap { padding:3rem 4% 0}
 	.mypage_2021 .latest_achvmt h4.tit_test {color:#4e42ca; text-align:center}
-	.mypage_2021 .latest_achvmt .resultArea .mark_avg {flex-wrap:wrap; justify-content:center} 
+	.mypage_2021 .latest_achvmt .resultArea .mark_avg {flex-wrap:wrap; justify-content:center}
 	.mypage_2021 .latest_achvmt .resultArea .mark_avg mark {width:90px; margin-bottom:0.8rem}
 	.mypage_2021 .latest_achvmt .resultArea .mark_avg mark:nth-child(even) {width:110px}
 	.mypage_2021 .latest_achvmt .slider_wrap .resultArea {width:100%;}
@@ -896,6 +896,7 @@
 	.mypage_2021 .everyday_10m .my_info .chart_area3 {margin-left:0;position:relative;}
 	.mypage_2021 .everyday_10m .my_info .chart_area3 dt {position:absolute; top:-18px; left:50%; margin-left:-40px}
 	.mypage_2021 .everyday_10m .chart_area3 dd {margin-left:0; text-align:center}
+	.mypage_2021 .every10m_sub .quiz_con {padding: 1px;} /* 2022-05-19 M 여백 조절 */
 
 	.mypage_2021 .noti_nocnt p:before {display:block; margin:0 auto 1rem}
 	.mypage_2021 .noti_nocnt p strong {font-size:1.6rem}
@@ -959,7 +960,7 @@
 	.mypage_2021 .noti_noquiz p:first-child:before {display:block; margin:0 auto 1.5rem}
 	.mypage_2021 .noti_noquiz p:first-child strong {font-size:1.6rem}
 	.mypage_2021 .noti_noquiz p:last-child {font-size:1.4rem; margin-top:2rem; line-height:150%}
-	
+
 	.mypage_2021 .my_contents_head .search_option dt {font-size:1.4rem}
 	.mypage_2021 .my_contents_head .search_option .opt2 dd {flex-wrap:wrap;}
 	.mypage_2021 .my_contents_head .search_option .opt2 dd select {display:block; width:100%; margin-right:0;}
@@ -991,7 +992,7 @@
 	.mypage_2021 .my_note .note_main tr.on {background-color:rgba(223, 223, 223, 0.4)}
 	.mypage_2021 .my_note .note_main tr.on td {background-color:transparent}
 
-	.mypage_2021 .myquiz_wrap.wrongans mark {line-height:100%; margin-bottom:0} 
+	.mypage_2021 .myquiz_wrap.wrongans mark {line-height:100%; margin-bottom:0}
 
 	.mypage_2021 .pop_test, .mypage_2021 .pop_find_school {top:100px; left:3%; width:94%; height:auto; margin:0}
 	.mypage_2021 .pop_find_school {transform:translateX(0);}
