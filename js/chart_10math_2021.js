@@ -2,9 +2,8 @@
 function chartDataSetMath(chartLabel, chartData){
     var chartDataset = null;
     var chartOption = null;
-
     chartDataset = {
-        labels:	chartLabel,
+        labels: chartLabel,
         datasets: [{
             type: 'line',
             label: '나의 점수',
@@ -20,7 +19,7 @@ function chartDataSetMath(chartLabel, chartData){
         }]
     };
 
-        // Options
+    // Options
     chartOption = {
         responsive: true,
         maintainAspectRatio: false,
@@ -35,43 +34,59 @@ function chartDataSetMath(chartLabel, chartData){
             display: false,
         },
         plugins: {
-            legend: false,
+            // tooltip
+            tooltip: {
+                displayColors: false,
+                mode: 'x',
+                intersect: false
+            },
+            legend: false
         },
-		layout: {
-		  padding: {
-			left:0
-		  }
-		},
-		scales: {
-			x:{
-				ticks: {
-					  color: 'transparent',
-				},
-				  grid: {
-					color: "transparent",
-					display: false,
-					zeroLineColor: "transparent",
-					zeroLineWidth: 0,
+        layout: {
+            padding: {
+                // padding
+                left: -14
+            }
+        },
+        scales: {
+            x:{
+                ticks: false, // ticks
+                grid: {
+                    color: "transparent",
+                    display: false,
+                    zeroLineColor: "transparent",
+                    zeroLineWidth: 1
 
-				}
+                }
 
-			},
-			y: {
-				ticks: {
-					color: 'transparent',
-					fontSize : 0
-				},
-				 grid: {
-				  color: "#e1e1e1",
-				  display: true,
-				  drawBorder: false,
-				  drawTicks: false,
-				  zeroLineColor: "transparent",
+            },
+            y: {
+                 // y축 옵션
+                suggestedMin: 0,
+                suggestedMax: 100,
+                ticks: {
+                    stepSize:20,
+                    beginAtZero: true,
+                    color: "#000",
+                    font: {
+                        size: 14,
+                        family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
+                    },
+                    padding : 15,
 
-				},
-			},
-		},
-	}
+
+                },
+                grid: {
+                    color: "#e1e1e1",
+                    display: true,
+                    drawBorder: false,
+                    drawTicks: false,
+                    zeroLineColor: "transparent",
+
+                },
+            },
+        },
+    }
     var chartSet = {
         type: 'line',
         data: chartDataset,

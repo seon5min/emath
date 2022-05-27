@@ -274,7 +274,9 @@
 .mypage_2021 .everyday_10m .evr10_list .chart_10m { display:flex; justify-content:space-between; }
 .mypage_2021 .everyday_10m .evr10_list .chart_10m > li {width:calc(91.6% / 2); }
 .mypage_2021 .everyday_10m .evr10_list .chart_10m .ticks {z-index:100; height:190px; width:25px; background:#fff; position:absolute; top:-8px; left:10px; text-align:right; font-size:1.4rem; line-height:29px; padding-right:5px; white-space:nowrap}
-.mypage_2021 .everyday_10m .evr10_list .chart_10m .chart_cnt {position:relative}
+
+.mypage_2021 .everyday_10m .evr10_list .chart_10m .chart_cnt {position:relative;}
+.mypage_2021 .content_wrap .everyday_10m .evr10_list .chart_10m .chart_cnt {height: 181px;}
 .mypage_2021 .everyday_10m .evr10_list .chart_10m .chart_cnt .canvas {background:transparent;position:relative; z-index:10; left:0; top:0;}
 .mypage_2021 .everyday_10m h4 {margin-top:1.2rem; text-align:center; font-size:1.4rem;}
 .mypage_2021 .everyday_10m .evr10_list .chart_area1 + h4 {margin-top:0px}
@@ -328,18 +330,19 @@
 .mypage_2021 .every10m_sub h5 {margin-top:1.5rem; text-align:center; font-size:1.4rem;}
 
 .mypage_2021 .every10m_sub .subs_option {border:1px solid #e1e1e1; padding:3rem 3rem 2rem; margin-top:3rem; border-radius:10px}
-.mypage_2021 .every10m_sub .subs_option dl {margin-bottom:1rem; position:relative}
+.mypage_2021 .every10m_sub .subs_option dl {margin-bottom:2rem; position:relative}
 .mypage_2021 .every10m_sub .subs_option dl:after{clear:both; content:""; display:block}
 .mypage_2021 .every10m_sub .subs_option dt {float:left; width:105px; font-size:1.4rem; font-weight:bold; margin-top:0.3rem}
 .mypage_2021 .every10m_sub .subs_option dd {float:left; width:calc(100% - 105px); }
-.mypage_2021 .every10m_sub .subs_option dd ul {display:flex; justify-content:flex-start; flex-wrap:wrap }
-.mypage_2021 .every10m_sub .subs_option dd li {width:190px; font-size:1.4rem; margin-bottom:2.5rem}
-.mypage_2021 .every10m_sub .subs_option dd li:last-child {width:auto}
-.mypage_2021 .every10m_sub .subs_option dd li input {vertical-align:middle}
-.mypage_2021 .every10m_sub .subs_option dd li input +label {margin-left:2px}
+.mypage_2021 .every10m_sub .subs_option dd ul {display:flex; justify-content:flex-start; flex-wrap:wrap; width: 100%; }
+.mypage_2021 .every10m_sub .subs_option dd li {position: relative; width: 25%; height: 10px; font-size: 1.4rem; margin-bottom: 2.5rem; }
+/* .mypage_2021 .every10m_sub .subs_option dd li:last-child {width:auto} */
+.mypage_2021 .every10m_sub .subs_option dd li input {vertical-align: middle; position: absolute; left: 0; top: 0.1rem;}
+.mypage_2021 .every10m_sub .subs_option dd li input +label {position: absolute; left: 20px;line-height: 1.35; white-space: nowrap;}
 .mypage_2021 .every10m_sub .subs_option dd li input:checked +label { font-weight:500}
 .mypage_2021 .every10m_sub .subs_option dl.opt2 dd {width:190px; position:relative}
 .mypage_2021 .every10m_sub .subs_option dl.opt2 dd:last-child {width:100px;}
+.mypage_2021 .every10m_sub .subs_option .chk_list_cos li {height: 14px;margin-top: 5px; margin-bottom: 13px;}
 
 .mypage_2021 .every10m_sub .subs_option .btn_apply {height:26px; background:#4e42ca; border-radius:4px; padding:2px 8px 3px; color:#fff; font-size:1.4rem; font-weight:400}
 .mypage_2021 .every10m_sub .subs_option + ul {margin-top:1.5rem}
@@ -660,7 +663,7 @@
 	.mypage_2021 .latest_contents .list_result .list_con .cnt_item .btm_info,
 	.mypage_2021 .latest_contents .list_result .list_con .cnt_item:hover .btm_info {padding:1.2rem 0 1rem}
 
-	.mypage_2021 .every10m_sub .subs_option dd li {width:170px}
+	.mypage_2021 .every10m_sub .subs_option dd li {width:33.3333%;}
 	.mypage_2021 .every10m_sub .subs_option dl.opt2 dt {width:80px;}
 	.mypage_2021 .every10m_sub .subs_option dl.opt2 dd {width:100px;}
 	.mypage_2021 .every10m_sub .swiper-button-prev {margin-top:-50px}
@@ -713,6 +716,9 @@
 
 	.quiry_opt {margin:2rem auto;}
 	.mypage_2021 .tab_quiry + fieldset .quiry_opt {margin:3rem auto 3rem}
+
+	.mypage_2021 .every10m_sub .subs_option dd li input +label {white-space: normal;}
+	.mypage_2021 .every10m_sub .subs_option .chk_list_cos li {margin-bottom: 8px;}
 }
 
 @media all and (max-width:900px) {
@@ -921,7 +927,7 @@
 	.mypage_2021 .every10m_sub .subs_option {padding:2.5rem 3.5% 0.5rem}
 	.mypage_2021 .every10m_sub .subs_option select {width:100%;}
 	.mypage_2021 .every10m_sub .subs_option .chk_list {display:none}
-	.mypage_2021 .every10m_sub .subs_option .chk_list_cos {margin:2rem 0 0 -105px}
+	.mypage_2021 .every10m_sub .subs_option .chk_list_cos {margin:2rem 0 0 -105px; width: calc(100% + 105px); margin-bottom: 10px;}
 	.mypage_2021 .every10m_sub .subs_option dl.opt2 {margin-top:2rem}
 	.mypage_2021 .every10m_sub .subs_option dl.opt2 dd {width:calc(100% - 105px); margin-bottom:1.5rem}
 	.mypage_2021 .every10m_sub .subs_option .opt2 .layer_note {left:0rem; top:0}
@@ -1035,13 +1041,11 @@
 	.mypage_2021 .modify_info table + button {float:right; margin-top:2rem}
 
 	.mypage_2021 .myquiz_wrap h4 mark {display:block; margin-right:0; margin-bottom:1rem}
-
 }
-
 
 @media all and (max-width:499px) {
 	.list_mycont .srch_item .result_info  {width:76.4%; padding-left:2rem;}
-	.mypage_2021 .every10m_sub .subs_option .chk_list_cos li {width:150px}
+	.mypage_2021 .every10m_sub .subs_option .chk_list_cos li {width:50%;height: 20px;}
 	.mypage_2021 .every10m_sub .subs_option dd .layer_note {top:3rem; left:0}
 	.mypage_2021 .every10m_sub .subs_option .opt2 .layer_note {left:-8rem}
 
@@ -1061,5 +1065,5 @@
 @media all and (max-width:360px) {
 	.list_mycont .srch_item .location .dep2 {max-width:50%}
 	.mypage_2021 .text_achvmnt  .test_area + .btn_bottom button {margin:0 3px}
-
+	.mypage_2021 .every10m_sub .subs_option .chk_list_cos li {height: 16px; margin-bottom: 20px;}
 }
