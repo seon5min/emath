@@ -583,3 +583,16 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     .mainTopcnt .controller {position:absolute;left:50%; bottom:1rem; transform:translateX(-50%)} /*2021-12-16 수정*/
 	.mainTopcnt  [class^="swiper-button-"] {width:20px; height:20px;}
 }
+
+@media screen and (min-width: 1920px) {
+	.recomCon {overflow: hidden;width: 100%;padding: 4rem 0 3rem;position: relative;max-width: 1920px;margin-right: auto;margin-left: auto;overflow: visible;} 
+	.mainTopcnt .swiper-button-prev {left: 50%; transform: translateX(-950px);}
+	.mainTopcnt .swiper-button-next {right: 50%; transform: translateX(950px);}
+	.weeklyCon.slide_wrap .btn-swiper-prev, .newestCon.slide_wrap .btn-swiper-prev,.hotCon.slide_wrap .btn-swiper-prev {left: 50%;top: 50% !important;transform: translate(-1020px,-50px);}
+	.weeklyCon.slide_wrap .btn-swiper-next, .newestCon.slide_wrap .btn-swiper-next, .hotCon.slide_wrap .btn-swiper-next {right: 50%;top: 50% !important;transform: translate(1020px,-50px);}
+	.extLink {padding: 4rem 5.5%;justify-content: center;}
+	.extLink > div {width: 960px;}
+	.extLink .onlineClass {margin-right: 30px;}
+	.sideLink ul{padding: 4rem 2%;max-width: 1920px;margin-left: auto;margin-right: auto;}
+	#footer_2021 .wrap_foot1,#footer_2021 .wrap_foot2 {max-width: 1920px;}
+}
