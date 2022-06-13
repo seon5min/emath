@@ -338,14 +338,13 @@
 
 @media screen and (min-width: 1920px) {
     .notice .wrap {max-width: 1920px;margin-left: auto;margin-right: auto; } 
-    .weeklyCon h2.tit_cnt,.newestCon h2.tit_cnt,.hotCon h2.tit_cnt {max-width: 1920px;margin-left: auto;margin-right: auto; } 
-    .weeklyCon .slide_wrap, .newestCon .newest_list, .hotCon .list_con.swiper-container {max-width: 1920px;margin-left: auto;margin-right: auto; } 
+    .weeklyCon h2.tit_cnt,.newestCon h2.tit_cnt,.hotCon h2.tit_cnt {max-width: 1680px;margin-left: auto;margin-right: auto; } 
+    .weeklyCon .slide_wrap, .newestCon .newest_list, .hotCon .list_con.swiper-container {max-width: 1680px;margin-left: auto;margin-right: auto; } 
     #header_2021 nav .util {width: 100%;max-width: 1920px;margin-left: auto;margin-right: auto;border-top: 0;border-bottom: 0;padding: 0;background: #fff;}
     #header_2021 nav #gnb_pc .main_menu > ul {padding-left: 32%;} 
     #header_2021 nav #gnb_pc .main_menu > ul > li {width: 20rem;}
     #header_2021 nav #gnb_pc:before {position: absolute;content: "";overflow: hidden;width: 100%;top: 0;bottom: 0;left: 0;right: 0;display: block;border-top: 1px solid #e1e1e1;border-bottom: 1px solid #e1e1e1;z-index: 9999; } 
     #header_2021 h1 {position: absolute;left: 50%;transform: translateX(-960px);top: 6.5rem;z-index: 9999; } 
-    #footer_2021 .etc_menu ul {max-width: 1920px; } 
+    #footer_2021 .etc_menu ul {max-width: 140rem;} 
     #header_2021 nav .util .searching {position: absolute;right: 50%;transform: translateX(960px);top: 6.3rem;min-width: 22.9%;z-index: 9999; } 
-    
 }
