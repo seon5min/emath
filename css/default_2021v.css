@@ -63,6 +63,7 @@
 .wrap_error .footer {width:100%;background:transparent; color:#9a9a9a; }
 .wrap_error .footer p {width:100%;border-top:solid 1px #e1e1e1; padding:8rem 0; font-size:1.4rem; text-align:center; }
 
+
 /*콘텐츠 타입*/
 mark.stk { display:inline-block; background:transparent; background-size:contain}
 .tagA mark.stk {background-image:url('../images/common/tag_mov.png')} /*영상*/
@@ -727,6 +728,8 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 [class^="series"] .sorting button {font-size:1.4rem}
 [class^="series"] .sorting button.active {font-weight:bold}
 [class^="series"] .sorting .btn_opt1:after {content:""; display:inline-block; height:13px; width:1px; background:#333; margin:2px 7px 0 8px; vertical-align:top}
+
+[class^="series"] .series_tit {font-size: 20px; font-weight: bold; border-bottom: solid 1px #e1e1e1; color: #333; margin: 40px 0 20px; padding-bottom: 20px;}
 
 /*이벤트 뱃지*/
 .course_view h3.event .counting,
