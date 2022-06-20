@@ -112,7 +112,7 @@
 #header_2021 nav #gnb_pc .main_menu > ul {display:flex; margin:0 auto;position:relative; padding-left:23vw }
 #header_2021 nav #gnb_pc .main_menu > ul > li {width:13%;}
 #header_2021 nav #gnb_pc .main_menu .nor .dep1 {display:block; font-size:2rem; ; font-weight:600; line-height:7.2rem; text-align:center; white-space:nowrap}
-#header_2021 nav #gnb_pc .main_menu .nor .dep2 {width:100%; height:24rem; padding:2.3rem 0 0 0; text-align:center;}
+#header_2021 nav #gnb_pc .main_menu .nor .dep2 {width:100%; height:27rem; padding:2.3rem 0 0 0; text-align:center;}
 #header_2021 nav #gnb_pc .main_menu .nor .dep1.on,
 #header_2021 nav #gnb_pc .main_menu .nor .dep1:hover {color:#ca2422}
 #header_2021 nav #gnb_pc .main_menu .nor .dep1:hover + .dep2,
@@ -124,12 +124,13 @@
 #header_2021 nav #gnb_pc .main_menu > ul > li:nth-child(4) .dep2 li {width:10rem; text-align:left; margin:0 auto 14px}
 #header_2021 nav #gnb_pc .main_menu > ul > li:nth-child(5) .dep2 li {width:9.4rem; text-align:left; margin:0 auto 14px}
 #header_2021 nav #gnb_pc .main_menu .easy_tong {padding-top:9.7rem; margin-left:5rem;}
-#header_2021 nav #gnb_pc .main_menu .easy_tong > div { width:16.2rem; height:17.9rem; padding:1.9rem 1.6rem 0; border-radius:16px; background-color:#f8faff}
+#header_2021 nav #gnb_pc .main_menu .easy_tong > div {width: 16.2rem; height: 21.2rem; padding: 1.9rem 1.6rem; border-radius: 16px; background-color: #f8faff;}
 #header_2021 nav #gnb_pc .main_menu .easy_tong a {font-size:1.4rem;line-height:2.2rem;}
 #header_2021 nav #gnb_pc .main_menu .easy_tong li {text-align:left; padding-left:3.2rem; background-position:0 0; background-repeat:no-repeat; height:2.4rem; margin-bottom:0.8rem;}
 #header_2021 nav #gnb_pc .main_menu .easy_tong li:nth-child(1) {background-image:url('../images/layout/icon_easy1.png')}
-#header_2021 nav #gnb_pc .main_menu .easy_tong li:nth-child(2) {background-image:url('../images/layout/icon_easy2.png')}
-#header_2021 nav #gnb_pc .main_menu .easy_tong li:nth-child(3) {background-image:url('../images/layout/icon_easy3.png')}
+#header_2021 nav #gnb_pc .main_menu .easy_tong li:nth-child(2) {background-image:url('../images/layout/icon_gragh.png')}
+#header_2021 nav #gnb_pc .main_menu .easy_tong li:nth-child(3) {background-image:url('../images/layout/icon_easy2.png')}
+#header_2021 nav #gnb_pc .main_menu .easy_tong li:nth-child(4) {background-image:url('../images/layout/icon_easy3.png')}
 #header_2021 nav #gnb_pc .main_menu .easy_tong .btn_allcont {
     display:inline-block;
     width:13rem; height:3.2rem; line-height:2rem; margin:1.5rem 0 0; border-radius:8px; border: solid 1px #e1e1e1;
