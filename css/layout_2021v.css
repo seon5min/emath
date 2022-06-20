@@ -337,7 +337,7 @@
 	#footer_2021 .wrap_foot2 .ebs_info .about_ebs dd {width:60%;}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
     .notice .wrap {max-width: 1920px;margin-left: auto;margin-right: auto; } 
     .weeklyCon h2.tit_cnt,.newestCon h2.tit_cnt,.hotCon h2.tit_cnt {max-width: 1680px;margin-left: auto;margin-right: auto; } 
     .weeklyCon .slide_wrap, .newestCon .newest_list, .hotCon .list_con.swiper-container {max-width: 1680px;margin-left: auto;margin-right: auto; } 

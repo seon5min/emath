@@ -311,8 +311,15 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     .newestCon,
     .hotCon {min-height:42rem; max-height:42rem;}
     .recomCon .wrap_cnt {min-height:40rem; max-height:40rem;}
-	.sideLink ul a span p {font-size: 1.6rem; }
-	.sideLink ul a img { width: 90px;}
+
+    /* 하단 콘텐츠 링크 */
+	.sideLink ul {display:flex; justify-content: space-between; padding:4rem 4% 6rem; width: 100%;}
+	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 7);}
+	.sideLink ul a {flex-direction: column; align-items: center; justify-content: center;}
+	.sideLink ul a img {margin-bottom: 20px;}
+	.sideLink ul a span {max-width: 100%; padding: 0; text-align: center;}
+	.sideLink ul a span strong {font-size: 1.6rem;padding-bottom: 0;}
+	.sideLink ul a span p {font-size: 1.8rem; padding-top: 5px;}
 }
 
 @media all and (max-width:1600px) {
@@ -327,9 +334,8 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     .newestCon,
     .hotCon {min-height:40rem; max-height:40rem;}
     .recomCon .wrap_cnt {min-height:36rem; max-height:36rem;}
-	.sideLink ul a img { width: 70px;}
-	.sideLink ul a span p {font-size: 1.4rem; }
-	.sideLink ul a span strong {font-size: 1.2rem; padding-bottom: 3px;}
+	/* .sideLink ul a span p {font-size: 1.4rem; }
+	.sideLink ul a span strong {font-size: 1.2rem; padding-bottom: 3px;} */
 }
 
 @media all and (max-width:1300px) {
@@ -366,7 +372,6 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     /* 제휴 콘텐츠 링크 */
     .extLink .onlineClass p a,
     .extLink .selfStudy p a {font-size:1.6rem}
-	.sideLink ul a img {width: 45px;}
 }
 
 @media all and (max-width:1280px) and (min-width:1220px) {
@@ -434,14 +439,12 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	.extLink .onlineClass p a:nth-child(1) {width:56%;}
 	.extLink .onlineClass p a:nth-child(2) {width:41.72%;}
 
-    /* 하단 콘텐츠 링크 */
-	.sideLink ul {display:flex; justify-content: space-between; padding:4rem 4% 6rem; width: 100%;}
-	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 7);}
-	.sideLink ul a {flex-direction: column; align-items: center; justify-content: center;}
-	.sideLink ul a img {width: 80px; margin-bottom: 20px;}
-	.sideLink ul a span {max-width: 100%; padding: 0; text-align: center;}
-	.sideLink ul a span strong {font-size: 1.4rem;padding-bottom: 0;}
-	.sideLink ul a span p {font-size: 1.6rem; padding-top: 5px;}
+	/* 하단 콘텐츠 링크 */
+	.sideLink ul {flex-wrap: wrap; justify-content: flex-start; padding: 4em 4% 3rem;}
+	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 4); margin-bottom: 6%;}
+	.sideLink ul a img { width: 100%;padding: 0 10%;margin-bottom: 10px; max-width: fit-content;}
+	.sideLink ul a span strong {font-size: 1.2rem; padding-bottom: 1px;line-height: 1;margin-top: 10px;}
+	.sideLink ul a span p {font-size: 1.6rem;line-height: 1.5;}
 }
 
 @media all and (max-width:760px) {
@@ -548,14 +551,6 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	.extLink .onlineClass p a,
     .extLink .selfStudy p a {font-size:1.3rem; padding:1.5rem 0;}
 
-	/* 하단 콘텐츠 링크 */
-	.sideLink ul {flex-wrap: wrap; justify-content: flex-start; padding: 4em 4% 3rem;}
-	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 4); margin-bottom: 6%;}
-	.sideLink ul a img { width: 100%;padding: 0 10%;margin-bottom: 10px;}
-	.sideLink ul a span {}
-	.sideLink ul a span strong {font-size: 1.2rem; padding-bottom: 1px;line-height: 1;margin-top: 10px;}
-	.sideLink ul a span p {font-size: 1.3rem;line-height: 1.5;}
-
     /* 하단 콘텐츠 링크 */
     .sideLink ul a strong  {font-size:1.2rem;}
 	.sideLink ul a span {font-size:1.4rem;}
@@ -581,6 +576,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 @media all and (max-width:420px) {
     /* 하단 콘텐츠 링크 */
     .sideLink ul a::before {width:85px; height:85px;}
+	.sideLink ul a span p {font-size: 1.3rem;}
 }
 
 @media all and (max-width:360px) {
@@ -589,7 +585,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	.mainTopcnt  [class^="swiper-button-"] {width:20px; height:20px;}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
 	.recomCon {overflow: hidden;width: 100%;padding: 4rem 0 3rem;position: relative;max-width: 1680px;margin-right: auto;margin-left: auto;overflow: visible;}
 	.mainTopcnt .swiper-button-prev {left: 50%; transform: translateX(-950px);}
 	.mainTopcnt .swiper-button-next {right: 50%; transform: translateX(950px);}
