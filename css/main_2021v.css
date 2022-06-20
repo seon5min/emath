@@ -279,7 +279,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 .pop_common .popcon {position:relative; width:448px; height:310px; font-size:1.4rem}
 .pop_common .popcon .foot{width:438px; overflow:hidden;  padding:5px 5px 7px 5px; background:#393e42}
 .pop_common .popcon .foot label{color:#fff; line-height:22px; vertical-align:middle;}
-.pop_common .popcon .foot .icheckbox{margin-right:2px; vertical-align:top;} 
+.pop_common .popcon .foot .icheckbox{margin-right:2px; vertical-align:top;}
 .pop_common .popcon .foot .btn_close {display:inline-block; float:right; padding:5px 13px 0 0; vertical-align:top; color:#fff}
 .pop_common .popcon .foot .btn_close span {display:inline-block; background:url('../images/layout/icon_x_w.png') 0 0 no-repeat; background-size:contain; width:12px; height:12px; margin:1px 2px 0 0; vertical-align:middle}
 
@@ -380,7 +380,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     .newestCon,
     .hotCon {min-height:36rem; max-height:36rem;}
 	.recomCon .wrap_cnt {min-height:35rem; max-height:35rem;}
-	
+
 }
 
 @media all and (max-width:995px) {
@@ -547,14 +547,10 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	.extLink .selfStudy p { padding:0 4.23%;}
 	.extLink .onlineClass p a,
     .extLink .selfStudy p a {font-size:1.3rem; padding:1.5rem 0;}
-	.extLink .onlineClass p a,
-    .extLink .selfStudy p a,
 
 	/* 하단 콘텐츠 링크 */
 	.sideLink ul {flex-wrap: wrap; justify-content: flex-start; padding: 4em 4% 3rem;}
 	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 4); margin-bottom: 6%;}
-	/* .sideLink ul li:nth-child(6) {margin-top: 1px;}  */
-	.sideLink ul a {}
 	.sideLink ul a img { width: 100%;padding: 0 10%;margin-bottom: 10px;}
 	.sideLink ul a span {}
 	.sideLink ul a span strong {font-size: 1.2rem; padding-bottom: 1px;line-height: 1;margin-top: 10px;}
@@ -580,9 +576,6 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 
 @media all and (max-width:640px) {
     .recomCon {overflow:hidden; padding-bottom:0;}
-
-    /* 하단 콘텐츠 링크 */
-	/*.sideLink ul li.math10 {display:none;} 2022-02-15 수정*/
 }
 
 @media all and (max-width:420px) {
@@ -597,7 +590,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 }
 
 @media screen and (min-width: 1920px) {
-	.recomCon {overflow: hidden;width: 100%;padding: 4rem 0 3rem;position: relative;max-width: 1680px;margin-right: auto;margin-left: auto;overflow: visible;} 
+	.recomCon {overflow: hidden;width: 100%;padding: 4rem 0 3rem;position: relative;max-width: 1680px;margin-right: auto;margin-left: auto;overflow: visible;}
 	.mainTopcnt .swiper-button-prev {left: 50%; transform: translateX(-950px);}
 	.mainTopcnt .swiper-button-next {right: 50%; transform: translateX(950px);}
 	.weeklyCon.slide_wrap .btn-swiper-prev, .newestCon.slide_wrap .btn-swiper-prev,.hotCon.slide_wrap .btn-swiper-prev {left: 50%;top: 50% !important;transform: translate(-895px,-50px);}
@@ -606,6 +599,6 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	.extLink > div {width: 830px;}
 	.extLink .onlineClass {margin-right: 30px;}
 	.sideLink ul{padding: 4rem 0; max-width: 1680px;margin-left: auto;margin-right: auto;}
-	#footer_2021 .wrap_foot1,#footer_2021 .wrap_foot2 {max-width: 140rem;}	
+	#footer_2021 .wrap_foot1,#footer_2021 .wrap_foot2 {max-width: 140rem;}
 	.recomCon .recom_box .slide_wrap  {margin: 0 -1.5vw 6rem -1.5vw;}
 }
