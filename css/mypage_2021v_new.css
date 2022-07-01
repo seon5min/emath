@@ -938,7 +938,7 @@
 	.privacy_wrap .privacy_con .p_item {flex-direction: column;}
 	.privacy_wrap .privacy_con .p_item p:last-child {margin-left:12px;}
 	.privacy_wrap .privacy_con .p_item > span.m_none {overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;}
-	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li {width: 25%;margin-right: 20px;}
+	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li {width: 70px;margin-right: 20px;}
 	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li:last-child {margin-right:0;}
 
 	.mypage_2021 .noti_nocnt p:before {display:block; margin:0 auto 1rem}
