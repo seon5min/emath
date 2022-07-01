@@ -432,6 +432,28 @@
 .mypage_2021 .sort_head .exc_quiz .icheckbox:checked {background:url('../images/common/icon_togl_on.png') 50% 50% no-repeat;background-size:contain; }
 .mypage_2021 .sort_head .btn {float:right; margin-top:-2.5rem}
 .mypage_2021 .sort_head .btn button{margin-left:0.5rem}
+
+/* 매일10분 수학 구독 설정 - 개인정보 수집 */
+.privacy_wrap { width:100%; max-width: 1200px; max-height:100%; margin: 38px 28px 20px 0; border: solid 1px #e1e1e1;}
+.privacy_wrap .privacy_info {width:100%; max-width: 1200px; padding: 20px 20px 20px 20px; background-color: #f6f5fc;}
+.privacy_wrap .privacy_tit {display: flex; align-items: center;}
+.privacy_wrap .privacy_tit > span {width: 33px; height: 20px; border-radius: 4px; background-color: #4e42ca;font-size: 12px; text-align: center; color: #fff; padding: 3px 0; line-height: 1.2;}
+.privacy_wrap .privacy_tit > h2 {width: 185px; height: 20px; margin-left:10px; font-size: 14px;  color: #333; line-height: 1.2;}
+.privacy_wrap .privacy_con {margin: 10px 0 0 0px;}
+.privacy_wrap .privacy_con p {display: flex; font-size: 12px; font-weight: 300; color: #333; line-height: 1.4;}
+.privacy_wrap .privacy_con .p_item {display: flex;}
+.privacy_wrap .privacy_con p > span{padding-right:3px;}
+.privacy_wrap .privacy_con .p_item > span.m_none {padding: 1.15px 7px 0;}
+.privacy_wrap .privacy_con .p_em {font-weight: 500; font-size: 14px;}
+
+.privacy_wrap .agree_wrap {}
+.mypage_2021 .every10m_sub .subs_option .agree_wrap dd {width:100%;}
+.mypage_2021 .every10m_sub .subs_option .agree_wrap dt {overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;}
+.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list {display: flex; justify-content: flex-end; flex-wrap: nowrap; width: 100%;}
+.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li {width: 10%;height: 20px;margin-bottom:0;}
+.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li:last-child {margin-right:20px;}
+.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list dd {}
+.mypage_2021 .every10m_sub .subs_option .privacy_wrap dl {height: 60px; display: flex; align-items: center;margin-bottom:0;}
 /*오답노트*/
 .mypage_2021 .my_note {background-color: rgba(78, 66, 202, 0.05); margin-top:4rem; margin-bottom:-7rem; padding-bottom:5rem; display:none}
 .mypage_2021 .my_note.open {display:block}
@@ -669,6 +691,12 @@
 	.mypage_2021 .every10m_sub .swiper-button-prev {margin-top:-50px}
 	.mypage_2021 .every10m_sub .swiper-button-next {margin-top:-50px}
 
+	/* (tablet) 매일10분 수학 구독 설정 - 개인정보 수집 */
+	.privacy_wrap {max-height:100%;margin-top:15px;}
+	.privacy_wrap .privacy_info {margin: 0;}
+	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li {width: 16%;}
+	.mypage_2021 .every10m_sub .subs_option .privacy_wrap dl {height: 45px;}
+
 	.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+4) {display:none}
 	.mypage_2021 .recom_list .list_con .cnt_item:nth-child(-n+3) {display:block;}
 	.mypage_2021 .recom_list.open .list_con .cnt_item:not(:nth-child(-n+3)){display:block}
@@ -903,6 +931,15 @@
 	.mypage_2021 .everyday_10m .my_info .chart_area3 dt {position:absolute; top:-18px; left:50%; margin-left:-40px}
 	.mypage_2021 .everyday_10m .chart_area3 dd {margin-left:0; text-align:center}
 	.mypage_2021 .every10m_sub .quiz_con {padding: 1px;} /* 2022-05-19 M 여백 조절 */
+
+	/* (mobile) 매일10분 수학 구독 설정 - 개인정보 수집 */
+	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list {justify-content: center;}
+	.privacy_wrap .privacy_info {margin: 0;}
+	.privacy_wrap .privacy_con .p_item {flex-direction: column;}
+	.privacy_wrap .privacy_con .p_item p:last-child {margin-left:12px;}
+	.privacy_wrap .privacy_con .p_item > span.m_none {overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;}
+	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li {width: 25%;margin-right: 20px;}
+	.mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li:last-child {margin-right:0;}
 
 	.mypage_2021 .noti_nocnt p:before {display:block; margin:0 auto 1rem}
 	.mypage_2021 .noti_nocnt p strong {font-size:1.6rem}
