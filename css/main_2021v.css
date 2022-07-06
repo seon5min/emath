@@ -460,7 +460,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 
 @media all and (max-width:760px) {
     #wrap {background-color:#fff;position:fixed;width:100%;height:100%;overflow:auto;-webkit-overflow-scrolling:touch;}
-    #header_2021 {position:sticky;top:0px;z-index:9998;}
+    #header_2021 {position:sticky;top:0px;z-index:9999;}
 
     /* 메인 비쥬얼 */
 	.mainTopcnt .top_visual {margin-bottom:-3rem;}
