@@ -255,6 +255,19 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 .pop_10m_math_common::before {content:""; display:block; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9998;}
 .pop_10m_math_common .pop_10m_math,
 .pop_10m_math_common .pop_10m_alim { position:absolute; left:50%; top:290px; transform:translateX(-50%); z-index:9999; box-sizing:border-box; width:386px; height:275px;}
+
+/* 2022-07-05 팝업 추가 */
+.pop_10m_math_common .pop_10m_info { position:absolute; left:50%; top:280px; transform:translateX(-50%); z-index:9999; box-sizing:border-box; width: 330px; height: 305px;}
+.pop_10m_math_common .pop_10m_info .container::before {content:""; position:absolute; top:-30px; left:50%; transform:translateX(-50%); width:70px; height:60px; background:url('../images/mypage/info_img.png') 0 0 no-repeat; }
+.pop_10m_math_common .pop_10m_info .container {height: 305px; padding-top: 48px;}
+.pop_10m_math_common .pop_10m_info .container .bold {font-size: 20px;}
+.pop_10m_math_common .pop_10m_info .container .info_tit {font-size: 15px; color:#0e0e0e; margin-top:13px; font-weight:500;}
+.pop_10m_math_common .pop_10m_info .container .info_txt {font-size: 13px; margin-top:15px; line-height:1.35;}
+.pop_10m_math_common .pop_10m_info .container .info_note {font-size: 13px; color:#4e42ca;margin-top:15px;line-height:1.35;}
+.pop_10m_math_common .pop_10m_info .btn_app_10math {font-size: 15px; background-color:#4e42ca; width:200px; height:40px;padding: 10px 0 10px 0;font-weight:500;}
+.pop_10m_math_common .pop_10m_info .container .btn_close_pop {display: block; position: absolute; top: 16px; right: 16px; width: 12px; height: 12px; background: url(../images/layout/icon_x.png) 0 0 no-repeat; background-size: contain; cursor: pointer;}
+/* 2022-07-05 팝업 추가 */
+
 .pop_10m_math_common .container {box-sizing:border-box; height:243px; padding-top:91px; text-align:center; position:relative;background-color: #ffffff; border-radius:4px;}
 .pop_10m_math_common .container .bold {font-size:18px; font-weight:700; letter-spacing: -0.28px; color: #000000;}
 .pop_10m_math_common .container .bold + p {font-size:12px; line-height:17px; letter-spacing: -0.46px; color: #888888; margin-top:16px;}
@@ -268,6 +281,8 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 .pop_10m_math_common .pop_10m_alim {width:330px; height:232px;}
 .pop_10m_math_common .pop_10m_alim .container {height:199px; padding-top:65px;}
 .pop_10m_math_common .pop_10m_alim .container::before {top:-50px; background:url('../images/mypage/icon_alim_math.png') 0 0 no-repeat; transform:translateX(-45%);}
+
+
 
 
 /*팝업공통*/
@@ -557,12 +572,15 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	.pop_10m_math_common {position:absolute; z-index:9999;}
 	.pop_10m_math_common .pop_10m_math,
 	.pop_10m_math_common .pop_10m_alim{top:200px}
+	.pop_10m_math_common .pop_10m_info {top:190px;}
 
 	/*공지팝업*/
 	.main_popup {position:absolute; top:200px; left:50%; margin-left:-150px; width:300px; height:300px; z-index:10001;}
 	.main_popup a {display:block;}
 	.main_popup .content a img {max-width:300px; max-height:300px;}
 	.main_popup .foot {overflow:hidden;}
+
+
 }
 
 @media all and (max-width:640px) {

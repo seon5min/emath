@@ -446,7 +446,6 @@
 .privacy_wrap .privacy_con .p_item > span.m_none {padding: 1.15px 7px 0;}
 .privacy_wrap .privacy_con .p_em {font-weight: 500; font-size: 14px;}
 
-.privacy_wrap .agree_wrap {}
 .mypage_2021 .every10m_sub .subs_option .agree_wrap dd {width:100%;}
 .mypage_2021 .every10m_sub .subs_option .agree_wrap dt {overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;}
 .mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list {display: flex; justify-content: flex-end; flex-wrap: nowrap; width: 100%;}
@@ -454,6 +453,22 @@
 .mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list li:last-child {margin-right:20px;}
 .mypage_2021 .every10m_sub .subs_option .agree_wrap dd ul.agree_list dd {}
 .mypage_2021 .every10m_sub .subs_option .privacy_wrap dl {height: 60px; display: flex; align-items: center;margin-bottom:0;}
+
+/* 매일10분 수학 구독 설정 - 팝업 */
+.popup_10math {position: fixed; left: 0; top: 0; bottom: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); transition: all 0.3s ease; z-index: 9999;}
+.popup_10math .pop_10m_info { position: absolute; left: 50%; top: 280px; transform: translateX(-50%); z-index: 9999; box-sizing: border-box; width: 330px; height: 305px;}
+.popup_10math .pop_10m_info .container {box-sizing: border-box; height: 305px; padding-top: 48px; text-align: center; position: relative; background-color: #ffffff; border-radius: 4px; }
+.popup_10math .pop_10m_info .container::before { content: ""; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); width: 70px; height: 60px; background: url(../images/mypage/info_img.png) 0 0 no-repeat; }
+.popup_10math .pop_10m_info .container .btn_close_pop { display: block; position: absolute; top: 16px; right: 16px; width: 12px; height: 12px; background: url(../images/layout/icon_x.png) 0 0 no-repeat; background-size: contain; cursor: pointer; }
+.popup_10math .pop_10m_info .container .bold {font-size: 20px;font-weight: 700; letter-spacing: -0.28px; color: #000000;}
+.popup_10math .pop_10m_info .container .info_tit {font-size: 15px; color: #0e0e0e; margin-top: 13px; line-height:17px; font-weight: 500;letter-spacing: -0.46px;}
+.popup_10math .pop_10m_info .container .info_txt { font-size: 13px; margin-top: 15px; line-height: 1.35; }
+.popup_10math .pop_10m_info .container .info_note { font-size: 13px; color: #4e42ca; margin-top: 15px; line-height: 1.35; }
+.popup_10math .pop_10m_info .btn_app_10math {display: block; box-sizing: border-box; margin: 16px auto 0; border-radius: 5px; border: solid 1px #3d81d3; color: #fff; text-align: center; font-size: 15px; background-color: #4e42ca; width: 200px; height: 40px; padding: 10px 0 10px 0; font-weight: 500; }
+.popup_10math .pop_10m_info .bottom { margin-top: 15px; text-align: center; }
+.popup_10math .pop_10m_info .bottom input[type="checkbox"] { border: 1px solid #fff; vertical-align: top; margin-top: 0px; }
+.popup_10math .pop_10m_info .bottom label { font-size: 13px; color: #fff; vertical-align: top; margin-left: 5px; }
+
 /*오답노트*/
 .mypage_2021 .my_note {background-color: rgba(78, 66, 202, 0.05); margin-top:4rem; margin-bottom:-7rem; padding-bottom:5rem; display:none}
 .mypage_2021 .my_note.open {display:block}
