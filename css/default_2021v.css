@@ -772,7 +772,7 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 .gamezone_main .wrap .tab_main li.active:first-child a {border-left:0;}
 .gamezone_main .wrap .tab_main li.active a:after{content:""; display:block; width:calc(100% - 1px); height:calc(100% - 2px); border:1px solid #000; position:absolute; top:0px; left:-1px; z-index:1000}
 
-.gamezone_main .wrap .tab_sub {border-bottom:1px solid #e1e1e1;  display:flex; justify-content:center; margin-top:1.5rem;}
+.gamezone_main .wrap .tab_sub {border-bottom:1px solid #e1e1e1;  display:flex; justify-content:center; margin-top:2.5rem;}
 .gamezone_main .wrap .tab_sub li {position:relative; min-width:12rem; margin:0 3rem}
 .gamezone_main .wrap .tab_sub li a {display:block; font-size:1.6rem; padding-bottom:1.4rem; line-height:2rem; position:relative; text-align:center}
 .gamezone_main .wrap .tab_sub li.active a {font-weight:bold}
@@ -798,10 +798,24 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 .game_list_con {width:100%; display:flex; flex-wrap:wrap; justify-content:flex-start;}
 .game_list_con .cnt_item { position:relative; width:calc(94% / 4); max-width:312.5px; background:rgba(255,255,255,0);}
 .game_list_con .cnt_item:not(:nth-child(4n+1))  {margin-left:2%}
-.game_list_con .cnt_item .thumbnail {display:block}
+.game_list_con .cnt_item .thumbnail {display:block;position: relative;}
+.game_list_con .cnt_item:hover .btn_hover {opacity: 1;}
+.game_list_con .cnt_item:hover .btn_bg {opacity: .5;}
+.game_list_con .cnt_item .btn_hover {padding-top: 56.2%; height: 0; display: flex; justify-content: center; align-items: center; opacity: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; text-align: center; z-index: 10; -webkit-transition: opacity .5s linear; transition: opacity .5s linear; color: #fff; white-space: normal;}
+.game_list_con .cnt_item .btn_bg {padding-top: 56.2%; height: 0; pointer-events: none; cursor: default; display: block; width: 100%; z-index: 9; position: absolute; left: 0; bottom: 0;top: 0; background: rgba(0,0,0,0.99); opacity: 0; -webkit-transition: opacity .5s linear; transition: opacity .5s linear; border-radius: 10px; }
+
+.game_list_con .cnt_item .btn_top10 {opacity: 0; display: none;}
+.game_list_con .cnt_item>.btn_hover > .btn_top10 {opacity: 1; display: block;}
+.game_list_con .cnt_item .play_btn,.game_list_con .cnt_item >.btn_hover > .btn_top10 {cursor: pointer; width: 100%; max-width: 120px; position: absolute; top: 50%; left:50%; height: 32px; background: #fff; border-radius: 100px; border: 1px solid #333; transition: opacity .5s linear; font-size: 14px; line-height: 1.2; letter-spacing: -.6px; color: #333; text-align: center; z-index: 100; font-weight: 400; padding: 0;}
+.game_list_con .cnt_item .play_btn {margin-right: 0; transform: translate(-103%,-16px);}
+.game_list_con .cnt_item >.btn_hover > .btn_top10 {transform: translate(3%,-16px);}
+.game_list_con .cnt_item .play_btn:hover,.game_list_con .cnt_item >.btn_hover > .btn_top10:hover {box-sizing: border-box;background:#4e42ca; color:#fff; border:1px solid #fff;}
+
 .game_list_con .cnt_item .thumbnail img {display:block; width:100%; max-height:18.9rem; height:auto; border-radius:10px; vertical-align:top; background-color:transparent}
 .game_list_con .cnt_item .tit {padding:2.4rem 0; font-size:1.4rem; text-align:left}
 .game_list_con .cnt_item .tit > em {display:block;color:#4e42ca; font-size:1.4rem; font-weight:bold; margin-bottom:1rem}
+.game_list_con .cnt_item .tit .grd_ico_sub {color:#9a9a9a; font-size:1.4rem; font-weight:400;}
+.game_list_con .cnt_item .tit .grd_ico_sub::before {display: inline-block; margin: 0 0.6rem 0 0.8rem; margin-right: 7px; width: 1px; height: 10px; background-color: #9a9a9a; content: '';}
 .game_list_con .cnt_item .tit > strong {display:-webkit-box; height:4.2rem; overflow:hidden; font-size:1.6rem; line-height:2rem; width:100%; -webkit-line-clamp:2; -webkit-box-orient:vertical; text-overflow:ellipsis;}
 .game_list .game_list_con {margin-top:0; visibility:hidden; height:0; overflow:hidden}
 .game_list.on .game_list_con {margin-top:3rem;  visibility:visible; overflow:visible; height:auto}
@@ -1028,7 +1042,11 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 
 	.course_view .wrap h3.event em {width:60%}
 
+	.game_list_con .cnt_item .play_btn,.game_list_con .cnt_item >.btn_hover > .btn_top10 {max-width: 100%; padding: 7px 8%; font-size: 12px; width: auto;}
+	.game_list_con .cnt_item .play_btn {margin-right: 0; transform: translate(-120%,-16px);}
+	.game_list_con .cnt_item >.btn_hover > .btn_top10 {transform: translate(-10%,-16px);}
 }
+@media all and (max-width:1020px) {.game_list_con .cnt_item .play_btn,.game_list_con .cnt_item >.btn_hover > .btn_top10 {padding: 7px 6%; }}
 @media all and (max-width:995px) {
 	.wrap_error h1 img {width:105px; height:auto}
 	.ebsmath_login {width:500px; margin:0 auto; padding:8.7rem 0 7.5rem}
@@ -1128,6 +1146,11 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 	/*이벤트 뱃지*/
 	.series_main h3.event {display:flex; justify-content:space-between}
 	.series_main h3.event span.counting {position:static; transform:none}
+
+	.game_list_con .cnt_item .btn_hover, .game_list_con .cnt_item .btn_bg {overflow: hidden; position: absolute; clip: rect(0,0,0,0); width:1px; height:1px; margin:-1px; border:0; padding:0;}
+	.game_list_con .cnt_item .btn_top10 {opacity: 1; display: inline-block;}
+	.game_list_con .cnt_item > .btn_hover > .btn_top10 {opacity: 0; display: none;}	
+	.game_list_con .cnt_item .play_btn,.game_list_con .cnt_item > .btn_hover > .btn_top10 {overflow: hidden; position: absolute; clip: rect(0,0,0,0); width:1px; height:1px; margin:-1px; border:0; padding:0;}
 }
 
 

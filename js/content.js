@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	/* 모바일&태블릿 찜하기*/
 	$(".btn_pop_zzim, .btn_pop_fav").on("click", function(e) {
-		//$(this).toggleClass("on")
+		$(this).toggleClass("on")
 	});
 
 
@@ -81,7 +81,14 @@ $(document).ready(function(){
 		$(this).closest('.pop_rel_con').removeClass("open").removeAttr('tabindex');
 	});
 
-
+    /* 다운로드 모바일 체크 2022-03-15 */
+	$('#pop_mob_no').on('click', function(){
+		if($("body").hasClass("touch_mob") === true){
+			$('#pop_download').addClass('mob_no');
+		} else {
+			$('#pop_download').removeClass('mob_no');
+		}
+	})
 
 	/* 게임존 이달의top10 */
 	var btn_top10 = $('.game_list .cnt_item .btn_top10');
@@ -156,7 +163,7 @@ function init_check_device(){
 	var containerWidth = window.innerWidth;
 	if (checkpf == "mo") {
 		$('.mycon_chk').hide();
-		//$('.btn_download').hide();
+		$('.btn_download').hide();
 		$('.my_contents_mid .btn_del_sel').hide();
 	}
 	if (containerWidth < 1025 && checkpf == "mo") {
@@ -183,37 +190,40 @@ function bookmarkCnt() {
 }
 
 
-
 function ThumbMov(){
 	var timer;
 	var timerex;
 	var checkpf = checkplatform();
-	$(document).on("mouseenter",".list_con .hoverMovie",function() {
+	var containerWidth = window.innerWidth;
+
+	$(document).on("mouseenter",".swiper-container .hoverMovie",function() {
 		if (containerWidth <= 760 || checkpf == "mo") return;
-		else {
-			if ( $(this).parents("body").find("li").hasClass("hoverMovie") == true ){
+		else{
+			if ( $(this).parents("body").find("div").hasClass("hoverMovie") == true ){
 				var This = $(this);
 				var data = $(this).find("img").attr('video-src');
-				var hasmov = $(this).find("video").length;
+				var hasmov;
+				if(hasmov > 0) return;
 
 				timer = setTimeout(function(){
-					if(hasmov > 0) return;
 					$(This).find("img").parent().append('<video class="video-preview" preload="none" muted=""><source src='+data+' type="video/mp4"></video>').find('video')[0].play();
+					hasmov = $(This).find("video").length;
 				},250);
 			}
 		}
-
 	});
-	$(document).on("mouseleave",".list_con .hoverMovie",function() {
+	$(document).on("mouseleave",".swiper-container .hoverMovie",function() {
 		if (containerWidth <= 760 || checkpf == "mo") return;
-		else {
-			if ( $(this).parents("body").find("li").hasClass("hoverMovie") == true){
+		else{
+			if ( $(this).parents("body").find("div").hasClass("hoverMovie") == true){
 				clearTimeout(timer);
 				timerex =setTimeout(function(){
-					$(".hoverMovie").find("video").remove();
+				$(".hoverMovie").find("video").remove();
 				},200);
 			}
 		}
 	});
 }
+
+
 
