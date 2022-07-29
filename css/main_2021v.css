@@ -282,6 +282,9 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 .pop_10m_math_common .pop_10m_alim .container {height:199px; padding-top:65px;}
 .pop_10m_math_common .pop_10m_alim .container::before {top:-50px; background:url('../images/mypage/icon_alim_math.png') 0 0 no-repeat; transform:translateX(-45%);}
 
+
+
+
 /*팝업공통*/
 .pop_common {position:fixed; top:100px;  left:50%; width:448px; height:310px; margin:-200px -236px; z-index:9999; display:none }
 .pop_common .dim{position:fixed; top:0; left:0; width:100%; height:100%; background:url(../../images/event/20161116/dim.png) repeat 0 0; z-index:9999}
@@ -325,7 +328,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     /* 하단 콘텐츠 링크 */
 	.sideLink ul {display:flex; justify-content: space-between; padding:4rem 4% 6rem; width: 100%;}
 	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 7);}
-	.sideLink ul a {flex-direction: column; align-items: center; justify-content: flex-start;width: 100%; height: 100%; padding: 0 10%;}
+	.sideLink ul a {flex-direction: column; align-items: center; justify-content: flex-start; width: 100%; height: 100%; padding: 0 10%;}
 	.sideLink ul a img {margin-bottom: 20px;}
 	.sideLink ul a span {max-width: 100%; padding: 0; text-align: center;}
 	.sideLink ul a span strong {font-size: 1.6rem;padding-bottom: 0;}
@@ -450,7 +453,7 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
 	/* 하단 콘텐츠 링크 */
 	.sideLink ul {flex-wrap: wrap; justify-content: flex-start; padding: 4em 4% 3rem;}
 	.sideLink ul li:nth-child(1),.sideLink ul li:nth-child(2),.sideLink ul li:nth-child(3),.sideLink ul li:nth-child(4),.sideLink ul li:nth-child(5),.sideLink ul li:nth-child(6),.sideLink ul li:nth-child(7) {width:calc(100% / 4); margin-bottom: 6%;}
-	.sideLink ul a img { width: 100%; margin-bottom: 10px; max-width: 100%; height: auto;}
+	.sideLink ul a img { width: 100%;padding: 0 10%;margin-bottom: 10px; max-width: 100%; height: auto;}
 	.sideLink ul a span strong {font-size: 1.2rem; padding-bottom: 1px;line-height: 1;margin-top: 10px;}
 	.sideLink ul a span p {font-size: 1.6rem;line-height: 1.5;}
 }
@@ -566,18 +569,15 @@ h2.tit_cnt {font-weight:bold; font-size:2.4rem; margin-bottom:2.5rem;}
     /* 팝업- 학년정보선택 */
 	.pop_sel_grade {position:absolute;  z-index:10000;}
 	.pop_sel_grade .pop_container {top:200px}
-	.pop_10m_math_common {position:absolute; z-index:9999;}
-/* 	.pop_10m_math_common .pop_10m_math,
-	 	.pop_10m_math_common .pop_10m_alim{top:200px}
-	.pop_10m_math_common .pop_10m_info {top:190px;} */
+	.pop_10m_math_common {position: absolute; z-index: 9999; }
+	.pop_10m_math_common .pop_10m_math,.pop_10m_math_common .pop_10m_alim{top:200px}
+	.pop_10m_math_common .pop_10m_info {top:190px;}
 
 	/*공지팝업*/
 	.main_popup {position:absolute; top:200px; left:50%; margin-left:-150px; width:300px; height:300px; z-index:10001;}
 	.main_popup a {display:block;}
 	.main_popup .content a img {max-width:300px; max-height:300px;}
 	.main_popup .foot {overflow:hidden;}
-
-
 }
 
 @media all and (max-width:640px) {
