@@ -3083,8 +3083,9 @@
 
         $(document).ready(function () {
             // 추천 콘텐츠
+            var codeFilter = " EGRD03|EGRD04|EGRD05|EGRD06|MGRD01|MGRD02|MGRD03|HGRD";
             var cgrdCd = null;
-            if (cgrdCd == null || cgrdCd.length < 2) {
+            if (codeFilter.indexOf(cgrdCd) <= 0) {
                 recomId = '#recom_' + 'EGRD04';
             } else {
                 recomId = '#recom_' + cgrdCd;
