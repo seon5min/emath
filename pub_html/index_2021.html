@@ -3084,12 +3084,18 @@
         $(document).ready(function () {
             // 추천 콘텐츠
             var codeFilter = " EGRD03|EGRD04|EGRD05|EGRD06|MGRD01|MGRD02|MGRD03|HGRD";
-            var cgrdCd = null;
-            if (codeFilter.indexOf(cgrdCd) <= 0) {
+            var cgrdCd;
+            if (cgrdCd == null || cgrdCd.length < 2) {
                 recomId = '#recom_' + 'EGRD04';
             } else {
                 recomId = '#recom_' + cgrdCd;
             }
+
+            // if (codeFilter.indexOf(cgrdCd) <= 0) {
+            //     recomId = '#recom_' + 'EGRD04';
+            // } else {
+            //     recomId = '#recom_' + cgrdCd;
+            // }
 
             $('.recom_box').removeClass("open");
             $('.recomCon .tab li').removeClass("on");
@@ -3287,6 +3293,22 @@
                 var pageload;
                 var containerWidth = window.innerWidth;
                 var checkpf = checkplatform();
+                // var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
+                // if (navigator.platform) {
+                //     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+                //         alert("모바일에서 접속하셨습니다");
+                //     } else {
+                //         alert("PC에서 접속하셨습니다");
+                //     }
+                // }
+                var userAgent = window.navigator.userAgent;
+                if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+                    alert('iPad or iPhone') // iPad or iPhone
+                }
+                else {
+                    alert('else')// Anything else
+                }
+
                 if (checkpf == "mo") {
                     $('.event_banner').hide();
                 }
