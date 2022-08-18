@@ -3289,25 +3289,28 @@
                 swiperInstances[parentID].slideNext();
             })
 
-            $(window).on('load resize', function () {
+            $(window).on('resize', function () {
                 var pageload;
                 var containerWidth = window.innerWidth;
                 var checkpf = checkplatform();
-                // var filter = "win16|win32|win64|macintel|mac|"; // PC일 경우 가능한 값
-                // if (navigator.platform) {
-                //     if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-                //         alert("모바일에서 접속하셨습니다");
-                //     } else {
-                //         alert("PC에서 접속하셨습니다");
-                //     }
+
+                // var userAgent = window.navigator.userAgent;
+                // if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+                //     $('.tab_sub').hide();
+                //     if (containerWidth <= 760) {
+                //         var $tab_main = $('.recomCon .tab_main');
+                //         if ($tab_main.length > 0) {
+                //             if (recomId.indexOf('EGRD') > -1) {
+                //                 $tab_main.find('li').eq(0).addClass('on');
+                //                 $('.tab_sub0').show();
+                //             } else {
+                //                 $tab_main.find('li').eq(1).addClass('on');
+                //                 $('.tab_sub1').show();
+                //             }
+                //             $('.tab_sub').find('li').filter('[grdCd=' + recomId.substr(1) + ']').addClass('on');
+                //         }
+                //     } 
                 // }
-                var userAgent = window.navigator.userAgent;
-                if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
-                    alert('iPad or iPhone') // iPad or iPhone
-                }
-                else {
-                    alert('else')// Anything else
-                }
 
                 if (checkpf == "mo") {
                     $('.event_banner').hide();
