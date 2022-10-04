@@ -249,7 +249,7 @@
 .skin-ebsmvod .mpv-play-toggle-btn {
     float: left;
     display: inline-block;
-    margin: 0px 20px 0px 15px;
+    margin: 0px 2% 0px 2%;
 } 
 .skin-ebsmvod .mpv-play-toggle-btn.mpv-play {
     background: url(./image/ebsmvod/pause_new.png) center center no-repeat;
@@ -285,7 +285,7 @@
 .skin-ebsmvod .mpv-repeat-btn {
     float: left;
     display: inline-block;
-    margin: 0 20px 0 20px;
+    margin: 0px 2% 0px 2%;
 } 
 .skin-ebsmvod .mpv-repeat-btn.mpv-repeat-on {
     background: url(./image/ebsmvod/repeat_on_new.png) center center no-repeat;
@@ -429,8 +429,9 @@
 .skin-ebsmvod .mpv-time-layout {
     float: right;
     display: inline-block;
-    margin: 5px 5px 0px 20px;
+    margin: 6px 5px 0px 2%;
     padding: 0px 0px;
+    color: #fff;
 } 
 .skin-ebsmvod.mpv-b-ie .mpv-time-layout {
     margin: 8px 5px 0px 5px;
@@ -678,7 +679,7 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin: 0px 20px 0 20px;
+    margin: 0px 2% 0 3%;
     background: url(./image/ebsmvod/fullscreen_new.png) center center no-repeat;
 } 
 .skin-ebsmvod .mpv-switchsource-btn {
@@ -1275,3 +1276,9 @@
     display: none;
 }
 
+@media all and (max-width: 740px) {
+    /* .skin-ebsmvod .mpv-time-layout {
+        display: none;
+    } */
+
+} 
