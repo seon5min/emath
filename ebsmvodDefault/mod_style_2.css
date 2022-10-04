@@ -1,0 +1,50 @@
+/* 공유퍼가기(1) */
+.skin-draft .mpv-scrap-org-btn { background: url(image/ebsmvod/share.png) center center no-repeat; }
+/* .skin-draft .mpv-scrap-layout { float: right; border-radius: 10px 10px; background-color: rgba(184, 184, 184, 0.3); display: inline-block; margin-top: 2px; padding: 0px 10px; height: 22px; border: solid 1.5px rgba(0,0,0, 0.3); border-top: solid 2.5px rgba(0,0,0, 0.3); border-left: solid 2.5px rgba(0,0,0, 0.3); } */
+.skin-draft .mpv-scrap-layout { float: right;}
+.skin-draft .mpv-scrap-layout.mpv-hide { display: none; }
+/* .skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: -4px; } */
+.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px; margin-left: 16px;}
+/* .skin-draft .mpv-scrap-layout .mpv-scrap-text { float: right; color: #fff; margin-top: 1px; } */
+.skin-draft .mpv-scrap-layout .mpv-scrap-text {display: none;}
+/* .skin-draft .mpv-scrap-box { position: absolute; padding: 17px 1px; margin-top: -110px; left: calc(100% / 2 - 200px); text-align: center; background-color: rgba(0,0,0, 0.50); } */
+/* .skin-draft .mpv-scrap-box { position: absolute; padding: 17px 1px; margin-top: -110px; right: 0; text-align: center; background-color: rgba(0,0,0, 0.50); } */
+.skin-draft .mpv-scrap-box { position: absolute; padding: 12px 1px;width: 269px; height: 86px; margin-top: -120px; right: 10px; text-align: center; background-color: rgba(0,0,0, 0.6);border-radius: 4px; }
+/* .skin-draft .mpv-scrap-box .mpv-scrap-row {  margin-top: 15px; width: 355px; } */
+/* .skin-draft .mpv-scrap-box .mpv-scrap-row { margin-top: 15px; width: auto; position: absolute; left: 14px; } */
+.skin-draft .mpv-scrap-box .mpv-scrap-row { margin-top: 35px; width: auto; position: absolute; left: 14px;}
+.skin-draft .mpv-scrap-box .mpv-scrap-row:first-child { margin-top: 0px; }
+/* .skin-draft .mpv-scrap-box .mpv-scrap-input { width: 250px; height: 25px; margin-left: -80px; color: #fff; background-color: rgba(0,0,0, 0); border: solid 1px #fff; padding: 0px 5px;  font-size: 12px; } */
+.skin-draft .mpv-scrap-box .mpv-scrap-input {width: 176px; height: 27px; color: #fff; background-color: rgba(0,0,0, 0); border: solid 1px #fff; padding: 0px 5px;  font-size: 12px; border-radius:3px 0 0 3px; background-color: rgba(255, 255, 255, 0.2); }
+/* .skin-draft .mpv-scrap-box .mpv-scrap-input-btn { position: absolute; display: inline-block;  width: 80px; height: 25px;  color: #fff; font-size: 12px; border: solid 1px #fff; border-left: 0px; padding-top: 5px; cursor: pointer; } */
+.skin-draft .mpv-scrap-box .mpv-scrap-input-btn { position: absolute; display: inline-block;width: 66px; height: 27px;color: #fff; font-size: 12px; border: solid 1px #fff; border-left: 0px; padding-top: 5px; cursor: pointer; border-radius: 0 3px 3px 0;}
+.skin-draft.mpv-lock-screen .mpv-scrap-org-btn { display: none; }
+.skin-draft.mpv-lock-screen .mpv-scrap-layout { display: none; }
+.skin-draft.mpv-lock-screen .mpv-scrap-box { display: none; }
+
+/* 경고 창 영역 */
+.skin-draft .mpv-alert-layer { position: absolute; display: table; top: 0px; left: 0px; margin: 0px 0px; padding: 0px 0px; width: 100%; height: 100%; text-align: center; background-color: rgba(0,0,0,0.4); }
+.skin-draft .mpv-alert-layer .mpv-alert-cell { display: table-cell; width: 100%; height: 100%; vertical-align: middle; }
+.skin-draft .mpv-alert-layer .mpv-alert-box { display: inline-block; text-align: center; color: #fff; border: solid 1px #fff; border-radius: 5px 5px; background-color: rgba(0,0,0,0.7); }
+.skin-draft.mpv-b-ie7 .mpv-alert-layer .mpv-alert-box { width: 300px; }
+.skin-draft .mpv-alert-layer .mpv-alert-box .mpv-alert-text { display: table-cell; min-width: 160px; padding: 10px 10px; text-align: center; vertical-align: middle; }
+.skin-draft .mpv-alert-layer .mpv-alert-box .mpv-alert-bottom .button { display: inline-block; margin: 5px 5px; padding: 2px 5px; min-width: 50px; border: solid 1px #fff; border-radius: 5px 5px; cursor: pointer; }
+.skin-draft .mpv-alert-layer .mpv-alert-box .mpv-alert-bottom button { background-color: rgb(0,0,0,0); color: #fff; }
+.skin-draft.mpv-b-ie7 .mpv-alert-layer .mpv-alert-box .mpv-alert-bottom .button { width: 70px; }
+.skin-draft .mpv-alert-layer .mpv-alert-box .mpv-alert-bottom .button:hover { border: solid 1px #f00; color: #f00; }
+
+.skin-draft .mpv-alert-layer.mpv-show-message .mpv-alert-bottom { display: none; }
+.skin-draft .mpv-alert-layer.mpv-show-message .mpv-alert-box .mpv-alert-text { padding: 30px 30px; }
+
+.skin-draft.mpv-os-mobile .mpv-stop-btn { display: none; }  /* 공유퍼가기(2) */
+
+/* 공유퍼가기(2) */
+.skin-ebsm2 .skin-ebsmvod .mpv-time-layout { float: left; }
+.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout { float: left; }
+.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout .mpv-mute-toggle-btn { margin-top: -20px; }
+/* .skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-background { margin-top: 5px; } */
+.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-background { margin-top: 9px; }
+.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-foreground { top: 0px; }
+/* .skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-handler { margin-top: -9px; } */
+.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-handler { margin-top: -5px; }
+.skin-ebsm2 .skin-ebsmvod .mpv-stop-btn { display: none; }  /* 공유퍼가기(2) */
