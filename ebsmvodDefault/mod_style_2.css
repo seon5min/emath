@@ -1,10 +1,10 @@
 /* 공유퍼가기(1) */
 .skin-draft .mpv-scrap-org-btn { background: url(image/ebsmvod/share.png) center center no-repeat; }
 /* .skin-draft .mpv-scrap-layout { float: right; border-radius: 10px 10px; background-color: rgba(184, 184, 184, 0.3); display: inline-block; margin-top: 2px; padding: 0px 10px; height: 22px; border: solid 1.5px rgba(0,0,0, 0.3); border-top: solid 2.5px rgba(0,0,0, 0.3); border-left: solid 2.5px rgba(0,0,0, 0.3); } */
-.skin-draft .mpv-scrap-layout { float: right;}
+.skin-draft .mpv-scrap-layout { float: right;margin-right: 4px;}
 .skin-draft .mpv-scrap-layout.mpv-hide { display: none; }
 /* .skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: -4px; } */
-.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px; margin-left: 1.8vw;}
+.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px; margin-left: 15px;}
 /* .skin-draft .mpv-scrap-layout .mpv-scrap-text { float: right; color: #fff; margin-top: 1px; } */
 .skin-draft .mpv-scrap-layout .mpv-scrap-text {display: none;}
 /* .skin-draft .mpv-scrap-box { position: absolute; padding: 17px 1px; margin-top: -110px; left: calc(100% / 2 - 200px); text-align: center; background-color: rgba(0,0,0, 0.50); } */

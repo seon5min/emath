@@ -180,8 +180,10 @@
     display: inline-block;
     background-color: #bb362d;
     border-radius: 50px;
-    width: 9px;
-    height: 9px;
+    width: 2vw;
+    height: 2vw;
+    max-width: 9px;
+    max-height: 9px;
     top: -3px;
     left: 0px;
     margin: 0px 0px 0px -10px;
@@ -250,7 +252,7 @@
 .skin-ebsmvod .mpv-play-toggle-btn {
     float: left;
     display: inline-block;
-    margin: 0px 1.4% 0px 2%;
+    margin: 0px 1.2% 0px 2%;
 } 
 .skin-ebsmvod .mpv-play-toggle-btn.mpv-play {
     background: url(./image/ebsmvod/pause_new.png) center center no-repeat;
@@ -683,7 +685,7 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin: 0px 2% 0 2.6%;
+    margin: 0px 2% 0 2%;
     background: url(./image/ebsmvod/fullscreen_new.png) center center no-repeat;
 } 
 .skin-ebsmvod .mpv-switchsource-btn {
