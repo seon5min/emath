@@ -470,6 +470,7 @@
 .skin-ebsmvod .mpv-rate-layout {
     float: right;
     display: inline-block;
+    margin-right: 15px;
 } 
 .skin-ebsmvod .mpv-rate-up-btn {
     background: url(./image/ebsmvod/speed_up_new.png);
@@ -1258,22 +1259,22 @@
 .mpv-os-mobile .skin-ebsmvod .mpv-progress .mpv-progress-handler {
     width: 30px;
     height: 30px;
-    top: -12px;
+    transform: translateX(2px); top: -2px;
     background-size: contain;
 } 
 .mpv-os-mobile .skin-ebsmvod .mpv-repeat-start-marker {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-size: contain;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: -3px;
+    margin-left: -12px;
 } 
 .mpv-os-mobile .skin-ebsmvod .mpv-repeat-end-marker {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background-size: contain;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: -3px;
+    margin-left: -12px;
 } 
 .mpv-os-mobile .skin-ebsmvod .mpv-volume-layout .mpv-volume-foreground {
     width: 8px;
@@ -1283,11 +1284,18 @@
 }
 
 @media all and (max-width: 740px) {
-     /* .skin-ebsmvod .mpv-time-layout {
-        display: none;
-    }  */
+
     .skin-ebsmvod .mpv-skip-input,.skin-ebsmvod .mpv-previous-skip-btn,.skin-ebsmvod .mpv-next-skip-btn { display: none;}
     .skin-ebsmvod .mpv-rate-layout{
         display: none;
     }
+    .skin-ebsmvod .mpv-fullscreen-toggle-btn {
+        margin: 0px 2% 0 2.7%;
+    } 
 } 
+
+@media all and (max-width: 400px) {
+    .skin-ebsm2 .skin-ebsmvod .mpv-volume-layout {
+        display: none;
+    }  
+}

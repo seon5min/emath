@@ -4,7 +4,7 @@
 .skin-draft .mpv-scrap-layout { float: right;margin-right: 4px;}
 .skin-draft .mpv-scrap-layout.mpv-hide { display: none; }
 /* .skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: -4px; } */
-.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px; margin-left: 15px;}
+.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px;}
 /* .skin-draft .mpv-scrap-layout .mpv-scrap-text { float: right; color: #fff; margin-top: 1px; } */
 .skin-draft .mpv-scrap-layout .mpv-scrap-text {display: none;}
 /* .skin-draft .mpv-scrap-box { position: absolute; padding: 17px 1px; margin-top: -110px; left: calc(100% / 2 - 200px); text-align: center; background-color: rgba(0,0,0, 0.50); } */
