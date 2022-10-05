@@ -4,7 +4,7 @@
 .skin-draft .mpv-scrap-layout { float: right;}
 .skin-draft .mpv-scrap-layout.mpv-hide { display: none; }
 /* .skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: -4px; } */
-.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px; margin-left: 16px;}
+.skin-draft .mpv-scrap-layout .mpv-scrap-org-btn { float: left; width: 25px; height: 25px; margin-top: 3px; margin-left: 1.8vw;}
 /* .skin-draft .mpv-scrap-layout .mpv-scrap-text { float: right; color: #fff; margin-top: 1px; } */
 .skin-draft .mpv-scrap-layout .mpv-scrap-text {display: none;}
 /* .skin-draft .mpv-scrap-box { position: absolute; padding: 17px 1px; margin-top: -110px; left: calc(100% / 2 - 200px); text-align: center; background-color: rgba(0,0,0, 0.50); } */
@@ -40,7 +40,7 @@
 
 /* 공유퍼가기(2) */
 .skin-ebsm2 .skin-ebsmvod .mpv-time-layout { float: left; }
-.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout { float: left; }
+.skin-ebsm2 .skin-ebsmvod .mpv-volume-layout { float: left;margin: 0 0.5% 0 1%; }
 .skin-ebsm2 .skin-ebsmvod .mpv-volume-layout .mpv-mute-toggle-btn { margin-top: -20px; }
 /* .skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-background { margin-top: 5px; } */
 .skin-ebsm2 .skin-ebsmvod .mpv-volume-layout.mpv-horizontal .mpv-volume-background { margin-top: 9px; }

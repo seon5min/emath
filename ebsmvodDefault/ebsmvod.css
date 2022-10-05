@@ -178,10 +178,11 @@
 .skin-ebsmvod .mpv-progress .mpv-progress-handler {
     position: absolute;
     display: inline-block;
-    background: url(../../../image/ebsmvod/time_handler.png) center center no-repeat;
-    width: 20px;
-    height: 20px;
-    top: -8px;
+    background-color: #bb362d;
+    border-radius: 50px;
+    width: 9px;
+    height: 9px;
+    top: -3px;
     left: 0px;
     margin: 0px 0px 0px -10px;
     padding: 0px 0px;
@@ -249,7 +250,7 @@
 .skin-ebsmvod .mpv-play-toggle-btn {
     float: left;
     display: inline-block;
-    margin: 0px 2% 0px 2%;
+    margin: 0px 1.4% 0px 2%;
 } 
 .skin-ebsmvod .mpv-play-toggle-btn.mpv-play {
     background: url(./image/ebsmvod/pause_new.png) center center no-repeat;
@@ -275,7 +276,7 @@
     float: left;
     width: 22px;
     height: 16px;
-    margin-top: 7px;
+    margin-top: 8px;
     border-radius: 2px;
     background-color: #d9d9d9;
     text-align: center;
@@ -497,10 +498,12 @@
 } 
 .skin-ebsmvod .mpv-repeat-start-marker {
     background: url(./image/ebsmvod/repeat_marker_left_new.png) center center no-repeat;
+    background-size: contain;
 } 
 .skin-ebsmvod .mpv-repeat-end-marker {
     background: url(./image/ebsmvod/repeat_marker_right_new.png) center center no-repeat;
     margin-left: -10px;
+    background-size: contain;
 } 
 .skin-ebsmvod .mpv-message-layout {
     position: absolute;
@@ -679,7 +682,7 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin: 0px 2% 0 3%;
+    margin: 0px 2% 0 2.6%;
     background: url(./image/ebsmvod/fullscreen_new.png) center center no-repeat;
 } 
 .skin-ebsmvod .mpv-switchsource-btn {
@@ -1277,8 +1280,11 @@
 }
 
 @media all and (max-width: 740px) {
-    /* .skin-ebsmvod .mpv-time-layout {
+     /* .skin-ebsmvod .mpv-time-layout {
         display: none;
-    } */
-
+    }  */
+    .skin-ebsmvod .mpv-skip-input,.skin-ebsmvod .mpv-previous-skip-btn,.skin-ebsmvod .mpv-next-skip-btn { display: none;}
+    .skin-ebsmvod .mpv-rate-layout{
+        display: none;
+    }
 } 
