@@ -180,10 +180,10 @@
     display: inline-block;
     background-color: #bb362d;
     border-radius: 50px;
-    width: 2vw;
-    height: 2vw;
-    max-width: 9px;
-    max-height: 9px;
+    width: 9px;
+    height: 9px;
+    max-width: 15px;
+    max-height: 15px;
     top: -3px;
     left: 0px;
     margin: 0px 0px 0px -10px;
