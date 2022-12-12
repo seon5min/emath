@@ -59,9 +59,9 @@
                                 이야기</a></li><!-- 2021-11-19 추가 : 링크 끝에 #intro_new_mov 추가되어야 함 -->
                     </ul>
                     <ul class="member">
-                        <li><span class="login n">이새봄 선생님</span></li>
+                        <li><span class="login g">이새봄 선생님</span></li> <!-- 2022-12-08 상단 구글 아이콘 추가 -->
                         <!-- <li><a href="#none">로그인</a></li>
-                    <li><a href="#none">회원가입</a></li> -->
+						<li><a href="#none">회원가입</a></li> -->
                         <li><a href="#none">마이페이지</a></li>
                         <li><a href="#none">로그아웃</a></li>
                     </ul>
@@ -196,8 +196,8 @@
                     <div class="login">
                         <!-- <span class="cmt_login">로그인을 해주세요.</span> -->
                         <!-- <a class="cmt_login" href="#">로그인</a> -->
-                        <!-- f:페이스북/k:카카오/a:애플/n:네이버 --><span class="cmt_login">김아무개선생님 <a href="#"
-                                class="btn_logout">로그아웃</a></span>
+                        <!-- f:페이스북/k:카카오/a:애플/n:네이버 / g:구글 --><span class="cmt_login g">김아무개선생님 <a href="#"
+                                class="btn_logout">로그아웃</a></span> <!-- 2022-12-08 g class 구글 추가 -->
                         <button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
                     </div>
                     <div class="main_menu">
@@ -1466,8 +1466,8 @@
                             <li><button type="button">중고교</button></li>
                         </ul>
                         <ul class="tab_sub0 tab_sub m_only">
-                            <li><a href="#recom_cnt0">초3</a></li>
-                            <li class="on"><a href="#recom_cnt1">초4</a></li>
+                            <li class="on"><a href="#recom_cnt0">초3</a></li>
+                            <li><a href="#recom_cnt1">초4</a></li>
                             <li><a href="#recom_cnt2">초5</a></li>
                             <li><a href="#recom_cnt3">초6</a></li>
                         </ul>
@@ -2798,6 +2798,7 @@
             </section>
 
             <section class="sideLink">
+			<!-- 2022-06-20 메인페이지 하단 수정 -->
                 <ul>
                     <li><a href="#none"><img src="../images/main/el_easy.png"
                                 alt="초등학교용 이지 통계"><span><strong>초등학교용</strong>
@@ -2825,6 +2826,7 @@
                                 <p>매일10분 수학</p>
                             </span></a></li>
                 </ul>
+				<!-- //2022-06-20 메인페이지 하단 수정 -->
             </section>
         </div>
 
@@ -2919,146 +2921,137 @@
                 </div>
             </div>
         </footer>
+		<!-- 팝업 : 학년정보 선택 -->
+		<div id="pop_sel_grade" class="pop_sel_grade" style="display:none">
+			<div class="pop_container">
+				<div class="pop_content">
+					<h3><strong>학년 정보</strong>를 선택해주세요.</h3>
+					<fieldset>
+						<legend>학년 정보</legend>
+						<ul>
+							<li><input type="radio" name="sel_grd" id="i_grd1"> <label for="i_grd1">초3</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd2"> <label for="i_grd2">초4</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd3"> <label for="i_grd3">초5</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd4"> <label for="i_grd4">초6</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd5"> <label for="i_grd5">중1</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd6"> <label for="i_grd6">중2</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd7"> <label for="i_grd7">중3</label></li>
+							<li><input type="radio" name="sel_grd" id="i_grd8"> <label for="i_grd8">고교</label></li>
+						</ul>
+					</fieldset>
+					<p>※ 선택하신 학년 정보에 해당하는 맞춤형 메인화면을 제공해드립니다.</p>
+					<button type="submit" class="btn_save">저장</button>
+					<button class="btn_pop_close" onclick="$('#pop_sel_grade').hide()"><i
+							class="blind">팝업닫기</i></button>
+				</div>
+				<div class="bottom">
+					<input type="checkbox" name="chk_pop" id="chk_pop"> <label for="chk_pop">1일 동안 보지 않기</label>
+				</div>
+			</div>
+		</div>
+		<!-- // 팝업 : 학년정보 선택-->
 
-        <!-- 팝업 : 학년정보 선택 -->
-        <div id="pop_sel_grade" class="pop_sel_grade" style="display:none">
-            <div class="pop_container">
-                <div class="pop_content">
-                    <h3><strong>학년 정보</strong>를 선택해주세요.</h3>
-                    <fieldset>
-                        <legend>학년 정보</legend>
-                        <ul>
-                            <li><input type="radio" name="sel_grd" id="i_grd1"> <label for="i_grd1">초3</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd2"> <label for="i_grd2">초4</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd3"> <label for="i_grd3">초5</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd4"> <label for="i_grd4">초6</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd5"> <label for="i_grd5">중1</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd6"> <label for="i_grd6">중2</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd7"> <label for="i_grd7">중3</label></li>
-                            <li><input type="radio" name="sel_grd" id="i_grd8"> <label for="i_grd8">고교</label></li>
-                        </ul>
-                    </fieldset>
-                    <p>※ 선택하신 학년 정보에 해당하는 맞춤형 메인화면을 제공해드립니다.</p>
-                    <button type="submit" class="btn_save">저장</button>
-                    <button class="btn_pop_close" onclick="$('#pop_sel_grade').hide()"><i
-                            class="blind">팝업닫기</i></button>
-                </div>
-                <div class="bottom">
-                    <input type="checkbox" name="chk_pop" id="chk_pop"> <label for="chk_pop">1일 동안 보지 않기</label>
-                </div>
-            </div>
-        </div>
-        <!-- // 팝업 : 학년정보 선택-->
+		<!-- 2022-07-05 개인정보 수집 동의 팝업 -->
+		<div class="pop_10m_math_common" style="display:none">
+			<div class="pop_10m_info">
+				<div class="container">
+					<button type="button" class="btn_close_pop" onclick="$(this).closest('.pop_10m_math_common').remove()"><i class="blind">팝업 닫기</i></button>
+					<p class="bold">매일 10분 수학</p>
+					<p class="info_tit">개인정보 수집·이용에 대한 동의 안내</p>
+					<p class="info_txt">매일 10분 수학은 맞춤형 문제 제공을 위해<br> 이용자의 학년 정보를 수집하고 있습니다.<br> 구독 설정 페이지에서 개인정보 수집·이용에 대한<br> 동의 후 이용해 주시기 바랍니다.</p>
+					<p class="info_note">※ 개인정보 수집·이용에 대해 동의하지 않으실 경우<br> 서비스 이용이 불가하오니 이점 양해 바랍니다.</p>
+					<a href="#" class="btn_app_10math">구독 설정 바로가기</a>
+				</div>
+				<div class="bottom">
+					<input type="checkbox" name="chk_10math" id="chk_10math"><label for="chk_10math">다시 열지 않기</label>
+				</div>
+			</div>
+		</div>
+		<!-- //2022-07-05 개인정보 수집 동의 팝업-->
 
-        <!-- 2022-07-05 개인정보 수집 동의 팝업 -->
-        <div class="pop_10m_math_common" style="display:">
-            <div class="pop_10m_info">
-                <div class="container">
-                    <button type="button" class="btn_close_pop"
-                        onclick="$(this).closest('.pop_10m_math_common').remove()"><i class="blind">팝업
-                            닫기</i></button>
-                    <p class="bold">매일 10분 수학</p>
-                    <p class="info_tit">개인정보 수집·이용에 대한 동의 안내</p>
-                    <p class="info_txt">매일 10분 수학은 맞춤형 문제 제공을 위해<br> 이용자의 학년 정보를 수집하고 있습니다.<br> 구독 설정 페이지에서 개인정보
-                        수집·이용에 대한<br> 동의 후 이용해 주시기 바랍니다.</p>
-                    <p class="info_note">※ 개인정보 수집·이용에 대해 동의하지 않으실 경우<br> 서비스 이용이 불가하오니 이점 양해 바랍니다.</p>
-                    <a href="#" class="btn_app_10math">구독 설정 바로가기</a>
-                </div>
-                <div class="bottom">
-                    <input type="checkbox" name="chk_10math" id="chk_10math"><label for="chk_10math">다시 열지
-                        않기</label>
-                </div>
-            </div>
-        </div>
-        <!-- //2022-07-05 개인정보 수집 동의 팝업-->
+		<!-- 2021-06-01 매일 10분 수학 신청 팝업 -->
+		<div class="pop_10m_math_common" style="display:none">
+			<div class="pop_10m_math">
+				<div class="container">
+					<button type="button" class="btn_close_pop"
+						onclick="$(this).closest('.pop_10m_math_common').remove()"><i class="blind">팝업 닫기</i></button>
+					<p class="bold">매일 <strong class="fc_blue">10분</strong> 수학을 신청하세요!</p>
+					<p>짧은 시간 동안 가볍게 풀 수 있는 문제를 매일 제공합니다.<br>
+						즐거운 놀이가 실력이 되는 자기주도 학습 습관을 만들어보세요!</p>
 
-        <!-- 2021-06-01 매일 10분 수학 신청 팝업 -->
-        <div class="pop_10m_math_common" style="display:none">
-            <div class="pop_10m_math">
-                <div class="container">
-                    <button type="button" class="btn_close_pop"
-                        onclick="$(this).closest('.pop_10m_math_common').remove()"><i class="blind">팝업
-                            닫기</i></button>
-                    <p class="bold">매일 <strong class="fc_blue">10분</strong> 수학을 신청하세요!</p>
-                    <p>짧은 시간 동안 가볍게 풀 수 있는 문제를 매일 제공합니다.<br>
-                        즐거운 놀이가 실력이 되는 자기주도 학습 습관을 만들어보세요!</p>
+					<a href="#" class="btn_app_10math">매일 10분 수학 신청하기</a>
+				</div>
+				<div class="bottom">
+					<input type="checkbox" name="chk_10math" id="chk_10math"><label for="chk_10math">다시 열지
+						않기</label><!-- 2021-10-21 span 삭제 -->
+				</div>
+			</div>
+		</div>
+		<!-- //2021-06-01 매일 10분 수학 신청 팝업-->
 
-                    <a href="#" class="btn_app_10math">매일 10분 수학 신청하기</a>
-                </div>
-                <div class="bottom">
-                    <input type="checkbox" name="chk_10math" id="chk_10math"><label for="chk_10math">다시 열지
-                        않기</label><!-- 2021-10-21 span 삭제 -->
-                </div>
-            </div>
-        </div>
-        <!-- //2021-06-01 매일 10분 수학 신청 팝업-->
+		<!-- 2021-10-21 수정 -->
+		<div id="popup_242" class="main_popup" style="display:none">
+			<div class="foot">
+				<label class="fL">
+					<input type="checkbox" id="setclose_242" onclick="setCookie(242, 3);" name="check_g1"
+						value="checkbox">
+					3일 동안 이 창을 열지 않음
+				</label>
+				<a href="#" class="btn_close"
+					onclick="$(this).closest('#popup_242').hide(); return false;"><span>X</span>닫기</a>
+			</div>
+			<div class="content">
+				<!-- 팝업 세로값 지정 : 실제 height값 = 지정한 값 + head영역(45px) + foot영역(26px) -->
+				<a onclick="mainRayerPopupImgClick('https://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=391&amp;anocLcnCd=002&amp;c.page=1', 'EBSMath 사이트 점검 안내 [10/23]', 'WT002');return false;"
+					style="cursor:pointer;">
+					<img src="https://m.ebsmath.co.kr/web_pot/common/innovativepot/upload/20211101011753_1635740273529_1.jpg"
+						alt="" width:400="" height:400="">
+				</a>
+			</div>
+		</div>
+		<!--//2021-10-21 수정 -->
 
-        <!-- 2021-10-21 수정 -->
-        <div id="popup_242" class="main_popup" style="display:none">
-            <div class="foot">
-                <label class="fL">
-                    <input type="checkbox" id="setclose_242" onclick="setCookie(242, 3);" name="check_g1"
-                        value="checkbox">
-                    3일 동안 이 창을 열지 않음
-                </label>
-                <a href="#" class="btn_close"
-                    onclick="$(this).closest('#popup_242').hide(); return false;"><span>X</span>닫기</a>
-            </div>
-            <div class="content">
-                <!-- 팝업 세로값 지정 : 실제 height값 = 지정한 값 + head영역(45px) + foot영역(26px) -->
-                <a onclick="mainRayerPopupImgClick('https://www.ebsmath.co.kr/cosCenter/noticeView?anocSno=391&amp;anocLcnCd=002&amp;c.page=1', 'EBSMath 사이트 점검 안내 [10/23]', 'WT002');return false;"
-                    style="cursor:pointer;">
-                    <img src="https://m.ebsmath.co.kr/web_pot/common/innovativepot/upload/20211101011753_1635740273529_1.jpg"
-                        alt="" width:400="" height:400="">
-                </a>
-            </div>
-        </div>
-        <!--//2021-10-21 수정 -->
+		<!--  2021-10-25 APP 팝업 -->
+		<div id="onlyApp" class="onlyApp" style="display:none">
+			<!-- 2021-10-25 class추가 -->
+			<div id="popup_20210527" class="mainPopup">
+				<div class="content">
+					<a onclick="mainRayerPopupImgClick('https://m.ebsmath.co.kr/cosCenter/noticeView?anocSno=373&anocLcnCd=002', 'app 서비스 이용 제한 안내', 'WT002');return false;"
+						style="cursor:pointer;">
+						<img src="https://m.ebsmath.co.kr/common/mathmobile/images/common/appPopup_20210527.jpg"
+							alt="app 서비스 이용 제한 안내" width="400" height="400" />
+					</a>
+				</div>
+				<div class="foot">
+					<a href="#" class="btnCloseToday" id="setclose_20210527" onclick="setCookie(20210527, 7);">7일 동안
+						그만 보기</a>
+					<a href="#" class="btnClose" onclick="$('#onlyApp').hide(); $('.dim').hide(); return false;"><i
+							class="blind">닫기</i></a><!-- 2021-10-25 onclick 부분수정 -->
+				</div>
+			</div>
+			<div class="dim" style="display:block;"></div>
+			<script type="text/javascript">
+				/*
+				if($.cookie('layerPopup_20210527') == 'Y'){
+					$('#popup_20210527').remove();
+					$('.dim').hide();
+				}*/
+			</script>
+		</div>
 
-
-
-        <!--  2021-10-25 APP 팝업 -->
-        <div id="onlyApp" class="onlyApp" style="display:none">
-            <!-- 2021-10-25 class추가 -->
-            <div id="popup_20210527" class="mainPopup">
-                <div class="content">
-                    <a onclick="mainRayerPopupImgClick('https://m.ebsmath.co.kr/cosCenter/noticeView?anocSno=373&anocLcnCd=002', 'app 서비스 이용 제한 안내', 'WT002');return false;"
-                        style="cursor:pointer;">
-                        <img src="https://m.ebsmath.co.kr/common/mathmobile/images/common/appPopup_20210527.jpg"
-                            alt="app 서비스 이용 제한 안내" width="400" height="400" />
-                    </a>
-                </div>
-                <div class="foot">
-                    <a href="#" class="btnCloseToday" id="setclose_20210527" onclick="setCookie(20210527, 7);">7일 동안
-                        그만 보기</a>
-                    <a href="#" class="btnClose" onclick="$('#onlyApp').hide(); $('.dim').hide(); return false;"><i
-                            class="blind">닫기</i></a><!-- 2021-10-25 onclick 부분수정 -->
-                </div>
-            </div>
-            <div class="dim" style="display:block;"></div>
-            <script type="text/javascript">
-                /*
-                if($.cookie('layerPopup_20210527') == 'Y'){
-                    $('#popup_20210527').remove();
-                    $('.dim').hide();
-                }*/
-            </script>
-        </div>
-        <!-- // APP 팝업 -->
-        <script type="text/javascript">
-            /*
-                $( document ).ready( function() {
-                    var randomNum = parseInt(Math.round(Math.random() * 5) + 1);
-                    $('.pop_live_wrap .coronaWrap > div').removeClass().addClass('fix'+randomNum);
-                    if (isAPP('appYn')) {
-                        $('#onlyApp').show();
-                    };
-                });*/
-        </script>
-        <!-- // 2021-10-25 APP 팝업 -->
-
+		<!-- // APP 팝업 -->
+		<script type="text/javascript">
+			/*
+				$( document ).ready( function() {
+					var randomNum = parseInt(Math.round(Math.random() * 5) + 1);
+					$('.pop_live_wrap .coronaWrap > div').removeClass().addClass('fix'+randomNum);
+					if (isAPP('appYn')) {
+						$('#onlyApp').show();
+					};
+				});*/
+		</script>
+		<!-- // 2021-10-25 APP 팝업 -->
     </div>
-
 
     <script type="text/javascript">
         var sl_bm_idx;
@@ -3079,24 +3072,14 @@
             }
         }
 
-
-
         $(document).ready(function () {
             // 추천 콘텐츠
-            var codeFilter = " EGRD03|EGRD04|EGRD05|EGRD06|MGRD01|MGRD02|MGRD03|HGRD";
             var cgrdCd;
-            // 추천 콘텐츠
             if (cgrdCd == null || cgrdCd.length < 2) {
                 recomId = '#recom_' + 'EGRD04';
             } else {
                 recomId = '#recom_' + cgrdCd;
             }
-
-            // if (codeFilter.indexOf(cgrdCd) <= 0) {
-            //     recomId = '#recom_' + 'EGRD04';
-            // } else {
-            //     recomId = '#recom_' + cgrdCd;
-            // }
 
             $('.recom_box').removeClass("open");
             $('.recomCon .tab li').removeClass("on");
@@ -3423,7 +3406,7 @@
             $('.dep1').on('focus', function () {
                 var containerWidth = window.innerWidth;
                 if (containerWidth > 995) {
-                    $('.main_menu').stop().animate({ height: 310 }, 100);
+                    $('.main_menu').stop().animate({ height: 340 }, 100); //2022-06-20 그림그래프 추가하여 높이 수정
                 }
             });
 
