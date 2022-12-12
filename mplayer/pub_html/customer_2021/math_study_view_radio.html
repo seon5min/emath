@@ -276,198 +276,114 @@
 			<section class="course_top">
 				<div class="wrap">
 					<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
-					<h2 class="tit_course_m" onclick="openCrsList()">고객센터 <strong class="stit_course_m">이용문의</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
+					<h2 class="tit_course_m" onclick="openCrsList()">고객센터 <strong class="stit_course_m">수학 학습 해결소</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
 					<ul class="crs_list">
 						<li class="dep2"><a href="#">고객센터</a></li><!-- 2022-02-15 추가 -->
 						<li class="dep2"><a href="#">공지사항</a></li>
 						<li class="dep2"><a href="#">자주 묻는 질문</a></li>
-						<li class="dep2  on"><a href="#">이용문의</a></li>
-						<li class="dep2"><a href="#">수학 학습 해결소</a></li>
+						<li class="dep2"><a href="#">이용문의</a></li>
+						<li class="dep2  on"><a href="#">수학 학습 해결소</a></li>
 					</ul>
 				</div>
 			</section>
 			<section class="content_top">
 				<div class="wrap">
-					<h2 class="tit_top">이용문의</h2>
+					<h2 class="tit_top">수학 학습 해결소</h2>
 
 					<p>
-						EBSMath 웹사이트 이용 중 궁금한 사항이 있으신가요? 언제든지 문의해 주세요.
+						EBSMath 콘텐츠 속 수학적 질문이나 관련 궁금증을 해결해 드립니다.
+
 					</p>
 				</div>
 			</section>
 
 
-			<section class="contents_mid">
-				<div class="wrap">
 
-					<fieldset>
-						<dl class="quiry_opt">
-							<dt>
-								<select>
-									<option>전체</option>
-									<option>제목</option>
-									<option>내용</option>
-									<option>작성자</option>
-								</select>
-							</dt>
-							<dd>
-								<input type="text" placeholder="검색어를 입력하세요">
-								<button type="submit" class="btn_find">검색</button>
+			<section class="contents_mid">
+				<!-- s : 게시물 보기 -->
+				<article class="board_view">
+					<header>
+						<h3>
+							<em class="grade">초3</em>
+							나눗셈
+						</h3>
+						<ul class="side_info">
+							<li>
+								<dfn>작성자 :</dfn> <span class="sns_g">홍*동</span><!-- sns로그인 아닐경우 클래스명 : sns_ --> <!-- 2022-12-08 sns_g 클래스 추가 -->
+							</li>
+							<li>
+								<span class="date"><dfn>등록날짜 : </dfn>2021.11.26</span>
+								<span class="hit"><dfn>조회수 :</dfn> 1,000</span>
+							</li>
+						</ul>
+					</header>
+					<section class="main_article qs">
+						<dl class="att_file">
+							<dt><button type="button" id="btn_att_file">첨부파일 <em>3</em></button></dt>
+							<dd class="att_file_box">
+								<ul>
+									<li><a href="#">이지통계화면1.jpg (300kb)</a></li>
+									<li><a href="#">이지통계화면2.jpg (300kb)</a></li>
+									<li><a href="#">EBSMath_단원별_콘텐츠_바로가기_중학_3학년.xlsx (143,516 kb)</a></li>
+								</ul>
 							</dd>
 						</dl>
-					</fieldset>
 
-					<div class="quiry_head type2">
-						<em class="cmt_result">총 <strong class="txthr_pp">400</strong>건</em>
-						<p>
-							<span class="chk_post">
-								<input type="checkbox" name="chk_mypost" id="chk_mypost"><label for="chk_mypost">내가 쓴 글</label>
-							</span>
-							<button type="button" class="btn_btm_exec">등록하기</button>
-						</p>
-					</div>
+						<div class="question">​교재 50쪽 5번 문제에서 899÷8에서 8에서 8을 빼면 0이 나오는데 그 다음은 어떻게 풀어야 하나요 풀이 과정 좀 부탁드립니다.</div>
 
-					<table class="board_type1 mathqry" summary="번호, 문의유형, 제목, 작성자, 작성일, 상태 ,조회수가 제공됩니다.">
-						<caption>이용문의 목록</caption>
 
-						<thead>
-							<tr>
-								<th class="ord">번호</th>
-								<th class="inq">문의유형</th>
-								<th class="subj">제목</th>
-								<th class="wrt">작성자</th>
-								<th class="date">작성일</th>
-								<th class="stt">상태</th>
-								<th class="hit">조회수</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="ord">10</td>
-								<td class="inq">사이트 이용문의</td>
-								<td class="subj">
-									<a href="#" class="lock file"><span>성취도평가 기본설정을 어떻게 바꾸나요?</span></a>
-								</td>
-								<td class="wrt"><span class="sns_"><img src="https://www.ebsmath.co.kr/common/innovativepot/math2016/images/common/icon_nvr.png" alt="네이버" class="mr2 vm"> 이*영</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ing">질문접수</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">9</td>
-								<td class="inq">건의사항</td>
-								<td class="subj">
-									<a href="#"><span>희망수학 칼럼</span></a>
-								</td>
-								<td class="wrt"><span class="sns_"><img src="../../images/common/icon_google.png" alt="구글" class="mr2 vm"> 이*영</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ing">질문접수</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">8</td>
-								<td class="inq">건의사항</td>
-								<td class="subj">
-									<a href="#"><span>스킨쉽과 연결시키는 수학공부?</span></a>
-								</td>
-								<td class="wrt"><span class="sns_k">권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">7</td>
-								<td class="inq">회원정보/가입</td>
-								<td class="subj">
-									<a href="#"><span>오답노트 에서 나눗셈 심화 첫번째 문제 풀이에 대한 의문을 문의하려고 합니다</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">6</td>
-								<td class="inq">영상 이용문의</td>
-								<td class="subj">
-									<a href="#"><span>ebs이벤트 끝까지 달린다 이용 오류</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">5</td>
-								<td class="inq">영상 이용문의</td>
-								<td class="subj">
-									<a href="#"><span>유한소수관련</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">4</td>
-								<td class="inq">영상 이용문의</td>
-								<td class="subj">
-									<a href="#"><span>유한소수관련</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">3</td>
-								<td class="inq">사이트오류</td>
-								<td class="subj">
-									<a href="#"><span>유한소수관련</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">2</td>
-								<td class="inq">사이트오류</td>
-								<td class="subj">
-									<a href="#"><span>유한소수관련</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-							<tr>
-								<td class="ord">1</td>
-								<td class="inq">사이트오류</td>
-								<td class="subj">
-									<a href="#"><span>유한소수관련</span></a>
-								</td>
-								<td class="wrt"><span>권*연</span></td>
-								<td class="date">2021.09.06</td>
-								<td class="stt"><em class="stt_ok">답변완료</em></td>
-								<td class="hit"><span>105</span></td>
-							</tr>
-						</tbody>
-					</table>
+						<div class="answer_area">
+							<dl class="head">
+								<dt>문의 답변</dt>
+								<dd>
+									<span class="writer">답변자 : 수학매니지윙</span>
+									<span class="date">작성자 : 2021.10.04</span>
+								</dd>
+							</dl>
+							<div class="answer">
+								혹시 어떤 교재의 어떤 풀이인지 좀 더 자세히 올려주면 더 자세한 답을 드릴 수 있어요^^
+							</div>
+							<dl class="eval blind"> <!-- 2022-04-13 blind 추가 -->
+								<dt>질문자 평 :</dt>
+								<dd>
+									<!-- 2022-02-23 수정 -->
+									<em class="icon_like0">아이콘</em>
+									<em class="icon_like1">아이콘</em> 어려워요
+									<em class="icon_like2">아이콘</em> 좋아요
+									<em class="icon_like3">아이콘</em> 매우 좋아요!
+								</dd>
+							</dl>
+							<div class="assess_area">
+								<fieldset>
+									<legend>평가 하기</legend>
+									<div class="assess_tit">
+										<p><span class="assess_user">김샘플</span> 님의 답변을 평가해 주세요.</p>
+										<p class="assess_sub">(평가가 완료되어야 다른 질문 등록이 가능합니다.)</p>
+									</div>
+									<ul>
+										<li><input type="radio" name="sel_ase" id="i_ase1"><label for="i_ase1">매우 좋아요!</label></li>
+										<li><input type="radio" name="sel_ase" id="i_ase2"><label for="i_ase2">좋아요!</label></li>
+										<li><input type="radio" name="sel_ase" id="i_ase3"><label for="i_ase3">어려워요</label></li>
+									</ul>
+								</fieldset>
+							</div>
+						</div>
+					</section>
 
-					<div class="pagination">
-						<a class="first arrow" href="#"><i class="blind">처음</i></a>
-						<a class="prev arrow" href="#"><i class="blind">이전</i></a>
-						<a class="on" href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-						<a class="next arrow" href="#"><i class="blind">다음</i></a>
-						<a class="last arrow" href="#"><i class="blind">마지막</i></a>
-					</div>
+					<section class="board_bottom">
+						<ul>
+							<li><a href="#" class="btn_board btn_type1" id="btn_list">목록보기</a></li>
+							<li>
+								<button type="button" class="btn_board btn_type2 blind" id="btn_del">삭제</button> <!-- 2022-04-13 blind 추가 -->
+								<button type="button" class="btn_board btn_type1 blind" id="btn_modify">수정하기</button> <!-- 2022-04-13 blind 추가 -->
+								<button type="button" class="btn_board btn_type1" id="btn_modify">등록완료</button>
+							</li>
+						</ul>
+					</section>
+				</article>
+				<!--//e : 게시물 보기 -->
 
-				</div>
+
 			</section>
 
 		</div>
@@ -564,6 +480,16 @@
 	</footer>
 </div>
 <script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+<script>
+$(document).ready(function(){
+	$('#btn_ac_like').on("click", function() {
+		$(this).toggleClass("on");
+	});
+	$('#btn_att_file').on("click", function() {
+		$(".att_file_box").toggleClass("open");
+	});
+});
 
+</script>
 </body>
 </html>

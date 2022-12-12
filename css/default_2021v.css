@@ -17,6 +17,7 @@
 .ebsmath_login .sns_login a.f {background-image:url('../images/common/icon_log_f.png')}
 .ebsmath_login .sns_login a.a {background-image:url('../images/common/icon_log_a.png')}
 .ebsmath_login .sns_login a.k {background-image:url('../images/common/icon_log_k.png')}
+.ebsmath_login .sns_login a.g {background-image:url('../images/common/icon_log_g.png')}
 .ebsmath_login .login_form .check_svid {margin-top:0px; font-size:1.3rem;}
 .ebsmath_login .login_form input[type="checkbox"] {vertical-align:top}  /* 2021-10-27 수정*/
 .ebsmath_login .login_form input[type="checkbox"] + label {vertical-align:top;}
@@ -240,6 +241,7 @@ span.sns_t:before {background-image:url('../images/common/twitter.svg')}
 span.sns_k:before {background-image:url('../images/common/kakaotalk.svg')}
 span.sns_n:before  {background-image:url('../images/common/naver.svg')}
 span.sns_a:before{background-image:url('../images/common/apple.svg')}
+span.sns_g:before{background-image:url('../images/common/google.svg')}
 .board_type2 input[type="radio"] {vertical-align:top}
 .board_type2 input[type="radio"] +label {vertical-align:top; margin-right:1rem}
 
@@ -473,6 +475,9 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 	.tab_common1.r2x2 a:nth-child(2n) {border-left:transparent}
 	.tab_common1.r2x2 a:last-child {white-space:nowrap}
 	.tab_common1.r2x2 a.on::after {width:100%; height:100%; top:-1px; left:-1px}
+
+
+	.ebsmath_login .sns_login a {margin:0 .5rem}
 }
 
 /* 학교급 분류 및 상세검색 */
@@ -1149,7 +1154,7 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 
 	.game_list_con .cnt_item .btn_hover, .game_list_con .cnt_item .btn_bg {overflow: hidden; position: absolute; clip: rect(0,0,0,0); width:1px; height:1px; margin:-1px; border:0; padding:0;}
 	.game_list_con .cnt_item .btn_top10 {opacity: 1; display: inline-block;}
-	.game_list_con .cnt_item > .btn_hover > .btn_top10 {opacity: 0; display: none;}	
+	.game_list_con .cnt_item > .btn_hover > .btn_top10 {opacity: 0; display: none;}
 	.game_list_con .cnt_item .play_btn,.game_list_con .cnt_item > .btn_hover > .btn_top10 {overflow: hidden; position: absolute; clip: rect(0,0,0,0); width:1px; height:1px; margin:-1px; border:0; padding:0;}
 }
 
@@ -1391,7 +1396,7 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
 
 	.latest_game_list .cnt_item .tit {padding:1.6rem 0 1rem;}
 	.game_list_con .cnt_item .tit > em,
-	.latest_game_list .cnt_item .tit > em{font-size:1.2rem;  margin-bottom:0.6rem}
+	.latest_game_list .cnt_item .tit > em{font-size:1.2rem;  margin-bottom:0.6rem;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 }
 
 
@@ -1547,7 +1552,7 @@ span.sns_a:before{background-image:url('../images/common/apple.svg')}
     .ebsMath_info .si_movies .mv_con_wrap .con_box {width:100%; margin:0 0 2rem 0;}
     /*2022-02-21 .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; overflow:hidden; width:100%; height:0; margin:0 auto; padding-bottom:56.25%;}*/
 	.ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; overflow:hidden; width:100%; height:auto !important; margin:0 auto; padding-bottom:unset;}
-	.ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box .player {width:360px; height:203px}
+	.ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box .player {width:360px; height:203px; max-width:100%;}
 
     .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box iframe,
     .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box object,

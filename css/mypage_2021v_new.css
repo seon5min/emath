@@ -106,12 +106,13 @@
 .mytbl_type2 {border-top:2px solid #4e42ca; border-bottom:2px solid #4e42ca}
 .mytbl_type2 th, .mytbl_type2 td {border-bottom:1px solid #dfdfdf; padding-top:13px; padding-bottom:13px; font-size:1.4rem}
 .mytbl_type2 th {background-color: rgba(78, 66, 202, 0.05); font-weight:normal}
-.mytbl_type2 td {padding-left:8rem}
+.mytbl_type2 td {padding-left:8rem;}
+.mytbl_type2 td img {padding: 0 4px 2px 0;}
+
 /*문제지타입 : 제목앞태그*/
 [class^="tag_quiz"] {display:inline-block; width:95px; border-radius:4px; height:22px; line-height:20px; font-size:1.2rem; text-align:center; background:#fff; margin-right:1rem; vertical-align:middle}
 .tag_quiz1 {border:1px solid #4e42ca; color:#4e42ca;}
 .tag_quiz2 {border:1px solid #f05d5b; color:#f05d5b}
-
 
 /*게시물검색*/
 .quiry_opt {max-width:840px; margin:4rem auto; display:flex; justify-content:center}
