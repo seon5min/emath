@@ -549,7 +549,6 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .modal_container .btn-modal-close { position: absolute; top: 20px; right: 20px; width: 14px; height: 14px; background-size: 12px; background-repeat: no-repeat; background-position: center; background-image: url(../images/common/close.svg); }
 .modal .all_course_head .wrap ul {padding-left: 0;}
 .modal .all_course_head .wrap h2, .modal .all_course_wrap { padding-left: 2.5rem; padding-right: 4%;}
-.search_option select {padding-right: 3rem;}
 
 /*학교급콘텐츠 상세*/
 .course_view {background:rgba(24, 103, 254, 0.03)}
@@ -1357,6 +1356,7 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 	.modal .all_course_head .wrap ul {padding-left: 2rem;}
 	.modal .all_course_head .wrap h2 { padding-left: 1.9rem; padding-right: 2rem;}
 	.modal .all_course_wrap { padding-left: 1rem; padding-right: 1rem;}
+	.search_option select {padding-right: 3rem;}
 }
 
 @media all and (min-width:500px) and (max-width:760px) {
