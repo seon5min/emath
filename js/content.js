@@ -223,6 +223,43 @@ function ThumbMov(){
 			}
 		}
 	});
+
+	  //modal
+  $('.course_sub .btn_srch_pop').on('click', function (e) {
+    e.preventDefault();
+    $('.modal').addClass('modal-opened');
+    //$('body').addClass('bodyscroll');
+  });
+
+  $('.btn-modal-close').on('click', function (e) {
+    var body = document.body;
+    e.preventDefault();
+    $('.modal').removeClass('modal-opened');
+    //$(body).removeClass('bodyscroll');
+  });
+
+  	/* 전체교과보기 슬라이더 */
+	function allmenuSlider(){
+		var allmenuScroll;
+		$(".tabMenu li").each(function (i){
+			$(this).bind("click", function (e){
+				moveNaviScroll($(this), 500);
+			});
+		});
+		allmenuScroll = new IScroll( document.getElementById("tabMenu") , {scrollX:true, scrollY:false, hScrollbar: false, vScrollbar: false});
+		moveNaviScroll($(".tabMenu li.on"), 0);
+		function moveNaviScroll(target)	{
+			var tabidx = target.index();
+			var crstxt = target.text()
+			$(".tit_all_course strong").text(crstxt);
+			$(".tabMenu li").removeClass("on");
+			target.addClass("on");
+
+			$(".box_course").hide();
+			$("#box_course" + tabidx).show();
+		}
+	}
+	allmenuSlider();
 }
 
 
