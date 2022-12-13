@@ -224,21 +224,21 @@ function ThumbMov(){
 		}
 	});
 
-	  //modal
-  $('.course_sub .btn_srch_pop').on('click', function (e) {
-    e.preventDefault();
-    $('.modal').addClass('modal-opened');
-    //$('body').addClass('bodyscroll');
-  });
+	//modal
+	$('.course_sub .btn_srch_pop').on('click', function (e) {
+		e.preventDefault();
+		$('.modal').addClass('modal-opened');
+		$('body').addClass('bodyscroll');
+	});
 
-  $('.btn-modal-close').on('click', function (e) {
-    var body = document.body;
-    e.preventDefault();
-    $('.modal').removeClass('modal-opened');
-    //$(body).removeClass('bodyscroll');
-  });
+	$('.btn-modal-close').on('click', function (e) {
+		var body = document.body;
+		e.preventDefault();
+		$('.modal').removeClass('modal-opened');
+		$(body).removeClass('bodyscroll');
+	});
 
-  	/* 전체교과보기 슬라이더 */
+  	//전체교과보기 슬라이더
 	function allmenuSlider(){
 		var allmenuScroll;
 		$(".tabMenu li").each(function (i){
