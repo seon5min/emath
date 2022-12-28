@@ -1491,7 +1491,7 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .ebsMath_info .si_movies > h4 > em {color:#4e42ca;}
 .ebsMath_info .si_movies > h4:before {content:''; position:absolute; left:0; top:0.8rem; width:18px; height:17px; margin-right:5px; background:url('../images/serviceInfo/arrow_title_plus.png') no-repeat left center; background-size:18px 17px; vertical-align:top;}
 
-.ebsMath_info .si_movies .mv_con_wrap {overflow:hidden; position:relative; width:100%;}
+.ebsMath_info .si_movies .mv_con_wrap {overflow:hidden; position:relative; width:100%; padding-bottom: 1.5rem;}
 .ebsMath_info .si_movies .mv_con_wrap .con_box {width:100%; margin:1.5rem 0 3rem 0;}
 /*.2022-02-21 ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; width:96rem; height:54rem; margin:0 auto; overflow:hidden}*/
 .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position: relative; width:96rem; margin:0 auto; overflow:hidden; padding-top:unset;}
@@ -1499,36 +1499,24 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box .player .skin-ebsmvod-openlayer {position:sticky !important}
 
 
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu {display:flex; justify-content:space-evenly; width:100%;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu.w_size {display:flex; width:100%; max-width:96rem; margin:0 auto;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu {display:flex; justify-content: center; width:100%;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu.w_size {display:flex;justify-content: center; width:100%; max-width:96rem; margin:0 auto;}
 
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li {width:90%; margin-left:0.8rem; background:rgba(78, 66, 202, 0.11); border:1px solid #4e42ca;  border-radius:4rem;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li {width:90%; max-width: 16rem; margin-left: 2rem; background:rgba(78, 66, 202, 0.11); border:1px solid #4e42ca;  border-radius:10rem;}
+.ebsMath_info .si_movies #movieArea2 .tabmenu li {max-width: 100%;}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li:first-child {margin-left: 0; }
 .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a {position:relative; display:block; height:4rem; line-height:3.8rem; text-align:center; font-size:1.4rem; color:#4e42ca;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li a:before {content:''; display:inline-block; width:26px; height:26px; margin-right:1rem; vertical-align:middle;}
-
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on {border-color:#4e42ca; background:rgba(78, 66, 202, 1);}
+.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on {border-color:#4e42ca; background:rgba(78, 66, 202, 1);box-shadow: 0 5px 7px 0 rgba(78, 66, 202, 0.3);}
 .ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on a {color:#fff;}
 
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon01 a:before {background: url('../images/serviceInfo/icon_movie_menu_01.png') no-repeat left top; background-size:26px 52px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon01.on a:before {background-position:left bottom;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon02 a:before {background: url('../images/serviceInfo/icon_movie_menu_02.png') no-repeat left top; background-size:26px 52px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon02.on a:before {background-position:left bottom;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon03 a:before {background: url('../images/serviceInfo/icon_movie_menu_03.png') no-repeat left top; background-size:26px 52px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon03.on a:before {background-position:left bottom;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon04 a:before {background: url('../images/serviceInfo/icon_movie_menu_04.png') no-repeat left top; background-size:26px 52px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon04.on a:before {background-position:left bottom;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon05 a:before {background: url('../images/serviceInfo/icon_movie_menu_05.png') no-repeat left top; background-size:26px 52px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon05.on a:before {background-position:left bottom;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon06 a:before {background: url('../images/serviceInfo/icon_movie_menu_06.png') no-repeat left top; background-size:26px 52px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabmenu li.menuIicon06.on a:before {background-position:left bottom;}
 
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner {display:flex; justify-content:space-evenly; width:85%; margin:0 auto;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li {width:90%; height:4rem; margin-left:0.8rem; background:none; border:0; border-radius:none;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.on {background:none; border:0; border-radius:none;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li a {display:block; width:100%; height:100%;}
-.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner01 a {background: url('../images/serviceInfo/icon_banner_menu_01.png') no-repeat center center; background-size:auto 39px; text-indent:-9999px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner02 a {background: url('../images/serviceInfo/icon_banner_menu_02.png') no-repeat center center; background-size:auto 39px; text-indent:-9999px;}
-.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner03 a {background: url('../images/serviceInfo/icon_banner_menu_03.png') no-repeat center center; background-size:auto 39px; text-indent:-9999px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner01 a {background: url('../images/serviceInfo/icon_banner_menu_01.png') no-repeat center center; background-size:contain; text-indent:-9999px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner02 a {background: url('../images/serviceInfo/icon_banner_menu_02.png') no-repeat center center; background-size:contain; text-indent:-9999px;}
+.ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner03 a {background: url('../images/serviceInfo/icon_banner_menu_03.png') no-repeat center center; background-size:contain; text-indent:-9999px;}
 
 
 
@@ -1580,7 +1568,7 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 
     /* 2021 EBSMath */
     .ebsMath_info .si_movies {margin-bottom:3rem; padding-bottom:3rem;}
-    .ebsMath_info .si_movies .mv_con_wrap {overflow:hidden; position:relative; width:100%;}
+    .ebsMath_info .si_movies .mv_con_wrap {overflow:hidden; position:relative; width:100%;display: flex; flex-direction: column; justify-content: center;}
     .ebsMath_info .si_movies .mv_con_wrap .con_box {width:100%; margin:0 0 2rem 0;}
     /*2022-02-21 .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; overflow:hidden; width:100%; height:0; margin:0 auto; padding-bottom:56.25%;}*/
 	.ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box {position:relative; overflow:hidden; width:100%; height:auto !important; margin:0 auto; padding-bottom:unset;}
@@ -1590,16 +1578,21 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
     .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box object,
     .ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box embed {position:absolute; left:0; top:0; height:100%; width:100%;}
 
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu {display:block; width:100%;}
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li {float:left; width:30%; margin-bottom:1rem; border-radius:2rem;}
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu.w_size li {margin-bottom:0;}
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li:nth-child(4),
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li:nth-child(5) {margin-bottom:0;}
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a {height:auto; padding:1.5rem 0; line-height:1;}
-    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a:before {display:block; width:26px; height:26px; margin:0 auto 1rem; vertical-align:top;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu {flex-wrap: wrap;max-width: fit-content;min-width: fit-content;margin: 0 auto;}
+	.ebsMath_info .si_movies .mv_con_wrap .tabmenu.tabBanner {flex-wrap: initial; max-width: 100%; min-width: 100%;}
+    .ebsMath_info .si_movies .mv_con_wrap .tabmenu li {margin-bottom:1rem;width: 30%;max-width: 10rem;margin-left: 1rem;flex: 0 0 auto;}
+
+     .ebsMath_info .si_movies .mv_con_wrap .tabmenu li:nth-child(4) {margin-bottom:0;margin-left: 0;transform: translateX(-60%);}
+     .ebsMath_info .si_movies .mv_con_wrap .tabmenu li:nth-child(5) {margin-bottom:0;margin-left: 0;transform: translateX(-50%);}
+     .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a {padding: 0; font-size: 1.2rem;height: 2.7rem; line-height: 2.7rem;}
+    /* .ebsMath_info .si_movies .mv_con_wrap .tabmenu li a:before {display:block; width:26px; height:26px; margin:0 auto 1rem; vertical-align:top;} */
 
     .ebsMath_info .si_movies .mv_con_wrap .tabBanner li a {display:block; width:100%; height:100%;}
     .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner01 a {background-size:100%;}
     .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner02 a {background-size:100%;}
     .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner03 a {background-size:100%;}
+}
+
+@media all and (max-width:400px) {
+	.ebsMath_info .si_movies .mv_con_wrap .con_box .mv_box .player {height: auto;}
 }
