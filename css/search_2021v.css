@@ -106,6 +106,15 @@
 .search_special .specialSearchbox .type1 .text .btn_more {display:inline-block; background:#4e42ca; border-radius:3px; color:#fff; font-size:1.4rem; min-width:140px; height:32px; line-height:30px; padding:0 1rem; text-align:center; margin-right:5px}
 .search_special .relContentsbox { margin-top:3rem; padding-top:3rem; border-top:1px solid #e1e1e1; line-height:150%; }
 
+/* 2022-12-28 type2 Ãß°¡ */
+.search_special .specialSearchbox .type2 {display:flex}
+.search_special .specialSearchbox .type2 span img {vertical-align:top; width:290px; height:auto}
+.search_special .specialSearchbox .type2 .text {width:72%;margin-left:2rem; position:relative}
+.search_special .specialSearchbox .type2 .text h2 {font-size:2.4rem; font-weight:500; padding-bottom:2rem; line-height:150%}
+.search_special .specialSearchbox .type2 .text .subscript {font-size:1.4rem; line-height:150%; display:-webkit-box; overflow:hidden; -webkit-line-clamp:4; -webkit-box-orient:vertical; text-overflow:ellipsis;}
+.search_special .specialSearchbox .type2 .text .btn_area {position:absolute; bottom:0; left:0;}
+.search_special .specialSearchbox .type2 .text .btn_more {display:inline-block; background:#4e42ca; border-radius:3px; color:#fff; font-size:1.4rem; min-width:140px; height:32px; line-height:30px; padding:0 1rem; text-align:center; margin-right:5px}
+
 .search_special .relContentsbox .list_con {width:100%; display:flex; flex-wrap:wrap; justify-content:flex-start; margin-bottom:-2rem}
 .search_special .relContentsbox .list_con .cnt_item { position:relative; width:calc(94% / 4); max-width:312.5px; background:rgba(255,255,255,1); border-radius:10px; padding-bottom:2.5rem}
 .search_special .relContentsbox .list_con .cnt_item:not(:nth-child(4n+1))  {margin-left:2%}
