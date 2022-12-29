@@ -1,702 +1,999 @@
 <!DOCTYPE html>
 <html lang="ko" class="no-js">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Expires" content="-1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 
-    <title>EBSMath</title>
+	<title>EBSMath</title>
 
 	<link rel="stylesheet" type="text/css" href="../../css/layout_2021v.css" />
 	<link rel="stylesheet" type="text/css" href="../../css/default_2021v.css" />
 
-    <script src="../../js/jquery-3.6.0.min.js"></script>
-    <script src="../../js/modernizr-custom.js"></script>
-    <script src="../../js/common_ui.js"></script>
-	<script src="../../js/iscroll-lite.js"></script><!-- 2022-12-13 iscroll 추가 -->
-    <!-- <script src="../../js/icheck.min.js"></script> 2021-10-27 삭제 -->
+	<script src="../../js/jquery-3.6.0.min.js"></script>
+	<script src="../../js/modernizr-custom.js"></script>
+	<script src="../../js/common_ui.js"></script>
+	<!-- 2022-12-13 iscroll 추가 -->
+	<!-- <script src="../../js/icheck.min.js"></script> 2021-10-27 삭제 -->
 </head>
 
 <body>
-<div class="skip-content">
-	<a href="#content" id="skipToContent">본문 바로가기</a>
-	<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
-</div>
-<!-- div class="event_banner banner_2108">
+	<div class="skip-content">
+		<a href="#content" id="skipToContent">본문 바로가기</a>
+		<a href="#gnb" id="skipToContent">전체메뉴 바로가기</a>
+	</div>
+	<!-- div class="event_banner banner_2108">
 	<a href="#"><i class="blind">수학 에너지 FULL 충전! 선풍기 ON! 이벤트 바로가기</i></a>
 	<span class="today_close">
 		<span class="mo_hide"><input type="checkbox" name="today_event"> 1일 동안 보지 않기</span> <button type="button" class="btn_bnr_hide"><i class="blind">이벤트 배너 닫기</i></button>
 	</div>
 </div -->
-<div id="wrap">
-	<header id="header_2021">
-		<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
-		<nav>
-			<section class="util">
-				<ul class="side_menu">
-					<li><a href="#">이벤트</a></li>
-					<li><a href="#">고객센터</a></li>
-					<li><a href="#">선생님공간</a></li>
-					<li><a href="#">매일 10분 수학</a></li>
-				</ul>
-				<ul class="member">
-					<li><a href="#">로그인</a></li>
-					<li><a href="#">회원가입</a></li>
-					<li><a href="#">마이페이지</a></li>
-				</ul>
-				<div class="searching">
-					<button type="button" class="btn_search"><i class="blind">검색</i></button>
-					<div class="search_box">
-						<fieldset>
-							<legend>검색</legend>
-							<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
-							<button type="submit"></button>
-						</fieldset>
+	<div id="wrap">
+		<header id="header_2021">
+			<h1><a href="#"><img src="../../images/layout/logo_math.png" alt="EBSMath"></a></h1>
+			<nav>
+				<section class="util">
+					<ul class="side_menu">
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">선생님공간</a></li>
+						<li><a href="#">매일 10분 수학</a></li>
+					</ul>
+					<ul class="member">
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">마이페이지</a></li>
+					</ul>
+					<div class="searching">
+						<button type="button" class="btn_search"><i class="blind">검색</i></button>
+						<div class="search_box">
+							<fieldset>
+								<legend>검색</legend>
+								<input type="text" placeholder="세미와 수학 마법학교" name="i_find">
+								<button type="submit"></button>
+							</fieldset>
 
-						<div class="result">
-							<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
-								입력시 자동으로 관련어를 추천합니다.
-							</p>
-							<ul class="auto_complete">
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-								<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
-							</ul>
+							<div class="result">
+								<p class="notice">검색어 <strong>자동 추천 기능</strong>을 사용하고 있습니다.<br>
+									입력시 자동으로 관련어를 추천합니다.
+								</p>
+								<ul class="auto_complete">
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+									<li><a href="#"><strong>삼각형</strong>의 합동</a></li>
+								</ul>
 
-							<dl class="mykeywords" style="display:none">
-								<dt>내가 찾은 검색어</dt>
-								<dd>
-									<ul>
-										<li>
-											<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
-											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
-										</li>
-										<li>
-											<a href="#">카타미노 중급</a>
-											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
-										</li>
-										<li>
-											<a href="#">영양선생님도 분수계산을 좋아해요!</a>
-											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
-										</li>
-										<li>
-											<a href="#">미분과 적분</a>
-											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
-										</li>
-										<li>
-											<a href="#">원</a>
-											<button type="button" class="btn_srch_del"><i class="blind">삭제</i></button>
-										</li>
-									</ul>
-								</dd>
-							</dl>
+								<dl class="mykeywords" style="display:none">
+									<dt>내가 찾은 검색어</dt>
+									<dd>
+										<ul>
+											<li>
+												<a href="#">61회 평면도형에서의 피타고라스 정리의 활용과 삼각함수</a>
+												<button type="button" class="btn_srch_del"><i
+														class="blind">삭제</i></button>
+											</li>
+											<li>
+												<a href="#">카타미노 중급</a>
+												<button type="button" class="btn_srch_del"><i
+														class="blind">삭제</i></button>
+											</li>
+											<li>
+												<a href="#">영양선생님도 분수계산을 좋아해요!</a>
+												<button type="button" class="btn_srch_del"><i
+														class="blind">삭제</i></button>
+											</li>
+											<li>
+												<a href="#">미분과 적분</a>
+												<button type="button" class="btn_srch_del"><i
+														class="blind">삭제</i></button>
+											</li>
+											<li>
+												<a href="#">원</a>
+												<button type="button" class="btn_srch_del"><i
+														class="blind">삭제</i></button>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
 						</div>
-						<span class="bottom"><button type="button" class="btn_close_autocp">자동완성닫기</button></span>
 					</div>
-				</div>
-				<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
-			</section>
-			<section id="gnb_pc" class="gnb_pc" style="height:72px">
-				<div class="main_menu">
-					<ul>
-						<li class="nor">
-							<a href="#" class="dep1">초등수학</a>
-							<ul class="dep2">
-								<li><a href="#">초등학교 3학년</a></li>
-								<li><a href="#">초등학교 4학년</a></li>
-								<li><a href="#">초등학교 5학년</a></li>
-								<li><a href="#">초등학교 6학년</a></li>
-							</ul>
-						</li>
-						<li class="nor">
-							<a href="#" class="dep1">중학수학</a>
-							<ul class="dep2">
-								<li><a href="#">중학교 1학년</a></li>
-								<li><a href="#">중학교 2학년</a></li>
-								<li><a href="#">중학교 3학년</a></li>
-							</ul>
-						</li>
-						<li class="nor">
-							<a href="#" class="dep1">고교수학</a>
-							<ul class="dep2">
-								<li><a href="#">수학</a></li>
-								<li><a href="#">수학 Ⅰ </a></li>
-								<li><a href="#">수학 Ⅱ</a></li>
-								<li><a href="#">확률과 통계</a></li>
-								<li><a href="#">미적분</a></li>
-							</ul>
-						</li>
-						<li class="nor">
-							<a href="#" class="dep1">게임존</a>
-							<ul class="dep2">
-								<li><a href="#">도전! 랭킹게임</a></li>
-								<li><a href="#">PlAY 세미</a></li>
-								<li><a href="#">전체게임</a></li>
-							</ul>
-						</li>
-						<li class="nor">
-							<a href="#" class="dep1">수학시리즈</a>
-							<ul class="dep2">
-								<li><a href="#">전체</a></li>
-								<li><a href="#">영상</a></li>
-								<li><a href="#">웹툰</a></li>
-								<li><a href="#">수학 지식카드</a></li>
-							</ul>
-						</li>
-						<li class="easy_tong">
-							<div>
+					<button type="button" class="btn_gnb_togl" id="btnMenu"><i class="blind">닫기</i></button>
+				</section>
+				<section id="gnb_pc" class="gnb_pc" style="height:72px">
+					<div class="main_menu">
+						<ul>
+							<li class="nor">
+								<a href="#" class="dep1">초등수학</a>
+								<ul class="dep2">
+									<li><a href="#">초등학교 3학년</a></li>
+									<li><a href="#">초등학교 4학년</a></li>
+									<li><a href="#">초등학교 5학년</a></li>
+									<li><a href="#">초등학교 6학년</a></li>
+								</ul>
+							</li>
+							<li class="nor">
+								<a href="#" class="dep1">중학수학</a>
+								<ul class="dep2">
+									<li><a href="#">중학교 1학년</a></li>
+									<li><a href="#">중학교 2학년</a></li>
+									<li><a href="#">중학교 3학년</a></li>
+								</ul>
+							</li>
+							<li class="nor">
+								<a href="#" class="dep1">고교수학</a>
+								<ul class="dep2">
+									<li><a href="#">수학</a></li>
+									<li><a href="#">수학 Ⅰ </a></li>
+									<li><a href="#">수학 Ⅱ</a></li>
+									<li><a href="#">확률과 통계</a></li>
+									<li><a href="#">미적분</a></li>
+								</ul>
+							</li>
+							<li class="nor">
+								<a href="#" class="dep1">게임존</a>
+								<ul class="dep2">
+									<li><a href="#">도전! 랭킹게임</a></li>
+									<li><a href="#">PlAY 세미</a></li>
+									<li><a href="#">전체게임</a></li>
+								</ul>
+							</li>
+							<li class="nor">
+								<a href="#" class="dep1">수학시리즈</a>
+								<ul class="dep2">
+									<li><a href="#">전체</a></li>
+									<li><a href="#">영상</a></li>
+									<li><a href="#">웹툰</a></li>
+									<li><a href="#">수학 지식카드</a></li>
+								</ul>
+							</li>
+							<li class="easy_tong">
+								<div>
+									<ul class="dep2">
+										<li><a href="#">이지통계-초등</a></li>
+										<li><a href="#">이지통계-중학</a></li>
+										<li><a href="#">이지그래프-중학</a></li>
+									</ul>
+									<a href="#" class="btn_allcont">전체교과보기</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section id="gnb_mo" class="gnb_mo" style="display:none">
+					<div class="login">
+						<span class="cmt_login">로그인을 해주세요.</span>
+						<a href="#" class="lnk_login">로그인</a>
+						<a href="#" class="lnk_join">회원가입</a>
+						<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
+					</div>
+					<div class="main_menu">
+						<ul>
+							<li>
+								<a href="#" class="dep1">초등수학</a>
+								<ul class="dep2">
+									<li><a href="#">초등학교 3학년</a></li>
+									<li><a href="#">초등학교 4학년</a></li>
+									<li><a href="#">초등학교 5학년</a></li>
+									<li><a href="#">초등학교 6학년</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">중학수학</a>
+								<ul class="dep2">
+									<li><a href="#">중학교 1학년</a></li>
+									<li><a href="#">중학교 2학년</a></li>
+									<li><a href="#">중학교 3학년</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">고교수학</a>
+								<ul class="dep2">
+									<li><a href="#">수학</a></li>
+									<li><a href="#">수학 Ⅰ </a></li>
+									<li><a href="#">수학 Ⅱ</a></li>
+									<li><a href="#">확률과 통계</a></li>
+									<li><a href="#">미적분</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">게임존</a>
+								<ul class="dep2">
+									<li><a href="#">도전! 랭킹게임</a></li>
+									<li><a href="#">PlAY 세미</a></li>
+									<li><a href="#">전체게임</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">수학시리즈</a>
+								<ul class="dep2">
+									<li><a href="#">전체</a></li>
+									<li><a href="#">영상</a></li>
+									<li><a href="#">웹툰</a></li>
+									<li><a href="#">수학 지식카드</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">선생님 공간</a>
+								<ul class="dep2">
+									<li><a href="#">M노트</a></li>
+									<li><a href="#">학습 커뮤니티</a></li>
+									<li><a href="#">교실 속 EBSMath</a></li>
+									<li><a href="#">선생님 자료실</a></li>
+									<li><a href="#">쌤 톡톡(talk talk)</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">고객센터</a>
+								<ul class="dep2">
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">이용문의</a></li>
+									<li><a href="#">수학 학습 해결소</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">마이페이지</a>
+								<ul class="dep2">
+									<li><a href="#">내가 본 콘텐츠</a></li>
+									<li><a href="#">좋아요 한 콘텐츠</a></li>
+									<li><a href="#">찜 한 콘텐츠</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dep1">손쉬운 공학도구</a>
 								<ul class="dep2">
 									<li><a href="#">이지통계-초등</a></li>
 									<li><a href="#">이지통계-중학</a></li>
 									<li><a href="#">이지그래프-중학</a></li>
 								</ul>
-								<a href="#" class="btn_allcont">전체교과보기</a>
-							</div>
-						</li>
+							</li>
+							<li><a href="#" class="btn_allcont">전체교과보기</a></li>
+							<li class="sns">
+								<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+								<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+								<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+								<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+			</nav>
+		</header>
+
+
+		<div id="content">
+			<section class="course_top md">
+				<div class="wrap">
+					<button type="button" class="btn_open_list" onclick="openCrsList()"><i
+							class="blind">목록열기/닫기</i></button>
+					<h2 class="tit_course_m" onclick="openCrsList()">중학수학 <strong class="stit_course_m">중학교 1학년</strong>
+						<button type="button"><i class="blind">닫기</i></button> </h2>
+					<ul class="crs_list">
+						<li><a href="#">중학교 1학년</a></li>
+						<li><a href="#">중학교 2학년</a></li>
+						<li><a href="#">중학교 3학년</a></li>
 					</ul>
 				</div>
 			</section>
-			<section id="gnb_mo" class="gnb_mo" style="display:none">
-				<div class="login">
-					<span class="cmt_login">로그인을 해주세요.</span>
-					<a href="#" class="lnk_login">로그인</a>
-					<a href="#" class="lnk_join">회원가입</a>
-					<button type="button" class="btn_close_gnb" id="btnCloseMenu"><i class="blind">메뉴닫기</i></button>
-				</div>
-				<div class="main_menu">
-					<ul>
-						<li>
-							<a href="#" class="dep1">초등수학</a>
-							<ul class="dep2">
-								<li><a href="#">초등학교 3학년</a></li>
-								<li><a href="#">초등학교 4학년</a></li>
-								<li><a href="#">초등학교 5학년</a></li>
-								<li><a href="#">초등학교 6학년</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">중학수학</a>
-							<ul class="dep2">
-								<li><a href="#">중학교 1학년</a></li>
-								<li><a href="#">중학교 2학년</a></li>
-								<li><a href="#">중학교 3학년</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">고교수학</a>
-							<ul class="dep2">
-								<li><a href="#">수학</a></li>
-								<li><a href="#">수학 Ⅰ </a></li>
-								<li><a href="#">수학 Ⅱ</a></li>
-								<li><a href="#">확률과 통계</a></li>
-								<li><a href="#">미적분</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">게임존</a>
-							<ul class="dep2">
-								<li><a href="#">도전! 랭킹게임</a></li>
-								<li><a href="#">PlAY 세미</a></li>
-								<li><a href="#">전체게임</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">수학시리즈</a>
-							<ul class="dep2">
-								<li><a href="#">전체</a></li>
-								<li><a href="#">영상</a></li>
-								<li><a href="#">웹툰</a></li>
-								<li><a href="#">수학 지식카드</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">선생님 공간</a>
-							<ul class="dep2">
-								<li><a href="#">M노트</a></li>
-								<li><a href="#">학습 커뮤니티</a></li>
-								<li><a href="#">교실 속 EBSMath</a></li>
-								<li><a href="#">선생님 자료실</a></li>
-								<li><a href="#">쌤 톡톡(talk talk)</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">고객센터</a>
-							<ul class="dep2">
-								<li><a href="#">공지사항</a></li>
-								<li><a href="#">이용문의</a></li>
-								<li><a href="#">수학 학습 해결소</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">마이페이지</a>
-							<ul class="dep2">
-								<li><a href="#">내가 본 콘텐츠</a></li>
-								<li><a href="#">좋아요 한 콘텐츠</a></li>
-								<li><a href="#">찜 한 콘텐츠</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="dep1">손쉬운 공학도구</a>
-							<ul class="dep2">
-								<li><a href="#">이지통계-초등</a></li>
-								<li><a href="#">이지통계-중학</a></li>
-								<li><a href="#">이지그래프-중학</a></li>
-							</ul>
-						</li>
-						<li><a href="#" class="btn_allcont">전체교과보기</a></li>
-						<li class="sns">
-							<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
-							<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
-							<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
-							<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
-						</li>
-					</ul>
-				</div>
-			</section>
-
-		</nav>
-	</header>
-
-
-	<div id="content">
-		<section class="course_top md">
-			<div class="wrap">
-				<button type="button" class="btn_open_list" onclick="openCrsList()"><i class="blind">목록열기/닫기</i></button>
-				<h2 class="tit_course_m" onclick="openCrsList()">중학수학 <strong class="stit_course_m">중학교 1학년</strong> <button type="button"><i class="blind">닫기</i></button> </h2>
-				<ul class="crs_list">
-					<li><a href="#">중학교 1학년</a></li>
-					<li><a href="#">중학교 2학년</a></li>
-					<li><a href="#">중학교 3학년</a></li>
-				</ul>
-			</div>
-		</section>
-		<section class="course_sub">
-			<div class="wrap">
-				<h3 class="tit_course_s">중학교 1학년</h3>
-				<button class="btn_srch_pop">전체교과보기</button> <!-- 2022-12-13 on 제거 -->
-				<!-- 2022-12-13 전체교과보기 팝업 -->
-				<div class="modal ">
-					<div class="modal_overlay">
-						<div class="modal_container">
-							<div class="modal_body">
-							<div id="content">
-									<!-- s : 전체 교과 보기 -->
-									<div class="all_course_head">
-										<div class="wrap">
-											<h2>전체 교과보기</h2>
-											<div id="tabMenu" class="tabMenu" style="touch-action: none;">
-												<ul style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-													<li class="on"><a href="#">초3</a></li>
-													<li><a href="#">초4</a></li>
-													<li><a href="#">초5</a></li>
-													<li><a href="#">초6</a></li>
-													<li><a href="#">중1</a></li>
-													<li><a href="#">중2</a></li>
-													<li><a href="#">중3</a></li>
-													<li><a href="#">수학</a></li>
-													<li><a href="#">수학 I </a></li>
-													<li><a href="#">수학 II </a></li>
-													<li><a href="#">확률과 통계</a></li>
-													<li><a href="#">미적분</a></li>
-												</ul>
+			<section class="course_sub">
+				<div class="wrap">
+					<h3 class="tit_course_s">중학교 1학년</h3>
+					<button class="btn_srch_pop">전체교과보기</button> <!-- 2022-12-13 on 제거 -->
+					<!-- 2022-12-13 전체교과보기 팝업 -->
+					<div class="modal ">
+						<div class="modal_overlay">
+							<div class="modal_container">
+								<div class="modal_body">
+									<div id="content">
+										<!-- s : 전체 교과 보기 -->
+										<div class="all_course_head">
+											<div class="wrap">
+												<h2>전체 교과보기</h2>
+												<div id="tabMenu" class="tabMenu" style="touch-action: none;">
+													<ul
+														style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+														<li class="on"><a href="#">초3</a></li>
+														<li><a href="#">초4</a></li>
+														<li><a href="#">초5</a></li>
+														<li><a href="#">초6</a></li>
+														<li><a href="#">중1</a></li>
+														<li><a href="#">중2</a></li>
+														<li><a href="#">중3</a></li>
+														<li><a href="#">수학</a></li>
+														<li><a href="#">수학 I </a></li>
+														<li><a href="#">수학 II </a></li>
+														<li><a href="#">확률과 통계</a></li>
+														<li><a href="#">미적분</a></li>
+													</ul>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="all_course_wrap">
-										<h3 class="tit_all_course"><strong>초3</strong> 교과보기</h3>
-										<!-- 초3 -->
-										<div class="box_course" id="box_course0" style="">
-										<div class="menu_set">
-												<h4 class="title type_01">1학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10610">덧셈과 뺄셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10611">평면도형</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10612">나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10613">곱셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10614">길이와 시간</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10615">분수와 소수</a></li>
-														</ul>
+										<div class="all_course_wrap">
+											<h3 class="tit_all_course"><strong>초3</strong> 교과보기</h3>
+											<!-- 초3 -->
+											<div class="box_course" id="box_course0" style="">
+												<div class="menu_set">
+													<h4 class="title type_01">1학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10610">덧셈과
+																뺄셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10611">평면도형</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10612">나눗셈</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10613">곱셈</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10614">길이와
+																시간</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10606&amp;cate2=10615">분수와
+																소수</a></li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">2학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10616">곱셈</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10617">나눗셈</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10618">원</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10619">분수</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10620">들이와
+																무게</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10621">자료의
+																정리</a></li>
+													</ul>
+												</div>
 											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">2학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10616">곱셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10617">나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10618">원</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10619">분수</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10620">들이와 무게</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD03&amp;cate=10607&amp;cate2=10621">자료의 정리</a></li>
-														</ul>
-											</div>
-										</div>
 
-										<!-- 초4 -->
-										<div class="box_course" id="box_course1" style="display:none">
-										<div class="menu_set">
-												<h4 class="title type_01">1학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10622">큰 수</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10623">각도</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10624">곱셈과 나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10625">평면도형의 이동</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10626">막대그래프</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10627">규칙 찾기</a></li>
-														</ul>
+											<!-- 초4 -->
+											<div class="box_course" id="box_course1" style="display:none">
+												<div class="menu_set">
+													<h4 class="title type_01">1학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10622">큰
+																수</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10623">각도</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10624">곱셈과
+																나눗셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10625">평면도형의
+																이동</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10626">막대그래프</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10608&amp;cate2=10627">규칙
+																찾기</a></li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">2학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10628">분수의
+																덧셈과 뺄셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10629">삼각형</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10630">소수의
+																덧셈과 뺄셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10631">사각형</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10632">꺾은선
+																그래프</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10633">다각형</a>
+														</li>
+													</ul>
+												</div>
 											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">2학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10628">분수의 덧셈과 뺄셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10629">삼각형</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10630">소수의 덧셈과 뺄셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10631">사각형</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10632">꺾은선 그래프</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD04&amp;cate=10609&amp;cate2=10633">다각형</a></li>
-														</ul>
-											</div>
-										</div>
 
-										<!-- 초5 -->
-										<div class="box_course" id="box_course2" style="display:none">
-										<div class="menu_set">
-												<h4 class="title type_01">1학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10256">자연수의 혼합계산</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10255">약수와 배수</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10329">규칙과 대응</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10257">약분과 통분</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10258">분수의 덧셈과 뺄셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10259">다각형의 둘레와 넓이</a></li>
-														</ul>
+											<!-- 초5 -->
+											<div class="box_course" id="box_course2" style="display:none">
+												<div class="menu_set">
+													<h4 class="title type_01">1학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10256">자연수의
+																혼합계산</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10255">약수와
+																배수</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10329">규칙과
+																대응</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10257">약분과
+																통분</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10258">분수의
+																덧셈과 뺄셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10089&amp;cate2=10259">다각형의
+																둘레와 넓이</a></li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">2학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10266">수의
+																범위와 어림하기</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10267">분수의
+																곱셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10265">합동과
+																대칭</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10264">소수의
+																곱셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10268">직육면체</a>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10330">평균과
+																가능성</a></li>
+													</ul>
+												</div>
 											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">2학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10266">수의 범위와 어림하기</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10267">분수의 곱셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10265">합동과 대칭</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10264">소수의 곱셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10268">직육면체</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD05&amp;cate=10090&amp;cate2=10330">평균과 가능성</a></li>
-														</ul>
-											</div>
-										</div>
 
-										<!-- 초6 -->
-										<div class="box_course" id="box_course3" style="display:none">
-										<div class="menu_set">
-												<h4 class="title type_01">1학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10270">분수의 나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10269">각기둥과 각뿔</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10271">소수의 나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10272">비와 비율</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10331">여러 가지 그래프</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10332">직육면체의 부피와 겉넓이</a></li>
-														</ul>
+											<!-- 초6 -->
+											<div class="box_course" id="box_course3" style="display:none">
+												<div class="menu_set">
+													<h4 class="title type_01">1학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10270">분수의
+																나눗셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10269">각기둥과
+																각뿔</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10271">소수의
+																나눗셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10272">비와
+																비율</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10331">여러
+																가지 그래프</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10091&amp;cate2=10332">직육면체의
+																부피와 겉넓이</a></li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">2학기</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10273">분수의
+																나눗셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10333">소수의
+																나눗셈</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10334">공간과
+																입체</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10274">비례식과
+																비례배분</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10335">원의
+																넓이</a></li>
+														<li><a
+																href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10275">원기둥,
+																원뿔, 구</a></li>
+													</ul>
+												</div>
 											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">2학기</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10273">분수의 나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10333">소수의 나눗셈</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10334">공간과 입체</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10274">비례식과 비례배분</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10335">원의 넓이</a></li>
-														<li><a href="/resource/rscList?grdCd=EGRD06&amp;cate=10093&amp;cate2=10275">원기둥, 원뿔, 구</a></li>
-														</ul>
-											</div>
-										</div>
 
-										<!-- 중1 -->
-										<div class="box_course" id="box_course4" style="display:none">
-										<div class="menu_set">
-												<h4 class="title type_01">수와 연산</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10101">소인수분해</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10101&amp;cate3=10114">소인수분해</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10101&amp;cate3=10115">최대공약수와 최소공배수</a></li>
+											<!-- 중1 -->
+											<div class="box_course" id="box_course4" style="display:none">
+												<div class="menu_set">
+													<h4 class="title type_01">수와 연산</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10101">소인수분해</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10101&amp;cate3=10114">소인수분해</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10101&amp;cate3=10115">최대공약수와
+																		최소공배수</a></li>
 															</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102">정수와 유리수</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102&amp;cate3=10117">정수와 유리수</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102&amp;cate3=10118">정수, 유리수의 덧셈/뺄셈</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102&amp;cate3=10119">정수, 유리수의 곱셈/나눗셈</a></li>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102">정수와
+																유리수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102&amp;cate3=10117">정수와
+																		유리수</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102&amp;cate3=10118">정수,
+																		유리수의 덧셈/뺄셈</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10094&amp;cate2=10102&amp;cate3=10119">정수,
+																		유리수의 곱셈/나눗셈</a></li>
 															</ul>
-													</li>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">문자와 식</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10105">문자의 사용과 식의 계산</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10105&amp;cate3=10126">문자의 사용</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10105&amp;cate3=10127">일차식과 그 계산</a></li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">문자와 식</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10105">문자의
+																사용과 식의 계산</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10105&amp;cate3=10126">문자의
+																		사용</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10105&amp;cate3=10127">일차식과
+																		그 계산</a></li>
 															</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10106">일차방정식</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10106&amp;cate3=10129">방정식과 그 해</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10106&amp;cate3=10130">일차방정식</a></li>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10106">일차방정식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10106&amp;cate3=10129">방정식과
+																		그 해</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10095&amp;cate2=10106&amp;cate3=10130">일차방정식</a>
+																</li>
 															</ul>
-													</li>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_03">좌표평면과 그래프</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10148">좌표평면과 그래프</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10148&amp;cate3=10151">순서쌍과 좌표</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10148&amp;cate3=10254">그래프</a></li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_03">좌표평면과 그래프</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10148">좌표평면과
+																그래프</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10148&amp;cate3=10151">순서쌍과
+																		좌표</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10148&amp;cate3=10254">그래프</a>
+																</li>
 															</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10658">정비례와 반비례</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10658&amp;cate3=10152">정비례와 그 그래프</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10658&amp;cate3=10153">반비례와 그 그래프</a></li>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10658">정비례와
+																반비례</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10658&amp;cate3=10152">정비례와
+																		그 그래프</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10096&amp;cate2=10658&amp;cate3=10153">반비례와
+																		그 그래프</a></li>
 															</ul>
-													</li>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_04">기하</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174">기본 도형</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174&amp;cate3=10183">점, 선, 면, 각</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174&amp;cate3=10185">위치 관계</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174&amp;cate3=10184">평행선의 성질</a></li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_04">기하</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174">기본
+																도형</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174&amp;cate3=10183">점,
+																		선, 면, 각</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174&amp;cate3=10185">위치
+																		관계</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10174&amp;cate3=10184">평행선의
+																		성질</a></li>
 															</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10175">작도와 합동</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10175&amp;cate3=10186">삼각형의 작도</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10175&amp;cate3=10187">삼각형의 합동 조건</a></li>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10175">작도와
+																합동</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10175&amp;cate3=10186">삼각형의
+																		작도</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10175&amp;cate3=10187">삼각형의
+																		합동 조건</a></li>
 															</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10176">평면도형의 성질</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10176&amp;cate3=10188">다각형</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10176&amp;cate3=10189">원과 부채꼴</a></li>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10176">평면도형의
+																성질</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10176&amp;cate3=10188">다각형</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10176&amp;cate3=10189">원과
+																		부채꼴</a></li>
 															</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177">입체도형의 성질</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10190">다면체</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10191">회전체</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10192">입체도형의 겉넓이</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10193">입체도형의 부피</a></li>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177">입체도형의
+																성질</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10190">다면체</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10191">회전체</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10192">입체도형의
+																		겉넓이</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10098&amp;cate2=10177&amp;cate3=10193">입체도형의
+																		부피</a></li>
 															</ul>
-													</li>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_05">자료의 정리와 해석</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162">자료의 정리와 해석</a>
-														<ul class="sub_dep2">
-														<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10165">줄기와 잎 그림/도수분포표</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10167">히스토그램/도수분포다각형</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10168">상대도수</a></li>
-															<li><a href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10659">실생활 자료의 정리와 해석</a></li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_05">자료의 정리와 해석</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162">자료의
+																정리와 해석</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10165">줄기와
+																		잎 그림/도수분포표</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10167">히스토그램/도수분포다각형</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10168">상대도수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD01&amp;cate=10097&amp;cate2=10162&amp;cate3=10659">실생활
+																		자료의 정리와 해석</a></li>
 															</ul>
-													</li>
+														</li>
 													</ul>
+												</div>
 											</div>
-										</div>
 
-										<!-- 중2 -->
-										<div class="box_course" id="box_course5" style="display:none">
-										<div class="menu_set">
-												<h4 class="title type_01">수와 연산</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10094&amp;cate2=10103">유리수와 순환소수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10094&amp;cate2=10103&amp;cate3=10120">유리수의 소수 표현</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10094&amp;cate2=10103&amp;cate3=10121">순환소수의 분수 표현</a></li>
-																</ul>
-													</li>
+											<!-- 중2 -->
+											<div class="box_course" id="box_course5" style="display:none">
+												<div class="menu_set">
+													<h4 class="title type_01">수와 연산</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10094&amp;cate2=10103">유리수와
+																순환소수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10094&amp;cate2=10103&amp;cate3=10120">유리수의
+																		소수 표현</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10094&amp;cate2=10103&amp;cate3=10121">순환소수의
+																		분수 표현</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">문자와 식</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107">식의 계산</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107&amp;cate3=10132">지수법칙</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107&amp;cate3=10133">단항식의 곱셈과 나눗셈</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107&amp;cate3=10134">다항식의 계산</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10109">일차부등식</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10109&amp;cate3=10140">부등식</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10109&amp;cate3=10141">일차부등식</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10108">연립일차방정식</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10108&amp;cate3=10138">미지수가 2개인 연립일차방정식</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10108&amp;cate3=10139">연립일차방정식의 풀이</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">문자와 식</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107">식의
+																계산</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107&amp;cate3=10132">지수법칙</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107&amp;cate3=10133">단항식의
+																		곱셈과 나눗셈</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10107&amp;cate3=10134">다항식의
+																		계산</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10109">일차부등식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10109&amp;cate3=10140">부등식</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10109&amp;cate3=10141">일차부등식</a>
+																</li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10108">연립일차방정식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10108&amp;cate3=10138">미지수가
+																		2개인 연립일차방정식</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10095&amp;cate2=10108&amp;cate3=10139">연립일차방정식의
+																		풀이</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_03">함수</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149">일차함수와 그래프</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149&amp;cate3=10660">함수의 뜻</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149&amp;cate3=10155">일차함수의 뜻과 그래프</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149&amp;cate3=10156">일차함수의 그래프의 성질</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10150">일차함수와 일차방정식의 관계</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10150&amp;cate3=10159">일차함수와 일차방정식</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10150&amp;cate3=10160">일차함수의 그래프와 연립일차방정식</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_03">함수</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149">일차함수와
+																그래프</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149&amp;cate3=10660">함수의
+																		뜻</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149&amp;cate3=10155">일차함수의
+																		뜻과 그래프</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10149&amp;cate3=10156">일차함수의
+																		그래프의 성질</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10150">일차함수와
+																일차방정식의 관계</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10150&amp;cate3=10159">일차함수와
+																		일차방정식</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10096&amp;cate2=10150&amp;cate3=10160">일차함수의
+																		그래프와 연립일차방정식</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_04">기하</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178">삼각형과 사각형의 성질</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10194">이등변삼각형과 직각삼각형</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10195">삼각형의 외심과 내심</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10196">평행사변형</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10197">여러 가지 사각형</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179">도형의 닮음</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10198">닮음의 뜻과 성질</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10199">삼각형의 닮음 조건</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10201">평행선과 선분의 길이의 비</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10202">삼각형의 무게중심</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10661">피타고라스 정리</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10661&amp;cate3=10662">피타고라스 정리</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_04">기하</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178">삼각형과
+																사각형의 성질</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10194">이등변삼각형과
+																		직각삼각형</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10195">삼각형의
+																		외심과 내심</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10196">평행사변형</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10178&amp;cate3=10197">여러
+																		가지 사각형</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179">도형의
+																닮음</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10198">닮음의
+																		뜻과 성질</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10199">삼각형의
+																		닮음 조건</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10201">평행선과
+																		선분의 길이의 비</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10179&amp;cate3=10202">삼각형의
+																		무게중심</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10661">피타고라스
+																정리</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10098&amp;cate2=10661&amp;cate3=10662">피타고라스
+																		정리</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_05">확률과 통계</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163">확률과 그 기본 성질</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163&amp;cate3=10169">경우의 수</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163&amp;cate3=10170">확률의 뜻과 그 성질</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163&amp;cate3=10171">확률의 계산</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_05">확률과 통계</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163">확률과
+																그 기본 성질</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163&amp;cate3=10169">경우의
+																		수</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163&amp;cate3=10170">확률의
+																		뜻과 그 성질</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD02&amp;cate=10097&amp;cate2=10163&amp;cate3=10171">확률의
+																		계산</a></li>
+															</ul>
+														</li>
 													</ul>
+												</div>
 											</div>
-										</div>
 
-										<!-- 중3 -->
-										<div class="box_course" id="box_course6" style="display:none">
-										<div class="menu_set">
-												<h4 class="title type_01">수와 연산</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10104">제곱근과 실수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10104&amp;cate3=10122">제곱근</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10104&amp;cate3=10123">무리수와 실수</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10239">근호를 포함한 식의 계산</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10239&amp;cate3=10240">근호를 포함한 식의 곱셈과 나눗셈</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10239&amp;cate3=10241">근호를 포함한 식의 덧셈과 뺄셈</a></li>
-																</ul>
-													</li>
+											<!-- 중3 -->
+											<div class="box_course" id="box_course6" style="display:none">
+												<div class="menu_set">
+													<h4 class="title type_01">수와 연산</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10104">제곱근과
+																실수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10104&amp;cate3=10122">제곱근</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10104&amp;cate3=10123">무리수와
+																		실수</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10239">근호를
+																포함한 식의 계산</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10239&amp;cate3=10240">근호를
+																		포함한 식의 곱셈과 나눗셈</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10094&amp;cate2=10239&amp;cate3=10241">근호를
+																		포함한 식의 덧셈과 뺄셈</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_02">문자와 식</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10110">다항식의 곱셈과 인수분해</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10110&amp;cate3=10663">다항식의 곱셈</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10110&amp;cate3=10144">다항식의 인수분해</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10242">이차방정식</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10242&amp;cate3=10243">이차방정식과 그 풀이</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_02">문자와 식</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10110">다항식의
+																곱셈과 인수분해</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10110&amp;cate3=10663">다항식의
+																		곱셈</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10110&amp;cate3=10144">다항식의
+																		인수분해</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10242">이차방정식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10095&amp;cate2=10242&amp;cate3=10243">이차방정식과
+																		그 풀이</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_03">함수</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246">이차함수와 그래프</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246&amp;cate3=10247">이차함수의 뜻과 이차함수 y=ax² 의 그래프</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246&amp;cate3=10248">이차함수 y=a(x-p)²+q 의 그래프</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246&amp;cate3=10249">이차함수 y=ax²+bx+c 의 그래프</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_03">함수</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246">이차함수와
+																그래프</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246&amp;cate3=10247">이차함수의
+																		뜻과 이차함수 y=ax² 의 그래프</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246&amp;cate3=10248">이차함수
+																		y=a(x-p)²+q 의 그래프</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10096&amp;cate2=10246&amp;cate3=10249">이차함수
+																		y=ax²+bx+c 의 그래프</a></li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_04">기하</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10182">삼각비</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10182&amp;cate3=10207">삼각비</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10182&amp;cate3=10209">삼각비의 활용</a></li>
-																</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10250">원의 성질</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10250&amp;cate3=10251">원과 직선</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10250&amp;cate3=10252">원주각</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_04">기하</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10182">삼각비</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10182&amp;cate3=10207">삼각비</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10182&amp;cate3=10209">삼각비의
+																		활용</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10250">원의
+																성질</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10250&amp;cate3=10251">원과
+																		직선</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10098&amp;cate2=10250&amp;cate3=10252">원주각</a>
+																</li>
+															</ul>
+														</li>
 													</ul>
-											</div>
-										<div class="menu_set">
-												<h4 class="title type_05">확률과 통계</h4>
-												<ul class="sub_dep1">
-												<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10097&amp;cate2=10164">통계</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10097&amp;cate2=10164&amp;cate3=10172">대푯값과 산포도</a></li>
-																<li><a href="/resource/rscList?grdCd=MGRD03&amp;cate=10097&amp;cate2=10164&amp;cate3=10173">상관관계</a></li>
-																</ul>
-													</li>
+												</div>
+												<div class="menu_set">
+													<h4 class="title type_05">확률과 통계</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=MGRD03&amp;cate=10097&amp;cate2=10164">통계</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10097&amp;cate2=10164&amp;cate3=10172">대푯값과
+																		산포도</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=MGRD03&amp;cate=10097&amp;cate2=10164&amp;cate3=10173">상관관계</a>
+																</li>
+															</ul>
+														</li>
 													</ul>
+												</div>
 											</div>
-										</div>
 
-										<!-- 수학 -->
-										<div class="box_course" id="box_course7" style="display:none">
-											<!-- div class="menu_set">
+											<!-- 수학 -->
+											<div class="box_course" id="box_course7" style="display:none">
+												<!-- div class="menu_set">
 												<h4>다항식</h4>
 												<ul class="sub_dep1">
 													<li><a href="#">다항식의 연산</a>
@@ -714,341 +1011,549 @@
 													</li>
 												</ul>
 											</div -->
-											<div class="menu_set">
-												<h4>방정식과 부등식</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11024">복소수와 이차방정식</a>
-														<ul class="sub_dep2">
-															<li class="nocnt"><a href="javascript:alert('콘텐츠 준비중입니다.');">복소수와 그 연산</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11024">이차방정식의 근과 판별식</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11024">이차방정식의 근과 계수의 관계</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11025">이차방정식과 이차함수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11025">이차방정식과 이차함수의 관계</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">이차함수의 그래프와 직선의 위치 관계</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">이차함수의 최대, 최소</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">여러가지 방정식과 부등식</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">삼차방정식과 사차방정식</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">연립이차방정식</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">일차부등식</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">연립일차부등식</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">이차부등식</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">부등식의 활용</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>도형의 방정식</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11027">평면좌표</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11027">두 점 사이의 거리</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11027">선분의 내분점과 외분점</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">직선의 방정식</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">직선의 방정식</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">두 직선의 평행과 수직</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">점과 직선 사이의 거리</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11029">원의 방정식</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11029">원의 방정식</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11029">원과 직선의 위치 관계</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11030">도형의 이동</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11030">평행이동</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11030">대칭이동</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>집합과 명제</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합 사이의 포함 관계</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합의 연산</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">명제</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">명제와 조건</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">명제 사이의 관계</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">여러 가지 증명법</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">절대부등식</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>함수</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">함수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">함수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">합성함수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">역함수</a></li>
-														</ul>
-													</li>
-													<!-- li><a href="#">유리함수와 무리함수</a>
+												<div class="menu_set">
+													<h4>방정식과 부등식</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11024">복소수와
+																이차방정식</a>
+															<ul class="sub_dep2">
+																<li class="nocnt"><a
+																		href="javascript:alert('콘텐츠 준비중입니다.');">복소수와 그
+																		연산</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11024">이차방정식의
+																		근과 판별식</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11024">이차방정식의
+																		근과 계수의 관계</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11025">이차방정식과
+																이차함수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11025">이차방정식과
+																		이차함수의 관계</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">이차함수의
+																		그래프와 직선의 위치 관계</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">이차함수의 최대,
+																		최소</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">여러가지
+																방정식과 부등식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">삼차방정식과
+																		사차방정식</a></li>
+																<li><a
+																		href="javascript:alert('콘텐츠 준비중입니다.');">연립이차방정식</a>
+																</li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">일차부등식</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">연립일차부등식</a>
+																</li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">이차부등식</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11002&amp;cate2=11026">부등식의
+																		활용</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>도형의 방정식</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11027">평면좌표</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11027">두
+																		점 사이의 거리</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11027">선분의
+																		내분점과 외분점</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">직선의
+																방정식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">직선의
+																		방정식</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">두
+																		직선의 평행과 수직</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11028">점과
+																		직선 사이의 거리</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11029">원의
+																방정식</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11029">원의
+																		방정식</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11029">원과
+																		직선의 위치 관계</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11030">도형의
+																이동</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11030">평행이동</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11003&amp;cate2=11030">대칭이동</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>집합과 명제</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합
+																		사이의 포함 관계</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11031">집합의
+																		연산</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">명제</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">명제와
+																		조건</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">명제
+																		사이의 관계</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">여러
+																		가지 증명법</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11004&amp;cate2=11032">절대부등식</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>함수</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">함수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">함수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">합성함수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11005&amp;cate2=11033">역함수</a>
+																</li>
+															</ul>
+														</li>
+														<!-- li><a href="#">유리함수와 무리함수</a>
 														<ul class="sub_dep2">
 															<li><a href="#">유리함수</a></li>
 															<li><a href="#">합성함수</a></li>
 															<li><a href="#">무리함수</a></li>
 														</ul>
 													</li -->
-												</ul>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>경우의 수</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">순열과
+																조합</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">경우의
+																		수</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">순열</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">조합</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
 											</div>
-											<div class="menu_set">
-												<h4>경우의 수</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">순열과 조합</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">경우의 수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">순열</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD01&amp;cate=11006&amp;cate2=11035">조합</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
 
-										<!-- 수학 I  -->
-										<div class="box_course" id="box_course8" style="display:none">
-											<div class="menu_set">
-												<h4>지수함수와 로그함수</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11036">지수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11036">거듭제곱과 거듭제곱근</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11036">지수의 확장</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11037">로그</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11037">로그</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11037">상용로그</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">지수함수와 로그함수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">지수함수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">로그함수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">지수함수와 로그함수의 활용</a></li>
-														</ul>
-													</li>
-												</ul>
+											<!-- 수학 I  -->
+											<div class="box_course" id="box_course8" style="display:none">
+												<div class="menu_set">
+													<h4>지수함수와 로그함수</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11036">지수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11036">거듭제곱과
+																		거듭제곱근</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11036">지수의
+																		확장</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11037">로그</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11037">로그</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11037">상용로그</a>
+																</li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">지수함수와
+																로그함수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">지수함수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">로그함수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11007&amp;cate2=11038">지수함수와
+																		로그함수의 활용</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>삼각함수</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">삼각함수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">일반각과
+																		호도법</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">삼각함수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">삼각함수의
+																		그래프</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11040">삼각함수의
+																활용</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11040">사인법칙과
+																		코사인법칙</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">삼각형의
+																		넓이</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>수열</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">등차수열과
+																등비수열</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">수열
+																	</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">등차수열</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">등비수열</a>
+																</li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11042">수열의
+																합</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11042">기호
+																		Σ의 뜻과 성질</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11042">여러
+																		가지 수열의 합</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11043">수학적
+																귀납법</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11043">수열의
+																		귀납적 정의</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11043">수학적
+																		귀납법</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
 											</div>
-											<div class="menu_set">
-												<h4>삼각함수</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">삼각함수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">일반각과 호도법</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">삼각함수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11039">삼각함수의 그래프</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11040">삼각함수의 활용</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11008&amp;cate2=11040">사인법칙과 코사인법칙</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">삼각형의 넓이</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>수열</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">등차수열과 등비수열</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">수열 </a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">등차수열</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11041">등비수열</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11042">수열의 합</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11042">기호 Σ의 뜻과 성질</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11042">여러 가지 수열의 합</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11043">수학적 귀납법</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11043">수열의 귀납적 정의</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD02&amp;cate=11009&amp;cate2=11043">수학적 귀납법</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
 
-										<!-- 수학 II -->
-										<div class="box_course" id="box_course9" style="display:none">
-											<div class="menu_set">
-												<h4>함수의 극한과 연속</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11044">함수의 극한</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11044">함수의 극한 </a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 극한의 성질</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11045">함수의 연속</a>
-														<ul class="sub_dep2">
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">연속함수</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11045">연속함수의 성질</a></li>
-														</ul>
-													</li>
-												</ul>
+											<!-- 수학 II -->
+											<div class="box_course" id="box_course9" style="display:none">
+												<div class="menu_set">
+													<h4>함수의 극한과 연속</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11044">함수의
+																극한</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11044">함수의
+																		극한 </a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 극한의
+																		성질</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11045">함수의
+																연속</a>
+															<ul class="sub_dep2">
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">연속함수</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD03&amp;cate=11010&amp;cate2=11045">연속함수의
+																		성질</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>미분</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11046">미분계수와
+																도함수</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11046">미분계수</a>
+																</li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">미분가능성과
+																		연속성</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의
+																		도함수</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 실수배,
+																		합, 차, 곱의 미분법</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11047">도함수의
+																활용</a>
+															<ul class="sub_dep2">
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">접선의
+																		방정식</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11047">평균값
+																		정리</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 증가와
+																		감소, 극대와 극소</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의
+																		그래프</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">방정식과
+																		부등식에의 활용</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">속도와
+																		가속도</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>적분</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11048">부정적분과
+																정적분</a>
+															<ul class="sub_dep2">
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">부정적분의 뜻
+																	</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">부정적분의
+																		계산</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11048">정적분의
+																		뜻</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">다항함수의
+																		정적분</a></li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11049">정적분의
+																활용</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11049">넓이</a>
+																</li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">속도와
+																		거리</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
 											</div>
-											<div class="menu_set">
-												<h4>미분</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11046">미분계수와 도함수</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11046">미분계수</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">미분가능성과 연속성</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 도함수</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 실수배, 합, 차, 곱의 미분법</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11047">도함수의 활용</a>
-														<ul class="sub_dep2">
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">접선의 방정식</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11011&amp;cate2=11047">평균값 정리</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 증가와 감소, 극대와 극소</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">함수의 그래프</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">방정식과 부등식에의 활용</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">속도와 가속도</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>적분</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11048">부정적분과 정적분</a>
-														<ul class="sub_dep2">
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">부정적분의 뜻 </a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">부정적분의 계산</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11048">정적분의 뜻</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">다항함수의 정적분</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11049">정적분의 활용</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD03&amp;cate=11012&amp;cate2=11049">넓이</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">속도와 거리</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
 
-										<!-- 확률과 통계-->
-										<div class="box_course" id="box_course10" style="display:none">
-											<div class="menu_set">
-												<h4>순열과 조합</h4>
-												<ul class="sub_dep1">
-													<!-- <li><a href="#">순열</a>
+											<!-- 확률과 통계-->
+											<div class="box_course" id="box_course10" style="display:none">
+												<div class="menu_set">
+													<h4>순열과 조합</h4>
+													<ul class="sub_dep1">
+														<!-- <li><a href="#">순열</a>
 														<ul class="sub_dep2">
 															<li><a href="#">여러 가지 순열</a></li>
 														</ul>
 													</li> -->
-													<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11016&amp;cate2=11058">조합</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11016&amp;cate2=11058">중복조합</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11016&amp;cate2=11058">이항정리</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>확률</h4>
-												<ul class="sub_dep1">
-													<!-- <li><a href="#">확률의 뜻과 활용</a>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD05&amp;cate=11016&amp;cate2=11058">조합</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11016&amp;cate2=11058">중복조합</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11016&amp;cate2=11058">이항정리</a>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>확률</h4>
+													<ul class="sub_dep1">
+														<!-- <li><a href="#">확률의 뜻과 활용</a>
 														<ul class="sub_dep2">
 															<li><a href="#">확률</a></li>
 															<li><a href="#">확률의 덧셈정리</a></li>
 														</ul>
 													</li> -->
-													<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11017&amp;cate2=11060">조건부확률</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11017&amp;cate2=11060">조건부확률</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11017&amp;cate2=11060">사건의 독립과 종속</a></li>
-														</ul>
-													</li>
-												</ul>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD05&amp;cate=11017&amp;cate2=11060">조건부확률</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11017&amp;cate2=11060">조건부확률</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11017&amp;cate2=11060">사건의
+																		독립과 종속</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>통계</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">확률분포</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">확률변수와
+																		확률분포</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">이산확률변수의
+																		평균과 표준편차</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">이항분포</a>
+																</li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">정규분포</a>
+																</li>
+															</ul>
+														</li>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11062">통계적
+																추정</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11062">모집단과
+																		표본</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11062">모평균의
+																		추정</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
 											</div>
-											<div class="menu_set">
-												<h4>통계</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">확률분포</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">확률변수와 확률분포</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">이산확률변수의 평균과 표준편차</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">이항분포</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11061">정규분포</a></li>
-														</ul>
-													</li>
-													<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11062">통계적 추정</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11062">모집단과 표본</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD05&amp;cate=11018&amp;cate2=11062">모평균의 추정</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-										</div>
 
-										<!-- 미적분-->
-										<div class="box_course" id="box_course11" style="display:none">
-											<div class="menu_set">
-												<h4>수열의 극한</h4>
-												<ul class="sub_dep1">
-													<!-- <li><a href="#">수열의 극한</a>
+											<!-- 미적분-->
+											<div class="box_course" id="box_course11" style="display:none">
+												<div class="menu_set">
+													<h4>수열의 극한</h4>
+													<ul class="sub_dep1">
+														<!-- <li><a href="#">수열의 극한</a>
 														<ul class="sub_dep2">
 															<li><a href="#">수열의 수렴과 발산</a></li>
 															<li><a href="#">수열의 극한값의 계산</a></li>
 															<li><a href="#">등비수열의 극한</a></li>
 														</ul>
 													</li> -->
-													<li><a href="/resource/rscList?grdCd=HGRD04&amp;cate=11013&amp;cate2=11051">급수</a>
-														<ul class="sub_dep2">
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">급수의 수렴과 발산</a></li>
-															<li><a href="/resource/rscList?grdCd=HGRD04&amp;cate=11013&amp;cate2=11051">등비급수</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">등비급수의 활용</a></li>
-														</ul>
-													</li>
-												</ul>
-											</div>
-											<div class="menu_set">
-												<h4>미분</h4>
-												<ul class="sub_dep1">
-													<li><a href="/resource/rscList?grdCd=HGRD04&amp;cate=11014&amp;cate2=11052">여러 가지 함수의 미분</a>
-														<ul class="sub_dep2">
-															<li><a href="/resource/rscList?grdCd=HGRD04&amp;cate=11014&amp;cate2=11052">지수함수와 로그함수의 극한</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">지수함수와 로그함수의 미분</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">삼각함수의 덧셈정리</a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">삼각함수의 극한 </a></li>
-															<li><a href="javascript:alert('콘텐츠 준비중입니다.');">사인함수와 코사인함수의 미분</a></li>
-														</ul>
-													</li>
-													<!-- <li><a href="#">여러 가지 미분법</a>
+														<li><a
+																href="/resource/rscList?grdCd=HGRD04&amp;cate=11013&amp;cate2=11051">급수</a>
+															<ul class="sub_dep2">
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">급수의 수렴과
+																		발산</a></li>
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD04&amp;cate=11013&amp;cate2=11051">등비급수</a>
+																</li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">등비급수의
+																		활용</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+												<div class="menu_set">
+													<h4>미분</h4>
+													<ul class="sub_dep1">
+														<li><a
+																href="/resource/rscList?grdCd=HGRD04&amp;cate=11014&amp;cate2=11052">여러
+																가지 함수의 미분</a>
+															<ul class="sub_dep2">
+																<li><a
+																		href="/resource/rscList?grdCd=HGRD04&amp;cate=11014&amp;cate2=11052">지수함수와
+																		로그함수의 극한</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">지수함수와
+																		로그함수의 미분</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">삼각함수의
+																		덧셈정리</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">삼각함수의 극한
+																	</a></li>
+																<li><a href="javascript:alert('콘텐츠 준비중입니다.');">사인함수와
+																		코사인함수의 미분</a></li>
+															</ul>
+														</li>
+														<!-- <li><a href="#">여러 가지 미분법</a>
 														<ul class="sub_dep2">
 															<li><a href="#">함수의 몫의 미분법</a></li>
 															<li><a href="#">합성함수의 미분법</a></li>
@@ -1065,9 +1570,9 @@
 															<li><a href="#">속도와 가속도</a></li>
 														</ul>
 													</li> -->
-												</ul>
-											</div>
-											<!-- div class="menu_set">
+													</ul>
+												</div>
+												<!-- div class="menu_set">
 												<h4>적분</h4>
 												<ul class="sub_dep1">
 													<li><a href="#">여러 가지 적분법</a>
@@ -1087,9 +1592,9 @@
 													</li>
 												</ul>
 											</div -->
-										</div>
+											</div>
 
-										<!-- div class="box_course" id="box_course12" style="display:none">
+											<!-- div class="box_course" id="box_course12" style="display:none">
 											<div class="menu_set">
 												<h4>규칙</h4>
 												<ul class="sub_dep1">
@@ -1143,720 +1648,792 @@
 											</div>
 										</div -->
 
+										</div>
+										<!-- e : 전체 교과 보기 -->
 									</div>
-									<!-- e : 전체 교과 보기 -->
+									<button class="btn-modal-close"><span class="blind">닫기</span></button>
 								</div>
-								<button class="btn-modal-close"><span class="blind">닫기</span></button>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- //전체교과보기 팝업 -->
-
-				<!-- 2022-12-13 검색영역 -->
-				<ul class="search_option">
-					<li>
-						<div class="terms"><strong>대단원</strong></div>
-						<div class="items">
-							<button type="button" class="btn_crs_item on">전체</button>
-							<button type="button" class="btn_crs_item">수와 연산</button>
-							<button type="button" class="btn_crs_item">순열과 조합</button>
-							<button type="button" class="btn_crs_item">확률</button>
-							<button type="button" class="btn_crs_item">통계</button>
-						</div>
-
-						<div class="items m_only">
-							<select>
-								<option>전체</option>
-								<option>수와 연산</option>
-								<option>순열과 조합</option>
-								<option>확률</option>
-								<option>통계</option>
-							</select>
-						</div>
-
-					</li>
-					<li>
-						<div class="terms"><strong>중단원</strong></div>
-						<div class="items">
-							<button type="button" class="btn_crs_item on">전체</button>
-							<button type="button" class="btn_crs_item">복소수와 이차방정식</button>
-							<button type="button" class="btn_crs_item">이차방정식과 이차함수</button>
-							<button type="button" class="btn_crs_item">여러가지 방정식과 부등식</button>
-						</div>
-
-						<div class="items m_only">
-							<select>
-								<option>전체</option>
-								<option>복소수와 이차방정식</option>
-								<option>이차방정식과 이차함수</option>
-								<option>여러가지 방정식과 부등식</option>
-							</select>
-						</div>
-
-					</li>
-					<li>
-						<div class="terms"><strong>소단원</strong></div>
-						<div class="items">
-							<button type="button" class="btn_crs_item on">전체</button>
-							<button type="button" class="btn_crs_item">소인수분해</button>
-							<button type="button" class="btn_crs_item">최대공약수와 최소공배수</button>
-							<button type="button" class="btn_crs_item">정수와 유리수</button>
-							<button type="button" class="btn_crs_item">이차함수의 뜻과 이차함수 y=ax² 의 그래프</button>
-							<button type="button" class="btn_crs_item">정수, 유리수의 곱셈/나눗셈</button>
-						</div>
-
-						<div class="items m_only">
-							<select>
-								<option>전체</option>
-								<option>소인수분해</option>
-								<option>최대공약수와 최소공배수</option>
-								<option>정수와 유리수</option>
-								<option>이차함수의 뜻과 이차함수 y=ax² 의 그래프</option>
-								<option>정수, 유리수의 곱셈/나눗셈</option>
-							</select>
-						</div>
-					</li>
-				</ul>
-				<!-- //2022-12-13 검색영역 -->
-			</div>
-		</section>
-
-		<section class="list_result md">
-			<div class="wrap">
-				<div class="sort_head">
-					<fieldset><!-- 2021-10-27 default_opt 클래스 삭제 -->
-						<legend>콘텐츠 검색 결과 정렬</legend>
-						<div class="result_num">
-							<em class="cmt_result">총 <strong class="txthr_pp">400</strong>건의 콘텐츠가 있습니다.</em>
-							<!-- 2021-10-27 위치이동 <span class="exc_quiz"><label for="quiz_chk">문제 제외</label> <input type="checkbox" class="icheckbox" name="quiz_chk" id="quiz_chk"></span> -->
-							<div class="select_wrap">
-								<span class="select_con">
-									<select>
-										<option>교과과정순</option>
-										<option>최신순</option>
-										<option>조회순</option>
-									</select>
-								</span>
-								<span class="select_con">
-									<select>
-										<option>콘텐츠 유형</option>
-										<option>영상</option>
-										<option>게임</option>
-										<option>웹툰</option>
-										<option>문제</option>
-										<option>지식카드</option>
-									</select>
-								</span>
+					<!-- //전체교과보기 팝업 -->
+					<script src="../../js/iscroll-lite.js"></script>
+					<!-- 2022-12-13 검색영역 -->
+					<ul class="search_option">
+						<li>
+							<div class="terms"><strong>대단원</strong></div>
+							<div class="items">
+								<button type="button" class="btn_crs_item on">전체</button>
+								<button type="button" class="btn_crs_item">수와 연산</button>
+								<button type="button" class="btn_crs_item">순열과 조합</button>
+								<button type="button" class="btn_crs_item">확률</button>
+								<button type="button" class="btn_crs_item">통계</button>
 							</div>
-						</div>
-						<span class="btn">
-							<button type="button" class="btn_content btn_del_rcd">학습기록삭제</button>
-							<button type="button" class="btn_content btn_qpaper">문제지 만들기</button>
-						</span>
 
-					</fieldset>
-					<fieldset class="diff_opt">
-						<legend>난이도 선택</legend>
-						<h4>난이도 선택</h4>
-						<ul>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk1" checked> <label for="df_chk1"><strong>전체</strong></label></li>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk2"> <label for="df_chk2">기초</label></li>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk3"> <label for="df_chk3">심화</label></li>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk4"> <label for="df_chk4">창의(중)</label></li>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk5"> <label for="df_chk5">창의(상)</label></li>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk6"> <label for="df_chk6">서술(중)</label></li>
-							<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk7"> <label for="df_chk7">서술(상)</label></li>
-						</ul>
-						<button class="btn_seltgl m_only_i" type="button"><i class="btn_arrow">열기/닫기</i></button><!-- 2021-11-01 클래스 이동 -->
-						<button class="btn_query" type="button">조회</button><!-- 2021-11-02 추가 -->
-					</fieldset>
+							<div class="items m_only">
+								<select>
+									<option>전체</option>
+									<option>수와 연산</option>
+									<option>순열과 조합</option>
+									<option>확률</option>
+									<option>통계</option>
+								</select>
+							</div>
+
+						</li>
+						<li>
+							<div class="terms"><strong>중단원</strong></div>
+							<div class="items">
+								<button type="button" class="btn_crs_item on">전체</button>
+								<button type="button" class="btn_crs_item">복소수와 이차방정식</button>
+								<button type="button" class="btn_crs_item">이차방정식과 이차함수</button>
+								<button type="button" class="btn_crs_item">여러가지 방정식과 부등식</button>
+							</div>
+
+							<div class="items m_only">
+								<select>
+									<option>전체</option>
+									<option>복소수와 이차방정식</option>
+									<option>이차방정식과 이차함수</option>
+									<option>여러가지 방정식과 부등식</option>
+								</select>
+							</div>
+
+						</li>
+						<li>
+							<div class="terms"><strong>소단원</strong></div>
+							<div class="items">
+								<button type="button" class="btn_crs_item on">전체</button>
+								<button type="button" class="btn_crs_item">소인수분해</button>
+								<button type="button" class="btn_crs_item">최대공약수와 최소공배수</button>
+								<button type="button" class="btn_crs_item">정수와 유리수</button>
+								<button type="button" class="btn_crs_item">이차함수의 뜻과 이차함수 y=ax² 의 그래프</button>
+								<button type="button" class="btn_crs_item">정수, 유리수의 곱셈/나눗셈</button>
+							</div>
+
+							<div class="items m_only">
+								<select>
+									<option>전체</option>
+									<option>소인수분해</option>
+									<option>최대공약수와 최소공배수</option>
+									<option>정수와 유리수</option>
+									<option>이차함수의 뜻과 이차함수 y=ax² 의 그래프</option>
+									<option>정수, 유리수의 곱셈/나눗셈</option>
+								</select>
+							</div>
+						</li>
+					</ul>
+					<!-- //2022-12-13 검색영역 -->
 				</div>
+			</section>
 
-				<!--s: 2021-11-02 추가 -->
-				<div class="noresult">
-					<p>검색결과가 없습니다.</p>
-				</div>
-				<!--e: 2021-11-02 추가 -->
-
-				<ul class="list_con" style="display:none">
-					<li class="cnt_item hoverMovie"><!-- 영상이 들어갈 곳에 .hoverMovie 클래스 2021-10-15 추가 -->
-						<div class="box_snip tagA">
-							<a href="#34">
-								<!-- hover 시 영상 추가 2021-10-15 추가 -->
-								<span class="thumbnail">
-									 <img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg" alt="콘텐츠이미지" class="swiper-lazy" video-src="https://wstrssl.ebsmath.co.kr/ebsvod/ebsm/preview/M201700009/preview_M201700009_M00396.mp4"><span class="runtime">07:27</span>
-								</span>
-								<!-- //hover 시 영상 추가 2021-10-15 추가 -->
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont0"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
-
-									<dl class="default">
-										<dt><strong>중1</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수</dd>
-									</dl>
-									<!-- <span class="list_chk"><input type="checkbox" name="chk_cnt" title="콘텐츠 선택"></span> 2021-10-27  삭제 -->
+			<section class="list_result md">
+				<div class="wrap">
+					<div class="sort_head">
+						<fieldset><!-- 2021-10-27 default_opt 클래스 삭제 -->
+							<legend>콘텐츠 검색 결과 정렬</legend>
+							<div class="result_num">
+								<em class="cmt_result">총 <strong class="txthr_pp">400</strong>건의 콘텐츠가 있습니다.</em>
+								<!-- 2021-10-27 위치이동 <span class="exc_quiz"><label for="quiz_chk">문제 제외</label> <input type="checkbox" class="icheckbox" name="quiz_chk" id="quiz_chk"></span> -->
+								<div class="select_wrap">
+									<span class="select_con">
+										<select>
+											<option>교과과정순</option>
+											<option>최신순</option>
+											<option>조회순</option>
+										</select>
+									</span>
+									<span class="select_con">
+										<select>
+											<option>콘텐츠 유형</option>
+											<option>영상</option>
+											<option>게임</option>
+											<option>웹툰</option>
+											<option>문제</option>
+											<option>지식카드</option>
+										</select>
+									</span>
 								</div>
-								<span class="list_chk"><input type="checkbox" name="chk_cnt" title="콘텐츠 선택"></span><!-- 2021-10-27 위치 수정 -->
-							</a>
+							</div>
+							<span class="btn">
+								<button type="button" class="btn_content btn_del_rcd">학습기록삭제</button>
+								<button type="button" class="btn_content btn_qpaper">문제지 만들기</button>
+							</span>
 
-
-							<ul id="pop_fncont0" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
+						</fieldset>
+						<fieldset class="diff_opt">
+							<legend>난이도 선택</legend>
+							<h4>난이도 선택</h4>
+							<ul>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk1" checked> <label
+										for="df_chk1"><strong>전체</strong></label></li>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk2"> <label
+										for="df_chk2">기초</label></li>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk3"> <label
+										for="df_chk3">심화</label></li>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk4"> <label
+										for="df_chk4">창의(중)</label></li>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk5"> <label
+										for="df_chk5">창의(상)</label></li>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk6"> <label
+										for="df_chk6">서술(중)</label></li>
+								<li><input type="checkbox" class="icheckbox" name="df_chk" id="df_chk7"> <label
+										for="df_chk7">서술(상)</label></li>
 							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagB chk">
-							<a href="#1">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont1"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+							<button class="btn_seltgl m_only_i" type="button"><i
+									class="btn_arrow">열기/닫기</i></button><!-- 2021-11-01 클래스 이동 -->
+							<button class="btn_query" type="button">조회</button><!-- 2021-11-02 추가 -->
+						</fieldset>
+					</div>
 
-									<dl class="default">
-										<dt><strong>중2</strong> 자료의 정리와 해석</dt>
-										<dd>그래프</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont1" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagC">
-							<a href="#2">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont2"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+					<!--s: 2021-11-02 추가 -->
+					<div class="noresult">
+						<p>검색결과가 없습니다.</p>
+					</div>
+					<!--e: 2021-11-02 추가 -->
 
-									<dl class="default">
-										<dt><strong>중3</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont2" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagD">
-							<a href="#131">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont3"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+					<ul class="list_con" style="display:none">
+						<li class="cnt_item hoverMovie"><!-- 영상이 들어갈 곳에 .hoverMovie 클래스 2021-10-15 추가 -->
+							<div class="box_snip tagA">
+								<a href="#34">
+									<!-- hover 시 영상 추가 2021-10-15 추가 -->
+									<span class="thumbnail">
+										<img src="https://www.ebsmath.co.kr/innovativelrms/web_lrms/upload/thumb/29541/jh3e25bf23.jpg"
+											alt="콘텐츠이미지" class="swiper-lazy"
+											video-src="https://wstrssl.ebsmath.co.kr/ebsvod/ebsm/preview/M201700009/preview_M201700009_M00396.mp4"><span
+											class="runtime">07:27</span>
+									</span>
+									<!-- //hover 시 영상 추가 2021-10-15 추가 -->
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont0"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
 
-									<dl class="default">
-										<dt><strong>고교</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont3" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagE">
-							<a href="#11">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont4"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-									<dl class="default">
-										<dt><strong>초등</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont4" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagA">
-							<a href="#none">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"><span class="runtime">07:27</span></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont5"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+										<dl class="default">
+											<dt><strong>중1</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수</dd>
+										</dl>
+										<!-- <span class="list_chk"><input type="checkbox" name="chk_cnt" title="콘텐츠 선택"></span> 2021-10-27  삭제 -->
+									</div>
+									<span class="list_chk"><input type="checkbox" name="chk_cnt"
+											title="콘텐츠 선택"></span><!-- 2021-10-27 위치 수정 -->
+								</a>
 
-									<dl class="default">
-										<dt><strong>중1</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont5" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagB chk">
-							<a href="#1">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont6"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
 
-									<dl class="default">
-										<dt><strong>중2</strong> 자료의 정리와 해석</dt>
-										<dd>그래프</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont6" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagC">
-							<a href="#2">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont7"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+								<ul id="pop_fncont0" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagB chk">
+								<a href="#1">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont1"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-									<dl class="default">
-										<dt><strong>중3</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont7" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagB chk">
-							<a href="#1">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont8"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+										<dl class="default">
+											<dt><strong>중2</strong> 자료의 정리와 해석</dt>
+											<dd>그래프</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont1" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagC">
+								<a href="#2">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont2"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-									<dl class="default">
-										<dt><strong>중2</strong> 자료의 정리와 해석</dt>
-										<dd>그래프</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont8" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-					<li class="cnt_item">
-						<div class="box_snip tagC">
-							<a href="#2">
-								<span class="thumbnail"><img src="../../images/main/cnt_dummy.png" alt="콘텐츠이미지"></span>
-								<button class="btn_fncnt" type="button" aria-controls="pop_fncont9"><i class="blind">콘텐츠 관련기능 레이어 열림</i></button>
-								<mark class="stk"><i class="blind">영상</i></mark>
-								<div class="bottom">
-									<ul class="snip_info">
-										<li class="view">
-											<i class="blind">조회수</i>1,000
-										</li>
-										<li class="fav">
-											<i class="blind">좋아요수</i>24
-										</li>
-										<li class="zzim">
-											<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i class="blind">찜하기</i></button>
-										</li>
-									</ul>
+										<dl class="default">
+											<dt><strong>중3</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont2" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagD">
+								<a href="#131">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont3"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-									<dl class="default">
-										<dt><strong>중3</strong> 자료의 정리와 해석</dt>
-										<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
-									</dl>
-								</div>
-							</a>
-							<ul id="pop_fncont9" class="popup_slayer_fncont" role="dialog" aria-modal="true">
-								<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
-								<li class="icon_sns"><button type="button" class="btn_pop_shr" aria-controls="pop_share_sns">공유하기</button></li>
-								<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
-								<li class="close"><button type="button">닫기</button></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
+										<dl class="default">
+											<dt><strong>고교</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont3" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagE">
+								<a href="#11">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont4"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-				<div class="pagination" style="display:none">
-					<a class="first arrow" href="#"><i class="blind">처음</i></a>
-					<a class="prev arrow" href="#"><i class="blind">이전</i></a>
-					<a class="on" href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
-					<a class="next arrow" href="#"><i class="blind">다음</i></a>
-					<a class="last arrow" href="#"><i class="blind">마지막</i></a>
-				</div>
+										<dl class="default">
+											<dt><strong>초등</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont4" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagA">
+								<a href="#none">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"><span class="runtime">07:27</span></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont5"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-			</div>
-		</section>
+										<dl class="default">
+											<dt><strong>중1</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont5" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagB chk">
+								<a href="#1">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont6"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
 
-		<!-- 팝업 : 공유하기 -->
-		<div id="pop_share_sns" class="pop_share_sns">
-			<div class="pop_container">
-				<div class="pop_content">
-					<h3>공유하기</h3>
-					<ul>
-						<li class="f"><a href="#"><i class="blind">페이스북</i></a></li>
-						<li class="t"><a href="#"><i class="blind">트위터</i></a></li>
-						<li class="k"><a href="#"><i class="blind">카카오톡</i></a></li>
+										<dl class="default">
+											<dt><strong>중2</strong> 자료의 정리와 해석</dt>
+											<dd>그래프</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont6" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagC">
+								<a href="#2">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont7"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
+
+										<dl class="default">
+											<dt><strong>중3</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont7" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagB chk">
+								<a href="#1">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont8"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
+
+										<dl class="default">
+											<dt><strong>중2</strong> 자료의 정리와 해석</dt>
+											<dd>그래프</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont8" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
+						<li class="cnt_item">
+							<div class="box_snip tagC">
+								<a href="#2">
+									<span class="thumbnail"><img src="../../images/main/cnt_dummy.png"
+											alt="콘텐츠이미지"></span>
+									<button class="btn_fncnt" type="button" aria-controls="pop_fncont9"><i
+											class="blind">콘텐츠 관련기능 레이어 열림</i></button>
+									<mark class="stk"><i class="blind">영상</i></mark>
+									<div class="bottom">
+										<ul class="snip_info">
+											<li class="view">
+												<i class="blind">조회수</i>1,000
+											</li>
+											<li class="fav">
+												<i class="blind">좋아요수</i>24
+											</li>
+											<li class="zzim">
+												<button type="button" class="btn_list_zzim" onclick="bookmarkCnt()"><i
+														class="blind">찜하기</i></button>
+											</li>
+										</ul>
+
+										<dl class="default">
+											<dt><strong>중3</strong> 자료의 정리와 해석</dt>
+											<dd>이차함수 y=ax²+bx+c의 그래프는 어떻게 그리나요?</dd>
+										</dl>
+									</div>
+								</a>
+								<ul id="pop_fncont9" class="popup_slayer_fncont" role="dialog" aria-modal="true">
+									<li class="icon_zzim"><button type="button" class="btn_pop_zzim">찜하기</button></li>
+									<li class="icon_sns"><button type="button" class="btn_pop_shr"
+											aria-controls="pop_share_sns">공유하기</button></li>
+									<li class="icon_down"><button type="button" class="btn_pop_dwn">다운로드</button></li>
+									<li class="close"><button type="button">닫기</button></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 
-					<span class="urlcopy">
-						<input type="text" size="20" name="" value="https://ebsmath.co.kr/resource/rscView?cate=10091&cate2=10272&cate3=10505&rscTpDscd=RTP14&grdCd=EGRD06&sortType=&mngtPrdnYn=&menuType=t&itemSize=&level=&type=S&sno=29615&historyYn=study">
-						<button type="button">복사</button>
-					</span>
-					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
-				</div>
-			</div>
-		</div>
-		<!-- // 팝업 : 공유하기-->
-
-		<!-- 팝업 : 학습기록삭제 -->
-		<div id="pop_del_stdlog" class="pop_del_stdlog  pop_rel_con">
-			<div class="pop_container">
-				<div class="pop_content">
-					<h3>학습기록삭제</h3>
-					<div class="std_list_wrap">
-						<h4>초등 &gt 1학기</h4>
-						<ul class="pop_scroll">
-							<li>
-								<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname" id="stdname1">소수의 성질 - 소수 완전정복</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname2"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname2">ONLY,ONE, 소수</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname3"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li><label for="stdname4"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname" id="stdname5">소수의 성질 - 소수 완전정복</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname6"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname6">ONLY,ONE, 소수</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname7"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li><label for="stdname8"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
-								<span class="date">2021.09.14</span>
-							</li>
-						</ul>
+					<div class="pagination" style="display:none">
+						<a class="first arrow" href="#"><i class="blind">처음</i></a>
+						<a class="prev arrow" href="#"><i class="blind">이전</i></a>
+						<a class="on" href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a class="next arrow" href="#"><i class="blind">다음</i></a>
+						<a class="last arrow" href="#"><i class="blind">마지막</i></a>
 					</div>
-					<dl class="bottom">
-						<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label for="sel_all">전체선택</label></dt>
-						<dd><button type="button" class="btn_content btn_del_rcd">학습기록삭제</button></dd>
-					</dl>
-					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
-				</div>
-			</div>
-		</div>
-		<!-- // 팝업 : 학습기록삭제 -->
 
-		<!-- 팝업 : 다운로드 -->
-		<div id="pop_download" class="pop_download pop_rel_con">
-			<div class="pop_container">
-				<div class="pop_content">
-					<h3>다운로드</h3>
-					<div class="std_list_wrap">
-						<h4>초등 &gt 1학기</h4>
-						<ul class="pop_scroll">
-							<li>
-								<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname" id="stdname1">소수의 성질 - 소수 완전정복</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname2"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname2">ONLY,ONE, 소수</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname3"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li><label for="stdname4"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname" id="stdname5">소수의 성질 - 소수 완전정복</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname6"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname6">ONLY,ONE, 소수</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li>
-								<label for="stdname7"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
-								<span class="date">2021.09.14</span>
-							</li>
-							<li><label for="stdname8"><input type="checkbox"  class="icheckbox" name="stdname" id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
-								<span class="date">2021.09.14</span>
-							</li>
+				</div>
+			</section>
+
+			<!-- 팝업 : 공유하기 -->
+			<div id="pop_share_sns" class="pop_share_sns">
+				<div class="pop_container">
+					<div class="pop_content">
+						<h3>공유하기</h3>
+						<ul>
+							<li class="f"><a href="#"><i class="blind">페이스북</i></a></li>
+							<li class="t"><a href="#"><i class="blind">트위터</i></a></li>
+							<li class="k"><a href="#"><i class="blind">카카오톡</i></a></li>
 						</ul>
+
+						<span class="urlcopy">
+							<input type="text" size="20" name=""
+								value="https://ebsmath.co.kr/resource/rscView?cate=10091&cate2=10272&cate3=10505&rscTpDscd=RTP14&grdCd=EGRD06&sortType=&mngtPrdnYn=&menuType=t&itemSize=&level=&type=S&sno=29615&historyYn=study">
+							<button type="button">복사</button>
+						</span>
+						<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
 					</div>
-					<dl class="bottom">
-						<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label for="sel_all">전체선택</label></dt>
-						<dd>
-							<select>
-								<option>화질선택</option>
-								<option>고화질</option>
-								<option>일반화질</option>
-							</select>
-							<button type="button" class="btn_content btn_download">다운로드</button>
-						</dd>
-					</dl>
-					<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
 				</div>
 			</div>
-		</div>
-		<!-- // 팝업 :다운로드 -->
+			<!-- // 팝업 : 공유하기-->
 
-	</div>
-	<footer id="footer_2021">
-		<div class="etc_menu">
-			<ul>
-				<li>
-					<a href="#">EBS Math 소개</a>
-				</li>
-				<li>
-					<a href="#">모바일 안내</a>
-				</li>
-				<li>
-					<a href="#">전체교과보기</a>
-				</li>
-				<li>
-					<a href="#">수학 학습 해결소</a>
-				</li>
-				<li>
-					<a href="#">이용문의</a>
-				</li>
-				<li>
-					<a href="#">FAQ</a>
-				</li>
-			</ul>
+			<!-- 팝업 : 학습기록삭제 -->
+			<div id="pop_del_stdlog" class="pop_del_stdlog  pop_rel_con">
+				<div class="pop_container">
+					<div class="pop_content">
+						<h3>학습기록삭제</h3>
+						<div class="std_list_wrap">
+							<h4>초등 &gt 1학기</h4>
+							<ul class="pop_scroll">
+								<li>
+									<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname1">소수의 성질 - 소수 완전정복</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname2"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname2">ONLY,ONE, 소수</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname3"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li><label for="stdname4"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname5">소수의 성질 - 소수 완전정복</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname6"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname6">ONLY,ONE, 소수</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname7"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li><label for="stdname8"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+									<span class="date">2021.09.14</span>
+								</li>
+							</ul>
+						</div>
+						<dl class="bottom">
+							<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label
+									for="sel_all">전체선택</label></dt>
+							<dd><button type="button" class="btn_content btn_del_rcd">학습기록삭제</button></dd>
+						</dl>
+						<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+					</div>
+				</div>
+			</div>
+			<!-- // 팝업 : 학습기록삭제 -->
+
+			<!-- 팝업 : 다운로드 -->
+			<div id="pop_download" class="pop_download pop_rel_con">
+				<div class="pop_container">
+					<div class="pop_content">
+						<h3>다운로드</h3>
+						<div class="std_list_wrap">
+							<h4>초등 &gt 1학기</h4>
+							<ul class="pop_scroll">
+								<li>
+									<label for="stdname1"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname1">소수의 성질 - 소수 완전정복</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname2"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname2">ONLY,ONE, 소수</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname3"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname3">패턴을 찾는 자가 마법을 지배한다</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li><label for="stdname4"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname4">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname5"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname5">소수의 성질 - 소수 완전정복</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname6"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname6">ONLY,ONE, 소수</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li>
+									<label for="stdname7"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname7">패턴을 찾는 자가 마법을 지배한다</label>
+									<span class="date">2021.09.14</span>
+								</li>
+								<li><label for="stdname8"><input type="checkbox" class="icheckbox" name="stdname"
+											id="stdname8">선분의 외분점을 이해하고, 외분점의 좌표 구하기</label>
+									<span class="date">2021.09.14</span>
+								</li>
+							</ul>
+						</div>
+						<dl class="bottom">
+							<dt><input type="checkbox" class="icheckbox" name="sel_all" id="sel_all"><label
+									for="sel_all">전체선택</label></dt>
+							<dd>
+								<select>
+									<option>화질선택</option>
+									<option>고화질</option>
+									<option>일반화질</option>
+								</select>
+								<button type="button" class="btn_content btn_download">다운로드</button>
+							</dd>
+						</dl>
+						<button class="btn_pop_close"><i class="blind">팝업닫기</i></button>
+					</div>
+				</div>
+			</div>
+			<!-- // 팝업 :다운로드 -->
+
 		</div>
-		<div class="wrap_foot1">
-			<dl>
-				<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
-				<dd class="sns">
-					<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
-					<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
-					<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
-					<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
-				</dd>
-				<dd class="rel_ebs">
-					<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
-					<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
-				</dd>
-			</dl>
-		</div>
-		<div class="wrap_foot2">
-			<div class="ebs_info">
+		<footer id="footer_2021">
+			<div class="etc_menu">
 				<ul>
-					<li><a href="#">EBS 소개</a></li>
-					<li><a href="#">저작권 침해 제보</a></li>
-					<li><a href="#">이용약관</a></li>
-					<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					<li>
+						<a href="#">EBS Math 소개</a>
+					</li>
+					<li>
+						<a href="#">모바일 안내</a>
+					</li>
+					<li>
+						<a href="#">전체교과보기</a>
+					</li>
+					<li>
+						<a href="#">수학 학습 해결소</a>
+					</li>
+					<li>
+						<a href="#">이용문의</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
 				</ul>
-				<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
-				<address>
-					10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
-					EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
-					부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
-				</address>
-
-				<dl class="about_ebs">
-					<dt>사장</dt>
-					<dd>김명중</dd>
-					<dt>주소</dt>
-					<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
-					<dt>연락처</dt>
-					<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
-					<dt>사업자등록번호</dt>
-					<dd>229-82-01343</dd>
-					<dt>통신 판매업 신고번호</dt>
-					<dd>고양일산동-1415호 [사업자정보확인]</dd>
+			</div>
+			<div class="wrap_foot1">
+				<dl>
+					<dt><img src="../../images/layout/logo_math_foot.png" alt="EBSMath"></dt>
+					<dd class="sns">
+						<a href="#" target="_blank" title="새창" class="sns_fb"><i class="blind">페이스북</i></a>
+						<a href="#" target="_blank" title="새창" class="sns_nb"><i class="blind">네이버 블로그</i></a>
+						<a href="#" target="_blank" title="새창" class="sns_np"><i class="blind">네이버 포스트</i></a>
+						<a href="#" target="_blank" title="새창" class="sns_in"><i class="blind">인스타그램</i></a>
+					</dd>
+					<dd class="rel_ebs">
+						<span><img src="../../images/layout/logo_edumns.png" alt="교육부"></span>
+						<span><img src="../../images/layout/logo_ebs.png" alt="EBS"></span>
+					</dd>
 				</dl>
-				<p class="copyright">Copyright © EBS All Rights Reserved.</p>
 			</div>
-			<div class="ebs_site">
-				<div class="familysiteWrap">
-					<div class="familySite">
-						<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
-						<ul style="display: none;">
-							<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
-							<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
-							<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
-							<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
-							<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
-							<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
-						</ul>
-					</div>
-				</div>
-				<p class="cert_mark">
-					<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
-					<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
-						[인증범위] EBS 교육포털 웹서비스</span>
-				</p>
-			</div>
-		</div>
-	</footer>
-</div>
+			<div class="wrap_foot2">
+				<div class="ebs_info">
+					<ul>
+						<li><a href="#">EBS 소개</a></li>
+						<li><a href="#">저작권 침해 제보</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><strong>개인정보처리방침</strong></a></li>
+					</ul>
+					<p class="copyright_m">Copyright © EBS All Rights Reserved.</p>
+					<address>
+						10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사 | 사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)<br>
+						EBS 고객센터 1588-1580 (발신자 부담) | 인터넷 문의 <a
+							href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a> | FAX : 02-526-3855<br>
+						부가통신사업신고 : 10077 | 통신판매업신고 : 고양일산동-1415호
+					</address>
 
-<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
+					<dl class="about_ebs">
+						<dt>사장</dt>
+						<dd>김명중</dd>
+						<dt>주소</dt>
+						<dd>경기도 고양시 일산동구 한류월드로 281 (장항동 한국교육방송공사)</dd>
+						<dt>연락처</dt>
+						<dd>1588-1580(대표전화/고객센터)<br><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></dd>
+						<dt>사업자등록번호</dt>
+						<dd>229-82-01343</dd>
+						<dt>통신 판매업 신고번호</dt>
+						<dd>고양일산동-1415호 [사업자정보확인]</dd>
+					</dl>
+					<p class="copyright">Copyright © EBS All Rights Reserved.</p>
+				</div>
+				<div class="ebs_site">
+					<div class="familysiteWrap">
+						<div class="familySite">
+							<a href="javascript:void(0);" class="current fadeIn">패밀리 사이트</a>
+							<ul style="display: none;">
+								<li><a href="http://www.ebs.co.kr" target="_blank" title="새창">EBS</a></li>
+								<li><a href="http://primary.ebs.co.kr" target="_blank" title="새창">EBS 초등</a></li>
+								<li><a href="http://mid.ebs.co.kr" target="_blank" title="새창">EBS 중학</a></li>
+								<li><a href="http://www.ebsi.co.kr" target="_blank" title="새창">EBSi (고교)</a></li>
+								<li><a href="http://www.ebse.co.kr" target="_blank" title="새창">EBSe (영어)</a></li>
+								<li><a href="http://www.ebslang.co.kr" target="_blank" title="새창">EBS랑 (외국어)</a></li>
+							</ul>
+						</div>
+					</div>
+					<p class="cert_mark">
+						<span class="mark_webaward">2019 웹어워드 코리아<br>학생/유아교육분야 대상</span>
+						<span class="mark_ismsp">[유효기간]2020.04.29 - 2023.04.28 <br>
+							[인증범위] EBS 교육포털 웹서비스</span>
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="../../js/content.js"></script><!-- 콘텐츠 리스트 관련 js -->
 
 </body>
+
 </html>
