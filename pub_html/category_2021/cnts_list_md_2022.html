@@ -284,7 +284,8 @@
 					<button type="button" class="btn_open_list" onclick="openCrsList()"><i
 							class="blind">목록열기/닫기</i></button>
 					<h2 class="tit_course_m" onclick="openCrsList()">중학수학 <strong class="stit_course_m">중학교 1학년</strong>
-						<button type="button"><i class="blind">닫기</i></button> </h2>
+						<button type="button"><i class="blind">닫기</i></button>
+					</h2>
 					<ul class="crs_list">
 						<li><a href="#">중학교 1학년</a></li>
 						<li><a href="#">중학교 2학년</a></li>
@@ -306,9 +307,8 @@
 										<div class="all_course_head">
 											<div class="wrap">
 												<h2>전체 교과보기</h2>
-												<div id="tabMenu" class="tabMenu" style="touch-action: none;">
-													<ul
-														style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+												<div id="tabMenu" class="tabMenu">
+													<ul>
 														<li class="on"><a href="#">초3</a></li>
 														<li><a href="#">초4</a></li>
 														<li><a href="#">초5</a></li>
@@ -1657,6 +1657,22 @@
 						</div>
 					</div>
 					<!-- //전체교과보기 팝업 -->
+					<script type="text/javascript">
+						//modal
+						$('.course_sub .btn_srch_pop').on('click', function (e) {
+							e.preventDefault();
+							$('.modal').addClass('modal-opened');
+							$('body').addClass('bodyscroll');
+						});
+
+						$('.btn-modal-close').on('click', function (e) {
+							var body = document.body;
+							e.preventDefault();
+							$('.modal').removeClass('modal-opened');
+							$(body).removeClass('bodyscroll');
+						});
+
+					</script>
 					<script src="../../js/iscroll-lite.js"></script>
 					<!-- 2022-12-13 검색영역 -->
 					<ul class="search_option">
