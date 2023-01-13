@@ -1435,12 +1435,9 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 	.latest_game_list .cnt_item .tit > em{font-size:1.2rem;  margin-bottom:0.6rem;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 }
 
-
 @media all and (max-width:360px) {
 	.pop_rel_con .btn_download {width:30px; height:30px; background-position:50% 50%; text-indent:-9999px; font-size:0; padding:0}
 }
-
-
 
 /* 서비스 소개 인페이지 */
 .ebsMath_info .series_wrap .tab_sorting {display:flex; justify-content:center; margin:3rem auto;}
@@ -1513,7 +1510,6 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on {border-color:#4e42ca; background:rgba(78, 66, 202, 1);box-shadow: 0 5px 7px 0 rgba(78, 66, 202, 0.3);}
 .ebsMath_info .si_movies .mv_con_wrap .tabmenu li.on a {color:#fff;}
 
-
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner {display:flex; justify-content:space-evenly; width:85%; margin:0 auto;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li {width:90%; height:4rem; margin-left:0.8rem; background:none; border:0; border-radius:none;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.on {background:none; border:0; border-radius:none;}
@@ -1521,7 +1517,6 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner01 a {background: url('../images/serviceInfo/icon_banner_menu_01.png') no-repeat center center; background-size:contain; text-indent:-9999px;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner02 a {background: url('../images/serviceInfo/icon_banner_menu_02.png') no-repeat center center; background-size:contain; text-indent:-9999px;}
 .ebsMath_info .si_movies .mv_con_wrap .tabBanner li.menuBanner03 a {background: url('../images/serviceInfo/icon_banner_menu_03.png') no-repeat center center; background-size:contain; text-indent:-9999px;}
-
 
 
 @media all and (max-width:995px) {
