@@ -560,7 +560,7 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .view_info {display:flex; justify-content:space-between; border-top:1px solid #d3d3d3; padding-top:2rem; position:relative}
 .view_info ul {display:flex; justify-content:flex-start}
 .view_info li {margin-right:1.5rem}
-.view_info li:last-child {margin-right:0}
+/* .view_info li:last-child {margin-right:0} */
 .view_info [class^="num"] {font-size:1.4rem; font-weight:bold; white-space: nowrap;}
 .view_info .num_view:before {content:""; display:inline-block; width:32px; height:32px; background-size:contain; background-repeat:no-repeat;  margin-right:0.8rem; vertical-align:middle; background-image:url('../images/contents/icon_view.png')}
 .view_info .num_fav button {text-indent:-9999px; font-size:0;width:32px; height:32px; background-size:contain; background-repeat:no-repeat;  margin-right:0.4rem; vertical-align:middle; background-image:url('../images/contents/icon_fav.png')}
@@ -705,7 +705,7 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 .series_main .webtoon nav .con_opt {display:block; position:absolute; right:10px; top:7px}
 .series_main .webtoon nav .con_opt .btn_con_next {margin-left:5px}
 
-.series_main .con_opt.btn_wrap {display: block; margin: 15px auto 0; text-align: center;}
+.series_main .con_opt.btn_wrap {display: block; margin: 10px auto 0; text-align: center;}
 
 .series_view .wrap {max-width:1280px; margin:0 auto; padding-bottom:5rem}
 .series_view .sort_head {display:flex; justify-content:space-between; margin-top:3rem}
@@ -1296,7 +1296,7 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 	.series_main h3 {font-size:2.2rem; padding-bottom:1rem}
 	.series_main .view_info {flex-wrap:wrap; justify-content:space-between;}
 	.series_main .view_info ul,
-	.series_main .view_info .con_opt { justify-content:space-between;}
+	.series_main .view_info .con_opt {justify-content:space-between;}
 	.series_main .view_info .con_opt {margin-top:unset; margin-left:unset;text-align:center; width:unset;}
 	.series_main .webtoon nav .btn_more_toon {display:block; width:100px; margin:15px auto; font-size:1.4rem}
 
@@ -1411,7 +1411,9 @@ span.sns_g:before{background-image:url('../images/common/google.svg')}
 	.series_wrap .series_list li {width:calc(100% / 2)}
 	.series_wrap .series_list li .srs_set {margin:0 10px}
 
-	.series_main .view_info {flex-wrap:nowrap;}
+	.series_main .view_info {flex-wrap:wrap;}
+	.series_main .view_info ul {margin-bottom: 10px;}
+	.view_info .con_opt button {margin-left:0;}
 	/* .series_main .view_info .con_opt {width:auto; margin-left:100%; margin-top:5px; transform:translateX(-100%)} */
 
 	/*게임존*/
